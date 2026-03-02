@@ -1,0 +1,1080 @@
+# JKKN Admin Panel — Complete Architecture & Implementation Plan
+# Covers: Education, Pharmacy, Dental, Nursing, Arts & Science, AHS colleges
+# One shared Supabase project. Each college is isolated by college_id.
+
+================================================================================
+PART 1 — THE BIG PICTURE
+================================================================================
+
+## What We're Building
+
+Each JKKN college has:
+  - A public-facing website:  education.jkkn.ac.in
+  - An admin panel inside it: education.jkkn.ac.in/admin
+
+The admin panel lives INSIDE the same Next.js project at the /admin route.
+It connects to a SINGLE shared Supabase project used by all JKKN colleges.
+Staff log in at /admin, manage content, and it appears instantly on the public site.
+
+```
+Supabase (One shared project for all JKKN colleges)
+     │
+     ├── education.jkkn.ac.in   (Next.js)  → /admin  ← Education staff only
+     ├── pharmacy.jkkn.ac.in    (Next.js)  → /admin  ← Pharmacy staff only
+     ├── dental.jkkn.ac.in      (Next.js)  → /admin  ← Dental staff only
+     ├── nursing.jkkn.ac.in     (Next.js)  → /admin  ← Nursing staff only
+     ├── artsscience.jkkn.ac.in (Next.js)  → /admin  ← Arts & Science staff only
+     └── ahs.jkkn.ac.in         (Next.js)  → /admin  ← AHS staff only
+```
+
+Every college is a SEPARATE Next.js deployment. They all share the same
+database, but each staff member can only see and manage their own college's
+data. This is enforced at the database level via Row Level Security (RLS).
+
+
+## How college_id Works (The Core Concept)
+
+Every content table has a college_id column. It's just a text tag on each row.
+Staff can create as many rows as they want — they all get tagged with their college.
+
+  blogs table (real example):
+  ──────────────────────────────────────────────────
+  id   college_id    title                is_published
+  1    education     "Teaching Methods"   true
+  2    education     "Sports Meet Recap"  true
+  3    education     "New Library"        true        ← unlimited rows
+  4    pharmacy      "Drug Discovery"     true
+  5    pharmacy      "Pharma Industry"    true        ← pharmacy's own rows
+  6    dental        "Dental Camp"        true
+  7    nursing       "Patient Care"       true
+
+Education staff → see only rows where college_id = 'education'
+Pharmacy staff  → see only rows where college_id = 'pharmacy'
+No cross-contamination. No limits. They share one table but live in separate worlds.
+
+
+## How the Current Deployment Knows Its college_id
+
+Each Next.js project has a .env.local file:
+
+  Education:  NEXT_PUBLIC_COLLEGE_ID=education
+  Pharmacy:   NEXT_PUBLIC_COLLEGE_ID=pharmacy
+  Dental:     NEXT_PUBLIC_COLLEGE_ID=dental
+  Nursing:    NEXT_PUBLIC_COLLEGE_ID=nursing
+
+All public queries filter by this value automatically.
+All admin operations tag new rows with this value automatically.
+
+
+================================================================================
+PART 2 — CURRENT STATE vs TARGET STATE
+================================================================================
+
+Page                   Current State                    Target State
+─────────────────────────────────────────────────────────────────────────────
+Events                 Does not exist                   New page + admin CRUD
+Blogs                  Does not exist                   New page + admin CRUD
+Gallery                6 hardcoded images in JSX        Unlimited from Supabase
+Notices                Does not exist                   New page + admin CRUD
+Faculty                Redirects to a PDF               Dynamic page from Supabase
+
+
+================================================================================
+PART 3 — AUTHENTICATION DESIGN
+================================================================================
+
+## Two Login Methods
+
+/admin/login
+├── "Sign in with Google" button   → Supabase Google OAuth
+└── Email + Password form          → Supabase Email Auth
+
+
+## Auth Flow
+
+Staff opens education.jkkn.ac.in/admin
+    ↓
+middleware.ts checks: is user logged in? (Supabase session cookie)
+    ↓ No                            ↓ Yes
+Redirect to /admin/login     Check staff_profiles table
+                                    ↓ No profile found    ↓ Profile exists
+                               Show "Unauthorized"     Load admin dashboard
+                               (wrong college)         (their college only)
+
+
+## Who Can Register — Three Options
+
+### Option A: Open Registration (Anyone with the link can register)
+Staff go to /admin/login → click "Sign up" → enter email + password
+Account created instantly. They can immediately do CRUD.
+RISK: Anyone who finds the URL can create an account.
+
+### Option B: Invite-Only via Supabase Dashboard (Recommended for now)
+Developer adds staff emails in the Supabase Auth dashboard.
+They receive an email invite, set their password.
+Google login works for their Google Workspace email too.
+BENEFIT: Only people you explicitly add can access.
+
+### Option C: Domain-Restricted Google Auth
+Only @jkkn.ac.in Google accounts can log in.
+Auto-blocked for anyone outside the institution.
+BENEFIT: Maximum security with zero manual management.
+
+RECOMMENDATION: Start with Option B (invite-only). Switch to Option C later
+when all staff have @jkkn.ac.in email addresses.
+
+
+## Staff Profiles Table (Links auth user → college)
+
+After a user authenticates with Supabase Auth, a row in staff_profiles
+tells the system which college they belong to.
+
+  staff_profiles table:
+  ──────────────────────────────────────────────────────────────
+  id (uuid)         = auth.users.id (matches Supabase Auth user)
+  college_id        = 'education' | 'pharmacy' | 'dental' | etc.
+  full_name         = "Priya Kumar"
+  role              = 'staff' | 'admin' (for future role expansion)
+  is_active         = true/false (disable access without deleting)
+  created_at        = timestamptz
+
+How it works:
+  1. Developer creates user in Supabase Auth dashboard (invite-only)
+  2. Developer manually inserts row in staff_profiles:
+       INSERT INTO staff_profiles (id, college_id, full_name, role)
+       VALUES ('auth-user-uuid', 'education', 'Priya Kumar', 'staff');
+  3. Staff receives email invite, sets password, logs in
+  4. System reads their staff_profiles row → knows they are 'education' staff
+  5. All their content is automatically tagged college_id = 'education'
+  6. They only see rows where college_id = 'education'
+
+
+================================================================================
+PART 4 — DATABASE SCHEMA (All JKKN Colleges — Shared Tables)
+================================================================================
+
+All tables have a college_id column. This is the isolation mechanism.
+
+────────────────────────────────────────────────────────────────────────────────
+Table 1: staff_profiles
+────────────────────────────────────────────────────────────────────────────────
+Column          Type              Notes
+──────────────────────────────────────────────────────────────────────────────
+id              uuid              PK. Must match auth.users.id exactly
+college_id      text              'education' | 'pharmacy' | 'dental' | etc.
+full_name       text              Display name in admin panel
+role            text              'staff' | 'admin' (default: 'staff')
+is_active       boolean           Default: true. Set false to revoke access.
+created_at      timestamptz       Auto: now()
+
+────────────────────────────────────────────────────────────────────────────────
+Table 2: events
+────────────────────────────────────────────────────────────────────────────────
+Column          Type              Notes
+──────────────────────────────────────────────────────────────────────────────
+id              uuid              PK, auto-generated
+college_id      text              'education' | 'pharmacy' | etc. ← ISOLATION
+title           text              Required. e.g., "Annual Day 2025"
+slug            text              Unique per college. e.g., "annual-day-2025"
+description     text              Can be long text
+event_date      date              Required. e.g., 2025-03-15
+event_time      text              e.g., "10:00 AM"
+venue           text              e.g., "College Auditorium"
+image_url       text              Supabase Storage URL
+is_published    boolean           Default: false (draft)
+created_by      uuid              FK → auth.users.id
+created_at      timestamptz       Auto: now()
+updated_at      timestamptz       Auto-updated on change
+
+────────────────────────────────────────────────────────────────────────────────
+Table 3: blogs
+────────────────────────────────────────────────────────────────────────────────
+Column          Type              Notes
+──────────────────────────────────────────────────────────────────────────────
+id              uuid              PK
+college_id      text              ← ISOLATION
+title           text              Required
+slug            text              Unique per college. Auto-generated from title
+content         text              HTML content from rich text editor (Tiptap)
+excerpt         text              Short preview (150 chars)
+author_name     text              Staff's display name
+cover_image_url text              Supabase Storage URL
+category        text              "Academic" | "Achievement" | "News" |
+                                  "Campus Life" | "Events"
+is_published    boolean           Default: false
+published_at    timestamptz       Set when first published
+created_by      uuid              FK → auth.users.id
+created_at      timestamptz
+updated_at      timestamptz
+
+────────────────────────────────────────────────────────────────────────────────
+Table 4: gallery_albums
+────────────────────────────────────────────────────────────────────────────────
+Column          Type              Notes
+──────────────────────────────────────────────────────────────────────────────
+id              uuid              PK
+college_id      text              ← ISOLATION
+name            text              e.g., "Sports Day 2025"
+description     text              Optional album description
+cover_image_url text              First image or manually chosen cover
+created_by      uuid
+created_at      timestamptz
+
+────────────────────────────────────────────────────────────────────────────────
+Table 5: gallery_images
+────────────────────────────────────────────────────────────────────────────────
+Column          Type              Notes
+──────────────────────────────────────────────────────────────────────────────
+id              uuid              PK
+album_id        uuid              FK → gallery_albums.id (no college_id needed
+                                  — the album already has college_id)
+image_url       text              Supabase Storage URL
+caption         text              Optional image caption
+display_order   integer           For custom ordering within album
+created_by      uuid
+created_at      timestamptz
+
+Why two gallery tables?
+Albums group photos (Sports Day, Annual Day, Orientation).
+Each album has unlimited images. This is how every real gallery works.
+gallery_images does not need its own college_id — it inherits via album_id.
+
+────────────────────────────────────────────────────────────────────────────────
+Table 6: notices
+────────────────────────────────────────────────────────────────────────────────
+Column          Type              Notes
+──────────────────────────────────────────────────────────────────────────────
+id              uuid              PK
+college_id      text              ← ISOLATION
+title           text              e.g., "Exam Schedule - March 2025"
+content         text              Notice body text
+notice_type     text              "exam" | "academic" | "holiday" | "general"
+attachment_url  text              Supabase Storage URL (PDF)
+is_active       boolean           Default: true (live)
+expires_at      date              Auto-hide after this date (NULL = never)
+created_by      uuid
+created_at      timestamptz
+
+────────────────────────────────────────────────────────────────────────────────
+Table 7: faculty
+────────────────────────────────────────────────────────────────────────────────
+Column            Type            Notes
+──────────────────────────────────────────────────────────────────────────────
+id                uuid            PK
+college_id        text            ← ISOLATION
+name              text            Required
+designation       text            e.g., "Assistant Professor"
+department        text            e.g., "B.Ed Mathematics"
+qualification     text            e.g., "M.Sc., B.Ed., M.Phil."
+experience_years  integer         e.g., 8
+photo_url         text            Supabase Storage URL
+email             text            e.g., "john@jkkn.ac.in"
+display_order     integer         Controls sort order on page
+is_active         boolean         Default: true
+created_by        uuid
+created_at        timestamptz
+updated_at        timestamptz
+
+
+================================================================================
+PART 5 — SUPABASE STORAGE BUCKETS
+================================================================================
+
+One set of buckets shared across all colleges. College isolation is achieved
+by using college_id as a path prefix inside each bucket.
+
+Supabase Storage (shared jkkn project)
+├── event-images/              Public read, authenticated write
+│   └── {college_id}/{year}/{slug}-cover.jpg
+│       e.g., education/2025/annual-day-cover.jpg
+│       e.g., pharmacy/2025/pharma-fest-cover.jpg
+│
+├── blog-images/               Public read, authenticated write
+│   └── {college_id}/{year}/{slug}-cover.jpg
+│
+├── gallery/                   Public read, authenticated write
+│   └── {college_id}/{album-slug}/{filename}.jpg
+│       e.g., education/sports-day/photo1.jpg
+│       e.g., pharmacy/industry-visit/photo1.jpg
+│
+├── faculty-photos/            Public read, authenticated write
+│   └── {college_id}/{faculty-id}.jpg
+│
+└── notice-attachments/        Public read, authenticated write
+    └── {college_id}/{year}/{filename}.pdf
+
+Storage Rules:
+- Public read:         The website fetches images without authentication
+- Authenticated write: Only logged-in staff can upload
+- Authenticated delete: Only logged-in staff can delete files
+- File size limit:     5MB for images, 10MB for PDFs
+- Path prefix enforced by upload code (college_id from staff_profiles)
+
+
+================================================================================
+PART 6 — ROW LEVEL SECURITY (RLS) POLICIES
+================================================================================
+
+RLS runs at the Postgres level — it is the enforcement mechanism.
+No matter what the application code does, Postgres enforces these rules.
+
+────────────────────────────────────────────────────────────────────────────────
+Public Website (Unauthenticated reads)
+────────────────────────────────────────────────────────────────────────────────
+
+These policies let the public website read published content for its college.
+The college_id filter in application code matches NEXT_PUBLIC_COLLEGE_ID.
+
+-- events: public can read published events
+CREATE POLICY "public_read_events" ON events
+  FOR SELECT USING (is_published = true);
+
+-- blogs: public can read published blogs
+CREATE POLICY "public_read_blogs" ON blogs
+  FOR SELECT USING (is_published = true);
+
+-- gallery_albums: public can read all albums
+CREATE POLICY "public_read_gallery_albums" ON gallery_albums
+  FOR SELECT USING (true);
+
+-- gallery_images: public can read all images
+CREATE POLICY "public_read_gallery_images" ON gallery_images
+  FOR SELECT USING (true);
+
+-- notices: public can read active, non-expired notices
+CREATE POLICY "public_read_notices" ON notices
+  FOR SELECT USING (
+    is_active = true AND
+    (expires_at IS NULL OR expires_at > now())
+  );
+
+-- faculty: public can read active faculty members
+CREATE POLICY "public_read_faculty" ON faculty
+  FOR SELECT USING (is_active = true);
+
+Note: The application code ALSO filters by college_id on every query.
+RLS allows the read; the query filter narrows it to the right college.
+
+────────────────────────────────────────────────────────────────────────────────
+Admin Panel (Authenticated staff — full CRUD, own college only)
+────────────────────────────────────────────────────────────────────────────────
+
+Staff can only read/write rows that match THEIR college_id from staff_profiles.
+
+Helper function (used in all policies below):
+-- Returns the college_id of the currently logged-in staff member
+CREATE OR REPLACE FUNCTION get_my_college_id()
+RETURNS text AS $$
+  SELECT college_id FROM staff_profiles WHERE id = auth.uid()
+$$ LANGUAGE sql SECURITY DEFINER;
+
+-- events: staff can do all CRUD on their own college's events
+CREATE POLICY "staff_all_events" ON events
+  FOR ALL USING (college_id = get_my_college_id())
+  WITH CHECK (college_id = get_my_college_id());
+
+-- blogs: staff can do all CRUD on their own college's blogs
+CREATE POLICY "staff_all_blogs" ON blogs
+  FOR ALL USING (college_id = get_my_college_id())
+  WITH CHECK (college_id = get_my_college_id());
+
+-- gallery_albums: staff can manage their college's albums
+CREATE POLICY "staff_all_gallery_albums" ON gallery_albums
+  FOR ALL USING (college_id = get_my_college_id())
+  WITH CHECK (college_id = get_my_college_id());
+
+-- gallery_images: staff can manage images inside their college's albums
+CREATE POLICY "staff_all_gallery_images" ON gallery_images
+  FOR ALL USING (
+    EXISTS (
+      SELECT 1 FROM gallery_albums
+      WHERE gallery_albums.id = gallery_images.album_id
+      AND gallery_albums.college_id = get_my_college_id()
+    )
+  );
+
+-- notices: staff can manage their college's notices
+CREATE POLICY "staff_all_notices" ON notices
+  FOR ALL USING (college_id = get_my_college_id())
+  WITH CHECK (college_id = get_my_college_id());
+
+-- faculty: staff can manage their college's faculty
+CREATE POLICY "staff_all_faculty" ON faculty
+  FOR ALL USING (college_id = get_my_college_id())
+  WITH CHECK (college_id = get_my_college_id());
+
+-- staff_profiles: staff can read their own profile only
+CREATE POLICY "staff_read_own_profile" ON staff_profiles
+  FOR SELECT USING (id = auth.uid());
+
+What this means in practice:
+- Education staff → can ONLY see/edit rows where college_id = 'education'
+- Pharmacy staff  → can ONLY see/edit rows where college_id = 'pharmacy'
+- Cross-college access is IMPOSSIBLE — blocked at database level
+- Staff cannot change their own college_id (only developer can)
+
+
+================================================================================
+PART 7 — ADMIN PANEL ROUTE STRUCTURE
+================================================================================
+
+All within the existing Next.js project. Same structure for every college.
+
+app/
+├── admin/
+│   ├── layout.tsx              Admin shell (sidebar + topbar)
+│   ├── page.tsx                Redirect → /admin/dashboard
+│   │
+│   ├── login/
+│   │   └── page.tsx            Google + Email/Password login UI
+│   │
+│   ├── dashboard/
+│   │   └── page.tsx            Stats: total events, blogs, photos, notices, faculty
+│   │
+│   ├── events/
+│   │   ├── page.tsx            Events list (table view)
+│   │   ├── new/
+│   │   │   └── page.tsx        Create event form
+│   │   └── [id]/
+│   │       └── page.tsx        Edit event form
+│   │
+│   ├── blogs/
+│   │   ├── page.tsx            Blog posts list
+│   │   ├── new/
+│   │   │   └── page.tsx        Rich text blog editor
+│   │   └── [id]/
+│   │       └── page.tsx        Edit blog post
+│   │
+│   ├── gallery/
+│   │   ├── page.tsx            Albums grid view
+│   │   ├── new/
+│   │   │   └── page.tsx        Create album + upload images
+│   │   └── [albumId]/
+│   │       └── page.tsx        View/edit album + add/remove images
+│   │
+│   ├── notices/
+│   │   ├── page.tsx            Notices list
+│   │   ├── new/
+│   │   │   └── page.tsx        Create notice form
+│   │   └── [id]/
+│   │       └── page.tsx        Edit notice
+│   │
+│   └── faculty/
+│       ├── page.tsx            Faculty grid (with reorder)
+│       ├── new/
+│       │   └── page.tsx        Add faculty form
+│       └── [id]/
+│           └── page.tsx        Edit faculty member
+│
+├── events/                     NEW public page (reads from Supabase)
+│   ├── page.tsx                Events listing
+│   └── [slug]/
+│       └── page.tsx            Single event detail
+│
+├── blogs/                      NEW public page (reads from Supabase)
+│   ├── page.tsx                Blog listing
+│   └── [slug]/
+│       └── page.tsx            Single blog post
+│
+└── notices/                    NEW public page
+    └── page.tsx                Notices board
+
+
+================================================================================
+PART 8 — ADMIN PANEL UI LAYOUT
+================================================================================
+
+## Login Page (/admin/login)
+
+┌─────────────────────────────────────┐
+│        JKKN College of Education    │
+│           Admin Portal              │
+│                                     │
+│  ┌───────────────────────────────┐  │
+│  │    Sign in with Google    🔵  │  │
+│  └───────────────────────────────┘  │
+│                                     │
+│         ─────── OR ───────          │
+│                                     │
+│  Email:    [_______________________]│
+│  Password: [_______________________]│
+│                                     │
+│  ┌───────────────────────────────┐  │
+│  │         Sign In               │  │
+│  └───────────────────────────────┘  │
+└─────────────────────────────────────┘
+
+
+## Admin Shell Layout (All Pages After Login)
+
+┌───────────────────────────────────────────────────────┐
+│ JKKN Admin          Welcome, Priya     [Logout]       │  ← Topbar
+├────────────────┬──────────────────────────────────────┤
+│                │                                       │
+│  Dashboard     │          Main Content Area            │
+│                │                                       │
+│  Events        │  (List tables, forms, image uploads)  │
+│  Blogs         │                                       │
+│  Gallery       │                                       │
+│  Notices       │                                       │
+│  Faculty       │                                       │
+│                │                                       │
+└────────────────┴──────────────────────────────────────┘
+
+
+## Dashboard Page
+
+┌──────────────────────────────────────────────────────┐
+│                Quick Stats                           │
+│                                                      │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌────────┐  │
+│  │ Events   │ │  Blogs   │ │  Photos  │ │Faculty │  │
+│  │    12    │ │    28    │ │   150    │ │   18   │  │
+│  │ 3 draft  │ │ 5 draft  │ │ 6 albums │ │ active │  │
+│  └──────────┘ └──────────┘ └──────────┘ └────────┘  │
+│                                                      │
+│  Recent Activity                                     │
+│  ┌────────────────────────────────────────────────┐  │
+│  │ Priya added "Annual Day 2025" event   2 hrs ago│  │
+│  │ Kumar published blog "New Library"    1 day ago│  │
+│  │ Staff uploaded 12 gallery photos      2 days   │  │
+│  └────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────┘
+
+
+================================================================================
+PART 9 — CRUD UI DESIGN PER CONTENT TYPE
+================================================================================
+
+## Events
+
+List View (/admin/events):
+[+ New Event]                        [Search events...]
+
+Title                Date          Venue       Status    Actions
+─────────────────────────────────────────────────────────────────
+Annual Day 2025      15 Mar 2025   Auditorium  Published  [Edit] [Delete]
+Science Exhibition   22 Mar 2025   Lab Block   Draft      [Edit] [Delete]
+Sports Meet          05 Apr 2025   Ground      Draft      [Edit] [Delete]
+
+Create/Edit Form (/admin/events/new or /admin/events/[id]):
+
+  Event Title *          [__________________________________]
+  Event Date *           [Date Picker                      ]
+  Event Time             [10:00 AM                         ]
+  Venue                  [__________________________________]
+  Description            [_________________________________ ]
+                         [_________________________________ ]
+                         [_________________________________ ]
+  Cover Image            [Drag & drop or click to upload   ]
+                         Preview: [image thumbnail]
+  Status                 ○ Draft   ● Published
+
+                         [Save Draft]    [Publish Event]
+
+
+## Blogs
+
+List View (/admin/blogs):
+[+ Write New Post]                   [Search posts...]  [Filter: All ▼]
+
+Title                     Author    Category    Status     Date
+─────────────────────────────────────────────────────────────────
+Teaching with Technology  Priya     Academic    Published  Feb 20
+New Library Resources     Kumar     News        Published  Feb 15
+Annual Sports Meet Recap  Sunita    Campus Life Draft      Feb 10
+
+Create/Edit Form (/admin/blogs/new or /admin/blogs/[id]):
+
+  Blog Title *           [__________________________________]
+  Category *             [Academic ▼]
+  Excerpt                [Short preview shown in listing...]
+  Cover Image            [Drag & drop cover photo          ]
+
+  Content *
+  ┌──────────────────────────────────────────────────────┐
+  │ B  I  U  H1  H2  Bullet  Link  Image  Divider       │  ← Tiptap toolbar
+  ├──────────────────────────────────────────────────────┤
+  │                                                      │
+  │  Write your blog content here...                     │
+  │                                                      │
+  └──────────────────────────────────────────────────────┘
+
+  Author Name            [__________________________________]
+  Status                 ○ Draft   ● Published
+
+                         [Save Draft]    [Publish Post]
+
+
+## Gallery
+
+Albums View (/admin/gallery):
+[+ New Album]
+
+  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐
+  │ [photo]  │  │ [photo]  │  │ [photo]  │  │ [photo]  │
+  │          │  │          │  │          │  │          │
+  │Annual Day│  │Sports Day│  │Lab Visit │  │Orientatn │
+  │ 24 photos│  │ 18 photos│  │ 8 photos │  │ 12 photos│
+  │ [Edit]   │  │ [Edit]   │  │ [Edit]   │  │ [Edit]   │
+  │ [Delete] │  │ [Delete] │  │ [Delete] │  │ [Delete] │
+  └──────────┘  └──────────┘  └──────────┘  └──────────┘
+
+Inside an Album (/admin/gallery/[albumId]):
+← Back to Albums    Annual Day 2025    [+ Upload More Photos]
+
+  [Drag & drop multiple images here — upload unlimited photos]
+
+  ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐
+  │img│ │img│ │img│ │img│ │img│ │img│  ← Existing photos
+  │[x]│ │[x]│ │[x]│ │[x]│ │[x]│ │[x]│  ← Click x to remove
+  └───┘ └───┘ └───┘ └───┘ └───┘ └───┘
+
+Key design: Albums group photos. Staff create unlimited albums and upload
+unlimited photos per album. No limits at any level.
+
+
+## Notices
+
+List View (/admin/notices):
+[+ New Notice]
+
+Title                      Type     Status    Expires      Actions
+───────────────────────────────────────────────────────────────────
+Exam Schedule Mar 2025     Exam     Active    31 Mar 2025  [Edit] [Delete]
+Holiday: Pongal            Holiday  Active    —            [Edit] [Delete]
+Library Timing Update      General  Inactive  —            [Edit] [Delete]
+
+Create Form:
+  Notice Title *         [__________________________________]
+  Notice Type *          [Exam ▼]   (Exam / Academic / Holiday / General)
+  Content                [_________________________________ ]
+                         [_________________________________ ]
+  Attach PDF             [Upload PDF (optional)            ]
+  Expires On             [Date Picker — leave blank = never expires]
+  Status                 ● Active   ○ Inactive
+
+                         [Save Notice]
+
+
+## Faculty
+
+Grid View (/admin/faculty):
+[+ Add Faculty Member]    [Drag to reorder]
+
+  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐
+  │  photo   │  │  photo   │  │  photo   │  │  photo   │
+  │  Dr. Ram │  │ Mrs. Sita│  │ Mr. Kumar│  │ Ms. Priya│
+  │ Principal│  │ Asst.Prof│  │ Lecturer │  │ Lecturer │
+  │ B.Ed Eng │  │ B.Ed Math│  │ B.Ed Sci │  │ B.Ed Tam │
+  │ [Edit]   │  │ [Edit]   │  │ [Edit]   │  │ [Edit]   │
+  └──────────┘  └──────────┘  └──────────┘  └──────────┘
+
+
+================================================================================
+PART 10 — PUBLIC PAGES THAT NEED TO BE CREATED / MODIFIED
+================================================================================
+
+## New: /events page
+
+  EVENTS
+  ──────
+  ┌──────────────────────────────────────────────────────┐
+  │ [event image]    Annual Day 2025                     │
+  │                  📅 15 March 2025  📍 Auditorium     │
+  │                  Short description preview...         │
+  │                  [Read More]                         │
+  └──────────────────────────────────────────────────────┘
+
+
+## New: /blogs page
+
+  BLOGS & NEWS
+  ─────────────
+  [cover]  Title of Blog Post               Feb 20, 2025
+           Excerpt preview text here...
+           By Priya Kumar | Academic         [Read More]
+
+
+## New: /notices page (or show as ticker on homepage)
+
+  NOTICES
+  ───────
+  📌  Exam Schedule March 2025     [Download PDF]   Expires: 31 Mar
+  📌  Holiday: Pongal              General          —
+  📌  Library Timing Update        Academic         —
+
+
+## Modified: /gallery page
+
+Fetches from Supabase instead of hardcoded JSX array.
+Shows albums first, then images inside each album.
+Migrate existing 6 hardcoded images into Supabase during Phase 6.
+
+
+## Modified: /others/faculty-details page
+
+Currently redirects to a PDF file.
+Needs to become a real dynamic page fetching from the faculty table.
+
+
+================================================================================
+PART 11 — DATA FLOW DIAGRAMS
+================================================================================
+
+## Staff Adds New Content
+
+Staff at /admin/events/new
+    ↓ fills form + uploads image
+    ↓
+Image upload → Supabase Storage (path: education/2025/annual-day-cover.jpg)
+    ↓ returns public URL
+Form submit → Supabase DB INSERT into events
+    (college_id = 'education', title = ..., image_url = ..., is_published = true)
+    ↓
+RLS confirms: college_id matches staff's college → INSERT allowed
+    ↓
+Server Action calls revalidatePath('/events') → Next.js ISR clears cache
+    ↓
+/events page rebuilds with new event instantly
+
+
+## Public Visitor Reads Content
+
+Visitor opens education.jkkn.ac.in/events
+    ↓
+Next.js fetches from Supabase:
+    SELECT * FROM events
+    WHERE college_id = 'education'        ← from NEXT_PUBLIC_COLLEGE_ID
+    AND is_published = true
+    ORDER BY event_date DESC
+    ↓
+RLS: public_read_events policy allows SELECT (is_published = true)
+    ↓
+Pharmacy data is also in the table but NEVER returned
+(filtered by college_id in the query)
+    ↓
+Page renders with only Education events
+
+
+## Cross-College Isolation (What Happens if Someone Tries)
+
+Education staff tries to read pharmacy data:
+    SELECT * FROM events WHERE college_id = 'pharmacy'
+    ↓
+RLS: staff_all_events policy checks get_my_college_id() = 'education'
+     'pharmacy' ≠ 'education'
+    ↓
+Returns empty result. No error. No data. Complete isolation.
+
+
+================================================================================
+PART 12 — ENVIRONMENT VARIABLES
+================================================================================
+
+Each college's Next.js project has its own .env.local file.
+These are NEVER committed to git.
+
+## Education College (.env.local)
+
+NEXT_PUBLIC_SUPABASE_URL=https://[shared-project-id].supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=[shared-anon-key]
+NEXT_PUBLIC_COLLEGE_ID=education
+
+## Pharmacy College (.env.local)
+
+NEXT_PUBLIC_SUPABASE_URL=https://[shared-project-id].supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=[shared-anon-key]
+NEXT_PUBLIC_COLLEGE_ID=pharmacy
+
+Note: SUPABASE_URL and SUPABASE_ANON_KEY are the SAME across all colleges.
+Only NEXT_PUBLIC_COLLEGE_ID is different.
+
+On Vercel (production), these are set in:
+Project → Settings → Environment Variables
+
+
+================================================================================
+PART 13 — NEW PACKAGES TO INSTALL
+================================================================================
+
+Additions to the existing package.json:
+
+Package                    Purpose
+───────────────────────────────────────────────────────────────────
+@supabase/supabase-js      Supabase JS client (fetch data, auth)
+@supabase/ssr              Supabase server-side auth for Next.js App Router
+@tiptap/react              Rich text editor for blogs
+@tiptap/starter-kit        Tiptap base extensions
+@tiptap/extension-image    Image support in blog editor
+@tiptap/extension-link     Link support in blog editor
+react-hook-form            Form state management + validation
+zod                        Schema validation for forms
+@hookform/resolvers        Connects zod to react-hook-form
+react-dropzone             Drag-and-drop file/image upload
+react-hot-toast            Toast notifications ("Event saved!")
+date-fns                   Date formatting for display
+slugify                    Auto-generate URL slugs from blog titles
+
+
+================================================================================
+PART 14 — MIDDLEWARE FOR ROUTE PROTECTION
+================================================================================
+
+A single middleware.ts file at the project root protects all /admin/* routes.
+
+Incoming request to /admin/**
+    ↓
+middleware.ts checks Supabase session cookie
+    ↓ No session                    ↓ Valid session
+Redirect to /admin/login     Check staff_profiles table
+                                    ↓ No profile          ↓ Profile found
+                              Redirect /admin/login    Allow through
+                              (not authorized staff)   (admin page loads)
+
+/admin/login is the ONLY admin route that works without authentication.
+
+The middleware also:
+- Refreshes the Supabase session cookie on every request
+- Handles OAuth callback redirects (for Google login)
+- Excludes public routes like /events, /blogs, /gallery from protection
+
+
+================================================================================
+PART 15 — ISR (INCREMENTAL STATIC REGENERATION) STRATEGY
+================================================================================
+
+Public pages use ISR — fast like static pages, auto-refresh when data changes.
+
+Public Page              Revalidate Every    Reason
+───────────────────────────────────────────────────────────────────────────
+/events (listing)        60 seconds          Events added regularly
+/events/[slug]           300 seconds         Individual events rarely change
+/blogs (listing)         60 seconds          New posts added regularly
+/blogs/[slug]            300 seconds         Blog content rarely changes
+/gallery                 300 seconds         Gallery updated in batches
+/notices                 30 seconds          Notices are urgent
+/others/faculty-details  3600 seconds        Faculty rarely changes
+
+On-demand revalidation:
+When staff clicks "Publish" in the admin panel, a Server Action calls
+revalidatePath('/events') — the page rebuilds instantly without waiting
+for the timer. Staff sees the change live immediately after publishing.
+
+
+================================================================================
+PART 16 — IMPLEMENTATION PHASES
+================================================================================
+
+Phase 1: Supabase Setup
+─────────────────────────
+- Confirm/create shared Supabase project for all JKKN colleges
+- Create all 7 tables (staff_profiles + 6 content tables) with schema above
+- Add college_id column to all content tables
+- Set up all RLS policies (public reads + staff CRUD with college isolation)
+- Create get_my_college_id() helper function in Postgres
+- Create 5 Storage buckets with path conventions
+- Configure Google OAuth in Supabase (Providers → Google)
+- Install @supabase/supabase-js and @supabase/ssr
+- Set up environment variables (.env.local + Vercel)
+- Create initial staff_profiles row for first admin user
+
+Phase 2: Admin Authentication
+──────────────────────────────
+- Build /admin/login page (Google button + Email/Password form)
+- Build middleware.ts to protect /admin/* routes
+- Handle OAuth callback (/auth/callback route)
+- Test: Google login → session created → redirect to dashboard
+- Test: Email login → session created → redirect to dashboard
+- Test: Unauthenticated visit to /admin/* → redirect to /admin/login
+- Test: Wrong college staff → cannot see other college's data
+
+Phase 3: Admin Dashboard + Shell
+──────────────────────────────────
+- Build admin layout.tsx (sidebar navigation + topbar with user name + logout)
+- Sidebar links: Dashboard, Events, Blogs, Gallery, Notices, Faculty
+- Build dashboard page with stat cards (count queries per table, filtered by college_id)
+- Implement logout (Supabase signOut → redirect to /admin/login)
+- Show logged-in staff name and college in topbar
+
+Phase 4: Events CRUD
+──────────────────────
+- Build /admin/events list page (table with title, date, status, edit/delete)
+- Build /admin/events/new create form (title, date, time, venue, description, image, status)
+- Image upload: react-dropzone → Supabase Storage (path: {college_id}/...)
+- Auto-set college_id = NEXT_PUBLIC_COLLEGE_ID on every INSERT
+- Build /admin/events/[id] edit form (pre-populated from Supabase)
+- Implement delete with confirmation dialog
+- On-demand revalidation: revalidatePath('/events') after publish/delete
+- Build public /events listing page (ISR, filters by college_id)
+- Build public /events/[slug] detail page
+- Add "Events" to Header navigation on public site
+
+Phase 5: Blogs CRUD
+─────────────────────
+- Install and configure Tiptap rich text editor
+- Build /admin/blogs list page (table with title, author, category, status)
+- Build /admin/blogs/new with Tiptap editor + cover image upload
+- Auto-generate slug from title using slugify (ensure uniqueness)
+- Build /admin/blogs/[id] edit form
+- On-demand revalidation: revalidatePath('/blogs') after publish/delete
+- Build public /blogs listing page (ISR, filters by college_id)
+- Build public /blogs/[slug] detail page (renders HTML content from Tiptap)
+- Add "Blogs" to Header navigation on public site
+
+Phase 6: Gallery CRUD
+───────────────────────
+- Build /admin/gallery albums grid (album cards with photo count)
+- Build album create form (name, description, cover image, multi-file upload)
+- Build /admin/gallery/[albumId] album detail (existing photos + upload more)
+- Multi-file upload: react-dropzone → multiple Supabase Storage uploads
+- Delete individual photos (remove from Storage + gallery_images table)
+- Rewrite public /gallery page to fetch albums + images from Supabase
+- Migrate existing 6 hardcoded images from JSX into Supabase
+
+Phase 7: Notices CRUD
+───────────────────────
+- Build /admin/notices list page (table with title, type, status, expiry)
+- Build /admin/notices/new (title, type, content, PDF upload, expiry, status)
+- PDF upload: react-dropzone → Supabase Storage notice-attachments bucket
+- Auto-hide expired notices (expires_at < now() filtered in RLS)
+- Build public /notices page (or integrate as ticker on homepage)
+- On-demand revalidation: revalidatePath('/notices') after save/delete
+
+Phase 8: Faculty CRUD
+───────────────────────
+- Build /admin/faculty grid view with drag-to-reorder (updates display_order)
+- Build /admin/faculty/new (name, designation, department, qualification,
+  experience, photo upload, email, display_order, is_active)
+- Build /admin/faculty/[id] edit form
+- Rewrite /others/faculty-details from PDF redirect to dynamic Supabase page
+- Faculty page: sorted by display_order, filtered by is_active = true
+
+
+================================================================================
+PART 17 — APPLYING THIS PLAN TO ANOTHER COLLEGE (e.g., Pharmacy)
+================================================================================
+
+When setting up pharmacy.jkkn.ac.in (or any other JKKN college):
+
+Step 1: Database — NO changes needed
+  - All tables already have college_id column
+  - All RLS policies already work for any college_id value
+  - Just create a staff_profiles row with college_id = 'pharmacy'
+
+Step 2: Storage — NO changes needed
+  - Path conventions already use {college_id} prefix
+  - pharmacy/ folder created automatically on first upload
+
+Step 3: New Next.js project for pharmacy
+  - Copy the Next.js project structure (or use a template)
+  - Change .env.local: NEXT_PUBLIC_COLLEGE_ID=pharmacy
+  - The same Supabase URL and anon key as education
+
+Step 4: Create pharmacy staff account
+  - Go to Supabase Auth dashboard
+  - Invite pharmacy staff member's email
+  - Insert into staff_profiles: (id=their-uid, college_id='pharmacy', ...)
+
+That's it. Pharmacy staff can now log in, manage their content, and
+they will NEVER see education data. Zero code changes required.
+
+Valid college_id values (confirmed JKKN colleges):
+  education    → Education College      → education.jkkn.ac.in
+  pharmacy     → Pharmacy College       → pharmacy.jkkn.ac.in
+  dental       → Dental College         → dental.jkkn.ac.in
+  nursing      → Nursing College        → nursing.jkkn.ac.in
+  artsscience  → Arts & Science College → artsscience.jkkn.ac.in
+  ahs          → AHS College            → ahs.jkkn.ac.in
+
+
+================================================================================
+PART 18 — SCALE PROOF (How Multiple Rows Work Per College)
+================================================================================
+
+The college_id column is just a tag — not a limit.
+Staff create as many rows as they want.
+
+Feature                           Supported?    Limit?
+──────────────────────────────────────────────────────
+Multiple blogs per college        Yes           No limit
+Multiple events per college       Yes           No limit
+Multiple gallery albums           Yes           No limit
+Multiple photos per album         Yes           No limit
+Multiple notices per college      Yes           No limit
+Multiple faculty per college      Yes           No limit
+Staff adding content independently Yes          No conflict
+One college seeing another's data No            Blocked by RLS
+
+Education staff add 1000 blogs → all get college_id = 'education'
+Pharmacy staff add 500 blogs  → all get college_id = 'pharmacy'
+Same table. No conflict. No cross-contamination.
+
+
+================================================================================
+PART 19 — FULL ARCHITECTURE SUMMARY
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    JKKN Multi-College Architecture                       │
+│                                                                         │
+│  COLLEGE DEPLOYMENTS (separate Next.js projects)                        │
+│  education.jkkn.ac.in    →  NEXT_PUBLIC_COLLEGE_ID=education           │
+│  pharmacy.jkkn.ac.in     →  NEXT_PUBLIC_COLLEGE_ID=pharmacy            │
+│  dental.jkkn.ac.in       →  NEXT_PUBLIC_COLLEGE_ID=dental              │
+│  nursing.jkkn.ac.in      →  NEXT_PUBLIC_COLLEGE_ID=nursing             │
+│  artsscience.jkkn.ac.in  →  NEXT_PUBLIC_COLLEGE_ID=artsscience        │
+│  ahs.jkkn.ac.in          →  NEXT_PUBLIC_COLLEGE_ID=ahs                │
+│                                                                         │
+│  Each college:                                                          │
+│  PUBLIC ROUTES                    ADMIN ROUTES (/admin/*)               │
+│  /events         <── Supabase ──> /admin/events (CRUD)                 │
+│  /blogs          <── Supabase ──> /admin/blogs  (CRUD)                 │
+│  /gallery        <── Supabase ──> /admin/gallery (CRUD)                │
+│  /notices        <── Supabase ──> /admin/notices (CRUD)                │
+│  /faculty        <── Supabase ──> /admin/faculty (CRUD)                │
+│                                                                         │
+│  SHARED SUPABASE PROJECT (one project for all colleges)                 │
+│  ├── Auth           Google OAuth + Email/Password                       │
+│  ├── Database       7 tables, all with college_id column                │
+│  │   ├── staff_profiles  (maps auth user → college)                    │
+│  │   ├── events          (college_id isolates data)                    │
+│  │   ├── blogs           (college_id isolates data)                    │
+│  │   ├── gallery_albums  (college_id isolates data)                    │
+│  │   ├── gallery_images  (isolated via album_id → gallery_albums)      │
+│  │   ├── notices         (college_id isolates data)                    │
+│  │   └── faculty         (college_id isolates data)                    │
+│  ├── Storage        5 buckets, path prefix = college_id                 │
+│  └── RLS            Public read (published) + Staff CRUD (own college)  │
+│                                                                         │
+│  ENFORCEMENT LAYERS                                                     │
+│  1. Middleware     → blocks unauthenticated /admin/* access             │
+│  2. Application   → always filters by NEXT_PUBLIC_COLLEGE_ID           │
+│  3. RLS           → database-level, cannot be bypassed by code         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+PART 20 — KEY DESIGN DECISIONS SUMMARY
+================================================================================
+
+Decision                   Choice                        Reason
+────────────────────────────────────────────────────────────────────────────
+Admin location             /admin route, same project    No separate deployment
+Multi-college strategy     One Supabase project          Simpler to manage
+College isolation          college_id column on tables   Scalable, zero limits
+Auth                       Google OAuth + Email/Password Easy for staff, flexible
+Auth access control        All registered = full CRUD    Requirement
+College-to-user mapping    staff_profiles table          Clean, auditable
+Blog editor                Tiptap rich text editor       Best for non-technical users
+Image upload               react-dropzone → Storage      Clean UX, unlimited uploads
+Gallery structure          Albums + Images (two tables)  Organized, scalable
+Page updates               ISR + on-demand revalidation  Fast + instant on publish
+Faculty page               Dynamic page (not PDF)        Maintainable long-term
+Slug generation            Auto from title via slugify   SEO-friendly URLs
+Storage paths              college_id prefix in path     Easy to identify by college
+Environment config         NEXT_PUBLIC_COLLEGE_ID        Simple per-deployment config
+
+================================================================================
+END OF PLAN — Ready to implement starting from Phase 1
+================================================================================

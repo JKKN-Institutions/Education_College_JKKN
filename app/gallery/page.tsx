@@ -1,69 +1,65 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import Link from 'next/link';
+import { createClient } from '@/lib/supabase/server';
 
-export default function Gallery() {
-  const galleryImages = [
-    {
-      id: 1,
-      src: '/images/gallery-1.jpg',
-      alt: 'Students in traditional dress at college event'
-    },
-    {
-      id: 2,
-      src: '/images/gallery-2.jpg',
-      alt: 'Computer lab with students'
-    },
-    {
-      id: 3,
-      src: '/images/gallery-3.jpg',
-      alt: 'Students working in computer lab'
-    },
-    {
-      id: 4,
-      src: '/images/gallery-4.jpg',
-      alt: 'Classroom with students'
-    },
-    {
-      id: 5,
-      src: '/images/gallery-5.jpg',
-      alt: 'Computer lab session'
-    },
-    {
-      id: 6,
-      src: '/images/gallery-6.jpg',
-      alt: 'Students at college event'
-    }
-  ];
+export const revalidate = 300;
+
+export default async function Gallery() {
+  const supabase = await createClient();
+
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+  const { data: albums } = await supabase
+    .from('gallery_albums')
+    .select('id, name, cover_image_url')
+    .eq('college_id', collegeId)
+    .order('created_at', { ascending: false });
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Gallery Section */}
       <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          {/* Page Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8" style={{ color: '#1e7f4e' }}>
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8"
+            style={{ color: '#1e7f4e' }}
+          >
             GALLERY
           </h1>
 
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-            {galleryImages.map((image) => (
-              <div
-                key={image.id}
-                className="relative w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] overflow-hidden rounded-lg"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
+          {albums && albums.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              {albums.map((album) => (
+                <Link key={album.id} href={`/gallery/${album.id}`}>
+                  <div className="cursor-pointer group">
+                    <h2
+                      className="text-lg sm:text-xl font-bold mb-3"
+                      style={{ color: '#1e7f4e' }}
+                    >
+                      {album.name}
+                    </h2>
+                    <div className="overflow-hidden rounded-xl aspect-[4/3] bg-gray-100">
+                      {album.cover_image_url ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={album.cover_image_url}
+                          alt={album.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400 text-sm">
+                          No cover image
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <p className="text-gray-500">No albums yet.</p>
+          )}
         </div>
       </section>
 

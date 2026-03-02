@@ -1,10 +1,22 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroButtons from '@/components/HeroButtons';
+import AnnouncementBar from '@/components/AnnouncementBar';
 import Link from 'next/link';
 import Image from 'next/image';
+import { createClient } from '@/lib/supabase/server';
 
-export default function Home() {
+export const revalidate = 60;
+
+export default async function Home() {
+  const supabase = await createClient();
+  const { data: notices } = await supabase
+    .from('notices')
+    .select('title')
+    .eq('is_active', true)
+    .order('created_at', { ascending: false })
+    .limit(10);
+  const noticeTexts = notices?.map((n) => n.title) ?? [];
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
       <Header />
@@ -103,6 +115,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Announcement Bar */}
+      <AnnouncementBar notices={noticeTexts.length > 0 ? noticeTexts : undefined} />
 
       {/* Info Cards Section */}
       <section className="relative py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">

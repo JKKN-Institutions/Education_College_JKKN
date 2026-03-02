@@ -16,6 +16,11 @@ const config: Config = {
   			]
   		},
   		colors: {
+  			/* Dynamic brand colors — values come from CSS vars set in app/layout.tsx */
+  			'brand':       'var(--color-primary)',
+  			'brand-dark':  'var(--color-primary-dark)',
+  			'brand-mid':   'var(--color-primary-mid)',
+  			'brand-hover': 'var(--color-primary-hover)',
   			'jkkn-green': '#1e7f4e',
   			'jkkn-orange': '#ff6b35',
   			'jkkn-blue': '#0d5a7d',

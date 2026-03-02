@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { siteConfig } from '@/lib/site-config';
 
 const Header = () => {
   const pathname = usePathname();
@@ -82,8 +83,8 @@ const Header = () => {
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/logo.png"
-                alt="JKKN College of Education"
+                src={siteConfig.logoPath}
+                alt={siteConfig.name}
                 width={250}
                 height={60}
                 priority
@@ -162,7 +163,7 @@ const Header = () => {
           {/* Apply Now Button */}
           <div className="hidden lg:flex lg:items-center">
             <Link
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href={siteConfig.admissionFormUrl}
               className="px-6 py-2.5 font-bold text-white rounded-lg"
               style={{ backgroundColor: '#0B7845' }}
             >
@@ -173,7 +174,7 @@ const Header = () => {
           {/* Mobile Apply Now Button */}
           <div className="flex lg:hidden">
             <Link
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href={siteConfig.admissionFormUrl}
               className="px-4 py-2 font-bold text-white rounded-lg text-sm"
               style={{ backgroundColor: '#0B7845' }}
             >

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { siteConfig } from '@/lib/site-config';
 
 const Footer = () => {
   return (
@@ -8,20 +9,20 @@ const Footer = () => {
           {/* Left Column - College Info & Map */}
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-white">
-              JKKN COLLEGE OF EDUCATION
+              {siteConfig.name.toUpperCase()}
             </h3>
 
             {/* Google Map Embed */}
             <div className="mb-6 rounded-lg overflow-hidden aspect-video sm:aspect-auto">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.495264960904!2d77.72893427452533!3d11.444134546524035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9681da53f49cb%3A0xa6ea1576fd356dc2!2sJKKN%20College%20of%20Education!5e0!3m2!1sen!2sin!4v1770284382576!5m2!1sen!2sin"
+                src={siteConfig.mapsEmbedUrl}
                 width="100%"
                 height="200"
                 style={{ border: 0, minHeight: '150px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="JKKN College Location"
+                title={`${siteConfig.name} Location`}
                 className="w-full h-[150px] sm:h-[200px] lg:h-[250px]"
               />
             </div>
@@ -94,19 +95,19 @@ const Footer = () => {
 
             <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               <div>
-                <a href="tel:+919345855001" className="font-semibold text-sm sm:text-base hover:underline">
-                  Call: +919345855001
+                <a href={`tel:${siteConfig.phone}`} className="font-semibold text-sm sm:text-base hover:underline">
+                  Call: {siteConfig.phone}
                 </a>
               </div>
               <div>
-                <a href="mailto:education@jkkn.ac.in" className="font-semibold text-sm sm:text-base hover:underline break-all">
-                  Email: education@jkkn.ac.in
+                <a href={`mailto:${siteConfig.email}`} className="font-semibold text-sm sm:text-base hover:underline break-all">
+                  Email: {siteConfig.email}
                 </a>
               </div>
               <div>
                 <p className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Address:</p>
                 <p className="text-xs sm:text-sm leading-relaxed">
-                  JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.
+                  {siteConfig.address}
                 </p>
               </div>
             </div>
@@ -177,7 +178,7 @@ const Footer = () => {
         {/* Bottom Copyright Section */}
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/30">
           <p className="text-center text-xs sm:text-sm px-4">
-            © 2025 JKKN College of Education. All rights reserved.
+            © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
         </div>
       </div>
