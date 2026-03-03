@@ -108,7 +108,7 @@ export default function RichTextEditor({
     if (!editor) return;
     const url = window.prompt('Enter URL:');
     if (!url) return;
-    editor.chain().focus().extendMarkToNextWord().setLink({ href: url }).run();
+    editor.chain().focus().setLink({ href: url }).run();
   }, [editor]);
 
 if (!editor) return null;
