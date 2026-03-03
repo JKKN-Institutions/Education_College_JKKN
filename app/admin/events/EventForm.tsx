@@ -41,8 +41,6 @@ export default function EventForm({ event }: EventFormProps) {
   const [slug, setSlug] = useState(event?.slug ?? '');
   const [description, setDescription] = useState(event?.description ?? '');
   const [eventDate, setEventDate] = useState(event?.event_date ?? '');
-  const [eventTime, setEventTime] = useState(event?.event_time ?? '');
-  const [venue, setVenue] = useState(event?.venue ?? '');
   const [imageUrl, setImageUrl] = useState(event?.image_url ?? '');
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState(event?.image_url ?? '');
@@ -83,7 +81,6 @@ export default function EventForm({ event }: EventFormProps) {
     e.preventDefault();
     if (!title.trim()) return toast.error('Title is required.');
     if (!slug.trim()) return toast.error('Slug is required.');
-    if (!eventDate) return toast.error('Event date is required.');
     setSaving(true);
 
     const uploadedUrl = await uploadImage();
@@ -95,9 +92,7 @@ export default function EventForm({ event }: EventFormProps) {
       title: title.trim(),
       slug: slug.trim(),
       description: description.trim(),
-      event_date: eventDate,
-      event_time: eventTime.trim(),
-      venue: venue.trim(),
+      event_date: eventDate || null,
       image_url: uploadedUrl ?? '',
       is_published: publish,
       updated_at: new Date().toISOString(),
@@ -153,38 +148,15 @@ export default function EventForm({ event }: EventFormProps) {
         </div>
       </div>
 
-      {/* Date, Time, Venue */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1.5">Event Date *</label>
-          <input
-            type="date"
-            value={eventDate}
-            onChange={(e) => setEventDate(e.target.value)}
-            required
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1.5">Time</label>
-          <input
-            type="text"
-            value={eventTime}
-            onChange={(e) => setEventTime(e.target.value)}
-            placeholder="10:00 AM"
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1.5">Venue</label>
-          <input
-            type="text"
-            value={venue}
-            onChange={(e) => setVenue(e.target.value)}
-            placeholder="College Auditorium"
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition"
-          />
-        </div>
+      {/* Event Date */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1.5">Event Date</label>
+        <input
+          type="date"
+          value={eventDate}
+          onChange={(e) => setEventDate(e.target.value)}
+          className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition"
+        />
       </div>
 
       {/* Description */}

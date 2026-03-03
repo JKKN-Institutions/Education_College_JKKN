@@ -15,7 +15,7 @@ export default async function AdminFaculty() {
     .order('name', { ascending: true });
 
   return (
-    <div className="p-6 lg:p-8 max-w-6xl">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-6xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>

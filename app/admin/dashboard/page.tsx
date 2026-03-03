@@ -86,7 +86,7 @@ export default async function AdminDashboard() {
   }
 
   return (
-    <div className="p-6 lg:p-8 max-w-6xl">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-6xl">
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
@@ -99,7 +99,7 @@ export default async function AdminDashboard() {
           <Link
             key={label}
             href={href}
-            className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+            className="bg-white rounded-2xl p-3 sm:p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
           >
             <div className="flex items-start justify-between mb-3">
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${color}`}>
@@ -107,7 +107,7 @@ export default async function AdminDashboard() {
               </div>
               <ExternalLink className="w-4 h-4 text-gray-300" />
             </div>
-            <p className="text-3xl font-bold text-gray-900">{total}</p>
+            <p className="text-2xl sm:text-3xl font-bold text-gray-900">{total}</p>
             <p className="text-sm font-medium text-gray-600 mt-0.5">{label}</p>
             <p className="text-xs text-gray-400 mt-1">{sub}</p>
           </Link>
@@ -115,7 +115,7 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Quick Actions */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 mb-6">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5 mb-6">
         <h2 className="font-semibold text-gray-800 mb-4">Quick Actions</h2>
         <div className="flex flex-wrap gap-3">
           <Link
@@ -159,7 +159,7 @@ export default async function AdminDashboard() {
       {/* Recent content */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Recent Blogs */}
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-gray-800">Recent Blog Posts</h2>
             <Link href="/admin/blogs" className="text-xs text-[#006837] font-medium hover:underline">
@@ -201,7 +201,7 @@ export default async function AdminDashboard() {
         </div>
 
         {/* Recent Notices */}
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-gray-800">Recent Notices</h2>
             <Link href="/admin/notices" className="text-xs text-[#006837] font-medium hover:underline">

@@ -53,7 +53,10 @@ export default async function AdminLayout({ children }: { children: React.ReactN
             canSwitchCollege={isSuperAdmin || colleges.length > 0}
           />
         )}
-        <main className={`flex-1 ${user ? 'lg:ml-64' : ''} min-h-screen`}>{children}</main>
+        <main className={`flex-1 ${user ? 'lg:ml-64' : ''} min-h-screen`}>
+          {user && <div className="h-14 lg:hidden" aria-hidden="true" />}
+          {children}
+        </main>
       </div>
     </AdminCollegeProvider>
   );

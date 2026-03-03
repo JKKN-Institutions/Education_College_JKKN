@@ -23,9 +23,9 @@ export default async function AdminBlogsPage() {
   ]);
 
   return (
-    <div className="p-6 lg:p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       {/* Page Header */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-6">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-6 mb-6">
         <div className="flex items-start gap-4 mb-5">
           <div className="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
             <FileText className="w-5 h-5 text-[#006837]" />
