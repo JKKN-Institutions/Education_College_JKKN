@@ -88,7 +88,7 @@ export default function RichTextEditor({
     const current = editor.getHTML();
     if (value !== current) {
       isUpdatingRef.current = true;
-      editor.commands.setContent(value, false);
+      editor.commands.setContent(value, { emitUpdate: false });
       isUpdatingRef.current = false;
     }
   }, [editor, value]);
