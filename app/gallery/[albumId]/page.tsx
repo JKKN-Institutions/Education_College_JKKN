@@ -6,14 +6,15 @@ import { notFound } from 'next/navigation';
 
 export const revalidate = 300;
 
-export default async function AlbumPage({ params }: { params: { albumId: string } }) {
+export default async function AlbumPage({ params }: { params: Promise<{ albumId: string }> }) {
+  const { albumId } = await params;
   const supabase = await createClient();
 
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
   const { data: album } = await supabase
     .from('gallery_albums')
     .select('id, name')
-    .eq('id', params.albumId)
+    .eq('id', albumId)
     .eq('college_id', collegeId)
     .single();
 
@@ -22,7 +23,7 @@ export default async function AlbumPage({ params }: { params: { albumId: string 
   const { data: images } = await supabase
     .from('gallery_images')
     .select('id, image_url, caption')
-    .eq('album_id', params.albumId)
+    .eq('album_id', albumId)
     .order('display_order', { ascending: true });
 
   return (
