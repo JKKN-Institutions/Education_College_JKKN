@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
+import { createClient as createStaticClient } from '@/lib/supabase/client';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { CalendarDays, MapPin, Clock, ArrowLeft } from 'lucide-react';
@@ -6,7 +7,7 @@ import { CalendarDays, MapPin, Clock, ArrowLeft } from 'lucide-react';
 export const revalidate = 300;
 
 export async function generateStaticParams() {
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const { data } = await supabase
     .from('events')
     .select('slug')

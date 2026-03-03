@@ -113,8 +113,8 @@ export default function RichTextEditor({
 
 if (!editor) return null;
 
-  const isActive = (name: string, attrs?: Record<string, unknown>) =>
-    editor.isActive(name, attrs);
+  const isActive = (name: string | Record<string, unknown>, attrs?: Record<string, unknown>) =>
+    editor.isActive(name as string, attrs);
 
   return (
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
