@@ -24,7 +24,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         .single();
 
       isSuperAdmin = profile?.role === 'super_admin';
-      const canSwitchCollege = isSuperAdmin || profile?.role === 'seo';
+      const canSwitchCollege = ['seo', 'admin', 'super_admin'].includes(profile?.role ?? '');
 
       if (canSwitchCollege) {
         const { data } = await supabase

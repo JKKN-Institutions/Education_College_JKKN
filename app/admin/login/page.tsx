@@ -19,11 +19,25 @@ export default function AdminLogin() {
 
     try {
       const supabase = createClient();
-      const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
+      const { data: authData, error: authError } = await supabase.auth.signInWithPassword({ email, password });
       if (authError) {
         setError(authError.message);
       } else {
-        window.location.href = '/admin/dashboard';
+        const { data: profile } = await supabase
+          .from('staff_profiles')
+          .select('college_id')
+          .eq('id', authData.user.id)
+          .single();
+
+        if (profile?.college_id !== siteConfig.id) {
+          await supabase.auth.signOut();
+          setError('Access denied. You are not authorized to access this portal.');
+        } else {
+          // Reset any stale college switcher cookie so the admin always
+          // starts on this site's own college.
+          document.cookie = `admin_college_id=${siteConfig.id}; path=/admin; max-age=${60 * 60 * 24 * 7}; samesite=lax`;
+          window.location.href = '/admin/dashboard';
+        }
       }
     } catch {
       setError('Network error — please check your connection and try again.');

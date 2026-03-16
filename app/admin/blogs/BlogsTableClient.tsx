@@ -84,6 +84,7 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
   const [statusFilter, setStatusFilter] = useState('all');
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [menuPos, setMenuPos] = useState<{ top: number; right: number } | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null);
@@ -306,7 +307,16 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                     <td className="px-4 py-4">
                       <div className="relative">
                         <button
-                          onClick={() => setOpenMenu(openMenu === blog.id ? null : blog.id)}
+                          onClick={(e) => {
+                            if (openMenu === blog.id) {
+                              setOpenMenu(null);
+                              setMenuPos(null);
+                            } else {
+                              const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+                              setMenuPos({ top: rect.bottom + 4, right: window.innerWidth - rect.right });
+                              setOpenMenu(blog.id);
+                            }
+                          }}
                           className="p-1.5 rounded-lg hover:bg-gray-100 transition"
                         >
                           {deletingId === blog.id ? (
@@ -316,17 +326,20 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                           )}
                         </button>
 
-                        {openMenu === blog.id && (
+                        {openMenu === blog.id && menuPos && (
                           <>
                             <div
                               className="fixed inset-0 z-10"
-                              onClick={() => setOpenMenu(null)}
+                              onClick={() => { setOpenMenu(null); setMenuPos(null); }}
                             />
-                            <div className="absolute right-0 top-8 z-20 bg-white rounded-xl border border-gray-100 shadow-lg py-1 min-w-[140px]">
+                            <div
+                              className="fixed z-20 bg-white rounded-xl border border-gray-100 shadow-lg py-1 min-w-[140px]"
+                              style={{ top: menuPos.top, right: menuPos.right }}
+                            >
                               <Link
                                 href={`/admin/blogs/${blog.id}`}
                                 className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                                onClick={() => setOpenMenu(null)}
+                                onClick={() => { setOpenMenu(null); setMenuPos(null); }}
                               >
                                 <Pencil className="w-3.5 h-3.5" />
                                 Edit
@@ -336,7 +349,7 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                                   href={`/blog/campus/${blog.slug}`}
                                   target="_blank"
                                   className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                                  onClick={() => setOpenMenu(null)}
+                                  onClick={() => { setOpenMenu(null); setMenuPos(null); }}
                                 >
                                   <ExternalLink className="w-3.5 h-3.5" />
                                   View Live
@@ -344,7 +357,7 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
                               )}
                               <hr className="my-1 border-gray-100" />
                               <button
-                                onClick={() => { setOpenMenu(null); setPendingDeleteId(blog.id); }}
+                                onClick={() => { setOpenMenu(null); setMenuPos(null); setPendingDeleteId(blog.id); }}
                                 className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-red-600 hover:bg-red-50"
                               >
                                 <Trash2 className="w-3.5 h-3.5" />

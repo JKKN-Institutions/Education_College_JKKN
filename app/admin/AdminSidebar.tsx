@@ -62,6 +62,7 @@ export default function AdminSidebar({
   const [mobileOpen, setMobileOpen] = useState(false);
   const [collegeSwitcherOpen, setCollegeSwitcherOpen] = useState(false);
   const [switching, setSwitching] = useState(false);
+  const [showSignOutModal, setShowSignOutModal] = useState(false);
 
   const isBlogActive = pathname === '/admin/blogs' || pathname.startsWith('/admin/blogs/');
   const [blogOpen, setBlogOpen] = useState(isBlogActive);
@@ -258,7 +259,7 @@ export default function AdminSidebar({
           </div>
         </div>
         <button
-          onClick={handleLogout}
+          onClick={() => setShowSignOutModal(true)}
           className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-white/70 hover:bg-red-500/20 hover:text-red-300 transition-all"
         >
           <LogOut size={18} />
@@ -299,6 +300,30 @@ export default function AdminSidebar({
       <div className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#002309] flex-col z-30">
         <SidebarContent />
       </div>
+
+      {/* Sign out confirmation modal */}
+      {showSignOutModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
+          <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
+            <h2 className="text-base font-semibold text-gray-800 mb-1">Sign out</h2>
+            <p className="text-sm text-gray-500 mb-6">Are you sure you want to sign out?</p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowSignOutModal(false)}
+                className="flex-1 px-4 py-2.5 rounded-xl text-sm font-medium border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
+              >
+                No
+              </button>
+              <button
+                onClick={handleLogout}
+                className="flex-1 px-4 py-2.5 rounded-xl text-sm font-medium bg-red-500 hover:bg-red-600 text-white transition"
+              >
+                Yes, sign out
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
