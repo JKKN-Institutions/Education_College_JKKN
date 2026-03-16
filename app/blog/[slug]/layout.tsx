@@ -6,7 +6,6 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const supabase = await createClient();
 
   // This is the static blog page (not campus/[slug])
   // The slug here maps to a hard-coded static blog post
