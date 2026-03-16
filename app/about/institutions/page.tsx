@@ -1,10 +1,24 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  'JKKN Institutions',
+  'Explore all JKKN Educational Institutions — 10 institutions including colleges and schools on NH-544, Kumarapalayam, Namakkal.',
+  '/about/institutions',
+  { keywords: ['JKKN institutions', 'JKKN colleges', 'JKKN campus Kumarapalayam'] }
+);
 
 export default function OurInstitutions() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about/vision-mission' },
+        { name: 'JKKN Institutions', href: '/about/institutions' },
+      ]} />
       <Header />
 
       {/* Hero Section with Title */}

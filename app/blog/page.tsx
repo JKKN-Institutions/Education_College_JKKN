@@ -2,8 +2,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 60;
+
+export const metadata = seoMetadata(
+  'Blog',
+  'Latest articles, insights, and news from JKKN College of Education — teacher education, B.Ed tips, and campus updates.',
+  '/blog',
+  { keywords: ['JKKN blog', 'education blog', 'B.Ed articles'] }
+);
 
 export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
@@ -29,6 +38,10 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Blog', href: '/blog' },
+      ]} />
       <Header />
 
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
@@ -36,9 +49,9 @@ export default async function BlogPage() {
         <section className="bg-[#FBFBEE] border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-10">
           <div className="max-w-7xl mx-auto">
             <div className="mb-10">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309]">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309]">
                 Latest Articles
-              </h2>
+              </h1>
               <p className="text-gray-500 text-sm mt-1.5">
                 Expert insights on teacher education and careers
               </p>

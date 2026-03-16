@@ -2,8 +2,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 300;
+
+export const metadata = seoMetadata(
+  'Gallery',
+  'Photo gallery of JKKN College of Education — campus life, events, facilities, and student activities in Kumarapalayam.',
+  '/gallery',
+  { keywords: ['JKKN gallery', 'college photos', 'campus gallery'] }
+);
 
 export default async function Gallery() {
   const supabase = await createClient();
@@ -17,6 +26,10 @@ export default async function Gallery() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Gallery', href: '/gallery' },
+      ]} />
       <Header />
 
       <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">

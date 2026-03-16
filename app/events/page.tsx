@@ -1,8 +1,17 @@
 import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
 import { CalendarDays, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 60;
+
+export const metadata = seoMetadata(
+  'Events',
+  'Upcoming and past events at JKKN College of Education — seminars, workshops, cultural events, and academic functions.',
+  '/events',
+  { keywords: ['JKKN events', 'college events Namakkal', 'education events'] }
+);
 
 export default async function EventsPage() {
   const supabase = await createClient();
@@ -79,6 +88,10 @@ export default async function EventsPage() {
 
   return (
     <main className="min-h-screen bg-[#FBFBEE]">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Events', href: '/events' },
+      ]} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#002309] to-[#006837] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">

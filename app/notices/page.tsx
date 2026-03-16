@@ -2,8 +2,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { createClient } from '@/lib/supabase/server';
 import { Bell, Download, Calendar, AlertCircle } from 'lucide-react';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 30;
+
+export const metadata = seoMetadata(
+  'Notices',
+  'Official notices and announcements from JKKN College of Education — exam schedules, holidays, and academic updates.',
+  '/notices',
+  { keywords: ['JKKN notices', 'college announcements', 'exam notices'] }
+);
 
 const typeConfig: Record<string, { label: string; color: string; bg: string }> = {
   exam: { label: 'Exam', color: 'text-red-700', bg: 'bg-red-50' },
@@ -35,6 +44,10 @@ export default async function NoticesPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Notices', href: '/notices' },
+      ]} />
       <Header />
 
       <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">

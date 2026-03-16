@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Classrooms',
+  'Smart classrooms with ICT-enabled teaching facilities at JKKN College of Education, Kumarapalayam.',
+  '/facilities/class-room',
+  { keywords: ['JKKN classrooms', 'smart classroom', 'ICT enabled classroom'] }
+);
 
 export default function ClassRoom() {
   const classroomFeatures = [

@@ -1,10 +1,46 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 300;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ albumId: string }>;
+}): Promise<Metadata> {
+  const { albumId } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
+  const { data: album } = await supabase
+    .from('gallery_albums')
+    .select('name, description')
+    .eq('id', albumId)
+    .eq('college_id', collegeId)
+    .single();
+
+  if (!album) return {};
+
+  const description = album.description
+    ? album.description.slice(0, 155)
+    : `${album.name} — photo gallery from JKKN College of Education, Kumarapalayam.`;
+
+  return {
+    title: album.name,
+    description,
+    alternates: { canonical: `https://edu.jkkn.ac.in/gallery/${albumId}` },
+    openGraph: {
+      title: album.name,
+      description,
+      url: `https://edu.jkkn.ac.in/gallery/${albumId}`,
+    },
+  };
+}
 
 export default async function AlbumPage({ params }: { params: Promise<{ albumId: string }> }) {
   const { albumId } = await params;
@@ -28,6 +64,11 @@ export default async function AlbumPage({ params }: { params: Promise<{ albumId:
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Gallery', href: '/gallery' },
+        { name: album.name, href: `/gallery/${albumId}` },
+      ]} />
       <Header />
 
       <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">

@@ -1,9 +1,23 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  'Vision & Mission',
+  'Vision and mission of JKKN College of Education — shaping future educators with NCTE-approved B.Ed programme in Namakkal, Tamil Nadu.',
+  '/about/vision-mission',
+  { keywords: ['JKKN vision mission', 'B.Ed college mission', 'education college Namakkal'] }
+);
 
 export default function VisionMission() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about/vision-mission' },
+        { name: 'Vision & Mission', href: '/about/vision-mission' },
+      ]} />
       <Header />
 
       {/* Vision and Mission Section */}

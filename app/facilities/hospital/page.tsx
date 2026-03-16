@@ -1,5 +1,13 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
+export const metadata = seoMetadata(
+  'Hospital',
+  'On-campus hospital facility at JKKN for student and staff healthcare — part of JKKN multi-specialty teaching hospital.',
+  '/facilities/hospital',
+  { keywords: ['JKKN hospital', 'campus hospital', 'student healthcare'] }
+);
 
 export default function Hospital() {
   return (

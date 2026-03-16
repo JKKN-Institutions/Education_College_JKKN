@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Library',
+  'Central library at JKKN College of Education with 15,000+ books, journals, and digital resources for B.Ed students in Namakkal.',
+  '/facilities/library',
+  { keywords: ['JKKN library', 'college library Namakkal', 'B.Ed library facilities'] }
+);
 
 export default function Library() {
   const learningResources = [

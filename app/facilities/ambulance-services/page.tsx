@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Ambulance Services',
+  'Round-the-clock ambulance service at JKKN campus for emergency medical support to students and staff.',
+  '/facilities/ambulance-services',
+  { keywords: ['JKKN ambulance', 'campus ambulance', 'emergency medical service'] }
+);
 
 export default function AmbulanceServices() {
   return (

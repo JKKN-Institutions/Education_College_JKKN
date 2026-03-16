@@ -1,10 +1,24 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  'Management',
+  'Management committee of JKKN College of Education — leadership guiding NCTE-approved teacher education in Namakkal, Tamil Nadu.',
+  '/about/management',
+  { keywords: ['JKKN management', 'college management committee', 'JKKN leadership'] }
+);
 
 export default function OurManagement() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about/vision-mission' },
+        { name: 'Management', href: '/about/management' },
+      ]} />
       <Header />
 
       {/* Our Management Section */}

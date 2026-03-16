@@ -1,10 +1,24 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  "Principal's Message",
+  "Message from the Principal of JKKN College of Education, Dr. KM Ranjendiran — B.Ed college in Kumarapalayam, Namakkal.",
+  '/about/principal-message',
+  { keywords: ['JKKN principal', 'principal message', 'Dr KM Ranjendiran'] }
+);
 
 export default function PrincipalMessage() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about/vision-mission' },
+        { name: "Principal's Message", href: '/about/principal-message' },
+      ]} />
       <Header />
 
       {/* Principal Message Section */}
@@ -26,20 +40,15 @@ export default function PrincipalMessage() {
           {/* Principal Name and Title */}
           <div className="text-center mb-6 sm:mb-8">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style={{ color: '#1e7f4e' }}>
-              Dr.KM.Ranjendiran
+              Principal&apos;s Message
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2" style={{ color: '#1e7f4e' }}>
-              Principal
-            </h2>
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-6" style={{ color: '#1e7f4e' }}>
-              JKKN College of Education
-            </h3>
+            <p className="text-xl sm:text-2xl md:text-3xl font-bold mb-2" style={{ color: '#1e7f4e' }}>
+              Dr.KM.Ranjendiran
+            </p>
+            <p className="text-lg sm:text-xl md:text-2xl font-bold mb-6" style={{ color: '#1e7f4e' }}>
+              Principal, JKKN College of Education
+            </p>
           </div>
-
-          {/* Principal's Message Heading */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8" style={{ color: '#1e7f4e' }}>
-            Principal's Message
-          </h2>
 
           {/* Message Content */}
           <div className="space-y-6 text-justify">

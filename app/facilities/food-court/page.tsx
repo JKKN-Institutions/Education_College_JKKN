@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Food Court',
+  'On-campus food court at JKKN College of Education offering hygienic, affordable meals for students and staff.',
+  '/facilities/food-court',
+  { keywords: ['JKKN food court', 'college canteen', 'campus dining'] }
+);
 
 export default function FoodCourt() {
   return (

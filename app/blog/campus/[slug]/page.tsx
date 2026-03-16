@@ -1,11 +1,53 @@
+import type { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 300;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
+  const { data: post } = await supabase
+    .from('blogs')
+    .select('title, excerpt, cover_image_url')
+    .eq('slug', slug)
+    .eq('college_id', collegeId)
+    .eq('is_published', true)
+    .single();
+
+  if (!post) return {};
+
+  const description = post.excerpt
+    ? post.excerpt.slice(0, 155)
+    : `${post.title} — JKKN College of Education blog.`;
+
+  return {
+    title: post.title,
+    description,
+    alternates: { canonical: `https://edu.jkkn.ac.in/blog/campus/${slug}` },
+    openGraph: {
+      title: post.title,
+      description,
+      type: 'article',
+      url: `https://edu.jkkn.ac.in/blog/campus/${slug}`,
+      ...(post.cover_image_url && {
+        images: [{ url: post.cover_image_url, alt: post.title }],
+      }),
+    },
+  };
+}
 
 /** Extract h2/h3 headings from HTML and inject id attributes for TOC */
 function processContent(
@@ -123,6 +165,32 @@ export default async function CampusBlogPost({
 
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          ...(post.excerpt && { description: post.excerpt }),
+          ...(post.cover_image_url && { image: post.cover_image_url }),
+          datePublished: post.published_at ?? post.created_at,
+          ...(post.updated_at && { dateModified: post.updated_at }),
+          author: {
+            '@type': 'Person',
+            name: post.author_name ?? 'JKKN College of Education',
+          },
+          publisher: {
+            '@type': 'EducationalOrganization',
+            name: 'JKKN College of Education',
+            url: 'https://edu.jkkn.ac.in',
+          },
+          mainEntityOfPage: `https://edu.jkkn.ac.in/blog/campus/${slug}`,
+        }}
+      />
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Blog', href: '/blog' },
+        { name: post.title, href: `/blog/campus/${slug}` },
+      ]} />
       <Header />
       <CampusBlogContent
         post={post}

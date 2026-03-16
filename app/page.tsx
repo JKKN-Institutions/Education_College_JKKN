@@ -5,8 +5,10 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
+import { JsonLd } from '@/components/JsonLd';
 
 export const revalidate = 60;
+
 
 export default async function Home() {
   const supabase = await createClient();
@@ -19,6 +21,68 @@ export default async function Home() {
   const noticeTexts = notices?.map((n) => n.title) ?? [];
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'EducationalOrganization',
+          name: 'JKKN College of Education',
+          url: 'https://edu.jkkn.ac.in',
+          logo: 'https://edu.jkkn.ac.in/images/logo.png',
+          description:
+            'NCTE-approved, TNTEU-affiliated B.Ed college offering 14 specializations in Kumarapalayam, Namakkal, Tamil Nadu.',
+          telephone: '+919345855001',
+          email: 'education@jkkn.ac.in',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'NH-544 (Salem to Coimbatore Highway), Kumarapalayam',
+            addressLocality: 'Namakkal',
+            addressRegion: 'Tamil Nadu',
+            postalCode: '638183',
+            addressCountry: 'IN',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 11.4441,
+            longitude: 77.7315,
+          },
+          parentOrganization: {
+            '@type': 'Organization',
+            name: 'JKKN Educational Institutions',
+            url: 'https://jkkn.ac.in',
+          },
+          accreditation: [
+            'NCTE (National Council for Teacher Education) Approved',
+            'NAAC Accredited',
+          ],
+          affiliation: {
+            '@type': 'Organization',
+            name: 'Tamil Nadu Teachers Education University (TNTEU)',
+          },
+          hasOfferingCatalog: {
+            '@type': 'OfferingCatalog',
+            name: 'B.Ed Programmes',
+            itemListElement: [
+              { '@type': 'Course', name: 'B.Ed Tamil' },
+              { '@type': 'Course', name: 'B.Ed English' },
+              { '@type': 'Course', name: 'B.Ed Mathematics' },
+              { '@type': 'Course', name: 'B.Ed Physics' },
+              { '@type': 'Course', name: 'B.Ed Chemistry' },
+              { '@type': 'Course', name: 'B.Ed Botany' },
+              { '@type': 'Course', name: 'B.Ed Zoology' },
+              { '@type': 'Course', name: 'B.Ed History' },
+              { '@type': 'Course', name: 'B.Ed Economics' },
+              { '@type': 'Course', name: 'B.Ed Commerce' },
+              { '@type': 'Course', name: 'B.Ed Computer Science' },
+              { '@type': 'Course', name: 'B.Ed Political Science' },
+              { '@type': 'Course', name: 'B.Ed Social Science' },
+              { '@type': 'Course', name: 'B.Ed Microbiology' },
+            ],
+          },
+          sameAs: [
+            'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
+          ],
+        }}
+      />
       <Header />
 
       {/* Hero Section */}

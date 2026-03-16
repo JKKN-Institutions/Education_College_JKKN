@@ -1,14 +1,30 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  'Privacy Policy',
+  'Privacy policy of JKKN College of Education — how we collect, use, and protect your personal information.',
+  '/others/privacy-policy'
+);
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Privacy Policy', href: '/others/privacy-policy' },
+      ]} />
       <Header />
 
       {/* Privacy Policy Section */}
       <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8" style={{ color: '#2d3748' }}>
+            Privacy Policy
+          </h1>
+
           {/* Opening Paragraph */}
           <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8" style={{ color: '#4a5568' }}>
             At JKKN College of Education, we value your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and disclose information about our students, staff, and other stakeholders.

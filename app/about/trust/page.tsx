@@ -1,10 +1,24 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  'Trust',
+  'Learn about the trust behind JKKN College of Education — JKKN Educational Institutions, established 1952, Namakkal, Tamil Nadu.',
+  '/about/trust',
+  { keywords: ['JKKN trust', 'JKKN Educational Institutions', 'education trust Namakkal'] }
+);
 
 export default function OurTrust() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about/vision-mission' },
+        { name: 'Trust', href: '/about/trust' },
+      ]} />
       <Header />
 
       {/* Our Trust Section */}

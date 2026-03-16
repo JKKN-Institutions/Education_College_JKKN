@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Bank & Post Office',
+  'On-campus bank and post office at JKKN Educational Institutions for convenient student services.',
+  '/facilities/bank-post-office',
+  { keywords: ['campus bank', 'campus post office', 'JKKN facilities'] }
+);
 
 export default function BankPostOffice() {
   return (

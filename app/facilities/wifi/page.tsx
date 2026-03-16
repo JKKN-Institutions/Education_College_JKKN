@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Wi-Fi Campus',
+  'Wi-Fi enabled campus at JKKN College of Education — high-speed internet access for students and faculty.',
+  '/facilities/wifi',
+  { keywords: ['JKKN wifi', 'wifi campus', 'internet facility college'] }
+);
 
 export default function WiFi() {
   const wifiFeatures = [

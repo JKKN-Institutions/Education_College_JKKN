@@ -1,10 +1,23 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+
+export const metadata = seoMetadata(
+  'Contact Us',
+  'Contact JKKN College of Education — phone, email, address, and campus map. Located on NH-544, Kumarapalayam, Namakkal, Tamil Nadu.',
+  '/contact',
+  { keywords: ['JKKN contact', 'JKKN College of Education address', 'JKKN phone number'] }
+);
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Contact Us', href: '/contact' },
+      ]} />
       <Header />
 
       {/* Contact Section */}

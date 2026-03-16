@@ -1,10 +1,50 @@
+import type { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
 import { createClient as createStaticClient } from '@/lib/supabase/client';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { CalendarDays, MapPin, Clock, ArrowLeft } from 'lucide-react';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 300;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education';
+
+  const { data: event } = await supabase
+    .from('events')
+    .select('title, description')
+    .eq('slug', slug)
+    .eq('college_id', collegeId)
+    .eq('is_published', true)
+    .single();
+
+  if (!event) return {};
+
+  const title = event.title;
+  const description = event.description
+    ? event.description.slice(0, 155)
+    : `${event.title} — event at JKKN College of Education, Kumarapalayam, Namakkal.`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: `https://edu.jkkn.ac.in/events/${slug}` },
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      url: `https://edu.jkkn.ac.in/events/${slug}`,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const supabase = createStaticClient();
@@ -41,6 +81,38 @@ export default async function EventDetail({ params }: { params: Promise<{ slug: 
 
   return (
     <main className="min-h-screen bg-[#FBFBEE]">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Event',
+          name: event.title,
+          startDate: event.event_date,
+          ...(event.venue && {
+            location: {
+              '@type': 'Place',
+              name: event.venue,
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kumarapalayam',
+                addressRegion: 'Tamil Nadu',
+                addressCountry: 'IN',
+              },
+            },
+          }),
+          organizer: {
+            '@type': 'EducationalOrganization',
+            name: 'JKKN College of Education',
+            url: 'https://edu.jkkn.ac.in',
+          },
+          ...(event.description && { description: event.description.slice(0, 300) }),
+          ...(event.image_url && { image: event.image_url }),
+        }}
+      />
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Events', href: '/events' },
+        { name: event.title, href: `/events/${slug}` },
+      ]} />
       {/* Back nav */}
       <div className="max-w-4xl mx-auto px-4 pt-8">
         <Link

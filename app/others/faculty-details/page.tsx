@@ -1,7 +1,16 @@
 import { createClient } from '@/lib/supabase/server';
 import { UserCircle2, Mail, BookOpen, Briefcase } from 'lucide-react';
+import { seoMetadata } from '@/lib/seo-metadata';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 3600;
+
+export const metadata = seoMetadata(
+  'Faculty',
+  'Meet the experienced faculty of JKKN College of Education — qualified professors guiding future teachers.',
+  '/others/faculty-details',
+  { keywords: ['JKKN faculty', 'B.Ed professors', 'education college teachers'] }
+);
 
 export default async function FacultyDetails() {
   const supabase = await createClient();
@@ -36,6 +45,10 @@ export default async function FacultyDetails() {
 
   return (
     <main className="min-h-screen bg-[#FBFBEE]">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Faculty', href: '/others/faculty-details' },
+      ]} />
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#002309] to-[#006837] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">

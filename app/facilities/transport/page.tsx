@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Transport',
+  'College transport service covering Salem, Erode, Namakkal, and Tiruchengode routes for JKKN College of Education students.',
+  '/facilities/transport',
+  { keywords: ['JKKN transport', 'college bus service', 'college transport Namakkal'] }
+);
 
 export default function Transport() {
   return (

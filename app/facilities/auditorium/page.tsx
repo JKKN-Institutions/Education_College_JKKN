@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Auditorium',
+  'Modern auditorium at JKKN College of Education for seminars, cultural events, and academic functions in Kumarapalayam.',
+  '/facilities/auditorium',
+  { keywords: ['JKKN auditorium', 'college auditorium', 'event hall'] }
+);
 
 export default function Auditorium() {
   const auditoriumFeatures = [

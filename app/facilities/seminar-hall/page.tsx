@@ -1,6 +1,14 @@
+import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
+export const metadata = seoMetadata(
+  'Seminar Hall',
+  'Well-equipped seminar halls at JKKN College of Education for academic presentations and workshops.',
+  '/facilities/seminar-hall',
+  { keywords: ['JKKN seminar hall', 'college seminar hall', 'academic workshops'] }
+);
 
 export default function SeminarHall() {
   return (
