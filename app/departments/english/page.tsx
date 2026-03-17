@@ -338,7 +338,7 @@ export default function EnglishDepartment() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 70+ Years Legacy */}
+            {/* 55+ Years Legacy */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl border-l-4 transition-transform hover:scale-105"
                  style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mb-6 rounded-lg flex items-center justify-center"
@@ -348,10 +348,10 @@ export default function EnglishDepartment() {
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                70+ Years Legacy
+                55+ Years Legacy
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Benefit from over seven decades of educational excellence and progressive teaching methodologies established by JKKN Institutions.
+                Benefit from over five decades of educational excellence and progressive teaching methodologies established by JKKN Institutions.
               </p>
             </div>
 

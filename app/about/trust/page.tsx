@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Trust',
-  'Learn about the trust behind JKKN College of Education — JKKN Educational Institutions, established 1952, Namakkal, Tamil Nadu.',
+  'Learn about the trust behind JKKN College of Education — J.K.K. Rangammal Charitable Trust, established 1969, Namakkal, Tamil Nadu.',
   '/about/trust',
   { keywords: ['JKKN trust', 'JKKN Educational Institutions', 'education trust Namakkal'] }
 );

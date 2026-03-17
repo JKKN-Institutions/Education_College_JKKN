@@ -78,6 +78,7 @@ export default async function Home() {
               { '@type': 'Course', name: 'B.Ed Microbiology' },
             ],
           },
+          foundingDate: '2016',
           sameAs: [
             'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],

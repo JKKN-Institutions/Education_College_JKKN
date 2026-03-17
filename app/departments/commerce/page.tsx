@@ -690,11 +690,11 @@ export default function CommerceDepartment() {
                   <span className="text-xl font-bold">1</span>
                 </div>
                 <h3 className="text-2xl font-bold" style={{ color: '#002309' }}>
-                  70+ Years of Educational Excellence
+                  55+ Years of Educational Excellence
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1954.
+                Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1969.
               </p>
             </div>
 

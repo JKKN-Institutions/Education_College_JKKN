@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export async function generateMetadata({
   params,
@@ -28,6 +30,48 @@ export async function generateMetadata({
   };
 }
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+export default async function Layout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const title = slug
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+
+  return (
+    <>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: title,
+          description: `${title} — read more on the JKKN College of Education blog.`,
+          author: {
+            '@type': 'Organization',
+            name: 'JKKN College of Education',
+            url: 'https://edu.jkkn.ac.in',
+          },
+          publisher: {
+            '@type': 'EducationalOrganization',
+            name: 'JKKN College of Education',
+            url: 'https://edu.jkkn.ac.in',
+          },
+          mainEntityOfPage: `https://edu.jkkn.ac.in/blog/${slug}`,
+        }}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog', href: '/blog' },
+          { name: title, href: `/blog/${slug}` },
+        ]}
+      />
+      {children}
+    </>
+  );
 }

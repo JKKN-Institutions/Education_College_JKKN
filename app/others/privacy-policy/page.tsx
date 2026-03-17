@@ -227,7 +227,7 @@ export default function PrivacyPolicy() {
               <strong>Email:</strong> admin@jkkn.ac.in
             </p>
             <p className="text-sm sm:text-base lg:text-lg">
-              <strong>Address:</strong> JKKN Educational Institutions, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
+              <strong>Address:</strong> JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.
             </p>
           </div>
 

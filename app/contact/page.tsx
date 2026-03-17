@@ -97,7 +97,7 @@ export default function Contact() {
                       Address
                     </h3>
                     <p className="text-sm sm:text-base md:text-lg leading-relaxed" style={{ color: '#4a5568' }}>
-                      JKKN College of Education, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
+                      JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.
                     </p>
                   </div>
                 </div>

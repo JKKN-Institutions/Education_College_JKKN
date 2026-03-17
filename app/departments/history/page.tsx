@@ -786,7 +786,7 @@ export default function HistoryDepartment() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 70+ Years of Educational Excellence */}
+            {/* 55+ Years of Educational Excellence */}
             <div className="p-8 rounded-xl border-l-4" style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
@@ -795,10 +795,10 @@ export default function HistoryDepartment() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    70+ Years of Educational Excellence
+                    55+ Years of Educational Excellence
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1954.
+                    Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1969.
                   </p>
                 </div>
               </div>
