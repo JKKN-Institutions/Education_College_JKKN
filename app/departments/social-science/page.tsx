@@ -96,7 +96,7 @@ export default function SocialScienceDepartment() {
 
                 {/* Years Legacy */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>70+</div>
+                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>55+</div>
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>YEARS LEGACY</div>
                 </div>
               </div>

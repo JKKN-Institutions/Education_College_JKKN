@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { JsonLd } from '@/components/JsonLd';
 
 export const metadata = seoMetadata(
   'Management',
@@ -54,7 +55,7 @@ export default function OurManagement() {
 
               {/* Description */}
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-justify" style={{ color: '#5a6c7d' }}>
-                Happy to hold the monumental responsibility as Chairperson of "JKKN Institutions." I am proud to say that we have made exceptional progress and have achieved the status of one of the most prestigious engineering colleges. "Leadership and Excellence" is our motto, a fact that is evident from our state-of-the-art infrastructure and the quality of each individual.
+                Happy to hold the monumental responsibility as Chairperson of "JKKN Institutions." I am proud to say that we have made exceptional progress and have achieved the status of one of the most prestigious educational institutions. "Leadership and Excellence" is our motto, a fact that is evident from our state-of-the-art infrastructure and the quality of each individual.
               </p>
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-justify mt-4" style={{ color: '#5a6c7d' }}>
                 The institution provides the necessary infrastructure and a team of qualified and motivated faculty, all under one roof for the student community. Besides providing world-class engineering education, we also inculcate a progressive attitude blended with innovation towards the betterment of society. The excellent symbiosis of academic excellence and industrial relevance is the unique feature of JKKN Institutions. Our hearty welcome to our lush green campus!
@@ -84,7 +85,7 @@ export default function OurManagement() {
 
               {/* Description */}
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-justify" style={{ color: '#5a6c7d' }}>
-                I heartily congratulate the college for taking an ardent and intense interest in molding smart future engineers. We are committed to the mission of implementing new education methodologies to enable quality learning that encourages independent thinking and helps students develop a wholesome personality so that they can contribute their best to society and the country. Together, we work towards JKKN as the best temple of learning, guiding and encouraging students in their own way. JKKN aims to produce top-notch professionals with their colorful flag flying high in the air of success in this pulsating world of competition.
+                I heartily congratulate the college for taking an ardent and intense interest in molding passionate future educators. We are committed to the mission of implementing new education methodologies to enable quality learning that encourages independent thinking and helps students develop a wholesome personality so that they can contribute their best to society and the country. Together, we work towards JKKN as the best temple of learning, guiding and encouraging students in their own way. JKKN aims to produce top-notch educators with their colorful flag flying high in the air of success in this pulsating world of competition.
               </p>
             </div>
           </div>

@@ -85,13 +85,11 @@ export default async function Home() {
           },
           foundingDate: '2016',
           sameAs: [
-            'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
-            'https://www.facebook.com/jkknedu/',
-            'https://www.instagram.com/jkknedu/',
-            'https://www.linkedin.com/school/jkkneducation/',
-            'https://www.youtube.com/jkkninstitutions',
+            'https://www.facebook.com/jkkneducation/',
             'https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions',
-            'https://www.wikidata.org/wiki/Q55090877',
+            'https://www.instagram.com/jkkninstitutions/',
+            'https://www.youtube.com/@jkkninstitutions',
+            'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],
         }}
       />

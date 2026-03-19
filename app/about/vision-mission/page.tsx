@@ -61,7 +61,7 @@ export default function VisionMission() {
                   <div className="w-14 sm:w-20 h-1 mt-2" style={{ backgroundColor: '#1e7f4e' }}></div>
                 </h2>
                 <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#5a6c7d' }}>
-                  Enabling a Platform for all to seize exponential opportunities through bioconvergence, thereby facilitating them to become Dynamic Leaders who shape the future.
+                  Enabling a Platform for all to seize exponential opportunities through innovative pedagogy, thereby facilitating them to become Dynamic Leaders who shape the future.
                 </p>
               </div>
               <div className="flex justify-center lg:justify-end order-1 lg:order-2">
