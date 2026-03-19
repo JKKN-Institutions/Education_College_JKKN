@@ -1,9 +1,9 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { GalleryCarousel } from './GalleryCarousel';
 
 export const revalidate = 300;
 
@@ -16,60 +16,41 @@ export const metadata = seoMetadata(
 
 export default async function Gallery() {
   const supabase = await createClient();
-
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
   const { data: albums } = await supabase
     .from('gallery_albums')
-    .select('id, name, cover_image_url')
+    .select('id, name')
     .eq('college_id', collegeId)
     .order('created_at', { ascending: false });
 
+  const albumIds = (albums ?? []).map((a) => a.id);
+
+  const { data: allImages } = albumIds.length > 0
+    ? await supabase
+        .from('gallery_images')
+        .select('id, album_id, image_url, caption')
+        .in('album_id', albumIds)
+        .order('display_order', { ascending: true })
+    : { data: [] };
+
+  const albumsWithImages = (albums ?? []).map((album) => ({
+    ...album,
+    images: (allImages ?? []).filter((img) => img.album_id === album.id),
+  }));
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#FBFBEE]">
       <BreadcrumbJsonLd items={[
         { name: 'Home', href: '/' },
         { name: 'Gallery', href: '/gallery' },
       ]} />
       <Header />
 
-      <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <h1
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8"
-            style={{ color: '#1e7f4e' }}
-          >
-            GALLERY
-          </h1>
-
           {albums && albums.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {albums.map((album) => (
-                <Link key={album.id} href={`/gallery/${album.id}`}>
-                  <div className="cursor-pointer group">
-                    <h2
-                      className="text-lg sm:text-xl font-bold mb-3"
-                      style={{ color: '#1e7f4e' }}
-                    >
-                      {album.name}
-                    </h2>
-                    <div className="overflow-hidden rounded-xl aspect-[4/3] bg-gray-100">
-                      {album.cover_image_url ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          src={album.cover_image_url}
-                          alt={album.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400 text-sm">
-                          No cover image
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <GalleryCarousel albums={albumsWithImages} />
           ) : (
             <p className="text-gray-500">No albums yet.</p>
           )}

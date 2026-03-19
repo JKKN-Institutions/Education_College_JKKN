@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { CalendarDays, MapPin, Clock, ArrowLeft } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const revalidate = 300;
 
@@ -80,7 +82,8 @@ export default async function EventDetail({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <main className="min-h-screen bg-[#FBFBEE]">
+    <div className="min-h-screen bg-[#FBFBEE]">
+      <Header />
       <JsonLd
         data={{
           '@context': 'https://schema.org',
@@ -116,7 +119,7 @@ export default async function EventDetail({ params }: { params: Promise<{ slug: 
       {/* Back nav */}
       <div className="max-w-4xl mx-auto px-4 pt-8">
         <Link
-          href="/events"
+          href="/"
           className="inline-flex items-center gap-1.5 text-sm text-[#006837] hover:text-[#005a2e] font-medium transition"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -171,6 +174,7 @@ export default async function EventDetail({ params }: { params: Promise<{ slug: 
           )}
         </div>
       </article>
-    </main>
+      <Footer />
+    </div>
   );
 }

@@ -19,6 +19,15 @@ export default async function Home() {
     .order('created_at', { ascending: false })
     .limit(10);
   const noticeTexts = notices?.map((n) => n.title) ?? [];
+
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education';
+  const { data: events } = await supabase
+    .from('events')
+    .select('id, title, slug, event_date, event_time, venue, image_url, description')
+    .eq('is_published', true)
+    .eq('college_id', collegeId)
+    .order('event_date', { ascending: false })
+    .limit(6);
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
       <JsonLd
@@ -1017,6 +1026,62 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Events */}
+      {events && events.length > 0 && (
+        <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#006837] text-center mb-3 sm:mb-4">
+              Events
+            </h2>
+            <p className="text-center text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 lg:mb-12 max-w-3xl mx-auto px-2">
+              Stay updated with the latest events and activities at JKKN College of Education.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {events.map((event) => (
+                <Link
+                  key={event.id}
+                  href={`/events/${event.slug}`}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-200 flex flex-col"
+                >
+                  {event.image_url && (
+                    <div className="relative h-44 w-full overflow-hidden">
+                      <img
+                        src={event.image_url}
+                        alt={event.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4 sm:p-5 flex flex-col flex-1">
+                    <div className="flex flex-wrap gap-3 mb-3 text-xs text-gray-500">
+                      <span className="flex items-center gap-1">
+                        <svg className="w-3.5 h-3.5 text-[#006837]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        {new Date(event.event_date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
+                      </span>
+                      {event.venue && (
+                        <span className="flex items-center gap-1">
+                          <svg className="w-3.5 h-3.5 text-[#006837]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                          {event.venue}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-base sm:text-lg font-semibold text-[#002309] leading-snug line-clamp-2">
+                      {event.title}
+                    </h3>
+                    {event.description && (
+                      <p className="mt-2 text-sm text-gray-600 line-clamp-2">{event.description}</p>
+                    )}
+                    <span className="mt-4 inline-block text-sm font-medium text-[#006837] hover:underline">
+                      View Details →
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Placements Section */}
       <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
