@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Food Court',
@@ -13,6 +15,27 @@ export const metadata = seoMetadata(
 export default function FoodCourt() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/food-court' },
+          { name: 'Food Court', href: '/facilities/food-court' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FoodEstablishment',
+          name: 'JKKN Campus Food Court',
+          description: 'On-campus food court at JKKN College of Education offering diverse, hygienic, and affordable meals for students and staff. Features fresh salads, sandwiches, hot meals, and healthy options.',
+          url: 'https://edu.jkkn.ac.in/facilities/food-court',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Food Court Section */}

@@ -26,6 +26,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           educationalCredentialAwarded: 'Bachelor of Education (B.Ed)',
           timeRequired: 'P2Y',
           courseCode: 'B.Ed',
+          url: 'https://edu.jkkn.ac.in/departments/maths',
+          inLanguage: 'en-IN',
           hasCourseInstance: {
             '@type': 'CourseInstance',
             courseMode: 'full-time',

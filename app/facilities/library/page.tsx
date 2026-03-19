@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Library',
@@ -30,6 +32,27 @@ export default function Library() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/library' },
+          { name: 'Library', href: '/facilities/library' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Library',
+          name: 'JKKN College of Education Library',
+          description: 'Central library at JKKN College of Education with 25,863 volumes, 17,386 titles, 40+ journals, INFLIBNET and NDL access. Seating capacity for 150 readers across 3,328 sq ft.',
+          url: 'https://edu.jkkn.ac.in/facilities/library',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Library Section */}

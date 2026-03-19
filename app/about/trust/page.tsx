@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { JsonLd } from '@/components/JsonLd';
 
 export const metadata = seoMetadata(
   'Trust',
@@ -19,6 +20,20 @@ export default function OurTrust() {
         { name: 'About', href: '/about/vision-mission' },
         { name: 'Trust', href: '/about/trust' },
       ]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Shri. J.K.K. Natarajah',
+          jobTitle: 'Founder',
+          worksFor: {
+            '@type': 'Organization',
+            name: 'J.K.K. Rangammal Charitable Trust',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+          url: 'https://edu.jkkn.ac.in/about/trust',
+        }}
+      />
       <Header />
 
       {/* Our Trust Section */}

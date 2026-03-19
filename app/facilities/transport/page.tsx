@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Transport',
@@ -13,6 +15,33 @@ export const metadata = seoMetadata(
 export default function Transport() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/transport' },
+          { name: 'Transport', href: '/facilities/transport' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'JKKN College Transport Service',
+          description: 'College transport service with well-maintained buses covering Salem, Erode, Namakkal, and Tiruchengode routes. Equipped with CCTV, female attendants, and wheelchair accessibility.',
+          url: 'https://edu.jkkn.ac.in/facilities/transport',
+          provider: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+          areaServed: ['Salem', 'Erode', 'Namakkal', 'Tiruchengode'],
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Transport Section */}

@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Ambulance Services',
@@ -13,6 +15,31 @@ export const metadata = seoMetadata(
 export default function AmbulanceServices() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/ambulance-services' },
+          { name: 'Ambulance Services', href: '/facilities/ambulance-services' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'EmergencyService',
+          name: 'JKKN Campus Ambulance Services',
+          description: '24/7 ambulance services at JKKN Educational Institutions staffed by certified emergency medical technicians. Equipped with medical equipment and supplies for emergency response and medical transport.',
+          url: 'https://edu.jkkn.ac.in/facilities/ambulance-services',
+          availableChannel: {
+            '@type': 'ServiceChannel',
+            serviceType: '24/7 Emergency Medical Transport',
+          },
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Ambulance Services Section */}

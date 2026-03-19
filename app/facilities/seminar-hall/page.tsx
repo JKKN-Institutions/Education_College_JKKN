@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Seminar Hall',
@@ -13,6 +15,27 @@ export const metadata = seoMetadata(
 export default function SeminarHall() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/seminar-hall' },
+          { name: 'Seminar Hall', href: '/facilities/seminar-hall' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'EventVenue',
+          name: 'JKKN College Seminar Hall',
+          description: 'Well-equipped seminar hall at JKKN College of Education with air-conditioned environment, stage, projector, sound system, lighting, and high-speed Wi-Fi. Ideal for conferences, workshops, and academic presentations.',
+          url: 'https://edu.jkkn.ac.in/facilities/seminar-hall',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Seminar Hall Section */}

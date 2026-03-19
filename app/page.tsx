@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroButtons from '@/components/HeroButtons';
@@ -6,6 +7,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
 import { JsonLd } from '@/components/JsonLd';
+
+export const metadata: Metadata = {
+  title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
+  description:
+    'NCTE approved, NAAC accredited B.Ed college in Namakkal, Tamil Nadu. 14 specializations, TNTEU affiliated. 2-year B.Ed programme. Admissions 2026 open.',
+  alternates: { canonical: 'https://edu.jkkn.ac.in' },
+  openGraph: {
+    title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
+    description:
+      'NCTE approved, NAAC accredited B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+    url: 'https://edu.jkkn.ac.in',
+    type: 'website',
+  },
+};
 
 export const revalidate = 60;
 
@@ -67,8 +82,13 @@ export default async function Home() {
             'NCTE (National Council for Teacher Education) Approved',
             'NAAC (National Assessment and Accreditation Council) Accredited',
           ],
+          accreditedBy: [
+            { '@type': 'Organization', name: 'National Council for Teacher Education (NCTE)', url: 'https://ncte.gov.in' },
+            { '@type': 'Organization', name: 'National Assessment and Accreditation Council (NAAC)', url: 'https://naac.gov.in' },
+          ],
           memberOf: {
             '@type': 'Organization',
+            '@id': 'https://tnteu.ac.in/#organization',
             name: 'Tamil Nadu Teachers Education University (TNTEU)',
             url: 'https://tnteu.ac.in',
           },
@@ -98,6 +118,7 @@ export default async function Home() {
             'https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions',
             'https://www.instagram.com/jkkninstitutions/',
             'https://www.youtube.com/@jkkninstitutions',
+            'https://www.linkedin.com/school/jkkneducation/',
             'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],
         }}
@@ -200,6 +221,24 @@ export default async function Home() {
           },
           datePublished: '2024-01-01',
           dateModified: '2026-03-19',
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          '@id': 'https://edu.jkkn.ac.in/#website',
+          url: 'https://edu.jkkn.ac.in',
+          name: 'JKKN College of Education',
+          publisher: { '@id': 'https://edu.jkkn.ac.in/#organization' },
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: 'https://edu.jkkn.ac.in/blog?q={search_term_string}',
+            },
+            'query-input': 'required name=search_term_string',
+          },
         }}
       />
       <Header />

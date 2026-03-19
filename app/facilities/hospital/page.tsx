@@ -1,6 +1,8 @@
 import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Hospital',
@@ -12,6 +14,28 @@ export const metadata = seoMetadata(
 export default function Hospital() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/hospital' },
+          { name: 'Hospital', href: '/facilities/hospital' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Hospital',
+          name: 'JKKN Campus Hospital',
+          description: 'JKKN multi-specialty teaching hospital with 500+ beds. Provides comprehensive medical services to students and staff with advanced medical technology, experienced medical staff, and affordable healthcare.',
+          url: 'https://edu.jkkn.ac.in/facilities/hospital',
+          numberOfBeds: 500,
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Hospital Section */}

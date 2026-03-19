@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Classrooms',
@@ -22,6 +24,27 @@ export default function ClassRoom() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/class-room' },
+          { name: 'Smart Classrooms', href: '/facilities/class-room' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Place',
+          name: 'JKKN Smart Classrooms',
+          description: 'ICT-enabled digital smart classrooms at JKKN College of Education featuring high-speed internet, multimedia projectors, interactive whiteboards, and comfortable seating arrangements.',
+          url: 'https://edu.jkkn.ac.in/facilities/class-room',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Class Room Section */}

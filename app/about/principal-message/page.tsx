@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { JsonLd } from '@/components/JsonLd';
 
 export const metadata = seoMetadata(
   "Principal's Message",
@@ -19,6 +20,20 @@ export default function PrincipalMessage() {
         { name: 'About', href: '/about/vision-mission' },
         { name: "Principal's Message", href: '/about/principal-message' },
       ]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Dr. KM Ranjendiran',
+          jobTitle: 'Principal',
+          worksFor: {
+            '@type': 'EducationalOrganization',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+          url: 'https://edu.jkkn.ac.in/about/principal-message',
+        }}
+      />
       <Header />
 
       {/* Principal Message Section */}

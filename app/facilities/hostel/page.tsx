@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export default function Hostel() {
   const [activeTab, setActiveTab] = useState<'boys' | 'girls'>('boys');
@@ -36,6 +38,27 @@ export default function Hostel() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/hostel' },
+          { name: 'Hostel', href: '/facilities/hostel' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'LodgingBusiness',
+          name: 'JKKN College of Education Hostel',
+          description: 'Separate boys and girls hostels at JKKN College of Education within campus premises. Features spacious rooms, 24x7 electricity and water, high-speed internet, CCTV security, gymnasium, and dedicated staff.',
+          url: 'https://edu.jkkn.ac.in/facilities/hostel',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Hostel Section */}

@@ -1,12 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { redirect } from 'next/navigation';
 
 export default function NCTEApproval() {
-  useEffect(() => {
-    // Redirect to PDF file immediately and replace history entry
-    window.location.replace('/pdf/NCTE-Approval.pdf');
-  }, []);
-
-  return null;
+  redirect('/pdf/NCTE-Approval.pdf');
 }

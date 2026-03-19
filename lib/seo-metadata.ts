@@ -26,6 +26,7 @@ export function seoMetadata(
   },
 ): Metadata {
   const url = `${SITE_URL}${path}`;
+  const fullTitle = options?.absolute ? title : `${title} | ${SITE_NAME}`;
 
   return {
     title: options?.absolute ? { absolute: title } : title,
@@ -35,7 +36,7 @@ export function seoMetadata(
       canonical: url,
     },
     openGraph: {
-      title,
+      title: fullTitle,
       description,
       url,
       siteName: SITE_NAME,
@@ -46,13 +47,13 @@ export function seoMetadata(
           url: options?.ogImage ?? OG_IMAGE,
           width: 1200,
           height: 630,
-          alt: title,
+          alt: fullTitle,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: fullTitle,
       description,
     },
   };

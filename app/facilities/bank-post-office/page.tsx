@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Bank & Post Office',
@@ -13,6 +15,27 @@ export const metadata = seoMetadata(
 export default function BankPostOffice() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/bank-post-office' },
+          { name: 'Bank & Post Office', href: '/facilities/bank-post-office' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          name: 'JKKN Campus Bank & Post Office',
+          description: 'On-campus bank and post office at JKKN Educational Institutions offering banking services (account opening, deposits, withdrawals, fund transfers) and postal services (domestic and international mail, speed post, parcel delivery).',
+          url: 'https://edu.jkkn.ac.in/facilities/bank-post-office',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Bank & Post Office Section */}

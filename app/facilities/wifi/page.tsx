@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Wi-Fi Campus',
@@ -21,6 +23,27 @@ export default function WiFi() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/wifi' },
+          { name: 'Wi-Fi Campus', href: '/facilities/wifi' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Place',
+          name: 'JKKN Wi-Fi Enabled Campus',
+          description: 'Free high-speed Wi-Fi campus at JKKN College of Education. Secure internet access available across all campus areas including lecture halls, library, and outdoor spaces for students and faculty.',
+          url: 'https://edu.jkkn.ac.in/facilities/wifi',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* WiFi Section */}

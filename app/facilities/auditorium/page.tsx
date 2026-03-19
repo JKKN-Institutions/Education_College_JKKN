@@ -2,6 +2,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { JsonLd } from '@/components/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Auditorium',
@@ -21,6 +23,27 @@ export default function Auditorium() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Facilities', href: '/facilities/auditorium' },
+          { name: 'Auditorium', href: '/facilities/auditorium' },
+        ]}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'PerformingArtsTheater',
+          name: 'JKKN College Auditorium',
+          description: 'Spacious auditorium at JKKN College of Education with impeccable acoustics, latest audio-visual technology, high-tech sound and lighting systems. Ideal for concerts, lectures, graduation ceremonies, and theatrical performances.',
+          url: 'https://edu.jkkn.ac.in/facilities/auditorium',
+          containedInPlace: {
+            '@type': 'CollegeOrUniversity',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+          },
+        }}
+      />
       <Header />
 
       {/* Auditorium Section */}
