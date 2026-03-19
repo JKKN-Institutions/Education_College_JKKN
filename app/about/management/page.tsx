@@ -20,6 +20,35 @@ export default function OurManagement() {
         { name: 'About', href: '/about/vision-mission' },
         { name: 'Management', href: '/about/management' },
       ]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          'name': 'JKKN College of Education Management',
+          'itemListElement': [
+            {
+              '@type': 'Person',
+              'name': 'Smt. N. Sendamaraai',
+              'jobTitle': 'Chairperson',
+              'worksFor': {
+                '@type': 'EducationalOrganization',
+                'name': 'JKKN Institutions',
+                'url': 'https://jkkn.ac.in'
+              }
+            },
+            {
+              '@type': 'Person',
+              'name': 'Shri. S. Ommsharravana',
+              'jobTitle': 'Director',
+              'worksFor': {
+                '@type': 'EducationalOrganization',
+                'name': 'JKKN Institutions',
+                'url': 'https://jkkn.ac.in'
+              }
+            }
+          ]
+        }}
+      />
       <Header />
 
       {/* Our Management Section */}

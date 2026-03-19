@@ -179,6 +179,20 @@ export default async function Home() {
           ],
         }}
       />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'JKKN College of Education — B.Ed College in Namakkal',
+          url: 'https://edu.jkkn.ac.in',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['h1', '.speakable-summary', 'section h2:first-of-type'],
+          },
+          datePublished: '2024-01-01',
+          dateModified: '2026-03-19',
+        }}
+      />
       <Header />
 
       {/* Hero Section */}

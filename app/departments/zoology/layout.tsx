@@ -110,6 +110,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: 'Departments', href: '/departments' },
         { name: 'B.Ed Zoology', href: '/departments/zoology' },
       ]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'B.Ed Zoology | JKKN College of Education',
+          url: 'https://edu.jkkn.ac.in/departments/zoology',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['h1', 'h2:first-of-type', '.faq-section'],
+          },
+          datePublished: '2024-01-01',
+          dateModified: '2026-03-19',
+        }}
+      />
       {children}
     </>
   );
