@@ -1281,7 +1281,7 @@ export default function PhysicsDepartment() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 70+ Years */}
+            {/* 55+ Years */}
             <div className="p-8 rounded-xl border-l-4" style={{ backgroundColor: '#FBFBEE', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl"
@@ -1289,11 +1289,11 @@ export default function PhysicsDepartment() {
                   1
                 </div>
                 <h3 className="text-xl font-bold pt-2" style={{ color: '#002309' }}>
-                  70+ Years of Educational Excellence
+                  55+ Years of Educational Excellence
                 </h3>
               </div>
               <p className="leading-relaxed ml-16" style={{ color: '#006837' }}>
-                Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1954.
+                Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1969.
               </p>
             </div>
 

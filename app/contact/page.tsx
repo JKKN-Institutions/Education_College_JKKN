@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { JsonLd } from '@/components/JsonLd';
 
 export const metadata = seoMetadata(
   'Contact Us',
@@ -18,6 +19,44 @@ export default function Contact() {
         { name: 'Home', href: '/' },
         { name: 'Contact Us', href: '/contact' },
       ]} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://edu.jkkn.ac.in/#localbusiness",
+        "name": "JKKN College of Education",
+        "description": "NCTE-approved, TNTEU-affiliated B.Ed college offering 14 specializations in Namakkal, Tamil Nadu.",
+        "url": "https://edu.jkkn.ac.in",
+        "telephone": "+919345855001",
+        "email": "education@jkkn.ac.in",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "NH-544 (Salem to Coimbatore Highway), Natarajapuram",
+          "addressLocality": "Komarapalayam",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "638183",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.4441,
+          "longitude": 77.7315
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        "image": "https://edu.jkkn.ac.in/images/og-default.png",
+        "priceRange": "$$",
+        "areaServed": [
+          { "@type": "City", "name": "Namakkal" },
+          { "@type": "City", "name": "Salem" },
+          { "@type": "City", "name": "Erode" },
+          { "@type": "City", "name": "Tiruchengode" },
+          { "@type": "City", "name": "Komarapalayam" }
+        ]
+      }} />
       <Header />
 
       {/* Contact Section */}
@@ -97,7 +136,7 @@ export default function Contact() {
                       Address
                     </h3>
                     <p className="text-sm sm:text-base md:text-lg leading-relaxed" style={{ color: '#4a5568' }}>
-                      JKKN College of Education, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
+                      JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.
                     </p>
                   </div>
                 </div>

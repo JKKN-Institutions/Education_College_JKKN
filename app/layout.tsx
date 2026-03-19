@@ -14,11 +14,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://edu.jkkn.ac.in'),
   title: {
-    default: 'JKKN College of Education — NCTE Approved B.Ed College in Namakkal, Tamil Nadu',
+    default: 'JKKN College of Education — B.Ed College in Namakkal',
     template: '%s | JKKN College of Education',
   },
   description:
-    'JKKN College of Education offers NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Kumarapalayam, Namakkal, Tamil Nadu. NAAC Accredited. Apply now.',
+    'JKKN College of Education offers NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
   keywords: [
     'B.Ed college Namakkal',
     'B.Ed college Tamil Nadu',
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_IN',
     siteName: 'JKKN College of Education',
-    title: 'JKKN College of Education — NCTE Approved B.Ed College in Namakkal',
+    title: 'JKKN College of Education — B.Ed College in Namakkal',
     description:
-      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations. NAAC Accredited. Kumarapalayam, Namakkal, Tamil Nadu.',
+      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu. NAAC Accredited.',
     images: [
       {
         url: '/images/og-default.png',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JKKN College of Education — NCTE Approved B.Ed College',
+    title: 'JKKN College of Education — B.Ed College in Namakkal',
     description:
       'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
   },

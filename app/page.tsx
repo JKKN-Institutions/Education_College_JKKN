@@ -33,17 +33,20 @@ export default async function Home() {
       <JsonLd
         data={{
           '@context': 'https://schema.org',
-          '@type': 'EducationalOrganization',
+          '@type': ['EducationalOrganization', 'CollegeOrUniversity'],
+          '@id': 'https://edu.jkkn.ac.in/#organization',
           name: 'JKKN College of Education',
+          alternateName: 'J.K.K. Nattraja College of Education',
           url: 'https://edu.jkkn.ac.in',
           logo: 'https://edu.jkkn.ac.in/images/logo.png',
+          image: 'https://edu.jkkn.ac.in/images/og-default.png',
           description:
-            'NCTE-approved, TNTEU-affiliated B.Ed college offering 14 specializations in Kumarapalayam, Namakkal, Tamil Nadu.',
+            'JKKN College of Education is an NCTE-approved, NAAC-accredited B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 14 subject specializations in Komarapalayam, Namakkal District, Tamil Nadu.',
           telephone: '+919345855001',
           email: 'education@jkkn.ac.in',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: 'NH-544 (Salem to Coimbatore Highway), Kumarapalayam',
+            streetAddress: 'Natarajapuram, NH-544 (Salem to Coimbatore Highway), Komarapalayam',
             addressLocality: 'Namakkal',
             addressRegion: 'Tamil Nadu',
             postalCode: '638183',
@@ -56,40 +59,147 @@ export default async function Home() {
           },
           parentOrganization: {
             '@type': 'Organization',
-            name: 'JKKN Educational Institutions',
+            '@id': 'https://jkkn.ac.in/#organization',
+            name: 'J.K.K. Nattraja Educational Institutions',
             url: 'https://jkkn.ac.in',
           },
           accreditation: [
             'NCTE (National Council for Teacher Education) Approved',
-            'NAAC Accredited',
+            'NAAC (National Assessment and Accreditation Council) Accredited',
           ],
-          affiliation: {
+          memberOf: {
             '@type': 'Organization',
             name: 'Tamil Nadu Teachers Education University (TNTEU)',
+            url: 'https://tnteu.ac.in',
           },
           hasOfferingCatalog: {
             '@type': 'OfferingCatalog',
             name: 'B.Ed Programmes',
             itemListElement: [
-              { '@type': 'Course', name: 'B.Ed Tamil' },
-              { '@type': 'Course', name: 'B.Ed English' },
-              { '@type': 'Course', name: 'B.Ed Mathematics' },
-              { '@type': 'Course', name: 'B.Ed Physics' },
-              { '@type': 'Course', name: 'B.Ed Chemistry' },
-              { '@type': 'Course', name: 'B.Ed Botany' },
-              { '@type': 'Course', name: 'B.Ed Zoology' },
-              { '@type': 'Course', name: 'B.Ed History' },
-              { '@type': 'Course', name: 'B.Ed Economics' },
-              { '@type': 'Course', name: 'B.Ed Commerce' },
-              { '@type': 'Course', name: 'B.Ed Computer Science' },
-              { '@type': 'Course', name: 'B.Ed Political Science' },
-              { '@type': 'Course', name: 'B.Ed Social Science' },
-              { '@type': 'Course', name: 'B.Ed Microbiology' },
+              { '@type': 'Course', name: 'B.Ed Tamil', description: 'Bachelor of Education specializing in Tamil language teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed English', description: 'Bachelor of Education specializing in English language teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Mathematics', description: 'Bachelor of Education specializing in Mathematics teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Physics', description: 'Bachelor of Education specializing in Physics teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Chemistry', description: 'Bachelor of Education specializing in Chemistry teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Botany', description: 'Bachelor of Education specializing in Botany teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Zoology', description: 'Bachelor of Education specializing in Zoology teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed History', description: 'Bachelor of Education specializing in History teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Economics', description: 'Bachelor of Education specializing in Economics teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Commerce', description: 'Bachelor of Education specializing in Commerce teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Computer Science', description: 'Bachelor of Education specializing in Computer Science teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Political Science', description: 'Bachelor of Education specializing in Political Science teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Social Science', description: 'Bachelor of Education specializing in Social Science teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Microbiology', description: 'Bachelor of Education specializing in Microbiology teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
             ],
           },
+          foundingDate: '2016',
           sameAs: [
+            'https://www.facebook.com/jkkneducation/',
+            'https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions',
+            'https://www.instagram.com/jkkninstitutions/',
+            'https://www.youtube.com/@jkkninstitutions',
             'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What is the duration of the B.Ed programme?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'The Bachelor of Education (B.Ed) programme is a 2-year (4 semesters) full-time professional degree course as per NCTE regulations. The programme includes theoretical courses, practical training, and a mandatory 16-week school internship. Learners are required to complete 80-100 credits across all four semesters.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is the eligibility criteria for B.Ed admission?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Candidates must have completed a Bachelor\'s degree (BA/B.Sc/B.Com/BCA/BBA or equivalent) from a recognized university with a minimum of 50% aggregate marks for General Category and 45% for Reserved Categories (SC/ST/OBC/PWD). There is no upper age limit for admission. Graduation with school teaching subjects is preferred but not mandatory.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is B.Ed valid for government teaching jobs?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, B.Ed from an NCTE-approved and university-affiliated college is essential for government teaching positions. After completing B.Ed, candidates can appear for CTET (Central Teacher Eligibility Test), State TETs, and various recruitment examinations for KVS, NVS, and state government schools. B.Ed is mandatory for TGT and PGT positions in most schools.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can B.Com/BBA graduates pursue B.Ed?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, graduates from any stream including B.Com, BBA, BCA can pursue B.Ed. Commerce graduates can opt for Commerce and Economics as their teaching subjects. The key requirement is completing graduation with the minimum percentage as per eligibility norms. After B.Ed, they can teach commerce subjects at the secondary and senior secondary levels.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is the fee structure for B.Ed programme?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'The fee structure varies based on the state fee committee guidelines and category. Generally, the annual tuition fee ranges from ₹40,000 to ₹80,000 for self-financing colleges. Government fee concessions, scholarships, and education loans are available for eligible Learners. Contact the admission office for the current fee structure and payment options.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is the school internship in B.Ed?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'School internship is a mandatory 16-20 week practical training component in Semester III where B.Ed Learners teach in actual school settings under mentor supervision. Interns deliver 40-50 lessons in their chosen subjects, participate in school activities, conduct action research, and develop teaching portfolios. This hands-on experience is crucial for developing classroom teaching skills.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can I teach in CBSE/ICSE schools after B.Ed?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, B.Ed graduates can teach in CBSE, ICSE, and State Board schools at the secondary (Classes 6-10) and senior secondary (Classes 11-12) levels. For CBSE schools, clearing CTET is often preferred. Private schools may directly recruit based on B.Ed qualification and interview performance. Higher education qualification (M.Ed/NET) enhances career prospects.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What are the career options after B.Ed?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions with salary packages ranging from ₹3-8 LPA.',
+              },
+            },
+          ],
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: 'https://edu.jkkn.ac.in',
+            },
+          ],
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'JKKN College of Education — B.Ed College in Namakkal',
+          url: 'https://edu.jkkn.ac.in',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['h1', '.speakable-summary', 'section h2:first-of-type'],
+          },
+          datePublished: '2024-01-01',
+          dateModified: '2026-03-19',
         }}
       />
       <Header />

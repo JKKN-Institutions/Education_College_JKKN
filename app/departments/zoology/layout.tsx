@@ -33,11 +33,97 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           },
         }}
       />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What is the eligibility for B.Ed Zoology admission?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: "Candidates must hold a Bachelor's degree (BSc or equivalent) from a recognized university with at least 50% marks (45% for SC/ST/OBC/PWD candidates). Zoology must be a major or optional subject at the degree level. Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Life Sciences are eligible. Final year degree Learners may also apply.",
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is the duration of the B.Ed Zoology program?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'The B.Ed Zoology program is a 2-year (4 semesters) full-time professional degree course as per NCTE norms. Each academic year consists of two semesters with comprehensive theoretical, practical, and internship components.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is JKKN College of Education NCTE approved?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. Our programs meet all regulatory standards and are recognized across India.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What are the career opportunities after B.Ed Zoology?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Graduates can become Zoology/Biology teachers in government and private schools (Classes 6-12), prepare Learners for NEET and competitive exams, pursue higher education (M.Ed, Ph.D in Education or Zoology), work as curriculum developers, science content writers, laboratory coordinators, or take up administrative roles in educational institutions.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Does the program include laboratory training?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, the program includes extensive laboratory-based pedagogy training. Learners gain hands-on experience in microscopy, specimen handling, dissection techniques, laboratory safety protocols, and modern biological research methods essential for effective science teaching.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Are scholarships available for B.Ed Zoology Learners?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, eligible candidates can avail various government scholarships including BC/MBC/SC/ST scholarships, minority scholarships, and other state and central government schemes. Our scholarship cell assists Learners in identifying and applying for appropriate financial aid.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is hostel accommodation available?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, separate hostel facilities are available for both male and female Learners within the campus. The hostels offer comfortable accommodation, nutritious food, 24/7 security, Wi-Fi connectivity, and all necessary amenities at reasonable rates.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can I teach Biology after completing B.Ed Zoology?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes, B.Ed Zoology graduates are qualified to teach both Zoology and Biology subjects in secondary and higher secondary schools. The program covers comprehensive biological sciences pedagogy, enabling graduates to teach life sciences across all school levels.',
+              },
+            },
+          ],
+        }}
+      />
       <BreadcrumbJsonLd items={[
         { name: 'Home', href: '/' },
-        { name: 'Departments', href: '/departments/tamil' },
+        { name: 'Departments', href: '/departments' },
         { name: 'B.Ed Zoology', href: '/departments/zoology' },
       ]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'B.Ed Zoology | JKKN College of Education',
+          url: 'https://edu.jkkn.ac.in/departments/zoology',
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['h1', 'h2:first-of-type', '.faq-section'],
+          },
+          datePublished: '2024-01-01',
+          dateModified: '2026-03-19',
+        }}
+      />
       {children}
     </>
   );
