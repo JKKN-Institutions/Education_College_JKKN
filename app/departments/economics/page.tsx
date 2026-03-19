@@ -908,7 +908,7 @@ export default function EconomicsDepartment() {
                   2
                 </div>
                 <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
-                  94% Placement Success Rate
+                  98% Placement Success Rate
                 </h3>
               </div>
               <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>

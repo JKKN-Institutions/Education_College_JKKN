@@ -707,7 +707,7 @@ export default function CommerceDepartment() {
                   <span className="text-xl font-bold">2</span>
                 </div>
                 <h3 className="text-2xl font-bold" style={{ color: '#002309' }}>
-                  96% Placement Success Rate
+                  98% Placement Success Rate
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
