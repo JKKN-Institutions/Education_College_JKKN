@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { JsonLd } from '@/components/JsonLd';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import {
   Clock,
@@ -195,6 +196,57 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: 'B.Ed Admission 2026 in Tamil Nadu: Eligibility, Process & Key Dates',
+          description: 'Complete guide to B.Ed admission 2026 in Tamil Nadu — eligibility criteria, TNTEU counseling process, fee structure, career scope, and why JKKN College of Education is a top choice for aspiring teachers.',
+          image: 'https://edu.jkkn.ac.in/images/og-default.png',
+          datePublished: '2026-02-20',
+          dateModified: '2026-02-20',
+          author: {
+            '@type': 'Organization',
+            name: 'JKKN College of Education',
+            url: 'https://edu.jkkn.ac.in',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'JKKN College of Education',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://edu.jkkn.ac.in/images/logo.png',
+            },
+          },
+          mainEntityOfPage: 'https://edu.jkkn.ac.in/blog/career-prospects-after-bed',
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.a,
+            },
+          })),
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edu.jkkn.ac.in' },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://edu.jkkn.ac.in/blog' },
+            { '@type': 'ListItem', position: 3, name: 'B.Ed Admission 2026 in Tamil Nadu' },
+          ],
+        }}
+      />
       <Header />
 
       {/* ── Article Header ── */}
