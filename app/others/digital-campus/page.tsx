@@ -4,7 +4,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 export const metadata = seoMetadata(
   'Digital Campus',
   'JKKN College of Education digital campus — technology-enabled learning environment for B.Ed students.',
-  '/others/digital-campus'
+  '/others/digital-campus',
+  { robots: { index: false, follow: false } }
 );
 
 export default function DigitalCampus() {

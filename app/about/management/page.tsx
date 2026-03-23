@@ -17,7 +17,7 @@ export default function OurManagement() {
     <div className="min-h-screen bg-white">
       <BreadcrumbJsonLd items={[
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about/vision-mission' },
+        { name: 'About', href: '/about' },
         { name: 'Management', href: '/about/management' },
       ]} />
       <JsonLd
@@ -27,23 +27,31 @@ export default function OurManagement() {
           'name': 'JKKN College of Education Management',
           'itemListElement': [
             {
-              '@type': 'Person',
-              'name': 'Smt. N. Sendamaraai',
-              'jobTitle': 'Chairperson',
-              'worksFor': {
-                '@type': 'EducationalOrganization',
-                'name': 'JKKN Institutions',
-                'url': 'https://jkkn.ac.in'
+              '@type': 'ListItem',
+              'position': 1,
+              'item': {
+                '@type': 'Person',
+                'name': 'Smt. N. Sendamaraai',
+                'jobTitle': 'Chairperson',
+                'worksFor': {
+                  '@type': 'EducationalOrganization',
+                  'name': 'JKKN Institutions',
+                  'url': 'https://jkkn.ac.in'
+                }
               }
             },
             {
-              '@type': 'Person',
-              'name': 'Shri. S. Ommsharravana',
-              'jobTitle': 'Director',
-              'worksFor': {
-                '@type': 'EducationalOrganization',
-                'name': 'JKKN Institutions',
-                'url': 'https://jkkn.ac.in'
+              '@type': 'ListItem',
+              'position': 2,
+              'item': {
+                '@type': 'Person',
+                'name': 'Shri. S. Ommsharravana',
+                'jobTitle': 'Director',
+                'worksFor': {
+                  '@type': 'EducationalOrganization',
+                  'name': 'JKKN Institutions',
+                  'url': 'https://jkkn.ac.in'
+                }
               }
             }
           ]

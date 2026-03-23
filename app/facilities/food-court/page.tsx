@@ -2,6 +2,7 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Food Court',
@@ -13,6 +14,11 @@ export const metadata = seoMetadata(
 export default function FoodCourt() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Facilities', href: '/facilities' },
+        { name: 'Food Court', href: '/facilities/food-court' },
+      ]} />
       <Header />
 
       {/* Food Court Section */}

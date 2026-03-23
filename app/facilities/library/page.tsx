@@ -2,6 +2,7 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Library',
@@ -30,6 +31,11 @@ export default function Library() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Facilities', href: '/facilities' },
+        { name: 'Library', href: '/facilities/library' },
+      ]} />
       <Header />
 
       {/* Library Section */}

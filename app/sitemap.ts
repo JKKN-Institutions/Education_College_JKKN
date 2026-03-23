@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { createClient } from '@/lib/supabase/client';
+import { createClient } from '@/lib/supabase/server';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://edu.jkkn.ac.in';
@@ -11,62 +11,55 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },
 
     // About
-    { url: `${baseUrl}/about/vision-mission`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/about/trust`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/about/principal-message`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/about/management`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/about/institutions`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/about/ncte-approval`, changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${baseUrl}/about/vision-mission`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/about/trust`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/about/principal-message`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/about/management`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/about/institutions`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/about/ncte-approval`, lastModified: new Date('2026-01-01'), changeFrequency: 'yearly', priority: 0.7 },
 
     // Departments
-    { url: `${baseUrl}/departments/tamil`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/english`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/maths`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/physics`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/chemistry`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/botany`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/zoology`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/history`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/economics`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/commerce`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/computer-science`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/political-science`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/social-science`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/departments/microbiology`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/tamil`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/english`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/maths`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/physics`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/chemistry`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/botany`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/zoology`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/history`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/economics`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/commerce`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/computer-science`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/political-science`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/social-science`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/departments/microbiology`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
 
-    // Facilities
-    { url: `${baseUrl}/facilities/library`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/hostel`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/transport`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/food-court`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/auditorium`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/hospital`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/class-room`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/seminar-hall`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/wifi`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/facilities/bank-post-office`, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/facilities/ambulance-services`, changeFrequency: 'monthly', priority: 0.5 },
+    // Facilities (only existing routes)
+    { url: `${baseUrl}/facilities/library`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/hostel`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/transport`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/food-court`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/auditorium`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/hospital`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/class-room`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/seminar-hall`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/wifi`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/facilities/bank-post-office`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/facilities/ambulance-services`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.5 },
 
     // Listing pages
-    { url: `${baseUrl}/blog`, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/events`, changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${baseUrl}/gallery`, changeFrequency: 'weekly', priority: 0.6 },
-    { url: `${baseUrl}/notices`, changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/gallery`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${baseUrl}/notices`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
 
-    // Others
-    { url: `${baseUrl}/contact`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/others/alumni`, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/others/careers`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/others/faculty-details`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/others/digital-campus`, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/others/privacy-policy`, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${baseUrl}/others/balance-sheet`, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${baseUrl}/others/financial-details`, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${baseUrl}/others/biomatric-list`, changeFrequency: 'monthly', priority: 0.3 },
+    // Others (non-redirect pages only)
+    { url: `${baseUrl}/contact`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/others/faculty-details`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/others/privacy-policy`, lastModified: new Date('2026-01-01'), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   // ── Dynamic pages (graceful degradation) ──
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const [blogsRes, eventsRes, albumsRes] = await Promise.all([
     supabase

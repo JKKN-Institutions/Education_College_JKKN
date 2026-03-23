@@ -23,6 +23,8 @@ export function seoMetadata(
     keywords?: string[];
     /** Custom OG image path */
     ogImage?: string;
+    /** Override robots directives (e.g. noindex for redirect pages) */
+    robots?: { index: boolean; follow: boolean };
   },
 ): Metadata {
   const url = `${SITE_URL}${path}`;
@@ -54,6 +56,8 @@ export function seoMetadata(
       card: 'summary_large_image',
       title,
       description,
+      images: [options?.ogImage ?? OG_IMAGE],
     },
+    ...(options?.robots && { robots: options.robots }),
   };
 }

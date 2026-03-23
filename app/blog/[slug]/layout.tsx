@@ -52,9 +52,9 @@ export default async function Layout({
           headline: title,
           description: `${title} — read more on the JKKN College of Education blog.`,
           author: {
-            '@type': 'Organization',
-            name: 'JKKN College of Education',
-            url: 'https://edu.jkkn.ac.in',
+            '@type': 'Person',
+            name: 'JKKN Editorial Team',
+            url: 'https://edu.jkkn.ac.in/others/faculty-details',
           },
           publisher: {
             '@type': 'EducationalOrganization',

@@ -1,6 +1,7 @@
 import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Hospital',
@@ -12,6 +13,11 @@ export const metadata = seoMetadata(
 export default function Hospital() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Facilities', href: '/facilities' },
+        { name: 'Hospital', href: '/facilities/hospital' },
+      ]} />
       <Header />
 
       {/* Hospital Section */}

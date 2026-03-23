@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   const { data: event } = await supabase
     .from('events')
-    .select('title, description')
+    .select('title, description, image_url')
     .eq('slug', slug)
     .eq('college_id', collegeId)
     .eq('is_published', true)
@@ -44,6 +44,9 @@ export async function generateMetadata({
       description,
       type: 'article',
       url: `https://edu.jkkn.ac.in/events/${slug}`,
+      ...(event.image_url && {
+        images: [{ url: event.image_url, alt: title }],
+      }),
     },
   };
 }

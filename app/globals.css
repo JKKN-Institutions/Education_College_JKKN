@@ -120,7 +120,7 @@ img, video, iframe {
 
 @layer base {
   :root {
-    /* College brand colors — overridden via <style> injected in app/layout.tsx */
+    /* College brand colors */
     --color-primary:       #006837;
     --color-primary-dark:  #002309;
     --color-primary-mid:   #004d28;

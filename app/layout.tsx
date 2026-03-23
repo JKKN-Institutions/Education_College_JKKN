@@ -1,15 +1,22 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/LayoutWrapper";
 import { siteConfig } from "@/lib/site-config";
 
 const poppins = Poppins({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
   variable: "--font-poppins",
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#006837',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://edu.jkkn.ac.in'),
@@ -34,6 +41,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://edu.jkkn.ac.in',
+    languages: {
+      'en-IN': 'https://edu.jkkn.ac.in',
+      'x-default': 'https://edu.jkkn.ac.in',
+    },
   },
   openGraph: {
     type: 'website',
@@ -53,9 +64,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@jkknedu',
     title: 'JKKN College of Education — B.Ed College in Namakkal',
     description:
       'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
+    images: ['/images/og-default.png'],
   },
   robots: {
     index: true,
@@ -75,22 +88,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Inject college brand colors as CSS custom properties so every component
-  // that uses var(--color-primary) etc. picks up the right values at runtime.
-  const brandStyles = `
-    :root {
-      --color-primary:       ${siteConfig.primaryColor};
-      --color-primary-dark:  ${siteConfig.primaryDark};
-      --color-primary-mid:   ${siteConfig.primaryMid};
-      --color-primary-hover: ${siteConfig.primaryHover};
-    }
-  `;
-
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <style dangerouslySetInnerHTML={{ __html: brandStyles }} />
-      </head>
       <body className={poppins.className} suppressHydrationWarning>
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>

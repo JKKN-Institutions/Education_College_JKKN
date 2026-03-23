@@ -4,7 +4,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 export const metadata = seoMetadata(
   'Biometric List',
   'Staff biometric attendance records at JKKN College of Education, Kumarapalayam.',
-  '/others/biomatric-list'
+  '/others/biomatric-list',
+  { robots: { index: false, follow: false } }
 );
 
 export default function BiomatricList() {

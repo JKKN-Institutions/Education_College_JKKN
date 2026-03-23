@@ -2,6 +2,7 @@ import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'Transport',
@@ -13,6 +14,11 @@ export const metadata = seoMetadata(
 export default function Transport() {
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', href: '/' },
+        { name: 'Facilities', href: '/facilities' },
+        { name: 'Transport', href: '/facilities/transport' },
+      ]} />
       <Header />
 
       {/* Transport Section */}

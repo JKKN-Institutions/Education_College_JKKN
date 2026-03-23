@@ -4,7 +4,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 export const metadata = seoMetadata(
   'Alumni',
   'JKKN College of Education alumni network — connecting graduates making an impact in teaching and education across Tamil Nadu.',
-  '/others/alumni'
+  '/others/alumni',
+  { robots: { index: false, follow: false } }
 );
 
 export default function Alumni() {

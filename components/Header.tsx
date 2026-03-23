@@ -21,6 +21,7 @@ const Header = () => {
     { name: 'ABOUT', href: '/about', hasDropdown: true },
     { name: 'DEPARTMENTS', href: '/departments', hasDropdown: true },
     { name: 'GALLERY', href: '/gallery', hasDropdown: false },
+    { name: 'BLOG', href: '/blog', hasDropdown: false },
     { name: 'FACILITIES', href: '/facilities', hasDropdown: true },
     { name: 'OTHERS', href: '/others', hasDropdown: true },
     { name: 'CONTACT', href: '/contact', hasDropdown: false },
@@ -80,7 +81,7 @@ const Header = () => {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
+          <div className="flex items-center flex-1">
             <Link href="/" className="flex items-center">
               <Image
                 src={siteConfig.logoPath}
@@ -161,10 +162,10 @@ const Header = () => {
           </div>
 
           {/* Apply Now Button */}
-          <div className="hidden lg:flex lg:items-center">
+          <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
             <Link
               href={siteConfig.admissionFormUrl}
-              className="px-6 py-2.5 font-bold text-white rounded-lg"
+              className="px-6 py-2.5 font-bold text-white rounded-lg whitespace-nowrap"
               style={{ backgroundColor: '#0B7845' }}
             >
               Apply Now
@@ -175,7 +176,7 @@ const Header = () => {
           <div className="flex lg:hidden">
             <Link
               href={siteConfig.admissionFormUrl}
-              className="px-4 py-2 font-bold text-white rounded-lg text-sm"
+              className="px-4 py-2 font-bold text-white rounded-lg text-sm whitespace-nowrap"
               style={{ backgroundColor: '#0B7845' }}
             >
               Apply Now

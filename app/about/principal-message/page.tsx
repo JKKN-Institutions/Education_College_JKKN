@@ -16,7 +16,7 @@ export default function PrincipalMessage() {
     <div className="min-h-screen bg-white">
       <BreadcrumbJsonLd items={[
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about/vision-mission' },
+        { name: 'About', href: '/about' },
         { name: "Principal's Message", href: '/about/principal-message' },
       ]} />
       <Header />

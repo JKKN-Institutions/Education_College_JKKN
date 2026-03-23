@@ -19,7 +19,7 @@ export async function generateMetadata({
 
   const { data: album } = await supabase
     .from('gallery_albums')
-    .select('name, description')
+    .select('name, description, cover_image_url')
     .eq('id', albumId)
     .eq('college_id', collegeId)
     .single();
@@ -38,6 +38,9 @@ export async function generateMetadata({
       title: album.name,
       description,
       url: `https://edu.jkkn.ac.in/gallery/${albumId}`,
+      ...(album.cover_image_url && {
+        images: [{ url: album.cover_image_url, alt: album.name }],
+      }),
     },
   };
 }

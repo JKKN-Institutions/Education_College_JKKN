@@ -16,7 +16,7 @@ export default function OurInstitutions() {
     <div className="min-h-screen bg-white">
       <BreadcrumbJsonLd items={[
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about/vision-mission' },
+        { name: 'About', href: '/about' },
         { name: 'JKKN Institutions', href: '/about/institutions' },
       ]} />
       <Header />

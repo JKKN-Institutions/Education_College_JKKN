@@ -62,7 +62,7 @@ export const siteConfig = {
 
   /** Site domain — used for canonical URLs and footer links */
   domain:
-    process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'education.jkkn.ac.in',
+    process.env.NEXT_PUBLIC_SITE_DOMAIN ?? 'edu.jkkn.ac.in',
 
   /** Logo path (relative to /public) */
   logoPath: process.env.NEXT_PUBLIC_LOGO_PATH ?? '/images/logo.png',

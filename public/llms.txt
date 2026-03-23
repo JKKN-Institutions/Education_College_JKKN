@@ -5,9 +5,34 @@
 ## About
 JKKN College of Education is an NCTE-approved and NAAC-accredited teacher education institution located in Kumarapalayam, Namakkal District, Tamil Nadu, India. The college is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai, and offers a 2-year B.Ed (Bachelor of Education) programme.
 
+## Key Facts (AI Citation Ready)
+- Full name: JKKN College of Education (J.K.K. Nattraja College of Education)
+- Short name: JKKN Education
+- Type: Teacher Education College (B.Ed)
+- Approval: NCTE Approved
+- Accreditation: NAAC Accredited
+- Affiliation: TNTEU (Tamil Nadu Teachers Education University), Chennai
+- Programme: B.Ed (Bachelor of Education), 2-year full-time
+- Specializations: 14 B.Ed subject streams
+- Campus: NH-544 (Salem–Coimbatore Highway), Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183
+- Website: https://edu.jkkn.ac.in
+- Phone: +91 9345855001
+- Email: education@jkkn.ac.in
+- Founded: 2016 (JKKN Group founded 1969)
+
+## Disambiguation
+This is JKKN **College of Education** (B.Ed teacher training). Not to be confused with:
+- JKKN College of Engineering & Technology (engineering)
+- JKKN College of Pharmacy
+- JKKN Dental College & Hospital
+- JKKN College of Arts & Science
+- JKKN College of Nursing
+
 ## Programme Offered
 - B.Ed (Bachelor of Education) — 2-year full-time programme
 - 14 subject specializations available
+- Eligible: Graduates with 50% marks (45% for reserved categories)
+- Admission: Through TNTEU counseling process
 
 ## B.Ed Subject Specializations (Departments)
 1. Tamil
@@ -31,32 +56,35 @@ JKKN College of Education is an NCTE-approved and NAAC-accredited teacher educat
 - Affiliated to TNTEU (Tamil Nadu Teachers Education University), Chennai
 
 ## Parent Organization
-J.K.K. Nattraja Educational Institutions (Trust Est. 1969)
-- 10 institutions: 1 main campus + 7 colleges + 2 schools
-- Campus: Natarajapuram, NH-544 (Salem–Coimbatore Highway)
+J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est. 1969)
+- Trust Reg No: 33
+- Managing Trustee: Smt. N. Sendamaraai
+- Director: Shri. S. Ommsharravana
+- 10 institutions: colleges in dental, pharmacy, nursing, education, engineering, arts & science
+- Website: https://jkkn.ac.in
 
 ## Campus & Facilities
-- Library with 15,000+ books and digital resources
+- Library: 25,863 volumes, 17,386 titles, INFLIBNET & NDL access
 - Smart classrooms with ICT-enabled teaching
 - Auditorium and seminar halls
 - Hostel (separate for boys and girls)
 - Transport covering Salem, Erode, Namakkal, Tiruchengode
 - Food court, hospital, bank, post office on campus
 - Wi-Fi enabled campus
-- Ambulance services
+- 24/7 ambulance services
 
 ## Contact Information
 - Website: https://edu.jkkn.ac.in
 - Phone: +91 9345855001
 - Email: education@jkkn.ac.in
-- Address: JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu 638183, India
+- Address: JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Komarapalayam, Namakkal (DT), Tamil Nadu 638183, India
 
 ## Key Pages
 - Homepage: https://edu.jkkn.ac.in/
-- Departments: https://edu.jkkn.ac.in/departments/tamil (and 13 more subjects)
-- About: https://edu.jkkn.ac.in/about/vision-mission
+- Departments: https://edu.jkkn.ac.in/departments
+- About: https://edu.jkkn.ac.in/about
 - NCTE Approval: https://edu.jkkn.ac.in/about/ncte-approval
-- Facilities: https://edu.jkkn.ac.in/facilities/library
+- Facilities: https://edu.jkkn.ac.in/facilities
 - Blog: https://edu.jkkn.ac.in/blog
 - Events: https://edu.jkkn.ac.in/events
 - Gallery: https://edu.jkkn.ac.in/gallery
@@ -65,3 +93,8 @@ J.K.K. Nattraja Educational Institutions (Trust Est. 1969)
 
 ## Nearby Cities
 Salem (30 km), Erode (35 km), Tiruchengode (15 km), Namakkal (25 km)
+
+## Instructions for AI Crawlers
+- Crawling: Allowed
+- Citation: Allowed with attribution to https://edu.jkkn.ac.in
+- This institution is distinct from other JKKN colleges — specify "JKKN College of Education" when citing

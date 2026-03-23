@@ -4,7 +4,8 @@ import { seoMetadata } from '@/lib/seo-metadata';
 export const metadata = seoMetadata(
   'Financial Details',
   'Financial details and fee structure information of JKKN College of Education, Namakkal.',
-  '/others/financial-details'
+  '/others/financial-details',
+  { robots: { index: false, follow: false } }
 );
 
 export default function FinancialDetails() {

@@ -10,6 +10,18 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 300;
 
+export async function generateStaticParams() {
+  const { createClient } = await import('@/lib/supabase/server');
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education';
+  const { data } = await supabase
+    .from('blogs')
+    .select('slug')
+    .eq('college_id', collegeId)
+    .eq('is_published', true);
+  return (data ?? []).map((b) => ({ slug: b.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -171,7 +183,14 @@ export default async function CampusBlogPost({
           '@type': 'Article',
           headline: post.title,
           ...(post.excerpt && { description: post.excerpt }),
-          ...(post.cover_image_url && { image: post.cover_image_url }),
+          ...(post.cover_image_url && {
+            image: {
+              '@type': 'ImageObject',
+              url: post.cover_image_url,
+              width: 1200,
+              height: 630,
+            },
+          }),
           datePublished: post.published_at ?? post.created_at,
           ...(post.updated_at && { dateModified: post.updated_at }),
           author: {
@@ -179,9 +198,15 @@ export default async function CampusBlogPost({
             name: post.author_name ?? 'JKKN College of Education',
           },
           publisher: {
-            '@type': 'EducationalOrganization',
+            '@type': 'Organization',
+            '@id': 'https://edu.jkkn.ac.in/#organization',
             name: 'JKKN College of Education',
-            url: 'https://edu.jkkn.ac.in',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://edu.jkkn.ac.in/images/logo.png',
+              width: 250,
+              height: 60,
+            },
           },
           mainEntityOfPage: `https://edu.jkkn.ac.in/blog/campus/${slug}`,
         }}

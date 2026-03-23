@@ -4,9 +4,10 @@ import { seoMetadata } from '@/lib/seo-metadata';
 export const metadata = seoMetadata(
   'Balance Sheet',
   'Financial balance sheet of JKKN College of Education — transparency in institutional finances.',
-  '/others/balance-sheet'
+  '/others/balance-sheet',
+  { robots: { index: false, follow: false } }
 );
 
 export default function BalanceSheet() {
-  redirect('/pdf/Balance-Sheed.pdf');
+  redirect('/pdf/Balance-Sheet.pdf');
 }

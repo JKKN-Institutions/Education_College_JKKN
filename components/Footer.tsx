@@ -119,7 +119,7 @@ const Footer = () => {
             <div className="flex flex-wrap gap-3 sm:gap-4">
               {/* Facebook */}
               <Link
-                href="https://www.facebook.com/jkknedu/"
+                href="https://www.facebook.com/jkkneducation/"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Facebook"
               >
@@ -141,7 +141,7 @@ const Footer = () => {
 
               {/* Instagram */}
               <Link
-                href="https://www.instagram.com/jkknedu/"
+                href="https://www.instagram.com/jkkninstitutions/"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Instagram"
               >

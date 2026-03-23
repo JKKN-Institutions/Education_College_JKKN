@@ -31,6 +31,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             courseMode: 'full-time',
             courseWorkload: '2 years',
           },
+          offers: {
+            '@type': 'Offer',
+            category: 'Tuition',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'INR',
+              description: 'As per Tamil Nadu government fee norms. Scholarships available.',
+            },
+          },
+          numberOfCredits: 90,
+          educationalLevel: 'Undergraduate',
         }}
       />
       <JsonLd
@@ -118,10 +129,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           url: 'https://edu.jkkn.ac.in/departments/tamil',
           speakable: {
             '@type': 'SpeakableSpecification',
-            cssSelector: ['h1', 'h2:first-of-type', '.faq-section'],
+            cssSelector: ['h1', 'h2'],
           },
           datePublished: '2024-01-01',
-          dateModified: '2026-03-19',
+          dateModified: new Date().toISOString(),
         }}
       />
       {children}

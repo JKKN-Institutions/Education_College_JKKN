@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Calendar, Clock } from 'lucide-react';
+import { Calendar, Clock, FileText } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
@@ -44,20 +44,38 @@ export default async function BlogPage() {
       ]} />
       <Header />
 
+      {/* Page Heading — always visible */}
+      <section className="bg-[#FBFBEE] px-4 sm:px-6 lg:px-8 pt-10 pb-0">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309]">
+            Latest Articles
+          </h1>
+          <p className="text-gray-500 text-sm mt-1.5">
+            Expert insights on teacher education and careers
+          </p>
+        </div>
+      </section>
+
+      {/* ── Coming Soon — shown when no posts exist ── */}
+      {!hasCampusPosts && (
+        <section className="bg-[#FBFBEE] px-4 sm:px-6 lg:px-8 py-16">
+          <div className="max-w-7xl mx-auto text-center">
+            <div className="flex justify-center mb-4">
+              <FileText className="w-12 h-12 text-gray-400" />
+            </div>
+            <h2 className="text-xl font-bold text-[#002309] mb-2">Coming Soon</h2>
+            <p className="text-gray-500 text-sm">
+              We&apos;re working on our first articles. Check back soon!
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
       {hasCampusPosts && (
         <section className="bg-[#FBFBEE] border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-10">
           <div className="max-w-7xl mx-auto">
-            <div className="mb-10">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309]">
-                Latest Articles
-              </h1>
-              <p className="text-gray-500 text-sm mt-1.5">
-                Expert insights on teacher education and careers
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {campusPosts.map((post) => {
                 const cat = post.category || 'General';
                 const firstLetter = post.title?.[0]?.toUpperCase() ?? 'B';

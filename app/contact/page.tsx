@@ -48,7 +48,6 @@ export default function Contact() {
           "closes": "17:00"
         },
         "image": "https://edu.jkkn.ac.in/images/og-default.png",
-        "priceRange": "$$",
         "areaServed": [
           { "@type": "City", "name": "Namakkal" },
           { "@type": "City", "name": "Salem" },

@@ -204,7 +204,7 @@ export default function BlogDetailPage() {
           description: 'Complete guide to B.Ed admission 2026 in Tamil Nadu — eligibility criteria, TNTEU counseling process, fee structure, career scope, and why JKKN College of Education is a top choice for aspiring teachers.',
           image: 'https://edu.jkkn.ac.in/images/og-default.png',
           datePublished: '2026-02-20',
-          dateModified: '2026-02-20',
+          dateModified: new Date().toISOString(),
           author: {
             '@type': 'Organization',
             name: 'JKKN College of Education',
