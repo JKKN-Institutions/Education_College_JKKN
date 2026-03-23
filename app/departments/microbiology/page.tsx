@@ -880,7 +880,7 @@ export default function MicrobiologyDepartment() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    94% Placement Success Rate
+                    98% Placement Success Rate
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
                     Strong placement record with graduates securing positions in government schools, CBSE/ICSE schools, international schools, and coaching institutes.

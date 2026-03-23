@@ -818,7 +818,7 @@ export default function PoliticalScienceDepartment() {
                   2
                 </div>
                 <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
-                  94% Placement Success Rate
+                  98% Placement Success Rate
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>

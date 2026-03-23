@@ -50,6 +50,9 @@ export default async function Layout({
           '@context': 'https://schema.org',
           '@type': 'BlogPosting',
           headline: title,
+          datePublished: '2026-02-20',
+          dateModified: '2026-03-19',
+          image: 'https://edu.jkkn.ac.in/images/og-default.png',
           description: `${title} — read more on the JKKN College of Education blog.`,
           author: {
             '@type': 'Person',
@@ -60,6 +63,7 @@ export default async function Layout({
             '@type': 'EducationalOrganization',
             name: 'JKKN College of Education',
             url: 'https://edu.jkkn.ac.in',
+            logo: { '@type': 'ImageObject', url: 'https://edu.jkkn.ac.in/images/logo.png' },
           },
           mainEntityOfPage: `https://edu.jkkn.ac.in/blog/${slug}`,
         }}

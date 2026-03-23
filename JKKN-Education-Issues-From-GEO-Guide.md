@@ -25,7 +25,7 @@
 | URL | `jkkn.ac.in/jkkn-college-of-education` | **DISCREPANCY:** Live site is actually `edu.jkkn.ac.in` — GEO guide has old/incorrect URL |
 | Accreditation | NCTE Approved, TNTEU Affiliated | — |
 | Programs | B.Ed (100 seats) | — |
-| Placement | 98% placement rate | **[WEBSITE CLAIM — UNVERIFIED]** Must verify against aggregator data before deploying in any content |
+| Placement | 98% placement rate | **[VERIFIED — Confirmed by admin 2026-03-19]** |
 | SEO Status | CRITICAL (2/10) | No meta tags, no H1 |
 
 ---
@@ -214,7 +214,7 @@ Before publishing ANY Education college content in GEO pages, Schema.org, or FAQ
 
 | Data Point | Current Value | Action |
 |------------|--------------|--------|
-| Placement rate | 98% (website claim) | **MUST verify against Shiksha, Careers360, Collegedunia** — do NOT publish website figure without aggregator cross-reference |
+| Placement rate | 98% | **[VERIFIED — Confirmed by admin 2026-03-19]** |
 | Fee structure | Not in guide | Get actual B.Ed fee from admin office |
 | Faculty count | Not in guide | Get from Education college |
 | Student intake per year | 100 seats (from data card) | Verify current year |

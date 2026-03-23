@@ -1,6 +1,5 @@
 import { seoMetadata } from '@/lib/seo-metadata';
 import { JsonLd } from '@/components/JsonLd';
-import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
   'B.Ed Mathematics',
@@ -26,6 +25,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           educationalCredentialAwarded: 'Bachelor of Education (B.Ed)',
           timeRequired: 'P2Y',
           courseCode: 'B.Ed',
+          url: 'https://edu.jkkn.ac.in/departments/maths',
+          inLanguage: 'en-IN',
           hasCourseInstance: {
             '@type': 'CourseInstance',
             courseMode: 'full-time',
@@ -116,11 +117,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           ],
         }}
       />
-      <BreadcrumbJsonLd items={[
-        { name: 'Home', href: '/' },
-        { name: 'Departments', href: '/departments' },
-        { name: 'B.Ed Mathematics', href: '/departments/maths' },
-      ]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edu.jkkn.ac.in' },
+            { '@type': 'ListItem', position: 2, name: 'Departments', item: 'https://edu.jkkn.ac.in/departments' },
+            { '@type': 'ListItem', position: 3, name: 'B.Ed Mathematics', item: 'https://edu.jkkn.ac.in/departments/maths' },
+          ],
+        }}
+      />
       <JsonLd
         data={{
           '@context': 'https://schema.org',

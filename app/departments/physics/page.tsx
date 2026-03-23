@@ -1305,7 +1305,7 @@ export default function PhysicsDepartment() {
                   2
                 </div>
                 <h3 className="text-xl font-bold pt-2" style={{ color: '#002309' }}>
-                  95% Placement Success Rate
+                  98% Placement Success Rate
                 </h3>
               </div>
               <p className="leading-relaxed ml-16" style={{ color: '#006837' }}>

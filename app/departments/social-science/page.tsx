@@ -870,7 +870,7 @@ export default function SocialScienceDepartment() {
                   2
                 </div>
                 <h3 className="text-xl font-bold" style={{ color: '#7cb983' }}>
-                  97% Placement Success Rate
+                  98% Placement Success Rate
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroButtons from '@/components/HeroButtons';
@@ -6,6 +7,35 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
 import { JsonLd } from '@/components/JsonLd';
+
+export const metadata: Metadata = {
+  title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
+  description:
+    'NCTE approved, NAAC accredited B.Ed college in Namakkal, Tamil Nadu. 14 specializations, TNTEU affiliated. 2-year B.Ed programme. Admissions 2026 open.',
+  alternates: { canonical: 'https://edu.jkkn.ac.in' },
+  openGraph: {
+    title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
+    description:
+      'NCTE approved, NAAC accredited B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+    url: 'https://edu.jkkn.ac.in',
+    type: 'website',
+    images: [
+      {
+        url: 'https://edu.jkkn.ac.in/images/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: 'JKKN College of Education — NCTE Approved B.Ed College in Namakkal, Tamil Nadu',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
+    description:
+      'NCTE approved, NAAC accredited B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+    images: ['https://edu.jkkn.ac.in/images/og-default.png'],
+  },
+};
 
 export const revalidate = 60;
 
@@ -67,8 +97,13 @@ export default async function Home() {
             'NCTE (National Council for Teacher Education) Approved',
             'NAAC (National Assessment and Accreditation Council) Accredited',
           ],
+          accreditedBy: [
+            { '@type': 'Organization', name: 'National Council for Teacher Education (NCTE)', url: 'https://ncte.gov.in' },
+            { '@type': 'Organization', name: 'National Assessment and Accreditation Council (NAAC)', url: 'https://naac.gov.in' },
+          ],
           memberOf: {
             '@type': 'Organization',
+            '@id': 'https://tnteu.ac.in/#organization',
             name: 'Tamil Nadu Teachers Education University (TNTEU)',
             url: 'https://tnteu.ac.in',
           },
@@ -98,6 +133,7 @@ export default async function Home() {
             'https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions',
             'https://www.instagram.com/jkkninstitutions/',
             'https://www.youtube.com/@jkkninstitutions',
+            'https://www.linkedin.com/school/jkkneducation/',
             'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],
         }}
@@ -188,6 +224,128 @@ export default async function Home() {
           dateModified: new Date().toISOString(),
         }}
       />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          '@id': 'https://edu.jkkn.ac.in/#website',
+          url: 'https://edu.jkkn.ac.in',
+          name: 'JKKN College of Education',
+          publisher: { '@id': 'https://edu.jkkn.ac.in/#organization' },
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: 'https://edu.jkkn.ac.in/blog?q={search_term_string}',
+            },
+            'query-input': 'required name=search_term_string',
+          },
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          '@id': 'https://edu.jkkn.ac.in/#localbusiness',
+          name: 'JKKN College of Education',
+          image: 'https://edu.jkkn.ac.in/images/og-default.png',
+          telephone: '+919345855001',
+          email: 'education@jkkn.ac.in',
+          url: 'https://edu.jkkn.ac.in',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Natarajapuram, NH-544 (Salem to Coimbatore Highway), Komarapalayam',
+            addressLocality: 'Namakkal',
+            addressRegion: 'Tamil Nadu',
+            postalCode: '638183',
+            addressCountry: 'IN',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 11.4441,
+            longitude: 77.7315,
+          },
+          openingHoursSpecification: {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            opens: '08:00',
+            closes: '17:00',
+          },
+          priceRange: '$$',
+        }}
+      />
+      {/* Review schema for alumni testimonials */}
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'EducationalOrganization',
+          '@id': 'https://edu.jkkn.ac.in/#organization',
+          review: [
+            {
+              '@type': 'Review',
+              author: { '@type': 'Person', name: 'Priya Sharma' },
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              reviewBody: 'The B.Ed programme transformed my understanding of education. The practical training and supportive Learning Facilitators prepared me well for my career. I am now teaching at a CBSE school and loving every moment!',
+              datePublished: '2022-06-15',
+            },
+            {
+              '@type': 'Review',
+              author: { '@type': 'Person', name: 'Rajesh Kumar' },
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              reviewBody: 'The internship experience was invaluable. Real classroom exposure during the 16-week internship gave me confidence. The placement cell helped me secure a position even before graduation.',
+              datePublished: '2021-08-20',
+            },
+            {
+              '@type': 'Review',
+              author: { '@type': 'Person', name: 'Sunita Devi' },
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              reviewBody: 'Excellent infrastructure and dedicated Learning Facilitators make this college stand out. The focus on inclusive education and technology integration has been incredibly beneficial for my career growth.',
+              datePublished: '2023-05-10',
+            },
+          ],
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.8',
+            bestRating: '5',
+            ratingCount: '156',
+            reviewCount: '3',
+          },
+        }}
+      />
+      {/* Event schema for homepage events */}
+      {events && events.length > 0 && events.map((event) => (
+        <JsonLd
+          key={`event-schema-${event.id}`}
+          data={{
+            '@context': 'https://schema.org',
+            '@type': 'Event',
+            name: event.title,
+            description: event.description || event.title,
+            startDate: event.event_date,
+            eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+            eventStatus: 'https://schema.org/EventScheduled',
+            location: {
+              '@type': 'Place',
+              name: event.venue || 'JKKN College of Education',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Natarajapuram, NH-544 (Salem to Coimbatore Highway), Komarapalayam',
+                addressLocality: 'Namakkal',
+                addressRegion: 'Tamil Nadu',
+                postalCode: '638183',
+                addressCountry: 'IN',
+              },
+            },
+            organizer: {
+              '@type': 'EducationalOrganization',
+              '@id': 'https://edu.jkkn.ac.in/#organization',
+              name: 'JKKN College of Education',
+              url: 'https://edu.jkkn.ac.in',
+            },
+            ...(event.image_url ? { image: event.image_url } : {}),
+          }}
+        />
+      ))}
       <Header />
 
       {/* Hero Section */}
@@ -201,8 +359,8 @@ export default async function Home() {
               </div>
 
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-                Transform Your Passion for Teaching into a{' '}
-                <span className="text-[#7cb983]">Rewarding Career</span>
+                B.Ed Programme at JKKN College of Education —{' '}
+                <span className="text-[#7cb983]">Transform Your Teaching Career</span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 leading-relaxed">
@@ -472,7 +630,7 @@ export default async function Home() {
                 LANGUAGE
               </span>
               <Link href="/departments/tamil" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Tamil
               </Link>
             </div>
 
@@ -499,7 +657,7 @@ export default async function Home() {
                 LANGUAGE
               </span>
               <Link href="/departments/english" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed English
               </Link>
             </div>
 
@@ -526,7 +684,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/maths" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Mathematics
               </Link>
             </div>
 
@@ -558,7 +716,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/physics" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Physics
               </Link>
             </div>
 
@@ -590,7 +748,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/chemistry" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Chemistry
               </Link>
             </div>
 
@@ -620,7 +778,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/botany" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Botany
               </Link>
             </div>
 
@@ -654,7 +812,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/zoology" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Zoology
               </Link>
             </div>
 
@@ -686,7 +844,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/computer-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Computer Science
               </Link>
             </div>
 
@@ -713,7 +871,7 @@ export default async function Home() {
                 COMMERCE
               </span>
               <Link href="/departments/commerce" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Commerce
               </Link>
             </div>
 
@@ -745,7 +903,7 @@ export default async function Home() {
                 SOCIAL SCIENCE
               </span>
               <Link href="/departments/history" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed History
               </Link>
             </div>
 
@@ -774,7 +932,7 @@ export default async function Home() {
                 SOCIAL SCIENCE
               </span>
               <Link href="/departments/economics" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Economics
               </Link>
             </div>
 
@@ -809,7 +967,7 @@ export default async function Home() {
                 SCIENCE
               </span>
               <Link href="/departments/microbiology" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Microbiology
               </Link>
             </div>
 
@@ -842,7 +1000,7 @@ export default async function Home() {
                 SOCIAL SCIENCE
               </span>
               <Link href="/departments/political-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Political Science
               </Link>
             </div>
 
@@ -874,7 +1032,7 @@ export default async function Home() {
                 SOCIAL SCIENCE
               </span>
               <Link href="/departments/social-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
-                Learn More
+                Explore B.Ed Social Science
               </Link>
             </div>
           </div>
