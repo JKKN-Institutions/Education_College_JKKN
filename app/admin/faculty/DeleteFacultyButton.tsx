@@ -25,34 +25,40 @@ export default function DeleteFacultyButton({ id }: { id: string }) {
     setConfirm(false);
   }
 
-  if (confirm) {
-    return (
-      <div className="flex items-center gap-1.5">
-        <span className="text-xs text-gray-500">Sure?</span>
-        <button
-          onClick={handleDelete}
-          disabled={loading}
-          className="text-xs font-medium text-red-600 hover:text-red-700 px-2 py-1 rounded-lg hover:bg-red-50 transition"
-        >
-          {loading ? <Loader2 className="w-3 h-3 animate-spin" /> : 'Yes'}
-        </button>
-        <button
-          onClick={() => setConfirm(false)}
-          className="text-xs font-medium text-gray-500 hover:text-gray-700 px-2 py-1 rounded-lg hover:bg-gray-100 transition"
-        >
-          No
-        </button>
-      </div>
-    );
-  }
-
   return (
-    <button
-      onClick={() => setConfirm(true)}
-      className="flex items-center gap-1.5 text-xs font-medium text-gray-500 hover:text-red-600 px-2 py-1.5 rounded-lg hover:bg-red-50 transition"
-    >
-      <Trash2 className="w-3.5 h-3.5" />
-      Delete
-    </button>
+    <>
+      <button
+        onClick={() => setConfirm(true)}
+        className="flex items-center gap-1.5 text-xs font-medium text-gray-500 hover:text-red-600 px-2 py-1.5 rounded-lg hover:bg-red-50 transition"
+      >
+        <Trash2 className="w-3.5 h-3.5" />
+        Delete
+      </button>
+
+      {confirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="bg-white rounded-2xl shadow-xl p-6 w-80 flex flex-col gap-4">
+            <h2 className="text-base font-semibold text-gray-800">Delete Faculty Member?</h2>
+            <p className="text-sm text-gray-500">This action cannot be undone. Are you sure you want to remove this faculty member?</p>
+            <div className="flex justify-end gap-2">
+              <button
+                onClick={() => setConfirm(false)}
+                disabled={loading}
+                className="text-sm font-medium text-gray-600 hover:text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleDelete}
+                disabled={loading}
+                className="flex items-center gap-1.5 text-sm font-medium text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition"
+              >
+                {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

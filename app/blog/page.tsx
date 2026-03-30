@@ -1,9 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Calendar, Clock, FileText } from 'lucide-react';
+import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { seoMetadata } from '@/lib/seo-metadata';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { siteConfig } from '@/lib/site-config';
 
 export const revalidate = 60;
 
@@ -44,16 +45,17 @@ export default async function BlogPage() {
       ]} />
       <Header />
 
-      {/* Page Heading — always visible */}
-      <section className="bg-[#FBFBEE] px-4 sm:px-6 lg:px-8 pt-10 pb-0">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309]">
-            Latest Articles
-          </h1>
-          <p className="text-gray-500 text-sm mt-1.5">
-            Expert insights on teacher education and careers
-          </p>
-        </div>
+      {/* Hero Banner */}
+      <section className="bg-[#006837] px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center">
+        <p className="text-[#FFD700] text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3">
+          {siteConfig.name.toUpperCase()}
+        </p>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          Our Blog
+        </h1>
+        <p className="text-white/80 text-base sm:text-lg max-w-xl mx-auto">
+          Latest articles, insights and updates on teacher education, campus life, and careers.
+        </p>
       </section>
 
       {/* ── Coming Soon — shown when no posts exist ── */}
@@ -61,7 +63,9 @@ export default async function BlogPage() {
         <section className="bg-[#FBFBEE] px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-7xl mx-auto text-center">
             <div className="flex justify-center mb-4">
-              <FileText className="w-12 h-12 text-gray-400" />
+              <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center">
+                <Clock className="w-8 h-8 text-gray-400" />
+              </div>
             </div>
             <h2 className="text-xl font-bold text-[#002309] mb-2">Coming Soon</h2>
             <p className="text-gray-500 text-sm">

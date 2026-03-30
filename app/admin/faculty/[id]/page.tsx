@@ -10,14 +10,23 @@ export default async function EditFaculty({ params }: { params: Promise<{ id: st
 
   const { data: member } = await supabase
     .from('faculty')
-    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active')
+    .select(`
+      id, name, designation, department, qualification, experience_years,
+      photo_url, email, display_order, is_active,
+      slug, summary, research_papers_count, phd_scholars_count, awards_won_count,
+      google_scholar_url, researchgate_url, orcid_url,
+      mentoring_description, pg_dissertations_guided, ug_projects_guided,
+      badges, academic_qualifications, areas_of_specialisation,
+      experience, research_focus, publications, funded_research,
+      certifications, awards, memberships, phd_scholars, faqs
+    `)
     .eq('id', id)
     .single();
 
   if (!member) notFound();
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-3xl">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-5xl">
       <Link
         href="/admin/faculty"
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-800 mb-6 transition"
