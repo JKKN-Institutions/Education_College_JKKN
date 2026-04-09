@@ -2,9 +2,22 @@ import { createClient } from '@/lib/supabase/server';
 import { getAdminCollegeId } from '@/lib/get-admin-college';
 import { FileText, Image as ImageIcon, Bell, ExternalLink, Plus, CalendarDays, Users } from 'lucide-react';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 
 export default async function AdminDashboard() {
   const supabase = await createClient();
+
+  const { data: { session } } = await supabase.auth.getSession();
+  if (session?.user) {
+    const { data: profile } = await supabase
+      .from('staff_profiles')
+      .select('role')
+      .eq('id', session.user.id)
+      .single();
+    if (profile?.role === 'staff') {
+      redirect('/admin/events');
+    }
+  }
 
   const collegeId = await getAdminCollegeId();
   const results = await Promise.allSettled([

@@ -40,47 +40,47 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="https://dental.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://dental.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN Dental College and Hospital
                 </Link>
               </li>
               <li>
-                <Link href="https://ahs.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://ahs.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College Of Allied Health Science
                 </Link>
               </li>
               <li>
-                <Link href="https://pharmacy.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://pharmacy.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Pharmacy
                 </Link>
               </li>
               <li>
-                <Link href="https://nursing.sresakthimayeil.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://nursing.sresakthimayeil.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   Srisakthimayeil Institute of Nursing and Research
                 </Link>
               </li>
               <li>
-                <Link href="https://edu.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://edu.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Education
                 </Link>
               </li>
               <li>
-                <Link href="https://cas.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://cas.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Arts and Science (Autonomous)
                 </Link>
               </li>
               <li>
-                <Link href="https://engg.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://engg.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Engineering and Technology
                 </Link>
               </li>
               <li>
-                <Link href="https://school.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://school.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN Matriculation Higher Secondary School
                 </Link>
               </li>
               <li>
-                <Link href="https://nv.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://nv.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   Nattraja Vidhyalya
                 </Link>
               </li>
@@ -120,6 +120,8 @@ const Footer = () => {
               {/* Facebook */}
               <Link
                 href="https://www.facebook.com/jkkneducation/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Facebook"
               >
@@ -142,6 +144,8 @@ const Footer = () => {
               {/* Instagram */}
               <Link
                 href="https://www.instagram.com/jkkninstitutions/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Instagram"
               >
@@ -153,6 +157,8 @@ const Footer = () => {
               {/* LinkedIn */}
               <Link
                 href="https://www.linkedin.com/school/jkkneducation/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="LinkedIn"
               >
@@ -164,6 +170,8 @@ const Footer = () => {
               {/* YouTube */}
               <Link
                 href="https://www.youtube.com/jkkninstitutions"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="YouTube"
               >

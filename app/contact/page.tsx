@@ -153,7 +153,9 @@ export default function Contact() {
               </p>
 
               <Link
-                href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 text-white font-semibold rounded-md transition-colors duration-200 text-sm sm:text-base hover:opacity-90 active:opacity-80"
                 style={{ backgroundColor: '#1e7f4e' }}
               >

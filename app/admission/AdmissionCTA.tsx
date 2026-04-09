@@ -18,6 +18,8 @@ export default function AdmissionCTA() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-shrink-0">
               <Link
                 href={siteConfig.admissionFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base text-center"
               >
                 Start Application

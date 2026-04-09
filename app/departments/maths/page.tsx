@@ -70,7 +70,7 @@ export default function MathematicsPage() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold rounded-lg transition-colors">
+                <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold rounded-lg transition-colors">
                   <Users className="w-5 h-5" />
                   Apply Now
                 </Link>
@@ -1006,7 +1006,7 @@ export default function MathematicsPage() {
             Join JKKN College of Education and embark on a rewarding career as a Mathematics educator. Applications are now open for the 2025-26 academic year.
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
-            <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#7cb983] hover:bg-gray-100 font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
+            <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#7cb983] hover:bg-gray-100 font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
               <Users className="w-6 h-6" />
               Apply Online Now
             </Link>
