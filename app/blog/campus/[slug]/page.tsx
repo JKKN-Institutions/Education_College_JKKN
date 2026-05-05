@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
+import { createClient as createStaticClient } from '@/lib/supabase/client';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,8 +12,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 export const revalidate = 300;
 
 export async function generateStaticParams() {
-  const { createClient } = await import('@/lib/supabase/server');
-  const supabase = await createClient();
+  const supabase = createStaticClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education';
   const { data } = await supabase
     .from('blogs')
