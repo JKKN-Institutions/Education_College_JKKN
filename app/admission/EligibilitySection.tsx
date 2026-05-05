@@ -111,6 +111,8 @@ export default function EligibilitySection() {
         <div className="text-center mt-8 sm:mt-12">
           <Link
             href={siteConfig.admissionFormUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#006837] hover:bg-[#005a2e] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 text-sm sm:text-base"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

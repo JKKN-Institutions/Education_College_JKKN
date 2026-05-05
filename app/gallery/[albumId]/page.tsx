@@ -79,6 +79,8 @@ export default async function AlbumPage({ params }: { params: Promise<{ albumId:
           {/* Back link */}
           <Link
             href="/gallery"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 mb-6"
           >
             ← Back to Gallery

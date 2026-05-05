@@ -1,10 +1,12 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { BottomNavbar } from '@/components/BottomNav';
-import { ScrollToTop } from '@/components/ScrollToTop';
 import { cn } from '@/lib/utils';
+
+const BottomNavbar = dynamic(() => import('@/components/BottomNav/bottom-navbar').then(m => ({ default: m.BottomNavbar })));
+const ScrollToTop = dynamic(() => import('@/components/ScrollToTop').then(m => ({ default: m.ScrollToTop })));
 
 export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const isMobile = useIsMobile();

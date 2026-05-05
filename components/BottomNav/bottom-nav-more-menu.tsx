@@ -42,17 +42,12 @@ export function BottomNavMoreMenu({
 
         {/* Custom scrollable area with hidden scrollbar */}
         <div
-          className="flex-1 overflow-y-auto pb-8"
+          className="flex-1 overflow-y-auto pb-8 [&::-webkit-scrollbar]:hidden"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none'
           }}
         >
-          <style jsx>{`
-            div::-webkit-scrollbar {
-              display: none;
-            }
-          `}</style>
 
           <Accordion type="multiple" className="w-full" defaultValue={groups.map(g => g.id)}>
             {groups.map((group) => {

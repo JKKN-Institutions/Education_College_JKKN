@@ -38,6 +38,8 @@ export default function SpecializationGrid() {
             <Link
               key={spec.slug}
               href={`/departments/${spec.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:border-[#7cb983] transition-all duration-200 group"
             >
               <div className="flex items-start gap-3 mb-3">

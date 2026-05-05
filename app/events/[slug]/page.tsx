@@ -123,6 +123,8 @@ export default async function EventDetail({ params }: { params: Promise<{ slug: 
       <div className="max-w-4xl mx-auto px-4 pt-8">
         <Link
           href="/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm text-[#006837] hover:text-[#005a2e] font-medium transition"
         >
           <ArrowLeft className="w-4 h-4" />

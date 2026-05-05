@@ -78,8 +78,8 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+      <nav className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+        <div className="relative flex h-20 items-center gap-6 xl:gap-10">
           {/* Logo */}
           <div className="flex items-center flex-1">
             <Link href="/" className="flex items-center">
@@ -95,7 +95,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-6 2xl:space-x-8">
+          <div className="hidden lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:flex lg:items-center lg:space-x-2 xl:space-x-4 2xl:space-x-6">
             {navItems.map((item) => (
               <div
                 key={item.name}
@@ -105,7 +105,7 @@ const Header = () => {
               >
                 {item.hasDropdown ? (
                   <button
-                    className={`flex items-center text-sm font-semibold transition-colors duration-200 px-3 py-2 ${
+                    className={`flex items-center text-sm font-semibold transition-colors duration-200 px-2 py-2 ${
                       isActiveRoute(item.href)
                         ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
                         : 'text-gray-800 hover:text-gray-600'
@@ -127,7 +127,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`flex items-center text-sm font-semibold transition-colors duration-200 px-3 py-2 ${
+                    className={`flex items-center text-sm font-semibold transition-colors duration-200 px-2 py-2 ${
                       isActiveRoute(item.href)
                         ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
                         : 'text-gray-800 hover:text-gray-600'
@@ -165,6 +165,8 @@ const Header = () => {
           <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
             <Link
               href={siteConfig.admissionFormUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 font-bold text-white rounded-lg whitespace-nowrap"
               style={{ backgroundColor: '#0B7845' }}
             >
@@ -176,6 +178,8 @@ const Header = () => {
           <div className="flex lg:hidden">
             <Link
               href={siteConfig.admissionFormUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 font-bold text-white rounded-lg text-sm whitespace-nowrap"
               style={{ backgroundColor: '#0B7845' }}
             >

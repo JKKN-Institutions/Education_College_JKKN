@@ -44,6 +44,8 @@ export default function CampusFacilities() {
           <div className="text-center mt-6 sm:mt-8">
             <Link
               href="/facilities"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#006837] font-semibold text-sm hover:text-[#7cb983] transition-colors"
             >
               Explore All Facilities

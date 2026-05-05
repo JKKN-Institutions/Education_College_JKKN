@@ -22,7 +22,7 @@ export default function Error({
           >
             Try Again
           </button>
-          <a href="/" className="px-6 py-3 font-semibold rounded-lg border-2 transition-colors text-[#006837] border-[#006837] hover:bg-[#006837] hover:text-white">
+          <a href="/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 font-semibold rounded-lg border-2 transition-colors text-[#006837] border-[#006837] hover:bg-[#006837] hover:text-white">
             Back to Home
           </a>
         </div>

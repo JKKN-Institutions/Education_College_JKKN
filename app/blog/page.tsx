@@ -97,6 +97,8 @@ export default async function BlogPage() {
                   <a
                     key={post.id}
                     href={`/blog/campus/${post.slug}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow"
                   >
                     {/* Cover image / placeholder */}

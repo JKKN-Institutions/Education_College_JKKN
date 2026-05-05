@@ -14,13 +14,13 @@ export default function NotFound() {
             The page you are looking for does not exist or has been moved. Please use the navigation to find what you need.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/" className="px-6 py-3 text-white font-semibold rounded-lg transition-colors" style={{ backgroundColor: '#006837' }}>
+            <Link href="/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-white font-semibold rounded-lg transition-colors" style={{ backgroundColor: '#006837' }}>
               Back to Home
             </Link>
-            <Link href="/departments" className="px-6 py-3 font-semibold rounded-lg border-2 transition-colors text-[#006837] border-[#006837] hover:bg-[#006837] hover:text-white">
+            <Link href="/departments" target="_blank" rel="noopener noreferrer" className="px-6 py-3 font-semibold rounded-lg border-2 transition-colors text-[#006837] border-[#006837] hover:bg-[#006837] hover:text-white">
               Departments
             </Link>
-            <Link href="/contact" className="px-6 py-3 font-semibold rounded-lg border-2 transition-colors text-[#006837] border-[#006837] hover:bg-[#006837] hover:text-white">
+            <Link href="/contact" target="_blank" rel="noopener noreferrer" className="px-6 py-3 font-semibold rounded-lg border-2 transition-colors text-[#006837] border-[#006837] hover:bg-[#006837] hover:text-white">
               Contact Us
             </Link>
           </div>

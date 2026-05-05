@@ -6,6 +6,7 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
+import { Palette, Trophy, Home as HomeIcon, UtensilsCrossed, Bus, HeartPulse, Wifi, ShieldCheck } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
@@ -40,24 +41,33 @@ export const metadata: Metadata = {
 export const revalidate = 60;
 
 
+function withTimeout<T>(promise: PromiseLike<T>, ms: number, fallback: T): Promise<T> {
+  return Promise.race([
+    Promise.resolve(promise),
+    new Promise<T>((resolve) => setTimeout(() => resolve(fallback), ms)),
+  ]).catch(() => fallback);
+}
+
 export default async function Home() {
   const supabase = await createClient();
-  const { data: notices } = await supabase
-    .from('notices')
-    .select('title')
-    .eq('is_active', true)
-    .order('created_at', { ascending: false })
-    .limit(10);
-  const noticeTexts = notices?.map((n) => n.title) ?? [];
 
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education';
-  const { data: events } = await supabase
-    .from('events')
-    .select('id, title, slug, event_date, event_time, venue, image_url, description')
-    .eq('is_published', true)
-    .eq('college_id', collegeId)
-    .order('event_date', { ascending: false })
-    .limit(6);
+
+  const [noticesResult, eventsResult] = await Promise.all([
+    withTimeout(
+      supabase.from('notices').select('title').eq('is_active', true).order('created_at', { ascending: false }).limit(10),
+      5000,
+      { data: null, error: null }
+    ),
+    withTimeout(
+      supabase.from('events').select('id, title, slug, event_date, event_time, venue, image_url, description').eq('is_published', true).eq('college_id', collegeId).order('event_date', { ascending: false }).limit(6),
+      5000,
+      { data: null, error: null }
+    ),
+  ]);
+
+  const noticeTexts = noticesResult.data?.map((n) => n.title) ?? [];
+  const events = eventsResult.data;
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
       <JsonLd
@@ -629,7 +639,7 @@ export default async function Home() {
               <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 LANGUAGE
               </span>
-              <Link href="/departments/tamil" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/tamil" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Tamil
               </Link>
             </div>
@@ -656,7 +666,7 @@ export default async function Home() {
               <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 LANGUAGE
               </span>
-              <Link href="/departments/english" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/english" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed English
               </Link>
             </div>
@@ -683,7 +693,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/maths" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/maths" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Mathematics
               </Link>
             </div>
@@ -715,7 +725,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/physics" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/physics" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Physics
               </Link>
             </div>
@@ -747,7 +757,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/chemistry" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/chemistry" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Chemistry
               </Link>
             </div>
@@ -777,7 +787,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/botany" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/botany" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Botany
               </Link>
             </div>
@@ -811,7 +821,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/zoology" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/zoology" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Zoology
               </Link>
             </div>
@@ -843,7 +853,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/computer-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/computer-science" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Computer Science
               </Link>
             </div>
@@ -870,7 +880,7 @@ export default async function Home() {
               <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 COMMERCE
               </span>
-              <Link href="/departments/commerce" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/commerce" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Commerce
               </Link>
             </div>
@@ -902,7 +912,7 @@ export default async function Home() {
               <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SOCIAL SCIENCE
               </span>
-              <Link href="/departments/history" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/history" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed History
               </Link>
             </div>
@@ -931,7 +941,7 @@ export default async function Home() {
               <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SOCIAL SCIENCE
               </span>
-              <Link href="/departments/economics" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/economics" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Economics
               </Link>
             </div>
@@ -966,7 +976,7 @@ export default async function Home() {
               <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
-              <Link href="/departments/microbiology" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/microbiology" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Microbiology
               </Link>
             </div>
@@ -999,7 +1009,7 @@ export default async function Home() {
               <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SOCIAL SCIENCE
               </span>
-              <Link href="/departments/political-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/political-science" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Political Science
               </Link>
             </div>
@@ -1031,7 +1041,7 @@ export default async function Home() {
               <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SOCIAL SCIENCE
               </span>
-              <Link href="/departments/social-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+              <Link href="/departments/social-science" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
                 Explore B.Ed Social Science
               </Link>
             </div>
@@ -1262,18 +1272,18 @@ export default async function Home() {
             <h3 className="text-xl sm:text-2xl font-bold text-[#006837] text-center mb-4 sm:mb-6 lg:mb-8">Additional Facilities</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 sm:gap-3 lg:gap-4">
               {[
-                { icon: '🎨', label: 'Art & Craft Room' },
-                { icon: '🏃', label: 'Sports Ground' },
-                { icon: '🏠', label: 'Hostel Facility' },
-                { icon: '🍽️', label: 'Cafeteria' },
-                { icon: '🚌', label: 'Transport Service' },
-                { icon: '🏥', label: 'Medical Centre' },
-                { icon: '📶', label: 'Wi-Fi Campus' },
-                { icon: '🔒', label: '24/7 Security' }
-              ].map((facility, idx) => (
+                { icon: Palette, label: 'Art & Craft Room' },
+                { icon: Trophy, label: 'Sports Ground' },
+                { icon: HomeIcon, label: 'Hostel Facility' },
+                { icon: UtensilsCrossed, label: 'Cafeteria' },
+                { icon: Bus, label: 'Transport Service' },
+                { icon: HeartPulse, label: 'Medical Centre' },
+                { icon: Wifi, label: 'Wi-Fi Campus' },
+                { icon: ShieldCheck, label: '24/7 Security' }
+              ].map(({ icon: Icon, label }, idx) => (
                 <div key={idx} className="bg-white rounded-lg p-3 sm:p-4 text-center shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
-                  <div className="text-2xl sm:text-3xl mb-1 sm:mb-2">{facility.icon}</div>
-                  <div className="text-[10px] sm:text-xs font-medium text-gray-700 leading-tight">{facility.label}</div>
+                  <div className="flex justify-center mb-1 sm:mb-2"><Icon className="h-7 w-7 sm:h-8 sm:w-8 text-[#006837]" /></div>
+                  <div className="text-[10px] sm:text-xs font-medium text-gray-700 leading-tight">{label}</div>
                 </div>
               ))}
             </div>
@@ -1296,6 +1306,8 @@ export default async function Home() {
                 <Link
                   key={event.id}
                   href={`/events/${event.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-200 flex flex-col"
                 >
                   {event.image_url && (
