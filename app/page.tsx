@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { createClient } from '@/lib/supabase/server';
 import { Palette, Trophy, Home as HomeIcon, UtensilsCrossed, Bus, HeartPulse, Wifi, ShieldCheck } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
+import { HomePopup } from '@/components/HomePopup';
 
 export const metadata: Metadata = {
   title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
@@ -70,6 +71,7 @@ export default async function Home() {
   const events = eventsResult.data;
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
+      <HomePopup />
       <JsonLd
         data={{
           '@context': 'https://schema.org',
