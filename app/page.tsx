@@ -58,12 +58,12 @@ export default async function Home() {
     withTimeout(
       supabase.from('notices').select('title').eq('is_active', true).order('created_at', { ascending: false }).limit(10),
       5000,
-      { data: null, error: null }
+      { data: null, error: null } as never
     ),
     withTimeout(
       supabase.from('events').select('id, title, slug, event_date, event_time, venue, image_url, description').eq('is_published', true).eq('college_id', collegeId).order('event_date', { ascending: false }).limit(6),
       5000,
-      { data: null, error: null }
+      { data: null, error: null } as never
     ),
   ]);
 
