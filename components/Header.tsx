@@ -20,6 +20,7 @@ const Header = () => {
     { name: 'HOME', href: '/', hasDropdown: false },
     { name: 'ABOUT', href: '/about', hasDropdown: true },
     { name: 'DEPARTMENTS', href: '/departments', hasDropdown: true },
+    { name: 'ADMISSIONS', href: '/admissions', hasDropdown: false },
     { name: 'GALLERY', href: '/gallery', hasDropdown: false },
     { name: 'BLOG', href: '/blog', hasDropdown: false },
     { name: 'FACILITIES', href: '/facilities', hasDropdown: true },
@@ -79,9 +80,9 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <nav className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="relative flex h-20 items-center gap-6 xl:gap-10">
+        <div className="relative flex h-20 items-center gap-4">
           {/* Logo */}
-          <div className="flex items-center flex-1">
+          <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
                 src={siteConfig.logoPath}
@@ -95,7 +96,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:flex lg:items-center lg:space-x-2 xl:space-x-4 2xl:space-x-6">
+          <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-center lg:space-x-1 xl:space-x-2 2xl:space-x-4">
             {navItems.map((item) => (
               <div
                 key={item.name}
@@ -105,7 +106,7 @@ const Header = () => {
               >
                 {item.hasDropdown ? (
                   <button
-                    className={`flex items-center text-sm font-semibold transition-colors duration-200 px-2 py-2 ${
+                    className={`flex items-center text-xs xl:text-sm font-semibold transition-colors duration-200 px-1 xl:px-2 py-2 ${
                       isActiveRoute(item.href)
                         ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
                         : 'text-gray-800 hover:text-gray-600'
@@ -127,7 +128,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`flex items-center text-sm font-semibold transition-colors duration-200 px-2 py-2 ${
+                    className={`flex items-center text-xs xl:text-sm font-semibold transition-colors duration-200 px-1 xl:px-2 py-2 ${
                       isActiveRoute(item.href)
                         ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
                         : 'text-gray-800 hover:text-gray-600'
@@ -162,7 +163,7 @@ const Header = () => {
           </div>
 
           {/* Apply Now Button */}
-          <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:items-center lg:flex-shrink-0">
             <Link
               href={siteConfig.admissionFormUrl}
               target="_blank"
