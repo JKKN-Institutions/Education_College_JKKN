@@ -19,7 +19,7 @@ import AdmissionCTA from './AdmissionCTA'
 export const metadata = seoMetadata(
   'B.Ed Admission 2026-27',
   'Apply for B.Ed admission at JKKN College of Education, Namakkal. 14 specializations, NCTE approved, TNTEU affiliated. 98% placement rate. Check eligibility, fee structure, and admission process.',
-  '/admission',
+  '/admissions',
   {
     keywords: [
       'B.Ed admission 2026',
@@ -132,7 +132,7 @@ export default function AdmissionPage() {
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', href: '/' },
-          { name: 'Admission', href: '/admission' },
+          { name: 'Admission', href: '/admissions' },
         ]}
       />
       <JsonLd data={faqSchema} />
