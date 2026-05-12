@@ -11,6 +11,8 @@ import {
   Building,
   Info,
   Phone,
+  ClipboardCheck,
+  Rss,
   LucideIcon,
   Target,
   Heart,
@@ -66,7 +68,9 @@ const GROUP_ICONS: Record<string, LucideIcon> = {
   'Home': Home,
   'About': Info,
   'Departments': GraduationCap,
+  'Admissions': ClipboardCheck,
   'Gallery': Image,
+  'Blog': Rss,
   'Facilities': Building,
   'Others': MoreHorizontal,
   'Contact': Phone

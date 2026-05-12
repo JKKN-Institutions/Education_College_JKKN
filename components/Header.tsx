@@ -80,7 +80,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <nav className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="relative flex h-20 items-center gap-4">
+        <div className="relative flex h-20 items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">

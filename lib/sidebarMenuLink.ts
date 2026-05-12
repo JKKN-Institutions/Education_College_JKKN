@@ -6,6 +6,8 @@ import {
   Building,
   MoreHorizontal,
   Phone,
+  ClipboardCheck,
+  Rss,
   LucideIcon
 } from 'lucide-react';
 
@@ -87,13 +89,13 @@ export function GetRoleBasedPages(
       ]
     },
     {
-      groupLabel: 'Contact',
+      groupLabel: 'Admissions',
       menus: [
         {
-          href: '/contact',
-          label: 'Contact',
-          icon: Phone,
-          active: pathname === '/contact',
+          href: '/admissions',
+          label: 'Admissions',
+          icon: ClipboardCheck,
+          active: pathname === '/admissions',
           submenus: []
         }
       ]
@@ -106,6 +108,18 @@ export function GetRoleBasedPages(
           label: 'Gallery',
           icon: Image,
           active: pathname === '/gallery',
+          submenus: []
+        }
+      ]
+    },
+    {
+      groupLabel: 'Blog',
+      menus: [
+        {
+          href: '/blog',
+          label: 'Blog',
+          icon: Rss,
+          active: pathname.startsWith('/blog'),
           submenus: []
         }
       ]
@@ -151,6 +165,18 @@ export function GetRoleBasedPages(
             { href: '/others/alumni', label: 'Alumni', active: pathname === '/others/alumni' },
             { href: '/others/privacy-policy', label: 'Privacy policy', active: pathname === '/others/privacy-policy' }
           ]
+        }
+      ]
+    },
+    {
+      groupLabel: 'Contact',
+      menus: [
+        {
+          href: '/contact',
+          label: 'Contact',
+          icon: Phone,
+          active: pathname === '/contact',
+          submenus: []
         }
       ]
     }
