@@ -95,8 +95,11 @@ export function GetRoleBasedPages(
           href: '/admissions',
           label: 'Admissions',
           icon: ClipboardCheck,
-          active: pathname === '/admissions',
-          submenus: []
+          active: pathname === '/admissions' || pathname.startsWith('/fee-structure') || pathname.startsWith('/scholarships'),
+          submenus: [
+            { href: '/fee-structure', label: 'Fee Structure', active: pathname === '/fee-structure' },
+            { href: '/scholarships', label: 'Scholarships', active: pathname === '/scholarships' }
+          ]
         }
       ]
     },

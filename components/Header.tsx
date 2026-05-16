@@ -10,9 +10,12 @@ const Header = () => {
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
+  const admissionsSubRoutes = ['/fee-structure', '/scholarships'];
+
   const isActiveRoute = (itemHref: string) => {
     if (pathname === itemHref) return true;
     if (itemHref !== '/' && pathname.startsWith(itemHref)) return true;
+    if (itemHref === '/admissions' && admissionsSubRoutes.some(r => pathname.startsWith(r))) return true;
     return false;
   };
 
@@ -20,7 +23,7 @@ const Header = () => {
     { name: 'HOME', href: '/', hasDropdown: false },
     { name: 'ABOUT', href: '/about', hasDropdown: true },
     { name: 'DEPARTMENTS', href: '/departments', hasDropdown: true },
-    { name: 'ADMISSIONS', href: '/admissions', hasDropdown: false },
+    { name: 'ADMISSIONS', href: '/admissions', hasDropdown: true },
     { name: 'GALLERY', href: '/gallery', hasDropdown: false },
     { name: 'FACILITIES', href: '/facilities', hasDropdown: true },
     { name: 'OTHERS', href: '/others', hasDropdown: true },
@@ -28,6 +31,10 @@ const Header = () => {
   ];
 
   const dropdownMenus: { [key: string]: { name: string; href: string }[] } = {
+    ADMISSIONS: [
+      { name: 'Fee Structure', href: '/fee-structure' },
+      { name: 'Scholarships', href: '/scholarships' },
+    ],
     ABOUT: [
       { name: 'Our Vision And Mission', href: '/about/vision-mission' },
       { name: 'Our Trust', href: '/about/trust' },
