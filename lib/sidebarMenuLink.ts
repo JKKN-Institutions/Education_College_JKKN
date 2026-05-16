@@ -113,18 +113,6 @@ export function GetRoleBasedPages(
       ]
     },
     {
-      groupLabel: 'Blog',
-      menus: [
-        {
-          href: '/blog',
-          label: 'Blog',
-          icon: Rss,
-          active: pathname.startsWith('/blog'),
-          submenus: []
-        }
-      ]
-    },
-    {
       groupLabel: 'Facilities',
       menus: [
         {
@@ -160,7 +148,6 @@ export function GetRoleBasedPages(
             { href: '/others/biomatric-list', label: 'BIOMATRIC LIST', active: pathname === '/others/biomatric-list' },
             { href: '/others/balance-sheet', label: 'Balance Sheet', active: pathname === '/others/balance-sheet' },
             { href: '/others/financial-details', label: 'Financial details', active: pathname === '/others/financial-details' },
-            { href: '/others/faculty-details', label: 'Faculty Details', active: pathname === '/others/faculty-details' },
             { href: '/others/careers', label: 'Careers', active: pathname === '/others/careers' },
             { href: '/others/alumni', label: 'Alumni', active: pathname === '/others/alumni' },
             { href: '/others/privacy-policy', label: 'Privacy policy', active: pathname === '/others/privacy-policy' }

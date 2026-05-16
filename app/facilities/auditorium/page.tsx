@@ -38,27 +38,18 @@ export default function Auditorium() {
           </h1>
 
           {/* Auditorium Images */}
-          <div className="flex justify-center mb-6 sm:mb-8 lg:mb-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full md:w-1/2">
-              <div className="relative w-full h-48 sm:h-56 lg:h-64">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
+            {['/images/Auditorium-1.webp', '/images/Auditorium-2.webp', '/images/Auditorium-3.webp'].map((src, i) => (
+              <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
-                  src="/images/auditorium-1.jpg"
-                  alt="Auditorium view 1"
+                  src={src}
+                  alt={`Auditorium view ${i + 1}`}
                   fill
-                  className="object-contain"
-                  priority
+                  className="object-cover"
+                  priority={i === 0}
                 />
               </div>
-              <div className="relative w-full h-48 sm:h-56 lg:h-64">
-                <Image
-                  src="/images/auditorium-2.jpg"
-                  alt="Auditorium view 2"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Content Section */}

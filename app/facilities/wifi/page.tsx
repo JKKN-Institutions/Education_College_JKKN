@@ -37,16 +37,19 @@ export default function WiFi() {
             WI-FI
           </h1>
 
-          {/* WiFi Icon */}
-          <div className="mb-6 sm:mb-8 lg:mb-12">
-            <Image
-              src="/images/wifi.png"
-              alt="Wi-Fi Icon"
-              width={300}
-              height={300}
-              className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48"
-              priority
-            />
+          {/* WiFi Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
+            {['/images/wifi-1.webp', '/images/wifi-2.webp', '/images/wifi-3.webp'].map((src, i) => (
+              <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
+                <Image
+                  src={src}
+                  alt={`Wi-Fi facility ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  priority={i === 0}
+                />
+              </div>
+            ))}
           </div>
 
           {/* Content Section */}

@@ -43,7 +43,7 @@ export default function HostelTabs({ boysFeatures, girlsFeatures }: HostelTabsPr
         <div className="mb-6 sm:mb-8 lg:mb-12">
           <div className="relative w-full max-w-[350px] h-48 sm:h-56 lg:h-64">
             <Image
-              src={activeTab === 'boys' ? '/images/boys-hostel.jpg' : '/images/girls-hostel.jpg'}
+              src={activeTab === 'boys' ? '/images/Boys-hostel.jpg' : '/images/Girls-Hostel.jpg'}
               alt={activeTab === 'boys' ? 'Boys Hostel Building' : 'Girls Hostel Building'}
               fill
               className="object-cover"

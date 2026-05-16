@@ -30,27 +30,18 @@ export default function SeminarHall() {
           </h1>
 
           {/* Images Grid */}
-          <div className="flex justify-center mb-6 sm:mb-8 lg:mb-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full md:w-1/2">
-              <div className="relative w-full h-48 sm:h-56 lg:h-64">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
+            {['/images/Seminar-hall-1.avif', '/images/Seminar-hall-2.avif', '/images/Seminar-hall-3.avif'].map((src, i) => (
+              <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
-                  src="/images/seminar-hall-1.jpg"
-                  alt="Seminar hall event"
+                  src={src}
+                  alt={`Seminar hall ${i + 1}`}
                   fill
-                  className="object-contain"
-                  priority
+                  className="object-cover"
+                  priority={i === 0}
                 />
               </div>
-              <div className="relative w-full h-48 sm:h-56 lg:h-64">
-                <Image
-                  src="/images/seminar-hall-2.jpg"
-                  alt="Seminar hall event"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Content Section */}

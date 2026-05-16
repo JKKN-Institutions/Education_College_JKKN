@@ -38,17 +38,19 @@ export default function ClassRoom() {
             Digital class room
           </h1>
 
-          {/* Classroom Image */}
-          <div className="mb-6 sm:mb-8 lg:mb-12">
-            <div className="relative w-full max-w-[350px] h-48 sm:h-56 lg:h-64">
-              <Image
-                src="/images/Class-room.jpg"
-                alt="Digital classroom with students"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+          {/* Classroom Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
+            {['/images/class_room-1.webp', '/images/class_room-2.webp', '/images/class_room-3.webp'].map((src, i) => (
+              <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
+                <Image
+                  src={src}
+                  alt={`Digital classroom ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  priority={i === 0}
+                />
+              </div>
+            ))}
           </div>
 
           {/* Features List */}

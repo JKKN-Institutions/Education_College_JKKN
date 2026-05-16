@@ -1,6 +1,7 @@
 import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
@@ -27,6 +28,21 @@ export default function Hospital() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-12" style={{ color: '#1e7f4e' }}>
             HOSPITAL
           </h1>
+
+          {/* Hospital Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
+            {['/images/Hospital-1.jpg', '/images/Hospital-2.jpg', '/images/Hospital-3.jpg'].map((src, i) => (
+              <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
+                <Image
+                  src={src}
+                  alt={`Hospital facility ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  priority={i === 0}
+                />
+              </div>
+            ))}
+          </div>
 
           {/* Content Section */}
           <div className="space-y-4 sm:space-y-6 max-w-6xl">

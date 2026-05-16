@@ -31,12 +31,12 @@ export default function AmbulanceServices() {
 
           {/* Ambulance Image */}
           <div className="mb-6 sm:mb-8 lg:mb-12">
-            <div className="relative w-full h-64 sm:h-80 lg:h-96">
+            <div className="relative w-full max-w-xl mx-auto h-72 sm:h-96 lg:h-[420px]">
               <Image
                 src="/images/Ambulance.jpg"
                 alt="JKKN College Free Ambulance Service"
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>

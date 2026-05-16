@@ -46,17 +46,19 @@ export default function Library() {
             LIBRARY
           </h1>
 
-          {/* Image */}
-          <div className="mb-6 sm:mb-8 lg:mb-12">
-            <div className="relative w-full max-w-[350px] h-48 sm:h-56 lg:h-64">
-              <Image
-                src="/images/library.png"
-                alt="Student studying in library"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+          {/* Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
+            {['/images/library-1.jpg', '/images/library-2.jpg', '/images/library-3.jpg'].map((src, i) => (
+              <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
+                <Image
+                  src={src}
+                  alt={`Library ${i + 1}`}
+                  fill
+                  className="object-cover"
+                  priority={i === 0}
+                />
+              </div>
+            ))}
           </div>
 
           {/* Content Section */}
