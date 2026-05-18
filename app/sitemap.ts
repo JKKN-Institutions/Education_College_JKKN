@@ -18,6 +18,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/about/institutions`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/about/ncte-approval`, lastModified: new Date('2026-01-01'), changeFrequency: 'yearly', priority: 0.7 },
 
+    // Admissions (course-wise)
+    { url: `${baseUrl}/admissions`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${baseUrl}/admissions/tamil`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/english`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/maths`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/physics`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/chemistry`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/botany`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/zoology`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/history`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/economics`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/commerce`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/computer-science`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/political-science`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/social-science`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/admissions/microbiology`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+
     // Departments
     { url: `${baseUrl}/departments/tamil`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/departments/english`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
