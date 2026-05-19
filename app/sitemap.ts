@@ -64,6 +64,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/facilities/bank-post-office`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/facilities/ambulance-services`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.5 },
 
+    // Course-wise blog posts (B.Ed specializations — long-form SEO)
+    { url: `${baseUrl}/blog/b-ed-tamil-2026`, lastModified: new Date('2026-03-12'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-english-2026`, lastModified: new Date('2026-03-14'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-mathematics-2026`, lastModified: new Date('2026-03-16'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-physics-2026`, lastModified: new Date('2026-03-18'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-chemistry-2026`, lastModified: new Date('2026-03-20'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-computer-science-2026`, lastModified: new Date('2026-03-22'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-botany-2026`, lastModified: new Date('2026-03-24'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-zoology-2026`, lastModified: new Date('2026-03-26'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-microbiology-2026`, lastModified: new Date('2026-03-28'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-commerce-2026`, lastModified: new Date('2026-03-30'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-economics-2026`, lastModified: new Date('2026-04-02'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-history-2026`, lastModified: new Date('2026-04-04'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-social-science-2026`, lastModified: new Date('2026-04-06'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/blog/b-ed-political-science-2026`, lastModified: new Date('2026-04-09'), changeFrequency: 'monthly', priority: 0.85 },
+
     // Listing pages
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${baseUrl}/gallery`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
