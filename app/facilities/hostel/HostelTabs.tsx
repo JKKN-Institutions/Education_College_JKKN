@@ -39,17 +39,30 @@ export default function HostelTabs({ boysFeatures, girlsFeatures }: HostelTabsPr
 
       {/* Right Side - Content */}
       <div className="lg:col-span-9">
-        {/* Hostel Image */}
-        <div className="mb-6 sm:mb-8 lg:mb-12">
-          <div className="relative w-full max-w-[350px] h-48 sm:h-56 lg:h-64">
-            <Image
-              src={activeTab === 'boys' ? '/images/Boys-hostel.jpg' : '/images/Girls-Hostel.jpg'}
-              alt={activeTab === 'boys' ? 'Boys Hostel Building' : 'Girls Hostel Building'}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+        {/* Hostel Images */}
+        <div className="mb-6 sm:mb-8 lg:mb-12 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          {(activeTab === 'boys'
+            ? [
+                { src: '/images/boys-hostel-1.jpg', alt: 'Boys Hostel 1' },
+                { src: '/images/boys-hostel-2.jpg', alt: 'Boys Hostel 2' },
+                { src: '/images/boys-hostel-3.jpg', alt: 'Boys Hostel 3' },
+              ]
+            : [
+                { src: '/images/girls-hostel-1.jpg', alt: 'Girls Hostel 1' },
+                { src: '/images/girls-hostel-2.jpg', alt: 'Girls Hostel 2' },
+                { src: '/images/girls-hostel-3.jpg', alt: 'Girls Hostel 3' },
+              ]
+          ).map((img, index) => (
+            <div key={index} className="relative w-full h-48 sm:h-56 lg:h-64">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            </div>
+          ))}
         </div>
 
         {/* Features List */}
