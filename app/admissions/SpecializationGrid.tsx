@@ -26,10 +26,10 @@ export default function SpecializationGrid() {
             14 SPECIALIZATIONS
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-3 sm:mb-4 px-2">
-            B.Ed Specializations
+            Course-Wise B.Ed Admission
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            Choose your teaching subject from 14 NCTE-approved specializations
+            Click any specialization to see course-specific eligibility, fees, application steps, and apply directly
           </p>
         </div>
 
@@ -37,9 +37,7 @@ export default function SpecializationGrid() {
           {specializations.map((spec) => (
             <Link
               key={spec.slug}
-              href={`/departments/${spec.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/admissions/${spec.slug}`}
               className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:border-[#7cb983] transition-all duration-200 group"
             >
               <div className="flex items-start gap-3 mb-3">
@@ -54,7 +52,7 @@ export default function SpecializationGrid() {
               </div>
               <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{spec.description}</p>
               <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-[#7cb983]">
-                View Details
+                View Admission Details
                 <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
