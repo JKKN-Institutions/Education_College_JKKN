@@ -22,6 +22,19 @@ export default async function AdminBlogsPage() {
       .order('name'),
   ]);
 
+  // Preview tokens live in a separate query so the list still renders if the
+  // preview_token column has not been added to the database yet.
+  const { data: tokenRows } = await supabase
+    .from('blogs')
+    .select('id, preview_token')
+    .eq('college_id', collegeId);
+
+  const tokenById = new Map((tokenRows ?? []).map((r) => [r.id, r.preview_token]));
+  const blogsWithTokens = (blogs ?? []).map((b) => ({
+    ...b,
+    preview_token: tokenById.get(b.id) ?? null,
+  }));
+
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       {/* Page Header */}
@@ -55,7 +68,7 @@ export default async function AdminBlogsPage() {
       </div>
 
       {/* Table Section */}
-      <BlogsTableClient blogs={blogs ?? []} categories={categories ?? []} />
+      <BlogsTableClient blogs={blogsWithTokens} categories={categories ?? []} />
     </div>
   );
 }
