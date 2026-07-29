@@ -47,6 +47,10 @@ CREATE UNIQUE INDEX IF NOT EXISTS blogs_preview_token_key
 
 
 -- ── STEP 2: token-gated read ────────────────────────────────
+-- Drop any earlier (text, text) overload first. Two overloads make PostgREST
+-- fail the RPC with PGRST203 ("could not choose the best candidate function").
+DROP FUNCTION IF EXISTS public.get_blog_preview(text, text);
+
 -- SECURITY DEFINER so it bypasses the "is_published = true" RLS policy,
 -- but ONLY ever returns a row when the exact secret token is supplied.
 -- The column is cast to text (not the argument to uuid) so a malformed
