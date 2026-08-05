@@ -142,7 +142,6 @@ export default async function Home() {
           foundingDate: '2016',
           sameAs: [
             'https://www.facebook.com/jkkneducation/',
-            'https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions',
             'https://www.instagram.com/jkkninstitutions/',
             'https://www.youtube.com/@jkkninstitutions',
             'https://www.linkedin.com/school/jkkneducation/',
