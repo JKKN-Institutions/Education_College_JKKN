@@ -497,7 +497,7 @@ export default async function Home() {
                 </div>
                 <div className="min-w-0">
                   <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">AFFILIATION</div>
-                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#006837]">State University</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#006837]">Tamil Nadu Teachers Education University (TNTEU)</div>
                 </div>
               </div>
 
