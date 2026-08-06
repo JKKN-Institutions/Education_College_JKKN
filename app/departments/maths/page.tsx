@@ -20,7 +20,7 @@ export default function MathematicsPage() {
       <Header />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-      <section className="relative bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%)] lg:bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%),url(/images/B.Ed-Maths-Hero-Banner-Image.png)] bg-cover bg-center text-white py-10 sm:py-16 lg:py-20 px-4 overflow-hidden">
+      <section className="relative bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%)] lg:bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%),url(/images/B.Ed-Maths-Hero-Banner-Image.webp)] bg-cover bg-center text-white py-10 sm:py-16 lg:py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#7cb983] rounded-full blur-3xl"></div>
@@ -90,7 +90,7 @@ export default function MathematicsPage() {
             {/* Right Content - Hero Banner Image */}
             <div className="relative mt-8 lg:mt-0">
               <Image
-                src="/images/B.Ed-Maths-Hero-Banner-Image.png"
+                src="/images/B.Ed-Maths-Hero-Banner-Image.webp"
                 alt="B.Ed Mathematics Department"
                 width={2816}
                 height={1536}

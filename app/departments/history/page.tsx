@@ -46,7 +46,7 @@ export default function HistoryDepartment() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%)] lg:bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%),url(/images/B.Ed-History-Hero-Banner-Image.png)] bg-cover bg-center">
+      <section className="relative py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%)] lg:bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%),url(/images/B.Ed-History-Hero-Banner-Image.webp)] bg-cover bg-center">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -130,7 +130,7 @@ export default function HistoryDepartment() {
             {/* Right Content - Hero Banner Image */}
             <div className="relative mt-8 lg:mt-0">
               <Image
-                src="/images/B.Ed-History-Hero-Banner-Image.png"
+                src="/images/B.Ed-History-Hero-Banner-Image.webp"
                 alt="B.Ed History Department"
                 width={2816}
                 height={1536}

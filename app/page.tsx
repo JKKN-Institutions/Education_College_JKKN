@@ -406,7 +406,7 @@ export default async function Home() {
             <div className="relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl overflow-hidden min-h-[350px] sm:min-h-[450px] lg:min-h-[550px]">
                 <Image
-                  src="/images/Homepage-Hero-Banner-Image.png"
+                  src="/images/Homepage-Hero-Banner-Image.webp"
                   alt="Future Teachers Learning"
                   fill
                   className="object-cover"
@@ -1791,7 +1791,7 @@ export default async function Home() {
             {/* Right Content - Orange Box */}
             <div className="relative rounded-xl sm:rounded-2xl overflow-hidden min-h-[200px] sm:min-h-[300px] lg:min-h-[500px]">
               <Image
-                src="/images/Homepage-Start-Your-Teaching-Career-Image.png"
+                src="/images/Homepage-Start-Your-Teaching-Career-Image.webp"
                 alt="Start Your Teaching Career"
                 fill
                 className="object-cover"

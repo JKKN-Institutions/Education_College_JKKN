@@ -90,7 +90,7 @@ export default function AdmissionHero() {
           {/* Right Content - Hero Banner Image */}
           <div className="relative mt-8 lg:mt-0">
             <Image
-              src="/images/Homepage-Start-Your-Teaching-Career-Image.png"
+              src="/images/Homepage-Start-Your-Teaching-Career-Image.webp"
               alt="B.Ed Admission 2026-27 - JKKN College of Education"
               width={2048}
               height={2048}
