@@ -35,7 +35,7 @@ const popularPosts = [
     category: 'B.Ed Admissions',
     title: 'B.Ed Admission 2026 in Tamil Nadu: Eligibility, Process & Key Dates',
     date: 'Feb 20, 2026',
-    href: '/blog/career-prospects-after-bed',
+    href: '/blog/top-10-career-options-after-bed-2026',
   },
   {
     category: 'Teaching Careers',

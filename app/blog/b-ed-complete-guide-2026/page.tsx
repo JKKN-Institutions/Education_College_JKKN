@@ -219,7 +219,7 @@ export default function BlogDetailPage() {
               url: 'https://edu.jkkn.ac.in/images/logo.png',
             },
           },
-          mainEntityOfPage: 'https://edu.jkkn.ac.in/blog/career-prospects-after-bed',
+          mainEntityOfPage: 'https://edu.jkkn.ac.in/blog/top-10-career-options-after-bed-2026',
         }}
       />
       <JsonLd
