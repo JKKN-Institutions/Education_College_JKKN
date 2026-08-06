@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { siteConfig } from '@/lib/site-config'
 
@@ -88,9 +89,12 @@ export default function AdmissionHero() {
 
           {/* Right Content - Hero Banner Image */}
           <div className="relative mt-8 lg:mt-0">
-            <img
+            <Image
               src="/images/Homepage-Start-Your-Teaching-Career-Image.png"
               alt="B.Ed Admission 2026-27 - JKKN College of Education"
+              width={2048}
+              height={2048}
+              priority
               className="w-full h-auto rounded-xl sm:rounded-2xl"
             />
           </div>

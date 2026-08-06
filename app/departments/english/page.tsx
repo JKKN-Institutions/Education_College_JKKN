@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -95,9 +96,12 @@ export default function EnglishDepartment() {
 
             {/* Right Content - Hero Banner Image */}
             <div className="relative mt-8 lg:mt-0">
-              <img
+              <Image
                 src="/images/B.Ed-English-Hero-Banner-Image.png"
                 alt="B.Ed English Department"
+                width={2816}
+                height={1536}
+                priority
                 className="w-full h-auto rounded-xl sm:rounded-2xl"
               />
             </div>

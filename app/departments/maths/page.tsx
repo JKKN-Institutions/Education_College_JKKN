@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image'
 import Link from 'next/link';
 import { CheckCircle, BookOpen, Users, Clock, DollarSign, Monitor, Beaker, GraduationCap, Briefcase, School, ChevronDown, ChevronUp, Phone } from 'lucide-react';
 import Header from '@/components/Header';
@@ -88,9 +89,12 @@ export default function MathematicsPage() {
 
             {/* Right Content - Hero Banner Image */}
             <div className="relative mt-8 lg:mt-0">
-              <img
+              <Image
                 src="/images/B.Ed-Maths-Hero-Banner-Image.png"
                 alt="B.Ed Mathematics Department"
+                width={2816}
+                height={1536}
+                priority
                 className="w-full h-auto rounded-xl sm:rounded-2xl"
               />
             </div>
