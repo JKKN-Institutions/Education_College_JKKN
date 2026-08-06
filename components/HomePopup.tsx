@@ -25,7 +25,7 @@ export function HomePopup() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/images/education-pop-up-poster.jpg"
+            src="/images/education-pop-up-poster.webp"
             alt="JKKN Admission 2026"
             width={500}
             height={700}

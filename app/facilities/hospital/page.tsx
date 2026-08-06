@@ -31,7 +31,7 @@ export default function Hospital() {
 
           {/* Hospital Images */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 sm:mb-8 lg:mb-12">
-            {['/images/Hospital-1.jpg', '/images/Hospital-2.jpg', '/images/Hospital-3.jpg'].map((src, i) => (
+            {['/images/Hospital-1.webp', '/images/Hospital-2.webp', '/images/Hospital-3.webp'].map((src, i) => (
               <div key={i} className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
                   src={src}

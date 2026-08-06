@@ -586,7 +586,7 @@ export default async function Home() {
               {/* Modern Learning Studio Box */}
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-48 sm:h-56 lg:h-64">
                 <Image
-                  src="/images/Homepage-Modern-Learning-Studio-Image.png"
+                  src="/images/Homepage-Modern-Learning-Studio-Image.webp"
                   alt="Modern Learning Studio"
                   fill
                   className="object-cover"
@@ -1414,7 +1414,7 @@ export default async function Home() {
               {/* Placement Rate Box */}
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-6 lg:mb-8 h-[200px] sm:h-[250px] lg:h-[300px]">
                 <Image
-                  src="/images/Homepage-Placement-Rate-Image.png"
+                  src="/images/Homepage-Placement-Rate-Image.webp"
                   alt="98% Placement Rate"
                   fill
                   className="object-cover"
