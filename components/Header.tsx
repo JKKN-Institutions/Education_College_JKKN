@@ -109,15 +109,19 @@ const Header = () => {
                 onMouseEnter={() => item.hasDropdown && setActiveDropdown(item.name)}
                 onMouseLeave={() => item.hasDropdown && setActiveDropdown(null)}
               >
-                {item.hasDropdown ? (
-                  <button
-                    className={`flex items-center text-xs xl:text-sm font-semibold transition-colors duration-200 px-1 xl:px-2 py-2 ${
-                      isActiveRoute(item.href)
-                        ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
-                        : 'text-gray-800 hover:text-gray-600'
-                    }`}
-                  >
-                    {item.name}
+                {/* Every top-nav item is a real <a href> so crawlers can follow it.
+                    The dropdown still opens on hover via the wrapper div above -
+                    this element never controlled that. */}
+                <Link
+                  href={item.href}
+                  className={`flex items-center text-xs xl:text-sm font-semibold transition-colors duration-200 px-1 xl:px-2 py-2 ${
+                    isActiveRoute(item.href)
+                      ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
+                      : 'text-gray-800 hover:text-gray-600'
+                  }`}
+                >
+                  {item.name}
+                  {item.hasDropdown && (
                     <svg
                       className="ml-1 h-3 w-3"
                       fill="currentColor"
@@ -129,19 +133,8 @@ const Header = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </button>
-                ) : (
-                  <Link
-                    href={item.href}
-                    className={`flex items-center text-xs xl:text-sm font-semibold transition-colors duration-200 px-1 xl:px-2 py-2 ${
-                      isActiveRoute(item.href)
-                        ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
-                        : 'text-gray-800 hover:text-gray-600'
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
+                  )}
+                </Link>
 
                 {/* Dropdown Menu */}
                 {item.hasDropdown && activeDropdown === item.name && dropdownMenus[item.name] && (
