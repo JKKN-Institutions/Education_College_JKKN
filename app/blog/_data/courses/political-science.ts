@@ -6,10 +6,10 @@ export const politicalScienceBlogData: CourseBlogData = {
   courseFullName: 'Bachelor of Education in Political Science',
   category: 'B.Ed Specializations',
 
-  title: 'B.Ed Political Science 2026: Eligibility, Syllabus, Career & Salary Guide',
+  title: "B.Ed Political Science 2026: Syllabus, Career & Salary",
   h1: 'B.Ed Political Science 2026: Complete Course Guide — Eligibility, Syllabus, Career Scope & Salary',
   metaDescription:
-    'Complete guide to B.Ed Political Science specialization 2026 — eligibility, TNTEU syllabus, career as Political Science teacher, UPSC Polity coaching, salary, and admission at JKKN College of Education.',
+    "B.Ed Political Science explained — who can apply, what the TNTEU syllabus covers, and the teaching and civil-service routes it opens.",
   keywords: [
     'b.ed political science', 'b.ed polity', 'b.ed political science eligibility',
     'political science teacher career', 'cbse political science teacher salary',

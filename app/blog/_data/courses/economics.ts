@@ -6,10 +6,10 @@ export const economicsBlogData: CourseBlogData = {
   courseFullName: 'Bachelor of Education in Economics',
   category: 'B.Ed Specializations',
 
-  title: 'B.Ed Economics 2026: Eligibility, Syllabus, Career & Salary Guide',
+  title: "B.Ed Economics 2026: Syllabus, Career & Salary Guide",
   h1: 'B.Ed Economics 2026: Complete Course Guide — Eligibility, Syllabus, Career Scope & Salary',
   metaDescription:
-    'Complete guide to B.Ed Economics specialization 2026 — eligibility, TNTEU syllabus, career as Economics teacher, UPSC/competitive exam coaching, salary, and admission at JKKN College of Education.',
+    "B.Ed Economics explained — eligibility, the TNTEU syllabus, and the teaching and competitive-exam routes it opens.",
   keywords: [
     'b.ed economics', 'b.ed economics course', 'b.ed economics eligibility', 'b.ed economics syllabus',
     'economics teacher career', 'cbse economics teacher salary', 'upsc economics coaching',

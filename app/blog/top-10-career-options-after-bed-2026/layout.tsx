@@ -3,8 +3,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata: Metadata = {
-  title: 'Top 10 Career Options After B.Ed 2026',
-  description: 'Discover top career paths after B.Ed — government teaching, ed-tech, curriculum design, M.Ed, school administration, and more. Salary ranges and growth prospects included.',
+  title: { absolute: "Top 10 Career Options After B.Ed 2026 | JKKN" },
+  description: "Ten routes a B.Ed opens beyond the classroom — government teaching, ed-tech, curriculum design, M.Ed and school leadership.",
   alternates: { canonical: 'https://edu.jkkn.ac.in/blog/top-10-career-options-after-bed-2026' },
   openGraph: {
     title: 'Top 10 Career Options After B.Ed 2026 | JKKN College of Education',

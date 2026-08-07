@@ -6,10 +6,10 @@ export const botanyBlogData: CourseBlogData = {
   courseFullName: 'Bachelor of Education in Botany',
   category: 'B.Ed Specializations',
 
-  title: 'B.Ed Botany 2026: Eligibility, Syllabus, Career & Salary Guide',
+  title: "B.Ed Botany 2026: Syllabus, Career & Salary Guide",
   h1: 'B.Ed Botany 2026: Complete Course Guide — Eligibility, Syllabus, Career Scope & Salary',
   metaDescription:
-    'Complete guide to B.Ed Botany specialization 2026 — eligibility, TNTEU syllabus, career as Biology teacher, NEET coaching opportunities, salary, and admission at JKKN College of Education.',
+    "B.Ed Botany explained — eligibility, the TNTEU syllabus, and the school-teaching and coaching routes a Biology specialisation opens.",
   keywords: [
     'b.ed botany', 'b.ed botany course', 'b.ed botany eligibility', 'b.ed botany syllabus',
     'botany teacher career', 'biology teacher salary', 'neet biology faculty',
