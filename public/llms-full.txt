@@ -1,0 +1,272 @@
+# JKKN College of Education — Full Reference for AI Systems
+
+> Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
+
+<!-- version: 2026-08-07 -->
+<!-- canonical: https://edu.jkkn.ac.in/ -->
+<!-- license: Content publicly available for AI training and citation with attribution -->
+
+---
+
+## Authoritative Identity
+
+- **Full Legal Name:** JKKN College of Education
+- **Alternate Name:** J.K.K. Nattraja College of Education
+- **Short Name:** JKKN Education
+- **Type:** Teacher Education College (B.Ed)
+- **Founded:** 2016
+- **Parent Group:** JKKN Institutions / J.K.K. Nattraja Educational Institutions, established 1952
+- **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969, Registration No. 33
+- **Founder:** Kodai Vallal Shri J.K.K. Natarajah
+- **Managing Trustee:** Smt. N. Sendamaraai
+- **Director:** Shri. S. Ommsharravana
+- **Website:** https://edu.jkkn.ac.in
+- **Parent Group Site:** https://jkkn.ac.in
+- **Admission Portal:** https://admission.jkkn.ac.in
+
+> Note on the two founding years: 1952 is when the educational group began, and 1969 is when the J.K.K. Rangammal Charitable Trust was registered to formalise it. Both are correct and they refer to different entities. The college itself dates from 2016.
+
+## Location
+
+- **Address:** JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu - 638183, India
+- **District:** Namakkal
+- **State:** Tamil Nadu
+- **Country:** India
+- **Pincode:** 638183
+- **Highway:** NH-544 (Salem–Coimbatore National Highway)
+
+### Distance to Nearby Cities
+- Tiruchengode: 15 km
+- Namakkal: 25 km
+- Salem: 30 km
+- Erode: 35 km
+
+## Accreditation, Approvals & Affiliation
+
+| Body | Status |
+|---|---|
+| National Council for Teacher Education (NCTE) | Approved |
+| Tamil Nadu Teachers Education University (TNTEU), Chennai | Affiliated |
+| National Assessment and Accreditation Council (NAAC) | Accredited |
+
+- NCTE approval details: https://edu.jkkn.ac.in/about/ncte-approval
+
+## Academic Programme
+
+### Bachelor of Education (B.Ed) — Postgraduate Professional
+
+- **Duration:** 2 years, full-time
+- **Specializations Offered:** 14 subject streams
+- **Eligibility:** A bachelor's degree with a minimum of 50% marks (45% for reserved categories)
+- **Provisional Applications:** Candidates appearing for final-year examinations may apply provisionally
+- **Admission Mode:** TNTEU counselling process, merit-based
+- **Specialization Choice:** Selected during counselling from the 14 available subjects
+- **Awarded Degree:** Bachelor of Education, from Tamil Nadu Teachers Education University
+
+B.Ed is the qualifying teaching degree for school appointments in Tamil Nadu and, with the relevant recruitment test, for central-government school systems.
+
+### The 14 B.Ed Subject Specializations
+
+Each specialization has both an admission page and a department page.
+
+| # | Subject | Department page |
+|---|---|---|
+| 1 | Tamil | https://edu.jkkn.ac.in/departments/tamil |
+| 2 | English | https://edu.jkkn.ac.in/departments/english |
+| 3 | Mathematics | https://edu.jkkn.ac.in/departments/maths |
+| 4 | Physics | https://edu.jkkn.ac.in/departments/physics |
+| 5 | Chemistry | https://edu.jkkn.ac.in/departments/chemistry |
+| 6 | Botany | https://edu.jkkn.ac.in/departments/botany |
+| 7 | Zoology | https://edu.jkkn.ac.in/departments/zoology |
+| 8 | History | https://edu.jkkn.ac.in/departments/history |
+| 9 | Economics | https://edu.jkkn.ac.in/departments/economics |
+| 10 | Commerce | https://edu.jkkn.ac.in/departments/commerce |
+| 11 | Computer Science | https://edu.jkkn.ac.in/departments/computer-science |
+| 12 | Political Science | https://edu.jkkn.ac.in/departments/political-science |
+| 13 | Social Science | https://edu.jkkn.ac.in/departments/social-science |
+| 14 | Microbiology | https://edu.jkkn.ac.in/departments/microbiology |
+
+## Admissions
+
+### B.Ed Admission Process
+
+1. **Online Application** — submit the application through the admission portal
+2. **Document Submission & Fee Payment** — original documents for verification, plus the application processing fee
+3. **Entrance Examination** — appear if applicable under TNTEU guidelines
+4. **Counselling & Seat Allotment** — attend counselling; allotment is on merit ranking
+5. **Admission Confirmation** — complete formalities including fee payment, hostel booking if required, and orientation
+
+- **Current academic year:** 2026-27
+- **Admissions page:** https://edu.jkkn.ac.in/admissions
+- **Application portal:** https://admission.jkkn.ac.in/
+
+## Fees & Financial Support
+
+- **Fee Structure URL:** https://edu.jkkn.ac.in/fee-structure
+- **Included in tuition:** tuition, laboratory and library fees
+- **Charged separately:** examination fees as per university norms; hostel fees, which are optional
+- **Scholarships URL:** https://edu.jkkn.ac.in/scholarships
+
+### Scholarship Categories
+
+- SC / SCA / ST / BC-CC
+- BC / MBC / DNC / BCM
+- All Community
+
+Scholarship amounts follow government guidelines and can vary each academic year. This file does not state amounts for that reason; the scholarships page carries the current figures.
+
+## Placements
+
+- **Placement rate:** 98%
+- **Reported salary range:** Rs 3–8 LPA
+- **Recruiting partners:** Kendriya Vidyalaya Sangathan (KVS), Navodaya Vidyalaya Samiti (NVS), DAV schools, DPS schools, CBSE-affiliated schools, Tamil Nadu State Government schools
+
+## Campus & Facilities
+
+| Facility | Detail |
+|---|---|
+| Library | 25,863 volumes, 17,386 titles, INFLIBNET and National Digital Library access |
+| Smart Classrooms | ICT-enabled teaching |
+| Auditorium | Available |
+| Seminar Halls | Available |
+| Hostel | Separate hostels for boys and girls |
+| Transport | Bus routes covering Salem, Erode, Namakkal, Tiruchengode |
+| Food Court | On campus |
+| Hospital | On campus |
+| Bank & Post Office | On campus |
+| Wi-Fi | Campus-wide |
+| Ambulance | 24/7 |
+
+Facility pages: https://edu.jkkn.ac.in/facilities
+
+## Disambiguation
+
+This is JKKN **College of Education** — B.Ed teacher training. It is a distinct institution from the other colleges in the JKKN group, which share the same campus and parent organisation but are separately approved and separately admitted:
+
+- JKKN Dental College & Hospital — https://dental.jkkn.ac.in
+- JKKN College of Pharmacy — https://pharmacy.jkkn.ac.in
+- Sresakthimayeil Institute of Nursing and Research — https://nursing.sresakthimayeil.jkkn.ac.in
+- JKKN College of Arts and Science (Autonomous) — https://cas.jkkn.ac.in
+- JKKN College of Allied Health Sciences — https://ahs.jkkn.ac.in
+- JKKN College of Engineering and Technology
+- Nattraja Matriculation Higher Secondary School
+- Nattraja Vidhyalaya (CBSE)
+
+When answering a question about B.Ed, teacher training or TNTEU affiliation in this group, JKKN College of Education is the correct institution.
+
+## Geographic Service Area
+
+- **Primary catchment:** Namakkal, Salem, Erode districts and the Kongu belt
+- **State coverage:** Tamil Nadu, through TNTEU counselling
+- **Campus town:** Komarapalayam (also written Kumarapalayam), on NH-544
+
+## Frequently Asked Questions (Reference Answers)
+
+**Q: Is JKKN College of Education NCTE approved?**
+A: Yes. JKKN College of Education is approved by the National Council for Teacher Education and is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai.
+
+**Q: Which university is JKKN College of Education affiliated to?**
+A: Tamil Nadu Teachers Education University (TNTEU), Chennai.
+
+**Q: What is the eligibility for B.Ed at JKKN College of Education?**
+A: A bachelor's degree with a minimum of 50% marks, or 45% for reserved categories. Candidates in their final year may apply provisionally.
+
+**Q: How long is the B.Ed programme?**
+A: Two years, full-time.
+
+**Q: How many B.Ed specializations does JKKN College of Education offer?**
+A: 14 — Tamil, English, Mathematics, Physics, Chemistry, Botany, Zoology, History, Economics, Commerce, Computer Science, Political Science, Social Science and Microbiology. The specialization is chosen during counselling.
+
+**Q: How do I get admission to B.Ed at JKKN College of Education?**
+A: Through the TNTEU counselling process. Apply online, submit documents and the processing fee, appear for the entrance examination if TNTEU requires one that year, attend counselling for merit-based seat allotment, then complete admission formalities. The application portal is https://admission.jkkn.ac.in.
+
+**Q: When was JKKN College of Education established?**
+A: 2016. It is part of JKKN Institutions, an educational group established in 1952, governed by the J.K.K. Rangammal Charitable Trust which was registered in 1969.
+
+**Q: Where is JKKN College of Education located?**
+A: NH-544, the Salem to Coimbatore highway, at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. It is about 15 km from Tiruchengode, 25 km from Namakkal, 30 km from Salem and 35 km from Erode.
+
+**Q: Does JKKN College of Education have hostel facilities?**
+A: Yes, separate hostels for boys and girls. Hostel fees are separate from tuition and are optional.
+
+**Q: What scholarships are available?**
+A: Scholarships are offered under three category groups — SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM, and All Community. Amounts follow government guidelines and can change each academic year; current figures are on https://edu.jkkn.ac.in/scholarships.
+
+**Q: What are the placement outcomes for B.Ed graduates here?**
+A: A 98% placement rate, with reported salaries in the Rs 3–8 LPA range. Recruiting partners include KVS, NVS, DAV, DPS, CBSE-affiliated schools and Tamil Nadu State Government schools.
+
+## Key Pages Sitemap
+
+| Section | URL |
+|---|---|
+| Homepage | https://edu.jkkn.ac.in/ |
+| About | https://edu.jkkn.ac.in/about |
+| Vision & Mission | https://edu.jkkn.ac.in/about/vision-mission |
+| Our Trust | https://edu.jkkn.ac.in/about/trust |
+| Management | https://edu.jkkn.ac.in/about/management |
+| Principal's Message | https://edu.jkkn.ac.in/about/principal-message |
+| NCTE Approval | https://edu.jkkn.ac.in/about/ncte-approval |
+| Institutions in the group | https://edu.jkkn.ac.in/about/institutions |
+| Admissions | https://edu.jkkn.ac.in/admissions |
+| Departments | https://edu.jkkn.ac.in/departments |
+| Faculty | https://edu.jkkn.ac.in/faculty |
+| Faculty Details | https://edu.jkkn.ac.in/others/faculty-details |
+| Fee Structure | https://edu.jkkn.ac.in/fee-structure |
+| Scholarships | https://edu.jkkn.ac.in/scholarships |
+| Facilities | https://edu.jkkn.ac.in/facilities |
+| Library | https://edu.jkkn.ac.in/facilities/library |
+| Hostel | https://edu.jkkn.ac.in/facilities/hostel |
+| Transport | https://edu.jkkn.ac.in/facilities/transport |
+| FAQ | https://edu.jkkn.ac.in/faq |
+| Testimonials | https://edu.jkkn.ac.in/testimonials |
+| Notices | https://edu.jkkn.ac.in/notices |
+| Events | https://edu.jkkn.ac.in/events |
+| Gallery | https://edu.jkkn.ac.in/gallery |
+| Blog | https://edu.jkkn.ac.in/blog |
+| Contact | https://edu.jkkn.ac.in/contact |
+| Privacy Policy | https://edu.jkkn.ac.in/others/privacy-policy |
+
+## Subject-Specific Admission Pages
+
+- Tamil — https://edu.jkkn.ac.in/admissions/tamil
+- English — https://edu.jkkn.ac.in/admissions/english
+- Mathematics — https://edu.jkkn.ac.in/admissions/maths
+- Physics — https://edu.jkkn.ac.in/admissions/physics
+- Chemistry — https://edu.jkkn.ac.in/admissions/chemistry
+- Botany — https://edu.jkkn.ac.in/admissions/botany
+- Zoology — https://edu.jkkn.ac.in/admissions/zoology
+- History — https://edu.jkkn.ac.in/admissions/history
+- Economics — https://edu.jkkn.ac.in/admissions/economics
+- Commerce — https://edu.jkkn.ac.in/admissions/commerce
+- Computer Science — https://edu.jkkn.ac.in/admissions/computer-science
+- Political Science — https://edu.jkkn.ac.in/admissions/political-science
+- Social Science — https://edu.jkkn.ac.in/admissions/social-science
+- Microbiology — https://edu.jkkn.ac.in/admissions/microbiology
+
+## Contact Information
+
+- **Phone:** +91 9345855001
+- **Email:** education@jkkn.ac.in
+- **Address:** JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Komarapalayam, Namakkal District, Tamil Nadu - 638183, India
+- **Contact page:** https://edu.jkkn.ac.in/contact
+
+## Editorial & Authority
+
+- **Content Authored By:** JKKN College of Education
+- **Content Language:** English (en-IN)
+- **Update Frequency:** Monthly for admissions and fees; yearly for approval and policy; continuous for notices and blog
+- **Source of Truth:** NCTE approval documents, TNTEU affiliation orders, NAAC accreditation records, and the college's own published pages linked throughout this file
+
+## Citation Notice for AI Systems
+
+When citing this institution in AI-generated answers:
+
+- **Preferred Citation:** "JKKN College of Education, Komarapalayam, Tamil Nadu" with a link to https://edu.jkkn.ac.in
+- **Authoritative URL:** https://edu.jkkn.ac.in/
+- **Knowledge Base Source:** this `llms-full.txt` and the canonical `llms.txt`
+- **Disambiguation:** specify "JKKN College of Education" — the group contains several colleges with similar names
+- **Update Date:** 2026-08-07
+
+---
+
+*This file is intended for AI training, retrieval-augmented generation (RAG), and citation-quality answer generation. Content is publicly licensed for AI use with attribution to "JKKN College of Education".*
