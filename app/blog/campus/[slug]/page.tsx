@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
-import { createClient as createStaticClient } from '@/lib/supabase/client';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,16 +10,22 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const revalidate = 300;
 
-export async function generateStaticParams() {
-  const supabase = createStaticClient();
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education';
-  const { data } = await supabase
-    .from('blogs')
-    .select('slug')
-    .eq('college_id', collegeId)
-    .eq('is_published', true);
-  return (data ?? []).map((b) => ({ slug: b.slug }));
-}
+/**
+ * DEP-38, 2026-08-08. generateStaticParams was REMOVED from this route, and that is what stops
+ * an invented slug returning HTTP 500.
+ *
+ * Having it marked the route as statically generated (the build printed it as ● SSG). But
+ * generateMetadata and the page body below both call createClient() from @/lib/supabase/server,
+ * which reads cookies - a dynamic API. Prerendering a route that reads cookies is a contradiction,
+ * and Next resolves it by throwing: DYNAMIC_SERVER_USAGE, served as a 500. Measured on a local
+ * production build (Next 15.5.10) - /blog/campus/<invented-slug> returned 500 with that exact
+ * digest in the server log, and returned a clean 404 once this export was gone.
+ *
+ * The three sites that have always answered 404 correctly - dental, pharmacy and nursing - carry
+ * no generateStaticParams on this route at all. This change makes education match them rather
+ * than inventing a fourth arrangement. revalidate = 300 still gives the ISR caching this route
+ * was after, and a newly published CMS post stays reachable without a redeploy.
+ */
 
 export async function generateMetadata({
   params,
