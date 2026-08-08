@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/LayoutWrapper";
+import { ConversionTracking } from "@/components/analytics/ConversionTracking";
 import { siteConfig } from "@/lib/site-config";
 
 const poppins = Poppins({
@@ -94,6 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={poppins.className} suppressHydrationWarning>
+        <ConversionTracking />
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
       {gaId && <GoogleAnalytics gaId={gaId} />}
