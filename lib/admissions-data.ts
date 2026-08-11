@@ -74,7 +74,7 @@ export interface CourseAdmission {
 // ─────────── Shared admission constants ───────────
 
 export const FEE_STRUCTURE: FeeBreakdown[] = [
-  { label: 'Tuition Fee (per year)', amount: '₹40,000 – ₹80,000', note: 'As per Tamil Nadu Govt. norms; varies by category' },
+  { label: 'Tuition Fee (per year)', amount: '₹35,000', note: 'Management Quota, as published in the JKKN fee structure' },
   { label: 'University Registration Fee', amount: '₹2,500', note: 'One-time, payable to TNTEU' },
   { label: 'Examination Fee', amount: '₹3,000', note: 'Per semester' },
   { label: 'Caution Deposit (Refundable)', amount: '₹5,000', note: 'Returned after course completion' },

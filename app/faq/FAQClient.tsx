@@ -73,7 +73,7 @@ const allFaqs = [
   {
     category: 'fees',
     question: 'What is the fee structure for B.Ed at JKKN College of Education?',
-    answer: 'The fee structure is as per Tamil Nadu government norms and is affordable compared to private institutions. Fee ranges from approximately ₹40,000 to ₹80,000 per year depending on the category. Various scholarships are available for BC/MBC/SC/ST candidates. Contact the admission office at +91 93458 55001 for detailed fee information.',
+    answer: 'The B.Ed tuition fee at JKKN College of Education is ₹35,000 per year under the Management Quota. Various scholarships are available for BC/MBC/SC/ST candidates. Contact the admission office at +91 93458 55001 for detailed fee information.',
   },
   {
     category: 'fees',

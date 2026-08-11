@@ -191,7 +191,7 @@ export default async function Home() {
               name: 'What is the fee structure for B.Ed programme?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The fee structure varies based on the state fee committee guidelines and category. Generally, the annual tuition fee ranges from ₹40,000 to ₹80,000 for self-financing colleges. Government fee concessions, scholarships, and education loans are available for eligible Learners. Contact the admission office for the current fee structure and payment options.',
+                text: 'The B.Ed tuition fee at JKKN College of Education is ₹35,000 per year under the Management Quota. Government fee concessions, scholarships, and education loans are available for eligible Learners. Contact the admission office to confirm the fee for the current academic year and payment options.',
               },
             },
             {
@@ -1691,7 +1691,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                The fee structure varies based on the state fee committee guidelines and category. Generally, the annual tuition fee ranges from ₹40,000 to ₹80,000 for self-financing colleges. Government fee concessions, scholarships, and education loans are available for eligible Learners. Contact the admission office for the current fee structure and payment options.
+                The B.Ed tuition fee at JKKN College of Education is ₹35,000 per year under the Management Quota. Government fee concessions, scholarships, and education loans are available for eligible Learners. Contact the admission office to confirm the fee for the current academic year and payment options.
               </div>
             </details>
 
