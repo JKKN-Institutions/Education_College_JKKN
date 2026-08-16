@@ -58,7 +58,7 @@ export const siteConfig = {
   /** Admission form URL (can differ per college) */
   admissionFormUrl:
     process.env.NEXT_PUBLIC_ADMISSION_FORM_URL ??
-    'https://www.jkkn.ai/apply/jkkn-admission-2026',
+    'https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=site',
 
   /** Site domain — used for canonical URLs and footer links */
   domain:

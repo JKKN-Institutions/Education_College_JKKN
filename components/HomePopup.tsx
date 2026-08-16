@@ -20,7 +20,7 @@ export function HomePopup() {
           <X className="w-5 h-5 text-gray-700" />
         </button>
         <a
-          href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+          href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=components-homepopup"
           target="_blank"
           rel="noopener noreferrer"
         >

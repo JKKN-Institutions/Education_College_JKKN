@@ -400,7 +400,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                   Apply for B.Ed {data.subject} at JKKN College of Education — NCTE approved, TNTEU affiliated, with strong placement record.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
-                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
+                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=blog-components-courseblogtemplate" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
                     Apply Now →
                   </a>
                   <a href="tel:+919345855001" className="border border-white/50 text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-white/10 transition-colors">
@@ -585,7 +585,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                 </div>
                 <h4 className="font-bold text-gray-900 text-sm mb-1">B.Ed {data.subject} Admission 2026</h4>
                 <p className="text-gray-500 text-xs mb-4">Limited seats at JKKN College of Education, Komarapalayam</p>
-                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=blog-components-courseblogtemplate" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#006837] text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-[#004d28] transition-colors text-center">
                   Apply Now →
                 </a>
                 <a href="tel:+919345855001" className="block text-center text-[#006837] text-xs font-medium mt-3">+91 9345855001</a>
