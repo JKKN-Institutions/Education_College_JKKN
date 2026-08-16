@@ -55,10 +55,22 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_MAPS_EMBED_URL ??
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.495264960904!2d77.72893427452533!3d11.444134546524035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96a44bd8b7e95%3A0x60d03be57a6fca11!2sJKKN%20College%20of%20Education!5e0!3m2!1sen!2sin!4v1706000000000!5m2!1sen!2sin',
 
-  /** Admission form URL (can differ per college) */
-  admissionFormUrl:
-    process.env.NEXT_PUBLIC_ADMISSION_FORM_URL ??
-    'https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=site',
+  /**
+   * Admission form URL (can differ per college).
+   *
+   * DEP-30. The UTM is appended to WHATEVER base wins, not baked into the fallback.
+   * NEXT_PUBLIC_ADMISSION_FORM_URL is set in Vercel, so a UTM written only into the
+   * fallback is dead code - measured live 2026-08-16, the site served the bare URL while
+   * this file claimed it was tagged. Source said tagged, live said not.
+   */
+  admissionFormUrl: (() => {
+    const base =
+      process.env.NEXT_PUBLIC_ADMISSION_FORM_URL ??
+      'https://www.jkkn.ai/apply/jkkn-admission-2026'
+    if (base.includes('utm_')) return base
+    const utm = 'utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=site'
+    return base + (base.includes('?') ? '&' : '?') + utm
+  })(),
 
   /** Site domain — used for canonical URLs and footer links */
   domain:
