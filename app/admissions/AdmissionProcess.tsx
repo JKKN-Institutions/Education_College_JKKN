@@ -2,7 +2,7 @@ export default function AdmissionProcess() {
   const steps = [
     {
       title: 'Online Application',
-      description: 'Fill the online application form at admission.jkkn.ac.in with accurate personal, academic, and contact details. Upload required documents in the prescribed format.',
+      description: 'Fill the online application form at jkkn.ai/apply/jkkn-admission-2026 with accurate personal, academic, and contact details. Upload required documents in the prescribed format.',
     },
     {
       title: 'Document Submission & Fee Payment',
