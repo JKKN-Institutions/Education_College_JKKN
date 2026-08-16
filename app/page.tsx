@@ -9,6 +9,7 @@ import { createClient } from '@/lib/supabase/server';
 import { Palette, Trophy, Home as HomeIcon, UtensilsCrossed, Bus, HeartPulse, Wifi, ShieldCheck } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
 import { HomePopup } from '@/components/HomePopup';
+import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 
 export const metadata: Metadata = {
   title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
@@ -1807,6 +1808,16 @@ export default async function Home() {
       </section>
 
       {/* Footer */}
+      {/* DEP-34 - enquiry form. Posts to the CRM from the server; a browser cannot POST there */}
+      {/* directly - the endpoint sends no Access-Control-Allow-Origin header. */}
+      <section className="bg-gradient-to-br from-[#0b6d41] to-[#12a15f] py-16">
+          <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">Get a Call Back</h2>
+              <p className="text-white/80 text-center text-sm mb-8">Leave your details and our admission team will contact you within 24 hours.</p>
+              <EducationEnquiryForm sourcePage="home" />
+          </div>
+      </section>
+
       <Footer />
     </div>
   );
