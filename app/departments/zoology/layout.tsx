@@ -1,11 +1,21 @@
 import { seoMetadata } from '@/lib/seo-metadata';
 import { JsonLd } from '@/components/JsonLd';
 
+// GL1-08. Measured GSC 2026-07-21..08-17: this page carries 121 impressions and ZERO clicks.
+// The queries are "bed in zoology" (32 impr, position 6.22) and "bed zoology" (21 impr, 2.43) -
+// spelled without dots, which "B.Ed Zoology" does not carry as a token. The root layout appends
+// " | JKKN College of Education" (28 chars), so the old title rendered at 40 characters of which
+// 28 were the college name; absolute: true reclaims that space for the subject and the intent.
+// HONEST LIMIT: 121 impressions and no clicks is the weakest page in this batch. It is a cheap
+// reversible title change, not a measured cause of anything.
 export const metadata = seoMetadata(
-  'B.Ed Zoology',
-  'B.Ed Zoology specialization at JKKN College of Education — NCTE approved teacher training in Zoology and animal sciences, Namakkal.',
+  'BEd Zoology - B.Ed Zoology Subject, Eligibility & Syllabus',
+  'B.Ed Zoology (BEd Zoology) at JKKN College of Education, Namakkal - eligibility, syllabus, duration and teaching career. NCTE approved, TNTEU affiliated.',
   '/departments/zoology',
-  { keywords: ['B.Ed Zoology', 'Zoology teacher training', 'B.Ed Zoology Tamil Nadu'] }
+  {
+    absolute: true,
+    keywords: ['BEd Zoology', 'B.Ed Zoology', 'bed in zoology', 'Zoology teacher training', 'B.Ed Zoology Tamil Nadu'],
+  }
 );
 
 export default function Layout({ children }: { children: React.ReactNode }) {
