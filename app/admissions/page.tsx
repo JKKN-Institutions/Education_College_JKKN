@@ -17,13 +17,28 @@ import AdmissionFAQ from './AdmissionFAQ'
 import AdmissionCTA from './AdmissionCTA'
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 
+// GL1-08. This page is the redirect target of
+// cas.jkkn.ac.in/blog/bed-admission-2026-tamil-nadu, which 308s here - so this title is what
+// searchers see for that result. Measured GSC 2026-07-21..08-17, that URL alone carried 8,886
+// impressions and 438 clicks, which is 69% of the ENTIRE Arts & Science site's 632 clicks.
+// The old title carried neither "Tamil Nadu" nor "counselling", the two tokens the traffic
+// actually uses: b ed admission 2026 tamil nadu 519 impr, b.ed counselling 2026 tamilnadu 445,
+// b ed admission 2026 last date in tamil nadu 310.
+// `absolute: true` skips the root layout's " | JKKN College of Education" (28 chars); the old
+// 22-char title rendered as 50 and the new one would otherwise render at 87.
+// DELIBERATELY NOT PROMISED IN THE TITLE: a last date. Four of the seven queries ask WHEN, and
+// the 2026 dates are still blank in Facts-Master (DEC-04). Ranking a page that cannot answer
+// its own query buys a bounce, not an admission. Add the date block when the office confirms.
 export const metadata = seoMetadata(
-  'B.Ed Admission 2026-27',
-  'Apply for B.Ed admission at JKKN College of Education, Namakkal. 14 specializations, NCTE approved, TNTEU affiliated. 98% placement rate. Check eligibility, fee structure, and admission process.',
+    'B.Ed Admission & Counselling 2026 Tamil Nadu - JKKN College',
+    'B.Ed admission & counselling 2026-27 in Tamil Nadu at JKKN College of Education, Namakkal. Eligibility, fees, 14 specializations. NCTE approved, 98% placement.',
   '/admissions',
   {
+    absolute: true,
     keywords: [
       'B.Ed admission 2026',
+      'B.Ed counselling 2026 Tamil Nadu',
+      'TN B.Ed counselling 2026',
       'JKKN College of Education admission',
       'B.Ed Namakkal',
       'B.Ed Tamil Nadu',
