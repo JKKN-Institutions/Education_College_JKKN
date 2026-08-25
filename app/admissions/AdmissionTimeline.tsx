@@ -1,11 +1,23 @@
+import { ADMISSION_DATE_SOURCES } from '@/lib/admissions-data'
+
+// ADMISSION STEPS - no calendar month is published here, on purpose.
+//
+// Until 2026-08-25 this component printed Mar / Apr / May / Jun / Jul / Aug against these six
+// steps, with March flagged `active` so it rendered as the current step all year. Those months
+// were never verified, they disagreed with the six dates in lib/admissions-data.ts that the
+// course pages render, and Tamil Nadu B.Ed dates are set by the state rather than by this
+// college. config/admission-windows.json in the SEO project carries "verified": false and
+// states that no such date may be published, quoted to a parent, or written into a page.
+//
+// A step number answers "what happens next" without claiming to know when.
 export default function AdmissionTimeline() {
   const milestones = [
-    { month: 'Mar', title: 'Applications Open', description: 'Online application portal opens for 2026-27 session', status: 'active' },
-    { month: 'Apr', title: 'Document Verification', description: 'Submit documents and complete application review', status: 'upcoming' },
-    { month: 'May', title: 'Entrance Exam', description: 'State-level entrance examination (if applicable)', status: 'upcoming' },
-    { month: 'Jun', title: 'Counselling', description: 'Merit-based counselling and specialization selection', status: 'upcoming' },
-    { month: 'Jul', title: 'Seat Allotment', description: 'Final seat allotment and admission confirmation', status: 'upcoming' },
-    { month: 'Aug', title: 'Classes Begin', description: 'Orientation program and academic session starts', status: 'upcoming' },
+    { month: '1', title: 'Applications Open', description: 'JKKN self-financing seats are open now. The state route opens on the TNGASA notification', status: 'upcoming' },
+    { month: '2', title: 'Document Verification', description: 'Submit documents and complete application review', status: 'upcoming' },
+    { month: '3', title: 'Entrance Exam', description: 'State-level entrance examination (if applicable)', status: 'upcoming' },
+    { month: '4', title: 'Counselling', description: 'Merit-based counselling and specialization selection', status: 'upcoming' },
+    { month: '5', title: 'Seat Allotment', description: 'Final seat allotment and admission confirmation', status: 'upcoming' },
+    { month: '6', title: 'Classes Begin', description: 'Orientation programme and academic session starts', status: 'upcoming' },
   ]
 
   return (
@@ -13,13 +25,15 @@ export default function AdmissionTimeline() {
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-8 sm:mb-12">
           <span className="inline-block bg-[#7cb983] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
-            IMPORTANT DATES
+            ADMISSION STEPS
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-3 sm:mb-4 px-2">
-            Admission Timeline 2026-27
+            B.Ed Admission 2026-27 &mdash; How It Works
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            Key dates and milestones for your B.Ed admission journey
+            Tamil Nadu B.Ed dates are announced by the state, not by individual colleges. We publish
+            a date only once the official notification is out &mdash; an approximate date on a college
+            website is how an applicant misses a deadline.
           </p>
         </div>
 
@@ -75,6 +89,39 @@ export default function AdmissionTimeline() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Where the real dates are published. This replaces the six invented months that
+            stood here until 2026-08-25 - it answers the same question honestly, and it is the
+            better answer for "when does B.Ed admission start in Tamil Nadu". */}
+        <div className="mt-10 sm:mt-14 rounded-2xl border border-[#7cb983]/30 bg-white p-5 sm:p-7">
+          <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2">
+            B.Ed Admission 2026-27 Dates &mdash; Where They Are Officially Published
+          </h3>
+          <p className="text-sm text-gray-600 mb-5">
+            Government and government-aided B.Ed admission in Tamil Nadu runs through TNGASA. The
+            degree is awarded by Tamil Nadu Teachers Education University (TNTEU), which publishes
+            the academic calendar. JKKN self-financing seats run on our own cycle and are open now.
+          </p>
+          <ul className="space-y-3">
+            {ADMISSION_DATE_SOURCES.map((src) => (
+              <li key={src.href} className="text-sm">
+                <a
+                  href={src.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#006837] underline underline-offset-2 hover:text-[#7cb983]"
+                >
+                  {src.label}
+                </a>
+                <span className="block text-gray-500">{src.note}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 text-xs italic text-gray-500">
+            We update this section the day the official notification is published. For the current
+            cut-off on JKKN self-financing seats, call the admission office.
+          </p>
         </div>
       </div>
     </section>

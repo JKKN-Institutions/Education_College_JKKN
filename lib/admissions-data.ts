@@ -82,42 +82,79 @@ export const FEE_STRUCTURE: FeeBreakdown[] = [
   { label: 'Transport Fee (Optional)', amount: '₹15,000 – ₹25,000', note: 'Based on distance & route' },
 ];
 
+// ADMISSION SEQUENCE - deliberately carries NO calendar date.
+//
+// Until 2026-08-25 this array published six invented dates across 15 live URLs, including
+// "Application Deadline: June 30, 2026" still flagged upcoming almost two months after that
+// date had passed, and "Application Opens: March 2026" flagged `active`, which renders a
+// green LIVE badge. Tamil Nadu B.Ed dates are set by the state, not by this college, and no
+// verified 2026-27 date exists in our own records - config/admission-windows.json in the SEO
+// project carries "verified": false and states that no such date may be published, quoted to
+// a parent, or written into a page.
+//
+// The `date` field therefore names WHO announces that step, never WHEN. If a verified date
+// ever arrives from the admission office or an official notification, it goes here with its
+// source recorded in the same commit - never as a guess, never as a "typical year".
 export const ADMISSION_TIMELINE: TimelineEvent[] = [
   {
     phase: 'Application Opens',
-    date: 'March 2026',
-    status: 'active',
-    description: 'Online application portal goes live. Submit personal & academic details.',
+    date: 'Announced by TNGASA',
+    status: 'upcoming',
+    description:
+      'Government and government-aided colleges open through the state portal. JKKN self-financing seats are open now - apply below.',
   },
   {
     phase: 'Application Deadline',
-    date: 'June 30, 2026',
+    date: 'Announced by TNGASA',
     status: 'upcoming',
-    description: 'Last date to submit completed application along with required documents.',
+    description:
+      'The state notification carries the last date. Call our admission office for the current cut-off on self-financing seats.',
   },
   {
     phase: 'Document Verification',
-    date: 'July 2026',
+    date: 'After you apply',
     status: 'upcoming',
-    description: 'Original certificates verified at the college admission office.',
+    description:
+      'Original certificates are verified at the college admission office once your application is submitted.',
   },
   {
     phase: 'Counselling & Seat Allotment',
-    date: 'July – August 2026',
+    date: 'Announced by TNGASA',
     status: 'upcoming',
-    description: 'Merit-based counselling by TNTEU. Specialization preference confirmed.',
+    description:
+      'Merit-based counselling for the state route. Specialization preference is confirmed at this stage.',
   },
   {
     phase: 'Admission Confirmation',
-    date: 'August 2026',
+    date: 'After seat allotment',
     status: 'upcoming',
-    description: 'Fee payment & seat confirmation. Welcome induction programme.',
+    description: 'Fee payment and seat confirmation, followed by the welcome induction programme.',
   },
   {
     phase: 'Classes Commence',
-    date: 'September 2026',
+    date: 'Per the TNTEU academic calendar',
     status: 'upcoming',
-    description: 'Academic year 2026-27 begins. First semester orientation.',
+    description:
+      'The academic year begins on the calendar published by Tamil Nadu Teachers Education University.',
+  },
+];
+
+// Where the real dates are published. Verified live 2026-08-25 - all three return 200.
+export const ADMISSION_DATE_SOURCES = [
+  {
+    label: 'TNGASA - government and government-aided B.Ed admission',
+    href: 'https://www.tngasa.in/',
+    note: 'Applications, merit list and counselling for the state route.',
+  },
+  {
+    label: 'TNTEU - the university that awards the degree',
+    href: 'https://tnteu.ac.in/',
+    note: 'Academic calendar and examination schedule.',
+  },
+  {
+    label: 'B.Ed 2026 application status portal',
+    href: 'https://bed26status.tnbed.co.in/',
+    note: 'Check an application already submitted through the state route.',
   },
 ];
 

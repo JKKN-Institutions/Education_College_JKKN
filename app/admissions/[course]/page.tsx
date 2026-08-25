@@ -12,6 +12,7 @@ import {
   COURSE_SLUGS,
   FEE_STRUCTURE,
   ADMISSION_TIMELINE,
+  ADMISSION_DATE_SOURCES,
   DOCUMENTS_REQUIRED,
   APPLICATION_STEPS,
   SCHOLARSHIPS,
@@ -328,11 +329,18 @@ export default async function CourseAdmissionPage({
           <div className="mx-auto max-w-7xl">
             <div className="text-center mb-10">
               <span className="inline-block bg-[#7cb983] text-white px-4 py-1.5 rounded-full text-xs font-semibold mb-3">
-                ADMISSION TIMELINE 2026-27
+                ADMISSION STEPS 2026-27
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#002309] mb-3">
-                Important Dates for {data.fullName}
+                How {data.fullName} Admission Works
               </h2>
+              {/* Heading changed 2026-08-25. It read "Important Dates" over six invented dates,
+                  including a June 30 2026 deadline still shown as upcoming in late August. The
+                  state sets these dates, so each step now names WHO announces it. */}
+              <p className="mx-auto max-w-3xl text-sm sm:text-base text-gray-600">
+                Tamil Nadu B.Ed dates are announced by the state, not by individual colleges. Each
+                step below names who announces it. JKKN self-financing seats are open now.
+              </p>
             </div>
 
             <div className="relative">
@@ -359,6 +367,39 @@ export default async function CourseAdmissionPage({
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Where the real dates are published. Added 2026-08-25 alongside the removal of
+                six invented dates that rendered on this page and 13 sibling course pages. */}
+            <div className="mt-10 rounded-2xl border border-[#7cb983]/30 bg-white p-5 sm:p-7">
+              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2">
+                Where the 2026-27 Dates Are Officially Published
+              </h3>
+              <p className="text-sm text-gray-600 mb-5">
+                Government and government-aided B.Ed admission in Tamil Nadu runs through TNGASA.
+                The degree is awarded by Tamil Nadu Teachers Education University (TNTEU), which
+                publishes the academic calendar. JKKN self-financing seats run on our own cycle and
+                are open now.
+              </p>
+              <ul className="space-y-3">
+                {ADMISSION_DATE_SOURCES.map((src) => (
+                  <li key={src.href} className="text-sm">
+                    <a
+                      href={src.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-[#006837] underline underline-offset-2 hover:text-[#7cb983]"
+                    >
+                      {src.label}
+                    </a>
+                    <span className="block text-gray-500">{src.note}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 text-xs italic text-gray-500">
+                We update this section the day the official notification is published. For the
+                current cut-off on JKKN self-financing seats, call the admission office.
+              </p>
             </div>
           </div>
         </section>
