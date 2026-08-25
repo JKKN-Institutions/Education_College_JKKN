@@ -9,6 +9,7 @@ import EligibilitySection from './EligibilitySection'
 import AdmissionProcess from './AdmissionProcess'
 import AdmissionRoutes from './AdmissionRoutes'
 import AdmissionGuides from './AdmissionGuides'
+import CampusLifeGuides from './CampusLifeGuides'
 import DocumentsRequired from './DocumentsRequired'
 import FeeStructure from './FeeStructure'
 import SpecializationGrid from './SpecializationGrid'
@@ -168,6 +169,9 @@ export default function AdmissionPage() {
         <AdmissionTimeline />
         <PlacementHighlights />
         <CampusFacilities />
+        {/* The six student-life orphans, kept OUT of the admissions block on purpose so the
+            money section stays pointed at admission questions - added 2026-08-25, B-02 */}
+        <CampusLifeGuides />
         <AdmissionFAQ />
         {/* Internal links to the 28 campus articles Google has never crawled - added 2026-08-25.
             Placed before the CTA so the crawl signal is inside the main content, not the footer */}
