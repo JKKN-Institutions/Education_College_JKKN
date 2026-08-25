@@ -7,6 +7,8 @@ import { seoMetadata } from '@/lib/seo-metadata'
 import AdmissionHero from './AdmissionHero'
 import EligibilitySection from './EligibilitySection'
 import AdmissionProcess from './AdmissionProcess'
+import AdmissionRoutes from './AdmissionRoutes'
+import AdmissionGuides from './AdmissionGuides'
 import DocumentsRequired from './DocumentsRequired'
 import FeeStructure from './FeeStructure'
 import SpecializationGrid from './SpecializationGrid'
@@ -157,6 +159,9 @@ export default function AdmissionPage() {
         <AdmissionHero />
         <EligibilitySection />
         <AdmissionProcess />
+        {/* Sits right after the process, because the first thing a Tamil Nadu applicant needs
+            to know is WHICH of the two routes they are on - added 2026-08-25 */}
+        <AdmissionRoutes />
         <DocumentsRequired />
         <FeeStructure />
         <SpecializationGrid />
@@ -164,6 +169,9 @@ export default function AdmissionPage() {
         <PlacementHighlights />
         <CampusFacilities />
         <AdmissionFAQ />
+        {/* Internal links to the 28 campus articles Google has never crawled - added 2026-08-25.
+            Placed before the CTA so the crawl signal is inside the main content, not the footer */}
+        <AdmissionGuides />
         <AdmissionCTA />
       </main>
 

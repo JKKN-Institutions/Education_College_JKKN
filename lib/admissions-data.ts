@@ -95,17 +95,27 @@ export const FEE_STRUCTURE: FeeBreakdown[] = [
 // The `date` field therefore names WHO announces that step, never WHEN. If a verified date
 // ever arrives from the admission office or an official notification, it goes here with its
 // source recorded in the same commit - never as a guess, never as a "typical year".
+//
+// CORRECTION 2026-08-25, same day, hours after the first version shipped. The first version
+// of this array credited TNGASA with announcing B.Ed dates. THAT WAS WRONG and it was live on
+// 15 URLs for about an hour. tngasa.in was read directly and it is the Tamil Nadu Government
+// ARTS AND SCIENCE Colleges Admissions portal - "a unified portal ... for one or more colleges
+// among the 181 Government Arts and Science Colleges in Tamil Nadu". Its three registration
+// links are UG, PG and M.Ed. There is no B.Ed route on it. The Government of Tamil Nadu runs
+// B.Ed admission on a SEPARATE portal, tnbed.co.in, whose 2026 dashboard is headed "GOVERNMENT
+// OF TAMIL NADU / TAMIL NADU B.ED ADMISSION 2026". Never name an authority on a page without
+// opening its own site first.
 export const ADMISSION_TIMELINE: TimelineEvent[] = [
   {
     phase: 'Application Opens',
-    date: 'Announced by TNGASA',
+    date: 'Announced by the state',
     status: 'upcoming',
     description:
-      'Government and government-aided colleges open through the state portal. JKKN self-financing seats are open now - apply below.',
+      'Government and government-aided colleges of education open through the Tamil Nadu B.Ed admission portal. JKKN self-financing seats are open now - apply below.',
   },
   {
     phase: 'Application Deadline',
-    date: 'Announced by TNGASA',
+    date: 'Announced by the state',
     status: 'upcoming',
     description:
       'The state notification carries the last date. Call our admission office for the current cut-off on self-financing seats.',
@@ -119,7 +129,7 @@ export const ADMISSION_TIMELINE: TimelineEvent[] = [
   },
   {
     phase: 'Counselling & Seat Allotment',
-    date: 'Announced by TNGASA',
+    date: 'Announced by the state',
     status: 'upcoming',
     description:
       'Merit-based counselling for the state route. Specialization preference is confirmed at this stage.',
@@ -139,22 +149,18 @@ export const ADMISSION_TIMELINE: TimelineEvent[] = [
   },
 ];
 
-// Where the real dates are published. Verified live 2026-08-25 - all three return 200.
+// Where the real dates are published. Every entry was opened and read on 2026-08-25, not
+// assumed from its name - see the CORRECTION note above for why that rule now exists here.
 export const ADMISSION_DATE_SOURCES = [
   {
-    label: 'TNGASA - government and government-aided B.Ed admission',
-    href: 'https://www.tngasa.in/',
-    note: 'Applications, merit list and counselling for the state route.',
+    label: 'Tamil Nadu B.Ed Admission 2026 - the state portal',
+    href: 'https://bed26status.tnbed.co.in/',
+    note: 'Government of Tamil Nadu. Application status, counselling and grievance for the state route.',
   },
   {
     label: 'TNTEU - the university that awards the degree',
     href: 'https://tnteu.ac.in/',
-    note: 'Academic calendar and examination schedule.',
-  },
-  {
-    label: 'B.Ed 2026 application status portal',
-    href: 'https://bed26status.tnbed.co.in/',
-    note: 'Check an application already submitted through the state route.',
+    note: 'Tamil Nadu Teachers Education University. Academic calendar and examination schedule.',
   },
 ];
 

@@ -376,10 +376,10 @@ export default async function CourseAdmissionPage({
                 Where the 2026-27 Dates Are Officially Published
               </h3>
               <p className="text-sm text-gray-600 mb-5">
-                Government and government-aided B.Ed admission in Tamil Nadu runs through TNGASA.
-                The degree is awarded by Tamil Nadu Teachers Education University (TNTEU), which
-                publishes the academic calendar. JKKN self-financing seats run on our own cycle and
-                are open now.
+                Government and government-aided colleges of education admit through the Government
+                of Tamil Nadu B.Ed admission portal. The degree is awarded by Tamil Nadu Teachers
+                Education University (TNTEU), which publishes the academic calendar. JKKN
+                self-financing seats run on our own cycle and are open now.
               </p>
               <ul className="space-y-3">
                 {ADMISSION_DATE_SOURCES.map((src) => (
