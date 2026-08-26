@@ -63,6 +63,13 @@ const GROUPS = [
         note: 'What each mode is accepted for',
       },
       {
+        // B-04, 2026-08-26. 386 impressions and 22 clicks over 90 days ask about a one-year
+        // B.Ed. JKKN does not offer one, so the page answers the question instead of selling.
+        href: '/blog/b-ed-one-year-2026',
+        title: '1-year B.Ed: what is confirmed and what is not',
+        note: 'The honest answer, with no invented dates',
+      },
+      {
         href: '/blog/campus/what-ncte-approval-actually-means',
         title: 'What NCTE approval actually means',
         note: 'The one approval to check before you pay',

@@ -86,6 +86,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/blog/b-ed-political-science-2026`, lastModified: new Date('2026-04-09'), changeFrequency: 'monthly', priority: 0.85 },
 
     // Pillar blog posts (static, high SEO value)
+    // b-ed-one-year-2026 added 2026-08-26 (B-04). MEASURED across edu and cas over the rolling
+    // 90 days: 51 query-page rows asking about a ONE-YEAR B.Ed, 386 impressions, 22 clicks - and
+    // 384 of those 386 land on the cas post that 308s to /admissions, a page that says nothing
+    // about a one-year route. JKKN does not offer one, so the page answers the question honestly
+    // rather than selling a course we do not run.
+    { url: `${baseUrl}/blog/b-ed-one-year-2026`, lastModified: new Date('2026-08-26'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/blog/b-ed-complete-guide-2026`, lastModified: new Date('2026-04-15'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/blog/top-10-career-options-after-bed-2026`, lastModified: new Date('2026-02-18'), changeFrequency: 'monthly', priority: 0.85 },
 
