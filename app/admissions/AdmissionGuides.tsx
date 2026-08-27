@@ -70,6 +70,13 @@ const GROUPS = [
         note: 'The honest answer, with no invented dates',
       },
       {
+        // B-05, 2026-08-27. 1,205 impressions and 50 clicks over 90 days mention TNTEU, and
+        // 1,171 of them land on the redirecting cas post rather than on anything we own.
+        href: '/blog/tnteu-b-ed-2026',
+        title: 'TNTEU and your B.Ed: who decides what',
+        note: 'University questions vs college questions, and where each is published',
+      },
+      {
         href: '/blog/campus/what-ncte-approval-actually-means',
         title: 'What NCTE approval actually means',
         note: 'The one approval to check before you pay',

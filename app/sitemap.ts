@@ -92,6 +92,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // about a one-year route. JKKN does not offer one, so the page answers the question honestly
     // rather than selling a course we do not run.
     { url: `${baseUrl}/blog/b-ed-one-year-2026`, lastModified: new Date('2026-08-26'), changeFrequency: 'monthly', priority: 0.85 },
+    // tnteu-b-ed-2026 added 2026-08-27 (B-05). MEASURED rolling 90 days across edu and cas: 63
+    // query-page rows mentioning TNTEU, 1,205 impressions, 50 clicks - and 1,171 of those 1,205
+    // land on the cas post that 308s to /admissions, a page that mentions TNTEU exactly twice.
+    { url: `${baseUrl}/blog/tnteu-b-ed-2026`, lastModified: new Date('2026-08-27'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${baseUrl}/blog/b-ed-complete-guide-2026`, lastModified: new Date('2026-04-15'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/blog/top-10-career-options-after-bed-2026`, lastModified: new Date('2026-02-18'), changeFrequency: 'monthly', priority: 0.85 },
 
