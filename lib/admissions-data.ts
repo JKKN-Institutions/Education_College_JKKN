@@ -73,13 +73,47 @@ export interface CourseAdmission {
 
 // ─────────── Shared admission constants ───────────
 
+// FEE STRUCTURE - only ONE number survives here, and it is the only one with a source.
+//
+// CORRECTED 2026-08-27 after the user named the authoritative document: the JKKN course fee
+// sheet. Its Education row reads "EDUCATION B.ED - 35000" - the dash is the GQ column, 35000 is
+// the MQ column. Tuition is therefore 35,000 and it stays.
+//
+// FIVE OTHER FIGURES WERE REMOVED, all of which rendered live on 14 /admissions/<subject> pages:
+//   University Registration Fee  2,500          not in the fee sheet, no source anywhere
+//   Examination Fee              3,000/semester not in the fee sheet, no source anywhere
+//   Caution Deposit              5,000          not in the fee sheet, no source anywhere
+//   Transport Fee                15,000-25,000  not in the fee sheet, no source anywhere
+//   Hostel Fee                   45,000/year    not in the fee sheet AND CONTRADICTED by our own
+//                                               hostel record, which puts Education at 65,000
+//                                               classic mess or 80,000 premium - so the page was
+//                                               understating a real cost by 20,000 to 35,000
+//
+// The user's instruction was explicit: what is not in that sheet does not go on the page. The
+// rows below still answer the question - they name who sets each charge and tell the reader to
+// ask - they just stop inventing the amount. A wrong fee is worse than no fee, because a parent
+// budgets on it and finds out at the counter.
 export const FEE_STRUCTURE: FeeBreakdown[] = [
-  { label: 'Tuition Fee (per year)', amount: '₹35,000', note: 'Management Quota, as published in the JKKN fee structure' },
-  { label: 'University Registration Fee', amount: '₹2,500', note: 'One-time, payable to TNTEU' },
-  { label: 'Examination Fee', amount: '₹3,000', note: 'Per semester' },
-  { label: 'Caution Deposit (Refundable)', amount: '₹5,000', note: 'Returned after course completion' },
-  { label: 'Hostel Fee (Optional)', amount: '₹45,000 / year', note: 'AC & non-AC options available' },
-  { label: 'Transport Fee (Optional)', amount: '₹15,000 – ₹25,000', note: 'Based on distance & route' },
+  {
+    label: 'Tuition Fee (per year)',
+    amount: '₹35,000',
+    note: 'Management quota, as published in the JKKN course fee structure',
+  },
+  {
+    label: 'University Examination Fee',
+    amount: 'Set by TNTEU',
+    note: 'Charged by the university, not by the college. Current figures are on the TNTEU exam fees page',
+  },
+  {
+    label: 'Hostel (Optional)',
+    amount: 'Ask the admission office',
+    note: 'Charged separately from tuition and depends on room and mess option',
+  },
+  {
+    label: 'Transport (Optional)',
+    amount: 'Ask the admission office',
+    note: 'Depends on your route and distance',
+  },
 ];
 
 // ADMISSION SEQUENCE - deliberately carries NO calendar date.

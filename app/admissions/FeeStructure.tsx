@@ -26,9 +26,27 @@ export default function FeeStructure() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
+              {/* CORRECTED 2026-08-27. This block printed "40,000 - 80,000 (as per TN Govt.
+                  norms)" as JKKN's own annual tuition, on the page that receives 574 inherited
+                  B.Ed keywords. It was WRONG TWICE OVER.
+
+                  The figure: JKKN's own course fee sheet reads "EDUCATION B.ED - 35000" - the
+                  dash is the GQ column, 35000 is the MQ column. Corroborated on three other live
+                  surfaces: /fee-structure prints 35,000 fourteen times, all 14
+                  /admissions/<subject> pages print 35,000 from FEE_STRUCTURE, and
+                  config/official-fees.md records "B.Ed Rs 35,000 (MQ)". The 40,000-80,000 was
+                  traced to a MARKET COMPARISON TABLE in /blog/b-ed-complete-guide-2026, where it
+                  is the range for "Aided B.Ed Colleges" - a category range lifted and printed as
+                  our price. At the top end it overstated our fee by more than double, on our
+                  highest-traffic page.
+
+                  The label: "as per TN Govt. norms" attributed our own management-quota fee to a
+                  government norm nobody has ever sourced. Removed. */}
               <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-2">Annual Tuition Fee</h3>
-              <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">&#8377;40,000 - &#8377;80,000</div>
-              <p className="text-xs sm:text-sm text-gray-500 mt-2">Per year (as per TN Govt. norms)</p>
+              <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">&#8377;35,000</div>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2">
+                Per year, management quota, as published in the JKKN course fee structure
+              </p>
             </div>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center gap-2">
