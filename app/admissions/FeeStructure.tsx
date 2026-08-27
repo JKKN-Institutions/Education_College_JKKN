@@ -68,6 +68,16 @@ export default function FeeStructure() {
                 Hostel fees separate (optional)
               </li>
             </ul>
+            {/* B-06, 2026-08-27. /fee-structure was an ORPHAN - measured that day, neither the
+                homepage nor this page nor /blog linked it once, though it is indexed and earned
+                123 impressions and 3 clicks over 90 days at position 5.8. Its last crawl was
+                2026-07-12. It carries the per-subject table this card only summarises. */}
+            <Link
+              href="/fee-structure"
+              className="inline-block mt-4 text-sm font-semibold text-[#006837] underline underline-offset-2"
+            >
+              Full fee table, all 14 subjects
+            </Link>
           </div>
 
           {/* Scholarships */}
@@ -94,6 +104,15 @@ export default function FeeStructure() {
                 </li>
               ))}
             </ul>
+            {/* B-06, 2026-08-27. /scholarships was an ORPHAN - measured that day, neither the
+                homepage nor this page nor /blog linked it once, though it is indexed and earned
+                37 impressions over 90 days. Its last crawl was 2026-06-24. */}
+            <Link
+              href="/scholarships"
+              className="inline-block mt-4 text-sm font-semibold text-[#006837] underline underline-offset-2"
+            >
+              All scholarship schemes
+            </Link>
           </div>
 
           {/* Payment Options */}
