@@ -2,6 +2,9 @@
 > NCTE Approved | TNTEU Affiliated | NAAC Accredited
 > Established 2016 | Part of J.K.K. Nattraja Educational Institutions (Trust Est. 1969)
 
+<!-- version: 2026-09-04 -->
+<!-- canonical: https://edu.jkkn.ac.in/ -->
+
 ## About
 JKKN College of Education is an NCTE-approved and NAAC-accredited teacher education institution located in Kumarapalayam, Namakkal District, Tamil Nadu, India. The college is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai, and offers a 2-year B.Ed (Bachelor of Education) programme.
 
@@ -32,7 +35,11 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
 - B.Ed (Bachelor of Education) — 2-year full-time programme
 - 14 subject specializations available
 - Eligible: Graduates with 50% marks (45% for reserved categories)
-- Admission: Through TNTEU counseling process
+- Admission: Tamil Nadu has two separate B.Ed routes and they do not share an application form
+  - Route 1 (government B.Ed colleges): apply on the state portal after the Tamil Nadu B.Ed admission notification; seats are allotted from a state merit list
+  - Route 2 (JKKN College of Education, self-financing): apply to the college directly. There is no state merit list to wait for, and JKKN self-financing seats run on the college's own cycle
+- Degree awarded by TNTEU under either route
+- Tuition fee: Rs 35,000 per annum, charged once in each of the two years. Government-quota fees follow Tamil Nadu Government norms. Source: https://edu.jkkn.ac.in/fee-structure
 
 ## B.Ed Subject Specializations (Departments)
 1. Tamil
@@ -60,11 +67,11 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 - Trust Reg No: 33
 - Managing Trustee: Smt. N. Sendamaraai
 - Director: Shri. S. Ommsharravana
-- 10 institutions: colleges in dental, pharmacy, nursing, education, engineering, arts & science
+- 9 institutions: 7 colleges (dental, pharmacy, nursing, engineering, arts & science, allied health sciences, education) and 2 schools
 - Website: https://jkkn.ac.in
 
 ## Campus & Facilities
-- Library: 25,863 volumes, 17,386 titles, INFLIBNET & NDL access
+- Library: INFLIBNET and National Digital Library (NDL) access
 - Smart classrooms with ICT-enabled teaching
 - Auditorium and seminar halls
 - Hostel (separate for boys and girls)
@@ -80,16 +87,18 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 - Address: JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Komarapalayam, Namakkal (DT), Tamil Nadu 638183, India
 
 ## Key Pages
-- Homepage: https://edu.jkkn.ac.in/
-- Departments: https://edu.jkkn.ac.in/departments
-- About: https://edu.jkkn.ac.in/about
-- NCTE Approval: https://edu.jkkn.ac.in/about/ncte-approval
-- Facilities: https://edu.jkkn.ac.in/facilities
-- Blog: https://edu.jkkn.ac.in/blog
-- Events: https://edu.jkkn.ac.in/events
-- Gallery: https://edu.jkkn.ac.in/gallery
-- Contact: https://edu.jkkn.ac.in/contact
-- Admission Portal: https://admission.jkkn.ac.in/
+- [Homepage](https://edu.jkkn.ac.in/): institution overview
+- [Admissions](https://edu.jkkn.ac.in/admissions): B.Ed admission routes, eligibility and process
+- [Fee Structure](https://edu.jkkn.ac.in/fee-structure): tuition fee per annum, self-financing and government quota
+- [Departments](https://edu.jkkn.ac.in/departments): the 14 B.Ed subject departments
+- [About](https://edu.jkkn.ac.in/about): history, vision and management
+- [NCTE Approval](https://edu.jkkn.ac.in/about/ncte-approval): NCTE approval order, redirects to a PDF
+- [Facilities](https://edu.jkkn.ac.in/facilities): library, hostel, transport and campus amenities
+- [Blog](https://edu.jkkn.ac.in/blog): articles on teaching and B.Ed admission
+- [Events](https://edu.jkkn.ac.in/events): campus events and notices
+- [Gallery](https://edu.jkkn.ac.in/gallery): campus photographs
+- [Contact](https://edu.jkkn.ac.in/contact): phone, email and address
+- [Admission Portal](https://admission.jkkn.ac.in/): online application, sign-in required
 
 ## Nearby Cities
 Salem (30 km), Erode (35 km), Tiruchengode (15 km), Namakkal (25 km)

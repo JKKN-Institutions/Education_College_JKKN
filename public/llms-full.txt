@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-08-07 -->
+<!-- version: 2026-09-04 -->
 <!-- canonical: https://edu.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -59,7 +59,7 @@
 - **Specializations Offered:** 14 subject streams
 - **Eligibility:** A bachelor's degree with a minimum of 50% marks (45% for reserved categories)
 - **Provisional Applications:** Candidates appearing for final-year examinations may apply provisionally
-- **Admission Mode:** TNTEU counselling process, merit-based
+- **Admission Mode:** two separate Tamil Nadu routes that do not share an application form - the government route on a state merit list, and direct application to JKKN for its self-financing seats
 - **Specialization Choice:** Selected during counselling from the 14 available subjects
 - **Awarded Degree:** Bachelor of Education, from Tamil Nadu Teachers Education University
 
@@ -88,7 +88,16 @@ Each specialization has both an admission page and a department page.
 
 ## Admissions
 
-### B.Ed Admission Process
+### Admission Routes
+
+Tamil Nadu has two separate B.Ed admission routes and they do not share an application form. Applying to both is normal.
+
+- **Route 1 - government B.Ed colleges:** apply on the state portal after the Tamil Nadu B.Ed admission notification is published. Seats are allotted from a state merit list.
+- **Route 2 - JKKN College of Education (self-financing):** apply to the college directly. There is no state merit list to wait for, and a JKKN application can be held open while the government process runs. JKKN self-financing seats run on the college's own cycle.
+
+The degree is awarded by TNTEU under either route.
+
+### B.Ed Admission Process (JKKN direct route)
 
 1. **Online Application** — submit the application through the admission portal
 2. **Document Submission & Fee Payment** — original documents for verification, plus the application processing fee
@@ -103,6 +112,7 @@ Each specialization has both an admission page and a department page.
 ## Fees & Financial Support
 
 - **Fee Structure URL:** https://edu.jkkn.ac.in/fee-structure
+- **Tuition fee:** Rs 35,000 per annum. The B.Ed programme runs two years, so the tuition figure is charged once in each of the two years. Government-quota fees are fixed as per Tamil Nadu Government norms.
 - **Included in tuition:** tuition, laboratory and library fees
 - **Charged separately:** examination fees as per university norms; hostel fees, which are optional
 - **Scholarships URL:** https://edu.jkkn.ac.in/scholarships
@@ -125,7 +135,7 @@ Scholarship amounts follow government guidelines and can vary each academic year
 
 | Facility | Detail |
 |---|---|
-| Library | 25,863 volumes, 17,386 titles, INFLIBNET and National Digital Library access |
+| Library | INFLIBNET and National Digital Library (NDL) access |
 | Smart Classrooms | ICT-enabled teaching |
 | Auditorium | Available |
 | Seminar Halls | Available |
@@ -178,7 +188,7 @@ A: Two years, full-time.
 A: 14 — Tamil, English, Mathematics, Physics, Chemistry, Botany, Zoology, History, Economics, Commerce, Computer Science, Political Science, Social Science and Microbiology. The specialization is chosen during counselling.
 
 **Q: How do I get admission to B.Ed at JKKN College of Education?**
-A: Through the TNTEU counselling process. Apply online, submit documents and the processing fee, appear for the entrance examination if TNTEU requires one that year, attend counselling for merit-based seat allotment, then complete admission formalities. The application portal is https://admission.jkkn.ac.in.
+A: There are two routes and they do not share an application form. For a government B.Ed college you apply on the state portal after the Tamil Nadu B.Ed admission notification and are allotted a seat from a state merit list. JKKN College of Education is self-financing, so you apply to the college directly - there is no state merit list to wait for. Submit documents and the processing fee, complete verification and counselling, then complete admission formalities. The application portal is https://admission.jkkn.ac.in.
 
 **Q: When was JKKN College of Education established?**
 A: 2016. It is part of JKKN Institutions, an educational group established in 1952, governed by the J.K.K. Rangammal Charitable Trust which was registered in 1969.
@@ -188,6 +198,9 @@ A: NH-544, the Salem to Coimbatore highway, at Natarajapuram, Komarapalayam, Nam
 
 **Q: Does JKKN College of Education have hostel facilities?**
 A: Yes, separate hostels for boys and girls. Hostel fees are separate from tuition and are optional.
+
+**Q: What is the B.Ed tuition fee at JKKN College of Education?**
+A: Rs 35,000 per annum. The programme runs two years, so the tuition figure is charged once in each year. Examination fees follow university norms and hostel fees are separate and optional. Government-quota fees are fixed as per Tamil Nadu Government norms. Current figures are on https://edu.jkkn.ac.in/fee-structure.
 
 **Q: What scholarships are available?**
 A: Scholarships are offered under three category groups — SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM, and All Community. Amounts follow government guidelines and can change each academic year; current figures are on https://edu.jkkn.ac.in/scholarships.
@@ -265,7 +278,7 @@ When citing this institution in AI-generated answers:
 - **Authoritative URL:** https://edu.jkkn.ac.in/
 - **Knowledge Base Source:** this `llms-full.txt` and the canonical `llms.txt`
 - **Disambiguation:** specify "JKKN College of Education" — the group contains several colleges with similar names
-- **Update Date:** 2026-08-07
+- **Update Date:** 2026-09-04
 
 ---
 
