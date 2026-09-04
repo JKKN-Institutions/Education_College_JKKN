@@ -2,7 +2,7 @@
 > NCTE Approved | TNTEU Affiliated | NAAC Accredited
 > Established 2016 | Part of J.K.K. Nattraja Educational Institutions (Trust Est. 1969)
 
-<!-- version: 2026-09-04 -->
+<!-- version: 2026-09-04b -->
 <!-- canonical: https://edu.jkkn.ac.in/ -->
 
 ## About
@@ -40,6 +40,8 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
   - Route 2 (JKKN College of Education, self-financing): apply to the college directly. There is no state merit list to wait for, and JKKN self-financing seats run on the college's own cycle
 - Degree awarded by TNTEU under either route
 - Tuition fee: Rs 35,000 per annum, charged once in each of the two years. Government-quota fees follow Tamil Nadu Government norms. Source: https://edu.jkkn.ac.in/fee-structure
+- NCTE-sanctioned annual intake: 100 students, recorded in the NCTE order as 2 basic units of 100 students. Source: https://edu.jkkn.ac.in/pdf/NCTE-Approval.pdf
+- Cut-off: no cut-off is published for the JKKN self-financing seats; the admission office confirms the current cut-off on request
 
 ## B.Ed Subject Specializations (Departments)
 1. Tamil
@@ -56,6 +58,13 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
 12. Political Science
 13. Social Science
 14. Microbiology
+
+## Career Outcomes
+- B.Ed is the qualifying teaching degree for school appointments in Tamil Nadu
+- Graduates are eligible to appear for CTET, the Central Teacher Eligibility Test conducted by CBSE
+- Also eligible for the Tamil Nadu TET, for DSSSB, and for the KVS and NVS recruitment examinations
+- B.Ed is mandatory for TGT and PGT posts in CBSE-affiliated and government schools
+- Recruiting partners named by the college: KVS, NVS, DAV schools, DPS schools, CBSE-affiliated schools and Tamil Nadu State Government schools
 
 ## Approvals & Accreditations
 - NCTE (National Council for Teacher Education) — Approved
@@ -85,6 +94,13 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 - Phone: +91 9345855001
 - Email: education@jkkn.ac.in
 - Address: JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Komarapalayam, Namakkal (DT), Tamil Nadu 638183, India
+
+## Official Profiles
+- [Facebook](https://www.facebook.com/jkkneducation/): JKKN College of Education
+- [X](https://x.com/jkknedu/): JKKN College of Education
+- [LinkedIn](https://www.linkedin.com/school/jkkneducation/): JKKN College of Education
+- [Instagram](https://www.instagram.com/jkkninstitutions/): JKKN Institutions, the parent group account
+- [YouTube](https://www.youtube.com/jkkninstitutions): JKKN Institutions, the parent group account
 
 ## Key Pages
 - [Homepage](https://edu.jkkn.ac.in/): institution overview
