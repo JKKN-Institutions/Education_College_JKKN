@@ -7,6 +7,12 @@ import FAQClient from './FAQClient'
 export const metadata: Metadata = {
   title: `FAQ — ${siteConfig.name}`,
   description: 'Frequently asked questions about B.Ed admission, eligibility, fee structure, hostel, scholarships, and career opportunities at JKKN College of Education.',
+  // Without this, the root layout's canonical (the homepage) is inherited, so this page
+  // told Google its canonical was https://edu.jkkn.ac.in. MEASURED in the live HTML on
+  // 2026-09-07 and again 2026-09-10. Google overrode it and indexed the page on its own
+  // URL, but the page was still disowning itself. Sibling pages avoid this by having a
+  // layout.tsx; /faq and /testimonials are the only two without one.
+  alternates: { canonical: '/faq' },
 }
 
 export default function FAQPage() {

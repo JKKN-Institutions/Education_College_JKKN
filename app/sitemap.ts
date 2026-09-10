@@ -9,11 +9,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Why: `new Date()` on every request makes Google distrust lastmod.
   const ADMISSION_CYCLE_DATE = new Date('2026-03-01');
 
+  // Same reason, for the listing hubs. MEASURED 2026-09-07 and again 2026-09-10:
+  // /, /events, /blog, /gallery and /notices each emitted a lastmod equal to the request
+  // time, so the value changed between two fetches taken 20 seconds apart. A lastmod that
+  // is always "now" is a false freshness signal and teaches Google to discount lastmod for
+  // the whole file - including the 104 URLs whose dates are honest. A hub's real freshness
+  // is its newest child row, not the clock.
+  const SITE_ANCHOR = new Date('2026-09-01');
+  const newestOf = (
+    rows: { updated_at?: string | null; created_at?: string | null }[] | null,
+  ): Date => {
+    const stamps = (rows ?? [])
+      .map((r) => new Date(r.updated_at ?? r.created_at ?? 0).getTime())
+      .filter((n) => Number.isFinite(n) && n > 0);
+    return stamps.length ? new Date(Math.max(...stamps)) : SITE_ANCHOR;
+  };
+
   // ── Static pages ──
   const staticPages: MetadataRoute.Sitemap = [
-    // Homepage
-    { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },
-
     // About
     { url: `${baseUrl}/about`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/about/vision-mission`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
@@ -102,11 +115,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Listing / hub pages
     { url: `${baseUrl}/departments`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/facilities`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/events`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/faculty`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/gallery`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
-    { url: `${baseUrl}/notices`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
     { url: `${baseUrl}/others`, lastModified: new Date('2026-01-01'), changeFrequency: 'yearly', priority: 0.3 },
 
     // Conversion-focused pages
@@ -176,5 +185,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...blogPages, ...eventPages, ...albumPages, ...facultyPages];
+  // Listing hubs, dated from their newest child row instead of the clock.
+  // /events is listed ONLY when at least one event is published. With an empty events
+  // table the page renders "No events found. Check back soon." and Google classified it
+  // as a Soft 404 (GSC URL Inspection, crawled 2026-07-14, read 2026-09-10). Declaring a
+  // page Google has already rejected spends crawl budget for nothing. Gating it here
+  // self-heals the moment an event is published, so nobody has to remember this later.
+  const hubPages: MetadataRoute.Sitemap = [
+    { url: baseUrl, lastModified: SITE_ANCHOR, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${baseUrl}/blog`, lastModified: newestOf(blogsRes.data), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/gallery`, lastModified: newestOf(albumsRes.data), changeFrequency: 'weekly', priority: 0.6 },
+    { url: `${baseUrl}/notices`, lastModified: SITE_ANCHOR, changeFrequency: 'weekly', priority: 0.6 },
+    ...((eventsRes.data ?? []).length > 0
+      ? [
+          {
+            url: `${baseUrl}/events`,
+            lastModified: newestOf(eventsRes.data),
+            changeFrequency: 'weekly' as const,
+            priority: 0.7,
+          },
+        ]
+      : []),
+  ];
+
+  return [...staticPages, ...hubPages, ...blogPages, ...eventPages, ...albumPages, ...facultyPages];
 }

@@ -6,6 +6,8 @@ import { siteConfig } from '@/lib/site-config'
 export const metadata: Metadata = {
   title: `Student Testimonials — ${siteConfig.name}`,
   description: 'Hear from JKKN College of Education graduates who are now successful teachers across India.',
+  // See app/faq/page.tsx - the same inherited-canonical defect, measured the same way.
+  alternates: { canonical: '/testimonials' },
 }
 
 const testimonials = [
