@@ -122,7 +122,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/faq`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.75 },
     { url: `${baseUrl}/fee-structure`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/scholarships`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${baseUrl}/testimonials`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/contact`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.7 },
 
     // Others (indexable pages only — 6 noindex redirect pages excluded:

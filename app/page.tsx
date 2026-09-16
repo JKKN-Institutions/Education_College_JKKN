@@ -139,11 +139,17 @@ export default async function Home() {
             ],
           },
           foundingDate: '2016',
+          // sameAs asserts "these URLs are this same entity". Group-level accounts are
+          // the parent trust, not this college, so they are deliberately absent:
+          // instagram.com/jkkninstitutions and youtube.com/@jkkninstitutions both
+          // resolve to "JKKN Institutions / 7 Colleges / Est. 1952" (checked 2026-09-16).
+          // Regulator URLs stay out of here too - NCTE lives in accreditedBy above.
           sameAs: [
+            // Facebook: published on this site; not in the user's written handle list. Verify.
             'https://www.facebook.com/jkkneducation/',
-            'https://www.instagram.com/jkkninstitutions/',
-            'https://www.youtube.com/@jkkninstitutions',
+            // LinkedIn: matches the estate's /school/ pattern. robots-walled, not fetch-verified.
             'https://www.linkedin.com/school/jkkneducation/',
+            // Maps: resolved 2026-09-16 to "JKKN College of Education", geo 11.4441/77.7315.
             'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],
         }}
@@ -1507,79 +1513,6 @@ export default async function Home() {
               <p className="text-sm text-gray-600 text-center">
                 Delhi Subordinate Services Selection Board for teaching posts in Delhi schools.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Alumni Testimonials */}
-      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-8 sm:mb-12">
-            <span className="inline-block bg-[#7cb983] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
-              SUCCESS STORIES
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-3 sm:mb-4">
-              What Our Alumni Say
-            </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-              Hear from our graduates who are now successful Learning Facilitators
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div className="text-4xl text-[#7cb983] mb-4">&ldquo;</div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                The B.Ed programme transformed my understanding of education. The practical training and supportive Learning Facilitators prepared me well for my career. I&apos;m now teaching at a CBSE school and loving every moment!
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#7cb983] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl sm:text-2xl font-bold">A</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#006837]">Priya Sharma</h4>
-                  <p className="text-sm text-[#7cb983]">Batch 2022 | TGT Mathematics</p>
-                  <p className="text-xs text-gray-500">Delhi Public School, Chennai</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div className="text-4xl text-[#7cb983] mb-4">&ldquo;</div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                The internship experience was invaluable. Real classroom exposure during the school internship gave me confidence. The placement cell helped me secure a position even before graduation.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#002309] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl sm:text-2xl font-bold">R</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#006837]">Rajesh Kumar</h4>
-                  <p className="text-sm text-[#7cb983]">Batch 2021 | PGT Science</p>
-                  <p className="text-xs text-gray-500">Kendriya Vidyalaya, Coimbatore</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div className="text-4xl text-[#7cb983] mb-4">&ldquo;</div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                Excellent infrastructure and dedicated Learning Facilitators make this college stand out. The focus on inclusive education and technology integration has been incredibly beneficial for my career growth.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#006837] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl sm:text-2xl font-bold">S</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#006837]">Sunita Devi</h4>
-                  <p className="text-sm text-[#7cb983]">Batch 2023 | TGT English</p>
-                  <p className="text-xs text-gray-500">Navodaya Vidyalaya, Tamil Nadu</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

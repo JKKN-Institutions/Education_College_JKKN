@@ -46,7 +46,7 @@
 | Body | Status |
 |---|---|
 | National Council for Teacher Education (NCTE) | Approved |
-| Tamil Nadu Teachers Education University (TNTEU), Chennai | Affiliated |
+| Tamil Nadu Teachers Education University (TNTEU), Chennai | Affiliated |
 
 - NCTE approval details: https://edu.jkkn.ac.in/about/ncte-approval
 
@@ -250,7 +250,6 @@ A: A 90% placement rate. Recruiting partners include KVS, NVS, DAV, DPS, CBSE-af
 - [Hostel](https://edu.jkkn.ac.in/facilities/hostel)
 - [Transport](https://edu.jkkn.ac.in/facilities/transport)
 - [FAQ](https://edu.jkkn.ac.in/faq)
-- [Testimonials](https://edu.jkkn.ac.in/testimonials)
 - [Notices](https://edu.jkkn.ac.in/notices)
 - [Events](https://edu.jkkn.ac.in/events)
 - [Gallery](https://edu.jkkn.ac.in/gallery)
