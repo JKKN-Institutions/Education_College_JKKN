@@ -1810,7 +1810,7 @@ export default function ChemistryDepartment() {
             Ready to Transform Your Chemistry Passion into a Teaching Career?
           </h2>
           <p className="text-xl leading-relaxed mb-10 text-white">
-            Join JKKN College of Education and become part of our legacy of excellence in teacher education. Applications for 2025-26 batch are now open. Take the first step towards an inspiring career as a Chemistry educator.
+            Join JKKN College of Education and become part of our legacy of excellence in teacher education. Applications for 2026-27 batch are now open. Take the first step towards an inspiring career as a Chemistry educator.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-chemistry" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

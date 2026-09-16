@@ -1145,7 +1145,7 @@ export default function EnglishDepartment() {
           </h2>
           <p className="text-sm sm:text-base lg:text-xl mb-8" style={{ color: '#ffffff' }}>
             Join JKKN College of Education and transform your passion for English language into<br />
-            a rewarding teaching career. Applications are now open for 2025-26 academic session.
+            a rewarding teaching career. Applications are now open for 2026-27 academic session.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-english" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-transform hover:scale-105"

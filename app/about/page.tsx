@@ -13,7 +13,7 @@ export const metadata = seoMetadata(
 
 const aboutLinks = [
   { name: 'Our Vision & Mission', href: '/about/vision-mission', description: 'Our guiding principles and educational philosophy.' },
-  { name: 'Our Trust', href: '/about/trust', description: 'J.K.K. Rangammal Charitable Trust — over 70 years of educational service.' },
+  { name: 'Our Trust', href: '/about/trust', description: 'J.K.K. Rangammal Charitable Trust, registered 1969 - the trust behind JKKN Institutions.' },
   { name: 'Our Management', href: '/about/management', description: 'Leadership committee guiding JKKN College of Education.' },
   { name: 'Our Institutions', href: '/about/institutions', description: 'The JKKN group of institutions under one umbrella.' },
   { name: "Principal's Message", href: '/about/principal-message', description: 'A message from our Principal on excellence in teacher education.' },

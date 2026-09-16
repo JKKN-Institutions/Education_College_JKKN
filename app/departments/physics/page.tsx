@@ -1818,7 +1818,7 @@ export default function PhysicsDepartment() {
             Ready to Inspire the Next Generation of Scientists?
           </h2>
           <p className="text-lg leading-relaxed mb-10 text-white opacity-95">
-            Join JKKN College of Education's B.Ed Physics program and transform your passion for physics into a rewarding teaching career. Applications for 2025-26 batch are now open.
+            Join JKKN College of Education's B.Ed Physics program and transform your passion for physics into a rewarding teaching career. Applications for 2026-27 batch are now open.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-physics" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

@@ -1298,7 +1298,7 @@ export default function PoliticalScienceDepartment() {
             Ready to Shape Future Citizens?
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-            Join JKKN College of Education and embark on a rewarding career as a Political Science educator. Applications are now open for the 2025-26 academic year. Transform your passion for Political Science and democratic values into a meaningful teaching career.
+            Join JKKN College of Education and embark on a rewarding career as a Political Science educator. Applications are now open for the 2026-27 academic year. Transform your passion for Political Science and democratic values into a meaningful teaching career.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-political-science" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

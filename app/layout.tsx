@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN College of Education',
     title: 'JKKN College of Education — B.Ed College in Namakkal',
     description:
-      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu. NAAC Accredited.',
+      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
     images: [
       {
         url: '/images/og-default.png',

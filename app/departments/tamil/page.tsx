@@ -1041,17 +1041,6 @@ export default function TamilDepartment() {
               </p>
             </div>
 
-            {/* NAAC */}
-            <div className="text-center">
-              <div className="w-32 h-32 mb-4 rounded-lg flex items-center justify-center text-white font-bold text-3xl"
-                   style={{ backgroundColor: '#7cb983' }}>
-                NAAC
-              </div>
-              <p className="font-semibold" style={{ color: '#006837' }}>
-                NAAC Accredited
-              </p>
-            </div>
-
             {/* UGC */}
             <div className="text-center">
               <div className="w-32 h-32 mb-4 rounded-lg flex items-center justify-center text-white font-bold text-3xl"
@@ -1073,7 +1062,7 @@ export default function TamilDepartment() {
             Begin Your Teaching Journey Today
           </h2>
           <p className="text-xl leading-relaxed mb-10 text-white">
-            Join JKKN College of Education and become a part of our legacy in transforming lives through progressive education. Admissions for 2025-26 academic year are now open.
+            Join JKKN College of Education and become a part of our legacy in transforming lives through progressive education. Admissions for 2026-27 academic year are now open.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-tamil" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

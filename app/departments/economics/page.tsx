@@ -1392,7 +1392,7 @@ export default function EconomicsDepartment() {
             Ready to Begin Your Journey as an Economics Educator?
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-            Join JKKN College of Education and transform your passion for Economics into a rewarding teaching career. Admissions open for 2025-26 academic year.
+            Join JKKN College of Education and transform your passion for Economics into a rewarding teaching career. Admissions open for 2026-27 academic year.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-economics" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

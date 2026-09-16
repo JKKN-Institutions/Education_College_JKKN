@@ -34,7 +34,7 @@ import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 // its own query buys a bounce, not an admission. Add the date block when the office confirms.
 export const metadata = seoMetadata(
     'B.Ed Admission & Counselling 2026 Tamil Nadu - JKKN College',
-    'B.Ed admission & counselling 2026-27 in Tamil Nadu at JKKN College of Education, Namakkal. Eligibility, fees, 14 specializations. NCTE approved, 98% placement.',
+    'B.Ed admission & counselling 2026-27 in Tamil Nadu at JKKN College of Education, Namakkal. Eligibility, fees, 14 specializations. NCTE approved, TNTEU affiliated.',
   '/admissions',
   {
     absolute: true,
@@ -122,7 +122,7 @@ const faqSchema = {
       name: 'What career opportunities are available after B.Ed?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'B.Ed graduates can become teachers in government and private schools (CBSE/ICSE/State Board), pursue higher education (M.Ed, Ph.D), work as curriculum developers, education consultants, or join educational administration. JKKN has a 98% placement rate.',
+        text: 'B.Ed graduates can become teachers in government and private schools (CBSE/ICSE/State Board), pursue higher education (M.Ed, Ph.D), work as curriculum developers, education consultants, or join educational administration. The college placement cell supports graduates through the recruitment process.',
       },
     },
     {

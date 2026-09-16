@@ -7,24 +7,24 @@ import { UserCircle2 } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Faculty | JKKN Dental College & Hospital',
+  title: 'Faculty | JKKN College of Education',
   description:
-    'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam. Qualified professors and specialists in BDS and MDS programmes.',
+    'Meet the faculty of JKKN College of Education, Komarapalayam - the teacher educators who deliver the NCTE-approved, TNTEU-affiliated B.Ed programme.',
   alternates: { canonical: '/faculty/' },
   openGraph: {
-    title: 'Faculty | JKKN Dental College & Hospital',
+    title: 'Faculty | JKKN College of Education',
     description:
-      'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam.',
-    url: 'https://dental.jkkn.ac.in/faculty/',
-    siteName: 'JKKN Dental College & Hospital',
+      'Meet the faculty of JKKN College of Education, Komarapalayam - the teacher educators who deliver the NCTE-approved, TNTEU-affiliated B.Ed programme.',
+    url: 'https://edu.jkkn.ac.in/faculty/',
+    siteName: 'JKKN College of Education',
     type: 'website',
     locale: 'en_IN',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Faculty | JKKN Dental College & Hospital',
+    title: 'Faculty | JKKN College of Education',
     description:
-      'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam.',
+      'Meet the faculty of JKKN College of Education, Komarapalayam - the teacher educators who deliver the NCTE-approved, TNTEU-affiliated B.Ed programme.',
   },
 };
 
@@ -54,7 +54,7 @@ export default async function FacultyPage() {
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Faculty</h1>
             <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              Experienced specialists guiding the next generation of dental professionals.
+              The teacher educators who deliver our NCTE-approved, TNTEU-affiliated B.Ed programme.
             </p>
           </div>
         </section>
@@ -127,7 +127,7 @@ export default async function FacultyPage() {
               <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
                 <UserCircle2 className="w-8 h-8 text-gray-300" />
               </div>
-              <p className="text-gray-500 font-medium">No faculty members found.</p>
+              <p className="text-gray-500 font-medium">Faculty profiles are being published. For the current list of teaching staff and their qualifications, contact the college office on +91 9345855001.</p>
             </div>
           )}
         </section>
