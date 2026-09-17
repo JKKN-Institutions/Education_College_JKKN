@@ -56,8 +56,8 @@ export interface CourseAdmission {
   subjectRequirement: string;
 
   // Career
-  careerRoles: string[];
-  placementRate: string;
+  careerRoles: string[];
+
   topRecruiters: string[];
 
   // USPs
@@ -276,13 +276,22 @@ export const SELECTION_CRITERIA = [
   'Category & community-based reservation as per TN Govt. norms',
 ];
 
+// Sources, all re-checked 2026-09-16 against documents this site itself publishes:
+//  - NCTE continuation-of-recognition order (public/pdf/NCTE-Approval.pdf): B.Ed recognised
+//    from academic session 2016-17 for "2 basic units of 100 students" annual intake.
+//  - TNTEU faculty return (public/pdf/Faculty-Details.pdf): 16 staff listed.
+//  - 14 specialisations: the site's own B.Ed OfferingCatalog and department pages.
+// Removed for having no source at all: '98%' Placement Rate, '5000+' Successful Alumni
+// Educators. Removed as refuted by the NCTE order: '700+' B.Ed Seats per Year (sanctioned
+// intake is 100, a 7x overstatement) and '36+' Years of Educational Excellence (this college
+// dates from 2016; 1952 belongs to the trust, not to it). '50+' Experienced Faculty is
+// refuted by the college's own TNTEU return, which lists 16.
+// Do not add a figure back here without a document that states it.
 export const TRUST_SIGNALS = [
-  { metric: '36+', label: 'Years of Educational Excellence' },
-  { metric: '98%', label: 'Placement Rate' },
-  { metric: '700+', label: 'B.Ed Seats per Year' },
-  { metric: '14', label: 'NCTE-Approved Specializations' },
-  { metric: '50+', label: 'Experienced Faculty' },
-  { metric: '5000+', label: 'Successful Alumni Educators' },
+  { metric: '2016', label: 'NCTE Recognised Since' },
+  { metric: '100', label: 'NCTE Sanctioned Intake per Year' },
+  { metric: '14', label: 'B.Ed Subject Specializations' },
+  { metric: '16', label: 'Faculty and Staff' },
 ];
 
 // ─────────── Per-course admission data ───────────
@@ -321,8 +330,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'TET / TRB Government School Teacher',
       'Tamil Curriculum Developer',
       'Tamil Educational Content Creator (Digital)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Sangam to Modern Tamil', description: 'Comprehensive coverage from Tholkappiyam to contemporary Tamil literature.' },
@@ -372,8 +381,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Corporate Soft Skills Trainer',
       'English Language Examiner',
       'Educational Editor / Proofreader',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Modern ELT Methodology', description: 'Communicative language teaching, phonetics and classroom language pedagogy as per the TNTEU B.Ed syllabus.' },
@@ -423,8 +432,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'EdTech Math Content Creator',
       'Quantitative Aptitude Trainer',
       'Curriculum Designer (STEM)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Math Pedagogy Lab', description: 'Dedicated lab with manipulatives, GeoGebra, and digital math teaching tools.' },
@@ -474,8 +483,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'EdTech Physics Content Creator',
       'Science Curriculum Developer',
       'Physics Demonstrator (Research Labs)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Modern Physics Lab', description: 'Well-equipped lab with optics, mechanics, electronics & spectroscopy setups.' },
@@ -525,8 +534,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Lab Technician Supervisor',
       'Science Content Developer',
       'Industrial Trainer (FMCG/Pharma)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Safe Lab Practices', description: 'Modern, well-ventilated lab with strict safety SOPs — essential for school teaching.' },
@@ -576,8 +585,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Herbarium Curator',
       'Biology Content Developer',
       'Field Researcher / Naturalist',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Live Field Studies', description: 'Mandatory field trips to Western Ghats, mangroves, and botanical gardens.' },
@@ -627,8 +636,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Museum Educator / Curator',
       'Science Content Developer',
       'Environmental Consultant (Education)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Modern Specimen Lab', description: 'Preserved specimens, 3D models, virtual dissection software — humane and effective.' },
@@ -678,8 +687,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Museum Curator / Educator',
       'Documentary Researcher',
       'Cultural Content Writer',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Heritage Site Learning', description: 'Curriculum includes site visits to Mahabalipuram, Hampi, Thanjavur, and Madurai temples.' },
@@ -729,8 +738,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Financial Literacy Trainer',
       'Bank Exam Coach (Economics)',
       'Research Associate (Education)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Data-Driven Pedagogy', description: 'Statistical analysis with Excel, SPSS for teaching modern economics.' },
@@ -780,8 +789,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'EdTech Commerce Content Creator',
       'Corporate Trainer (Finance)',
       'GST / Tally Trainer',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'GST & Tally Training', description: 'Industry-relevant tools — Tally Prime, GST returns, taxation basics included.' },
@@ -831,8 +840,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'AI Literacy Educator',
       'School ICT Coordinator',
       'Online Programming Tutor',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Python-First Curriculum', description: 'Industry-relevant Python, basics of JavaScript, SQL, and Git training.' },
@@ -882,8 +891,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Civic Educator',
       'Editorial Researcher',
       'Education Policy Analyst',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Constitutional Expertise', description: 'In-depth study of Indian Constitution, polity, federalism — high demand for civics teaching.' },
@@ -933,8 +942,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'EdTech Content Creator (SST)',
       'TET Teacher (Government Schools)',
       'School Coordinator (Middle School)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Highest School Demand', description: 'Social Science teachers needed in every school — strongest job security.' },
@@ -984,8 +993,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Biotech Trainer',
       'Science Content Developer',
       'Research Assistant (Education)',
-    ],
-    placementRate: '90%',
+    ],
+
     topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Rare Specialization', description: 'Unique B.Ed offering in Tamil Nadu — very low competition, high demand.' },

@@ -169,7 +169,7 @@ export const socialScienceBlogData: CourseBlogData = {
       { title: 'TNTET Social Science Coaching Integrated', desc: 'TNTET Social Science Paper I and Paper II coaching is integrated into the B.Ed curriculum — ensuring graduates clear TNTET in first attempt for government BT recruitment.' },
       { title: '16-Week Internship in CBSE & Government Schools', desc: 'Practice teaching at partner CBSE, matriculation, and government schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to integrated Social Science teaching across Classes 6–10.' },
       { title: 'UPSC GS Coaching Awareness', desc: 'Beyond TNTET, JKKN exposes B.Ed Social Science students to UPSC General Studies teaching methodology and current affairs integration — opening high-earning UPSC coaching career streams.' },
-      { title: 'Highest Placement Rate Among Arts-Based B.Ed Specializations', desc: 'Active placement relationships with 80+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes. 96% B.Ed Social Science placement rate — among the strongest at JKKN.' },
+      { title: 'Strong Placement Network', desc: 'Active placement relationships with 80+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes.' },
     ],
   },
 

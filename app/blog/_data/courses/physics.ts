@@ -170,7 +170,7 @@ export const physicsBlogData: CourseBlogData = {
       { title: 'Faculty with Physics Mastery + Teaching Backgrounds', desc: 'M.Sc./M.Phil/Ph.D Physics faculty with school and coaching teaching backgrounds. Guest sessions by retired government PG Physics teachers and JEE/NEET coaching faculty.' },
       { title: '16-Week Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse physics lab settings and student proficiency levels.' },
       { title: 'TNTET + JEE/NEET Coaching Awareness', desc: 'TNTET Physics coaching plus exposure to JEE/NEET physics teaching methodology — opening multiple career streams beyond traditional school jobs.' },
-      { title: 'Placement Network for Physics Teachers', desc: 'Active placement relationships with CBSE/matriculation schools and JEE/NEET coaching institutes across Kongu region and Chennai. 97% B.Ed Physics placement rate within 6 months.' },
+      { title: 'Placement Network for Physics Teachers', desc: 'Active placement relationships with CBSE/matriculation schools and JEE/NEET coaching institutes across Kongu region and Chennai.' },
     ],
   },
 

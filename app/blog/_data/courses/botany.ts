@@ -204,7 +204,7 @@ export const botanyBlogData: CourseBlogData = {
     },
     {
       q: 'What\'s the placement record at JKKN for B.Ed Botany graduates?',
-      a: 'JKKN reports approximately 95% placement rate for B.Ed Botany within 6 months of graduation. Placements span government BT recruitment (post TNTET clearance), CBSE/matriculation schools across the Kongu belt and Chennai, and NEET coaching institutes. Active placement cell support continues even post-graduation for government recruitment alerts.',
+      a: 'JKKN does not publish a placement percentage for B.Ed Botany. Placements span government BT recruitment (post TNTET clearance), CBSE/matriculation schools across the Kongu belt and Chennai, and NEET coaching institutes. Active placement cell support continues even post-graduation for government recruitment alerts.',
     },
   ],
 

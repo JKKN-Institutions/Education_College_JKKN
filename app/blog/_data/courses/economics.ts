@@ -169,7 +169,7 @@ export const economicsBlogData: CourseBlogData = {
       { title: 'Real-World Economic Data Integration in Curriculum', desc: 'B.Ed Economics curriculum at JKKN explicitly integrates RBI, MoSPI, EPW, and World Bank economic data — preparing teachers ready to make economics relevant and engaging for both school students and UPSC aspirants.' },
       { title: '16-Week Internship in CBSE & Higher Secondary Schools', desc: 'Practice teaching at partner CBSE, matriculation, and higher secondary schools with humanities/commerce streams across Komarapalayam, Salem, Namakkal, and Erode.' },
       { title: 'TNTET + UPSC Coaching Awareness', desc: 'TNTET Economics coaching plus exposure to UPSC and banking coaching teaching methodology — opening high-earning coaching career streams beyond traditional school jobs.' },
-      { title: 'Strong Placement Network for Economics Teachers', desc: 'Active placement relationships with 60+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes. 94% B.Ed Economics placement rate within 6 months.' },
+      { title: 'Strong Placement Network for Economics Teachers', desc: 'Active placement relationships with 60+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes.' },
     ],
   },
 

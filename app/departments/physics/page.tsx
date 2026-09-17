@@ -59,11 +59,6 @@ export default function PhysicsDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>95%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -1302,7 +1297,7 @@ export default function PhysicsDepartment() {
               </p>
             </div>
 
-            {/* 95% Placement */}
+            {/* Placement */}
             <div className="p-8 rounded-xl border-l-4" style={{ backgroundColor: '#FBFBEE', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl"
@@ -1310,7 +1305,7 @@ export default function PhysicsDepartment() {
                   2
                 </div>
                 <h3 className="text-xl font-bold pt-2" style={{ color: '#002309' }}>
-                  98% Placement Success Rate
+                  Placement Support
                 </h3>
               </div>
               <p className="leading-relaxed ml-16" style={{ color: '#006837' }}>

@@ -62,10 +62,6 @@ export default function MathematicsPage() {
                   <div className="text-sm text-white">SEATS</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#7cb983] mb-1">98%</div>
-                  <div className="text-sm text-white">PLACEMENT</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
                   <div className="text-4xl font-bold text-[#7cb983] mb-1">4</div>
                   <div className="text-sm text-white">SEMESTERS</div>
                 </div>

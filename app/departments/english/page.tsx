@@ -59,11 +59,6 @@ export default function EnglishDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>98%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -442,7 +437,7 @@ export default function EnglishDepartment() {
                 High Placement Rate
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                98% placement rate with graduates placed in prestigious CBSE, ICSE, State Board, and International schools across India and abroad.
+                Graduates are placed in CBSE, ICSE, State Board and International schools across India and abroad.
               </p>
             </div>
           </div>

@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   return seoMetadata(
     `${data.fullName} Admission 2026-27`,
-    `Apply for ${data.fullName} admission at JKKN College of Education, Namakkal. NCTE approved, TNTEU affiliated, ${data.placementRate} placement. Check eligibility, fees and the application process.`,
+    `Apply for ${data.fullName} admission at JKKN College of Education, Namakkal. NCTE approved and TNTEU affiliated. Check eligibility, fees and the application process.`,
     `/admissions/${data.slug}`,
     {
       keywords: [
@@ -163,10 +163,6 @@ export default async function CourseAdmissionPage({
                   <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">{data.totalSeats}</div>
                     <div className="text-xs font-semibold text-white">NCTE INTAKE</div>
-                  </div>
-                  <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">{data.placementRate}</div>
-                    <div className="text-xs font-semibold text-white">PLACEMENT</div>
                   </div>
                   <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">{data.semesters}</div>
@@ -576,12 +572,6 @@ export default async function CourseAdmissionPage({
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="p-6 rounded-xl bg-[#002309] text-white text-center">
-                  <div className="text-3xl sm:text-4xl font-bold text-[#7cb983] mb-1">{data.placementRate}</div>
-                  <div className="text-xs font-semibold uppercase tracking-wide">Placement Rate</div>
-                </div>
-              </div>
             </div>
 
             <div className="p-6 rounded-xl bg-[#FBFBEE]">

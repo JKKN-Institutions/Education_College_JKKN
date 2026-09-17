@@ -1,6 +1,5 @@
 export default function PlacementHighlights() {
   const stats = [
-    { value: '90%', label: 'Placement Rate' },
     { value: 'TGT / PGT', label: 'Roles You Qualify For' },
     { value: 'CTET / TET', label: 'Exams You Can Appear For' },
   ]

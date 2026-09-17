@@ -58,11 +58,6 @@ export default function CommerceDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>96%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -713,7 +708,7 @@ export default function CommerceDepartment() {
                   <span className="text-xl font-bold">2</span>
                 </div>
                 <h3 className="text-2xl font-bold" style={{ color: '#002309' }}>
-                  98% Placement Success Rate
+                  Placement Support
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>

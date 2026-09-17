@@ -73,7 +73,7 @@ export const allFaqs: FaqItem[] = [
   {
     category: 'career',
     question: 'What career opportunities are available after B.Ed?',
-    answer: "B.Ed graduates can become teachers in government and private schools (CBSE/ICSE/State Board), pursue higher education (M.Ed, Ph.D), work as curriculum developers, education consultants, content writers, or join educational administration. JKKN's 98% placement rate ensures strong career support.",
+    answer: "B.Ed graduates can become teachers in government and private schools (CBSE/ICSE/State Board), pursue higher education (M.Ed, Ph.D), work as curriculum developers, education consultants, content writers, or join educational administration. JKKN provides placement support along with TNTET/TRB guidance.",
   },
   {
     category: 'career',

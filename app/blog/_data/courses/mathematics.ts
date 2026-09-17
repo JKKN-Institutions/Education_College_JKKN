@@ -170,7 +170,7 @@ export const mathematicsBlogData: CourseBlogData = {
       { title: 'Modern Maths Lab with GeoGebra/Desmos Training', desc: 'Mathematics resource lab equipped with manipulatives (3D solids, geoboards), digital tools (GeoGebra, Desmos), and graphing calculators — essential for producing modern maths teachers comfortable with tech-enabled teaching.' },
       { title: '16-Week Internship in CBSE/Government Schools', desc: 'Practice teaching at partner CBSE, matriculation, and government schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse student maths proficiency levels and pedagogy challenges.' },
       { title: 'Integrated TNTET + Coaching Awareness', desc: 'Beyond TNTET Maths Paper coaching, JKKN exposes students to JEE/NEET coaching methodology — opening high-earning coaching career streams beyond traditional school teaching.' },
-      { title: 'Strong Placement Network for Maths Teachers', desc: 'Active placement relationships with 80+ CBSE/matriculation schools and 15+ JEE/NEET coaching institutes across Kongu region and Chennai. 98% B.Ed Maths placement rate within 6 months.' },
+      { title: 'Strong Placement Network for Maths Teachers', desc: 'Active placement relationships with 80+ CBSE/matriculation schools and 15+ JEE/NEET coaching institutes across Kongu region and Chennai.' },
     ],
   },
 

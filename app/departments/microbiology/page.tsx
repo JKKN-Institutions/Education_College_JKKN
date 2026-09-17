@@ -89,11 +89,6 @@ export default function MicrobiologyDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>94%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -875,7 +870,7 @@ export default function MicrobiologyDepartment() {
               </div>
             </div>
 
-            {/* 94% Placement */}
+            {/* Placement */}
             <div className="p-8 rounded-xl border-l-4 transition-transform hover:scale-105"
                  style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4">
@@ -885,7 +880,7 @@ export default function MicrobiologyDepartment() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    98% Placement Success Rate
+                    Placement Support
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
                     Strong placement record with graduates securing positions in government schools, CBSE/ICSE schools, international schools, and coaching institutes.

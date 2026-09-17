@@ -169,7 +169,7 @@ export const historyBlogData: CourseBlogData = {
       { title: 'Heritage Field Trip Opportunities', desc: 'Komarapalayam offers proximity to Tamil Nadu historical sites — Salem (Yercaud, Mettur), Erode (Bhavani), Namakkal (Anjaneya temple), Tiruchengode (ancient temples) — enabling rich field-based history learning beyond classroom theory.' },
       { title: '16-Week Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to social science teaching at multiple class levels.' },
       { title: 'TNTET + UPSC Coaching Awareness', desc: 'TNTET History coaching plus exposure to UPSC History optional teaching methodology — opening high-earning coaching career streams beyond traditional school jobs.' },
-      { title: 'Strong Placement Network', desc: 'Active placement relationships with 60+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes. 94% B.Ed History placement rate within 6 months.' },
+      { title: 'Strong Placement Network', desc: 'Active placement relationships with 60+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes.' },
     ],
   },
 

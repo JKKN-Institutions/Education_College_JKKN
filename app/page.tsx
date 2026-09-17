@@ -348,8 +348,8 @@ export default async function Home() {
               {/* Stats Grid */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">90%</div>
-                  <div className="text-xs sm:text-sm text-white/80">Placement Rate</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">2016</div>
+                  <div className="text-xs sm:text-sm text-white/80">NCTE Recognised Since</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
                   <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">14</div>
@@ -410,8 +410,8 @@ export default async function Home() {
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                     <div>
-                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">90% Placement</div>
-                      <div className="text-gray-600 text-[8px] sm:text-[10px]">Success Rate</div>
+                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Approved</div>
+                      <div className="text-gray-600 text-[8px] sm:text-[10px]">TNTEU Affiliated</div>
                     </div>
                   </div>
                 </div>
@@ -1382,13 +1382,13 @@ export default async function Home() {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-6 lg:mb-8 h-[200px] sm:h-[250px] lg:h-[300px]">
                 <Image
                   src="/images/Homepage-Placement-Rate-Image.webp"
-                  alt="90% Placement Rate"
+                  alt="Placement support at JKKN College of Education"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute bottom-4 right-4">
                   <span className="bg-white/95 backdrop-blur-sm text-[#006837] px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm shadow-lg">
-                    90% Placement Rate
+                    Placement Support
                   </span>
                 </div>
               </div>
@@ -1396,8 +1396,8 @@ export default async function Home() {
               {/* Stats Grid */}
               <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">90%</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Placement Rate</div>
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">16</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Faculty and Staff</div>
                 </div>
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
                   <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">TGT / PGT</div>

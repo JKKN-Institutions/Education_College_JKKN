@@ -13,7 +13,7 @@ const defaultAnnouncements = [
     ),
   },
   {
-    text: 'Congratulations to our 2025 graduates – 98%+ Placement achieved!',
+    text: 'Congratulations to our 2025 B.Ed graduates!',
     icon: (
       <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-3.5 2M12 20l3.5-4" />

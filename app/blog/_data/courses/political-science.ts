@@ -169,7 +169,7 @@ export const politicalScienceBlogData: CourseBlogData = {
       { title: 'Constitutional Studies & Current Affairs Integration', desc: 'B.Ed Political Science curriculum at JKKN explicitly integrates Indian Constitution deep-dive and daily current affairs analysis — preparing teachers ready to teach civics meaningfully and shine in UPSC coaching career applications.' },
       { title: '16-Week Internship in CBSE & Government Schools', desc: 'Practice teaching at partner CBSE, matriculation, and government schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to civics and political science teaching at multiple class levels.' },
       { title: 'TNTET + UPSC Coaching Awareness', desc: 'TNTET Social Science coaching plus exposure to UPSC Political Science optional and Polity GS teaching methodology — opening high-earning coaching career streams.' },
-      { title: 'Strong Placement Network', desc: 'Active placement relationships with 60+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes. 94% B.Ed Political Science placement rate within 6 months.' },
+      { title: 'Strong Placement Network', desc: 'Active placement relationships with 60+ CBSE/matriculation schools across Kongu region and Chennai, plus UPSC/banking coaching institutes.' },
     ],
   },
 
