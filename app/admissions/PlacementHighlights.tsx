@@ -1,9 +1,7 @@
 export default function PlacementHighlights() {
   const stats = [
-    { value: '98%', label: 'Placement Rate' },
-    { value: '₹3-8 LPA', label: 'Salary Range' },
-    { value: '100+', label: 'Recruiting Schools' },
-    { value: '15+', label: 'Campus Drives/Year' },
+    { value: 'TGT / PGT', label: 'Roles You Qualify For' },
+    { value: 'CTET / TET', label: 'Exams You Can Appear For' },
   ]
 
   const recruiters = [

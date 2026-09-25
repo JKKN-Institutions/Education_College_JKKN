@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="https://nursing.sresakthimayeil.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
-                  Srisakthimayeil Institute of Nursing and Research
+                  Sresakthimayeil Institute of Nursing and Research
                 </Link>
               </li>
               <li>
@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="https://nv.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
-                  Nattraja Vidhyalya
+                  Nattraja Vidhyalaya
                 </Link>
               </li>
             </ul>

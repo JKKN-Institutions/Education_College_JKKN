@@ -56,11 +56,6 @@ export default function ZoologyDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>98%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -916,19 +911,6 @@ export default function ZoologyDepartment() {
               </p>
             </div>
 
-            {/* NAAC */}
-            <div className="text-center">
-              <div className="aspect-square flex items-center justify-center rounded-xl mb-3 sm:mb-4 transition-transform hover:scale-105"
-                   style={{ backgroundColor: '#7cb983' }}>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold px-2" style={{ color: '#ffffff' }}>
-                  NAAC
-                </div>
-              </div>
-              <p className="text-xs sm:text-sm font-semibold leading-tight" style={{ color: '#006837' }}>
-                NAAC Accredited
-              </p>
-            </div>
-
             {/* UGC */}
             <div className="text-center">
               <div className="aspect-square flex items-center justify-center rounded-xl mb-3 sm:mb-4 transition-transform hover:scale-105"
@@ -952,7 +934,7 @@ export default function ZoologyDepartment() {
             Begin Your Teaching Journey Today
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto" style={{ color: '#ffffff' }}>
-            Join JKKN College of Education and become a part of our legacy in transforming lives through progressive science education. Admissions for 2025-26 academic year are now open.
+            Join JKKN College of Education and become a part of our legacy in transforming lives through progressive science education. Admissions for 2026-27 academic year are now open.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-zoology" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

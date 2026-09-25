@@ -170,7 +170,7 @@ export async function GET() {
           // ── Mid-CTA Banner ──
           h2('MID-CONTENT CTA BANNER'),
           p('Heading: Ready to Start Your Teaching Career?'),
-          p('Description: Apply for B.Ed 2026 at JKKN College of Education \u2014 100 seats, NCTE approved, TNTEU affiliated, and 98% placement rate.'),
+          p('Description: Apply for B.Ed 2026 at JKKN College of Education \u2014 100 sanctioned seats, NCTE approved and TNTEU affiliated.'),
           p('Button 1 Text: Apply Now \u2192'),
           p('Button 2 Text: Contact Admissions'),
           p(''),
@@ -181,7 +181,7 @@ export async function GET() {
           p('1. NCTE Approved & TNTEU Affiliated \u2014 JKKN College of Education holds valid NCTE recognition, ensuring your B.Ed degree is legally recognized for teaching in government and private schools across India. Affiliation to TNTEU guarantees a standardized, quality curriculum.'),
           p('2. Extensive School Internship \u2014 Students complete 16 weeks of practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.'),
           p('3. Experienced Faculty \u2014 Our faculty includes experienced teacher-educators with postgraduate and doctoral qualifications in Education, Psychology, and their respective subject specializations. Regular workshops, seminars, and guest lectures enrich student learning.'),
-          p('4. Outstanding Placement Record \u2014 98% placement rate with graduates placed in CBSE, ICSE, and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.'),
+          p('4. Placement Support \u2014 graduates are placed in CBSE, ICSE and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.'),
           p('5. Strategic Location & Residential Campus \u2014 Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, easily accessible from Salem (45 km), Erode (30 km), Namakkal (20 km), and Tiruchengode (15 km). The residential campus includes hostel, library, and sports facilities.'),
           p(''),
 
@@ -209,7 +209,7 @@ export async function GET() {
           p('Q: Is JKKN College of Education NCTE approved?'),
           p('A: Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai \u2014 ensuring your B.Ed degree is recognized for government and private school teaching positions across India.'),
           p('Q: What are the career opportunities after B.Ed from JKKN?'),
-          p("A: JKKN College of Education has a 98% placement rate. Graduates secure teaching positions in government and private schools, qualify for TNTET/TRB examinations, and advance to M.Ed or Ph.D programs. Many alumni teach in CBSE, ICSE, and Tamil Nadu State Board schools across the region."),
+          p("A: Graduates of JKKN College of Education secure teaching positions in government and private schools, qualify for TNTET/TRB examinations, and advance to M.Ed or Ph.D programs. Many alumni teach in CBSE, ICSE, and Tamil Nadu State Board schools across the region."),
           p(''),
 
           // ── Author Box ──

@@ -35,6 +35,22 @@ const nextConfig: NextConfig = {
       // closest in intent, verified HTTP 200 on 2026-08-11.
       { source: '/blog/campus/med-after-bed-when-is-it-worth-it', destination: '/blog/campus/government-teacher-recruitment-after-bed', permanent: true },
       { source: '/blog/campus/med-after-bed-when-is-it-worth-it/', destination: '/blog/campus/government-teacher-recruitment-after-bed', permanent: true },
+
+      // -- Fabricated-testimonial removal 2026-09-16 -------------------------
+      // /testimonials carried three invented alumni: "Priya Sharma", "Rajesh Kumar",
+      // "Sunita Devi", with invented schools (Delhi Public School Chennai, Kendriya
+      // Vidyalaya Coimbatore, Navodaya Vidyalaya TN). The first card's avatar initial
+      // was "A" while the name was "Priya Sharma" - template placeholder content, not
+      // people. The same three also fed a Review + aggregateRating 4.8/156 JSON-LD block
+      // on the homepage, on a site with no review UI. Page deleted, not rewritten - same
+      // call as the dental and pharmacy fabricated-testimonial findings.
+      // Measured before removal: absent from the top 25 GSC pages by impressions over
+      // 2026-06-18..2026-09-15 (the 25th row has 22 impressions), so there is no traffic
+      // to rescue. It WAS in sitemap.ts and llms-full.txt, so AI engines were being
+      // pointed straight at it - that is why this is a redirect and not a bare 404.
+      // Target /about verified HTTP 200 on 2026-09-16.
+      { source: '/testimonials', destination: '/about', permanent: true },
+      { source: '/testimonials/', destination: '/about', permanent: true },
     ];
   },
 };

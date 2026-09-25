@@ -59,11 +59,6 @@ export default function TamilDepartment() {
                   <div className="text-xs sm:text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-3 sm:p-4 lg:p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2" style={{ color: '#7cb983' }}>95%</div>
-                  <div className="text-xs sm:text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-3 sm:p-4 lg:p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -1041,17 +1036,6 @@ export default function TamilDepartment() {
               </p>
             </div>
 
-            {/* NAAC */}
-            <div className="text-center">
-              <div className="w-32 h-32 mb-4 rounded-lg flex items-center justify-center text-white font-bold text-3xl"
-                   style={{ backgroundColor: '#7cb983' }}>
-                NAAC
-              </div>
-              <p className="font-semibold" style={{ color: '#006837' }}>
-                NAAC Accredited
-              </p>
-            </div>
-
             {/* UGC */}
             <div className="text-center">
               <div className="w-32 h-32 mb-4 rounded-lg flex items-center justify-center text-white font-bold text-3xl"
@@ -1073,7 +1057,7 @@ export default function TamilDepartment() {
             Begin Your Teaching Journey Today
           </h2>
           <p className="text-xl leading-relaxed mb-10 text-white">
-            Join JKKN College of Education and become a part of our legacy in transforming lives through progressive education. Admissions for 2025-26 academic year are now open.
+            Join JKKN College of Education and become a part of our legacy in transforming lives through progressive education. Admissions for 2026-27 academic year are now open.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-tamil" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

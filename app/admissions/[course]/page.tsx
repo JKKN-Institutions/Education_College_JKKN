@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   return seoMetadata(
     `${data.fullName} Admission 2026-27`,
-    `Apply for ${data.fullName} admission at JKKN College of Education, Namakkal. ${data.totalSeats} seats, ${data.placementRate} placement, NCTE approved. Check eligibility, fees, application process.`,
+    `Apply for ${data.fullName} admission at JKKN College of Education, Namakkal. NCTE approved and TNTEU affiliated. Check eligibility, fees and the application process.`,
     `/admissions/${data.slug}`,
     {
       keywords: [
@@ -162,11 +162,7 @@ export default async function CourseAdmissionPage({
                   </div>
                   <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">{data.totalSeats}</div>
-                    <div className="text-xs font-semibold text-white">SEATS</div>
-                  </div>
-                  <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">{data.placementRate}</div>
-                    <div className="text-xs font-semibold text-white">PLACEMENT</div>
+                    <div className="text-xs font-semibold text-white">NCTE INTAKE</div>
                   </div>
                   <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-[#7cb983]">{data.semesters}</div>
@@ -228,7 +224,7 @@ export default async function CourseAdmissionPage({
                 { label: 'Medium', value: data.medium, detail: 'Bilingual instruction' },
                 { label: 'Affiliation', value: 'TNTEU', detail: data.affiliation },
                 { label: 'Approval', value: 'NCTE', detail: data.approval },
-                { label: 'Intake', value: `${data.totalSeats}`, detail: 'Seats per year' },
+                { label: 'Intake', value: `${data.totalSeats}`, detail: 'Total NCTE-sanctioned intake per year, shared across all 14 specializations' },
               ].map((item) => (
                 <div key={item.label} className="p-4 sm:p-5 rounded-xl border-l-4 border-[#7cb983] bg-[#FBFBEE]">
                   <div className="text-xs font-semibold text-[#006837] mb-1">{item.label.toUpperCase()}</div>
@@ -319,7 +315,7 @@ export default async function CourseAdmissionPage({
             </div>
 
             <p className="mt-4 text-xs text-gray-500 text-center italic">
-              * Fees indicative; final amount confirmed during counselling. Tamil Nadu Govt. scholarships waive tuition fee for eligible SC/ST/MBC/BC candidates.
+              * Tuition is the management-quota figure for 2026-27; the final amount is confirmed during counselling. Tamil Nadu government scholarships may reduce what you pay - current figures are on the scholarships page.
             </p>
           </div>
         </section>
@@ -576,16 +572,6 @@ export default async function CourseAdmissionPage({
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="p-6 rounded-xl bg-gradient-to-br from-[#7cb983] to-[#006837] text-white text-center">
-                  <div className="text-3xl sm:text-4xl font-bold mb-1">{data.averageSalary}</div>
-                  <div className="text-xs font-semibold uppercase tracking-wide">Average Salary Range</div>
-                </div>
-                <div className="p-6 rounded-xl bg-[#002309] text-white text-center">
-                  <div className="text-3xl sm:text-4xl font-bold text-[#7cb983] mb-1">{data.placementRate}</div>
-                  <div className="text-xs font-semibold uppercase tracking-wide">Placement Rate</div>
-                </div>
-              </div>
             </div>
 
             <div className="p-6 rounded-xl bg-[#FBFBEE]">
@@ -663,7 +649,7 @@ export default async function CourseAdmissionPage({
                     Ready to join {data.fullName}?
                   </h2>
                   <p className="text-white/90 text-sm sm:text-base max-w-xl">
-                    {data.totalSeats} seats available. {data.placementRate} placement rate. Limited intake — apply early to secure your seat for the 2026-27 academic year.
+                    NCTE-sanctioned intake is {data.totalSeats} students a year across all 14 specializations. Applications for the 2026-27 academic year are open now.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">

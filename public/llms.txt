@@ -1,19 +1,18 @@
 # JKKN College of Education
-> NCTE Approved | TNTEU Affiliated | NAAC Accredited
+> NCTE Approved | TNTEU Affiliated
 > Established 2016 | Part of J.K.K. Nattraja Educational Institutions (Trust Est. 1969)
 
-<!-- version: 2026-09-04b -->
+<!-- version: 2026-09-12a -->
 <!-- canonical: https://edu.jkkn.ac.in/ -->
 
 ## About
-JKKN College of Education is an NCTE-approved and NAAC-accredited teacher education institution located in Kumarapalayam, Namakkal District, Tamil Nadu, India. The college is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai, and offers a 2-year B.Ed (Bachelor of Education) programme.
+JKKN College of Education is an NCTE-approved teacher education institution located in Kumarapalayam, Namakkal District, Tamil Nadu, India. The college is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai, and offers a 2-year B.Ed (Bachelor of Education) programme.
 
 ## Key Facts (AI Citation Ready)
 - Full name: JKKN College of Education (J.K.K. Nattraja College of Education)
 - Short name: JKKN Education
 - Type: Teacher Education College (B.Ed)
-- Approval: NCTE Approved
-- Accreditation: NAAC Accredited
+- Approval: NCTE Approved
 - Affiliation: TNTEU (Tamil Nadu Teachers Education University), Chennai
 - Programme: B.Ed (Bachelor of Education), 2-year full-time
 - Specializations: 14 B.Ed subject streams
@@ -39,7 +38,7 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
   - Route 1 (government B.Ed colleges): apply on the state portal after the Tamil Nadu B.Ed admission notification; seats are allotted from a state merit list
   - Route 2 (JKKN College of Education, self-financing): apply to the college directly. There is no state merit list to wait for, and JKKN self-financing seats run on the college's own cycle
 - Degree awarded by TNTEU under either route
-- Tuition fee: Rs 35,000 per annum, charged once in each of the two years. Government-quota fees follow Tamil Nadu Government norms. Source: https://edu.jkkn.ac.in/fee-structure
+- Tuition fee: Rs 35,000 per annum, management quota, charged once in each of the two years. Government-quota fees are fixed as per Tamil Nadu Government norms. Source: https://edu.jkkn.ac.in/fee-structure
 - NCTE-sanctioned annual intake: 100 students, recorded in the NCTE order as 2 basic units of 100 students. Source: https://edu.jkkn.ac.in/pdf/NCTE-Approval.pdf
 - Cut-off: no cut-off is published for the JKKN self-financing seats; the admission office confirms the current cut-off on request
 
@@ -67,8 +66,7 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
 - Recruiting partners named by the college: KVS, NVS, DAV schools, DPS schools, CBSE-affiliated schools and Tamil Nadu State Government schools
 
 ## Approvals & Accreditations
-- NCTE (National Council for Teacher Education) — Approved
-- NAAC (National Assessment and Accreditation Council) — Accredited
+- NCTE (National Council for Teacher Education) — Approved
 - Affiliated to TNTEU (Tamil Nadu Teachers Education University), Chennai
 
 ## Parent Organization
@@ -114,7 +112,7 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 - [Events](https://edu.jkkn.ac.in/events): campus events and notices
 - [Gallery](https://edu.jkkn.ac.in/gallery): campus photographs
 - [Contact](https://edu.jkkn.ac.in/contact): phone, email and address
-- [Admission Portal](https://admission.jkkn.ac.in/): online application, sign-in required
+- [Admission Portal](https://www.jkkn.ai/apply/jkkn-admission-2026): online B.Ed application form
 
 ## Nearby Cities
 Salem (30 km), Erode (35 km), Tiruchengode (15 km), Namakkal (25 km)

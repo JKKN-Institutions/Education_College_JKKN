@@ -57,8 +57,7 @@ export interface CourseAdmission {
 
   // Career
   careerRoles: string[];
-  averageSalary: string;
-  placementRate: string;
+
   topRecruiters: string[];
 
   // USPs
@@ -248,29 +247,24 @@ export const APPLICATION_STEPS = [
 
 export const SCHOLARSHIPS = [
   {
-    name: 'Tamil Nadu Govt. Scholarship',
-    eligibility: 'SC / ST / MBC / BC students',
-    benefit: 'Full tuition fee reimbursement (subject to income criteria)',
+    name: 'Post Matric Scholarship (PMSS)',
+    eligibility: 'SC / SCA / ST / BC-CC candidates, government quota',
+    benefit: 'Amount is set by the Tamil Nadu government and changes each year - see the scholarships page',
   },
   {
-    name: 'Merit Scholarship',
-    eligibility: 'Top 10% of admitted candidates by graduation marks',
-    benefit: 'Up to 25% tuition fee waiver',
+    name: 'Maintenance Scholarship',
+    eligibility: 'SC / SCA / ST / BC-CC candidates, management quota',
+    benefit: 'Amount is set by the Tamil Nadu government and changes each year - see the scholarships page',
   },
   {
-    name: 'EWS Concession',
-    eligibility: 'Economically Weaker Section candidates',
-    benefit: '10% fee concession with valid EWS certificate',
+    name: 'JKKN Trust Scholarship (Merit Based)',
+    eligibility: 'BC / MBC / DNC / BCM candidates, management or government quota',
+    benefit: 'Awarded on merit - current figures are on the scholarships page',
   },
   {
-    name: 'JKKN Sports & Arts Scholarship',
-    eligibility: 'State/National level sports & cultural achievers',
-    benefit: '₹10,000 – ₹50,000 annual support',
-  },
-  {
-    name: 'Differently-Abled Scholarship',
-    eligibility: 'PWD candidates with 40%+ disability',
-    benefit: 'Full tuition fee waiver + special learning support',
+    name: 'All Community Scholarship',
+    eligibility: 'Students from Government or Government-Aided schools, Classes 6-12',
+    benefit: 'Monthly support - current figure is on the scholarships page',
   },
 ];
 
@@ -282,13 +276,22 @@ export const SELECTION_CRITERIA = [
   'Category & community-based reservation as per TN Govt. norms',
 ];
 
+// Sources, all re-checked 2026-09-16 against documents this site itself publishes:
+//  - NCTE continuation-of-recognition order (public/pdf/NCTE-Approval.pdf): B.Ed recognised
+//    from academic session 2016-17 for "2 basic units of 100 students" annual intake.
+//  - TNTEU faculty return (public/pdf/Faculty-Details.pdf): 16 staff listed.
+//  - 14 specialisations: the site's own B.Ed OfferingCatalog and department pages.
+// Removed for having no source at all: '98%' Placement Rate, '5000+' Successful Alumni
+// Educators. Removed as refuted by the NCTE order: '700+' B.Ed Seats per Year (sanctioned
+// intake is 100, a 7x overstatement) and '36+' Years of Educational Excellence (this college
+// dates from 2016; 1952 belongs to the trust, not to it). '50+' Experienced Faculty is
+// refuted by the college's own TNTEU return, which lists 16.
+// Do not add a figure back here without a document that states it.
 export const TRUST_SIGNALS = [
-  { metric: '36+', label: 'Years of Educational Excellence' },
-  { metric: '98%', label: 'Placement Rate' },
-  { metric: '700+', label: 'B.Ed Seats per Year' },
-  { metric: '14', label: 'NCTE-Approved Specializations' },
-  { metric: '50+', label: 'Experienced Faculty' },
-  { metric: '5000+', label: 'Successful Alumni Educators' },
+  { metric: '2016', label: 'NCTE Recognised Since' },
+  { metric: '100', label: 'NCTE Sanctioned Intake per Year' },
+  { metric: '14', label: 'B.Ed Subject Specializations' },
+  { metric: '16', label: 'Faculty and Staff' },
 ];
 
 // ─────────── Per-course admission data ───────────
@@ -304,7 +307,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: 'த',
     duration: '2 Years',
     durationDetail: '4 semesters of integrated theory, practicum & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -328,9 +331,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Tamil Curriculum Developer',
       'Tamil Educational Content Creator (Digital)',
     ],
-    averageSalary: '₹3.5 – 6.5 LPA',
-    placementRate: '96%',
-    topRecruiters: ['Velammal Schools', 'SRM Schools', 'Chinmaya Vidyalaya', 'Govt. of Tamil Nadu', 'Sri Chaitanya Schools', 'Vidyaa Vikas Schools'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Sangam to Modern Tamil', description: 'Comprehensive coverage from Tholkappiyam to contemporary Tamil literature.' },
       { title: 'Native Tamil Faculty', description: 'Learn from PhD-qualified Tamil scholars with 15+ years of teaching experience.' },
@@ -342,7 +344,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       { question: 'Can I apply for B.Ed Tamil if I have BA English with Tamil as second language?', answer: 'Yes, provided Tamil was studied as Part-I subject during your UG. Submit your transcript for verification.' },
       { question: 'Is the Tamil B.Ed recognized for TET / TRB exams?', answer: 'Absolutely. Our B.Ed Tamil is NCTE-approved and TNTEU-affiliated, fully eligible for TET, TRB-PG, and TRB-TGT examinations.' },
       { question: 'Do I need to know Sangam Tamil to apply?', answer: 'No prior expertise required. The curriculum builds up from Sangam classics to modern Tamil systematically with expert guidance.' },
-      { question: 'Are there opportunities to teach Tamil abroad after B.Ed?', answer: 'Yes — Singapore, Malaysia, Sri Lanka, and Gulf countries actively recruit Tamil-medium teachers. Alumni placed in international Tamil schools.' },
+      { question: 'Are there opportunities to teach Tamil abroad after B.Ed?', answer: 'Yes — Singapore, Malaysia, Sri Lanka, and Gulf countries actively recruit Tamil-medium teachers.' },
     ],
   },
 
@@ -356,7 +358,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: 'E',
     duration: '2 Years',
     durationDetail: '4 semesters with intensive ELT methodology training',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -380,11 +382,10 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'English Language Examiner',
       'Educational Editor / Proofreader',
     ],
-    averageSalary: '₹4 – 8 LPA',
-    placementRate: '98%',
-    topRecruiters: ['Cambridge Assessment', 'British Council', 'Velammal Schools', 'DAV Group', 'Delhi Public School', 'Orchids International', 'BYJU\'S', 'Vedantu'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
-      { title: 'Cambridge-Aligned Curriculum', description: 'Methodology mapped to Cambridge CELTA principles & British Council ELT standards.' },
+      { title: 'Modern ELT Methodology', description: 'Communicative language teaching, phonetics and classroom language pedagogy as per the TNTEU B.Ed syllabus.' },
       { title: 'Phonetics & Pronunciation Lab', description: 'State-of-the-art language lab with audio-visual phonetics training.' },
       { title: 'Literature & Linguistics Balance', description: 'Equal focus on literary appreciation and linguistic theory for well-rounded teaching.' },
       { title: 'International Placement', description: 'Tie-ups with international schools in Middle East and South-East Asia.' },
@@ -408,7 +409,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '∑',
     duration: '2 Years',
     durationDetail: '4 semesters with mathematical pedagogy, lab work & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -432,9 +433,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Quantitative Aptitude Trainer',
       'Curriculum Designer (STEM)',
     ],
-    averageSalary: '₹4.5 – 9 LPA',
-    placementRate: '99%',
-    topRecruiters: ['BYJU\'S', 'Vedantu', 'Cuemath', 'Allen Career Institute', 'Velammal Schools', 'Sri Chaitanya', 'NPS International', 'Aakash Educational Services'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Math Pedagogy Lab', description: 'Dedicated lab with manipulatives, GeoGebra, and digital math teaching tools.' },
       { title: 'Olympiad-Level Mentoring', description: 'Faculty includes RMO/INMO trainers — learn to teach beyond textbooks.' },
@@ -444,7 +444,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     ],
     faqs: [
       { question: 'I have a B.Tech / B.E. — am I eligible for B.Ed Mathematics?', answer: 'Yes, if your engineering degree had Mathematics as a substantial subject in at least 3-4 semesters, you qualify.' },
-      { question: 'Will this help me become an IIT-JEE coach?', answer: 'Yes. Our placement cell connects graduates with leading coaching institutes like Allen, Aakash, and Vedantu.' },
+      { question: 'Will this help me become an IIT-JEE coach?', answer: 'Yes. Competitive-exam coaching institutes recruit subject teachers, and our placement cell shares openings with graduates. Selection is by each institute’s own process.' },
       { question: 'Is BCA accepted as eligibility for B.Ed Maths?', answer: 'Yes, BCA with sufficient mathematics papers is accepted. Submit your mark sheets for evaluation.' },
       { question: 'Do you cover digital math teaching tools like GeoGebra?', answer: 'Absolutely. GeoGebra, Desmos, and other digital math platforms are integrated throughout the curriculum.' },
     ],
@@ -460,7 +460,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: 'Φ',
     duration: '2 Years',
     durationDetail: '4 semesters with extensive lab experiments & teaching practice',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -484,9 +484,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Science Curriculum Developer',
       'Physics Demonstrator (Research Labs)',
     ],
-    averageSalary: '₹4.5 – 8.5 LPA',
-    placementRate: '98%',
-    topRecruiters: ['Allen', 'Aakash', 'Vedantu', 'BYJU\'S', 'Velammal', 'NPS International', 'Chinmaya Vidyalaya', 'Sri Chaitanya'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Modern Physics Lab', description: 'Well-equipped lab with optics, mechanics, electronics & spectroscopy setups.' },
       { title: 'Demonstration Pedagogy', description: 'Train in 100+ low-cost physics demonstrations using household materials.' },
@@ -497,7 +496,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     faqs: [
       { question: 'I have a B.Sc Computer Science with Physics ancillary — am I eligible?', answer: 'Yes, if Physics was studied for at least 2 years as ancillary subject with sufficient credits.' },
       { question: 'Do you have a well-equipped physics lab?', answer: 'Yes — our lab has equipment for mechanics, optics, electricity, magnetism, modern physics, and electronics demonstrations.' },
-      { question: 'Can I become a NEET/JEE physics coach after this?', answer: 'Absolutely. Many alumni are placed in Allen, Aakash, and other top coaching institutes.' },
+      { question: 'Can I become a NEET/JEE physics coach after this?', answer: 'Yes. A B.Ed in Physics is a recognised teaching qualification, and competitive-exam coaching institutes recruit subject teachers. Recruitment is by the institute’s own selection process.' },
       { question: 'Are research opportunities available during the course?', answer: 'Yes, students can opt for mini-research projects with our partner engineering institutions in Year 2.' },
     ],
   },
@@ -512,7 +511,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '⚗',
     duration: '2 Years',
     durationDetail: '4 semesters with extensive practical chemistry training',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -536,9 +535,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Science Content Developer',
       'Industrial Trainer (FMCG/Pharma)',
     ],
-    averageSalary: '₹4 – 8 LPA',
-    placementRate: '97%',
-    topRecruiters: ['Allen', 'Aakash', 'Vedantu', 'BYJU\'S', 'Velammal', 'NPS', 'Cipla (Training)', 'Sri Chaitanya'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Safe Lab Practices', description: 'Modern, well-ventilated lab with strict safety SOPs — essential for school teaching.' },
       { title: 'Real-World Chemistry', description: 'Curriculum bridges textbook chemistry with food, cosmetics, pharma applications.' },
@@ -550,7 +548,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       { question: 'Is B.Pharm accepted for B.Ed Chemistry admission?', answer: 'Yes. B.Pharm graduates with chemistry coursework are eligible. We have several B.Pharm alumni in our programme.' },
       { question: 'Do you cover NEET-pattern chemistry pedagogy?', answer: 'Yes. Our placement coaching includes NEET-aligned teaching techniques for those targeting medical entrance coaching roles.' },
       { question: 'Are lab chemicals safe for school demonstration training?', answer: 'Absolutely — we train you on safe, age-appropriate experiments approved for school chemistry labs.' },
-      { question: 'Can I work in pharmaceutical training after this course?', answer: 'Yes, several alumni work in training divisions of Cipla, Dr. Reddy\'s, and other pharma companies.' },
+      { question: 'Can I work in pharmaceutical training after this course?', answer: 'Corporate training divisions do recruit science graduates who hold a teaching qualification. Recruitment is by each company’s own selection process, not through the college.' },
     ],
   },
 
@@ -564,7 +562,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '🌿',
     duration: '2 Years',
     durationDetail: '4 semesters with field trips, herbarium work & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -588,9 +586,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Biology Content Developer',
       'Field Researcher / Naturalist',
     ],
-    averageSalary: '₹3.5 – 7 LPA',
-    placementRate: '96%',
-    topRecruiters: ['Allen', 'Aakash', 'BYJU\'S', 'Velammal', 'Sri Chaitanya', 'Vidya Mandir', 'Govt. of TN', 'Tropical Forest Research Institute'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Live Field Studies', description: 'Mandatory field trips to Western Ghats, mangroves, and botanical gardens.' },
       { title: 'Herbarium & Lab', description: 'Maintain your own herbarium collection — practical asset for school teaching.' },
@@ -616,7 +613,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '🐅',
     duration: '2 Years',
     durationDetail: '4 semesters with specimen studies, field work & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -640,9 +637,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Science Content Developer',
       'Environmental Consultant (Education)',
     ],
-    averageSalary: '₹3.5 – 7 LPA',
-    placementRate: '96%',
-    topRecruiters: ['Allen', 'Aakash', 'Velammal', 'Sri Chaitanya', 'Chinmaya Vidyalaya', 'WWF (Education)', 'BYJU\'S', 'Government Schools'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Modern Specimen Lab', description: 'Preserved specimens, 3D models, virtual dissection software — humane and effective.' },
       { title: 'Wildlife Field Trips', description: 'Visits to Mudumalai, Anamalai Tiger Reserves and BNHS bird-watching programmes.' },
@@ -668,7 +664,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '📜',
     duration: '2 Years',
     durationDetail: '4 semesters with heritage site visits, archival work & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -692,9 +688,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Documentary Researcher',
       'Cultural Content Writer',
     ],
-    averageSalary: '₹3 – 6.5 LPA',
-    placementRate: '94%',
-    topRecruiters: ['Velammal Schools', 'DAV', 'NPS', 'Govt. of TN', 'Shankar IAS Academy', 'Tamil Nadu Archives', 'Documentary Channels'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Heritage Site Learning', description: 'Curriculum includes site visits to Mahabalipuram, Hampi, Thanjavur, and Madurai temples.' },
       { title: 'Source-Based Pedagogy', description: 'Learn to teach with primary sources — inscriptions, manuscripts, archaeological evidence.' },
@@ -720,7 +715,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '📊',
     duration: '2 Years',
     durationDetail: '4 semesters with statistical labs, case studies & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -744,9 +739,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Bank Exam Coach (Economics)',
       'Research Associate (Education)',
     ],
-    averageSalary: '₹4 – 7.5 LPA',
-    placementRate: '95%',
-    topRecruiters: ['Velammal', 'DAV', 'Chinmaya Vidyalaya', 'Shankar IAS Academy', 'Plutus IAS', 'BYJU\'S', 'Unacademy', 'NPS'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Data-Driven Pedagogy', description: 'Statistical analysis with Excel, SPSS for teaching modern economics.' },
       { title: 'Real Case Studies', description: 'GST, demonetization, budget analysis — current affairs woven into pedagogy.' },
@@ -772,7 +766,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '₹',
     duration: '2 Years',
     durationDetail: '4 semesters with accounting practicals, case studies & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -796,9 +790,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Corporate Trainer (Finance)',
       'GST / Tally Trainer',
     ],
-    averageSalary: '₹4 – 8 LPA',
-    placementRate: '97%',
-    topRecruiters: ['Velammal', 'DAV', 'NPS', 'Sri Chaitanya', 'Vedantu', 'BYJU\'S', 'Tally Training Centers', 'Banking Coaching Institutes'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'GST & Tally Training', description: 'Industry-relevant tools — Tally Prime, GST returns, taxation basics included.' },
       { title: 'Triple-Subject Mastery', description: 'Teach Accountancy, Business Studies, and Economics — high-value 3-in-1 skill.' },
@@ -824,7 +817,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '⌘',
     duration: '2 Years',
     durationDetail: '4 semesters with coding labs, project work & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -848,21 +841,20 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'School ICT Coordinator',
       'Online Programming Tutor',
     ],
-    averageSalary: '₹5 – 12 LPA',
-    placementRate: '99%',
-    topRecruiters: ['BYJU\'S', 'Vedantu', 'WhiteHat Jr', 'Coding Ninjas', 'Cuemath', 'Velammal', 'DAV', 'Apple Distinguished Schools', 'Microsoft Educators Programme'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Python-First Curriculum', description: 'Industry-relevant Python, basics of JavaScript, SQL, and Git training.' },
       { title: 'AI Literacy Pedagogy', description: 'Teach AI/ML basics — NEP 2020 mandates AI education from Class 6.' },
       { title: 'Highest Demand Subject', description: 'CS teachers command 30-50% premium salaries — fastest growing teaching role.' },
-      { title: 'EdTech Career Path', description: 'Strong placement at BYJU\'S, WhiteHat Jr, Coding Ninjas, Vedantu.' },
+      { title: 'EdTech Career Path', description: 'Online learning platforms and ed-tech companies recruit Computer Science teachers for content, tutoring and curriculum roles.' },
       { title: 'Global Opportunities', description: 'International schools in Gulf, SE Asia actively recruit CS B.Ed graduates.' },
     ],
     faqs: [
       { question: 'I have a B.Tech CSE — is this course worth it?', answer: 'Absolutely. B.Tech CSE + B.Ed makes you the most sought-after CS teacher with both technical and pedagogical credentials.' },
       { question: 'Which programming languages will I learn to teach?', answer: 'Python (primary), C++, JavaScript basics, SQL, and HTML/CSS — all CBSE/ICSE syllabus-aligned languages.' },
       { question: 'Will I learn to teach AI and Machine Learning?', answer: 'Yes — AI literacy pedagogy is a dedicated module, preparing you for the new NEP 2020 curriculum.' },
-      { question: 'What is the salary range for CS teachers?', answer: 'CS teachers in top schools earn ₹6-12 LPA; EdTech roles offer ₹8-20 LPA for experienced educators.' },
+      { question: 'What subjects can I teach after B.Ed Computer Science?', answer: 'Computer Science and Information Technology at the secondary and senior secondary levels, in State Board, CBSE and ICSE schools, subject to the recruiting school’s own norms.' },
     ],
   },
 
@@ -876,7 +868,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '⚖',
     duration: '2 Years',
     durationDetail: '4 semesters with debates, mock parliaments & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -900,9 +892,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Editorial Researcher',
       'Education Policy Analyst',
     ],
-    averageSalary: '₹3 – 6.5 LPA',
-    placementRate: '93%',
-    topRecruiters: ['Velammal', 'DAV', 'NPS', 'Shankar IAS', 'Plutus IAS', 'Vajiram & Ravi', 'Govt. of TN', 'News Channels (Education Wing)'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Constitutional Expertise', description: 'In-depth study of Indian Constitution, polity, federalism — high demand for civics teaching.' },
       { title: 'UPSC Coaching Path', description: 'Strongest pipeline to civil services coaching among all B.Ed specializations.' },
@@ -928,7 +919,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '🌍',
     duration: '2 Years',
     durationDetail: '4 semesters with interdisciplinary projects, field trips & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -952,9 +943,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'TET Teacher (Government Schools)',
       'School Coordinator (Middle School)',
     ],
-    averageSalary: '₹3.5 – 7 LPA',
-    placementRate: '98%',
-    topRecruiters: ['Govt. of TN (TRB)', 'Velammal', 'DAV', 'NPS', 'Sri Chaitanya', 'Chinmaya Vidyalaya', 'BYJU\'S', 'Vedantu', 'Pratham Education Foundation'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Highest School Demand', description: 'Social Science teachers needed in every school — strongest job security.' },
       { title: '4-in-1 Subject Mastery', description: 'Teach History, Geography, Civics, Economics — unmatched versatility.' },
@@ -980,7 +970,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     iconLetter: '🦠',
     duration: '2 Years',
     durationDetail: '4 semesters with advanced microbiology labs & internship',
-    totalSeats: 50,
+    totalSeats: 100,
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
@@ -1004,9 +994,8 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Science Content Developer',
       'Research Assistant (Education)',
     ],
-    averageSalary: '₹4 – 8 LPA',
-    placementRate: '95%',
-    topRecruiters: ['Allen', 'Aakash', 'Velammal', 'Sri Chaitanya', 'NPS', 'Biotech Companies (Training Wing)', 'Diagnostic Lab Education Divisions', 'Pharma Companies'],
+
+    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
     whyChooseThis: [
       { title: 'Rare Specialization', description: 'Unique B.Ed offering in Tamil Nadu — very low competition, high demand.' },
       { title: 'Advanced Bio Lab', description: 'Microscopy, sterile techniques, microbial culturing — research-grade lab access.' },

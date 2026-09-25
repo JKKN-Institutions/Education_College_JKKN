@@ -92,11 +92,11 @@ export default function FeeStructure() {
             </div>
             <ul className="space-y-3 text-sm text-gray-700">
               {[
-                { category: 'BC/MBC Students', detail: 'Tamil Nadu govt. scholarship covering tuition fees' },
-                { category: 'SC/ST Students', detail: 'Full fee waiver + maintenance allowance' },
-                { category: 'Merit-Based', detail: 'Scholarships for top academic performers' },
-                { category: 'EWS Concession', detail: 'Fee concession for economically weaker sections' },
-                { category: 'Differently-Abled', detail: 'Special scholarship from state & central govt.' },
+                { category: 'BC / MBC / DNC / BCM', detail: 'JKKN Trust merit scholarship - current figures on the scholarships page' },
+                { category: 'SC / SCA / ST / BC-CC', detail: 'Post Matric and Maintenance scholarships, amounts set by the Tamil Nadu government' },
+                { category: 'All Community', detail: 'For students from Government or Government-Aided schools, Classes 6-12' },
+                { category: 'First Graduate', detail: 'Tamil Nadu First Graduate scheme - eligibility confirmed by the admission office' },
+                { category: 'Naan Mudhalvan', detail: 'Tamil Nadu government scheme - eligibility confirmed by the admission office' },
               ].map((item, idx) => (
                 <li key={idx} className="border-l-2 border-[#7cb983] pl-3">
                   <p className="font-semibold text-[#006837]">{item.category}</p>

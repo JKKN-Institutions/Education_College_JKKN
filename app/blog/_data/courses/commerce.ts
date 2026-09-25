@@ -170,7 +170,7 @@ export const commerceBlogData: CourseBlogData = {
       { title: 'Faculty with Commerce + CA Coaching Backgrounds', desc: 'M.Com/M.Phil/Ph.D Commerce faculty including former CA Foundation coaching faculty and CBSE PG Commerce teachers. Guest sessions by practicing CAs and corporate L&D professionals.' },
       { title: '16-Week Internship in CBSE & Higher Secondary Schools', desc: 'Practice teaching at partner CBSE, matriculation, and higher secondary schools with commerce streams across Komarapalayam, Salem, Namakkal, and Erode.' },
       { title: 'TNTET + CA Foundation Coaching Awareness', desc: 'TNTET Commerce coaching plus exposure to CA Foundation / CMA Foundation teaching methodology — opening high-earning coaching career streams beyond traditional school jobs.' },
-      { title: 'Strong CBSE & Coaching Placement Network', desc: 'Active placement relationships with 60+ CBSE/matriculation schools with commerce streams plus 10+ CA Foundation and CMA coaching institutes across Kongu region and Chennai. 96% B.Ed Commerce placement rate within 6 months.' },
+      { title: 'Strong CBSE & Coaching Placement Network', desc: 'Active placement relationships with 60+ CBSE/matriculation schools with commerce streams plus 10+ CA Foundation and CMA coaching institutes across Kongu region and Chennai.' },
     ],
   },
 
@@ -205,7 +205,7 @@ export const commerceBlogData: CourseBlogData = {
     },
     {
       q: 'Is JKKN good for placement in CBSE commerce roles?',
-      a: 'JKKN reports 96% B.Ed Commerce placement rate within 6 months. Placement spans CBSE/matriculation schools with commerce streams (Velammal, DAV, PSBB and 60+ regional schools), government recruitment alerts via TRB/KVS, and CA Foundation coaching institutes (ICAI branches, Aldine CA, J.K. Shah Classes regional branches).',
+      a: 'JKKN does not publish a placement percentage for B.Ed Commerce. Placement spans CBSE/matriculation schools with commerce streams (Velammal, DAV, PSBB and 60+ regional schools), government recruitment alerts via TRB/KVS, and CA Foundation coaching institutes (ICAI branches, Aldine CA, J.K. Shah Classes regional branches).',
     },
   ],
 

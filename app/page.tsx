@@ -14,12 +14,12 @@ import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 export const metadata: Metadata = {
   title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
   description:
-    'NCTE approved, NAAC accredited B.Ed college in Namakkal, Tamil Nadu. 14 specializations, TNTEU affiliated. 2-year B.Ed programme. Admissions 2026 open.',
+    'NCTE approved, TNTEU affiliated B.Ed college in Namakkal, Tamil Nadu. 14 specializations, TNTEU affiliated. 2-year B.Ed programme. Admissions 2026 open.',
   alternates: { canonical: 'https://edu.jkkn.ac.in' },
   openGraph: {
     title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
     description:
-      'NCTE approved, NAAC accredited B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+      'NCTE approved, TNTEU affiliated B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
     url: 'https://edu.jkkn.ac.in',
     type: 'website',
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
     description:
-      'NCTE approved, NAAC accredited B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+      'NCTE approved, TNTEU affiliated B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
     images: ['https://edu.jkkn.ac.in/images/og-default.png'],
   },
 };
@@ -84,7 +84,7 @@ export default async function Home() {
           logo: 'https://edu.jkkn.ac.in/images/logo.png',
           image: 'https://edu.jkkn.ac.in/images/og-default.png',
           description:
-            'JKKN College of Education is an NCTE-approved, NAAC-accredited B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 14 subject specializations in Komarapalayam, Namakkal District, Tamil Nadu.',
+            'JKKN College of Education is an NCTE-approved B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 14 subject specializations in Komarapalayam, Namakkal District, Tamil Nadu.',
           telephone: '+919345855001',
           email: 'education@jkkn.ac.in',
           address: {
@@ -108,11 +108,9 @@ export default async function Home() {
           },
           accreditation: [
             'NCTE (National Council for Teacher Education) Approved',
-            'NAAC (National Assessment and Accreditation Council) Accredited',
           ],
           accreditedBy: [
             { '@type': 'Organization', name: 'National Council for Teacher Education (NCTE)', url: 'https://ncte.gov.in' },
-            { '@type': 'Organization', name: 'National Assessment and Accreditation Council (NAAC)', url: 'https://naac.gov.in' },
           ],
           memberOf: {
             '@type': 'Organization',
@@ -141,11 +139,17 @@ export default async function Home() {
             ],
           },
           foundingDate: '2016',
+          // sameAs asserts "these URLs are this same entity". Group-level accounts are
+          // the parent trust, not this college, so they are deliberately absent:
+          // instagram.com/jkkninstitutions and youtube.com/@jkkninstitutions both
+          // resolve to "JKKN Institutions / 7 Colleges / Est. 1952" (checked 2026-09-16).
+          // Regulator URLs stay out of here too - NCTE lives in accreditedBy above.
           sameAs: [
+            // Facebook: published on this site; not in the user's written handle list. Verify.
             'https://www.facebook.com/jkkneducation/',
-            'https://www.instagram.com/jkkninstitutions/',
-            'https://www.youtube.com/@jkkninstitutions',
+            // LinkedIn: matches the estate's /school/ pattern. robots-walled, not fetch-verified.
             'https://www.linkedin.com/school/jkkneducation/',
+            // Maps: resolved 2026-09-16 to "JKKN College of Education", geo 11.4441/77.7315.
             'https://maps.app.goo.gl/AtaJUB4iz4yB3G117',
           ],
         }}
@@ -160,7 +164,7 @@ export default async function Home() {
               name: 'What is the duration of the B.Ed programme?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The Bachelor of Education (B.Ed) programme is a 2-year (4 semesters) full-time professional degree course as per NCTE regulations. The programme includes theoretical courses, practical training, and a mandatory 16-week school internship. Learners are required to complete 80-100 credits across all four semesters.',
+                text: 'The Bachelor of Education (B.Ed) programme is a 2-year (4 semesters) full-time professional degree course as per NCTE regulations. The programme includes theoretical courses, practical training and a mandatory school internship in schools, as prescribed by the TNTEU B.Ed regulations.',
               },
             },
             {
@@ -200,7 +204,7 @@ export default async function Home() {
               name: 'What is the school internship in B.Ed?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'School internship is a mandatory 16-20 week practical training component in Semester III where B.Ed Learners teach in actual school settings under mentor supervision. Interns deliver 40-50 lessons in their chosen subjects, participate in school activities, conduct action research, and develop teaching portfolios. This hands-on experience is crucial for developing classroom teaching skills.',
+                text: 'School internship is a mandatory practical training component in which B.Ed Learners teach in actual school settings under mentor supervision. Interns plan and deliver lessons in their chosen subjects, participate in school activities, conduct action research and develop teaching portfolios. The duration and credit weighting are set by the TNTEU B.Ed regulations. This hands-on experience is crucial for developing classroom teaching skills.',
               },
             },
             {
@@ -216,7 +220,7 @@ export default async function Home() {
               name: 'What are the career options after B.Ed?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions with salary packages ranging from ₹3-8 LPA.',
+                text: 'B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions.',
               },
             },
           ],
@@ -286,44 +290,6 @@ export default async function Home() {
           priceRange: '$$',
         }}
       />
-      {/* Review schema for alumni testimonials */}
-      <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'EducationalOrganization',
-          '@id': 'https://edu.jkkn.ac.in/#organization',
-          review: [
-            {
-              '@type': 'Review',
-              author: { '@type': 'Person', name: 'Priya Sharma' },
-              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-              reviewBody: 'The B.Ed programme transformed my understanding of education. The practical training and supportive Learning Facilitators prepared me well for my career. I am now teaching at a CBSE school and loving every moment!',
-              datePublished: '2022-06-15',
-            },
-            {
-              '@type': 'Review',
-              author: { '@type': 'Person', name: 'Rajesh Kumar' },
-              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-              reviewBody: 'The internship experience was invaluable. Real classroom exposure during the 16-week internship gave me confidence. The placement cell helped me secure a position even before graduation.',
-              datePublished: '2021-08-20',
-            },
-            {
-              '@type': 'Review',
-              author: { '@type': 'Person', name: 'Sunita Devi' },
-              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-              reviewBody: 'Excellent infrastructure and dedicated Learning Facilitators make this college stand out. The focus on inclusive education and technology integration has been incredibly beneficial for my career growth.',
-              datePublished: '2023-05-10',
-            },
-          ],
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.8',
-            bestRating: '5',
-            ratingCount: '156',
-            reviewCount: '3',
-          },
-        }}
-      />
       {/* Event schema for homepage events */}
       {events && events.length > 0 && events.map((event) => (
         <JsonLd
@@ -367,7 +333,7 @@ export default async function Home() {
             {/* Left Content */}
             <div className="text-white text-center lg:text-left">
               <div className="inline-block bg-white/20 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-4 sm:mb-6 lg:mb-8">
-                <span className="text-white font-semibold text-xs sm:text-sm">NCTE Approved | NAAC Accredited</span>
+                <span className="text-white font-semibold text-xs sm:text-sm">NCTE Approved | TNTEU Affiliated</span>
               </div>
 
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
@@ -382,20 +348,20 @@ export default async function Home() {
               {/* Stats Grid */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">98%</div>
-                  <div className="text-xs sm:text-sm text-white/80">Placement Rate</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">2016</div>
+                  <div className="text-xs sm:text-sm text-white/80">NCTE Recognised Since</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">70+</div>
-                  <div className="text-xs sm:text-sm text-white/80">Years of Excellence</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">14</div>
+                  <div className="text-xs sm:text-sm text-white/80">Specializations</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">5000+</div>
-                  <div className="text-xs sm:text-sm text-white/80">Alumni Network</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">100</div>
+                  <div className="text-xs sm:text-sm text-white/80">NCTE Sanctioned Intake</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">50+</div>
-                  <div className="text-xs sm:text-sm text-white/80 leading-tight">Expert Learning Facilitators</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">2</div>
+                  <div className="text-xs sm:text-sm text-white/80 leading-tight">Years, Full-Time</div>
                 </div>
               </div>
 
@@ -424,7 +390,7 @@ export default async function Home() {
                     </div>
                     <div>
                       <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Approved</div>
-                      <div className="text-gray-600 text-[8px] sm:text-[10px]">NAAC Accredited</div>
+                      <div className="text-gray-600 text-[8px] sm:text-[10px]">TNTEU Affiliated</div>
                     </div>
                   </div>
                 </div>
@@ -432,8 +398,8 @@ export default async function Home() {
                 {/* Top Left - Circular Years Badge */}
                 <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
                   <div className="bg-[#7cb983] rounded-full w-16 h-16 sm:w-20 sm:h-20 flex flex-col items-center justify-center shadow-lg">
-                    <div className="text-white font-bold text-lg sm:text-xl">70+</div>
-                    <div className="text-white text-[8px] sm:text-[9px] font-semibold uppercase tracking-wide text-center">Years<br/>Legacy</div>
+                    <div className="text-white font-bold text-lg sm:text-xl">2016</div>
+                    <div className="text-white text-[8px] sm:text-[9px] font-semibold uppercase tracking-wide text-center">Year<br/>Founded</div>
                   </div>
                 </div>
 
@@ -444,8 +410,8 @@ export default async function Home() {
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                     <div>
-                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">98%+ Placement</div>
-                      <div className="text-gray-600 text-[8px] sm:text-[10px]">Success Rate</div>
+                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Approved</div>
+                      <div className="text-gray-600 text-[8px] sm:text-[10px]">TNTEU Affiliated</div>
                     </div>
                   </div>
                 </div>
@@ -1164,7 +1130,7 @@ export default async function Home() {
           <div className="bg-gradient-to-r from-[#002309] to-[#006837] rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
             <div className="text-white text-center md:text-left">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
-              <p className="text-white/90 text-sm sm:text-base">Applications for the 2025-26 academic session are now open. Limited seats available—apply early to secure your admission.</p>
+              <p className="text-white/90 text-sm sm:text-base">Applications for the 2026-27 academic session are now open. Tamil Nadu B.Ed dates are announced by the state, so we publish a date only once the official notification is out.</p>
             </div>
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0">
               Start Application
@@ -1211,7 +1177,7 @@ export default async function Home() {
               <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#006837] mb-3">Digital Library</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Extensive collection of 15,000+ books, e-journals, INFLIBNET access, and dedicated reading spaces for research and academic pursuits.
+                  Extensive collection of 25,863 volumes, e-journals, INFLIBNET access, and dedicated reading spaces for research and academic pursuits.
                 </p>
               </div>
             </div>
@@ -1416,13 +1382,13 @@ export default async function Home() {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-6 lg:mb-8 h-[200px] sm:h-[250px] lg:h-[300px]">
                 <Image
                   src="/images/Homepage-Placement-Rate-Image.webp"
-                  alt="98% Placement Rate"
+                  alt="Placement support at JKKN College of Education"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute bottom-4 right-4">
                   <span className="bg-white/95 backdrop-blur-sm text-[#006837] px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm shadow-lg">
-                    98% Placement Rate
+                    Placement Support
                   </span>
                 </div>
               </div>
@@ -1430,16 +1396,16 @@ export default async function Home() {
               {/* Stats Grid */}
               <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">₹3-8 LPA</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Salary Range</div>
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">16</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Faculty and Staff</div>
                 </div>
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">100+</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Recruiting Schools</div>
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">TGT / PGT</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Roles You Qualify For</div>
                 </div>
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">15+</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Campus Drives/Year</div>
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">CTET / TET</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Exams You Can Appear For</div>
                 </div>
               </div>
             </div>
@@ -1552,79 +1518,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Alumni Testimonials */}
-      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-8 sm:mb-12">
-            <span className="inline-block bg-[#7cb983] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
-              SUCCESS STORIES
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-3 sm:mb-4">
-              What Our Alumni Say
-            </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-              Hear from our graduates who are now successful Learning Facilitators
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div className="text-4xl text-[#7cb983] mb-4">&ldquo;</div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                The B.Ed programme transformed my understanding of education. The practical training and supportive Learning Facilitators prepared me well for my career. I&apos;m now teaching at a CBSE school and loving every moment!
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#7cb983] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl sm:text-2xl font-bold">A</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#006837]">Priya Sharma</h4>
-                  <p className="text-sm text-[#7cb983]">Batch 2022 | TGT Mathematics</p>
-                  <p className="text-xs text-gray-500">Delhi Public School, Chennai</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div className="text-4xl text-[#7cb983] mb-4">&ldquo;</div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                The internship experience was invaluable. Real classroom exposure during the 16-week internship gave me confidence. The placement cell helped me secure a position even before graduation.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#002309] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl sm:text-2xl font-bold">R</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#006837]">Rajesh Kumar</h4>
-                  <p className="text-sm text-[#7cb983]">Batch 2021 | PGT Science</p>
-                  <p className="text-xs text-gray-500">Kendriya Vidyalaya, Coimbatore</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div className="text-4xl text-[#7cb983] mb-4">&ldquo;</div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                Excellent infrastructure and dedicated Learning Facilitators make this college stand out. The focus on inclusive education and technology integration has been incredibly beneficial for my career growth.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#006837] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl sm:text-2xl font-bold">S</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#006837]">Sunita Devi</h4>
-                  <p className="text-sm text-[#7cb983]">Batch 2023 | TGT English</p>
-                  <p className="text-xs text-gray-500">Navodaya Vidyalaya, Tamil Nadu</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
@@ -1648,7 +1541,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                The Bachelor of Education (B.Ed) programme is a 2-year (4 semesters) full-time professional degree course as per NCTE regulations. The programme includes theoretical courses, practical training, and a mandatory 16-week school internship. Learners are required to complete 80-100 credits across all four semesters.
+                The Bachelor of Education (B.Ed) programme is a 2-year (4 semesters) full-time professional degree course as per NCTE regulations. The programme includes theoretical courses, practical training and a mandatory school internship in schools, as prescribed by the TNTEU B.Ed regulations.
               </div>
             </details>
 
@@ -1703,7 +1596,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                School internship is a mandatory 16-20 week practical training component in Semester III where B.Ed Learners teach in actual school settings under mentor supervision. Interns deliver 40-50 lessons in their chosen subjects, participate in school activities, conduct action research, and develop teaching portfolios. This hands-on experience is crucial for developing classroom teaching skills.
+                School internship is a mandatory practical training component in which B.Ed Learners teach in actual school settings under mentor supervision. Interns plan and deliver lessons in their chosen subjects, participate in school activities, conduct action research and develop teaching portfolios. The duration and credit weighting are set by the TNTEU B.Ed regulations. This hands-on experience is crucial for developing classroom teaching skills.
               </div>
             </details>
 
@@ -1725,7 +1618,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions with salary packages ranging from ₹3-8 LPA.
+                B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions.
               </div>
             </details>
           </div>
@@ -1739,31 +1632,31 @@ export default async function Home() {
             {/* Left Content */}
             <div>
               <span className="inline-block bg-[#7cb983] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-4 sm:mb-6">
-                ADMISSIONS 2025-26
+                ADMISSIONS 2026-27
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-4 sm:mb-6">
                 Begin Your Journey as a Future Educator
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8">
-                Take the first step towards a fulfilling career in education. Our admission process is simple, transparent, and supportive.
+                Take the first step towards a fulfilling career in education. Our admission process is simple, transparent, and supportive. Tamil Nadu B.Ed dates are announced by the state, not by individual colleges - we publish a date only once the official notification is out. JKKN self-financing seats are open now.
               </p>
 
               {/* Timeline */}
               <div className="space-y-3 sm:space-y-4 lg:space-y-6 mb-6 sm:mb-8">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Jan - Mar 2025</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
                   <span className="text-gray-700 text-sm sm:text-base">Application Window Open</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Apr 2025</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
                   <span className="text-gray-700 text-sm sm:text-base">Entrance Examination</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">May - Jun 2025</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
                   <span className="text-gray-700 text-sm sm:text-base">Counselling & Admission</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Jul 2025</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Per TNTEU calendar</span>
                   <span className="text-gray-700 text-sm sm:text-base">Classes Commence</span>
                 </div>
               </div>

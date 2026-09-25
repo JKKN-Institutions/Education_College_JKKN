@@ -51,7 +51,7 @@ export default function OurInstitutions() {
 
             {/* Paragraph 2 */}
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
-              Our Institutions have well-constructed academic blocks, lab facilities and operation centers, knowledge resource libraries, sports infrastructure, separate accommodations for boys and girls, a general and dental hospital for healthcare services and practices, and an impulsively functioning Placement cell that assures a sure-shot placement for all the students.
+              Our Institutions have well-constructed academic blocks, lab facilities and operation centers, knowledge resource libraries, sports infrastructure, separate accommodations for boys and girls, a general and dental hospital for healthcare services and practices, and an active Placement cell that supports every student through the recruitment process.
             </p>
 
             {/* Paragraph 3 */}
@@ -61,7 +61,7 @@ export default function OurInstitutions() {
 
             {/* Paragraph 4 */}
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
-              We are located at Komarapalayam, 15 km from Erode City, Tamil Nadu, India. The nearest railway station is Erode railway station, and the nearest airport is Salem/Coimbatore.
+              We are located at Komarapalayam, Namakkal District, Tamil Nadu, India - about 15 km from Tiruchengode, 25 km from Namakkal, 30 km from Salem and 35 km from Erode. The nearest railway station is Erode railway station, and the nearest airport is Salem/Coimbatore.
             </p>
 
             {/* Paragraph 5 */}

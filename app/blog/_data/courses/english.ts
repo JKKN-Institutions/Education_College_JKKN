@@ -170,7 +170,7 @@ export const englishBlogData: CourseBlogData = {
       { title: 'Experienced English Pedagogy Faculty', desc: 'Faculty include M.A./M.Phil/Ph.D English specialists with school teaching backgrounds and IELTS examiner certifications. Regular guest sessions by CBSE English HoDs and IELTS senior trainers from British Council and IDP.' },
       { title: '16-Week Internship in CBSE & Matric Schools', desc: 'Practice teaching in real CBSE, ICSE, and English-medium matriculation schools across Komarapalayam, Salem, Namakkal, and Erode — building confidence with diverse student English proficiency levels and modern classroom techniques.' },
       { title: 'Integrated IELTS/PTE Training Awareness', desc: 'Beyond traditional B.Ed curriculum, JKKN exposes students to IELTS/PTE training methodology — opening high-paying coaching career streams alongside school teaching. Foundation TEFL knowledge is also integrated.' },
-      { title: 'Strong Placement Network for English Teachers', desc: 'Placement cell maintains active relationships with 80+ CBSE/matriculation schools across the Kongu belt and Chennai, plus IELTS coaching chains (Kanan, Touchstone, Y-Axis). 96% B.Ed English placement rate within 6 months.' },
+      { title: 'Strong Placement Network for English Teachers', desc: 'Placement cell maintains active relationships with 80+ CBSE/matriculation schools across the Kongu belt and Chennai, plus IELTS coaching chains (Kanan, Touchstone, Y-Axis).' },
     ],
   },
 

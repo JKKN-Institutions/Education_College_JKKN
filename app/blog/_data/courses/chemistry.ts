@@ -170,7 +170,7 @@ export const chemistryBlogData: CourseBlogData = {
       { title: 'Faculty with Chemistry Mastery + Teaching Experience', desc: 'M.Sc./M.Phil/Ph.D Chemistry faculty with school and coaching backgrounds. Guest sessions by retired government PG Chemistry teachers and NEET coaching veterans.' },
       { title: '16-Week Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse chemistry lab settings and student levels.' },
       { title: 'TNTET + NEET Coaching Awareness', desc: 'TNTET Chemistry coaching plus exposure to NEET/JEE chemistry teaching methodology — opening multiple career streams beyond traditional school jobs.' },
-      { title: 'Placement Network for Chemistry Teachers', desc: 'Active relationships with CBSE/matriculation schools and NEET coaching institutes across the Kongu region and Chennai. 96% B.Ed Chemistry placement rate within 6 months.' },
+      { title: 'Placement Network for Chemistry Teachers', desc: 'Active relationships with CBSE/matriculation schools and NEET coaching institutes across the Kongu region and Chennai.' },
     ],
   },
 

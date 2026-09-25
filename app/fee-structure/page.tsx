@@ -41,10 +41,10 @@ export default function FeeStructurePage() {
               Fee Structure
             </span>
             <h1 className="text-3xl sm:text-4xl font-bold text-[#006837] mb-3">
-              B.Ed Programme Fee Details
+              B.Ed Programme Fee Details 2026-27
             </h1>
             <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
-              Annual fee structure for the 2-year B.Ed programme at JKKN College of Education, Namakkal.
+              Annual fee structure for the 2-year B.Ed programme at JKKN College of Education, Namakkal, for the 2026-27 academic year.
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export default function FeeStructurePage() {
             </h2>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               Several of these are Tamil Nadu government schemes, so the amount is set by the
-              state and changes year to year. We list the schemes rather than the sums, and the
+              state and changes year to year. The current figures are published on the scholarships page, and the
               admission office will tell you which ones you actually qualify for.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">

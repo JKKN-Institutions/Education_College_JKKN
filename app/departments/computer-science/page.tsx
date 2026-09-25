@@ -60,11 +60,6 @@ export default function ComputerScienceDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>98%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -1522,7 +1517,7 @@ export default function ComputerScienceDepartment() {
             Ready to Shape the Future of Technology Education?
           </h2>
           <p className="text-xl lg:text-2xl mb-12 text-white leading-relaxed">
-            Join JKKN College of Education and embark on a rewarding career as a Computer Science educator. Applications are now open for 2025-26 academic year.
+            Join JKKN College of Education and embark on a rewarding career as a Computer Science educator. Applications are now open for 2026-27 academic year.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-computer-science" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-lg font-semibold text-lg transition-transform hover:scale-105 bg-white"

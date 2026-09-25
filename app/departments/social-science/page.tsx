@@ -91,11 +91,6 @@ export default function SocialScienceDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>97%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Years Legacy */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -868,7 +863,7 @@ export default function SocialScienceDepartment() {
               </p>
             </div>
 
-            {/* 97% Placement */}
+            {/* Placement */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0"
@@ -876,7 +871,7 @@ export default function SocialScienceDepartment() {
                   2
                 </div>
                 <h3 className="text-xl font-bold" style={{ color: '#7cb983' }}>
-                  98% Placement Success Rate
+                  Placement Support
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>

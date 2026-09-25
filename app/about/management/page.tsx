@@ -95,7 +95,7 @@ export default function OurManagement() {
                 Happy to hold the monumental responsibility as Chairperson of "JKKN Institutions." I am proud to say that we have made exceptional progress and have achieved the status of one of the most prestigious educational institutions. "Leadership and Excellence" is our motto, a fact that is evident from our state-of-the-art infrastructure and the quality of each individual.
               </p>
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-justify mt-4" style={{ color: '#5a6c7d' }}>
-                The institution provides the necessary infrastructure and a team of qualified and motivated faculty, all under one roof for the student community. Besides providing world-class engineering education, we also inculcate a progressive attitude blended with innovation towards the betterment of society. The excellent symbiosis of academic excellence and industrial relevance is the unique feature of JKKN Institutions. Our hearty welcome to our lush green campus!
+                The institution provides the necessary infrastructure and a team of qualified and motivated faculty, all under one roof for the student community. Besides providing quality teacher education, we also inculcate a progressive attitude blended with innovation towards the betterment of society. The excellent symbiosis of academic excellence and classroom relevance is the unique feature of JKKN Institutions. Our hearty welcome to our lush green campus!
               </p>
             </div>
 

@@ -36,7 +36,7 @@ export default function AdmissionFAQ() {
     },
     {
       question: 'What career opportunities are available after B.Ed?',
-      answer: 'B.Ed graduates can become teachers in government and private schools (CBSE/ICSE/State Board), pursue higher education (M.Ed, Ph.D), work as curriculum developers, education consultants, content writers, or join educational administration. Our 98% placement rate ensures strong career support.'
+      answer: 'B.Ed graduates can become teachers in government and private schools (CBSE/ICSE/State Board), pursue higher education (M.Ed, Ph.D), work as curriculum developers, education consultants, content writers, or join educational administration. Our placement cell supports graduates through the recruitment process.'
     },
     {
       question: 'Can I pursue M.Ed after completing B.Ed?',

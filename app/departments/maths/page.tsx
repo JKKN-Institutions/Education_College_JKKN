@@ -62,10 +62,6 @@ export default function MathematicsPage() {
                   <div className="text-sm text-white">SEATS</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#7cb983] mb-1">98%</div>
-                  <div className="text-sm text-white">PLACEMENT</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
                   <div className="text-4xl font-bold text-[#7cb983] mb-1">4</div>
                   <div className="text-sm text-white">SEMESTERS</div>
                 </div>
@@ -1009,7 +1005,7 @@ export default function MathematicsPage() {
             Ready to Shape Future Mathematicians?
           </h2>
           <p className="text-sm sm:text-base lg:text-xl mb-10 text-white/95">
-            Join JKKN College of Education and embark on a rewarding career as a Mathematics educator. Applications are now open for the 2025-26 academic year.
+            Join JKKN College of Education and embark on a rewarding career as a Mathematics educator. Applications are now open for the 2026-27 academic year.
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-maths" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#7cb983] hover:bg-gray-100 font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">

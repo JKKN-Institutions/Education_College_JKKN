@@ -65,12 +65,12 @@ export default function Library() {
           <div className="space-y-4 sm:space-y-6">
             {/* Paragraph 1 */}
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
-              Our library is a valuable resource center for both students and faculty members, equipped with the latest automation software, "Campus I Lib". The collection includes recent books, journals, and online resources in the fields of arts, science, and social sciences, among others. With 25,863 volumes and 17,386 titles, our library provides a vast array of materials to explore.
+              Our library is a valuable resource center for both students and faculty members, equipped with the latest automation software, "Campus I Lib". The collection includes recent books, journals and online resources in education, pedagogy, psychology and the B.Ed teaching subjects, among others. With 25,863 volumes and 17,386 titles, our library provides a vast array of materials to explore.
             </p>
 
             {/* Paragraph 2 */}
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
-              Spanning a total area of 3,328 square feet, our library has a seating capacity for up to 150 readers. It houses over 25,771 books on various subjects, as well as 40 reputable national and international journals, magazines, newspapers, e-resources, and back volumes. Our library is a member of both INFLIBNET and the National Digital Library of India (NDL), and is fully computerized with barcode technology.
+              Spanning a total area of 3,328 square feet, our library has a seating capacity for up to 150 readers. It houses 25,863 volumes on various subjects, as well as 40 reputable national and international journals, magazines, newspapers, e-resources, and back volumes. Our library is a member of both INFLIBNET and the National Digital Library of India (NDL), and is fully computerized with barcode technology.
             </p>
 
             {/* Paragraph 3 */}

@@ -92,11 +92,6 @@ export default function HistoryDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>94%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -810,7 +805,7 @@ export default function HistoryDepartment() {
               </div>
             </div>
 
-            {/* 94% Placement Success Rate */}
+            {/* Placement Success Rate */}
             <div className="p-8 rounded-xl border-l-4" style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
@@ -819,7 +814,7 @@ export default function HistoryDepartment() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    98% Placement Success Rate
+                    Placement Support
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
                     Strong placement record with graduates securing positions in government schools, CBSE/ICSE schools, and prestigious educational institutions across India.
@@ -1318,7 +1313,7 @@ export default function HistoryDepartment() {
             Ready to Begin Your Journey as a History Educator?
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto" style={{ color: '#ffffff' }}>
-            Join JKKN College of Education and transform your passion for History into an inspiring teaching career. Admissions open for 2025-26 academic year.
+            Join JKKN College of Education and transform your passion for History into an inspiring teaching career. Admissions open for 2026-27 academic year.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-history" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

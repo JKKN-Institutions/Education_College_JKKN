@@ -3,6 +3,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { siteConfig } from '@/lib/site-config'
 import FAQClient from './FAQClient'
+import { allFaqs } from './faq-data'
+import { JsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
   title: `FAQ — ${siteConfig.name}`,
@@ -18,6 +20,18 @@ export const metadata: Metadata = {
 export default function FAQPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          '@id': 'https://edu.jkkn.ac.in/faq#faqpage',
+          mainEntity: allFaqs.map((f) => ({
+            '@type': 'Question',
+            name: f.question,
+            acceptedAnswer: { '@type': 'Answer', text: f.answer },
+          })),
+        }}
+      />
       <Header />
 
       {/* Hero */}

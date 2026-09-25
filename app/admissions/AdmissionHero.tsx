@@ -33,7 +33,7 @@ export default function AdmissionHero() {
             </h2>
 
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 lg:mb-12" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-              Begin your journey to become a skilled educator. Our NCTE-approved, TNTEU-affiliated B.Ed program offers 14 specializations with modern teaching methodologies, practical training, and 98% placement support.
+              Begin your journey to become a skilled educator. Our NCTE-approved, TNTEU-affiliated B.Ed program offers 14 specializations with modern teaching methodologies, practical training, and placement support.
             </p>
 
             {/* Stats Grid */}
@@ -48,12 +48,6 @@ export default function AdmissionHero() {
               <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                 <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>14</div>
                 <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SUBJECTS</div>
-              </div>
-
-              {/* Placement */}
-              <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>98%</div>
-                <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
               </div>
 
               {/* Semesters */}

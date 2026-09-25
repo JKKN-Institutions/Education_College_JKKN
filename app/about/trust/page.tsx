@@ -74,7 +74,7 @@ export default function OurTrust() {
             </p>
 
             <p className="text-base md:text-lg leading-relaxed text-justify" style={{ color: '#5a6c7d' }}>
-              The Trust, J.K.K. Rangammal Charitable Trust, was established (Reg No: 33) in 1969 with the motto of providing literacy and women's empowerment, resulting in an upgraded socio-economic status for the people. Walking in the footsteps of her father, Smt. N. Sendamaraai, Managing Trustee, expanded the service by providing multi-disciplinary education to both genders. Now, under the umbrella, there are ten institutions, including Dental, Pharmacy, Nursing, Education, Engineering, Arts, and Science colleges and a Government Aided Girls' School and Matriculation schools.
+              The Trust, J.K.K. Rangammal Charitable Trust, was established (Reg No: 33) in 1969 with the motto of providing literacy and women's empowerment, resulting in an upgraded socio-economic status for the people. Walking in the footsteps of her father, Smt. N. Sendamaraai, Managing Trustee, expanded the service by providing multi-disciplinary education to both genders. Now, under the umbrella, there are nine institutions - seven colleges (Dental, Pharmacy, Nursing, Allied Health Sciences, Engineering, Arts and Science, and Education) and two schools.
             </p>
 
             <p className="text-base md:text-lg leading-relaxed text-justify" style={{ color: '#5a6c7d' }}>

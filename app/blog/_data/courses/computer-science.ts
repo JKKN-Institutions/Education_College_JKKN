@@ -170,7 +170,7 @@ export const computerScienceBlogData: CourseBlogData = {
       { title: 'Faculty with CS + Industry + Teaching Experience', desc: 'M.Sc. CS / M.Tech / Ph.D faculty with both academic and industry backgrounds. Guest sessions by Ed-Tech professionals and corporate trainers to bridge classroom theory with real-world coding teaching.' },
       { title: '16-Week Internship in CBSE/Tech-Forward Schools', desc: 'Practice teaching at partner schools with active CS programs across Komarapalayam, Salem, Namakkal, and Erode — exposure to modern coding curriculum, project-based learning, and hackathon coordination.' },
       { title: 'NEP 2020 Coding Curriculum Alignment', desc: 'B.Ed CS curriculum at JKKN explicitly aligns with NEP 2020 coding mandate — preparing teachers ready to deliver Classes 6–12 coding curriculum from Day 1 of their teaching career.' },
-      { title: 'Ed-Tech Placement Network', desc: 'Active relationships with WhiteHat Jr, Codingal, Camp K12, and other Ed-Tech coding platforms plus 80+ CBSE/matriculation schools. 97% B.Ed CS placement rate within 6 months — among the strongest at JKKN.' },
+      { title: 'Ed-Tech Placement Network', desc: 'Active relationships with WhiteHat Jr, Codingal, Camp K12, and other Ed-Tech coding platforms plus 80+ CBSE/matriculation schools.' },
     ],
   },
 

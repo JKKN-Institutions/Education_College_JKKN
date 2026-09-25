@@ -576,7 +576,7 @@ export default function BlogDetailPage() {
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
                   Start with a B.Ed from JKKN College of Education — NCTE approved, TNTEU
-                  affiliated, with integrated TNTET coaching and 98% placement rate.
+                  affiliated, with integrated TNTET coaching.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=blog-top-10-career-options-after-bed-2026" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">

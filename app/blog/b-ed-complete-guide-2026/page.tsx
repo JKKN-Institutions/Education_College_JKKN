@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: 'What are the career opportunities after B.Ed from JKKN?',
-    a: 'JKKN College of Education has a 98% placement rate. Graduates secure teaching positions in government and private schools, qualify for TNTET/TRB examinations, and advance to M.Ed or Ph.D programs. Many alumni teach in CBSE, ICSE, and Tamil Nadu State Board schools across the region.',
+    a: 'Graduates of JKKN College of Education secure teaching positions in government and private schools, qualify for TNTET/TRB examinations, and advance to M.Ed or Ph.D programs. Many alumni teach in CBSE, ICSE, and Tamil Nadu State Board schools across the region.',
   },
 ];
 
@@ -668,7 +668,7 @@ export default function BlogDetailPage() {
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
                   Apply for B.Ed 2026 at JKKN College of Education — 100 seats, NCTE approved,
-                  TNTEU affiliated, and 98% placement rate.
+                  TNTEU affiliated.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=blog-b-ed-complete-guide-2026" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
@@ -711,7 +711,7 @@ export default function BlogDetailPage() {
                   {
                     num: 4,
                     title: 'Outstanding Placement Record',
-                    desc: '98% placement rate with graduates placed in CBSE, ICSE, and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.',
+                    desc: 'Graduates are placed in CBSE, ICSE and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.',
                   },
                   {
                     num: 5,

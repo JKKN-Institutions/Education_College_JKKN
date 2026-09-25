@@ -198,7 +198,7 @@ export const tamilBlogData: CourseBlogData = {
     },
     {
       q: 'How does JKKN College of Education prepare B.Ed Tamil students for placements?',
-      a: 'JKKN provides integrated TNTET Tamil coaching (Paper I + II), direct placement assistance via tie-ups with 80+ CBSE/matriculation schools, mock interview practice with Tamil PG retired principals, model lesson plan workshops, and government recruitment alerts. Our placement rate for B.Ed Tamil graduates is 95% within 6 months of graduation.',
+      a: 'JKKN provides integrated TNTET Tamil coaching (Paper I + II), direct placement assistance via tie-ups with 80+ CBSE/matriculation schools, mock interview practice with Tamil PG retired principals, model lesson plan workshops, and government recruitment alerts. ',
     },
     {
       q: 'Can I teach Tamil overseas after B.Ed Tamil?',

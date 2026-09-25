@@ -58,11 +58,6 @@ export default function CommerceDepartment() {
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
-                {/* Placement */}
-                <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>96%</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
-                </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -713,7 +708,7 @@ export default function CommerceDepartment() {
                   <span className="text-xl font-bold">2</span>
                 </div>
                 <h3 className="text-2xl font-bold" style={{ color: '#002309' }}>
-                  98% Placement Success Rate
+                  Placement Support
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
@@ -1228,7 +1223,7 @@ export default function CommerceDepartment() {
             Ready to Begin Your Journey as a Commerce Educator?
           </h2>
           <p className="text-xl leading-relaxed mb-10 text-white">
-            Join JKKN College of Education and transform your passion for Commerce into a rewarding teaching career. Admissions open for 2025-26 academic year.
+            Join JKKN College of Education and transform your passion for Commerce into a rewarding teaching career. Admissions open for 2026-27 academic year.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=departments-commerce" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-10 py-4 rounded-lg font-semibold transition-transform hover:scale-105"

@@ -169,7 +169,7 @@ export const zoologyBlogData: CourseBlogData = {
       { title: 'Faculty with Zoology + Teaching Experience', desc: 'M.Sc./M.Phil/Ph.D Zoology faculty with school teaching and NEET coaching backgrounds. Guest sessions by retired government PG Biology teachers and NEET coaching veterans.' },
       { title: '16-Week Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode.' },
       { title: 'TNTET + NEET Coaching Awareness', desc: 'TNTET Biology coaching plus exposure to NEET biology teaching methodology — opening high-paying coaching career streams.' },
-      { title: 'Placement Network for Biology Teachers', desc: 'Active placement relationships with CBSE/matriculation schools and NEET coaching institutes across Kongu region and Chennai. 95% B.Ed Zoology placement rate within 6 months.' },
+      { title: 'Placement Network for Biology Teachers', desc: 'Active placement relationships with CBSE/matriculation schools and NEET coaching institutes across Kongu region and Chennai.' },
     ],
   },
 
