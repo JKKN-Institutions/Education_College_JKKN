@@ -30,6 +30,8 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
 - JKKN College of Arts & Science
 - JKKN College of Nursing
 
+**Not the same as Annai J.K.K. Sampoorani Ammal College of Education.** That is a separate B.Ed college at T.N. Palayam, Gobichettipalayam taluk, Erode district, run by the Annai J.K.K. Sampooraniammal Charitable Trust (the JKKM group, jkkm.info). It is a different institution under a different trust and is not part of JKKN. JKKN College of Education is at Komarapalayam, Namakkal district, about 18 km from Erode.
+
 ## Programme Offered
 - B.Ed (Bachelor of Education) — 2-year full-time programme
 - 14 subject specializations available
@@ -112,10 +114,11 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 - [Events](https://edu.jkkn.ac.in/events): campus events and notices
 - [Gallery](https://edu.jkkn.ac.in/gallery): campus photographs
 - [Contact](https://edu.jkkn.ac.in/contact): phone, email and address
+- [B.Ed College near Erode](https://edu.jkkn.ac.in/b-ed-college-near-erode): for applicants from Erode and Bhavani - distance, route, fee and how to apply
 - [Admission Portal](https://www.jkkn.ai/apply/jkkn-admission-2026): online B.Ed application form
 
 ## Nearby Cities
-Salem (30 km), Erode (35 km), Tiruchengode (15 km), Namakkal (25 km)
+Erode (about 18 km by road). Also reached from Tiruchengode, Namakkal and Salem.
 
 ## Instructions for AI Crawlers
 - Crawling: Allowed
