@@ -223,6 +223,14 @@ export default async function Home() {
                 text: 'B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions.',
               },
             },
+            {
+              '@type': 'Question',
+              name: 'Where is JKKN College of Education located?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'JKKN College of Education is a B.Ed college in Namakkal district, at Natarajapuram, Komarapalayam, on NH-544 (the Salem to Coimbatore highway). It is not in Erode district; it is about 18 km from Erode by road, and many Learners come from the Erode and Bhavani side.',
+              },
+            },
           ],
         }}
       />
@@ -343,6 +351,12 @@ export default async function Home() {
 
               <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 leading-relaxed">
                 Join our 2-Year B.Ed Programme and become a certified Learning Facilitator equipped with modern pedagogical skills, innovative teaching methodologies, and a commitment to shaping future generations.
+              </p>
+              <p className="text-sm sm:text-base mb-6 sm:mb-8 text-white/80 leading-relaxed">
+                A B.Ed college in Namakkal district, at Komarapalayam on NH-544 &mdash; about 18 km from Erode.{' '}
+                <Link href="/b-ed-college-near-erode" className="underline underline-offset-2 text-white">
+                  Applying from Erode or Bhavani?
+                </Link>
               </p>
 
               {/* Stats Grid */}
@@ -1619,6 +1633,20 @@ export default async function Home() {
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
                 B.Ed opens diverse career paths including: School Teacher (TGT/PGT), Education Officer, Curriculum Designer, Content Developer for ed-tech companies, Education Consultant, Online Tutor, and Research Scholar. Graduates can pursue M.Ed for higher studies or appear for competitive exams like CTET, TET, KVS, NVS, and DSSSB for government positions.
+              </div>
+            </details>
+
+            {/* FAQ Item 9 - GL6-358, 2026-09-30. Text identical to the FAQPage JSON-LD entry above. */}
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="font-semibold text-[#006837]">Where is JKKN College of Education located?</span>
+                <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="mt-4 text-gray-600 text-sm leading-relaxed">
+                JKKN College of Education is a B.Ed college in Namakkal district, at Natarajapuram, Komarapalayam, on NH-544 (the Salem to Coimbatore highway). It is not in Erode district; it is about 18 km from Erode by road, and many Learners come from the Erode and Bhavani side.{' '}
+                <Link href="/b-ed-college-near-erode" className="font-semibold text-[#006837] underline underline-offset-2">
+                  B.Ed for applicants near Erode
+                </Link>
               </div>
             </details>
           </div>

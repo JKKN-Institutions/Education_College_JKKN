@@ -38,6 +38,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Admissions (course-wise)
     { url: `${baseUrl}/admissions`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.95 },
+    // GL6-358: page for Erode-side applicants, added 2026-09-30.
+    { url: `${baseUrl}/b-ed-college-near-erode`, lastModified: new Date('2026-09-30'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/admissions/tamil`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/admissions/english`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/admissions/maths`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
