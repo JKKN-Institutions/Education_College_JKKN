@@ -268,11 +268,13 @@ export const SCHOLARSHIPS = [
   },
 ];
 
+// GL6-378, 2026-10-01: the list carried percentage weightages (degree 50%, 12th 20%, 10th 10%,
+// counselling interaction 20%) that no document on this site or any official source supports. They
+// were removed by the user's decision; only criteria that NCTE Regulations 2014 Appendix-4 and the
+// state reservation rules state are kept.
 export const SELECTION_CRITERIA = [
-  'Bachelor’s degree marks (50% weightage)',
-  '12th Standard marks (20% weightage)',
-  '10th Standard marks (10% weightage)',
-  'Counselling interaction & subject aptitude (20% weightage)',
+  'At least 50% in the bachelor’s or master’s degree (NCTE norm)',
+  'Your degree subject decides the B.Ed teaching subject you can take',
   'Category & community-based reservation as per TN Govt. norms',
 ];
 

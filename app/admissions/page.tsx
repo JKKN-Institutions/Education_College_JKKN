@@ -90,7 +90,7 @@ const faqSchema = {
       name: 'Is there an entrance exam for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Admission is based on merit and counselling conducted by the Tamil Nadu Teachers Education University (TNTEU). Some seats may require qualifying in the state-level entrance examination.',
+        text: 'For JKKN self-financing seats you apply to the college directly - there is no state merit list to wait for. Government-quota seats are filled through the state counselling process in the Tamil Nadu B.Ed admission notification; follow that notification for its selection rules.',
       },
     },
     {
@@ -98,7 +98,7 @@ const faqSchema = {
       name: 'What is the counselling process for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'After applying, eligible candidates are called for counselling based on academic merit. During counselling, candidates choose their preferred B.Ed specialization from 14 available subjects. Seat allotment is based on rank, category, and availability.',
+        text: 'Counselling applies to government-quota seats: candidates apply under the Tamil Nadu B.Ed admission notification, and seats are allotted on merit, category and availability. JKKN self-financing seats have no counselling: you apply to the college, choose your B.Ed subject from 14 specialisations, and confirm admission by paying the fee.',
       },
     },
     {

@@ -44,6 +44,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/b-ed-colleges-in-namakkal-district`, lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.8 },
     // GL6-377: page for Salem-side applicants, added 2026-10-01.
     { url: `${baseUrl}/b-ed-college-near-salem`, lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.8 },
+    // GL6-378: state-level explainer pages, added 2026-10-01.
+    { url: `${baseUrl}/ncte-approved-b-ed-colleges-tamil-nadu`, lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/b-ed-regular-vs-distance-part-time`, lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/admissions/tamil`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/admissions/english`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/admissions/maths`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
