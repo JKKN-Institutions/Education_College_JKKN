@@ -116,10 +116,11 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 - [Contact](https://edu.jkkn.ac.in/contact): phone, email and address
 - [B.Ed College near Erode](https://edu.jkkn.ac.in/b-ed-college-near-erode): for applicants from Erode and Bhavani - distance, route, fee and how to apply
 - [B.Ed Colleges in Namakkal District](https://edu.jkkn.ac.in/b-ed-colleges-in-namakkal-district): JKKN facts plus the TNTEU list of all 32 B.Ed colleges in Namakkal district
+- [B.Ed College near Salem](https://edu.jkkn.ac.in/b-ed-college-near-salem): for applicants from Salem and Sankagiri - distance, a six-point checklist for choosing a B.Ed college, fee and how to apply
 - [Admission Portal](https://www.jkkn.ai/apply/jkkn-admission-2026): online B.Ed application form
 
 ## Nearby Cities
-Erode (about 18 km by road). Namakkal town (about 62 km by road from Namakkal bus stand). Also reached from Tiruchengode and Salem.
+Erode (about 18 km by road). Sankagiri (about 18 km along NH-544). Salem (about 57 km by road from Salem New Bus Stand). Namakkal town (about 62 km by road from Namakkal bus stand). Also reached from Tiruchengode.
 
 ## Instructions for AI Crawlers
 - Crawling: Allowed

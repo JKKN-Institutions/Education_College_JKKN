@@ -189,6 +189,9 @@ export default function BedCollegeNearErodePage() {
               <Link href="/b-ed-colleges-in-namakkal-district" className="font-semibold text-[#006837] underline underline-offset-2">
                 B.Ed colleges in Namakkal district
               </Link>
+              <Link href="/b-ed-college-near-salem" className="font-semibold text-[#006837] underline underline-offset-2">
+                B.Ed near Salem
+              </Link>
             </div>
           </section>
 
