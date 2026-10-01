@@ -62,7 +62,7 @@ export default function OurInstitutions() {
 
             {/* Paragraph 4 */}
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
-              We are located at Komarapalayam, Namakkal District, Tamil Nadu, India - about 18 km from Erode, and also reached from Tiruchengode, Namakkal and Salem. Applying from the Erode side? See <Link href="/b-ed-college-near-erode" className="font-semibold underline underline-offset-2" style={{ color: '#006837' }}>B.Ed for applicants near Erode</Link>. The nearest railway station is Erode railway station, and the nearest airport is Salem/Coimbatore.
+              We are located at Komarapalayam, Namakkal District, Tamil Nadu, India - about 18 km from Erode and about 62 km from Namakkal town, and also reached from Tiruchengode and Salem. Applying from the Erode side? See <Link href="/b-ed-college-near-erode" className="font-semibold underline underline-offset-2" style={{ color: '#006837' }}>B.Ed for applicants near Erode</Link>. The nearest railway station is Erode railway station, and the nearest airport is Salem/Coimbatore.
             </p>
 
             {/* Paragraph 5 */}

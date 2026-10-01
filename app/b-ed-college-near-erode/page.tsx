@@ -186,6 +186,9 @@ export default function BedCollegeNearErodePage() {
               <Link href="/about/ncte-approval" className="font-semibold text-[#006837] underline underline-offset-2">
                 NCTE approval
               </Link>
+              <Link href="/b-ed-colleges-in-namakkal-district" className="font-semibold text-[#006837] underline underline-offset-2">
+                B.Ed colleges in Namakkal district
+              </Link>
             </div>
           </section>
 

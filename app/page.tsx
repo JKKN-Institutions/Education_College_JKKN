@@ -353,7 +353,11 @@ export default async function Home() {
                 Join our 2-Year B.Ed Programme and become a certified Learning Facilitator equipped with modern pedagogical skills, innovative teaching methodologies, and a commitment to shaping future generations.
               </p>
               <p className="text-sm sm:text-base mb-6 sm:mb-8 text-white/80 leading-relaxed">
-                A B.Ed college in Namakkal district, at Komarapalayam on NH-544 &mdash; about 18 km from Erode.{' '}
+                A{' '}
+                <Link href="/b-ed-colleges-in-namakkal-district" className="underline underline-offset-2 text-white">
+                  B.Ed college in Namakkal district
+                </Link>
+                , at Komarapalayam on NH-544 &mdash; about 18 km from Erode.{' '}
                 <Link href="/b-ed-college-near-erode" className="underline underline-offset-2 text-white">
                   Applying from Erode or Bhavani?
                 </Link>
