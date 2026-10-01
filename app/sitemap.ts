@@ -42,6 +42,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/b-ed-college-near-erode`, lastModified: new Date('2026-09-30'), changeFrequency: 'monthly', priority: 0.8 },
     // GL6-373: Namakkal district page with the TNTEU list, added 2026-10-01.
     { url: `${baseUrl}/b-ed-colleges-in-namakkal-district`, lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.8 },
+    // GL6-377: page for Salem-side applicants, added 2026-10-01.
+    { url: `${baseUrl}/b-ed-college-near-salem`, lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/admissions/tamil`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/admissions/english`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/admissions/maths`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.9 },

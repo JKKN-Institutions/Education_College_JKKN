@@ -166,6 +166,17 @@ export default function BedCollegesNamakkalDistrictPage() {
               <li className="flex gap-2">
                 <span className="text-[#7cb983] font-bold flex-none">&#8226;</span>
                 <span>
+                  <strong>From Salem and Sankagiri:</strong> about 57 km from Salem and about 18 km
+                  from Sankagiri, along NH-544. See{' '}
+                  <Link href="/b-ed-college-near-salem" className="font-semibold text-[#006837] underline underline-offset-2">
+                    B.Ed for applicants near Salem
+                  </Link>
+                  .
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#7cb983] font-bold flex-none">&#8226;</span>
+                <span>
                   <strong>From Erode and Bhavani:</strong> about 18 km from Erode, across the Cauvery
                   from Bhavani. See{' '}
                   <Link href="/b-ed-college-near-erode" className="font-semibold text-[#006837] underline underline-offset-2">

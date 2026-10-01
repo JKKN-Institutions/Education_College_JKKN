@@ -360,6 +360,9 @@ export default async function Home() {
                 , at Komarapalayam on NH-544 &mdash; about 18 km from Erode.{' '}
                 <Link href="/b-ed-college-near-erode" className="underline underline-offset-2 text-white">
                   Applying from Erode or Bhavani?
+                </Link>{' '}
+                <Link href="/b-ed-college-near-salem" className="underline underline-offset-2 text-white">
+                  From Salem or Sankagiri?
                 </Link>
               </p>
 
