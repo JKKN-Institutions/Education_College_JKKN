@@ -21,7 +21,7 @@ const tocItems = [
   { id: 'what-is-bed', label: 'What is B.Ed? Course Overview' },
   { id: 'eligibility', label: 'B.Ed Eligibility Criteria' },
   { id: 'curriculum', label: 'B.Ed Course Curriculum' },
-  { id: 'tnteu-counseling', label: 'TNTEU Counseling 2026' },
+  { id: 'admission-routes', label: 'Two Admission Routes 2026' },
   { id: 'fee-structure', label: 'B.Ed Fee Structure' },
   { id: 'career-scope', label: 'Career Scope After B.Ed' },
   { id: 'why-jkkn', label: 'Why Choose JKKN College of Education?' },
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: 'What is the B.Ed fee structure at JKKN College of Education?',
-    a: 'Fee structure is regulated by the Tamil Nadu government fee committee and varies by admission category (state quota/management). Contact admissions for current fees: +91 9345855001.',
+    a: 'Tuition at JKKN College of Education is Rs 35,000 a year under the Management Quota. Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are optional and charged separately. Admission office: +91 9345855001.',
   },
   {
     q: 'Is JKKN College of Education NCTE approved?',
@@ -201,10 +201,10 @@ export default function BlogDetailPage() {
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: 'B.Ed Admission 2026 in Tamil Nadu: Eligibility, Process & Key Dates',
-          description: 'Complete guide to B.Ed admission 2026 in Tamil Nadu — eligibility criteria, TNTEU counseling process, fee structure, career scope, and why JKKN College of Education is a top choice for aspiring teachers.',
+          description: 'Guide to B.Ed admission 2026 in Tamil Nadu — eligibility, the two admission routes, fees, career scope, and how JKKN College of Education admits students.',
           image: 'https://edu.jkkn.ac.in/images/og-default.png',
           datePublished: '2026-02-20',
-          dateModified: new Date().toISOString(),
+          dateModified: '2026-10-01',
           author: {
             '@type': 'Organization',
             name: 'JKKN College of Education',
@@ -479,118 +479,69 @@ export default function BlogDetailPage() {
               </div>
             </section>
 
-            {/* ── Section 4: TNTEU Counseling ── */}
-            <section id="tnteu-counseling" className="mb-12 scroll-mt-20">
+            {/* ── Section 4: Admission Routes ── */}
+            {/* GL6-378, 2026-10-01. This section said "B.Ed admission in Tamil Nadu is conducted through a
+                centralized counseling process" with an estimated timeline. That is wrong for JKKN's
+                self-financing seats (see app/admissions/AdmissionRoutes.tsx), and AI engines were quoting
+                it: Claude cited this post three times on 2026-10-01. The same defect was fixed in llms.txt
+                on 2026-09-04 (ba03344). The estimated dates were removed because they had no source. */}
+            <section id="admission-routes" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                TNTEU Counseling for B.Ed Admission in Tamil Nadu 2026
+                Two B.Ed Admission Routes in Tamil Nadu 2026
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                B.Ed admission in Tamil Nadu is conducted through a centralized counseling process
-                managed by the <strong>Tamil Nadu Teachers Education University (TNTEU)</strong>.
-                Seats are allotted based on merit in the qualifying degree and category-wise
-                reservation. The following table outlines the expected counseling schedule:
+                Tamil Nadu has two separate B.Ed admission routes and they do not share an application
+                form. Applying to both is normal.
               </p>
-              <div className="overflow-x-auto mb-5">
-                <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-                  <thead>
-                    <tr className="bg-gray-50 text-left">
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">
-                        Stage
-                      </th>
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">
-                        Expected Timeline
-                      </th>
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">
-                        Details
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      ['Online Registration', 'June – July 2026', 'Apply via TNTEU portal with qualifying degree marks'],
-                      ['Document Verification', 'July 2026', 'Certificates verified at designated centers'],
-                      ['Counseling Round 1', 'August 2026', 'Seat allotment based on merit and college preference'],
-                      ['Counseling Round 2', 'August – September 2026', 'Remaining seats filled via second round'],
-                      ['College Reporting', 'September 2026', 'Report to allotted college with original documents'],
-                    ].map(([stage, timeline, details], i) => (
-                      <tr key={i} className="border-b border-gray-100 last:border-0">
-                        <td className="px-4 py-3 text-gray-700 font-medium">{stage}</td>
-                        <td className="px-4 py-3 text-gray-600">{timeline}</td>
-                        <td className="px-4 py-3 text-gray-600">{details}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                <div className="rounded-xl border border-gray-200 p-5">
+                  <p className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-1">Route 1</p>
+                  <h3 className="font-bold text-gray-900 mb-2">Government counselling</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    For government-quota seats. The process opens on the Tamil Nadu B.Ed admission
+                    notification, and seats are allotted on merit and category-wise reservation. Follow
+                    the official notification for dates.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-[#006837]/40 bg-[#006837]/5 p-5">
+                  <p className="text-xs font-bold uppercase tracking-wide text-[#006837] mb-1">Route 2</p>
+                  <h3 className="font-bold text-gray-900 mb-2">Apply to the college directly</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    For self-financing seats at JKKN College of Education. You apply to the college,
+                    online or at the admission office. There is no state merit list to wait for, and you
+                    can keep this application open while the government process runs.
+                  </p>
+                </div>
               </div>
               <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4">
                 <p className="text-sm text-gray-700">
-                  <strong className="text-amber-700">Note:</strong> These are estimated timelines
-                  based on previous year schedules. Actual 2026 counseling dates will be published
-                  by TNTEU on their official portal. Check regularly for updates or contact JKKN
-                  College of Education admissions at +91 9345855001.
+                  <strong className="text-amber-700">Note:</strong> Government counselling dates are set
+                  by the state each year; check the official notification. For JKKN self-financing seats,
+                  call the admission office at +91 9345855001.
                 </p>
               </div>
             </section>
 
             {/* ── Section 5: Fee Structure ── */}
+            {/* GL6-378: the state-wide fee-range table (government / aided / self-financing) had no
+                source and was removed. Only JKKN's own fee, which matches /fee-structure, is stated. */}
             <section id="fee-structure" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                B.Ed Fee Structure in Tamil Nadu
+                B.Ed Fees at JKKN College of Education
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                B.Ed fees in Tamil Nadu are regulated by the government and vary based on the type
-                of institution and admission category. Here is an overview of fee ranges across
-                different college types:
+                B.Ed fees differ from college to college and between government and self-financing
+                seats, so check the fee with each college you apply to. At JKKN College of Education
+                the tuition fee is <strong>&#8377;35,000 a year</strong> under the Management Quota.
+                Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are
+                optional and charged separately.
               </p>
-              <div className="overflow-x-auto mb-5">
-                <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-                  <thead>
-                    <tr className="bg-gray-50 text-left">
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">
-                        College Type
-                      </th>
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">
-                        Annual Fee Range
-                      </th>
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">
-                        Total (2 Years)
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      ['Government B.Ed Colleges', '₹5,000 – ₹15,000', '₹10,000 – ₹30,000'],
-                      [
-                        'Aided B.Ed Colleges',
-                        '₹20,000 – ₹40,000',
-                        '₹40,000 – ₹80,000',
-                      ],
-                      [
-                        'Self-Financing (State Quota)',
-                        '₹40,000 – ₹70,000',
-                        '₹80,000 – ₹1,40,000',
-                      ],
-                      [
-                        'Self-Financing (Management)',
-                        '₹60,000 – ₹1,00,000',
-                        '₹1,20,000 – ₹2,00,000',
-                      ],
-                    ].map(([type, annual, total], i) => (
-                      <tr key={i} className="border-b border-gray-100 last:border-0">
-                        <td className="px-4 py-3 text-gray-700 font-medium">{type}</td>
-                        <td className="px-4 py-3 text-gray-600">{annual}</td>
-                        <td className="px-4 py-3 text-gray-600">{total}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
               <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4">
                 <p className="text-sm text-gray-700">
-                  <strong className="text-amber-700">Note:</strong> JKKN College of Education fee
-                  structure for 2026-27 is subject to government fee committee regulation. Contact
-                  admissions for current fees:{' '}
-                  <span className="text-[#006837] font-semibold">+91 9345855001</span>
+                  <strong className="text-amber-700">Note:</strong> Under NCTE norms a teacher education
+                  institution may charge only the fee prescribed by the affiliating body or the state
+                  government, and no donation or capitation fee. Details are on our{' '}
+                  <a href="/fee-structure" className="text-[#006837] font-semibold underline underline-offset-2">fee structure page</a>.
                 </p>
               </div>
             </section>
@@ -738,9 +689,7 @@ export default function BlogDetailPage() {
                 B.Ed Admission Process 2026 — Step by Step
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                The B.Ed admission process in Tamil Nadu follows a centralized counseling-based
-                system managed by TNTEU. Here is the step-by-step process for securing a seat at
-                JKKN College of Education:
+                There are two routes (see above). For a JKKN self-financing seat, these are the steps:
               </p>
               <div className="space-y-5">
                 {[
@@ -749,28 +698,20 @@ export default function BlogDetailPage() {
                     'with minimum 50% aggregate marks (45% for reserved categories) in a relevant subject from a recognized university.',
                   ],
                   [
-                    'Register on the TNTEU portal',
-                    'during the application window (June–July 2026). Fill in your personal details, academic marks, and preferred B.Ed specialization and colleges.',
+                    'Apply to the college',
+                    'online through the admission portal or at the admission office. Choose your B.Ed subject from the 14 specialisations.',
                   ],
                   [
-                    'Upload required documents',
+                    'Submit your documents',
                     'including qualifying degree mark sheets, transfer certificate, community certificate (if applicable), and passport-size photographs.',
                   ],
                   [
-                    'Attend document verification',
-                    'at designated TNTEU centers. Carry all original certificates and attested photocopies for verification.',
+                    'Confirm your admission',
+                    'by paying the fee (Rs 35,000 a year tuition, Management Quota) and choosing hostel or transport if you need them.',
                   ],
                   [
-                    'Participate in counseling',
-                    'and select JKKN College of Education from the available options. Seat allotment is based on merit rank and college preference.',
-                  ],
-                  [
-                    'Report to college',
-                    'with all original documents upon receiving your allotment letter. Pay the admission fee and complete hostel allocation if required.',
-                  ],
-                  [
-                    'Begin your B.Ed program',
-                    'in September 2026. Orientation week includes campus tour, faculty introduction, academic briefing, and micro-teaching workshop.',
+                    'Begin your B.Ed programme',
+                    'when the academic year starts under the TNTEU calendar. For a government-quota seat, follow the state counselling notification instead.',
                   ],
                 ].map(([bold, rest], i) => (
                   <div key={i} className="flex gap-4">

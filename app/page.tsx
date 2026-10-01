@@ -363,6 +363,9 @@ export default async function Home() {
                 </Link>{' '}
                 <Link href="/b-ed-college-near-salem" className="underline underline-offset-2 text-white">
                   From Salem or Sankagiri?
+                </Link>{' '}
+                <Link href="/ncte-approved-b-ed-colleges-tamil-nadu" className="underline underline-offset-2 text-white">
+                  Check our NCTE approval
                 </Link>
               </p>
 

@@ -120,36 +120,17 @@ export async function GET() {
           p(''),
 
           // ── Section 4 ──
-          h2('TNTEU Counseling 2026'),
-          p('B.Ed admission in Tamil Nadu is conducted through a centralized counseling process managed by the Tamil Nadu Teachers Education University (TNTEU). Seats are allotted based on merit in the qualifying degree and category-wise reservation.'),
-          makeTable(
-            ['Stage', 'Expected Timeline', 'Details'],
-            [
-              ['Online Registration', 'June \u2013 July 2026', 'Apply via TNTEU portal with qualifying degree marks'],
-              ['Document Verification', 'July 2026', 'Certificates verified at designated centers'],
-              ['Counseling Round 1', 'August 2026', 'Seat allotment based on merit and college preference'],
-              ['Counseling Round 2', 'August \u2013 September 2026', 'Remaining seats filled via second round'],
-              ['College Reporting', 'September 2026', 'Report to allotted college with original documents'],
-            ]
-          ),
-          p(''),
-          p('NOTE: These are estimated timelines based on previous year schedules. Actual 2026 counseling dates will be published by TNTEU on their official portal. Contact JKKN College of Education admissions at +91 9345855001 for updates.'),
+          // GL6-378: mirrors app/blog/b-ed-complete-guide-2026 - two routes, no estimated TNTEU timeline,
+          // no state-wide fee-range table (both had no source).
+          h2('Two B.Ed Admission Routes in Tamil Nadu 2026'),
+          p('Tamil Nadu has two separate B.Ed admission routes and they do not share an application form. Applying to both is normal.'),
+          p('Route 1 \u2014 Government counselling: for government-quota seats. The process opens on the Tamil Nadu B.Ed admission notification, and seats are allotted on merit and category-wise reservation. Follow the official notification for dates.'),
+          p('Route 2 \u2014 Apply to the college directly: for self-financing seats at JKKN College of Education. You apply to the college, online or at the admission office. There is no state merit list to wait for.'),
           p(''),
 
           // ── Section 5 ──
-          h2('B.Ed Fee Structure'),
-          p('B.Ed fees in Tamil Nadu are regulated by the government and vary based on the type of institution and admission category.'),
-          makeTable(
-            ['College Type', 'Annual Fee Range', 'Total (2 Years)'],
-            [
-              ['Government B.Ed Colleges', '\u20b95,000 \u2013 \u20b915,000', '\u20b910,000 \u2013 \u20b930,000'],
-              ['Aided B.Ed Colleges', '\u20b920,000 \u2013 \u20b940,000', '\u20b940,000 \u2013 \u20b980,000'],
-              ['Self-Financing (State Quota)', '\u20b940,000 \u2013 \u20b970,000', '\u20b980,000 \u2013 \u20b91,40,000'],
-              ['Self-Financing (Management)', '\u20b960,000 \u2013 \u20b91,00,000', '\u20b91,20,000 \u2013 \u20b92,00,000'],
-            ]
-          ),
-          p(''),
-          p('NOTE: JKKN College of Education fee structure for 2026-27 is subject to government fee committee regulation. Contact admissions for current fees: +91 9345855001'),
+          h2('B.Ed Fees at JKKN College of Education'),
+          p('B.Ed fees differ from college to college and between government and self-financing seats, so check the fee with each college you apply to. At JKKN College of Education the tuition fee is \u20b935,000 a year under the Management Quota. Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are optional and charged separately.'),
           p(''),
 
           // ── Section 6 ──
@@ -187,14 +168,12 @@ export async function GET() {
 
           // ── Section 8 ──
           h2('Admission Process 2026'),
-          p('The B.Ed admission process in Tamil Nadu follows a centralized counseling-based system managed by TNTEU. Here is the step-by-step process for securing a seat at JKKN College of Education:'),
+          p('There are two routes (see above). For a JKKN self-financing seat, these are the steps:'),
           p("1. Complete your Bachelor's degree \u2014 with minimum 50% aggregate marks (45% for reserved categories) in a relevant subject from a recognized university."),
-          p('2. Register on the TNTEU portal \u2014 during the application window (June\u2013July 2026). Fill in your personal details, academic marks, and preferred B.Ed specialization and colleges.'),
-          p('3. Upload required documents \u2014 including qualifying degree mark sheets, transfer certificate, community certificate (if applicable), and passport-size photographs.'),
-          p('4. Attend document verification \u2014 at designated TNTEU centers. Carry all original certificates and attested photocopies for verification.'),
-          p('5. Participate in counseling \u2014 and select JKKN College of Education from the available options. Seat allotment is based on merit rank and college preference.'),
-          p('6. Report to college \u2014 with all original documents upon receiving your allotment letter. Pay the admission fee and complete hostel allocation if required.'),
-          p('7. Begin your B.Ed program \u2014 in September 2026. Orientation week includes campus tour, faculty introduction, academic briefing, and micro-teaching workshop.'),
+          p('2. Apply to the college \u2014 online through the admission portal or at the admission office. Choose your B.Ed subject from the 14 specialisations.'),
+          p('3. Submit your documents \u2014 including qualifying degree mark sheets, transfer certificate, community certificate (if applicable), and passport-size photographs.'),
+          p('4. Confirm your admission \u2014 by paying the fee (\u20b935,000 a year tuition, Management Quota) and choosing hostel or transport if you need them.'),
+          p('5. Begin your B.Ed programme \u2014 when the academic year starts under the TNTEU calendar. For a government-quota seat, follow the state counselling notification instead.'),
           p(''),
 
           // ── Section 9 - FAQs ──

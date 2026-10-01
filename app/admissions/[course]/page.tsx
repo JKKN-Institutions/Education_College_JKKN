@@ -480,7 +480,7 @@ export default async function CourseAdmissionPage({
                   How Are Candidates Selected?
                 </h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
-                  Admission to {data.fullName} is merit-based, with counselling conducted by Tamil Nadu Teachers Education University (TNTEU). Final selection considers academic performance, subject aptitude, and reservation policy.
+                  There are two routes to {data.fullName}. Government-quota seats are allotted through the state counselling process in the Tamil Nadu B.Ed admission notification. For JKKN self-financing seats you apply to the college directly, and there is no state merit list to wait for.
                 </p>
                 <ul className="space-y-3">
                   {SELECTION_CRITERIA.map((c) => (
