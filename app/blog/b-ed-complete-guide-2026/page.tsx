@@ -749,11 +749,10 @@ export default function BlogDetailPage() {
                         )}
                       </div>
                     </button>
-                    {openFaq === i && (
-                      <div className="px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
-                        {faq.a}
-                      </div>
-                    )}
+                    {/* Always rendered so the answer is in the server HTML (it matches the FAQPage JSON-LD); closed = hidden. */}
+                    <div hidden={openFaq !== i} className="px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+                      {faq.a}
+                    </div>
                   </div>
                 ))}
               </div>

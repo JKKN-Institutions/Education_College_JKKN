@@ -1,5 +1,12 @@
 import type { CourseBlogData } from '../course-blog-types';
 
+// GL6-381, 2026-10-02: unsourced claims removed — salary figures (the salary section is gone), named
+// ed-tech companies and private school chains, "50,000+ vacancies", "guaranteed recruitment",
+// "fastest-growing", "placement network" and "80+ schools". Claude was quoting this page as
+// "promotional, treat with caution". Facts kept are the ones published elsewhere on this site:
+// 100 seats across 14 subjects, Rs 35,000 a year (Management Quota), NCTE4593081, TNTEU code 36108,
+// the TNTEU count of 650 affiliated B.Ed colleges (read 2026-10-01), and the NCTE Regulations 2014
+// Appendix-4 eligibility (50%; B.E./B.Tech 55%).
 export const computerScienceBlogData: CourseBlogData = {
   slug: 'b-ed-computer-science-2026',
   subject: 'Computer Science',
@@ -9,63 +16,63 @@ export const computerScienceBlogData: CourseBlogData = {
   title: 'B.Ed Computer Science 2026: Eligibility, Syllabus, Career & Salary Guide',
   h1: 'B.Ed Computer Science 2026: Complete Course Guide — Eligibility, Syllabus, Career & Salary',
   metaDescription:
-    'Complete guide to B.Ed Computer Science specialization 2026 — eligibility, TNTEU syllabus, career as CS teacher, coding bootcamp opportunities, Ed-Tech roles, salary, and admission at JKKN College of Education.',
+    'B.Ed Computer Science 2026 — eligibility, TNTEU syllabus, careers as a CS teacher, and how to find B.Ed Computer Science colleges in Tamil Nadu on the NCTE and TNTEU lists. Admission at JKKN College of Education.',
   keywords: [
     'b.ed computer science', 'b.ed cs course', 'b.ed computer science eligibility', 'b.ed cs syllabus',
-    'computer science teacher career', 'cbse computer science teacher salary', 'coding teacher',
-    'b.ed cs colleges in tamil nadu', 'whitehat jr', 'ed-tech teacher',
+    'computer science teacher career', 'coding teacher',
+    'b.ed computer science colleges', 'b ed computer science colleges in tamilnadu', 'b.ed cs colleges in tamil nadu',
   ],
 
   heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
   publishedDate: 'Mar 22, 2026',
   publishedDateIso: '2026-03-22',
-  readTime: '13 min read',
-  wordCount: '2,150 words',
+  readTime: '11 min read',
+  wordCount: '1,800 words',
 
   quickAnswer:
-    'B.Ed Computer Science is a 2-year teacher training program for graduates aiming to teach computer science, coding, and IT at secondary and senior secondary school levels. Eligibility: B.Sc. CS / BCA / B.E. CSE / equivalent with 50% (45% reserved). The fastest-growing B.Ed specialization in India — driven by NEP 2020 coding mandate, AI/Robotics in school curriculum, and the booming Ed-Tech coding bootcamp industry (WhiteHat Jr, BYJU\'S FutureSchool, Codingal). <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed CS seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Computer Science is a 2-year teacher training programme for graduates who want to teach computer science, coding and IT in schools. Eligibility: B.Sc. CS / BCA / B.Sc. IT or an equivalent degree with 50% marks (45% for reserved categories); B.E./B.Tech graduates need 55% under NCTE norms. To find a college, check it on the NCTE and TNTEU lists and confirm that Computer Science is one of its approved B.Ed subjects. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Computer Science as one of 14 subjects, with NCTE recognition and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
       'B.Ed Computer Science is a specialized teacher training program preparing graduates to teach computer science, programming, IT skills, and emerging tech (AI, robotics, web development) at school levels. The course combines computer science content review (programming languages, data structures, web development, basics of AI) with modern pedagogy focused on project-based learning, computational thinking, and hands-on coding instruction.',
-      'Following NEP 2020, the Indian government mandated coding education from Class 6 onwards in all schools — creating a massive surge in demand for qualified computer science teachers. The Ed-Tech coding bootcamp industry (WhiteHat Jr., BYJU\'S FutureSchool, Codingal, Camp K12) further expanded the career horizon, making B.Ed Computer Science one of the fastest-growing teacher specializations.',
+      'NEP 2020 recommends introducing coding and computational thinking from the middle stage of school, and CBSE, ICSE and state board syllabi teach computer science at the secondary and higher secondary levels. Schools need teachers who know the subject and also hold the professional teaching qualification, which is what a B.Ed gives you.',
       'The program is regulated by <strong>NCTE</strong> and at JKKN affiliated to <strong>TNTEU</strong>. The CS pedagogy curriculum covers teaching programming (Python, Scratch, Java basics), web development (HTML/CSS), basics of AI/ML for kids, project-based learning, and integrating tools like Code.org, Tinkercad, GitHub Classroom into school CS classes.',
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. CS / BCA / B.E./B.Tech CSE / B.Sc. IT with 50% (45% for reserved)' },
+      { label: 'Eligibility:', value: 'B.Sc. CS / BCA / B.Sc. IT with 50% (45% for reserved); B.E./B.Tech CSE/IT with 55%' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
-      { label: 'School Internship:', value: '16 weeks with CS lab and coding classroom teaching' },
-      { label: 'Demand Growth:', value: 'Fastest-growing B.Ed specialization — NEP 2020 coding mandate' },
-      { label: 'Ed-Tech Crossover:', value: 'WhiteHat Jr, BYJU\'S FutureSchool, Codingal — premium earnings' },
-      { label: 'Target Career:', value: 'BT/PG CS Teacher, CBSE/ICSE CS, Coding Instructor, Ed-Tech Tech Educator' },
+      { label: 'School Internship:', value: 'Supervised CS classroom and lab teaching, as NCTE norms require' },
+      { label: 'Seats at JKKN:', value: '100 B.Ed seats a year, shared across 14 subjects' },
+      { label: 'Fee at JKKN:', value: '₹35,000 a year (Management Quota)' },
+      { label: 'Target Career:', value: 'Computer Science teacher (State Board / CBSE / ICSE), coding instructor, ed-tech educator' },
     ],
   },
 
   whyChoose: {
     intro:
-      'B.Ed Computer Science combines guaranteed government recruitment (NEP coding mandate created mass vacancies), strong CBSE/ICSE demand, and premium Ed-Tech coding bootcamp salaries — making it one of the smartest B.Ed specialization choices in the 2026 landscape.',
+      'B.Ed Computer Science suits graduates who enjoy computing and want to teach it. Government and private schools both ask for a B.Ed alongside the subject degree, so the course opens both routes — but government posts are won through recruitment exams, not through the college.',
     reasons: [
       {
-        title: 'NEP 2020 Coding Mandate — Massive Hiring Wave',
-        desc: 'NEP 2020 mandates coding education from Class 6 onwards in all CBSE, ICSE, and state board schools. This created an immediate need for 50,000+ qualified computer science teachers nationwide — most government and private schools still have unfilled CS teacher posts in 2026.',
+        title: 'Coding Is Part of the School Curriculum',
+        desc: 'NEP 2020 recommends coding and computational thinking from the middle stage of school, and computer science is taught as a subject at the secondary and higher secondary levels. Teaching it well needs both subject knowledge and pedagogy.',
       },
       {
-        title: 'Coding Bootcamp Industry — High Pay',
-        desc: 'WhiteHat Jr (acquired by BYJU\'S), BYJU\'S FutureSchool, Codingal, Camp K12, Toddle, CodeChef Kids hire B.Ed CS graduates as online coding instructors — ₹40,000–₹1,50,000 monthly plus per-class bonuses. Top instructors earn ₹2,00,000+ monthly with steady student bases.',
+        title: 'Ed-Tech and Online Teaching',
+        desc: 'Online learning platforms and coding programmes for school students hire computer science teachers for live teaching, content and curriculum roles. Hiring and pay vary by company and change often, so check each employer directly.',
       },
       {
-        title: 'CBSE/ICSE Premium Salaries',
-        desc: 'CBSE and ICSE schools across Chennai, Bangalore, Hyderabad, Mumbai offer ₹35,000–₹70,000 starting for B.Ed CS teachers. International schools (Oakridge, Inventure, Greenwood, NPS International) pay ₹50,000–₹1,20,000 for CS teachers who can teach AI/robotics/Python at higher secondary levels.',
+        title: 'CBSE, ICSE and State Board Schools',
+        desc: 'Private schools of every board hire computer science teachers directly. Each school sets its own pay and its own requirements, such as which programming languages you can teach.',
       },
       {
-        title: 'Lateral IT Industry Bridge',
-        desc: 'B.Ed CS graduates can pivot into corporate L&D (Learning & Development) roles, technical content writing for tech blogs/companies, instructional design for IT certification programs (AWS, Google Cloud, Microsoft) — earning ₹50,000–₹2,00,000 monthly with the right experience.',
+        title: 'Training and Instructional Design',
+        desc: 'B.Ed CS graduates can move into corporate training (Learning & Development), technical content writing and instructional design. These roles usually expect industry skills on top of the B.Ed.',
       },
       {
-        title: 'AI/ML/Robotics Teacher Specialization Premium',
-        desc: 'Adding AI/ML, robotics, or web development skills to B.Ed CS makes you eligible for niche premium-paying roles — coding bootcamps for AI, robotics tutors for international schools, STEM workshop instructors at premium schools paying ₹70,000–₹2,00,000.',
+        title: 'AI, Robotics and Web Development Skills',
+        desc: 'Adding AI/ML, robotics or web development skills to your B.Ed CS widens the classes you can teach, including school coding clubs, STEM workshops and higher secondary computer science.',
       },
     ],
   },
@@ -76,14 +83,45 @@ export const computerScienceBlogData: CourseBlogData = {
     criteria: [
       { criteria: 'Education', requirement: 'B.Sc. Computer Science / BCA / B.Sc. IT / B.E./B.Tech CSE/IT / equivalent UG with CS as main subject' },
       { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied Eligibility', requirement: 'B.Sc. Software Engineering, B.Sc. Information Technology, B.Sc. Cyber Security also eligible per TNTEU norms' },
-      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech in CSE/IT/ECE definitely eligible — preferred for AI/ML/robotics teaching' },
+      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates need at least 55% marks (NCTE Regulations 2014, Appendix-4)' },
+      { criteria: 'Allied Degrees', requirement: 'Other computing degrees (for example Software Engineering or Cyber Security) — confirm with the admission office before you apply' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
     ],
     note:
-      'Your B.Ed teaching subject (Computer Science) must match your UG. A B.A. or B.Com graduate cannot opt for B.Ed CS directly. B.E./B.Tech graduates are highly valued because they bring deeper technical mastery for AI/robotics teaching — confirm specific eligibility with JKKN admissions.',
+      'Your B.Ed teaching subject (Computer Science) must match your UG. A B.A. or B.Com graduate cannot opt for B.Ed CS directly. Confirm eligibility for your exact degree with JKKN admissions on +91 9345855001.',
+  },
+
+  whereToStudy: {
+    intro:
+      'There is no single official list of colleges that offer B.Ed Computer Science. TNTEU lists <strong>650</strong> affiliated B.Ed colleges in Tamil Nadu (TNTEU affiliated-college list, read 1 October 2026), but that list does not show which teaching subjects each college runs. Check these points for any college before you apply:',
+    points: [
+      {
+        title: 'Check NCTE recognition',
+        desc: 'The college must be on the NCTE Southern Regional Committee list of recognised institutions. Our step-by-step guide: <a href="/ncte-approved-b-ed-colleges-tamil-nadu" class="text-[#006837] font-semibold underline">how to check a B.Ed college on the NCTE and TNTEU lists</a>.',
+      },
+      {
+        title: 'Check TNTEU affiliation',
+        desc: 'Search the college on the TNTEU affiliated-colleges list by district. A B.Ed from an unaffiliated institution is not a TNTEU degree.',
+      },
+      {
+        title: 'Ask whether Computer Science is an approved subject this year',
+        desc: 'B.Ed seats are shared across teaching subjects, and a college does not run every subject. Ask the college in writing whether Computer Science is offered this year and how many seats it has.',
+      },
+      {
+        title: 'Match your degree and marks',
+        desc: 'B.Sc. CS, BCA or B.Sc. IT with 50% (45% reserved); B.E./B.Tech with 55%. Your degree subject decides your B.Ed teaching subject.',
+      },
+      {
+        title: 'Know your admission route',
+        desc: 'Government-quota seats are allotted through the state counselling process in the Tamil Nadu B.Ed admission notification. Self-financing seats are applied for at the college directly.',
+      },
+      {
+        title: 'B.Ed Computer Science at JKKN',
+        desc: 'JKKN College of Education, Komarapalayam (Namakkal district) offers Computer Science as one of 14 B.Ed subjects within 100 seats a year. Tuition is ₹35,000 a year (Management Quota). NCTE ID NCTE4593081, TNTEU code 36108. See <a href="/admissions/computer-science" class="text-[#006837] font-semibold underline">B.Ed Computer Science admission, fee and eligibility</a> and the <a href="/departments/computer-science" class="text-[#006837] font-semibold underline">Computer Science department</a>. Coming from nearby? <a href="/b-ed-college-near-erode" class="text-[#006837] font-semibold underline">Erode</a>, <a href="/b-ed-college-near-salem" class="text-[#006837] font-semibold underline">Salem</a>, <a href="/b-ed-colleges-in-namakkal-district" class="text-[#006837] font-semibold underline">Namakkal district</a>.',
+      },
+    ],
   },
 
   curriculum: {
@@ -94,122 +132,100 @@ export const computerScienceBlogData: CourseBlogData = {
       { year: '1st Year', semester: 'Sem 2', subjects: 'Learning & Teaching, Assessment for Learning, Inclusive School, Pedagogy of Computer Science — Part I (Programming Fundamentals teaching, Scratch, Python basics)' },
       { year: '2nd Year', semester: 'Sem 3', subjects: 'Knowledge & Curriculum, Gender-School-Society, Pedagogy of Computer Science — Part II (Web Development teaching, basics of AI/ML for kids, ICT integration, Code.org, Tinkercad), School Internship Begins' },
       { year: '2nd Year', semester: 'Sem 4', subjects: 'Optional Course (e.g., Robotics in Education / AI Ethics / Cyber Safety), Reading & Reflecting on Texts, Continued Internship, Action Research / Dissertation in CS Pedagogy' },
-      { year: 'Internship', semester: '16 Weeks', subjects: 'Supervised CS classroom + lab teaching, coding project mentoring, school CS curriculum design, hackathon coordination, AI/robotics workshop facilitation' },
+      { year: 'Internship', semester: 'School Internship', subjects: 'Supervised CS classroom and lab teaching, lesson planning, coding project mentoring and assessment' },
     ],
     practicalNote:
-      'At <strong>JKKN College of Education</strong>, B.Ed Computer Science students complete internships at CBSE, ICSE, and matriculation schools across Komarapalayam, Salem, Namakkal, and Erode — gaining experience teaching modern coding curriculum under faculty with M.Sc. CS / M.Tech / Ph.D backgrounds and industry experience.',
+      'At <strong>JKKN College of Education</strong>, B.Ed Computer Science students do their school internship in schools in and around Komarapalayam. Ask the admission office for the current list of internship schools.',
   },
 
   careerScope: {
     intro:
-      'B.Ed Computer Science graduates have arguably the fastest-growing career outlook in education — driven by NEP 2020 coding mandate, AI/robotics adoption in schools, and the explosive Ed-Tech coding bootcamp industry.',
+      'A B.Ed Computer Science opens teaching roles in government and private schools, plus training and ed-tech roles outside schools. Government posts are filled through recruitment exams, so plan for the exam as well as the degree.',
     paragraphs: [
-      'The most stable path is becoming a <strong>government school computer science teacher</strong> — BT Computer Science for Classes 6–10 or PG Computer Science for Classes 11–12. Government CS teacher posts saw 5x growth post-NEP 2020. Selection rates are favorable due to candidate scarcity. Starting salary ₹48,000–₹55,000 total with permanent job security.',
-      'Private CBSE/ICSE schools aggressively recruit B.Ed CS teachers. Premium chains (Velammal, PSBB, DAV, Akshara, Oakridge, Inventure, Greenwood, NPS International) offer ₹35,000–₹70,000 starting in metros. International schools requiring AI/Python/robotics teaching pay ₹50,000–₹1,20,000 for experienced CS teachers.',
-      'The <strong>Ed-Tech coding bootcamp industry</strong> is the highest-growth earning channel. WhiteHat Jr (now BYJU\'S FutureSchool), Codingal, Camp K12, CodeChef Kids, Toddle, Codio hire B.Ed CS graduates as online coding instructors — starting ₹40,000–₹80,000 monthly with per-class bonuses. Top instructors with steady student bases earn ₹1,50,000–₹3,00,000+ monthly. International coding tutoring (US/UK/Singapore parents) pays $20–$60/hour.',
-      'Corporate L&D and IT training is an emerging stream. Companies like TCS, Wipro, Infosys, Cognizant hire B.Ed CS graduates as corporate trainers for employee upskilling (Java, Python, cloud, DevOps training) — earning ₹50,000–₹2,00,000 monthly. Tech content writing for tech blogs (FreeCodeCamp, Medium, GeeksforGeeks) and instructional design for IT certifications (AWS, Google Cloud) offer additional earning streams.',
+      'The most stable path is a <strong>government school computer science teacher</strong> post. In Tamil Nadu these posts are filled through Teachers Recruitment Board (TRB) notifications; central schools recruit through KVS and NVS notifications. Each notification states the eligibility, the exam and the pay level, so read the current one before you plan.',
+      'Private CBSE, ICSE and State Board schools hire computer science teachers directly. Each school sets its own pay and requirements, and many ask for the languages and tools you can teach, such as Python, web development or robotics.',
+      'The <strong>ed-tech and online teaching</strong> stream includes live coding classes for school students, content development and curriculum design. Hiring and pay vary widely by company and change often.',
+      'Corporate training and instructional design are further options. Companies hire technical trainers for employee upskilling, and these roles usually expect hands-on industry skills in addition to the B.Ed.',
     ],
     careerPaths: [
-      { title: 'BT Assistant (Computer Science)', desc: 'Government high school CS teacher (Classes 6–10), ₹48,000–₹55,000 total, NEP 2020 created mass vacancies' },
-      { title: 'PG Assistant (Computer Science)', desc: 'Government higher secondary CS teacher — requires M.Sc./M.Tech CS + B.Ed + TNTET, ₹70,000+ total' },
-      { title: 'CBSE/ICSE CS Teacher', desc: 'Premium private school CS teacher, ₹35,000–₹70,000 starting in metros' },
-      { title: 'International School CS Teacher (AI/Python/Robotics)', desc: 'IB/IGCSE/CBSE international schools, ₹50,000–₹1,20,000' },
-      { title: 'WhiteHat Jr / BYJU\'S FutureSchool Instructor', desc: 'Online coding instructor for kids, ₹40,000–₹1,50,000 + per-class bonuses' },
-      { title: 'Codingal / Camp K12 / CodeChef Kids Tutor', desc: 'Online coding bootcamp instructor, ₹35,000–₹1,00,000' },
-      { title: 'Top Online Coding Tutor (steady student base)', desc: 'Premium individual instructors earn ₹1,50,000–₹3,00,000+ monthly' },
-      { title: 'International Online Coding Tutor', desc: 'US/UK/Singapore parents pay $20–$60/hour (₹1,600–₹4,800/hour)' },
-      { title: 'Corporate L&D / IT Trainer', desc: 'TCS, Wipro, Infosys, Cognizant corporate training roles — ₹50,000–₹2,00,000' },
-      { title: 'M.Ed / M.Tech → CS Asst Professor', desc: 'Engineering college Assistant Professor — ₹57,700 basic (UGC pay scale)' },
+      { title: 'Government School Computer Science Teacher', desc: 'Tamil Nadu government schools, through TRB recruitment notifications' },
+      { title: 'KVS / NVS Computer Science Teacher', desc: 'Central government schools, through KVS and NVS recruitment exams' },
+      { title: 'CBSE / ICSE / State Board CS Teacher', desc: 'Private schools, hired directly by each school' },
+      { title: 'School ICT Coordinator', desc: 'Runs the school computer lab, digital classrooms and coding clubs' },
+      { title: 'Online Coding Instructor', desc: 'Live coding classes for school students on ed-tech platforms' },
+      { title: 'Ed-Tech Content and Curriculum Developer', desc: 'Lessons, assessments and course design for computer science' },
+      { title: 'Corporate Technical Trainer', desc: 'Employee upskilling in programming and tools; needs industry skills too' },
+      { title: 'M.Ed → Teacher Educator', desc: 'Teach in colleges of education after an M.Ed and the eligibility the regulator sets' },
     ],
   },
 
   recruiters: {
+    heading: 'Who Hires B.Ed Computer Science Graduates',
     intro:
-      'B.Ed Computer Science graduates are aggressively recruited across government, premium private schools, and the entire Ed-Tech coding industry:',
+      'These are the kinds of employers that hire B.Ed Computer Science graduates. Government schools recruit through exams and notifications, not through a college:',
     list: [
-      { name: 'TRB Tamil Nadu', type: 'Government BT/PG Computer Science recruitment' },
-      { name: 'Kendriya Vidyalaya Sangathan (KVS)', type: 'Central schools — CS PRT/TGT/PGT (high vacancies)' },
-      { name: 'Jawahar Navodaya Vidyalayas (JNV)', type: 'Residential CBSE — CS teacher posts' },
-      { name: 'Velammal / PSBB / DAV / Chettinad Vidyashram', type: 'Premium Chennai CBSE chains' },
-      { name: 'Oakridge / Inventure / Greenwood / NPS International', type: 'International schools — AI/Python/Robotics teacher roles' },
-      { name: 'WhiteHat Jr (BYJU\'S FutureSchool)', type: 'Online coding instructor — kids coding programs' },
-      { name: 'Codingal / Camp K12 / CodeChef Kids', type: 'Coding bootcamp instructors' },
-      { name: 'Toddle / Codio / Tynker', type: 'School-tech and Ed-Tech coding platforms' },
-      { name: 'BYJU\'S / Vedantu / Unacademy', type: 'CBSE CS subject tutors and content developers' },
-      { name: 'TCS iON / Wipro / Infosys L&D', type: 'Corporate technical trainer roles' },
-      { name: 'GeeksforGeeks / Coursera India / UpGrad', type: 'Ed-Tech CS content and instructor roles' },
-      { name: 'Google for Education / Microsoft Education', type: 'Education evangelist and certified trainer programs' },
+      { name: 'Tamil Nadu Government Schools', type: 'Through Teachers Recruitment Board (TRB) notifications' },
+      { name: 'Kendriya Vidyalayas (KVS)', type: 'Central schools, through the KVS recruitment exam' },
+      { name: 'Jawahar Navodaya Vidyalayas (NVS)', type: 'Residential CBSE schools, through the NVS recruitment exam' },
+      { name: 'CBSE / ICSE / State Board Private Schools', type: 'Direct hiring by each school' },
+      { name: 'Ed-Tech and Online Coding Platforms', type: 'Coding instructor, content and curriculum roles' },
+      { name: 'Corporate Training Teams', type: 'Technical trainer and instructional design roles' },
     ],
-  },
-
-  salary: {
-    intro:
-      'B.Ed Computer Science offers a wide salary range — from stable government posts to high Ed-Tech coding bootcamp earnings. The 2026 landscape:',
-    rows: [
-      { role: 'Government BT (Computer Science)', experience: 'Entry — Fresh recruit', salary: '₹35,900 basic + DA/HRA = ₹48,000–₹55,000' },
-      { role: 'Government PG Assistant (CS)', experience: 'Entry — with M.Sc./M.Tech', salary: '₹56,100 basic + DA/HRA = ₹70,000–₹80,000' },
-      { role: 'CBSE CS Teacher (Metro)', experience: 'Entry', salary: '₹35,000–₹70,000' },
-      { role: 'International School CS Teacher', experience: 'Entry to Mid', salary: '₹50,000–₹1,20,000' },
-      { role: 'WhiteHat Jr / BYJU\'S FutureSchool', experience: 'Entry', salary: '₹40,000–₹80,000 + per-class bonuses' },
-      { role: 'Top Online Coding Tutor', experience: 'Mid-career, steady students', salary: '₹1,50,000–₹3,00,000/month' },
-      { role: 'International Online Coding Tutor', experience: 'With US/UK clients', salary: '$20–$60/hour (₹1,600–₹4,800/hour)' },
-      { role: 'Corporate L&D / IT Trainer', experience: 'Entry to Mid', salary: '₹50,000–₹1,50,000' },
-      { role: 'Codingal / Camp K12 Instructor', experience: 'Entry', salary: '₹35,000–₹1,00,000' },
-      { role: 'AI/Robotics School Teacher (premium)', experience: 'With AI/ML skills', salary: '₹70,000–₹2,00,000' },
-    ],
-    note:
-      'CS is the fastest-growing earning bracket among B.Ed specializations — driven by Ed-Tech coding boom and AI/robotics teaching premium. Adding modern skills (Python, AI/ML, robotics, web dev) significantly boosts career ceiling. B.Tech CSE + B.Ed combination is particularly powerful.',
   },
 
   whyJkkn: {
     intro:
-      'JKKN College of Education delivers B.Ed Computer Science with modern computing labs, faculty with CS industry exposure, and placement networks spanning government schools, premium CBSE chains, and the Ed-Tech coding industry.',
+      'JKKN College of Education offers B.Ed Computer Science as a regular, 2-year, face-to-face programme. These are the facts you can check:',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed CS degree is recognized for all government and private school CS teacher recruitment across India.' },
-      { title: 'Modern Computer Science Lab', desc: 'Well-equipped CS lab with current hardware, programming tools (Python, Java, web dev), Tinkercad/Code.org access, and basic robotics kits — preparing teachers for modern coding curriculum delivery.' },
-      { title: 'Faculty with CS + Industry + Teaching Experience', desc: 'M.Sc. CS / M.Tech / Ph.D faculty with both academic and industry backgrounds. Guest sessions by Ed-Tech professionals and corporate trainers to bridge classroom theory with real-world coding teaching.' },
-      { title: '16-Week Internship in CBSE/Tech-Forward Schools', desc: 'Practice teaching at partner schools with active CS programs across Komarapalayam, Salem, Namakkal, and Erode — exposure to modern coding curriculum, project-based learning, and hackathon coordination.' },
-      { title: 'NEP 2020 Coding Curriculum Alignment', desc: 'B.Ed CS curriculum at JKKN explicitly aligns with NEP 2020 coding mandate — preparing teachers ready to deliver Classes 6–12 coding curriculum from Day 1 of their teaching career.' },
-      { title: 'Ed-Tech Placement Network', desc: 'Active relationships with WhiteHat Jr, Codingal, Camp K12, and other Ed-Tech coding platforms plus 80+ CBSE/matriculation schools.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Recognised by NCTE as JKK Nattraja College of Education (NCTE ID NCTE4593081) and affiliated to TNTEU (college code 36108).' },
+      { title: '14 Subjects, 100 Seats', desc: 'Computer Science is one of 14 B.Ed subjects, within 100 B.Ed seats a year.' },
+      { title: '₹35,000 a Year', desc: 'Tuition is ₹35,000 a year under the Management Quota. Scholarships under Tamil Nadu government schemes apply to eligible students.' },
+      { title: 'Apply Directly', desc: 'For self-financing seats you apply to the college directly; there is no state merit list to wait for.' },
+      { title: 'Location', desc: 'Natarajapuram, Komarapalayam, in Namakkal district on NH-544, about 18 km from Erode.' },
+      { title: 'See It Yourself', desc: 'Visit the campus to see the computer lab and meet the Computer Science faculty before you join. Call +91 9345855001 to arrange a visit.' },
     ],
   },
 
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Computer Science at JKKN?',
-      a: 'You need B.Sc. CS, BCA, B.Sc. IT, B.E./B.Tech CSE/IT, or equivalent UG with CS as the main subject — with 50% marks (45% for SC/ST/OBC/DA). Engineering graduates are highly valued for AI/robotics teaching. Call +91 9345855001 to confirm eligibility for your UG qualification.',
+      a: 'You need B.Sc. CS, BCA, B.Sc. IT, or an equivalent degree with Computer Science as the main subject, with 50% marks (45% for SC/ST/OBC/DA). B.E./B.Tech CSE/IT graduates need 55% under NCTE Regulations 2014. Call +91 9345855001 to confirm eligibility for your degree.',
+    },
+    {
+      q: 'Which colleges offer B.Ed Computer Science in Tamil Nadu?',
+      a: 'No official list shows it by subject. TNTEU lists 650 affiliated B.Ed colleges, but not their subjects, so check a college on the NCTE and TNTEU lists and ask it in writing whether Computer Science is offered this year. JKKN College of Education, Komarapalayam offers B.Ed Computer Science as one of 14 subjects.',
     },
     {
       q: 'Is B.Ed Computer Science a good career choice in 2026?',
-      a: 'Excellent choice — possibly the fastest-growing B.Ed specialization. NEP 2020 coding mandate created 50,000+ CS teacher vacancies in schools. Ed-Tech coding boom (WhiteHat Jr, Codingal, Camp K12) pays ₹40,000–₹3,00,000 monthly for skilled instructors. International schools needing AI/Python/robotics teachers pay ₹70,000–₹2,00,000.',
+      a: 'It suits graduates who want to teach computing. Government and private schools both ask for a B.Ed, and ed-tech and training roles add options outside schools. Government posts are won through TRB, KVS or NVS recruitment exams, so prepare for the exam as well as the degree.',
     },
     {
-      q: 'Can I work in WhiteHat Jr or BYJU\'S FutureSchool after B.Ed CS?',
-      a: 'Yes — actively recruited. WhiteHat Jr (now BYJU\'S FutureSchool) hires B.Ed CS graduates as online coding instructors for kids. Starting pay ₹40,000–₹80,000 plus per-class bonuses. Top instructors with steady student bases earn ₹1,50,000–₹3,00,000 monthly. Codingal, Camp K12, CodeChef Kids offer similar opportunities.',
+      q: 'Can I work in ed-tech or online coding teaching after B.Ed CS?',
+      a: 'Yes. Online learning platforms and coding programmes for school students hire computer science teachers for live classes, content and curriculum roles. Hiring and pay vary by company, so check each employer directly.',
     },
     {
       q: 'How much does a B.Ed CS teacher earn in 2026?',
-      a: 'Government BT CS: ₹48,000–₹55,000. CBSE CS: ₹35,000–₹70,000 in metros. International schools: ₹50,000–₹1,20,000. Ed-Tech coding bootcamps: ₹40,000–₹3,00,000. International online tutoring: $20–$60/hour. Corporate L&D: ₹50,000–₹2,00,000. Adding modern skills (AI/ML, robotics, Python) significantly boosts earnings.',
+      a: 'It depends on the employer. Government posts follow the pay level printed in each TRB, KVS or NVS recruitment notification. Private schools and ed-tech companies set their own pay. We do not publish salary figures because we have no verified source for them.',
     },
     {
       q: 'Do I need B.E./B.Tech to do B.Ed Computer Science?',
-      a: 'No — B.Sc. CS, BCA, B.Sc. IT all qualify you for B.Ed CS. However, B.E./B.Tech CSE graduates are preferred for premium roles like AI/robotics teaching in international schools and senior coding faculty positions because of deeper technical mastery. Adding self-taught Python/AI/ML skills compensates effectively for non-engineering UG candidates.',
+      a: 'No. B.Sc. CS, BCA and B.Sc. IT all qualify, with 50% marks. B.E./B.Tech graduates also qualify, with 55% marks under NCTE norms.',
     },
     {
       q: 'Is there a market for AI/robotics teachers in schools?',
-      a: 'Yes — and it\'s rapidly growing. CBSE introduced AI as a subject for Classes 8–12 in 2020. International schools (Oakridge, Inventure, Greenwood, NPS International) actively recruit dedicated AI/robotics teachers paying ₹70,000–₹2,00,000 monthly. Adding online AI/ML certifications (Coursera, edX) to your B.Ed CS opens these premium roles.',
+      a: 'Some schools run AI, robotics or coding clubs and STEM workshops alongside computer science classes. Adding AI/ML or robotics skills to your B.Ed CS lets you take on these classes. Demand varies by school.',
     },
     {
       q: 'Can I work in IT industry after B.Ed Computer Science?',
-      a: 'B.Ed CS primarily qualifies you for teaching, but offers strong lateral entry into IT industry L&D (Learning & Development), technical training, and instructional design. TCS, Wipro, Infosys, Cognizant hire B.Ed CS graduates as corporate trainers paying ₹50,000–₹2,00,000 monthly. Direct software development roles require BCA/B.E. + coding skills, not B.Ed.',
+      a: 'B.Ed CS primarily qualifies you for teaching. It can lead to corporate training, technical content and instructional design roles, which usually also expect industry skills. Software development roles depend on your BCA/B.E. and coding skills, not on the B.Ed.',
     },
     {
       q: 'What\'s the difference between B.Ed CS and B.Tech CSE for teaching career?',
-      a: 'B.Tech CSE alone does NOT qualify you to teach in schools — you still need B.Ed as the professional teaching qualification. B.Tech + B.Ed CS combination is the most powerful — opens premium PG CS teacher roles, AI/robotics teaching at international schools, and senior coding bootcamp instructor roles. Many JKKN B.Ed CS students are B.Tech graduates seeking teaching career switches.',
+      a: 'B.Tech CSE alone does NOT qualify you to teach in schools — you still need B.Ed as the professional teaching qualification. A B.Tech graduate with 55% marks can join B.Ed and take Computer Science as the teaching subject.',
     },
   ],
 
-  tags: ['B.Ed Computer Science', 'CS Teacher', 'Coding Teacher', 'WhiteHat Jr', 'NEP 2020 Coding', 'Ed-Tech Career'],
+  tags: ['B.Ed Computer Science', 'CS Teacher', 'Coding Teacher', 'B.Ed Colleges Tamil Nadu', 'NEP 2020 Coding', 'Ed-Tech Career'],
 
   relatedCourses: [
     { slug: 'b-ed-mathematics-2026', subject: 'Mathematics' },

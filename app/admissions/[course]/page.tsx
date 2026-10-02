@@ -553,7 +553,7 @@ export default async function CourseAdmissionPage({
                 Career Opportunities After {data.fullName}
               </h2>
               <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-                Diverse career paths with strong placement support
+                Where graduates of this B.Ed go on to teach and work
               </p>
             </div>
 
@@ -584,6 +584,21 @@ export default async function CourseAdmissionPage({
                 ))}
               </div>
             </div>
+
+            {data.relatedLinks && (
+              <div className="mt-6 p-6 rounded-xl bg-[#FBFBEE]">
+                <h3 className="font-bold text-[#002309] mb-4 text-lg">More About {data.fullName}</h3>
+                <ul className="space-y-2">
+                  {data.relatedLinks.map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="text-sm font-semibold text-[#006837] underline underline-offset-2">
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </section>
 

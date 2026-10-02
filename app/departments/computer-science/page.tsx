@@ -77,6 +77,14 @@ export default function ComputerScienceDepartment() {
                   Apply Now
                 </Link>
 
+                <Link href="/admissions/computer-science" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 text-white transition-all hover:bg-white hover:text-[#002309]">
+                  Admission, Fee &amp; Eligibility
+                </Link>
+
+                <Link href="/blog/b-ed-computer-science-2026" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 text-white transition-all hover:bg-white hover:text-[#002309]">
+                  B.Ed CS Guide
+                </Link>
+
                 <button
                   onClick={() => document.getElementById('curriculum-structure')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
                   className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 text-white transition-all hover:bg-white hover:text-[#002309]"

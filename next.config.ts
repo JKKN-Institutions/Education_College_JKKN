@@ -51,6 +51,14 @@ const nextConfig: NextConfig = {
       // Target /about verified HTTP 200 on 2026-09-16.
       { source: '/testimonials', destination: '/about', permanent: true },
       { source: '/testimonials/', destination: '/about', permanent: true },
+
+      // ── Legacy B.Ed Computer Science URLs 2026-10-02 (GL6-381) ─────────────
+      // /b-ed-computer-science is an old course URL that still drew GSC impressions and answered 404
+      // (its trailing-slash form 308s into the 404). The blog URL below also 404s. Targets verified
+      // HTTP 200 on 2026-10-02.
+      { source: '/b-ed-computer-science', destination: '/admissions/computer-science', permanent: true },
+      { source: '/b-ed-computer-science/', destination: '/admissions/computer-science', permanent: true },
+      { source: '/blog/b-ed-computer-science-colleges-in-india-2026', destination: '/blog/b-ed-computer-science-2026', permanent: true },
     ];
   },
 };

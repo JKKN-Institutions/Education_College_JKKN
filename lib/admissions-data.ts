@@ -60,6 +60,9 @@ export interface CourseAdmission {
 
   topRecruiters: string[];
 
+  // Optional links to the other pages about this subject (GL6-381).
+  relatedLinks?: { href: string; label: string }[];
+
   // USPs
   whyChooseThis: {
     title: string;
@@ -844,16 +847,22 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       'Online Programming Tutor',
     ],
 
-    topRecruiters: ['Kendriya Vidyalaya Sangathan (KVS)', 'Navodaya Vidyalaya Samiti (NVS)', 'DAV Schools', 'DPS Schools', 'CBSE-affiliated Schools', 'Tamil Nadu State Government Schools'],
+    // GL6-381, 2026-10-02: KVS, NVS and TN government posts are filled by recruitment exams, not by a
+    // college placement, so each is named with its route. Named private school chains were removed.
+    topRecruiters: ['Tamil Nadu Government Schools (TRB recruitment)', 'Kendriya Vidyalayas (KVS recruitment exam)', 'Navodaya Vidyalayas (NVS recruitment exam)', 'CBSE / ICSE / State Board private schools'],
+    relatedLinks: [
+      { href: '/departments/computer-science', label: 'B.Ed Computer Science department and syllabus' },
+      { href: '/blog/b-ed-computer-science-2026', label: 'B.Ed Computer Science guide: eligibility, careers, where to study' },
+      { href: '/ncte-approved-b-ed-colleges-tamil-nadu', label: 'How to check a B.Ed college on the NCTE and TNTEU lists' },
+    ],
     whyChooseThis: [
       { title: 'Python-First Curriculum', description: 'Industry-relevant Python, basics of JavaScript, SQL, and Git training.' },
-      { title: 'AI Literacy Pedagogy', description: 'Teach AI/ML basics — NEP 2020 mandates AI education from Class 6.' },
-      { title: 'Highest Demand Subject', description: 'CS teachers command 30-50% premium salaries — fastest growing teaching role.' },
+      { title: 'AI Literacy Pedagogy', description: 'Teach AI/ML basics — NEP 2020 recommends coding and computational thinking from the middle stage of school.' },
+      { title: 'Government and Private School Routes', description: 'Government school posts are filled through TRB, KVS and NVS recruitment notifications; private schools hire directly. A B.Ed is the professional qualification both routes ask for.' },
       { title: 'EdTech Career Path', description: 'Online learning platforms and ed-tech companies recruit Computer Science teachers for content, tutoring and curriculum roles.' },
-      { title: 'Global Opportunities', description: 'International schools in Gulf, SE Asia actively recruit CS B.Ed graduates.' },
     ],
     faqs: [
-      { question: 'I have a B.Tech CSE — is this course worth it?', answer: 'Absolutely. B.Tech CSE + B.Ed makes you the most sought-after CS teacher with both technical and pedagogical credentials.' },
+      { question: 'I have a B.Tech CSE — can I join this course?', answer: 'Yes. Under NCTE Regulations 2014 a B.E. or B.Tech graduate needs at least 55% marks to join a B.Ed (other degrees need 50%). B.Tech CSE plus B.Ed gives you the subject knowledge and the professional teaching qualification that schools ask for.' },
       { question: 'Which programming languages will I learn to teach?', answer: 'Python (primary), C++, JavaScript basics, SQL, and HTML/CSS — all CBSE/ICSE syllabus-aligned languages.' },
       { question: 'Will I learn to teach AI and Machine Learning?', answer: 'Yes — AI literacy pedagogy is a dedicated module, preparing you for the new NEP 2020 curriculum.' },
       { question: 'What subjects can I teach after B.Ed Computer Science?', answer: 'Computer Science and Information Technology at the secondary and senior secondary levels, in State Board, CBSE and ICSE schools, subject to the recruiting school’s own norms.' },

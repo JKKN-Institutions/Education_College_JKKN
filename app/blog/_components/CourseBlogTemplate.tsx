@@ -22,6 +22,7 @@ const tocItems = [
   { id: 'what-is', label: 'What is the Course?' },
   { id: 'why-choose', label: 'Why Choose This Specialization' },
   { id: 'eligibility', label: 'Eligibility Criteria' },
+  { id: 'where-to-study', label: 'Where to Study' },
   { id: 'curriculum', label: 'Curriculum & Syllabus' },
   { id: 'career-scope', label: 'Career Scope' },
   { id: 'recruiters', label: 'Top Recruiters' },
@@ -54,6 +55,10 @@ const popularPosts = [
 export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
   const [activeSection, setActiveSection] = useState('what-is');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  // Optional sections drop out of the table of contents when the blog has no data for them.
+  const toc = tocItems.filter(
+    (t) => (t.id !== 'salary' || data.salary) && (t.id !== 'where-to-study' || data.whereToStudy)
+  );
 
   const gridRef = useRef<HTMLDivElement>(null);
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -80,10 +85,10 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
 
     const handleScroll = () => {
       const scrollPos = window.scrollY + FIXED_TOP + 20;
-      for (let i = tocItems.length - 1; i >= 0; i--) {
-        const el = document.getElementById(tocItems[i].id);
+      for (let i = toc.length - 1; i >= 0; i--) {
+        const el = document.getElementById(toc[i].id);
         if (el && el.offsetTop <= scrollPos) {
-          setActiveSection(tocItems[i].id);
+          setActiveSection(toc[i].id);
           break;
         }
       }
@@ -335,6 +340,29 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
               </div>
             </section>
 
+            {/* Section 3b: Where to Study (optional) */}
+            {data.whereToStudy && (
+              <section id="where-to-study" className="mb-12 scroll-mt-20">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                  Where to Study B.Ed {data.subject} in Tamil Nadu
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: data.whereToStudy.intro }} />
+                <div className="space-y-6">
+                  {data.whereToStudy.points.map((p, i) => (
+                    <div key={i} className="flex gap-4">
+                      <span className="w-8 h-8 rounded-full bg-[#006837] text-white font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">
+                        {i + 1}
+                      </span>
+                      <div>
+                        <h3 className="font-bold text-gray-900 mb-1">{p.title}</h3>
+                        <p className="text-gray-600 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: p.desc }} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Section 4: Curriculum */}
             <section id="curriculum" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
@@ -397,7 +425,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                   Ready to Become a {data.subject} Teacher?
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  Apply for B.Ed {data.subject} at JKKN College of Education — NCTE approved, TNTEU affiliated, with strong placement record.
+                  Apply for B.Ed {data.subject} at JKKN College of Education — NCTE approved, TNTEU affiliated, 14 subjects within 100 seats a year, ₹35,000 a year (Management Quota).
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=blog-components-courseblogtemplate" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">
@@ -413,7 +441,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
             {/* Section 6: Top Recruiters */}
             <section id="recruiters" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                Top Recruiters for B.Ed {data.subject} Graduates
+                {data.recruiters.heading ?? `Top Recruiters for B.Ed ${data.subject} Graduates`}
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5" dangerouslySetInnerHTML={{ __html: data.recruiters.intro }} />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -431,38 +459,40 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
               </div>
             </section>
 
-            {/* Section 7: Salary */}
-            <section id="salary" className="mb-12 scroll-mt-20">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                Salary Expectations for B.Ed {data.subject} Graduates
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-5" dangerouslySetInnerHTML={{ __html: data.salary.intro }} />
-              <div className="overflow-x-auto mb-5">
-                <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
-                  <thead>
-                    <tr className="bg-gray-50 text-left">
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">Role</th>
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">Experience</th>
-                      <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">Monthly Salary</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {data.salary.rows.map((r, i) => (
-                      <tr key={i} className="border-b border-gray-100 last:border-0">
-                        <td className="px-4 py-3 text-gray-700 font-medium">{r.role}</td>
-                        <td className="px-4 py-3 text-gray-600">{r.experience}</td>
-                        <td className="px-4 py-3 text-gray-600">{r.salary}</td>
+            {/* Section 7: Salary (optional) */}
+            {data.salary && (
+              <section id="salary" className="mb-12 scroll-mt-20">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                  Salary Expectations for B.Ed {data.subject} Graduates
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-5" dangerouslySetInnerHTML={{ __html: data.salary!.intro }} />
+                <div className="overflow-x-auto mb-5">
+                  <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+                    <thead>
+                      <tr className="bg-gray-50 text-left">
+                        <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">Role</th>
+                        <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">Experience</th>
+                        <th className="px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wide border-b border-gray-200">Monthly Salary</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4">
-                <p className="text-sm text-gray-700">
-                  <strong className="text-amber-700">Note:</strong> {data.salary.note}
-                </p>
-              </div>
-            </section>
+                    </thead>
+                    <tbody>
+                      {data.salary!.rows.map((r, i) => (
+                        <tr key={i} className="border-b border-gray-100 last:border-0">
+                          <td className="px-4 py-3 text-gray-700 font-medium">{r.role}</td>
+                          <td className="px-4 py-3 text-gray-600">{r.experience}</td>
+                          <td className="px-4 py-3 text-gray-600">{r.salary}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4">
+                  <p className="text-sm text-gray-700">
+                    <strong className="text-amber-700">Note:</strong> {data.salary!.note}
+                  </p>
+                </div>
+              </section>
+            )}
 
             {/* Section 8: Why JKKN */}
             <section id="why-jkkn" className="mb-12 scroll-mt-20">
@@ -506,9 +536,8 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                         )}
                       </div>
                     </button>
-                    {openFaq === i && (
-                      <div className="px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100" dangerouslySetInnerHTML={{ __html: faq.a }} />
-                    )}
+                    {/* Always rendered so the answer is in the server HTML (it matches the FAQPage JSON-LD); closed = hidden. */}
+                    <div hidden={openFaq !== i} className="px-5 pb-4 pt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100" dangerouslySetInnerHTML={{ __html: faq.a }} />
                   </div>
                 ))}
               </div>
@@ -563,7 +592,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                   <span className="font-bold text-gray-800 text-xs uppercase tracking-wider">Table of Contents</span>
                 </div>
                 <nav className="space-y-0.5">
-                  {tocItems.map((item, i) => (
+                  {toc.map((item, i) => (
                     <button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
