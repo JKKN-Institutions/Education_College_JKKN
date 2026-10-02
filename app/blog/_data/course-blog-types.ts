@@ -92,14 +92,24 @@ export interface CourseBlogData {
   };
 
   recruiters: {
+    // Optional heading override; the template default is "Top Recruiters for B.Ed <subject> Graduates".
+    heading?: string;
     intro: string;
     list: RecruiterItem[];
   };
 
-  salary: {
+  // Optional since GL6-381 (2026-10-02): a blog with no sourced salary figures leaves it out, and the
+  // template then drops the section and its table-of-contents entry.
+  salary?: {
     intro: string;
     rows: SalaryRow[];
     note: string;
+  };
+
+  // Optional "Where to Study B.Ed <subject> in Tamil Nadu" section, rendered after eligibility.
+  whereToStudy?: {
+    intro: string;
+    points: ReasonPoint[];
   };
 
   whyJkkn: {

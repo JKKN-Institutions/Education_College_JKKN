@@ -88,13 +88,12 @@ export default function AdmissionFAQ() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {openIndex === index && (
-                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
-                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#002309' }}>
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
+              {/* Always rendered so the answer is in the server HTML (it matches the FAQPage JSON-LD); closed = hidden. */}
+              <div hidden={openIndex !== index} className="px-4 sm:px-6 pb-4 sm:pb-6">
+                <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#002309' }}>
+                  {faq.answer}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -106,7 +106,7 @@ const faqSchema = {
       name: 'Is hostel facility available for B.Ed students?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, separate hostel facilities are available for both male and female students within the JKKN campus with comfortable accommodation, nutritious food, Wi-Fi connectivity, and 24/7 security.',
+        text: 'Yes, separate hostel facilities are available for both male and female students within the JKKN campus. The hostels provide comfortable accommodation, nutritious food, Wi-Fi connectivity, 24/7 security, laundry service, and a conducive environment for academic pursuits.',
       },
     },
     {
@@ -114,7 +114,7 @@ const faqSchema = {
       name: 'What documents are required for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Required documents include 10th & 12th mark sheets and certificates, graduation degree certificate, all semester mark sheets, transfer certificate (TC), community certificate (for reserved categories), income certificate, Aadhaar card, and 4 passport-size photographs.',
+        text: 'Required documents include: 10th & 12th mark sheets and certificates, graduation degree certificate and all semester mark sheets, transfer certificate (TC), migration certificate (if applicable), community certificate (for reserved categories), income certificate, Aadhaar card, and 4 passport-size photographs.',
       },
     },
     {
@@ -130,7 +130,7 @@ const faqSchema = {
       name: 'Can I pursue M.Ed after completing B.Ed?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, after completing B.Ed, you can pursue M.Ed (Master of Education), Ph.D in Education, or specialize further with MA in your subject area.',
+        text: 'Yes, after completing B.Ed, you can pursue M.Ed (Master of Education) to become a teacher educator, pursue Ph.D in Education for research careers, or specialize further with MA in your subject area. JKKN provides guidance for higher education pathways.',
       },
     },
     {

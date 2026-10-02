@@ -180,6 +180,9 @@ export default function BedCollegeNearErodePage() {
               <Link href="/departments" className="font-semibold text-[#006837] underline underline-offset-2">
                 The 14 subjects
               </Link>
+              <Link href="/admissions/computer-science" className="font-semibold text-[#006837] underline underline-offset-2">
+                B.Ed Computer Science
+              </Link>
               <Link href="/fee-structure" className="font-semibold text-[#006837] underline underline-offset-2">
                 Fee structure
               </Link>
