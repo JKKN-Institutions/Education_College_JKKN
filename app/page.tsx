@@ -9,6 +9,8 @@ import { createClient } from '@/lib/supabase/server';
 import { Palette, Trophy, Home as HomeIcon, UtensilsCrossed, Bus, HeartPulse, Wifi, ShieldCheck } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
 import { HomePopup } from '@/components/HomePopup';
+import { EnquiryModalProvider } from '@/components/lead/EnquiryModal';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 
 export const metadata: Metadata = {
@@ -71,6 +73,7 @@ export default async function Home() {
   const noticeTexts = noticesResult.data?.map((n) => n.title) ?? [];
   const events = eventsResult.data;
   return (
+    <EnquiryModalProvider>
     <div className="min-h-screen bg-[#FBFBEE]">
       <HomePopup />
       <JsonLd
@@ -349,6 +352,19 @@ export default async function Home() {
                 <span className="text-[#7cb983]">Transform Your Teaching Career</span>
               </h1>
 
+              {/* Phones: the call-back button right under the heading, inside the first screen (2026-10-16) */}
+              <div className="lg:hidden mb-6">
+                <p className="text-sm text-white/90 mb-3">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                <EnquiryButton
+                  sourcePage="home-hero-btn"
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+                  fallbackLabel="Apply Now for 2026-27"
+                  className="w-full bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 text-center text-base min-h-[44px]"
+                >
+                  Get a Call Back
+                </EnquiryButton>
+              </div>
+
               <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 leading-relaxed">
                 Join our 2-Year B.Ed Programme and become a certified Learning Facilitator equipped with modern pedagogical skills, innovative teaching methodologies, and a commitment to shaping future generations.
               </p>
@@ -393,15 +409,21 @@ export default async function Home() {
               <HeroButtons />
             </div>
 
-            {/* Right Content - Video/Image Placeholder */}
-            <div className="relative mt-8 lg:mt-0">
+            {/* lg and up: the 3-box enquiry card takes the photo's place (2026-10-16) */}
+            <div className="hidden lg:block rounded-2xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6 lg:p-7 text-left">
+              <h2 className="text-xl lg:text-2xl font-bold text-white leading-snug">Get B.Ed fee and admission details</h2>
+              <p className="mt-1 mb-5 text-sm text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
+              <EducationEnquiryForm sourcePage="home-hero" compact />
+            </div>
+
+            {/* Right Content - Video/Image Placeholder (phones and tablets) */}
+            <div className="lg:hidden relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl overflow-hidden min-h-[350px] sm:min-h-[450px] lg:min-h-[550px]">
                 <Image
                   src="/images/Homepage-Hero-Banner-Image.webp"
                   alt="Future Teachers Learning"
                   fill
                   className="object-cover"
-                  priority
                 />
                 {/* Badge Overlays */}
                 {/* Top Right - NCTE Approved Badge */}
@@ -1154,11 +1176,16 @@ export default async function Home() {
           <div className="bg-gradient-to-r from-[#002309] to-[#006837] rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
             <div className="text-white text-center md:text-left">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
-              <p className="text-white/90 text-sm sm:text-base">Applications for the 2026-27 academic session are now open. Tamil Nadu B.Ed dates are announced by the state, so we publish a date only once the official notification is out.</p>
+              <p className="text-white/90 text-sm sm:text-base">Talk to our admission team about the B.Ed programme. Tamil Nadu B.Ed dates are announced by the state, so we publish a date only once the official notification is out.</p>
             </div>
-            <Link href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0">
-              Start Application
-            </Link>
+            <EnquiryButton
+              sourcePage="home-cta"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+              fallbackLabel="Start Application"
+              className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0"
+            >
+              Get a Call Back
+            </EnquiryButton>
           </div>
         </div>
       </section>
@@ -1751,5 +1778,6 @@ export default async function Home() {
 
       <Footer />
     </div>
+    </EnquiryModalProvider>
   );
 }
