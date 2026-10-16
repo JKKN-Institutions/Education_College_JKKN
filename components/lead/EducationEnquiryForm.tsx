@@ -14,12 +14,13 @@
 
 "use client"
 
-import { useRef, useState, useTransition } from "react"
+import { useId, useRef, useState, useTransition } from "react"
 import {
   submitEducationEnquiry,
   type EducationEnquiryState,
 } from "@/app/actions/education-enquiry"
 import { EDUCATION_PROGRAMMES } from "@/lib/education-programmes"
+import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 
 const ADMISSION_PHONE = "+919345855001"
 const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
@@ -29,14 +30,21 @@ type Props = {
   sourcePage: string
   /** Pre-selected programme id, so a department page opens on its own pedagogy. Optional. */
   defaultProgrammeId?: string
+  /** 3 boxes only (name, mobile, programme) — for the homepage popup and cards. District and
+   *  the question box are optional in the CRM form, so a compact lead is still a complete lead. */
+  compact?: boolean
 }
 
-export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }: Props) {
+export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId, compact = false }: Props) {
+  // Unique per instance: the homepage can show this form twice (hero card + popup).
+  const uid = useId()
+  const fid = (name: string) => `${uid}-${name}`
   const [state, setState] = useState<EducationEnquiryState | null>(null)
   const [isPending, startTransition] = useTransition()
   const fired = useRef(false)
 
   function track(next: EducationEnquiryState) {
+    if (next.success) writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
     const w = window as unknown as { gtag?: (...args: unknown[]) => void }
     if (typeof w.gtag !== "function") return
     if (next.success && !fired.current) {
@@ -96,8 +104,10 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
   }
 
   const err = state?.fieldErrors
-  const inputCls =
-    "w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-white/50 text-sm focus:outline-none focus:border-white/60"
+  // Compact (homepage) boxes use 16 px text: below 16 px, iPhone Safari zooms the page on focus.
+  const inputCls = `w-full bg-white/20 border border-white/30 rounded-xl px-4 py-3 text-white placeholder-white/50 ${
+    compact ? "text-base" : "text-sm"
+  } focus:outline-none focus:border-white/60`
 
   return (
     <form onSubmit={onSubmit} className="space-y-5">
@@ -114,13 +124,13 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
         className="absolute left-[-9999px] h-0 w-0 opacity-0"
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
         <div>
-          <label htmlFor="ed-name" className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("name")} className="block text-white text-sm font-medium mb-1.5">
             Your Name <span aria-hidden="true">*</span>
           </label>
           <input
-            id="ed-name"
+            id={fid("name")}
             type="text"
             name="name"
             required
@@ -132,11 +142,11 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
           {err?.name && <p className="text-red-200 text-xs mt-1">{err.name}</p>}
         </div>
         <div>
-          <label htmlFor="ed-phone" className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("phone")} className="block text-white text-sm font-medium mb-1.5">
             Mobile Number <span aria-hidden="true">*</span>
           </label>
           <input
-            id="ed-phone"
+            id={fid("phone")}
             type="tel"
             name="phone"
             required
@@ -150,13 +160,13 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
         <div>
-          <label htmlFor="ed-programme" className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("programme")} className="block text-white text-sm font-medium mb-1.5">
             B.Ed Specialisation <span aria-hidden="true">*</span>
           </label>
           <select
-            id="ed-programme"
+            id={fid("programme")}
             name="programme"
             required
             defaultValue={defaultProgrammeId ?? ""}
@@ -174,26 +184,29 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
           </select>
           {err?.programme && <p className="text-red-200 text-xs mt-1">{err.programme}</p>}
         </div>
+        {!compact && (
         <div>
-          <label htmlFor="ed-district" className="block text-white text-sm font-medium mb-1.5">
+          <label htmlFor={fid("district")} className="block text-white text-sm font-medium mb-1.5">
             Your District <span className="font-normal opacity-70">(optional)</span>
           </label>
           <input
-            id="ed-district"
+            id={fid("district")}
             type="text"
             name="district"
             placeholder="e.g., Namakkal"
             className={inputCls}
           />
         </div>
+        )}
       </div>
 
+      {!compact && (
       <div>
-        <label htmlFor="ed-question" className="block text-white text-sm font-medium mb-1.5">
+        <label htmlFor={fid("question")} className="block text-white text-sm font-medium mb-1.5">
           Any Questions? <span className="font-normal opacity-70">(optional)</span>
         </label>
         <textarea
-          id="ed-question"
+          id={fid("question")}
           name="question"
           rows={3}
           maxLength={300}
@@ -201,13 +214,14 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
           className={`${inputCls} resize-none`}
         />
       </div>
+      )}
 
       <button
         type="submit"
         disabled={isPending}
         className="w-full bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white font-semibold py-4 rounded-full text-base transition-colors"
       >
-        {isPending ? "Submitting…" : "Submit Enquiry — Get a Call Back"}
+        {isPending ? "Submitting…" : compact ? "Get a Call Back" : "Submit Enquiry — Get a Call Back"}
       </button>
 
       {state && !state.success && state.error && (
@@ -231,6 +245,12 @@ export default function EducationEnquiryForm({ sourcePage, defaultProgrammeId }:
           WhatsApp
         </a>
       </p>
+
+      {compact && (
+        <p className="text-center text-white/60 text-xs">
+          By submitting, you agree to be contacted by our admission team.
+        </p>
+      )}
     </form>
   )
 }
