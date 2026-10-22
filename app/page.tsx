@@ -9,7 +9,6 @@ import { createClient } from '@/lib/supabase/server';
 import { Palette, Trophy, Home as HomeIcon, UtensilsCrossed, Bus, HeartPulse, Wifi, ShieldCheck } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
 import { HomePopup } from '@/components/HomePopup';
-import { EnquiryModalProvider } from '@/components/lead/EnquiryModal';
 import EnquiryButton from '@/components/lead/EnquiryButton';
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 
@@ -72,8 +71,9 @@ export default async function Home() {
 
   const noticeTexts = noticesResult.data?.map((n) => n.title) ?? [];
   const events = eventsResult.data;
+  // The enquiry modal provider now wraps every page from components/LayoutWrapper.tsx
+  // (2026-10-22); HomePopup and the homepage buttons use that one provider.
   return (
-    <EnquiryModalProvider>
     <div className="min-h-screen bg-[#FBFBEE]">
       <HomePopup />
       <JsonLd
@@ -1779,6 +1779,5 @@ export default async function Home() {
 
       <Footer />
     </div>
-    </EnquiryModalProvider>
   );
 }

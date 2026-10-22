@@ -4,7 +4,8 @@
 // the Dental homepage on 2026-10-16 (DEP-48). The poster used to be a link to jkkn.ai in a new
 // tab; now a tap on it moves the cursor into the Name box. The lead is tagged <college>-home-popup.
 // Once a visitor has submitted the enquiry form anywhere on this site, the popup stops.
-// Without the modal provider (any page other than the homepage) the old poster is the fallback.
+// Mounted only in app/page.tsx, so it still opens on the homepage only, although the modal
+// provider wraps every page since 2026-10-22. Without a provider the old poster is the fallback.
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
