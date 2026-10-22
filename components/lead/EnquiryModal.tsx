@@ -86,14 +86,14 @@ function EnquiryDialog({
         role="dialog"
         aria-modal="true"
         aria-labelledby="enquiry-dialog-title"
-        className={`relative w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-[#006837] p-5 sm:p-6 shadow-2xl ${
+        className={`relative w-full max-h-[90vh] overflow-y-auto rounded-[20px] bg-white p-5 sm:p-6 shadow-2xl ${
           withPoster ? "max-w-sm md:max-w-3xl" : "max-w-sm lg:max-w-md"
         }`}
       >
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-2 right-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+          className="absolute top-2 right-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[#f1f7f3] shadow-lg hover:bg-[#e3ece6] transition-colors"
           aria-label="Close"
         >
           <X className="w-5 h-5 text-gray-700" />
@@ -125,16 +125,15 @@ function EnquiryDialog({
           )}
 
           <div className={withPoster ? "col-start-2 row-start-1 self-center md:self-end" : ""}>
-            <p id="enquiry-dialog-title" className={`font-bold leading-snug text-white ${withPoster ? "text-base sm:text-lg pr-10 md:pr-12" : "text-lg pr-12"}`}>
+            {/* The panel itself is the white card of mockup #7 (2026-10-22), so the form renders
+                bare and its 3-step strip replaces the old "Fill 3 details..." sub-line. */}
+            <p id="enquiry-dialog-title" className={`font-bold leading-snug text-[#032816] ${withPoster ? "text-base sm:text-lg pr-10 md:pr-12" : "text-lg pr-12 mb-4"}`}>
               Get B.Ed fee and admission details
-            </p>
-            <p className={`mt-1 text-white/80 ${withPoster ? "text-xs sm:text-sm" : "text-sm mb-4"}`}>
-              Fill 3 details. Our admission team will call you within 24 hours.
             </p>
           </div>
 
           <div className={withPoster ? "col-span-2 md:col-span-1 md:col-start-2 md:row-start-2 md:self-start" : ""}>
-            <EducationEnquiryForm sourcePage={sourcePage} compact />
+            <EducationEnquiryForm sourcePage={sourcePage} compact bare />
           </div>
         </div>
       </div>

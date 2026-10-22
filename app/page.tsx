@@ -410,10 +410,11 @@ export default async function Home() {
             </div>
 
             {/* lg and up: the 3-box enquiry card takes the photo's place (2026-10-16) */}
-            <div className="hidden lg:block rounded-2xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6 lg:p-7 text-left">
-              <h2 className="text-xl lg:text-2xl font-bold text-white leading-snug">Get B.Ed fee and admission details</h2>
-              <p className="mt-1 mb-5 text-sm text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
-              <EducationEnquiryForm sourcePage="home-hero" compact />
+            {/* White card, mockup #7 (user's pick 2026-10-22): the form's own 3-step strip replaces the
+                old sub-line, so the heading sits straight above it. */}
+            <div className="hidden lg:block rounded-[20px] bg-white shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-6 lg:p-7 text-left">
+              <h2 className="mb-4 text-xl lg:text-2xl font-bold text-[#032816] leading-snug">Get B.Ed fee and admission details</h2>
+              <EducationEnquiryForm sourcePage="home-hero" compact bare />
             </div>
 
             {/* Right Content - Video/Image Placeholder (phones and tablets) */}
