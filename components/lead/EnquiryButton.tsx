@@ -1,5 +1,5 @@
-// A button that opens the homepage enquiry modal, or — on any page without the modal — renders
-// the original jkkn.ai link unchanged. One component so Header, Hero and CTASection cannot drift.
+// A button that opens the enquiry modal (on every page since 2026-10-22), or — on a page rendered
+// without the modal provider — renders the original jkkn.ai link unchanged. One component so Header, Hero and CTASection cannot drift.
 
 "use client"
 

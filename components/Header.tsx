@@ -9,6 +9,9 @@ import EnquiryButton from '@/components/lead/EnquiryButton';
 
 const Header = () => {
   const pathname = usePathname();
+  // Homepage header leads keep their old CRM tag (education-home-header) so the before / after
+  // comparison still works; every other page is tagged education-header (same as Dental).
+  const headerSource = pathname === '/' ? 'home-header' : 'header';
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const admissionsSubRoutes = ['/fee-structure', '/scholarships'];
@@ -163,9 +166,11 @@ const Header = () => {
 
           {/* Apply Now Button */}
           <div className="hidden lg:flex lg:items-center lg:flex-shrink-0">
-            {/* Homepage only (2026-10-16): opens the 3-box enquiry form; other pages keep the Apply Now link */}
+            {/* Opens the 3-box enquiry form - on the homepage since 2026-10-16, on every page since
+                2026-10-22 (the modal provider now wraps all pages). The jkkn.ai link is only the
+                fallback for a page rendered without that provider. */}
             <EnquiryButton
-              sourcePage="home-header"
+              sourcePage={headerSource}
               fallbackHref={siteConfig.admissionFormUrl}
               fallbackLabel="Apply Now"
               className="px-6 py-2.5 font-bold text-white rounded-lg whitespace-nowrap bg-[#0B7845]"
@@ -177,7 +182,7 @@ const Header = () => {
           {/* Mobile Apply Now Button */}
           <div className="flex lg:hidden">
             <EnquiryButton
-              sourcePage="home-header"
+              sourcePage={headerSource}
               fallbackHref={siteConfig.admissionFormUrl}
               fallbackLabel="Apply Now"
               className="px-4 py-2 font-bold text-white rounded-lg text-sm whitespace-nowrap bg-[#0B7845]"
