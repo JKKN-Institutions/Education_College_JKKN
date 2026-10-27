@@ -14,7 +14,7 @@ import { siteConfig } from '@/lib/site-config';
 //  - 18 km: the user's Google Maps measurement from the shared Natarajapuram campus to Erode bus
 //    stand (18.4 km, locked 2026-09-21 for Dental and Pharmacy, confirmed for this campus 2026-09-30).
 //  - Rs 35,000 a year: the fee sheet row "EDUCATION B.ED - 35000", same figure as /fee-structure.
-//  - 100 seats, 14 subjects, recognised since 2016-17: public/pdf/NCTE-Approval.pdf and
+//  - 100 seats, 10 teaching subjects (TNTEU faculty return), recognised since 2016-17: public/pdf/NCTE-Approval.pdf and
 //    lib/admissions-data.ts.
 //  - Two admission routes: app/admissions/AdmissionRoutes.tsx.
 // By the user's decision 2026-09-30 no other Erode college is named, except the one
@@ -25,7 +25,7 @@ const PATH = '/b-ed-college-near-erode';
 
 export const metadata = seoMetadata(
   'B.Ed College near Erode, 18 km - JKKN College of Education',
-  'JKKN College of Education, Komarapalayam (Namakkal district) is about 18 km from Erode. NCTE recognised B.Ed, 14 subjects, Rs 35,000 a year. How to apply.',
+  'JKKN College of Education, Komarapalayam (Namakkal district) is about 18 km from Erode. NCTE recognised B.Ed, 10 subjects, Rs 35,000 a year. How to apply.',
   PATH,
   {
     absolute: true,
@@ -173,12 +173,12 @@ export default function BedCollegeNearErodePage() {
               A 2-year, 4-semester Bachelor of Education, recognised by the National Council for
               Teacher Education since the 2016-17 session and affiliated to Tamil Nadu Teachers
               Education University (TNTEU), Chennai. The NCTE sanctioned intake is 100 seats a year,
-              shared across 14 subject specialisations. You need a bachelor&apos;s degree with at
+              shared across 10 teaching subjects. You need a bachelor&apos;s degree with at
               least 50% marks (45% for reserved categories).
             </p>
             <div className="mt-3 flex flex-wrap gap-4 text-sm">
               <Link href="/departments" className="font-semibold text-[#006837] underline underline-offset-2">
-                The 14 subjects
+                The 10 teaching subjects
               </Link>
               <Link href="/admissions/computer-science" className="font-semibold text-[#006837] underline underline-offset-2">
                 B.Ed Computer Science

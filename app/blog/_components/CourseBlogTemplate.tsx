@@ -425,7 +425,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                   Ready to Become a {data.subject} Teacher?
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  Apply for B.Ed {data.subject} at JKKN College of Education — NCTE approved, TNTEU affiliated, 14 subjects within 100 seats a year, ₹35,000 a year (Management Quota).
+                  Apply for B.Ed {data.subject} at JKKN College of Education — NCTE approved, TNTEU affiliated, 10 teaching subjects within 100 seats a year, ₹35,000 a year (Management Quota).
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
                   <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=blog-components-courseblogtemplate" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006837] font-semibold px-6 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">

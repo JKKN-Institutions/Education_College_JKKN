@@ -699,7 +699,7 @@ export default function BlogDetailPage() {
                   ],
                   [
                     'Apply to the college',
-                    'online through the admission portal or at the admission office. Choose your B.Ed subject from the 14 specialisations.',
+                    'online through the admission portal or at the admission office. Choose your B.Ed subject from the 10 teaching subjects.',
                   ],
                   [
                     'Submit your documents',

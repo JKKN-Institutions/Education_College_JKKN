@@ -295,7 +295,7 @@ export default function TnteuBEdPage() {
             </h2>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-5">
               JKKN College of Education is NCTE-approved and affiliated to TNTEU, and runs the
-              two-year B.Ed across 14 subject specialisations. You can check the affiliated-college
+              two-year B.Ed across 10 teaching subjects. You can check the affiliated-college
               list on TNTEU&rsquo;s own site, linked above, rather than taking our word for it.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">

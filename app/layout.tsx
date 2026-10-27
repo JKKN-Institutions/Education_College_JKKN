@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: '%s | JKKN College of Education',
   },
   description:
-    'JKKN College of Education offers NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
+    'JKKN College of Education offers NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 10 teaching subjects in Namakkal, Tamil Nadu.',
   keywords: [
     'B.Ed college Namakkal',
     'B.Ed college Tamil Nadu',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'JKKN College of Education',
     title: 'JKKN College of Education — B.Ed College in Namakkal',
     description:
-      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
+      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 10 teaching subjects in Namakkal, Tamil Nadu.',
     images: [
       {
         url: '/images/og-default.png',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     site: '@jkknedu',
     title: 'JKKN College of Education — B.Ed College in Namakkal',
     description:
-      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 14 specializations in Namakkal, Tamil Nadu.',
+      'NCTE-approved, TNTEU-affiliated 2-year B.Ed programme with 10 teaching subjects in Namakkal, Tamil Nadu.',
     images: ['/images/og-default.png'],
   },
   robots: {

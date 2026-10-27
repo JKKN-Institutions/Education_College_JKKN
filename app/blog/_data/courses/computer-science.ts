@@ -4,7 +4,7 @@ import type { CourseBlogData } from '../course-blog-types';
 // ed-tech companies and private school chains, "50,000+ vacancies", "guaranteed recruitment",
 // "fastest-growing", "placement network" and "80+ schools". Claude was quoting this page as
 // "promotional, treat with caution". Facts kept are the ones published elsewhere on this site:
-// 100 seats across 14 subjects, Rs 35,000 a year (Management Quota), NCTE4593081, TNTEU code 36108,
+// 100 seats across 10 teaching subjects, Rs 35,000 a year (Management Quota), NCTE4593081, TNTEU code 36108,
 // the TNTEU count of 650 affiliated B.Ed colleges (read 2026-10-01), and the NCTE Regulations 2014
 // Appendix-4 eligibility (50%; B.E./B.Tech 55%).
 export const computerScienceBlogData: CourseBlogData = {
@@ -30,7 +30,7 @@ export const computerScienceBlogData: CourseBlogData = {
   wordCount: '1,800 words',
 
   quickAnswer:
-    'B.Ed Computer Science is a 2-year teacher training programme for graduates who want to teach computer science, coding and IT in schools. Eligibility: B.Sc. CS / BCA / B.Sc. IT or an equivalent degree with 50% marks (45% for reserved categories); B.E./B.Tech graduates need 55% under NCTE norms. To find a college, check it on the NCTE and TNTEU lists and confirm that Computer Science is one of its approved B.Ed subjects. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Computer Science as one of 14 subjects, with NCTE recognition and TNTEU affiliation.',
+    'B.Ed Computer Science is a 2-year teacher training programme for graduates who want to teach computer science, coding and IT in schools. Eligibility: B.Sc. CS / BCA / B.Sc. IT or an equivalent degree with 50% marks (45% for reserved categories); B.E./B.Tech graduates need 55% under NCTE norms. To find a college, check it on the NCTE and TNTEU lists and confirm that Computer Science is one of its approved B.Ed subjects. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Computer Science as one of 10 teaching subjects, with NCTE recognition and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -44,7 +44,7 @@ export const computerScienceBlogData: CourseBlogData = {
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: 'Supervised CS classroom and lab teaching, as NCTE norms require' },
-      { label: 'Seats at JKKN:', value: '100 B.Ed seats a year, shared across 14 subjects' },
+      { label: 'Seats at JKKN:', value: '100 B.Ed seats a year, shared across 10 teaching subjects' },
       { label: 'Fee at JKKN:', value: '₹35,000 a year (Management Quota)' },
       { label: 'Target Career:', value: 'Computer Science teacher (State Board / CBSE / ICSE), coding instructor, ed-tech educator' },
     ],
@@ -119,7 +119,7 @@ export const computerScienceBlogData: CourseBlogData = {
       },
       {
         title: 'B.Ed Computer Science at JKKN',
-        desc: 'JKKN College of Education, Komarapalayam (Namakkal district) offers Computer Science as one of 14 B.Ed subjects within 100 seats a year. Tuition is ₹35,000 a year (Management Quota). NCTE ID NCTE4593081, TNTEU code 36108. See <a href="/admissions/computer-science" class="text-[#006837] font-semibold underline">B.Ed Computer Science admission, fee and eligibility</a> and the <a href="/departments/computer-science" class="text-[#006837] font-semibold underline">Computer Science department</a>. Coming from nearby? <a href="/b-ed-college-near-erode" class="text-[#006837] font-semibold underline">Erode</a>, <a href="/b-ed-college-near-salem" class="text-[#006837] font-semibold underline">Salem</a>, <a href="/b-ed-colleges-in-namakkal-district" class="text-[#006837] font-semibold underline">Namakkal district</a>.',
+        desc: 'JKKN College of Education, Komarapalayam (Namakkal district) offers Computer Science as one of 10 B.Ed teaching subjects within 100 seats a year. Tuition is ₹35,000 a year (Management Quota). NCTE ID NCTE4593081, TNTEU code 36108. See <a href="/admissions/computer-science" class="text-[#006837] font-semibold underline">B.Ed Computer Science admission, fee and eligibility</a> and the <a href="/departments/computer-science" class="text-[#006837] font-semibold underline">Computer Science department</a>. Coming from nearby? <a href="/b-ed-college-near-erode" class="text-[#006837] font-semibold underline">Erode</a>, <a href="/b-ed-college-near-salem" class="text-[#006837] font-semibold underline">Salem</a>, <a href="/b-ed-colleges-in-namakkal-district" class="text-[#006837] font-semibold underline">Namakkal district</a>.',
       },
     ],
   },
@@ -178,7 +178,7 @@ export const computerScienceBlogData: CourseBlogData = {
       'JKKN College of Education offers B.Ed Computer Science as a regular, 2-year, face-to-face programme. These are the facts you can check:',
     points: [
       { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Recognised by NCTE as JKK Nattraja College of Education (NCTE ID NCTE4593081) and affiliated to TNTEU (college code 36108).' },
-      { title: '14 Subjects, 100 Seats', desc: 'Computer Science is one of 14 B.Ed subjects, within 100 B.Ed seats a year.' },
+      { title: '10 Teaching Subjects, 100 Seats', desc: 'Computer Science is one of 10 B.Ed teaching subjects, within 100 B.Ed seats a year.' },
       { title: '₹35,000 a Year', desc: 'Tuition is ₹35,000 a year under the Management Quota. Scholarships under Tamil Nadu government schemes apply to eligible students.' },
       { title: 'Apply Directly', desc: 'For self-financing seats you apply to the college directly; there is no state merit list to wait for.' },
       { title: 'Location', desc: 'Natarajapuram, Komarapalayam, in Namakkal district on NH-544, about 18 km from Erode.' },
@@ -193,7 +193,7 @@ export const computerScienceBlogData: CourseBlogData = {
     },
     {
       q: 'Which colleges offer B.Ed Computer Science in Tamil Nadu?',
-      a: 'No official list shows it by subject. TNTEU lists 650 affiliated B.Ed colleges, but not their subjects, so check a college on the NCTE and TNTEU lists and ask it in writing whether Computer Science is offered this year. JKKN College of Education, Komarapalayam offers B.Ed Computer Science as one of 14 subjects.',
+      a: 'No official list shows it by subject. TNTEU lists 650 affiliated B.Ed colleges, but not their subjects, so check a college on the NCTE and TNTEU lists and ask it in writing whether Computer Science is offered this year. JKKN College of Education, Komarapalayam offers B.Ed Computer Science as one of 10 teaching subjects.',
     },
     {
       q: 'Is B.Ed Computer Science a good career choice in 2026?',

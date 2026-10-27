@@ -224,7 +224,7 @@ export default async function CourseAdmissionPage({
                 { label: 'Medium', value: data.medium, detail: 'Bilingual instruction' },
                 { label: 'Affiliation', value: 'TNTEU', detail: data.affiliation },
                 { label: 'Approval', value: 'NCTE', detail: data.approval },
-                { label: 'Intake', value: `${data.totalSeats}`, detail: 'Total NCTE-sanctioned intake per year, shared across all 14 specializations' },
+                { label: 'Intake', value: `${data.totalSeats}`, detail: 'Total NCTE-sanctioned intake per year, shared across all 10 teaching subjects' },
               ].map((item) => (
                 <div key={item.label} className="p-4 sm:p-5 rounded-xl border-l-4 border-[#7cb983] bg-[#FBFBEE]">
                   <div className="text-xs font-semibold text-[#006837] mb-1">{item.label.toUpperCase()}</div>
@@ -664,7 +664,7 @@ export default async function CourseAdmissionPage({
                     Ready to join {data.fullName}?
                   </h2>
                   <p className="text-white/90 text-sm sm:text-base max-w-xl">
-                    NCTE-sanctioned intake is {data.totalSeats} students a year across all 14 specializations. Applications for the 2026-27 academic year are open now.
+                    NCTE-sanctioned intake is {data.totalSeats} students a year across all 10 teaching subjects. Applications for the 2026-27 academic year are open now.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">

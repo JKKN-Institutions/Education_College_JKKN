@@ -16,7 +16,7 @@ import { siteConfig } from '@/lib/site-config';
 //    the Pharmacy and Nursing sites (user decision 2026-10-01: reuse it).
 //  - 18 km from Sankagiri: Google Maps, Sankagiri New Bus Stand to JKKN College of Education,
 //    fastest route 17.5 km via NH 544, read 2026-10-01.
-//  - Rs 35,000, 100 seats, 14 subjects, two admission routes: same sources as /fee-structure and
+//  - Rs 35,000, 100 seats, 10 teaching subjects, two admission routes: same sources as /fee-structure and
 //    /admissions. By the user's decision no other Salem college is named and no TNTEU Salem list
 //    is shown (JKKN is not on it).
 
@@ -46,7 +46,7 @@ const checklist: { t: string; d: string; ours: string }[] = [
   {
     t: 'Your teaching subject',
     d: 'You can study only the pedagogy subjects the college offers, and your subject depends on your degree.',
-    ours: 'JKKN College of Education offers 14 subject specialisations.',
+    ours: 'JKKN College of Education runs 10 B.Ed teaching subjects.',
   },
   {
     t: 'The full two-year cost',
@@ -181,7 +181,7 @@ export default function BedCollegeNearSalemPage() {
                 TNTEU list for Namakkal district
               </Link>
               <Link href="/departments" className="font-semibold text-[#006837] underline underline-offset-2">
-                The 14 subjects
+                The 10 teaching subjects
               </Link>
               <Link href="/admissions/computer-science" className="font-semibold text-[#006837] underline underline-offset-2">
                 B.Ed Computer Science

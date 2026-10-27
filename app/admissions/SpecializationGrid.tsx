@@ -23,13 +23,13 @@ export default function SpecializationGrid() {
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-8 sm:mb-12">
           <span className="inline-block bg-[#7cb983] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
-            14 SPECIALIZATIONS
+            BY DEGREE SUBJECT
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-3 sm:mb-4 px-2">
             Course-Wise B.Ed Admission
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            Click any specialization to see course-specific eligibility, fees, application steps, and apply directly
+            JKKN runs 10 B.Ed teaching subjects. Under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science. Click your degree subject to see eligibility, fees, application steps, and apply directly
           </p>
         </div>
 

@@ -14,7 +14,7 @@ import { namakkalBedColleges, TNTEU_LIST_URL, TNTEU_LIST_READ_ON } from '@/lib/n
 //  - 62 km: Google Maps, Namakkal Bus Stand to JKKN College of Education, fastest route 61.9 km,
 //    read 2026-10-01 (the user asked for it to be measured rather than estimated).
 //  - 18 km to Erode: the user's Maps measurement, same campus as Dental and Pharmacy.
-//  - Rs 35,000 a year, 100 seats, 14 subjects, two admission routes: same sources as
+//  - Rs 35,000 a year, 100 seats, 10 teaching subjects, two admission routes: same sources as
 //    /fee-structure, /admissions and /b-ed-college-near-erode.
 //  - The list, 32 colleges and 3,500 seats: lib/namakkal-bed-colleges.ts.
 
@@ -52,7 +52,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'How many B.Ed seats does JKKN College of Education have?',
-    a: '100 NCTE sanctioned seats a year, shared across 14 subject specialisations, in a 2-year, 4-semester programme.',
+    a: '100 NCTE sanctioned seats a year, shared across 10 teaching subjects, in a 2-year, 4-semester programme.',
   },
   {
     q: 'Is there a government B.Ed college in Namakkal district?',
@@ -128,12 +128,12 @@ export default function BedCollegesNamakkalDistrictPage() {
             <p className="text-sm text-gray-700 leading-relaxed">
               A 2-year, 4-semester Bachelor of Education, recognised by the National Council for
               Teacher Education since the 2016-17 session and affiliated to TNTEU, Chennai. The
-              sanctioned intake is 100 seats a year across 14 subject specialisations. You need a
+              sanctioned intake is 100 seats a year across 10 teaching subjects. You need a
               bachelor&apos;s degree with at least 50% marks (45% for reserved categories).
             </p>
             <div className="mt-3 flex flex-wrap gap-4 text-sm">
               <Link href="/departments" className="font-semibold text-[#006837] underline underline-offset-2">
-                The 14 subjects
+                The 10 teaching subjects
               </Link>
               <Link href="/admissions/computer-science" className="font-semibold text-[#006837] underline underline-offset-2">
                 B.Ed Computer Science

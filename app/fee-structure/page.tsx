@@ -192,7 +192,7 @@ export default function FeeStructurePage() {
           <section className="mt-10 text-center">
             <p className="text-sm text-gray-700 mb-4">
               Fees are one part of the decision. The admission page covers eligibility, the
-              process and the 14 subject specialisations.
+              process and the 10 teaching subjects.
             </p>
             <Link
               href="/admissions"

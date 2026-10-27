@@ -170,7 +170,7 @@ export async function GET() {
           h2('Admission Process 2026'),
           p('There are two routes (see above). For a JKKN self-financing seat, these are the steps:'),
           p("1. Complete your Bachelor's degree \u2014 with minimum 50% aggregate marks (45% for reserved categories) in a relevant subject from a recognized university."),
-          p('2. Apply to the college \u2014 online through the admission portal or at the admission office. Choose your B.Ed subject from the 14 specialisations.'),
+          p('2. Apply to the college \u2014 online through the admission portal or at the admission office. Choose your B.Ed subject from the 10 teaching subjects.'),
           p('3. Submit your documents \u2014 including qualifying degree mark sheets, transfer certificate, community certificate (if applicable), and passport-size photographs.'),
           p('4. Confirm your admission \u2014 by paying the fee (\u20b935,000 a year tuition, Management Quota) and choosing hostel or transport if you need them.'),
           p('5. Begin your B.Ed programme \u2014 when the academic year starts under the TNTEU calendar. For a government-quota seat, follow the state counselling notification instead.'),

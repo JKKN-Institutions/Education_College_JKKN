@@ -90,7 +90,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'Does JKKN College of Education offer distance, part-time or special B.Ed?',
-    a: 'No. JKKN College of Education runs only the regular two-year B.Ed, face to face, at Komarapalayam in Namakkal district, with 14 subject specialisations and 100 NCTE-sanctioned seats a year.',
+    a: 'No. JKKN College of Education runs only the regular two-year B.Ed, face to face, at Komarapalayam in Namakkal district, with 10 teaching subjects and 100 NCTE-sanctioned seats a year.',
   },
 ];
 

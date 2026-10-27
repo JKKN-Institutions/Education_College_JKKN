@@ -23,7 +23,7 @@ export const allFaqs: FaqItem[] = [
   {
     category: 'admission',
     question: 'What is the counselling process for B.Ed admission?',
-    answer: 'Counselling applies to government-quota seats: candidates apply under the Tamil Nadu B.Ed admission notification, and seats are allotted on merit, category and availability. JKKN self-financing seats have no counselling: you apply to the college, choose your B.Ed subject from 14 specialisations, and confirm admission by paying the fee.',
+    answer: 'Counselling applies to government-quota seats: candidates apply under the Tamil Nadu B.Ed admission notification, and seats are allotted on merit, category and availability. JKKN self-financing seats have no counselling: you apply to the college, choose your B.Ed subject from 10 teaching subjects, and confirm admission by paying the fee.',
   },
   {
     category: 'admission',
@@ -48,7 +48,7 @@ export const allFaqs: FaqItem[] = [
   {
     category: 'program',
     question: 'How many B.Ed specializations are offered?',
-    answer: 'JKKN College of Education offers 14 B.Ed specializations: Tamil, English, Mathematics, Physics, Chemistry, Botany, Zoology, Microbiology, Commerce, Economics, History, Political Science, Social Science, and Computer Science.',
+    answer: 'JKKN College of Education runs 10 B.Ed teaching subjects: Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science. Under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.',
   },
   {
     category: 'fees',

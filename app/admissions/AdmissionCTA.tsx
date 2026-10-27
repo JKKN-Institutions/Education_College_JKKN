@@ -12,7 +12,7 @@ export default function AdmissionCTA() {
                 Ready to Begin Your Teaching Career?
               </h2>
               <p className="text-white/90 text-sm sm:text-base max-w-xl">
-                Applications for the 2026-27 academic session are now open. Limited seats available across 14 specializations — apply early to secure your preferred subject.
+                Applications for the 2026-27 academic session are now open. Limited seats available across 10 teaching subjects — apply early to secure your preferred subject.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-shrink-0">

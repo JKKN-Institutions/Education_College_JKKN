@@ -36,7 +36,7 @@ import { ADMISSION_DATE_SOURCES } from '@/lib/admissions-data'
 
 export const metadata = seoMetadata(
   '1-Year B.Ed in Tamil Nadu 2026 - What Is Confirmed and What Is Not',
-  'Is there a one-year B.Ed in Tamil Nadu for 2026? JKKN College of Education runs the two-year B.Ed with 14 specialisations. We do not publish a one-year start date or eligibility rule until the official notification exists - here is where it will appear.',
+  'Is there a one-year B.Ed in Tamil Nadu for 2026? JKKN College of Education runs the two-year B.Ed with 10 teaching subjects. We do not publish a one-year start date or eligibility rule until the official notification exists - here is where it will appear.',
   '/blog/b-ed-one-year-2026',
   {
     keywords: [
@@ -51,7 +51,7 @@ export const metadata = seoMetadata(
   },
 )
 
-// The 14 specialisations JKKN actually runs. Every slug below is a live page in sitemap.xml,
+// The 14 degree-subject pages (10 teaching subjects - see the G.O. mapping in the text). Every slug below is a live page in sitemap.xml,
 // checked 2026-08-26 - this is our own offering, not a third-party claim.
 const SPECIALISATIONS = [
   { slug: 'tamil', name: 'Tamil' },
@@ -89,7 +89,7 @@ const ROUTES = [
 const FAQS = [
   {
     q: 'Does JKKN College of Education offer a 1-year B.Ed?',
-    a: 'No. JKKN College of Education offers the two-year B.Ed, across 14 subject specialisations, NCTE-approved and affiliated to Tamil Nadu Teachers Education University. That is the programme you can apply to today.',
+    a: 'No. JKKN College of Education offers the two-year B.Ed, across 10 teaching subjects, NCTE-approved and affiliated to Tamil Nadu Teachers Education University. That is the programme you can apply to today.',
   },
   {
     q: 'Will the B.Ed become a 1-year course from 2026?',
@@ -105,7 +105,7 @@ const FAQS = [
   },
   {
     q: 'What B.Ed can I actually apply for at JKKN right now?',
-    a: 'The two-year B.Ed, in any of 14 specialisations including Tamil, English, Mathematics, Physics, Chemistry, Biology, History, Economics, Commerce, Computer Science and Political Science. Self-financing seats are open now and you apply to the college directly.',
+    a: 'The two-year B.Ed, in any of its 10 teaching subjects: Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science. Self-financing seats are open now and you apply to the college directly.',
   },
 ]
 
@@ -175,7 +175,7 @@ export default function OneYearBEdPage() {
             </p>
             <ul className="space-y-3">
               {[
-                'The two-year B.Ed, in 14 subject specialisations',
+                'The two-year B.Ed, in 10 teaching subjects',
                 'NCTE-approved',
                 'Affiliated to Tamil Nadu Teachers Education University (TNTEU), which awards the degree',
                 'Self-financing seats are open now - you apply to the college directly, with no state merit list to wait for',
@@ -197,16 +197,16 @@ export default function OneYearBEdPage() {
           </div>
         </section>
 
-        {/* The 14 specialisations - the practical answer to "so what CAN I apply for" */}
+        {/* The subject pages - the practical answer to "so what CAN I apply for" */}
         <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#006837] mb-3">
-              The 14 Subjects You Can Take
+              B.Ed Subjects by Degree
             </h2>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
               Your B.Ed subject decides which classes you are qualified to teach afterwards, so it
               matters more than most applicants expect. Each page below covers what that
-              specialisation involves and who it suits.
+              subject involves and who it suits. JKKN runs 10 teaching subjects; under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {SPECIALISATIONS.map((s) => (

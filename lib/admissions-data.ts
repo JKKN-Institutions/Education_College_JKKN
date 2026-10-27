@@ -1,5 +1,5 @@
 /**
- * Static admission data for all 14 B.Ed specialization courses
+ * Static admission data for the 14 B.Ed degree-subject pages (10 teaching subjects)
  * offered at JKKN College of Education.
  *
  * Used by /admission/[course]/page.tsx (course-wise admission pages).
@@ -285,7 +285,8 @@ export const SELECTION_CRITERIA = [
 //  - NCTE continuation-of-recognition order (public/pdf/NCTE-Approval.pdf): B.Ed recognised
 //    from academic session 2016-17 for "2 basic units of 100 students" annual intake.
 //  - TNTEU faculty return (public/pdf/Faculty-Details.pdf): 16 staff listed.
-//  - 14 specialisations: the site's own B.Ed OfferingCatalog and department pages.
+//  - 10 teaching subjects: the TNTEU faculty return (public/pdf/Faculty-Details.pdf) and the enquiry
+//    form's CRM programme list; the 14 pages are degree subjects (G.O.(D) No.144, 18-06-2026).
 // Removed for having no source at all: '98%' Placement Rate, '5000+' Successful Alumni
 // Educators. Removed as refuted by the NCTE order: '700+' B.Ed Seats per Year (sanctioned
 // intake is 100, a 7x overstatement) and '36+' Years of Educational Excellence (this college
@@ -295,7 +296,7 @@ export const SELECTION_CRITERIA = [
 export const TRUST_SIGNALS = [
   { metric: '2016', label: 'NCTE Recognised Since' },
   { metric: '100', label: 'NCTE Sanctioned Intake per Year' },
-  { metric: '14', label: 'B.Ed Subject Specializations' },
+  { metric: '10', label: 'B.Ed Teaching Subjects' },
   { metric: '16', label: 'Faculty and Staff' },
 ];
 

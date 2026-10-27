@@ -34,7 +34,7 @@ import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 // its own query buys a bounce, not an admission. Add the date block when the office confirms.
 export const metadata = seoMetadata(
     'B.Ed Admission & Counselling 2026 Tamil Nadu - JKKN College',
-    'B.Ed admission & counselling 2026-27 in Tamil Nadu at JKKN College of Education, Namakkal. Eligibility, fees, 14 specializations. NCTE approved, TNTEU affiliated.',
+    'B.Ed admission & counselling 2026-27 in Tamil Nadu at JKKN College of Education, Namakkal. Eligibility, fees, 10 subjects. NCTE approved, TNTEU affiliated.',
   '/admissions',
   {
     absolute: true,
@@ -98,7 +98,7 @@ const faqSchema = {
       name: 'What is the counselling process for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Counselling applies to government-quota seats: candidates apply under the Tamil Nadu B.Ed admission notification, and seats are allotted on merit, category and availability. JKKN self-financing seats have no counselling: you apply to the college, choose your B.Ed subject from 14 specialisations, and confirm admission by paying the fee.',
+        text: 'Counselling applies to government-quota seats: candidates apply under the Tamil Nadu B.Ed admission notification, and seats are allotted on merit, category and availability. JKKN self-financing seats have no counselling: you apply to the college, choose your B.Ed subject from 10 teaching subjects, and confirm admission by paying the fee.',
       },
     },
     {

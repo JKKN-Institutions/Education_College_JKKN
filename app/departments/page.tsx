@@ -7,11 +7,11 @@ import { JsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Departments',
-  description: 'Explore all 14 B.Ed specialization departments at JKKN College of Education — Tamil, English, Maths, Science, Commerce, and more. NCTE approved, TNTEU affiliated, Namakkal.',
+  description: 'Explore the B.Ed subject departments at JKKN College of Education — 10 teaching subjects, Tamil to Computer Science. NCTE approved, TNTEU affiliated, Namakkal.',
   alternates: { canonical: 'https://edu.jkkn.ac.in/departments' },
   openGraph: {
     title: 'B.Ed Departments | JKKN College of Education',
-    description: 'Explore all 14 B.Ed specialization departments at JKKN College of Education, Namakkal.',
+    description: 'Explore the B.Ed subject departments at JKKN College of Education, Namakkal: 10 teaching subjects.',
     url: 'https://edu.jkkn.ac.in/departments',
   },
 };
@@ -44,7 +44,7 @@ export default function DepartmentsPage() {
         '@context': 'https://schema.org',
         '@type': 'ItemList',
         name: 'B.Ed Programmes at JKKN College of Education',
-        description: 'All 14 B.Ed specialization courses offered at JKKN College of Education, Namakkal.',
+        description: 'B.Ed subject departments at JKKN College of Education, Namakkal, by degree subject.',
         itemListElement: departments.map((d, i) => ({
           '@type': 'ListItem',
           position: i + 1,
@@ -60,7 +60,7 @@ export default function DepartmentsPage() {
             DEPARTMENTS
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 sm:mb-12 max-w-3xl">
-            JKKN College of Education offers 14 B.Ed specializations under NCTE approval and TNTEU affiliation. Choose your teaching subject and begin your journey as an educator.
+            JKKN College of Education runs 10 B.Ed teaching subjects under NCTE approval and TNTEU affiliation. The departments below are by degree subject. Under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">

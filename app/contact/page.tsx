@@ -25,7 +25,7 @@ export default function Contact() {
         "@type": "LocalBusiness",
         "@id": "https://edu.jkkn.ac.in/#localbusiness",
         "name": "JKKN College of Education",
-        "description": "NCTE-approved, TNTEU-affiliated B.Ed college offering 14 specializations in Namakkal, Tamil Nadu.",
+        "description": "NCTE-approved, TNTEU-affiliated B.Ed college offering 10 teaching subjects in Namakkal, Tamil Nadu.",
         "url": "https://edu.jkkn.ac.in",
         "telephone": "+919345855001",
         "email": "education@jkkn.ac.in",

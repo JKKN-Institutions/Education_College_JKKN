@@ -4,17 +4,6 @@ export default function PlacementHighlights() {
     { value: 'CTET / TET', label: 'Exams You Can Appear For' },
   ]
 
-  const recruiters = [
-    'Kendriya Vidyalaya Sangathan (KVS)',
-    'Navodaya Vidyalaya Samiti (NVS)',
-    'DAV Schools',
-    'Delhi Public School (DPS)',
-    'CBSE Affiliated Schools',
-    'State Government Schools',
-    'International Schools',
-    'Private School Chains',
-  ]
-
   return (
     <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#002309] to-[#006837]">
       <div className="mx-auto max-w-7xl">
@@ -26,7 +15,7 @@ export default function PlacementHighlights() {
             Placement Highlights
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-white/80 max-w-3xl mx-auto px-2">
-            Our graduates are placed in top schools and educational institutions across India
+            What a B.Ed from an NCTE-recognised college qualifies you for
           </p>
         </div>
 
@@ -38,18 +27,6 @@ export default function PlacementHighlights() {
               <div className="text-xs sm:text-sm text-white/80">{stat.label}</div>
             </div>
           ))}
-        </div>
-
-        {/* Top Recruiters */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
-          <h3 className="text-xl sm:text-2xl font-bold text-white text-center mb-4 sm:mb-6">Top Recruiting Partners</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            {recruiters.map((recruiter, idx) => (
-              <div key={idx} className="bg-white/10 rounded-lg p-3 sm:p-4 text-center">
-                <p className="text-xs sm:text-sm text-white font-medium">{recruiter}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

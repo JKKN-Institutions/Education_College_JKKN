@@ -33,7 +33,7 @@ export default function AdmissionHero() {
             </h2>
 
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 lg:mb-12" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-              Begin your journey to become a skilled educator. Our NCTE-approved, TNTEU-affiliated B.Ed program offers 14 specializations with modern teaching methodologies, practical training, and placement support.
+              Begin your journey to become a skilled educator. Our NCTE-approved, TNTEU-affiliated B.Ed program offers 10 teaching subjects with modern teaching methodologies, practical training, and placement support.
             </p>
 
             {/* Stats Grid */}

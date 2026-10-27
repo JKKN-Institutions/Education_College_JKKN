@@ -890,7 +890,7 @@ export default function PoliticalScienceDepartment() {
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Government-regulated fees with multiple scholarship options ensuring quality teacher education accessible to all deserving candidates from diverse backgrounds.
+                Management-quota tuition of ₹35,000 a year, with scholarship options for eligible candidates.
               </p>
             </div>
           </div>

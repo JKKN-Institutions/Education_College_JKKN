@@ -13,7 +13,7 @@ export default function FeeStructure() {
             Fee Structure & Scholarships
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            Quality education at government-regulated fees with scholarship support
+            Management-quota fee ₹35,000 a year, with scholarship support
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function FeeStructure() {
 
                   The figure: JKKN's own course fee sheet reads "EDUCATION B.ED - 35000" - the
                   dash is the GQ column, 35000 is the MQ column. Corroborated on three other live
-                  surfaces: /fee-structure prints 35,000 fourteen times, all 14
+                  surfaces: /fee-structure prints 35,000 fourteen times, all 14 degree-subject rows
                   /admissions/<subject> pages print 35,000 from FEE_STRUCTURE, and
                   config/official-fees.md records "B.Ed Rs 35,000 (MQ)". The 40,000-80,000 was
                   traced to a MARKET COMPARISON TABLE in /blog/b-ed-complete-guide-2026, where it
@@ -76,7 +76,7 @@ export default function FeeStructure() {
               href="/fee-structure"
               className="inline-block mt-4 text-sm font-semibold text-[#006837] underline underline-offset-2"
             >
-              Full fee table, all 14 subjects
+              Full fee table, every subject
             </Link>
           </div>
 

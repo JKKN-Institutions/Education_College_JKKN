@@ -959,7 +959,7 @@ export default function MicrobiologyDepartment() {
                     Affordable Quality Education
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Government-regulated fees with multiple scholarship options ensuring quality teacher education accessible to all deserving candidates.
+                    Management-quota tuition of ₹35,000 a year, with scholarship options for eligible candidates.
                   </p>
                 </div>
               </div>
