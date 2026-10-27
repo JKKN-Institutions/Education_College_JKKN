@@ -15,12 +15,12 @@ import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
 export const metadata: Metadata = {
   title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
   description:
-    'NCTE approved, TNTEU affiliated B.Ed college in Namakkal, Tamil Nadu. 14 specializations, TNTEU affiliated. 2-year B.Ed programme. Admissions 2026 open.',
+    'NCTE recognised, TNTEU affiliated B.Ed college at Komarapalayam, Namakkal: 100 seats, 10 teaching subjects, ₹35,000 a year tuition. Admissions 2026-27.',
   alternates: { canonical: 'https://edu.jkkn.ac.in' },
   openGraph: {
     title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
     description:
-      'NCTE approved, TNTEU affiliated B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+      'NCTE recognised, TNTEU affiliated B.Ed college in Namakkal district: 100 seats, 10 teaching subjects, ₹35,000 a year. Admissions 2026-27.',
     url: 'https://edu.jkkn.ac.in',
     type: 'website',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'JKKN College of Education | NCTE Approved B.Ed College Namakkal',
     description:
-      'NCTE approved, TNTEU affiliated B.Ed college with 14 specializations in Namakkal, Tamil Nadu. TNTEU affiliated. Admissions 2026.',
+      'NCTE recognised, TNTEU affiliated B.Ed college in Namakkal district: 100 seats, 10 teaching subjects, ₹35,000 a year. Admissions 2026-27.',
     images: ['https://edu.jkkn.ac.in/images/og-default.png'],
   },
 };
@@ -82,12 +82,14 @@ export default async function Home() {
           '@type': ['EducationalOrganization', 'CollegeOrUniversity'],
           '@id': 'https://edu.jkkn.ac.in/#organization',
           name: 'JKKN College of Education',
-          alternateName: 'J.K.K. Nattraja College of Education',
+          // The second spelling is the name on the NCTE and TNTEU lists (read 2026-10-01), so a reader or
+          // an answer engine checking those lists can join it to this site.
+          alternateName: ['J.K.K. Nattraja College of Education', 'JKK Nattraja College of Education'],
           url: 'https://edu.jkkn.ac.in',
           logo: 'https://edu.jkkn.ac.in/images/logo.png',
           image: 'https://edu.jkkn.ac.in/images/og-default.png',
           description:
-            'JKKN College of Education is an NCTE-approved B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 14 subject specializations in Komarapalayam, Namakkal District, Tamil Nadu.',
+            'JKKN College of Education is an NCTE-approved B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 10 teaching subjects in Komarapalayam, Namakkal District, Tamil Nadu.',
           telephone: '+919345855001',
           email: 'education@jkkn.ac.in',
           address: {
@@ -125,20 +127,16 @@ export default async function Home() {
             '@type': 'OfferingCatalog',
             name: 'B.Ed Programmes',
             itemListElement: [
-              { '@type': 'Course', name: 'B.Ed Tamil', description: 'Bachelor of Education specializing in Tamil language teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed English', description: 'Bachelor of Education specializing in English language teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Mathematics', description: 'Bachelor of Education specializing in Mathematics teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Physics', description: 'Bachelor of Education specializing in Physics teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Chemistry', description: 'Bachelor of Education specializing in Chemistry teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Botany', description: 'Bachelor of Education specializing in Botany teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Zoology', description: 'Bachelor of Education specializing in Zoology teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed History', description: 'Bachelor of Education specializing in History teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Economics', description: 'Bachelor of Education specializing in Economics teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Commerce', description: 'Bachelor of Education specializing in Commerce teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Computer Science', description: 'Bachelor of Education specializing in Computer Science teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Political Science', description: 'Bachelor of Education specializing in Political Science teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Social Science', description: 'Bachelor of Education specializing in Social Science teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
-              { '@type': 'Course', name: 'B.Ed Microbiology', description: 'Bachelor of Education specializing in Microbiology teaching methodology', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Tamil', description: 'Bachelor of Education with Tamil as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed English', description: 'Bachelor of Education with English as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Mathematics', description: 'Bachelor of Education with Mathematics as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Physical Science', description: 'Bachelor of Education with Physical Science as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Biological Science', description: 'Bachelor of Education with Biological Science as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Social Science', description: 'Bachelor of Education with Social Science as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed History', description: 'Bachelor of Education with History as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Economics', description: 'Bachelor of Education with Economics as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Commerce and Accountancy', description: 'Bachelor of Education with Commerce and Accountancy as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
+              { '@type': 'Course', name: 'B.Ed Computer Science', description: 'Bachelor of Education with Computer Science as the teaching subject', provider: { '@id': 'https://edu.jkkn.ac.in/#organization' }, educationalCredentialAwarded: 'Bachelor of Education (B.Ed)', timeRequired: 'P2Y', courseMode: 'full-time' },
             ],
           },
           foundingDate: '2016',
@@ -232,6 +230,30 @@ export default async function Home() {
               acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'JKKN College of Education is a B.Ed college in Namakkal district, at Natarajapuram, Komarapalayam, on NH-544 (the Salem to Coimbatore highway). It is not in Erode district; it is about 18 km from Erode by road, and many Learners come from the Erode and Bhavani side.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is JKKN College of Education NCTE approved and TNTEU affiliated?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. The NCTE list for Tamil Nadu shows it as JKK Nattraja College of Education, Institute ID NCTE4593081, B.Ed with an intake of 100, with orders dated 2 May 2016 and 15 April 2021. Tamil Nadu Teachers Education University lists it in Namakkal district under college code 36108.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can I apply for B.Ed at JKKN without waiting for the government B.Ed counselling?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Government and government-aided colleges admit through the Tamil Nadu government\'s B.Ed process, but self-financing seats at JKKN College of Education are applied for directly at the college. You can keep a JKKN application open while the government process runs. Tuition is ₹35,000 a year under the management quota.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Which teaching subjects can I choose for B.Ed at JKKN?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'JKKN College of Education runs 10 B.Ed teaching subjects: Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science. Under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.',
               },
             },
           ],
@@ -366,7 +388,10 @@ export default async function Home() {
               </div>
 
               <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 leading-relaxed">
-                Join our 2-Year B.Ed Programme and become a certified Learning Facilitator equipped with modern pedagogical skills, innovative teaching methodologies, and a commitment to shaping future generations.
+                JKKN College of Education, registered as JKK Nattraja College of Education, is an
+                NCTE-recognised B.Ed college at Komarapalayam, Namakkal district (NCTE Institute ID
+                NCTE4593081; TNTEU college code 36108). It has 100 B.Ed seats a year across 10 teaching
+                subjects, and management-quota tuition is ₹35,000 a year.
               </p>
               <p className="text-sm sm:text-base mb-6 sm:mb-8 text-white/80 leading-relaxed">
                 A{' '}
@@ -392,8 +417,8 @@ export default async function Home() {
                   <div className="text-xs sm:text-sm text-white/80">NCTE Recognised Since</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">14</div>
-                  <div className="text-xs sm:text-sm text-white/80">Specializations</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">10</div>
+                  <div className="text-xs sm:text-sm text-white/80">Teaching Subjects</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
                   <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">100</div>
@@ -498,7 +523,7 @@ export default async function Home() {
                 </div>
                 <div className="min-w-0">
                   <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">DEPARTMENTS</div>
-                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#006837]">14 Specializations</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#006837]">10 Teaching Subjects</div>
                 </div>
               </div>
 
@@ -530,6 +555,34 @@ export default async function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* S6 draft #7, Change B (2026-10-27). Every line has a public source:
+          NCTE + TNTEU rows: the NCTE SRC list and the TNTEU affiliated-colleges list, read 2026-10-01
+          (see /ncte-approved-b-ed-colleges-tamil-nadu). Fee: the JKKN course fee sheet (see /fee-structure).
+          Subjects: the college's TNTEU faculty return (public/pdf/Faculty-Details.pdf) and the enquiry
+          form's programme list. The Physical / Biological Science mapping: G.O.(D) No.144, Higher
+          Education Department, 18-06-2026 (B.Ed admission guidelines 2026-27). No eligibility line on
+          purpose: the site's eligibility text and that G.O. differ, and the office has not decided yet. */}
+      <section id="recognition" className="py-8 sm:py-10 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="mx-auto max-w-4xl rounded-xl border border-gray-200 border-l-4 border-l-[#006837] bg-[#FBFBEE] p-5 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-4">Recognition, Seats and Fees at a Glance</h2>
+          <ul className="space-y-2 text-sm sm:text-base text-gray-700 leading-relaxed">
+            <li><span className="font-semibold text-[#006837]">NCTE:</span> JKK Nattraja College of Education, Institute ID NCTE4593081, B.Ed intake 100; orders dated 2 May 2016 (session 2016-2017) and 15 April 2021 (session 2021-2022).</li>
+            <li><span className="font-semibold text-[#006837]">TNTEU:</span> Namakkal district, college code 36108, intake 100.</li>
+            <li><span className="font-semibold text-[#006837]">Fee:</span> ₹35,000 a year tuition under the management quota; government-quota fees follow Tamil Nadu government norms.</li>
+            <li><span className="font-semibold text-[#006837]">Teaching subjects (10):</span> Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science.</li>
+            <li><span className="font-semibold text-[#006837]">Staff:</span> 16 teaching and other staff, including the principal, on the college&apos;s TNTEU faculty return.</li>
+            <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district, about 18 km from Erode.</li>
+          </ul>
+          <p className="mt-4 text-xs text-gray-500 leading-relaxed">
+            Sources: NCTE and TNTEU lists, read 1 October 2026 (see{' '}
+            <Link href="/ncte-approved-b-ed-colleges-tamil-nadu" className="text-[#006837] font-semibold underline underline-offset-2">our NCTE page</Link>
+            ); fee from the JKKN fee sheet (see{' '}
+            <Link href="/fee-structure" className="text-[#006837] font-semibold underline underline-offset-2">fee structure</Link>
+            ); subjects and staff from the college&apos;s TNTEU faculty return.
+          </p>
         </div>
       </section>
 
@@ -627,7 +680,7 @@ export default async function Home() {
               Our Departments
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-              Choose from 14 specialized B.Ed programmes designed to match your academic background and career aspirations
+              JKKN runs 10 B.Ed teaching subjects. The cards below are by degree: under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.
             </p>
           </div>
 
@@ -1446,11 +1499,7 @@ export default async function Home() {
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
-                <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">16</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Faculty and Staff</div>
-                </div>
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:gap-4">
                 <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
                   <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#7cb983] mb-1 sm:mb-2">TGT / PGT</div>
                   <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Roles You Qualify For</div>
@@ -1504,22 +1553,6 @@ export default async function Home() {
                 Join e-learning platforms as content creators, online tutors, or instructional designers.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Recruiting Partners */}
-      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#006837] text-center mb-6 sm:mb-8 lg:mb-12">
-            Our Recruiting Partners
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
-            {['KVS', 'NVS', 'DAV', 'DPS', 'CBSE Schools', 'State Govt'].map((partner, idx) => (
-              <div key={idx} className="bg-white rounded-lg p-4 sm:p-6 lg:p-8 shadow-sm border border-gray-200 flex items-center justify-center">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 text-center">{partner}</h3>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -1685,6 +1718,42 @@ export default async function Home() {
                 <Link href="/b-ed-college-near-erode" className="font-semibold text-[#006837] underline underline-offset-2">
                   B.Ed for applicants near Erode
                 </Link>
+              </div>
+            </details>
+
+            {/* S6 draft #7, Change D (2026-10-27). Text identical to the FAQPage JSON-LD entry above. */}
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="font-semibold text-[#006837]">Is JKKN College of Education NCTE approved and TNTEU affiliated?</span>
+                <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="mt-4 text-gray-600 text-sm leading-relaxed">
+                Yes. The NCTE list for Tamil Nadu shows it as JKK Nattraja College of Education, Institute ID NCTE4593081, B.Ed with an intake of 100, with orders dated 2 May 2016 and 15 April 2021. Tamil Nadu Teachers Education University lists it in Namakkal district under college code 36108.
+                <p className="mt-2 text-xs text-[#006837]">Also asked: JKKN B.Ed college NCTE approved ah?</p>
+              </div>
+            </details>
+
+            {/* S6 draft #7, Change D (2026-10-27). Text identical to the FAQPage JSON-LD entry above. */}
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="font-semibold text-[#006837]">Can I apply for B.Ed at JKKN without waiting for the government B.Ed counselling?</span>
+                <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="mt-4 text-gray-600 text-sm leading-relaxed">
+                Yes. Government and government-aided colleges admit through the Tamil Nadu government&apos;s B.Ed process, but self-financing seats at JKKN College of Education are applied for directly at the college. You can keep a JKKN application open while the government process runs. Tuition is ₹35,000 a year under the management quota.
+                <p className="mt-2 text-xs text-[#006837]">Also asked: Government counselling ku wait pannaama JKKN B.Ed ku apply pannalaama?</p>
+              </div>
+            </details>
+
+            {/* S6 draft #7, Change D (2026-10-27). Text identical to the FAQPage JSON-LD entry above. */}
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="font-semibold text-[#006837]">Which teaching subjects can I choose for B.Ed at JKKN?</span>
+                <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="mt-4 text-gray-600 text-sm leading-relaxed">
+                JKKN College of Education runs 10 B.Ed teaching subjects: Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science. Under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.
+                <p className="mt-2 text-xs text-[#006837]">Also asked: JKKN B.Ed la endha subjects irukku?</p>
               </div>
             </details>
           </div>
