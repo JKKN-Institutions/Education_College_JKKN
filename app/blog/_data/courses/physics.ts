@@ -80,7 +80,7 @@ export const physicsBlogData: CourseBlogData = {
       { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates of any branch with 55% marks are eligible; only 5% of the Physical Science seats are for them' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (Physics) must match your UG specialization. A pure B.A. or B.Com graduate cannot opt for B.Ed Physics. B.E./B.Tech graduates of any branch qualify with 55% marks; for any other degree, contact JKKN admissions at +91 9345855001 for eligibility confirmation.',

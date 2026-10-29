@@ -1309,7 +1309,7 @@ export default function ComputerScienceDepartment() {
                       Counseling Process
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Attend the counseling session conducted by TNTEU or the college for seat allocation based on merit.
+                      Seats are allotted by the college in merit order; the college announces its dates on this website.
                     </p>
                   </div>
                 </div>

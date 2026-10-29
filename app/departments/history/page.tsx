@@ -1084,7 +1084,7 @@ export default function HistoryDepartment() {
                     Online Application
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Complete the online application form on our official website or TNTEU portal. Upload required documents and pay the application fee.
+                    Complete the online application form on our official website. Upload required documents and pay the application fee.
                   </p>
                 </div>
               </div>

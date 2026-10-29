@@ -79,7 +79,7 @@ export const microbiologyBlogData: CourseBlogData = {
       { criteria: 'Allied UG Combinations', requirement: 'Government-listed Biological Science equivalents only: Micro-Biology, Advanced Zoology and Bio-Technology, Plant Biology and Plant Bio-Technology, Environmental Science; B.E./B.Tech in a Bio-Technology related branch (55%, only 5% of seats). Any other degree needs a Government order of equivalence' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (minimum or maximum)' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (Microbiology/Biology) must match your UG specialization. A B.A. or B.Com graduate cannot opt for B.Ed Microbiology. Pure Botany or Zoology graduates should opt for their respective B.Ed specializations.',

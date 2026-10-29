@@ -391,7 +391,7 @@ export default function BlogDetailPage() {
                       ['Entrance Exam', 'No entrance exam — admission based on merit in qualifying degree'],
                       ['Age', 'No upper age limit for B.Ed admission in Tamil Nadu'],
                       ['Nationality', 'Indian citizens and NRI candidates'],
-                      ['Domicile', 'Tamil Nadu domicile preferred for state quota seats'],
+                      ['Domicile', 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)'],
                     ].map(([criteria, req], i) => (
                       <tr key={i} className="border-b border-gray-100 last:border-0">
                         <td className="px-4 py-3 text-gray-700 font-medium">{criteria}</td>

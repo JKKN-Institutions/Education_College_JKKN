@@ -79,7 +79,7 @@ export const mathematicsBlogData: CourseBlogData = {
       { criteria: 'Engineering Graduates', requirement: 'B.E. / B.Tech graduates of any branch with 55% marks are eligible; only 5% of the Mathematics seats are for them' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
       { criteria: 'Merit Weightage', requirement: 'No aptitude test — a P.G. in Mathematics adds 4 marks, M.Phil 5, Ph.D 6, and NSS / NCC / Sports at U.G. level 3' },
     ],
     note:

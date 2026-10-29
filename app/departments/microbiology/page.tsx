@@ -1109,7 +1109,7 @@ export default function MicrobiologyDepartment() {
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Online Application</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Complete the online application form on our official website or TNTEU portal. Upload required documents and pay the application fee.
+                    Complete the online application form on our official website. Upload required documents and pay the application fee.
                   </p>
                 </div>
               </div>

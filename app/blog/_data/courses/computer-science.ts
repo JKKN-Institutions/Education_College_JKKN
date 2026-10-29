@@ -87,7 +87,7 @@ export const computerScienceBlogData: CourseBlogData = {
       { criteria: 'Allied Degrees', requirement: 'Other computing degrees (for example Software Engineering or Cyber Security) need a Government order of equivalence — confirm with the admission office before you apply' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (Computer Science) must match your UG. A B.A. or B.Com graduate cannot opt for B.Ed CS directly. Confirm eligibility for your exact degree with JKKN admissions on +91 9345855001.',

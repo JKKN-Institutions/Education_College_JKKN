@@ -95,7 +95,7 @@ export async function GET() {
               ['Entrance Exam', 'No entrance exam \u2014 admission based on merit in qualifying degree'],
               ['Age', 'No upper age limit for B.Ed admission in Tamil Nadu'],
               ['Nationality', 'Indian citizens and NRI candidates'],
-              ['Domicile', 'Tamil Nadu domicile preferred for state quota seats'],
+              ['Domicile', 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)'],
             ]
           ),
           p(''),

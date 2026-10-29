@@ -79,8 +79,8 @@ export const englishBlogData: CourseBlogData = {
       { criteria: 'Equivalent Qualifications', requirement: 'Double / triple major U.G. with English as one of the Part-III majors; any other degree (e.g. Functional or Communicative English) only with a Government order of equivalence. English studied as a Part-II language does not qualify' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
-      { criteria: 'English Proficiency', requirement: 'Strong reading-writing-speaking proficiency in English — assessed during admission counselling' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
+      { criteria: 'English Proficiency', requirement: 'Strong reading-writing-speaking proficiency in English is needed to follow the course; there is no separate admission test' },
     ],
     note:
       'Your B.Ed teaching subject (English) must match your Bachelor\'s degree subject. A B.A. Tamil or B.Com graduate cannot directly opt for B.Ed English. If you have a master\'s degree in English (M.A. English) with at least 50% marks, you become eligible even if your UG was in a different subject — check with JKKN admissions for case-specific guidance.',

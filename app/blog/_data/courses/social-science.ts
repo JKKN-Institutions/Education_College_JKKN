@@ -79,7 +79,7 @@ export const socialScienceBlogData: CourseBlogData = {
       { criteria: 'Double / Triple Major', requirement: 'Eligible on the History or Geography major. Public Administration or Sociology do not count as History, Geography, Economics or Political Science; confirm your subject with the admission office' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'The Tamil Nadu guidelines have no separate Social Science subject, so eligibility follows your own degree subject (History or Geography at U.G. level; Economics or Political Science at P.G. level). Please confirm your subject with the JKKN admission office before applying. A B.Com or B.Tech graduate cannot opt for B.Ed Social Science directly.',

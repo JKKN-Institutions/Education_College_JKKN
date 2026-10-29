@@ -80,8 +80,8 @@ export const tamilBlogData: CourseBlogData = {
       { criteria: 'Double / Triple Major', requirement: 'Eligible if Tamil is one of the Part-III majors; Tamil studied only as a Part-I language or an allied subject does not qualify' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
-      { criteria: 'Tamil Proficiency', requirement: 'Functional reading-writing-speaking proficiency in Tamil (assessed informally during admission interview)' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
+      { criteria: 'Tamil Proficiency', requirement: 'Functional reading-writing-speaking proficiency in Tamil is needed to follow the course; there is no separate admission test' },
     ],
     note:
       'Your B.Ed teaching subject (Tamil) must match the subject you studied in your Bachelor\'s degree. A B.A. English graduate cannot opt for B.Ed Tamil. Tamil studied only as a Part-I language or as an allied subject in BA does not count; contact JKKN admissions to confirm your own degree.',

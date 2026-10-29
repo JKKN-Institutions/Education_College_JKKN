@@ -79,7 +79,7 @@ export const zoologyBlogData: CourseBlogData = {
       { criteria: 'Allied UG Combinations', requirement: 'Government-listed equivalents only: Advanced Zoology and Bio-Technology, Plant Biology and Plant Bio-Technology, Environmental Science, Micro-Biology; B.E./B.Tech in a Bio-Technology related branch (55%, only 5% of seats). Any other degree needs a Government order of equivalence' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (minimum or maximum)' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (Zoology/Biology) must match your UG specialization. A B.A. or B.Com graduate cannot opt for B.Ed Zoology. Pure Botany graduates should opt for B.Ed Botany instead. B.Sc. PCB with strong Zoology component is the most common eligibility profile.',

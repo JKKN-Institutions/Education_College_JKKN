@@ -79,7 +79,7 @@ export const economicsBlogData: CourseBlogData = {
       { criteria: 'Other Degrees', requirement: 'B.Com, or a U.G. degree without an M.A. Economics, does not qualify; any other degree only with a Government order of equivalence' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — selection is purely on merit from P.G. marks, plus weightage (M.Phil +1, Ph.D +2, NSS/NCC/Sports +3)' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (Economics) must be the major in both your U.G. and P.G. degrees. A B.A. Economics without an M.A. Economics, or a B.Com graduate, cannot opt for B.Ed Economics. Confirm specific eligibility with JKKN admissions for non-standard combinations.',

@@ -79,7 +79,7 @@ export const historyBlogData: CourseBlogData = {
       { criteria: 'Other Degrees', requirement: 'Degrees such as Archaeology, Cultural Heritage or Tourism qualify only with a Government order of equivalence; a History paper inside another degree is not enough' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (History) must match your UG specialization. A B.Sc or B.Com graduate cannot opt for B.Ed History directly. B.A. graduates with History as one of the two or three major subjects are eligible and pick History as their one major; History as a subsidiary subject alone does not qualify.',

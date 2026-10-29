@@ -80,7 +80,7 @@ export const chemistryBlogData: CourseBlogData = {
       { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates of any branch with 55% marks are eligible; only 5% of the Physical Science seats are for them' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
       { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
-      { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
+      { criteria: 'Domicile', requirement: 'Community-wise reservation is for Tamil Nadu candidates only (G.O.(D) No.144)' },
     ],
     note:
       'Your B.Ed teaching subject (Chemistry) must match your UG specialization. A B.A. or B.Com graduate cannot directly opt for B.Ed Chemistry. Check with JKKN admissions for case-specific eligibility if you have a non-standard UG combination.',
