@@ -413,8 +413,8 @@ export default async function Home() {
               {/* Stats Grid */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">2016</div>
-                  <div className="text-xs sm:text-sm text-white/80">NCTE Recognised Since</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">36108</div>
+                  <div className="text-xs sm:text-sm text-white/80">TNTEU College Code</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
                   <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">10</div>
@@ -564,21 +564,26 @@ export default async function Home() {
           Subjects: the college's TNTEU faculty return (public/pdf/Faculty-Details.pdf) and the enquiry
           form's programme list. The Physical / Biological Science mapping: G.O.(D) No.144, Higher
           Education Department, 18-06-2026 (B.Ed admission guidelines 2026-27). No eligibility line on
-          purpose: the site's eligibility text and that G.O. differ, and the office has not decided yet. */}
+          purpose: the site's eligibility text and that G.O. differ, and the office has not decided yet.
+          2026-10-29: order references, AISHE code and the TNTEU-code tile added from the NCTE / TNTEU /
+          AISHE records read that day (/about/approvals). The '2016 NCTE Recognised Since' tile went: the
+          NCTE list types the 2016 order 'Revised Recognition', so the first recognition year waits for
+          the office copy of the initial order. */}
       <section id="recognition" className="py-8 sm:py-10 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="mx-auto max-w-4xl rounded-xl border border-gray-200 border-l-4 border-l-[#006837] bg-[#FBFBEE] p-5 sm:p-6">
           <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-4">Recognition, Seats and Fees at a Glance</h2>
           <ul className="space-y-2 text-sm sm:text-base text-gray-700 leading-relaxed">
-            <li><span className="font-semibold text-[#006837]">NCTE:</span> JKK Nattraja College of Education, Institute ID NCTE4593081, B.Ed intake 100; orders dated 2 May 2016 (session 2016-2017) and 15 April 2021 (session 2021-2022).</li>
-            <li><span className="font-semibold text-[#006837]">TNTEU:</span> Namakkal district, college code 36108, intake 100.</li>
+            <li><span className="font-semibold text-[#006837]">NCTE:</span> JKK Nattraja College of Education, Institute ID NCTE4593081 (file SRCAPP2506), B.Ed intake 100. Continuation Order F.No.SRC/NCTE/SRCAPP2506/B.Ed./TN/2021 dated 15 April 2021 (session 2021-2022); earlier Revised Recognition order SRO/NCTE/SRCAPP2506/B.Ed/TN/2016-17/85013 dated 2 May 2016 (session 2016-2017).</li>
+            <li><span className="font-semibold text-[#006837]">TNTEU:</span> Namakkal district, college code 36108, self-financing, intake 100.</li>
+            <li><span className="font-semibold text-[#006837]">AISHE:</span> code C-57531 (affiliated college, Private Un-Aided).</li>
             <li><span className="font-semibold text-[#006837]">Fee:</span> ₹35,000 a year tuition under the management quota.</li>
             <li><span className="font-semibold text-[#006837]">Teaching subjects (10):</span> Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science.</li>
             <li><span className="font-semibold text-[#006837]">Staff:</span> 16 teaching and other staff, including the principal, on the college&apos;s TNTEU faculty return.</li>
             <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district, about 18 km from Erode.</li>
           </ul>
           <p className="mt-4 text-xs text-gray-500 leading-relaxed">
-            Sources: NCTE and TNTEU lists, read 1 October 2026 (see{' '}
-            <Link href="/ncte-approved-b-ed-colleges-tamil-nadu" className="text-[#006837] font-semibold underline underline-offset-2">our NCTE page</Link>
+            Sources: NCTE, TNTEU and AISHE records, read 29 October 2026 (see{' '}
+            <Link href="/about/approvals" className="text-[#006837] font-semibold underline underline-offset-2">approvals and official data</Link>
             ); fee from the JKKN fee sheet (see{' '}
             <Link href="/fee-structure" className="text-[#006837] font-semibold underline underline-offset-2">fee structure</Link>
             ); subjects and staff from the college&apos;s TNTEU faculty return.

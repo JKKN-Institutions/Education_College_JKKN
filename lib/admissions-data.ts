@@ -295,9 +295,11 @@ export const SELECTION_CRITERIA = [
 // intake is 100, a 7x overstatement) and '36+' Years of Educational Excellence (this college
 // dates from 2016; 1952 belongs to the trust, not to it). '50+' Experienced Faculty is
 // refuted by the college's own TNTEU return, which lists 16.
+// 2026-10-29: '2016 NCTE Recognised Since' -> TNTEU college code 36108 (TNTEU affiliated-colleges list).
+// The NCTE list types the 2016 order 'Revised Recognition', so the first recognition year is not proven.
 // Do not add a figure back here without a document that states it.
 export const TRUST_SIGNALS = [
-  { metric: '2016', label: 'NCTE Recognised Since' },
+  { metric: '36108', label: 'TNTEU College Code' },
   { metric: '100', label: 'NCTE Sanctioned Intake per Year' },
   { metric: '10', label: 'B.Ed Teaching Subjects' },
   { metric: '16', label: 'Faculty and Staff' },
