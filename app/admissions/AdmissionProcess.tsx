@@ -13,8 +13,8 @@ export default function AdmissionProcess() {
       description: 'Applicants are ranked on their degree marks, with weightage for a higher degree and for NSS / NCC / sports at U.G. level, as the 2026-27 Tamil Nadu B.Ed guidelines (G.O.(D) No.144) require. There is no entrance test.',
     },
     {
-      title: 'Counselling & Seat Allotment',
-      description: 'Attend the counselling session based on merit ranking. Choose your preferred B.Ed specialization from 14 available subjects during counselling.',
+      title: 'Seat Allotment',
+      description: 'Seats are confirmed in merit order. Choose your B.Ed teaching subject from the 10 teaching subjects, in line with your degree subject and the seats available.',
     },
     {
       title: 'Admission Confirmation',

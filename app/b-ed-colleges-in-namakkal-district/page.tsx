@@ -64,7 +64,7 @@ const facts: { label: string; value: string; detail: string }[] = [
   { label: 'District', value: 'Namakkal', detail: 'Komarapalayam, on NH-544' },
   { label: 'Tuition', value: '₹35,000', detail: 'Per year, Management Quota' },
   { label: 'Intake', value: '100', detail: 'NCTE sanctioned seats a year' },
-  { label: 'Subjects', value: '14', detail: 'B.Ed specialisations' },
+  { label: 'Subjects', value: '10', detail: 'B.Ed teaching subjects' },
 ];
 
 export default function BedCollegesNamakkalDistrictPage() {

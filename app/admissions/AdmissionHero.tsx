@@ -46,8 +46,8 @@ export default function AdmissionHero() {
 
               {/* Subjects */}
               <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>14</div>
-                <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SUBJECTS</div>
+                <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>10</div>
+                <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>TEACHING SUBJECTS</div>
               </div>
 
               {/* Semesters */}
