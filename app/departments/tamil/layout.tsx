@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Tamil admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree (BA/BSc/BCom or equivalent) from a recognized university with at least 50% marks (45% for SC/ST/OBC/PWD candidates). Additionally, candidates should have Tamil as a subject at the degree level or have studied Tamil up to Class 12. Final year degree students may also apply.",
+                text: "Candidates must hold a U.G. degree with Tamil as the Part-III major subject from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. A P.G. degree in Tamil with at least 50% marks also qualifies. Tamil studied only as a Part-I language or up to Class 12 does not qualify (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Final year degree students may also apply.",
               },
             },
             {
@@ -111,7 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Tamil after completing BCom or BSc?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Yes, candidates with BCom, BSc, or any other Bachelor's degree can pursue B.Ed Tamil, provided they have studied Tamil as a subject at the degree level or have Tamil as a subject up to Class 12. This allows professionals from various backgrounds to enter the teaching profession.",
+                text: "Not on the basis of Tamil studied as a Part-I language or up to Class 12. The 2026-27 Tamil Nadu guidelines require a U.G. degree with Tamil as the Part-III major subject, or a P.G. degree in Tamil with at least 50% marks. BCom and BSc graduates should check the B.Ed subject that matches their own major with the admission office.",
               },
             },
           ],

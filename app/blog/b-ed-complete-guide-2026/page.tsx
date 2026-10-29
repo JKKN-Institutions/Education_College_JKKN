@@ -50,7 +50,7 @@ const popularPosts = [
 const faqs = [
   {
     q: 'What is the eligibility for B.Ed admission at JKKN College of Education?',
-    a: 'Candidates must hold a Bachelor\'s degree with minimum 50% marks (45% for SC/ST/OBC) from a recognized university. The degree should be in the subject you wish to specialize in. Contact our admissions office at +91 9345855001 for detailed eligibility criteria.',
+    a: 'You need a degree in the subject you want to teach. Tamil, English, Mathematics, Physical Science, Biological Science, History and Computer Science need a U.G. degree in that subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST). Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. Differently abled candidates need a pass (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Contact our admissions office at +91 9345855001 for detailed eligibility criteria.',
   },
   {
     q: 'Is hostel facility available at JKKN College of Education?',
@@ -386,8 +386,8 @@ export default function BlogDetailPage() {
                   </thead>
                   <tbody>
                     {[
-                      ['Education', 'Bachelor\'s degree (B.A. / B.Sc. / B.Com. or equivalent) from a recognized university'],
-                      ['Minimum Marks', '50% aggregate in qualifying degree (45% for SC/ST/OBC candidates)'],
+                      ['Education', 'U.G. degree in the subject you will teach (P.G. in the same subject for Economics, Commerce and Political Science), under the 10+2+3 pattern'],
+                      ['Minimum Marks', 'OC 50%, BC/BC(M) 45%, MBC/DNC 43%, SC/SC(A)/ST 40% in the U.G. degree; P.G. 50% for Economics, Commerce and Political Science (G.O.(D) No.144, 2026-27)'],
                       ['Entrance Exam', 'No entrance exam — admission based on merit in qualifying degree'],
                       ['Age', 'No upper age limit for B.Ed admission in Tamil Nadu'],
                       ['Nationality', 'Indian citizens and NRI candidates'],
@@ -695,7 +695,7 @@ export default function BlogDetailPage() {
                 {[
                   [
                     'Complete your Bachelor\'s degree',
-                    'with minimum 50% aggregate marks (45% for reserved categories) in a relevant subject from a recognized university.',
+                    'in the subject you want to teach, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); Economics, Commerce and Political Science need a P.G. in the same subject with 50%.',
                   ],
                   [
                     'Apply to the college',

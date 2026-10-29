@@ -263,19 +263,19 @@ export default function MathematicsPage() {
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Bachelor's degree (BSc/BA/BCom or equivalent) from a recognized university</p>
+                  <p className="text-gray-700">U.G. degree with Mathematics or Applied Mathematics as the main (Part-III) subject, from a recognized university</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)</p>
+                  <p className="text-gray-700">Minimum Part-III marks in the U.G. degree: 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); a pass for differently abled candidates</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Mathematics as a main subject or subsidiary subject at degree level</p>
+                  <p className="text-gray-700">B.E./B.Tech graduates of any branch with 55% marks are also eligible (5% of the Mathematics seats)</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Candidates with Mathematics studied up to Class 12 may also be considered</p>
+                  <p className="text-gray-700">A P.G. degree in Mathematics with at least 50% marks also makes you eligible</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
@@ -283,11 +283,11 @@ export default function MathematicsPage() {
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Age limit as per Tamil Nadu government norms</p>
+                  <p className="text-gray-700">The 2026-27 Tamil Nadu guidelines set no age limit</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Valid TNTEU B.Ed entrance examination score (if applicable)</p>
+                  <p className="text-gray-700">No entrance test: selection is purely on merit from U.G. marks plus weightage</p>
                 </div>
               </div>
             </div>
@@ -314,7 +314,7 @@ export default function MathematicsPage() {
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Community certificate (for reserved category candidates)</p>
+                  <p className="text-gray-700">Community certificate (for BC, BC(M), MBC/DNC, SC, SC(A) and ST candidates)</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
@@ -330,7 +330,7 @@ export default function MathematicsPage() {
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">TET/TNTEU entrance score card (if applicable)</p>
+                  <p className="text-gray-700">NSS / NCC / Sports certificate at U.G. level (if any, for weightage)</p>
                 </div>
               </div>
             </div>
@@ -743,7 +743,7 @@ export default function MathematicsPage() {
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
                       <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Check Eligibility</h3>
                       <p className="text-gray-600">
-                        Verify that you meet the academic requirements: Bachelor's degree with Mathematics and minimum 50% marks (45% for reserved categories).
+                        Verify that you meet the academic requirements: U.G. degree in Mathematics with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks.
                       </p>
                     </div>
                   </div>
@@ -801,7 +801,7 @@ export default function MathematicsPage() {
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
                       <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Counseling & Selection</h3>
                       <p className="text-gray-600">
-                        Attend the counseling session (online/offline) where selection is based on academic merit and TNTEU entrance score (if applicable).
+                        Attend the counseling session (online/offline) where selection is purely on merit from U.G. marks plus weightage; there is no entrance test.
                       </p>
                     </div>
                   </div>
@@ -858,7 +858,7 @@ export default function MathematicsPage() {
                 <div className="bg-white rounded-lg p-4 shadow-md">
                   <h3 className="text-lg font-bold text-[#006837] mb-2">Check Eligibility</h3>
                   <p className="text-gray-600 text-sm">
-                    Verify that you meet the academic requirements: Bachelor's degree with Mathematics and minimum 50% marks (45% for reserved categories).
+                    Verify that you meet the academic requirements: U.G. degree in Mathematics with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks.
                   </p>
                 </div>
               </div>
@@ -897,7 +897,7 @@ export default function MathematicsPage() {
                 <div className="bg-white rounded-lg p-4 shadow-md">
                   <h3 className="text-lg font-bold text-[#006837] mb-2">Counseling & Selection</h3>
                   <p className="text-gray-600 text-sm">
-                    Attend the counseling session (online/offline) where selection is based on academic merit and TNTEU entrance score (if applicable).
+                    Attend the counseling session (online/offline) where selection is purely on merit from U.G. marks plus weightage; there is no entrance test.
                   </p>
                 </div>
               </div>
@@ -948,7 +948,7 @@ export default function MathematicsPage() {
           <div className="space-y-4">
             <FAQItem
               question="What is the eligibility for B.Ed Mathematics admission?"
-              answer="Candidates must hold a Bachelor's degree (BSc/BA/BCom or equivalent) with at least 50% marks (45% for SC/ST/OBC/PWD candidates) with Mathematics as a main or subsidiary subject at the degree level. Candidates who have studied Mathematics up to Class 12 may also be considered."
+              answer="Candidates need a U.G. degree with Mathematics or Applied Mathematics as the main (Part-III) subject, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. B.E./B.Tech graduates of any branch with 55% marks are also eligible for 5% of the seats."
               isOpen={openFaq === 0}
               onClick={() => toggleFaq(0)}
             />

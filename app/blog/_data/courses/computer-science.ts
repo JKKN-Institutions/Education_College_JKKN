@@ -30,7 +30,7 @@ export const computerScienceBlogData: CourseBlogData = {
   wordCount: '1,800 words',
 
   quickAnswer:
-    'B.Ed Computer Science is a 2-year teacher training programme for graduates who want to teach computer science, coding and IT in schools. Eligibility: B.Sc. CS / BCA / B.Sc. IT or an equivalent degree with 50% marks (45% for reserved categories); B.E./B.Tech graduates need 55% under NCTE norms. To find a college, check it on the NCTE and TNTEU lists and confirm that Computer Science is one of its approved B.Ed subjects. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Computer Science as one of 10 teaching subjects, with NCTE recognition and TNTEU affiliation.',
+    'B.Ed Computer Science is a 2-year teacher training programme for graduates who want to teach computer science, coding and IT in schools. Eligibility: B.Sc. CS / BCA / B.Sc. IT with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; B.E./B.Tech graduates of a CS related branch need 55% under the 2026-27 Tamil Nadu guidelines. To find a college, check it on the NCTE and TNTEU lists and confirm that Computer Science is one of its approved B.Ed subjects. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Computer Science as one of 10 teaching subjects, with NCTE recognition and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -40,7 +40,7 @@ export const computerScienceBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. CS / BCA / B.Sc. IT with 50% (45% for reserved); B.E./B.Tech CSE/IT with 55%' },
+      { label: 'Eligibility:', value: 'B.Sc. CS / BCA / B.Sc. IT with 50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST; B.E./B.Tech CSE/IT with 55%' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: 'Supervised CS classroom and lab teaching, as NCTE norms require' },
@@ -81,12 +81,12 @@ export const computerScienceBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Computer Science at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Sc. Computer Science / BCA / B.Sc. IT / B.E./B.Tech CSE/IT / equivalent UG with CS as main subject' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates need at least 55% marks (NCTE Regulations 2014, Appendix-4)' },
-      { criteria: 'Allied Degrees', requirement: 'Other computing degrees (for example Software Engineering or Cyber Security) — confirm with the admission office before you apply' },
+      { criteria: 'Education', requirement: 'U.G. in Computer Science / Information Technology / Computer Application (BCA), or B.E./B.Tech in a CS related branch' },
+      { criteria: 'Minimum Marks', requirement: '50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in Part-III of the U.G. degree; a pass for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates of a CS related branch need at least 55% marks; only 5% of the Computer Science seats are for them' },
+      { criteria: 'Allied Degrees', requirement: 'Other computing degrees (for example Software Engineering or Cyber Security) need a Government order of equivalence — confirm with the admission office before you apply' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
     ],
     note:
@@ -111,7 +111,7 @@ export const computerScienceBlogData: CourseBlogData = {
       },
       {
         title: 'Match your degree and marks',
-        desc: 'B.Sc. CS, BCA or B.Sc. IT with 50% (45% reserved); B.E./B.Tech with 55%. Your degree subject decides your B.Ed teaching subject.',
+        desc: 'B.Sc. CS, BCA or B.Sc. IT with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); B.E./B.Tech (CS related branch) with 55%. Your degree subject decides your B.Ed teaching subject.',
       },
       {
         title: 'Know your admission route',
@@ -189,7 +189,7 @@ export const computerScienceBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Computer Science at JKKN?',
-      a: 'You need B.Sc. CS, BCA, B.Sc. IT, or an equivalent degree with Computer Science as the main subject, with 50% marks (45% for SC/ST/OBC/DA). B.E./B.Tech CSE/IT graduates need 55% under NCTE Regulations 2014. Call +91 9345855001 to confirm eligibility for your degree.',
+      a: 'You need a UG degree in Computer Science, Information Technology or Computer Application (BCA), with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass for differently abled candidates. B.E./B.Tech CSE/IT graduates need 55% (5% of the seats). Call +91 9345855001 to confirm eligibility for your degree.',
     },
     {
       q: 'Which colleges offer B.Ed Computer Science in Tamil Nadu?',
@@ -209,7 +209,7 @@ export const computerScienceBlogData: CourseBlogData = {
     },
     {
       q: 'Do I need B.E./B.Tech to do B.Ed Computer Science?',
-      a: 'No. B.Sc. CS, BCA and B.Sc. IT all qualify, with 50% marks. B.E./B.Tech graduates also qualify, with 55% marks under NCTE norms.',
+      a: 'No. B.Sc. CS, BCA and B.Sc. IT all qualify, with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. B.E./B.Tech graduates of a CS related branch also qualify, with 55% marks.',
     },
     {
       q: 'Is there a market for AI/robotics teachers in schools?',
@@ -221,7 +221,7 @@ export const computerScienceBlogData: CourseBlogData = {
     },
     {
       q: 'What\'s the difference between B.Ed CS and B.Tech CSE for teaching career?',
-      a: 'B.Tech CSE alone does NOT qualify you to teach in schools — you still need B.Ed as the professional teaching qualification. A B.Tech graduate with 55% marks can join B.Ed and take Computer Science as the teaching subject.',
+      a: 'B.Tech CSE alone does NOT qualify you to teach in schools — you still need B.Ed as the professional teaching qualification. A B.Tech graduate of a Computer Science related branch with 55% marks can join B.Ed and take Computer Science as the teaching subject.',
     },
   ],
 

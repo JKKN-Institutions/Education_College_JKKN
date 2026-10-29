@@ -434,7 +434,7 @@ export default function MicrobiologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree in Microbiology (B.Sc Microbiology) from a recognized university
+                    Bachelor's degree in Microbiology (B.Sc Microbiology) from a recognized university, applied under Biological Science (the Tamil Nadu guidelines have no separate Microbiology code)
                   </p>
                 </div>
 
@@ -447,7 +447,7 @@ export default function MicrobiologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates
                   </p>
                 </div>
 
@@ -460,7 +460,7 @@ export default function MicrobiologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Candidates with B.Sc Biotechnology, B.Sc Life Sciences, or B.Sc Biological Sciences with Microbiology as a major subject are also eligible
+                    A B.Sc with Microbiology as one of its majors, or a B.E./B.Tech in a Bio-Technology branch with 55%, is also eligible; other degrees need a Government order of equivalence
                   </p>
                 </div>
 
@@ -486,7 +486,7 @@ export default function MicrobiologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms for teacher education
+                    The 2026-27 Tamil Nadu guidelines set no age limit for teacher education
                   </p>
                 </div>
 
@@ -499,7 +499,7 @@ export default function MicrobiologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from degree marks plus weightage
                   </p>
                 </div>
               </div>
@@ -1090,7 +1090,7 @@ export default function MicrobiologyDepartment() {
                 <div className="p-6 rounded-xl md:inline-block md:text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Check Eligibility</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Verify you meet the academic requirements: B.Sc Microbiology or equivalent degree with minimum 50% marks (45% for reserved categories) with Microbiology as a major subject.
+                    Verify you meet the academic requirements: B.Sc Microbiology (applied under Biological Science) or a Government-listed equivalent, with Microbiology as a major subject and at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks.
                   </p>
                 </div>
               </div>
@@ -1143,9 +1143,9 @@ export default function MicrobiologyDepartment() {
               </div>
               <div className="w-full md:w-1/2 md:pl-8">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Counseling & Seat Allotment</h3>
+                  <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Merit List & Seat Allotment</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Attend counseling session as per TNTEU schedule. Seats are allotted based on merit, entrance exam scores, and reservation norms.
+                    There is no entrance test. Seats are allotted purely on merit (degree marks plus weightage) and reservation norms, on dates the college announces.
                   </p>
                 </div>
               </div>
@@ -1214,7 +1214,7 @@ export default function MicrobiologyDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Candidates must hold a Bachelor's degree in Microbiology (B.Sc Microbiology) or equivalent degree with Microbiology as a major subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates with B.Sc Biotechnology, B.Sc Life Sciences, or B.Sc Biological Sciences with Microbiology as a subject may also apply. Candidates appearing for final year degree examinations may apply provisionally.
+                Candidates must hold a Bachelor's degree in Microbiology (B.Sc Microbiology) with Microbiology as a major subject from a recognized university with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. The Tamil Nadu guidelines have no separate Microbiology code, so Microbiology graduates apply under Biological Science. Candidates appearing for final year degree examinations may apply provisionally.
               </p>
             </details>
 
@@ -1304,7 +1304,7 @@ export default function MicrobiologyDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, candidates with B.Sc Biotechnology, B.Sc Life Sciences, or B.Sc Biological Sciences degrees that include Microbiology as a core or major subject are eligible for B.Ed Microbiology admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements.
+                Not with a plain B.Sc Biotechnology or B.Sc Life Sciences, unless you hold a Government order of equivalence. The listed Biological Science equivalents are Micro-Biology, Advanced Zoology and Bio-Technology, Plant Biology and Plant Bio-Technology and Environmental Science; a B.E./B.Tech in a Bio-Technology related branch also qualifies with 55% marks (only 5% of seats).
               </p>
             </details>
 

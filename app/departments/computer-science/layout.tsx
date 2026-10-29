@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Computer Science admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree (B.Sc Computer Science/BCA/B.Tech/MCA or equivalent) with at least 50% marks (45% for SC/ST/OBC/PWD candidates) with Computer Science, Information Technology, or Computer Applications as a major subject at the degree level.",
+                text: "Candidates need a U.G. degree in Computer Science, Information Technology or Computer Application (BCA) with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. B.E./B.Tech graduates of a Computer Science related branch with 55% marks are also eligible for 5% of the seats.",
               },
             },
             {

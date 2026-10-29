@@ -23,7 +23,7 @@ export const economicsBlogData: CourseBlogData = {
   wordCount: '2,000 words',
 
   quickAnswer:
-    'B.Ed Economics is a 2-year teacher training program for graduates aiming to teach Economics at senior secondary (Classes 11–12) and Social Science (Classes 6–10) school levels. Eligibility: B.A. Economics or equivalent with 50% (45% reserved). Economics specialization combines steady CBSE/ICSE recruitment with strong UPSC/Civil Services coaching crossover and emerging Ed-Tech opportunities. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Economics seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Economics is a 2-year teacher training program for graduates aiming to teach Economics at senior secondary (Classes 11–12) and Social Science (Classes 6–10) school levels. Eligibility: B.A. and M.A. Economics, with at least 50% in the P.G. degree. Economics specialization combines steady CBSE/ICSE recruitment with strong UPSC/Civil Services coaching crossover and emerging Ed-Tech opportunities. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Economics seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const economicsBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.A. Economics / B.A. Applied Economics / equivalent UG with Economics as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'M.A. Economics with at least 50% marks, with Economics also as the U.G. major (B.A. Economics); U.G. alone is not enough' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with economics classroom teaching focus' },
@@ -74,15 +74,15 @@ export const economicsBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Economics at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.A. Economics / B.A. Applied Economics / B.A. Development Economics / equivalent UG with Economics as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.A. (Economics, Political Science, History combo) and B.Com with Economics specialization may be eligible per TNTEU norms' },
-      { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Education', requirement: 'A P.G. degree in Economics (M.A. Economics), with Economics also as the U.G. major (B.A. Economics); a U.G. degree alone is not enough' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% in the P.G. degree; a pass is enough for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Other Degrees', requirement: 'B.Com, or a U.G. degree without an M.A. Economics, does not qualify; any other degree only with a Government order of equivalence' },
+      { criteria: 'Entrance Exam', requirement: 'No entrance exam — selection is purely on merit from P.G. marks, plus weightage (M.Phil +1, Ph.D +2, NSS/NCC/Sports +3)' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'Your B.Ed teaching subject (Economics) must match your UG specialization. A pure B.Com (without Economics main) or B.Sc graduate cannot opt for B.Ed Economics directly. Confirm specific eligibility with JKKN admissions for non-standard UG combinations.',
+      'Your B.Ed teaching subject (Economics) must be the major in both your U.G. and P.G. degrees. A B.A. Economics without an M.A. Economics, or a B.Com graduate, cannot opt for B.Ed Economics. Confirm specific eligibility with JKKN admissions for non-standard combinations.',
   },
 
   curriculum: {
@@ -176,7 +176,7 @@ export const economicsBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Economics at JKKN?',
-      a: 'You need B.A. Economics, B.A. Applied Economics, or equivalent UG with Economics as the main subject — with 50% marks (45% for SC/ST/OBC/DA). Some allied UG combinations (B.A. with Economics-Political Science-History) may qualify — confirm via +91 9345855001.',
+      a: 'You need a P.G. degree in Economics (M.A. Economics) with at least 50% marks, with Economics also as the U.G. major (B.A. Economics). A U.G. degree alone, or a B.Com, does not qualify; a pass is enough for differently abled candidates — confirm via +91 9345855001.',
     },
     {
       q: 'Will I teach economics only in Classes 11–12?',
@@ -192,7 +192,7 @@ export const economicsBlogData: CourseBlogData = {
     },
     {
       q: 'Do I need M.A. Economics to teach in CBSE schools?',
-      a: 'For Classes 11–12 PGT positions, M.A. Economics + B.Ed is required. For Classes 6–10 (where Economics appears in Social Science), B.Ed Economics alone suffices. Most B.Ed Economics graduates pursue distance M.A. Economics (IGNOU, Madras University, Annamalai) alongside school teaching for PG-level eligibility.',
+      a: 'For Classes 11–12 PGT positions, M.A. Economics + B.Ed is required. For Classes 6–10 (where Economics appears in Social Science), B.Ed Economics alone suffices. In Tamil Nadu, B.Ed Economics admission itself needs B.A. and M.A. Economics, so you will already hold the M.A. when you join.',
     },
     {
       q: 'Can I become an economist or policy researcher after B.Ed Economics?',

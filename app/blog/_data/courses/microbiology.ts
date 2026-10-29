@@ -23,7 +23,7 @@ export const microbiologyBlogData: CourseBlogData = {
   wordCount: '1,950 words',
 
   quickAnswer:
-    'B.Ed Microbiology is a 2-year teacher training program for graduates aiming to teach biology with microbiology specialization at secondary and senior secondary school levels. Eligibility: B.Sc. Microbiology / B.Sc. Biotechnology / equivalent with 50% (45% reserved). Microbiology graduates typically teach Biology in schools while having unique advantages for biotechnology, applied biology, and CBSE Classes 11–12 specialized topics. Post-COVID, microbiology awareness in school curriculum increased significantly. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Microbiology seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Microbiology is a 2-year teacher training program for graduates aiming to teach biology with microbiology specialization at secondary and senior secondary school levels. Eligibility: B.Sc. Microbiology (applied under Biological Science) or a Government-listed equivalent, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Microbiology graduates typically teach Biology in schools while having unique advantages for biotechnology, applied biology, and CBSE Classes 11–12 specialized topics. Post-COVID, microbiology awareness in school curriculum increased significantly. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Microbiology seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const microbiologyBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. Microbiology / B.Sc. Biotechnology / B.Sc. with Microbiology as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'B.Sc. Microbiology / B.Sc. with Microbiology as main subject (applied under Biological Science), 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with biology/microbiology lab teaching' },
@@ -74,11 +74,11 @@ export const microbiologyBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Microbiology at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Sc. Microbiology / B.Sc. Biotechnology / B.Sc. with Microbiology as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.Sc. Industrial Microbiology, B.Sc. Medical Microbiology, B.Sc. Biochemistry with Microbiology component also eligible per TNTEU norms' },
+      { criteria: 'Education', requirement: 'B.Sc. Microbiology / B.Sc. with Microbiology as main subject from a recognized university (applied under Biological Science: the Tamil Nadu guidelines have no separate Microbiology code)' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates; B.E./B.Tech needs 55% (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Allied UG Combinations', requirement: 'Government-listed Biological Science equivalents only: Micro-Biology, Advanced Zoology and Bio-Technology, Plant Biology and Plant Bio-Technology, Environmental Science; B.E./B.Tech in a Bio-Technology related branch (55%, only 5% of seats). Any other degree needs a Government order of equivalence' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (minimum or maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
@@ -176,7 +176,7 @@ export const microbiologyBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Microbiology at JKKN?',
-      a: 'You need B.Sc. Microbiology, B.Sc. Biotechnology, B.Sc. Industrial/Medical Microbiology, B.Sc. Biochemistry with Microbiology component, or equivalent UG with Microbiology as the main subject — with 50% marks (45% for SC/ST/OBC/DA). Call +91 9345855001 for case-specific eligibility.',
+      a: 'You need B.Sc. Microbiology or a UG with Microbiology as a major subject — with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. The Tamil Nadu guidelines have no separate Microbiology code, so you apply under Biological Science. Call +91 9345855001 for case-specific eligibility.',
     },
     {
       q: 'Will I teach only Microbiology or full Biology in schools?',
@@ -196,7 +196,7 @@ export const microbiologyBlogData: CourseBlogData = {
     },
     {
       q: 'Should I do B.Ed Microbiology or B.Ed Botany/Zoology?',
-      a: 'All three qualify you to teach school Biology. Choose Microbiology if your B.Sc. specialization was microbiology/biotechnology and you\'re interested in biotech-focused teaching. Choose Botany if your strength is plant kingdom and ecology. Choose Zoology if your strength is human physiology and animal kingdom. NEET coaching pays similar rates across all three.',
+      a: 'All three qualify you to teach school Biology. Choose Microbiology if your B.Sc. specialization was Micro-Biology and you\'re interested in biotech-focused teaching. Choose Botany if your strength is plant kingdom and ecology. Choose Zoology if your strength is human physiology and animal kingdom. NEET coaching pays similar rates across all three.',
     },
     {
       q: 'Did COVID-19 impact B.Ed Microbiology demand?',

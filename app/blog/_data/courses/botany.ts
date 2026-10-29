@@ -23,7 +23,7 @@ export const botanyBlogData: CourseBlogData = {
   wordCount: '2,000 words',
 
   quickAnswer:
-    'B.Ed Botany is a 2-year teacher training program for graduates aiming to teach biology (with botany specialization) at secondary and senior secondary school levels. Eligibility: B.Sc. Botany or B.Sc. PCB with Botany as main subject, 50% marks (45% reserved). Botany graduates typically teach combined Biology (Botany + Zoology) in schools — making B.Ed Botany highly placeable in government, CBSE/ICSE, and NEET coaching segments. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Botany seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Botany is a 2-year teacher training program for graduates aiming to teach biology (with botany specialization) at secondary and senior secondary school levels. Eligibility: B.Sc. Botany or B.Sc. PCB with Botany as main subject, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Botany graduates typically teach combined Biology (Botany + Zoology) in schools — making B.Ed Botany highly placeable in government, CBSE/ICSE, and NEET coaching segments. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Botany seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const botanyBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. Botany / B.Sc. PCB / B.Sc. with Botany as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'B.Sc. Botany / B.Sc. PCB / B.Sc. with Botany as main subject, 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with botany/biology lab teaching' },
@@ -74,15 +74,15 @@ export const botanyBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Botany at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Sc. Botany / B.Sc. PCB / B.Sc. Plant Biology / B.Sc. with Botany as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.Sc. Plant Biotechnology, B.Sc. Microbiology with Botany component, B.Sc. Agriculture also eligible per TNTEU norms' },
+      { criteria: 'Education', requirement: 'B.Sc. Botany / B.Sc. PCB / B.Sc. Plant Biology and Plant Bio-Technology / B.Sc. with Botany as main subject from a recognized university' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates; B.E./B.Tech needs 55% (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Allied UG Combinations', requirement: 'Government-listed equivalents only: Plant Biology and Plant Bio-Technology, Advanced Zoology and Bio-Technology, Environmental Science, Micro-Biology; B.E./B.Tech in a Bio-Technology related branch (55%, only 5% of seats). Any other degree needs a Government order of equivalence' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (minimum or maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'Your B.Ed teaching subject (Botany/Biology) must match your UG specialization. A B.A. or B.Com graduate cannot opt for B.Ed Botany. Pure Zoology graduates should opt for B.Ed Zoology instead. Microbiology graduates with substantial botany coursework may qualify — confirm with JKKN admissions.',
+      'Your B.Ed teaching subject (Botany/Biology) must match your UG specialization. A B.A. or B.Com graduate cannot opt for B.Ed Botany. Pure Zoology graduates should opt for B.Ed Zoology instead. Micro-Biology graduates apply under Biological Science (the Tamil Nadu guidelines list it as an equivalent) — confirm with JKKN admissions.',
   },
 
   curriculum: {
@@ -176,7 +176,7 @@ export const botanyBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Botany at JKKN?',
-      a: 'You need B.Sc. Botany, B.Sc. PCB, or equivalent UG with Botany as the main subject — with 50% marks (45% for SC/ST/OBC/DA). Plant biotechnology, agriculture, and certain microbiology graduates may qualify — confirm via call to +91 9345855001.',
+      a: 'You need B.Sc. Botany, B.Sc. PCB, or equivalent UG with Botany as the main subject — with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Plant Biology and Plant Bio-Technology, Environmental Science and Micro-Biology graduates also qualify under Biological Science — confirm via call to +91 9345855001.',
     },
     {
       q: 'Will I teach only Botany or full Biology in schools?',

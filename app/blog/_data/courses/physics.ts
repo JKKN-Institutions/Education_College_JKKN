@@ -23,7 +23,7 @@ export const physicsBlogData: CourseBlogData = {
   wordCount: '2,150 words',
 
   quickAnswer:
-    'B.Ed Physics is a 2-year teacher training program for graduates aiming to teach physics at secondary (Classes 6–10) and senior secondary (Classes 11–12) levels. Eligibility: B.Sc. Physics or equivalent with 50% marks (45% reserved). Physics is among the top 3 highest-demand B.Ed specializations — driven by NEET, JEE Main/Advanced coaching demand, CBSE Physics teacher shortage, and ISRO/DRDO outreach education programs. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Physics seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Physics is a 2-year teacher training program for graduates aiming to teach physics at secondary (Classes 6–10) and senior secondary (Classes 11–12) levels. Eligibility: a U.G. degree in Physics (or Applied / Theoretical Physics, Geo-Physics, Bio-Physics, Electronics) with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Physics is among the top 3 highest-demand B.Ed specializations — driven by NEET, JEE Main/Advanced coaching demand, CBSE Physics teacher shortage, and ISRO/DRDO outreach education programs. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Physics seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const physicsBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. Physics / B.Sc. Physical Sciences with 50% (45% for reserved)' },
+      { label: 'Eligibility:', value: 'U.G. in Physics / Applied Physics / Electronics with 50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST; B.E./B.Tech with 55%' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with physics lab teaching and experimental design' },
@@ -74,16 +74,16 @@ export const physicsBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Physics at JKKN College of Education (or any TNTEU-affiliated college), candidates must satisfy the following NCTE and TNTEU criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Sc. Physics / B.Sc. Physical Sciences / B.Sc. with Physics as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/Differently Abled candidates per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied Combinations', requirement: 'B.Sc. PCM (Physics, Chemistry, Mathematics) and B.Sc. PCB also eligible with Physics as primary specialization' },
-      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates may be eligible under TNTEU norms — confirm with college' },
+      { criteria: 'Education', requirement: 'U.G. degree in Physics, Applied / Theoretical Physics, Geo-Physics, Bio-Physics or Electronics (the main Part-III subject) from a recognized university' },
+      { criteria: 'Minimum Marks', requirement: '50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in Part-III of the U.G. degree; a pass for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Allied Combinations', requirement: 'Double / triple major U.G. such as B.Sc. PCM (Physics, Chemistry, Mathematics) is eligible: the candidate picks Physics as the one major' },
+      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates of any branch with 55% marks are eligible; only 5% of the Physical Science seats are for them' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'Your B.Ed teaching subject (Physics) must match your UG specialization. A pure B.A. or B.Com graduate cannot opt for B.Ed Physics. If you are a B.E./B.Tech graduate seeking B.Ed Physics, contact JKKN admissions at +91 9345855001 for case-specific eligibility confirmation.',
+      'Your B.Ed teaching subject (Physics) must match your UG specialization. A pure B.A. or B.Com graduate cannot opt for B.Ed Physics. B.E./B.Tech graduates of any branch qualify with 55% marks; for any other degree, contact JKKN admissions at +91 9345855001 for eligibility confirmation.',
   },
 
   curriculum: {
@@ -177,7 +177,7 @@ export const physicsBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Physics at JKKN?',
-      a: 'You need B.Sc. Physics, B.Sc. PCM, or equivalent UG degree with Physics as the main subject, with 50% marks (45% for SC/ST/OBC/DA). Engineering (B.E./B.Tech) graduates may qualify under TNTEU norms — confirm via call to +91 9345855001.',
+      a: 'You need B.Sc. Physics, B.Sc. PCM, or a UG degree in Applied / Theoretical Physics, Geo-Physics, Bio-Physics or Electronics, with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass for differently abled candidates. Engineering (B.E./B.Tech) graduates of any branch qualify with 55% — confirm via call to +91 9345855001.',
     },
     {
       q: 'Is B.Ed Physics in high demand?',

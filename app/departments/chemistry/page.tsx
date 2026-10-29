@@ -475,7 +475,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree (BSc Chemistry or BSc with Chemistry as ancillary) from a recognized university
+                    U.G. degree with Chemistry or Applied Chemistry as the main (Part-III) subject from a recognized university
                   </p>
                 </div>
 
@@ -488,7 +488,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    Minimum Part-III marks in the U.G. degree: 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); a pass for differently abled candidates
                   </p>
                 </div>
 
@@ -501,7 +501,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    MSc Chemistry candidates are eligible and given preference
+                    MSc Chemistry (50%) candidates are eligible; a P.G. in Chemistry adds 4 marks of weightage
                   </p>
                 </div>
 
@@ -527,7 +527,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms (no upper age limit for reserved categories)
+                    The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)
                   </p>
                 </div>
 
@@ -540,7 +540,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable for current year)
+                    B.E./B.Tech graduates of any branch with 55% marks are also eligible (5% of the seats)
                   </p>
                 </div>
               </div>
@@ -608,7 +608,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Community certificate (for reserved category candidates)
+                    Community certificate (for BC, BC(M), MBC/DNC, SC, SC(A) and ST candidates)
                   </p>
                 </div>
 
@@ -660,7 +660,7 @@ export default function ChemistryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    TNTEU entrance score card (if applicable)
+                    NSS / NCC / Sports certificate at U.G. level (if any, for weightage)
                   </p>
                 </div>
               </div>
@@ -1525,7 +1525,7 @@ export default function ChemistryDepartment() {
                       Check Eligibility
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Verify that you meet the academic requirements: BSc Chemistry or BSc with Chemistry as ancillary with minimum 50% marks (45% for reserved categories).
+                      Verify that you meet the academic requirements: U.G. degree with Chemistry as the main subject and at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks.
                     </p>
                   </div>
                 </div>
@@ -1671,7 +1671,7 @@ export default function ChemistryDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  Candidates must have completed BSc Chemistry or BSc with Chemistry as an ancillary subject from a recognized university with minimum 50% aggregate marks. For SC/ST/OBC/PWD candidates, the minimum is 45%. MSc Chemistry candidates are also eligible and given preference during admission.
+                  Candidates must have completed a U.G. degree with Chemistry or Applied Chemistry as the main (Part-III) subject from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. MSc Chemistry candidates (50%) are also eligible, and a P.G. in Chemistry adds 4 marks of weightage.
                 </p>
               </div>
             </details>

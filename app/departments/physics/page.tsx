@@ -370,7 +370,7 @@ export default function PhysicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree in Physics (B.Sc Physics) or equivalent from a recognized university
+                    U.G. degree in Physics, Applied / Theoretical Physics, Geo-Physics, Bio-Physics or Electronics from a recognized university
                   </p>
                 </div>
 
@@ -383,7 +383,7 @@ export default function PhysicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    Minimum Part-III marks in the U.G. degree: 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); a pass for differently abled candidates
                   </p>
                 </div>
 
@@ -422,7 +422,7 @@ export default function PhysicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms for teacher education
+                    The 2026-27 Tamil Nadu guidelines set no age limit for teacher education
                   </p>
                 </div>
 
@@ -435,7 +435,7 @@ export default function PhysicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from U.G. marks plus weightage
                   </p>
                 </div>
               </div>
@@ -503,7 +503,7 @@ export default function PhysicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Community certificate (for reserved category candidates)
+                    Community certificate (for BC, BC(M), MBC/DNC, SC, SC(A) and ST candidates)
                   </p>
                 </div>
 
@@ -1532,7 +1532,7 @@ export default function PhysicsDepartment() {
                       Check Eligibility
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Verify you meet the academic requirements: B.Sc Physics or equivalent degree with minimum 50% marks (45% for reserved categories) with Physics as major subject.
+                      Verify you meet the academic requirements: U.G. degree with Physics as major subject and at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks.
                     </p>
                   </div>
                 </div>
@@ -1599,7 +1599,7 @@ export default function PhysicsDepartment() {
                       Counseling & Seat Allotment
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Attend counseling session as per TNTEU schedule. Seats are allotted based on merit, entrance exam scores, and reservation norms.
+                      Attend counseling session on the dates the college announces. Seats are allotted purely on merit (U.G. marks plus weightage) and reservation norms; there is no entrance exam.
                     </p>
                   </div>
                 </div>
@@ -1679,7 +1679,7 @@ export default function PhysicsDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  Candidates must hold a Bachelor's degree in Physics (B.Sc Physics) or equivalent degree with Physics as a major subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates appearing for final year degree examinations may also apply provisionally.
+                  Candidates need a U.G. degree with Physics (or Applied / Theoretical Physics, Geo-Physics, Bio-Physics or Electronics) as the main subject from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. B.E./B.Tech graduates with 55% marks are also eligible. Candidates appearing for final year degree examinations may also apply provisionally.
                 </p>
               </div>
             </details>
@@ -1798,7 +1798,7 @@ export default function PhysicsDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  Yes, candidates with B.Sc Physics degree from UGC-recognized distance education programs are eligible for B.Ed Physics admission, provided they meet the minimum percentage criteria and other eligibility requirements as specified by NCTE and TNTEU norms.
+                  Yes, candidates with B.Sc Physics degree from UGC-recognized distance education programs are eligible for B.Ed Physics admission, provided they studied in the 10+2+3 pattern and meet the minimum marks for their community. An Open University degree taken without the 10+2 school pattern is not eligible.
                 </p>
               </div>
             </details>

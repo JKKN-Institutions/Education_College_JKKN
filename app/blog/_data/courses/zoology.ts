@@ -23,7 +23,7 @@ export const zoologyBlogData: CourseBlogData = {
   wordCount: '2,000 words',
 
   quickAnswer:
-    'B.Ed Zoology is a 2-year teacher training program for graduates aiming to teach biology (with zoology specialization) at secondary and senior secondary school levels. Eligibility: B.Sc. Zoology / B.Sc. PCB with Zoology as main subject, 50% (45% reserved). Zoology graduates teach combined Biology (Botany + Zoology) in schools — strong demand in government, CBSE/ICSE, and especially NEET coaching where human physiology/anatomy expertise is highly valued. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Zoology seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Zoology is a 2-year teacher training program for graduates aiming to teach biology (with zoology specialization) at secondary and senior secondary school levels. Eligibility: B.Sc. Zoology / B.Sc. PCB with Zoology as main subject, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Zoology graduates teach combined Biology (Botany + Zoology) in schools — strong demand in government, CBSE/ICSE, and especially NEET coaching where human physiology/anatomy expertise is highly valued. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Zoology seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const zoologyBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. Zoology / B.Sc. PCB / B.Sc. with Zoology as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'B.Sc. Zoology / B.Sc. PCB / B.Sc. with Zoology as main subject, 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with zoology/biology lab teaching' },
@@ -75,10 +75,10 @@ export const zoologyBlogData: CourseBlogData = {
       'To enrol in B.Ed Zoology at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
       { criteria: 'Education', requirement: 'B.Sc. Zoology / B.Sc. PCB / B.Sc. with Zoology as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.Sc. Animal Biotechnology, B.Sc. Wildlife Biology, B.Sc. Fisheries also eligible per TNTEU norms' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates; B.E./B.Tech needs 55% (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Allied UG Combinations', requirement: 'Government-listed equivalents only: Advanced Zoology and Bio-Technology, Plant Biology and Plant Bio-Technology, Environmental Science, Micro-Biology; B.E./B.Tech in a Bio-Technology related branch (55%, only 5% of seats). Any other degree needs a Government order of equivalence' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (minimum or maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
@@ -176,7 +176,7 @@ export const zoologyBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Zoology at JKKN?',
-      a: 'You need B.Sc. Zoology, B.Sc. PCB, or equivalent UG with Zoology as the main subject — with 50% marks (45% for SC/ST/OBC/DA). Wildlife Biology, Animal Biotechnology, Fisheries Science graduates may qualify — confirm via +91 9345855001.',
+      a: 'You need B.Sc. Zoology, B.Sc. PCB, or equivalent UG with Zoology as the main subject — with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Advanced Zoology and Bio-Technology, Environmental Science and Micro-Biology graduates also qualify under Biological Science — confirm via +91 9345855001.',
     },
     {
       q: 'Will I teach only Zoology or full Biology in schools?',

@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed History admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in History (B.A. History) or equivalent degree with History as a major subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates with B.A. in Political Science, Sociology, or Economics with History as subsidiary may also apply. Those appearing for final year degree examinations can apply provisionally.",
+                text: "Candidates must hold a Bachelor's degree with History as the Part-III major subject (B.A. History) from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. A P.G. degree in History with at least 50% marks also qualifies. History as a subsidiary subject in a Political Science, Sociology or Economics degree does not qualify (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Those appearing for final year degree examinations can apply provisionally.",
               },
             },
             {
@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed History after B.A. with distance education?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with B.A. History degree from UGC-recognized distance education universities/institutions are eligible for B.Ed History admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a university listed in the UGC/AIU approved list.',
+                text: 'Yes, candidates with B.A. History degree from UGC-recognized distance education universities/institutions are eligible for B.Ed History admission, provided they meet the minimum marks for their community (50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST) and studied in the 10+2+3 pattern; an Open University degree without the 10+2 school pattern is not eligible. The distance education degree must be from a university listed in the UGC/AIU approved list.',
               },
             },
             {

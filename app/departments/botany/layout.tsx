@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Botany admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in Botany (B.Sc Botany) or equivalent degree with Botany as a major subject with at least 50% marks (45% for reserved categories SC/ST/OBC/PWD). Candidates appearing for final year degree examinations may also apply provisionally.",
+                text: "Candidates must hold a Bachelor's degree with Botany as a major subject (B.Sc Botany) or a Government-listed equivalent such as Plant Biology and Plant Bio-Technology, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Candidates appearing for final year degree examinations may also apply provisionally.",
               },
             },
             {
@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Botany after distance B.Sc?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with B.Sc Botany degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Botany admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a recognized university listed in UGC/AIU approved list.',
+                text: 'Yes, candidates with B.Sc Botany degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Botany admission, provided the degree followed the 10+2+3 pattern and they meet the minimum marks for their community (50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST). The distance education degree must be from a recognized university listed in UGC/AIU approved list; an Open University degree without 10+2 is not eligible.',
               },
             },
             {

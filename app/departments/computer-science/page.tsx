@@ -320,7 +320,7 @@ export default function ComputerScienceDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
-                    Bachelor&apos;s degree (B.Sc Computer Science/BCA/B.Tech/MCA or equivalent) from a recognized university
+                    U.G. degree (B.Sc Computer Science / B.Sc IT / BCA) from a recognized university; B.E./B.Tech (CS related branch) with 55%
                   </p>
                 </div>
 
@@ -329,7 +329,7 @@ export default function ComputerScienceDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    Minimum Part-III marks in the U.G. degree: 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); a pass for differently abled candidates
                   </p>
                 </div>
 
@@ -356,7 +356,7 @@ export default function ComputerScienceDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
-                    Age limit as per Tamil Nadu government norms
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -365,7 +365,7 @@ export default function ComputerScienceDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from U.G. marks plus weightage
                   </p>
                 </div>
               </div>
@@ -415,7 +415,7 @@ export default function ComputerScienceDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
-                    Community certificate (for reserved category candidates)
+                    Community certificate (for BC, BC(M), MBC/DNC, SC, SC(A) and ST candidates)
                   </p>
                 </div>
 
@@ -1391,7 +1391,7 @@ export default function ComputerScienceDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-gray-700 leading-relaxed">
-                  Candidates must hold a Bachelor&apos;s degree (B.Sc Computer Science/BCA/B.Tech/MCA or equivalent) with at least 50% marks (45% for SC/ST/OBC/PWD candidates) with Computer Science, Information Technology, or Computer Applications as a major subject at the degree level.
+                  Candidates need a U.G. degree in Computer Science, Information Technology or Computer Application (BCA) with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. B.E./B.Tech graduates of a Computer Science related branch with 55% marks are also eligible for 5% of the seats.
                 </p>
               </div>
             </details>

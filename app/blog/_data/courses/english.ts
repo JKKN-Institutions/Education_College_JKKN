@@ -23,7 +23,7 @@ export const englishBlogData: CourseBlogData = {
   wordCount: '2,300 words',
 
   quickAnswer:
-    'B.Ed English is a 2-year teacher training program preparing graduates to teach English language and literature at secondary (Classes 6–10) and senior secondary (Classes 11–12) levels. Eligibility: B.A. English / B.A. Literature with 50% marks (45% reserved). English is the highest-paying B.Ed specialization in private CBSE/ICSE schools — driven by NEP focus on English communication, IELTS/PTE coaching demand, and international school growth. <strong>JKKN College of Education, Komarapalayam</strong> offers 50 B.Ed English seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed English is a 2-year teacher training program preparing graduates to teach English language and literature at secondary (Classes 6–10) and senior secondary (Classes 11–12) levels. Eligibility: a U.G. degree with English as the Part-III major (B.A. English) with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. English is the highest-paying B.Ed specialization in private CBSE/ICSE schools — driven by NEP focus on English communication, IELTS/PTE coaching demand, and international school growth. <strong>JKKN College of Education, Komarapalayam</strong> offers 50 B.Ed English seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const englishBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.A. English / B.A. Literature / equivalent UG with English as main subject, 50% (45% for reserved)' },
+      { label: 'Eligibility:', value: 'B.A. English / B.A. English Literature (English as the Part-III major): 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
       { label: 'Total Seats at JKKN:', value: '50 seats per academic year' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
@@ -72,18 +72,18 @@ export const englishBlogData: CourseBlogData = {
 
   eligibility: {
     intro:
-      'To enrol in B.Ed English at JKKN College of Education (or any TNTEU-affiliated college), candidates must satisfy the following NCTE and TNTEU eligibility norms:',
+      'To enrol in B.Ed English at JKKN College of Education (or any TNTEU-affiliated college), candidates must satisfy the following eligibility norms (Government of Tamil Nadu, G.O.(D) No.144, 2026-27):',
     criteria: [
-      { criteria: 'Education', requirement: 'B.A. English / B.A. English Literature / equivalent UG degree with English as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/Differently Abled candidates per Tamil Nadu Govt. rules)' },
-      { criteria: 'Equivalent Qualifications', requirement: 'B.A. Functional English, B.A. Communicative English, or Bachelor\'s with English as one of the major subjects also eligible per TNTEU norms' },
+      { criteria: 'Education', requirement: 'B.A. English / B.A. English Literature - a U.G. degree with English as the Part-III major subject - from a recognized university, or a P.G. degree in English with at least 50% marks' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates' },
+      { criteria: 'Equivalent Qualifications', requirement: 'Double / triple major U.G. with English as one of the Part-III majors; any other degree (e.g. Functional or Communicative English) only with a Government order of equivalence. English studied as a Part-II language does not qualify' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
       { criteria: 'English Proficiency', requirement: 'Strong reading-writing-speaking proficiency in English — assessed during admission counselling' },
     ],
     note:
-      'Your B.Ed teaching subject (English) must match your Bachelor\'s degree subject. A B.A. Tamil or B.Com graduate cannot directly opt for B.Ed English. If you have a master\'s degree in English (M.A. English), you become eligible even if your UG was in a different subject — check with JKKN admissions for case-specific guidance.',
+      'Your B.Ed teaching subject (English) must match your Bachelor\'s degree subject. A B.A. Tamil or B.Com graduate cannot directly opt for B.Ed English. If you have a master\'s degree in English (M.A. English) with at least 50% marks, you become eligible even if your UG was in a different subject — check with JKKN admissions for case-specific guidance.',
   },
 
   curriculum: {
@@ -177,11 +177,11 @@ export const englishBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed English at JKKN College of Education?',
-      a: 'You need a B.A. English, B.A. English Literature, or equivalent UG degree with English as the main subject — with minimum 50% marks (45% for SC/ST/OBC/DA candidates). Admission is via merit in your qualifying degree marks, no entrance exam. Call +91 9345855001 for eligibility confirmation for your specific UG qualification.',
+      a: 'You need a B.A. English or B.A. English Literature (a U.G. degree with English as the Part-III major) — with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. An M.A. English with 50% also qualifies. Admission is via merit in your qualifying degree marks, no entrance exam. Call +91 9345855001 for eligibility confirmation for your specific UG qualification.',
     },
     {
       q: 'Can I do B.Ed English if my UG is in a different subject?',
-      a: 'Generally no — TNTEU requires your B.Ed teaching subject to match your UG subject. However, if you have completed M.A. English after your non-English UG, you become eligible for B.Ed English. PG-level English qualification overrides the UG requirement per TNTEU norms.',
+      a: 'Generally no — the Tamil Nadu B.Ed guidelines (G.O.(D) No.144, 2026-27) require English as the Part-III major of your UG degree; English studied as a Part-II language does not count. However, if you have completed M.A. English with at least 50% marks after your non-English UG, you become eligible for B.Ed English, and only your PG marks are used for ranking.',
     },
     {
       q: 'Which is better — B.Ed English or B.Ed Tamil for jobs in Tamil Nadu?',

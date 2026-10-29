@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Microbiology admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in Microbiology (B.Sc Microbiology) or equivalent degree with Microbiology as a major subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates with B.Sc Biotechnology, B.Sc Life Sciences, or B.Sc Biological Sciences with Microbiology as a subject may also apply. Candidates appearing for final year degree examinations may apply provisionally.",
+                text: "Candidates must hold a Bachelor's degree in Microbiology (B.Sc Microbiology) with Microbiology as a major subject from a recognized university with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. The Tamil Nadu guidelines have no separate Microbiology code, so Microbiology graduates apply under Biological Science. Candidates appearing for final year degree examinations may apply provisionally.",
               },
             },
             {
@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Microbiology after B.Sc Biotechnology?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with B.Sc Biotechnology, B.Sc Life Sciences, or B.Sc Biological Sciences degrees that include Microbiology as a core or major subject are eligible for B.Ed Microbiology admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements.',
+                text: 'Not with a plain B.Sc Biotechnology or B.Sc Life Sciences, unless you hold a Government order of equivalence. The listed Biological Science equivalents are Micro-Biology, Advanced Zoology and Bio-Technology, Plant Biology and Plant Bio-Technology and Environmental Science; a B.E./B.Tech in a Bio-Technology related branch also qualifies with 55% marks (only 5% of seats).',
               },
             },
             {

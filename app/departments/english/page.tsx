@@ -481,7 +481,7 @@ export default function EnglishDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree (BA/BSc/BCom or equivalent) from a recognized university
+                    U.G. degree with English as the Part-III major subject from a recognized university
                   </p>
                 </div>
 
@@ -494,7 +494,7 @@ export default function EnglishDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates
                   </p>
                 </div>
 
@@ -507,7 +507,7 @@ export default function EnglishDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    English as a subject at degree level OR studied English up to Class 12 with minimum 50% marks
+                    Or a P.G. degree in English with at least 50% marks; English studied only as a Part-II language or up to Class 12 does not qualify
                   </p>
                 </div>
 
@@ -533,7 +533,7 @@ export default function EnglishDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms (no upper age limit for certain categories)
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -546,7 +546,7 @@ export default function EnglishDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable for the admission year)
+                    No entrance test: selection is purely on merit from degree marks plus weightage
                   </p>
                 </div>
               </div>
@@ -1029,7 +1029,7 @@ export default function EnglishDepartment() {
                 <div className="absolute top-12 left-6 w-0.5 h-full lg:hidden" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
-              {/* Step 3 - Entrance Test / Counseling */}
+              {/* Step 3 - Merit-Based Selection */}
               <div className="relative">
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 relative z-10">
@@ -1040,10 +1040,10 @@ export default function EnglishDepartment() {
                   </div>
                   <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                      Entrance Test / Counseling
+                      Merit-Based Selection
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Appear for TNTEU B.Ed entrance examination (if applicable) or participate in institutional counseling based on merit and reservation norms.
+                      There is no entrance test. Selection is purely on merit from your degree marks plus weightage, following the community reservation norms.
                     </p>
                   </div>
                 </div>

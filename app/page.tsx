@@ -173,7 +173,7 @@ export default async function Home() {
               name: 'What is the eligibility criteria for B.Ed admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Candidates must have completed a Bachelor\'s degree (BA/B.Sc/B.Com/BCA/BBA or equivalent) from a recognized university with a minimum of 50% aggregate marks for General Category and 45% for Reserved Categories (SC/ST/OBC/PWD). There is no upper age limit for admission. Graduation with school teaching subjects is preferred but not mandatory.',
+                text: 'You need a degree in the subject you want to teach. Tamil, English, Mathematics, Physical Science, Biological Science, History and Computer Science need a U.G. degree in that subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST). Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. Differently abled candidates need a pass (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). There is no upper age limit for admission.',
               },
             },
             {
@@ -1155,11 +1155,11 @@ export default async function Home() {
               <div className="space-y-4 text-gray-700">
                 <div>
                   <p className="font-semibold mb-1">Educational Qualification:</p>
-                  <p className="text-sm">Bachelor&apos;s Degree (BA/B.Sc/B.Com/BCA/BBA or equivalent) from a recognized university</p>
+                  <p className="text-sm">A U.G. degree in the subject you want to teach; a P.G. (50%) in the same subject for Economics, Commerce and Political Science</p>
                 </div>
                 <div>
                   <p className="font-semibold mb-1">Minimum Marks:</p>
-                  <p className="text-sm">50% aggregate for General Category, 45% for Reserved Categories (SC/ST/OBC/PWD)</p>
+                  <p className="text-sm">OC 50%, BC/BC(M) 45%, MBC/DNC 43%, SC/SC(A)/ST 40% (G.O.(D) No.144, 2026-27)</p>
                 </div>
                 <div>
                   <p className="font-semibold mb-1">Age Limit:</p>
@@ -1167,7 +1167,7 @@ export default async function Home() {
                 </div>
                 <div>
                   <p className="font-semibold mb-1">Subjects:</p>
-                  <p className="text-sm">Graduation with school teaching subjects preferred</p>
+                  <p className="text-sm">Your degree subject decides your B.Ed teaching subject</p>
                 </div>
               </div>
             </div>
@@ -1637,7 +1637,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                Candidates must have completed a Bachelor&apos;s degree (BA/B.Sc/B.Com/BCA/BBA or equivalent) from a recognized university with a minimum of 50% aggregate marks for General Category and 45% for Reserved Categories (SC/ST/OBC/PWD). There is no upper age limit for admission. Graduation with school teaching subjects is preferred but not mandatory.
+                You need a degree in the subject you want to teach. Tamil, English, Mathematics, Physical Science, Biological Science, History and Computer Science need a U.G. degree in that subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST). Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. Differently abled candidates need a pass (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). There is no upper age limit for admission.
               </div>
             </details>
 

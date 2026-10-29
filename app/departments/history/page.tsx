@@ -400,7 +400,7 @@ export default function HistoryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree in History (B.A. History) or equivalent from a recognized university
+                    Bachelor's degree with History as the Part-III major (B.A. History) from a recognized university
                   </p>
                 </div>
 
@@ -413,7 +413,7 @@ export default function HistoryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates
                   </p>
                 </div>
 
@@ -426,7 +426,7 @@ export default function HistoryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    History as a major subject or substantial History papers at degree level
+                    Or a P.G. degree in History with at least 50% marks; a few History papers inside another degree do not qualify
                   </p>
                 </div>
 
@@ -439,7 +439,7 @@ export default function HistoryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    B.A. with Political Science, Sociology, Economics with History subsidiary also eligible
+                    History as a subsidiary subject alone does not qualify; double or triple majors may choose History if it is one of their majors
                   </p>
                 </div>
 
@@ -465,7 +465,7 @@ export default function HistoryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms for teacher education
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -478,7 +478,7 @@ export default function HistoryDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from degree marks plus weightage
                   </p>
                 </div>
               </div>
@@ -1064,7 +1064,7 @@ export default function HistoryDepartment() {
                     Check Eligibility
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Verify you meet the academic requirements: B.A. History or equivalent degree with minimum 50% marks (45% for reserved categories) with History as major subject.
+                    Verify you meet the academic requirements: a degree with History as the Part-III major and at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks.
                   </p>
                 </div>
               </div>
@@ -1109,7 +1109,7 @@ export default function HistoryDepartment() {
               <div className="md:w-1/2 md:pl-12"></div>
             </div>
 
-            {/* Step 4 - Counseling & Seat Allotment */}
+            {/* Step 4 - Merit List & Seat Allotment */}
             <div className="relative flex flex-col md:flex-row items-center mb-12">
               <div className="md:w-1/2 md:pr-12 md:order-1"></div>
               <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
@@ -1119,10 +1119,10 @@ export default function HistoryDepartment() {
               <div className="md:w-1/2 md:pl-12 md:order-2">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    Counseling & Seat Allotment
+                    Merit List & Seat Allotment
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Attend counseling session as per TNTEU schedule. Seats are allotted based on merit, entrance exam scores, and reservation norms.
+                    The college announces its dates on its website. Seats are allotted purely on merit (degree marks plus weightage) and reservation norms; there is no entrance test.
                   </p>
                 </div>
               </div>
@@ -1194,7 +1194,7 @@ export default function HistoryDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Candidates must hold a Bachelor's degree in History (B.A. History) or equivalent degree with History as a major subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates with B.A. in Political Science, Sociology, or Economics with History as subsidiary may also apply. Those appearing for final year degree examinations can apply provisionally.
+                Candidates must hold a Bachelor's degree with History as the Part-III major subject (B.A. History) from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. A P.G. degree in History with at least 50% marks also qualifies. History as a subsidiary subject in a Political Science, Sociology or Economics degree does not qualify (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Those appearing for final year degree examinations can apply provisionally.
               </p>
             </details>
 
@@ -1284,7 +1284,7 @@ export default function HistoryDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, candidates with B.A. History degree from UGC-recognized distance education universities/institutions are eligible for B.Ed History admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a university listed in the UGC/AIU approved list.
+                Yes, candidates with B.A. History degree from UGC-recognized distance education universities/institutions are eligible for B.Ed History admission, provided they meet the minimum marks for their community (50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST) and studied in the 10+2+3 pattern; an Open University degree without the 10+2 school pattern is not eligible. The distance education degree must be from a university listed in the UGC/AIU approved list.
               </p>
             </details>
 

@@ -8,7 +8,7 @@ export default function AdmissionFAQ() {
   const faqs = [
     {
       question: 'What is the eligibility for B.Ed English admission?',
-      answer: 'Candidates must hold a Bachelor\'s degree (BA/BSc/BCom or equivalent) with at least 50% marks (45% for reserved categories) with English as a subject at the degree level or studied English up to Class 12 with minimum 50% marks. Candidates appearing for final year exams may also apply provisionally.'
+      answer: 'Candidates must hold a U.G. degree with English as the Part-III major subject, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. A P.G. degree in English with at least 50% marks also qualifies. English studied only as a Part-II language or up to Class 12 does not qualify (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Candidates appearing for final year exams may also apply provisionally.'
     },
     {
       question: 'What is the duration of B.Ed English program?',

@@ -508,7 +508,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree with Economics as major/subsidiary (BA Economics, B.Sc Economics, B.Com with Economics, or equivalent) from a recognized university
+                    A P.G. degree in Economics (M.A. Economics) with Economics also as the U.G. major (B.A. Economics); a U.G. degree alone is not enough
                   </p>
                 </div>
 
@@ -521,7 +521,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% marks in the P.G. degree (a pass is enough for differently abled candidates)
                   </p>
                 </div>
 
@@ -534,7 +534,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Economics studied at degree level as a core or elective subject
+                    Same major subject in U.G. and P.G.; any other subject only with a Government order of equivalence
                   </p>
                 </div>
 
@@ -547,7 +547,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Candidates appearing for final year degree examinations may also apply
+                    Study pattern must be 10+2+3; Open University degrees without 10+2 are not eligible
                   </p>
                 </div>
 
@@ -560,7 +560,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms for teacher education
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -573,7 +573,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is on merit from P.G. marks, plus weightage for M.Phil (+1), Ph.D (+2) and NSS/NCC/Sports (+3)
                   </p>
                 </div>
               </div>
@@ -615,7 +615,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Degree certificate and consolidated mark sheet
+                    U.G. and P.G. degree certificates and consolidated mark sheets
                   </p>
                 </div>
 
@@ -641,7 +641,7 @@ export default function EconomicsDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Community certificate (for reserved category candidates)
+                    Community certificate (for community-wise reservation)
                   </p>
                 </div>
 
@@ -1127,7 +1127,7 @@ export default function EconomicsDepartment() {
                       Check Eligibility
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Verify you meet the academic requirements: BA Economics, B.Sc Economics, B.Com with Economics or equivalent degree with minimum 50% marks (45% for reserved categories).
+                      Verify you meet the academic requirements: B.A. and M.A. Economics, with at least 50% marks in the P.G. degree (a U.G. degree alone is not enough).
                     </p>
                   </div>
                 </div>
@@ -1188,10 +1188,10 @@ export default function EconomicsDepartment() {
                 <div className="md:w-1/2 md:pl-12 md:order-2">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                      Counseling & Seat Allotment
+                      Merit List & Seat Allotment
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Attend counseling session as per TNTEU schedule. Seats are allotted based on merit, entrance exam scores, and reservation norms.
+                      The college announces its own admission dates on its website. Seats are allotted purely on merit from P.G. marks plus weightage, with community reservation; there is no entrance test.
                     </p>
                   </div>
                 </div>
@@ -1268,7 +1268,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Candidates must hold a Bachelor's degree with Economics as a major or subsidiary subject (BA Economics, B.Sc Economics, B.Com with Economics, or equivalent) from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates appearing for final year degree examinations may also apply provisionally.
+                Candidates must hold a P.G. degree in Economics (M.A. Economics) with at least 50% marks, with Economics also as the U.G. major (B.A. Economics). A U.G. degree alone is not enough; a pass is enough for differently abled candidates. Selection is purely on merit from P.G. marks, with no entrance test (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).
               </p>
             </details>
 
@@ -1328,7 +1328,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.
+                The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for eligible community candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.
               </p>
             </details>
 
@@ -1358,7 +1358,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, candidates with BA Economics or equivalent degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Economics admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a recognized university listed in UGC/AIU approved list.
+                Not with a B.A. Economics alone. You need a B.A. and an M.A. in Economics, with at least 50% marks in the P.G. degree. A degree earned through distance mode must follow the 10+2+3 pattern; U.G. or P.G. degrees taken through an Open University without the 10+2 school pattern are not eligible (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).
               </p>
             </details>
 

@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Commerce admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in Commerce (B.Com) or equivalent degree with Commerce subjects (Accountancy, Business Studies, Economics) from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates appearing for final year degree examinations may also apply provisionally.",
+                text: "Candidates must hold a P.G. degree in Commerce (M.Com) with at least 50% marks, with Commerce also as the U.G. major (B.Com). A U.G. degree alone is not enough; a pass is enough for differently abled candidates. Selection is purely on merit from P.G. marks, with no entrance test (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).",
               },
             },
             {
@@ -87,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the fee structure for B.Ed Commerce?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.',
+                text: 'The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for eligible community candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.',
               },
             },
             {
@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Commerce after distance B.Com?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with B.Com degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Commerce admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a recognized university listed in UGC/AIU approved list.',
+                text: 'Not with a B.Com alone. You need a B.Com and an M.Com, with at least 50% marks in the P.G. degree. A degree earned through distance mode must follow the 10+2+3 pattern; U.G. or P.G. degrees taken through an Open University without the 10+2 school pattern are not eligible (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).',
               },
             },
             {

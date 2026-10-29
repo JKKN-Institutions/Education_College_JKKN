@@ -90,8 +90,8 @@ export async function GET() {
           makeTable(
             ['Criteria', 'Requirement'],
             [
-              ['Education', "Bachelor's degree (B.A. / B.Sc. / B.Com. or equivalent) from a recognized university"],
-              ['Minimum Marks', '50% aggregate in qualifying degree (45% for SC/ST/OBC candidates)'],
+              ['Education', 'U.G. degree in the subject you will teach (P.G. in the same subject for Economics, Commerce and Political Science), under the 10+2+3 pattern'],
+              ['Minimum Marks', 'OC 50%, BC/BC(M) 45%, MBC/DNC 43%, SC/SC(A)/ST 40% in the U.G. degree; P.G. 50% for Economics, Commerce and Political Science (G.O.(D) No.144, 2026-27)'],
               ['Entrance Exam', 'No entrance exam \u2014 admission based on merit in qualifying degree'],
               ['Age', 'No upper age limit for B.Ed admission in Tamil Nadu'],
               ['Nationality', 'Indian citizens and NRI candidates'],
@@ -169,7 +169,7 @@ export async function GET() {
           // ── Section 8 ──
           h2('Admission Process 2026'),
           p('There are two routes (see above). For a JKKN self-financing seat, these are the steps:'),
-          p("1. Complete your Bachelor's degree \u2014 with minimum 50% aggregate marks (45% for reserved categories) in a relevant subject from a recognized university."),
+          p('1. Complete your degree in the subject you want to teach \u2014 at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a P.G. with 50% in the same subject for Economics, Commerce and Political Science.'),
           p('2. Apply to the college \u2014 online through the admission portal or at the admission office. Choose your B.Ed subject from the 10 teaching subjects.'),
           p('3. Submit your documents \u2014 including qualifying degree mark sheets, transfer certificate, community certificate (if applicable), and passport-size photographs.'),
           p('4. Confirm your admission \u2014 by paying the fee (\u20b935,000 a year tuition, Management Quota) and choosing hostel or transport if you need them.'),
@@ -180,7 +180,7 @@ export async function GET() {
           h2('Frequently Asked Questions'),
           p("(Format: Each question on its own line starting with 'Q:' and each answer on its own line starting with 'A:'. Add more Q/A pairs as needed.)"),
           p('Q: What is the eligibility for B.Ed admission at JKKN College of Education?'),
-          p("A: Candidates must hold a Bachelor's degree with minimum 50% marks (45% for SC/ST/OBC) from a recognized university. The degree should be in the subject you wish to specialize in. Contact our admissions office at +91 9345855001 for detailed eligibility criteria."),
+          p("A: You need a degree in the subject you want to teach. Tamil, English, Mathematics, Physical Science, Biological Science, History and Computer Science need a U.G. degree in that subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST). Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. Differently abled candidates need a pass (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Contact our admissions office at +91 9345855001 for detailed eligibility criteria."),
           p('Q: Is hostel facility available at JKKN College of Education?'),
           p('A: Yes, JKKN provides separate hostel facilities for boys and girls within the campus at Natarajapuram, Komarapalayam. The campus is residential with mess, library, and recreational facilities.'),
           p('Q: What is the B.Ed fee structure at JKKN College of Education?'),

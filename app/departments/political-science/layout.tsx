@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Political Science admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in Political Science (B.A) or equivalent degree with Political Science as a major or elective subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates with B.A in History, Public Administration, or Sociology with Political Science combination are also eligible. Final year degree candidates may apply provisionally.",
+                text: "Candidates must hold a P.G. degree in Political Science (M.A. Political Science) with at least 50% marks, with Political Science also as the U.G. major (B.A. Political Science). A U.G. degree alone, or a degree in History, Public Administration or Sociology, is not enough; a pass is enough for differently abled candidates. Selection is purely on merit from P.G. marks, with no entrance test (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).",
               },
             },
             {
@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Are scholarships available for B.Ed Political Science?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, various scholarships are available including Tamil Nadu Government scholarships for SC/ST/OBC/BC candidates, merit-based scholarships, and scholarships for economically weaker sections. Eligible candidates can also avail central government schemes like Post-Matric Scholarship. Contact the admission office for detailed information on available scholarships and application procedures.',
+                text: 'Yes, various scholarships are available including Tamil Nadu Government scholarships for eligible community candidates, merit-based scholarships, and scholarships for economically weaker sections. Eligible candidates can also avail central government schemes like Post-Matric Scholarship. Contact the admission office for detailed information on available scholarships and application procedures.',
               },
             },
             {
@@ -111,7 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Political Science after distance education B.A?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with B.A degree in Political Science from UGC-recognized distance education programs (such as IGNOU, state open universities, or university distance education directorates) are eligible for B.Ed Political Science admission, provided they meet the minimum percentage criteria and other eligibility requirements as specified by TNTEU.',
+                text: 'Not with a B.A. alone. You need a B.A. and an M.A. in Political Science, with at least 50% marks in the P.G. degree. A degree earned through distance mode must follow the 10+2+3 pattern; U.G. or P.G. degrees taken through an Open University without the 10+2 school pattern are not eligible (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).',
               },
             },
           ],

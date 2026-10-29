@@ -23,7 +23,7 @@ export const politicalScienceBlogData: CourseBlogData = {
   wordCount: '1,950 words',
 
   quickAnswer:
-    'B.Ed Political Science is a 2-year teacher training program for graduates aiming to teach Political Science / Civics at secondary and senior secondary school levels. Eligibility: B.A. Political Science or equivalent with 50% (45% reserved). Political Science is one of the top-3 UPSC optional subjects and Indian Polity is a major UPSC Prelims/Mains topic — making B.Ed Political Science highly lucrative for UPSC Civil Services coaching career. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Political Science seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Political Science is a 2-year teacher training program for graduates aiming to teach Political Science / Civics at secondary and senior secondary school levels. Eligibility: B.A. and M.A. Political Science, with at least 50% in the P.G. degree. Political Science is one of the top-3 UPSC optional subjects and Indian Polity is a major UPSC Prelims/Mains topic — making B.Ed Political Science highly lucrative for UPSC Civil Services coaching career. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Political Science seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const politicalScienceBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.A. Political Science / B.A. Public Administration / equivalent UG with Political Science as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'M.A. Political Science with at least 50% marks, with Political Science also as the U.G. major (B.A. Political Science); U.G. alone is not enough' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with civics/political science classroom teaching' },
@@ -74,15 +74,15 @@ export const politicalScienceBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Political Science at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.A. Political Science / B.A. Public Administration / B.A. (History, Political Science, Economics combo) / equivalent UG with Political Science as main subject' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.A. International Relations, B.A. (Public Administration), and LLB graduates with political theory background may be eligible per TNTEU norms' },
-      { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Education', requirement: 'A P.G. degree in Political Science (M.A. Political Science), with Political Science also as the U.G. major (B.A. Political Science); a U.G. degree alone is not enough' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% in the P.G. degree; a pass is enough for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Other Degrees', requirement: 'Public Administration, Sociology or Economics degrees do not qualify; any other degree only with a Government order of equivalence' },
+      { criteria: 'Entrance Exam', requirement: 'No entrance exam — selection is purely on merit from P.G. marks, plus weightage (M.Phil +1, Ph.D +2, NSS/NCC/Sports +3)' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'Your B.Ed teaching subject (Political Science) must match your UG specialization. A B.Sc or B.Com graduate cannot opt for B.Ed Political Science. B.A. graduates with Political Science as one of the three major subjects (typical Indian Arts UG structure) are usually eligible.',
+      'Your B.Ed teaching subject (Political Science) must be the major in both your U.G. and P.G. degrees (B.A. + M.A. Political Science). A B.Sc or B.Com graduate cannot opt for B.Ed Political Science, and a B.A. without an M.A. Political Science does not qualify.',
   },
 
   curriculum: {
@@ -176,7 +176,7 @@ export const politicalScienceBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Political Science at JKKN?',
-      a: 'You need B.A. Political Science, B.A. Public Administration, or equivalent UG with Political Science as the main subject — with 50% marks (45% for SC/ST/OBC/DA). B.A. graduates with Political Science as one of the three major subjects (typical Indian Arts UG) usually qualify. LLB graduates with political theory background may also qualify — confirm via +91 9345855001.',
+      a: 'You need a P.G. degree in Political Science (M.A. Political Science) with at least 50% marks, with Political Science also as the U.G. major (B.A. Political Science). A U.G. degree alone, or a degree in Public Administration or Sociology, does not qualify; a pass is enough for differently abled candidates — confirm via +91 9345855001.',
     },
     {
       q: 'Will I teach Political Science separately or as part of Social Science?',
@@ -192,7 +192,7 @@ export const politicalScienceBlogData: CourseBlogData = {
     },
     {
       q: 'Do I need M.A. Political Science to teach in CBSE schools?',
-      a: 'For Classes 11–12 PGT positions, M.A. Political Science + B.Ed is required. For Classes 6–10 (where Civics appears in Social Science), B.Ed Political Science alone suffices. Most B.Ed Political Science graduates pursue distance M.A. Political Science (IGNOU, Madras University, Annamalai) alongside school teaching for PG-level eligibility and UPSC coaching prospects.',
+      a: 'For Classes 11–12 PGT positions, M.A. Political Science + B.Ed is required. For Classes 6–10 (where Civics appears in Social Science), B.Ed Political Science alone suffices. In Tamil Nadu, B.Ed Political Science admission itself needs B.A. and M.A. Political Science, so you will already hold the M.A. when you join.',
     },
     {
       q: 'Can I work in policy research or public administration after B.Ed Political Science?',

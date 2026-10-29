@@ -23,7 +23,7 @@ export const commerceBlogData: CourseBlogData = {
   wordCount: '2,100 words',
 
   quickAnswer:
-    'B.Ed Commerce is a 2-year teacher training program for graduates aiming to teach commerce subjects (Accountancy, Business Studies, Economics, Statistics) at senior secondary (Classes 11–12) and higher secondary levels. Eligibility: B.Com / BBA / equivalent with 50% (45% reserved). Commerce is one of the most placement-friendly B.Ed specializations in CBSE schools and lucrative CA Foundation/CPT coaching industry. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Commerce seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Commerce is a 2-year teacher training program for graduates aiming to teach commerce subjects (Accountancy, Business Studies, Economics, Statistics) at senior secondary (Classes 11–12) and higher secondary levels. Eligibility: B.Com and M.Com, with at least 50% in the P.G. degree. Commerce is one of the most placement-friendly B.Ed specializations in CBSE schools and lucrative CA Foundation/CPT coaching industry. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Commerce seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const commerceBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Com / BBA / B.Com (CA) / equivalent UG with Commerce as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'M.Com with at least 50% marks, with Commerce also as the U.G. major (B.Com); U.G. alone is not enough' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with commerce classroom teaching focus' },
@@ -74,16 +74,16 @@ export const commerceBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Commerce at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Com / BBA / B.Com (CA) / B.Com Banking / equivalent UG with Commerce as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.Com (Computer Applications), B.Com (Corporate Secretaryship), BBA also eligible per TNTEU norms' },
-      { criteria: 'CA Foundation/Intermediate Pass-outs', requirement: 'CA Foundation/CPT cleared candidates with B.Com may receive preference' },
-      { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Education', requirement: 'A P.G. degree in Commerce (M.Com), with Commerce also as the U.G. major (B.Com); a U.G. degree alone is not enough' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% in the P.G. degree; a pass is enough for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Other Degrees', requirement: 'BBA, BBM, BBS, B.Sc Finance, or a B.Com of any branch without an M.Com, does not qualify; any other degree only with a Government order of equivalence' },
+      { criteria: 'Weightage', requirement: 'Only M.Phil (+1), Ph.D (+2) and NSS/NCC/Sports (+3) add to P.G. marks; there is no preference for CA Foundation/CPT' },
+      { criteria: 'Entrance Exam', requirement: 'No entrance exam — selection is purely on merit from P.G. marks, plus weightage' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'Your B.Ed teaching subject (Commerce) must match your UG specialization. A B.A. or B.Sc graduate cannot opt for B.Ed Commerce. B.Com is the standard eligibility — BBA candidates may need to demonstrate sufficient accounting/commerce coursework.',
+      'Your B.Ed teaching subject (Commerce) must be the major in both your U.G. and P.G. degrees (B.Com + M.Com). A B.A. or B.Sc graduate cannot opt for B.Ed Commerce, and a B.Com or BBA without an M.Com does not qualify.',
   },
 
   curriculum: {
@@ -177,7 +177,7 @@ export const commerceBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Commerce at JKKN?',
-      a: 'You need B.Com, BBA, B.Com (CA), B.Com (Banking), or equivalent UG with Commerce as the main subject — with 50% marks (45% for SC/ST/OBC/DA). CA Foundation cleared candidates may receive preference. Call +91 9345855001 for eligibility confirmation.',
+      a: 'You need a P.G. degree in Commerce (M.Com) with at least 50% marks, with Commerce also as the U.G. major (B.Com). A U.G. degree alone, a BBA or a BBM does not qualify, and CA Foundation gives no preference. Call +91 9345855001 for eligibility confirmation.',
     },
     {
       q: 'Will I teach commerce only in Classes 11–12?',
@@ -193,7 +193,7 @@ export const commerceBlogData: CourseBlogData = {
     },
     {
       q: 'Do I need M.Com to teach in CBSE schools?',
-      a: 'For Classes 11–12 PGT positions, M.Com + B.Ed is required. For Classes 6–10 (where commerce concepts appear in Social Science), B.Ed Commerce alone suffices. Most B.Ed Commerce graduates pursue distance M.Com (IGNOU, Madras University, Annamalai) alongside school teaching for PG-level commerce teacher eligibility.',
+      a: 'For Classes 11–12 PGT positions, M.Com + B.Ed is required. For Classes 6–10 (where commerce concepts appear in Social Science), B.Ed Commerce alone suffices. In Tamil Nadu, B.Ed Commerce admission itself needs B.Com and M.Com, so you will already hold the M.Com when you join.',
     },
     {
       q: 'Can I become a Chartered Accountant after B.Ed Commerce?',

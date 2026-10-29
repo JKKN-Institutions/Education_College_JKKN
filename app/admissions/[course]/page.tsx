@@ -274,6 +274,18 @@ export default async function CourseAdmissionPage({
                 <span className="font-bold">Subject Requirement: </span>
                 {data.subjectRequirement}
               </p>
+              <p className="mt-2 text-xs text-gray-600">
+                Source: Government of Tamil Nadu,{' '}
+                <a
+                  href="https://cms.tn.gov.in/cms_migrated/document/GO/hedu_e_%20144_D_2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  G.O.(D) No.144, Higher Education (G1) Department, 18.06.2026
+                </a>{' '}
+                - B.Ed admission guidelines 2026-27, which cover self-financing colleges of education.
+              </p>
             </div>
           </div>
         </section>

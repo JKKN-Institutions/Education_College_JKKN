@@ -23,7 +23,7 @@ export const mathematicsBlogData: CourseBlogData = {
   wordCount: '2,250 words',
 
   quickAnswer:
-    'B.Ed Mathematics is a 2-year teacher training program preparing graduates to teach mathematics at secondary (Classes 6–10) and senior secondary (Classes 11–12) levels. Eligibility: B.Sc. Mathematics / B.A. Mathematics or equivalent with 50% marks (45% reserved). Mathematics is consistently among the top 2 highest-demand B.Ed specializations — driven by perennial maths teacher shortage in government schools, CBSE/ICSE chains, and the booming JEE/NEET coaching industry. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Maths seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Mathematics is a 2-year teacher training program preparing graduates to teach mathematics at secondary (Classes 6–10) and senior secondary (Classes 11–12) levels. Eligibility: a U.G. degree in Mathematics or Applied Mathematics with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Mathematics is consistently among the top 2 highest-demand B.Ed specializations — driven by perennial maths teacher shortage in government schools, CBSE/ICSE chains, and the booming JEE/NEET coaching industry. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Maths seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const mathematicsBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. Maths / B.A. Maths / B.E. (with Maths in higher secondary) with 50% (45% for reserved)' },
+      { label: 'Eligibility:', value: 'U.G. in Maths / Applied Maths with 50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST; B.E./B.Tech (any branch) with 55%' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks of supervised maths classroom practice' },
@@ -74,16 +74,16 @@ export const mathematicsBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Mathematics at JKKN College of Education (or any TNTEU-affiliated college), candidates must satisfy the following eligibility criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Sc. Mathematics / B.A. Mathematics / B.Sc. Statistics / Bachelor\'s with Mathematics as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/Differently Abled candidates per Tamil Nadu Govt. rules)' },
-      { criteria: 'Engineering Graduates', requirement: 'B.E. / B.Tech graduates with Mathematics in higher secondary may be eligible under TNTEU norms — confirm with college' },
+      { criteria: 'Education', requirement: 'U.G. degree with Mathematics or Applied Mathematics as the main (Part-III) subject from a recognized university; a double / triple major U.G. that includes Mathematics also counts' },
+      { criteria: 'Minimum Marks', requirement: '50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in Part-III of the U.G. degree; a pass for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Engineering Graduates', requirement: 'B.E. / B.Tech graduates of any branch with 55% marks are eligible; only 5% of the Mathematics seats are for them' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
-      { criteria: 'Mathematical Aptitude', requirement: 'Functional ability to solve secondary and higher secondary level mathematics — assessed during admission counselling' },
+      { criteria: 'Merit Weightage', requirement: 'No aptitude test — a P.G. in Mathematics adds 4 marks, M.Phil 5, Ph.D 6, and NSS / NCC / Sports at U.G. level 3' },
     ],
     note:
-      'Your B.Ed teaching subject (Mathematics) must match your UG degree. A B.A. English or B.Com graduate cannot directly opt for B.Ed Mathematics. However, B.Sc. Statistics, B.Sc. Computer Science (with Maths), and B.E./B.Tech graduates may qualify — confirm specific eligibility with JKKN admissions at +91 9345855001.',
+      'Your B.Ed teaching subject (Mathematics) must match your UG degree. A B.A. English or B.Com graduate cannot directly opt for B.Ed Mathematics. Applied Mathematics is the only listed equivalent; B.E./B.Tech graduates of any branch qualify with 55%. Any other degree needs a Government order of equivalence — confirm specific eligibility with JKKN admissions at +91 9345855001.',
   },
 
   curriculum: {
@@ -177,7 +177,7 @@ export const mathematicsBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Mathematics at JKKN?',
-      a: 'You need B.Sc. Maths, B.A. Maths, B.Sc. Statistics, or equivalent UG degree with Mathematics as the main subject — with 50% marks (45% for SC/ST/OBC/DA). B.E./B.Tech graduates with strong school maths background may qualify under TNTEU norms. Call +91 9345855001 to confirm eligibility for your UG qualification.',
+      a: 'You need a UG degree with Mathematics or Applied Mathematics as the main subject — with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass for differently abled candidates. B.E./B.Tech graduates of any branch with 55% marks are eligible for 5% of the seats. Call +91 9345855001 to confirm eligibility for your UG qualification.',
     },
     {
       q: 'Which is in higher demand — B.Ed Maths or B.Ed Science?',

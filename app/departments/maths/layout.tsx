@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Mathematics admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree (BSc/BA/BCom or equivalent) with at least 50% marks (45% for SC/ST/OBC/PWD candidates) with Mathematics as a main or subsidiary subject at the degree level. Candidates who have studied Mathematics up to Class 12 may also be considered.",
+                text: "Candidates need a U.G. degree with Mathematics or Applied Mathematics as the main (Part-III) subject, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. B.E./B.Tech graduates of any branch with 55% marks are also eligible for 5% of the seats.",
               },
             },
             {

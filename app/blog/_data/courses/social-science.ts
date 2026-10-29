@@ -23,7 +23,7 @@ export const socialScienceBlogData: CourseBlogData = {
   wordCount: '1,900 words',
 
   quickAnswer:
-    'B.Ed Social Science is a 2-year teacher training program for graduates aiming to teach unified Social Science (History, Geography, Civics, Economics) at secondary (Classes 6–10) school levels. Eligibility: B.A. with Social Science subjects (any of History, Geography, Political Science, Economics) with 50% (45% reserved). Social Science is the most placement-friendly B.Ed specialization for BT Assistant government posts in Tamil Nadu — every government school needs Social Science teachers. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Social Science seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Social Science is a 2-year teacher training program for graduates aiming to teach unified Social Science (History, Geography, Civics, Economics) at secondary (Classes 6–10) school levels. Eligibility: the Tamil Nadu guidelines have no separate Social Science subject, so it follows your degree subject — History or Geography as the U.G. Part-III major (50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST), or a P.G. in Economics or Political Science with 50% and the same U.G. major. Social Science is the most placement-friendly B.Ed specialization for BT Assistant government posts in Tamil Nadu — every government school needs Social Science teachers. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Social Science seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const socialScienceBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.A. with Social Science subjects (History/Geography/Political Science/Economics) with 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'Follows your degree subject: History / Geography U.G. major (50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST) or P.G. Economics / Political Science with 50%' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with integrated social science classroom teaching' },
@@ -72,17 +72,17 @@ export const socialScienceBlogData: CourseBlogData = {
 
   eligibility: {
     intro:
-      'To enrol in B.Ed Social Science at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
+      'To enrol in B.Ed Social Science at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria (Government of Tamil Nadu, G.O.(D) No.144, 2026-27):',
     criteria: [
-      { criteria: 'Education', requirement: 'B.A. with any Social Science subject (History, Geography, Political Science, Economics, Sociology) as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.A. (History + Political Science + Economics combo — typical Indian Arts UG), B.A. (Public Administration, Sociology) all eligible per TNTEU norms' },
+      { criteria: 'Education', requirement: 'No separate Social Science subject in the G.O.: History or Geography as the U.G. Part-III major, or a P.G. degree in Economics or Political Science with at least 50% marks and the same U.G. major' },
+      { criteria: 'Minimum Marks', requirement: 'History / Geography route: at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates' },
+      { criteria: 'Double / Triple Major', requirement: 'Eligible on the History or Geography major. Public Administration or Sociology do not count as History, Geography, Economics or Political Science; confirm your subject with the admission office' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'B.Ed Social Science has the broadest eligibility among arts-based B.Ed specializations — any B.A. with at least one Social Science subject as a main qualifying course typically qualifies. A pure B.Sc, B.Com, or B.Tech graduate cannot opt for B.Ed Social Science directly.',
+      'The Tamil Nadu guidelines have no separate Social Science subject, so eligibility follows your own degree subject (History or Geography at U.G. level; Economics or Political Science at P.G. level). Please confirm your subject with the JKKN admission office before applying. A B.Com or B.Tech graduate cannot opt for B.Ed Social Science directly.',
   },
 
   curriculum: {
@@ -176,7 +176,7 @@ export const socialScienceBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Social Science at JKKN?',
-      a: 'You need B.A. with at least one Social Science subject (History, Geography, Political Science, Economics, Sociology) as a main qualifying course — with 50% marks (45% for SC/ST/OBC/DA). B.A. graduates with History-Political Science-Economics combo (typical Indian Arts UG) usually qualify. Call +91 9345855001 for confirmation.',
+      a: 'There is no separate Social Science subject in the Tamil Nadu guidelines, so eligibility follows your degree subject: History or Geography as the UG Part-III major with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks (a pass for differently abled candidates), or a PG degree in Economics or Political Science with 50% and the same UG major. Call +91 9345855001 to confirm your subject.',
     },
     {
       q: 'Will I teach all 4 social science subjects (History, Geography, Civics, Economics)?',

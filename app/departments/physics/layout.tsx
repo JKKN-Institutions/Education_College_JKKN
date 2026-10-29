@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Physics admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in Physics (B.Sc Physics) or equivalent degree with Physics as a major subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates appearing for final year degree examinations may also apply provisionally.",
+                text: "Candidates need a U.G. degree with Physics (or Applied / Theoretical Physics, Geo-Physics, Bio-Physics or Electronics) as the main subject from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. B.E./B.Tech graduates with 55% marks are also eligible. Candidates appearing for final year degree examinations may also apply provisionally.",
               },
             },
             {
@@ -111,7 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Physics after B.Sc with distance education?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with B.Sc Physics degree from UGC-recognized distance education programs are eligible for B.Ed Physics admission, provided they meet the minimum percentage criteria and other eligibility requirements as specified by NCTE and TNTEU norms.',
+                text: 'Yes, candidates with B.Sc Physics degree from UGC-recognized distance education programs are eligible for B.Ed Physics admission, provided they studied in the 10+2+3 pattern and meet the minimum marks for their community. An Open University degree taken without the 10+2 school pattern is not eligible.',
               },
             },
           ],

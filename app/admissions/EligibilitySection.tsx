@@ -28,10 +28,10 @@ export default function EligibilitySection() {
             <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-3 sm:mb-4">Educational Qualification</h3>
             <div className="space-y-3 text-gray-700">
               <p className="text-sm leading-relaxed">
-                Bachelor&apos;s Degree (BA/B.Sc/B.Com/BCA/BBA or equivalent) from a recognized university.
+                A U.G. degree in the subject you want to teach (the Part-III major subject), under the 10+2+3 pattern, from a recognized university.
               </p>
               <p className="text-sm leading-relaxed">
-                Candidates with degrees in arts, science, commerce, or any other discipline with school-level teaching subjects are eligible.
+                Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. B.E./B.Tech graduates need 55% and can take Mathematics, Physical Science, Computer Science or Biological Science as their branch allows.
               </p>
               <p className="text-sm leading-relaxed font-medium text-[#006837]">
                 Candidates appearing for final year exams may also apply provisionally.
@@ -49,19 +49,31 @@ export default function EligibilitySection() {
             <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-3 sm:mb-4">Minimum Marks Required</h3>
             <div className="space-y-4 text-gray-700">
               <div className="flex items-start gap-3">
-                <div className="bg-[#7cb983] text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">G</div>
+                <div className="bg-[#7cb983] text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">OC</div>
                 <div>
-                  <p className="font-semibold mb-1">General Category</p>
-                  <p className="text-sm">50% aggregate marks in the qualifying degree</p>
+                  <p className="font-semibold mb-1">OC (Open Competition)</p>
+                  <p className="text-sm">At least 50% in the U.G. degree</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="bg-[#006837] text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">R</div>
                 <div>
-                  <p className="font-semibold mb-1">Reserved Categories (SC/ST/OBC/PWD)</p>
-                  <p className="text-sm">45% aggregate marks in the qualifying degree</p>
+                  <p className="font-semibold mb-1">Other communities</p>
+                  <p className="text-sm">45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST). Differently abled candidates: a pass.</p>
                 </div>
               </div>
+              <p className="text-xs text-gray-600">
+                Economics, Commerce and Political Science: at least 50% in the P.G. degree. Source: Government of Tamil Nadu,{' '}
+                <a
+                  href="https://cms.tn.gov.in/cms_migrated/document/GO/hedu_e_%20144_D_2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  G.O.(D) No.144, 18.06.2026
+                </a>
+                .
+              </p>
             </div>
           </div>
 

@@ -65,7 +65,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Zoology admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree (BSc or equivalent) from a recognized university with at least 50% marks (45% for SC/ST/OBC/PWD candidates). Zoology must be a major or optional subject at the degree level. Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Life Sciences are eligible. Final year degree Learners may also apply.",
+                text: "Candidates must hold a Bachelor's degree (BSc or a Government-listed equivalent) from a recognized university with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Zoology must be a major subject at the degree level. Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Advanced Zoology and Bio-Technology are eligible. Final year degree Learners may also apply.",
               },
             },
             {

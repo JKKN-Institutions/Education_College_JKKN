@@ -128,8 +128,10 @@ export default function BedCollegesNamakkalDistrictPage() {
             <p className="text-sm text-gray-700 leading-relaxed">
               A 2-year, 4-semester Bachelor of Education, recognised by the National Council for
               Teacher Education since the 2016-17 session and affiliated to TNTEU, Chennai. The
-              sanctioned intake is 100 seats a year across 10 teaching subjects. You need a
-              bachelor&apos;s degree with at least 50% marks (45% for reserved categories).
+              sanctioned intake is 100 seats a year across 10 teaching subjects. You need a U.G.
+              degree in your teaching subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or
+              40% (SC/SC(A)/ST); Economics, Commerce and Political Science need a P.G. with 50%
+              (G.O.(D) No.144, 2026-27).
             </p>
             <div className="mt-3 flex flex-wrap gap-4 text-sm">
               <Link href="/departments" className="font-semibold text-[#006837] underline underline-offset-2">

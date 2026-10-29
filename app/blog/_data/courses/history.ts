@@ -23,7 +23,7 @@ export const historyBlogData: CourseBlogData = {
   wordCount: '1,950 words',
 
   quickAnswer:
-    'B.Ed History is a 2-year teacher training program for graduates aiming to teach History at secondary and senior secondary school levels. Eligibility: B.A. History or equivalent with 50% (45% reserved). History is a strategic B.Ed specialization combining steady school recruitment with the UPSC Civil Services coaching industry where History is a top-3 most popular optional subject. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed History seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed History is a 2-year teacher training program for graduates aiming to teach History at secondary and senior secondary school levels. Eligibility: a U.G. degree with History as the Part-III major with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. History is a strategic B.Ed specialization combining steady school recruitment with the UPSC Civil Services coaching industry where History is a top-3 most popular optional subject. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed History seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const historyBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.A. History / B.A. Indian History / equivalent UG with History as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'B.A. History (History as the Part-III major): 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with history/social science classroom teaching' },
@@ -72,17 +72,17 @@ export const historyBlogData: CourseBlogData = {
 
   eligibility: {
     intro:
-      'To enrol in B.Ed History at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
+      'To enrol in B.Ed History at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria (Government of Tamil Nadu, G.O.(D) No.144, 2026-27):',
     criteria: [
-      { criteria: 'Education', requirement: 'B.A. History / B.A. Indian History / B.A. (History, Political Science, Economics combo) / equivalent UG with History as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/DA per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.A. (Ancient History, Archaeology, Cultural Heritage) and B.A. Tourism with History component also eligible per TNTEU norms' },
+      { criteria: 'Education', requirement: 'B.A. History - a U.G. degree with History as the Part-III major (a double / triple major qualifies when History is one of the majors) - from a recognized university, or a P.G. degree in History with at least 50% marks' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates' },
+      { criteria: 'Other Degrees', requirement: 'Degrees such as Archaeology, Cultural Heritage or Tourism qualify only with a Government order of equivalence; a History paper inside another degree is not enough' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
-      'Your B.Ed teaching subject (History) must match your UG specialization. A B.Sc or B.Com graduate cannot opt for B.Ed History directly. B.A. graduates with History as one of the three major subjects (typical Indian Arts UG structure) are usually eligible.',
+      'Your B.Ed teaching subject (History) must match your UG specialization. A B.Sc or B.Com graduate cannot opt for B.Ed History directly. B.A. graduates with History as one of the two or three major subjects are eligible and pick History as their one major; History as a subsidiary subject alone does not qualify.',
   },
 
   curriculum: {
@@ -176,7 +176,7 @@ export const historyBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed History at JKKN?',
-      a: 'You need B.A. History, B.A. Indian History, or equivalent UG with History as the main subject — with 50% marks (45% for SC/ST/OBC/DA). B.A. graduates with History as one of the three major subjects typically qualify. Call +91 9345855001 for confirmation.',
+      a: 'You need a B.A. History (a UG degree with History as the Part-III major) — with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. An M.A. History with 50% also qualifies, and B.A. graduates with History as one of their majors qualify. Call +91 9345855001 for confirmation.',
     },
     {
       q: 'Will I teach only History or full Social Science in schools?',

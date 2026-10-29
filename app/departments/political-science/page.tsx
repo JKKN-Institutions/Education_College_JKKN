@@ -406,7 +406,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree (B.A/B.A Honours) in Political Science from a recognized university
+                    A P.G. degree in Political Science (M.A. Political Science) with Political Science also as the U.G. major (B.A. Political Science); a U.G. degree alone is not enough
                   </p>
                 </div>
 
@@ -419,7 +419,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in qualifying degree (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% marks in the P.G. degree (a pass is enough for differently abled candidates)
                   </p>
                 </div>
 
@@ -432,7 +432,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Political Science as a major or elective subject in undergraduate studies
+                    Same major subject in U.G. and P.G.; any other subject only with a Government order of equivalence
                   </p>
                 </div>
 
@@ -445,7 +445,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Candidates with B.A in History, Public Administration, or Sociology with Political Science combination are also eligible
+                    A degree in History, Public Administration or Sociology does not qualify for Political Science
                   </p>
                 </div>
 
@@ -458,7 +458,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Final year degree candidates can apply provisionally
+                    No entrance test: selection is on merit from P.G. marks, plus weightage for M.Phil (+1), Ph.D (+2) and NSS/NCC/Sports (+3)
                   </p>
                 </div>
 
@@ -471,7 +471,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Degrees from distance education (UGC recognized) are accepted
+                    Study pattern must be 10+2+3; Open University degrees without 10+2 are not eligible
                   </p>
                 </div>
               </div>
@@ -513,7 +513,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Degree Certificate and all semester mark sheets
+                    U.G. and P.G. Degree Certificates and all semester mark sheets
                   </p>
                 </div>
 
@@ -539,7 +539,7 @@ export default function PoliticalScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Community Certificate (for reserved categories)
+                    Community Certificate (for community-wise reservation)
                   </p>
                 </div>
 
@@ -1034,7 +1034,7 @@ export default function PoliticalScienceDepartment() {
                     Check Eligibility
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Verify you meet the academic requirements: B.A in Political Science or equivalent degree with minimum 50% marks (45% for reserved categories) with Political Science as a subject.
+                    Verify you meet the academic requirements: B.A. and M.A. Political Science, with at least 50% marks in the P.G. degree (a U.G. degree alone is not enough).
                   </p>
                 </div>
               </div>
@@ -1095,10 +1095,10 @@ export default function PoliticalScienceDepartment() {
               <div className="w-full md:w-1/2 md:pl-12 md:text-left">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    Counseling & Seat Allotment
+                    Merit List & Seat Allotment
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Attend counseling session as per TNTEU schedule. Seats are allotted based on merit, entrance exam scores, and reservation norms applicable to Tamil Nadu.
+                    The college announces its own admission dates on its website. Seats are allotted purely on merit from P.G. marks plus weightage, with community reservation as per Tamil Nadu norms; there is no entrance test.
                   </p>
                 </div>
               </div>
@@ -1174,7 +1174,7 @@ export default function PoliticalScienceDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Candidates must hold a Bachelor's degree in Political Science (B.A) or equivalent degree with Political Science as a major or elective subject from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates with B.A in History, Public Administration, or Sociology with Political Science combination are also eligible. Final year degree candidates may apply provisionally.
+                Candidates must hold a P.G. degree in Political Science (M.A. Political Science) with at least 50% marks, with Political Science also as the U.G. major (B.A. Political Science). A U.G. degree alone, or a degree in History, Public Administration or Sociology, is not enough; a pass is enough for differently abled candidates. Selection is purely on merit from P.G. marks, with no entrance test (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).
               </p>
             </details>
 
@@ -1264,7 +1264,7 @@ export default function PoliticalScienceDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, various scholarships are available including Tamil Nadu Government scholarships for SC/ST/OBC/BC candidates, merit-based scholarships, and scholarships for economically weaker sections. Eligible candidates can also avail central government schemes like Post-Matric Scholarship. Contact the admission office for detailed information on available scholarships and application procedures.
+                Yes, various scholarships are available including Tamil Nadu Government scholarships for eligible community candidates, merit-based scholarships, and scholarships for economically weaker sections. Eligible candidates can also avail central government schemes like Post-Matric Scholarship. Contact the admission office for detailed information on available scholarships and application procedures.
               </p>
             </details>
 
@@ -1279,7 +1279,7 @@ export default function PoliticalScienceDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, candidates with B.A degree in Political Science from UGC-recognized distance education programs (such as IGNOU, state open universities, or university distance education directorates) are eligible for B.Ed Political Science admission, provided they meet the minimum percentage criteria and other eligibility requirements as specified by TNTEU.
+                Not with a B.A. alone. You need a B.A. and an M.A. in Political Science, with at least 50% marks in the P.G. degree. A degree earned through distance mode must follow the 10+2+3 pattern; U.G. or P.G. degrees taken through an Open University without the 10+2 school pattern are not eligible (Government of Tamil Nadu, G.O.(D) No.144, 2026-27).
               </p>
             </details>
           </div>

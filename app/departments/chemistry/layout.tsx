@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility criteria for B.Ed Chemistry admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Candidates must have completed BSc Chemistry or BSc with Chemistry as an ancillary subject from a recognized university with minimum 50% aggregate marks. For SC/ST/OBC/PWD candidates, the minimum is 45%. MSc Chemistry candidates are also eligible and given preference during admission.',
+                text: 'Candidates must have completed a U.G. degree with Chemistry or Applied Chemistry as the main (Part-III) subject from a recognized university, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. MSc Chemistry candidates (50%) are also eligible, and a P.G. in Chemistry adds 4 marks of weightage.',
               },
             },
             {

@@ -13,7 +13,7 @@ export const allFaqs: FaqItem[] = [
   {
     category: 'admission',
     question: 'What is the eligibility criteria for B.Ed admission at JKKN?',
-    answer: "Candidates must hold a Bachelor's degree (BA/B.Sc/B.Com/BCA/BBA or equivalent) from a recognized university with a minimum of 50% aggregate marks for General Category and 45% for Reserved Categories (SC/ST/OBC/PWD). Candidates appearing for final year exams may also apply provisionally.",
+    answer: "You need a degree in the subject you want to teach. Tamil, English, Mathematics, Physical Science, Biological Science, History and Computer Science need a U.G. degree in that subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST). Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. Differently abled candidates need a pass (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Candidates appearing for final year exams may also apply provisionally.",
   },
   {
     category: 'admission',

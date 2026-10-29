@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the eligibility for B.Ed Social Science admission?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: "Candidates must hold a Bachelor's degree in Arts (BA) or equivalent with Social Science subjects (History, Geography, Political Science, Economics, Sociology, Civics) with at least 50% marks (45% for SC/ST/OBC/PWD candidates). Candidates appearing for final year examinations may also apply provisionally.",
+                text: "The 2026-27 Tamil Nadu B.Ed guidelines have no separate Social Science subject, so eligibility follows your own degree subject. A U.G. degree with History or Geography as the Part-III major needs at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Economics or Political Science needs a P.G. degree in that subject with at least 50% marks and the same U.G. major (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Please confirm your subject with the admission office. Candidates appearing for final year examinations may also apply provisionally.",
               },
             },
             {
@@ -111,7 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can I pursue B.Ed Social Science after BA with distance education?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, candidates with BA degree from UGC-recognized distance education universities are eligible for B.Ed Social Science admission, provided they meet the minimum percentage criteria and have studied Social Science subjects at the graduation level.',
+                text: 'Yes, candidates with BA degree from UGC-recognized distance education universities are eligible for B.Ed Social Science admission, provided their degree subject and marks meet the rules above (History or Geography as the U.G. major, or a P.G. in Economics or Political Science) and they studied in the 10+2+3 pattern; an Open University degree without the 10+2 school pattern is not eligible.',
               },
             },
           ],

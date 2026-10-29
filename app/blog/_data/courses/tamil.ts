@@ -24,7 +24,7 @@ export const tamilBlogData: CourseBlogData = {
   wordCount: '2,300 words',
 
   quickAnswer:
-    'B.Ed Tamil is a 2-year teacher training program that prepares graduates to teach Tamil language and literature at secondary (Classes 6–10) and higher secondary (Classes 11–12) levels. Eligibility: Bachelor\'s degree in Tamil (B.A. Tamil / B.Lit) with 50% marks (45% reserved). Tamil is one of the highest-demand B.Ed specializations in Tamil Nadu — driven by 3-language policy implementation, TNTET vacancies, and Tamil Nadu State Board recruitment. <strong>JKKN College of Education, Komarapalayam</strong> offers 50 B.Ed Tamil seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Tamil is a 2-year teacher training program that prepares graduates to teach Tamil language and literature at secondary (Classes 6–10) and higher secondary (Classes 11–12) levels. Eligibility: a U.G. degree with Tamil as the Part-III major (B.A. Tamil / B.Lit) with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Tamil is one of the highest-demand B.Ed specializations in Tamil Nadu — driven by 3-language policy implementation, TNTET vacancies, and Tamil Nadu State Board recruitment. <strong>JKKN College of Education, Komarapalayam</strong> offers 50 B.Ed Tamil seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -34,7 +34,7 @@ export const tamilBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.A. Tamil / B.Lit. Tamil / equivalent with 50% (45% for SC/ST/OBC)' },
+      { label: 'Eligibility:', value: 'B.A. Tamil / B.Lit. Tamil (Tamil as the Part-III major): 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
       { label: 'Total Seats at JKKN:', value: '50 seats per academic year' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
@@ -73,18 +73,18 @@ export const tamilBlogData: CourseBlogData = {
 
   eligibility: {
     intro:
-      'To enrol in B.Ed Tamil at JKKN College of Education (or any TNTEU-affiliated college), candidates must satisfy the following NCTE and TNTEU eligibility criteria:',
+      'To enrol in B.Ed Tamil at JKKN College of Education (or any TNTEU-affiliated college), candidates must satisfy the following eligibility criteria (Government of Tamil Nadu, G.O.(D) No.144, 2026-27):',
     criteria: [
-      { criteria: 'Education', requirement: 'B.A. Tamil / B.Lit. Tamil / equivalent UG degree with Tamil as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate in qualifying degree (45% for SC/ST/OBC/Differently Abled candidates per Tamil Nadu Govt. rules)' },
-      { criteria: 'Equivalent Qualifications', requirement: 'B.Litt., B.Tamil Lit., or Bachelor\'s degree with Tamil as one of the optional subjects also eligible per TNTEU norms' },
+      { criteria: 'Education', requirement: 'B.A. Tamil / B.Lit. Tamil - a U.G. degree with Tamil as the Part-III major subject - from a recognized university, or a P.G. degree in Tamil with at least 50% marks' },
+      { criteria: 'Minimum Marks', requirement: 'At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates' },
+      { criteria: 'Double / Triple Major', requirement: 'Eligible if Tamil is one of the Part-III majors; Tamil studied only as a Part-I language or an allied subject does not qualify' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'No age limit - the 2026-27 Tamil Nadu guidelines set neither a minimum nor a maximum age' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota; non-Tamil Nadu candidates eligible under management quota' },
       { criteria: 'Tamil Proficiency', requirement: 'Functional reading-writing-speaking proficiency in Tamil (assessed informally during admission interview)' },
     ],
     note:
-      'Your B.Ed teaching subject (Tamil) must match the subject you studied in your Bachelor\'s degree. A B.A. English graduate cannot opt for B.Ed Tamil. If you studied Tamil as one of the subjects in BA (Allied Tamil), check eligibility specifics with TNTEU or contact JKKN admissions for confirmation.',
+      'Your B.Ed teaching subject (Tamil) must match the subject you studied in your Bachelor\'s degree. A B.A. English graduate cannot opt for B.Ed Tamil. Tamil studied only as a Part-I language or as an allied subject in BA does not count; contact JKKN admissions to confirm your own degree.',
   },
 
   curriculum: {
@@ -178,11 +178,11 @@ export const tamilBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Tamil at JKKN College of Education?',
-      a: 'You need a B.A. Tamil or B.Lit. Tamil (or equivalent UG degree with Tamil as main/optional subject) from a recognized university with minimum 50% marks (45% for SC/ST/OBC/Differently Abled candidates). Admission is based on merit in your qualifying degree — no entrance exam. Call +91 9345855001 to confirm eligibility for your specific UG qualification.',
+      a: 'You need a B.A. Tamil or B.Lit. Tamil (a U.G. degree with Tamil as the Part-III major) from a recognized university with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. A P.G. degree in Tamil with 50% also qualifies. Admission is based on merit in your qualifying degree — no entrance exam. Call +91 9345855001 to confirm eligibility for your specific UG qualification.',
     },
     {
       q: 'Can I do B.Ed Tamil if my Bachelor\'s degree is not in Tamil?',
-      a: 'TNTEU rules require your B.Ed teaching subject to match your UG degree subject. A B.A. English or B.Com graduate cannot directly opt for B.Ed Tamil. However, if you have completed a recognized PG diploma in Tamil or have Tamil as an "allied" subject in your UG, contact JKKN admissions for case-by-case eligibility confirmation.',
+      a: 'The Tamil Nadu B.Ed guidelines (G.O.(D) No.144, 2026-27) require Tamil as the Part-III major of your U.G. degree, or a P.G. degree in Tamil with at least 50% marks. A B.A. English or B.Com graduate cannot opt for B.Ed Tamil, and Tamil studied only as a Part-I language or an "allied" subject does not qualify. Contact JKKN admissions to check the subject that matches your own degree.',
     },
     {
       q: 'Is TNTET mandatory for government Tamil teacher jobs?',

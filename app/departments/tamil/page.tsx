@@ -362,7 +362,7 @@ export default function TamilDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree (BA/BSc/BCom or equivalent) from a recognized university
+                    U.G. degree with Tamil as the Part-III major subject from a recognized university
                   </p>
                 </div>
 
@@ -375,7 +375,7 @@ export default function TamilDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates
                   </p>
                 </div>
 
@@ -388,7 +388,7 @@ export default function TamilDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Tamil as a subject at degree level OR studied Tamil up to Class 12
+                    Or a P.G. degree in Tamil with at least 50% marks; Tamil studied only as a Part-I language or up to Class 12 does not qualify
                   </p>
                 </div>
 
@@ -414,7 +414,7 @@ export default function TamilDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -427,7 +427,7 @@ export default function TamilDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from degree marks plus weightage
                   </p>
                 </div>
               </div>
@@ -864,10 +864,10 @@ export default function TamilDepartment() {
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
                   <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                      Entrance/Counseling
+                      Merit-Based Selection
                     </h3>
                     <p className="leading-relaxed" style={{ color: '#006837' }}>
-                      Attend TNTEU counseling based on entrance exam rank or participate in institutional admission process as applicable.
+                      There is no entrance test. Selection is purely on merit from your degree marks plus weightage; the college announces its dates on its website.
                     </p>
                   </div>
                 </div>

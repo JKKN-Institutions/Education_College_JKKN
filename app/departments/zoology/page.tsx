@@ -368,7 +368,7 @@ export default function ZoologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree (BSc or equivalent) from a recognized university with Zoology as a major or optional subject
+                    Bachelor's degree (BSc or a Government-listed equivalent) from a recognized university with Zoology as a major subject
                   </p>
                 </div>
 
@@ -381,7 +381,7 @@ export default function ZoologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree; a pass is enough for differently abled candidates
                   </p>
                 </div>
 
@@ -394,7 +394,7 @@ export default function ZoologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Life Sciences are eligible
+                    Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Advanced Zoology and Bio-Technology are eligible; B.E./B.Tech (Bio-Technology branch) needs 55%
                   </p>
                 </div>
 
@@ -420,7 +420,7 @@ export default function ZoologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -433,7 +433,7 @@ export default function ZoologyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from degree marks plus weightage
                   </p>
                 </div>
               </div>
@@ -602,7 +602,7 @@ export default function ZoologyDepartment() {
                 <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
-              {/* Step 3 - Entrance/Counseling */}
+              {/* Step 3 - Merit Selection */}
               <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
@@ -612,10 +612,10 @@ export default function ZoologyDepartment() {
                 </div>
                 <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
-                    Entrance
+                    Merit Selection
                   </h3>
                   <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
-                    Attend TNTEU counseling based on entrance exam rank or participate in institutional admission process as applicable.
+                    There is no entrance test. Selection is purely on merit from your U.G. degree marks plus weightage, through the college admission process.
                   </p>
                 </div>
                 <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
@@ -759,7 +759,7 @@ export default function ZoologyDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#002309' }}>
-                Candidates must hold a Bachelor's degree (BSc or equivalent) from a recognized university with at least 50% marks (45% for SC/ST/OBC/PWD candidates). Zoology must be a major or optional subject at the degree level. Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Life Sciences are eligible. Final year degree Learners may also apply.
+                Candidates must hold a Bachelor's degree (BSc or a Government-listed equivalent) from a recognized university with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Zoology must be a major subject at the degree level. Candidates with BSc Zoology, BSc Botany & Zoology, or BSc Advanced Zoology and Bio-Technology are eligible. Final year degree Learners may also apply.
               </p>
             </details>
 

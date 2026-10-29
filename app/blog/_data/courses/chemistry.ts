@@ -23,7 +23,7 @@ export const chemistryBlogData: CourseBlogData = {
   wordCount: '2,150 words',
 
   quickAnswer:
-    'B.Ed Chemistry is a 2-year teacher training program for graduates aiming to teach chemistry at secondary and senior secondary school levels. Eligibility: B.Sc. Chemistry or equivalent with 50% marks (45% reserved). Chemistry is one of the top 3 highest-demand B.Ed specializations — driven by NEET, JEE, and pharma entrance coaching demand alongside chronic CBSE/ICSE chemistry teacher shortage. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Chemistry seats with NCTE approval and TNTEU affiliation.',
+    'B.Ed Chemistry is a 2-year teacher training program for graduates aiming to teach chemistry at secondary and senior secondary school levels. Eligibility: a U.G. degree in Chemistry or Applied Chemistry with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks. Chemistry is one of the top 3 highest-demand B.Ed specializations — driven by NEET, JEE, and pharma entrance coaching demand alongside chronic CBSE/ICSE chemistry teacher shortage. <strong>JKKN College of Education, Komarapalayam</strong> offers B.Ed Chemistry seats with NCTE approval and TNTEU affiliation.',
 
   whatIs: {
     paragraphs: [
@@ -33,7 +33,7 @@ export const chemistryBlogData: CourseBlogData = {
     ],
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
-      { label: 'Eligibility:', value: 'B.Sc. Chemistry / B.Sc. PCM / B.Sc. PCB with Chemistry as main subject, 50% (45% reserved)' },
+      { label: 'Eligibility:', value: 'B.Sc. Chemistry / Applied Chemistry / PCM / PCB with Chemistry as a major, 50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks with chemistry lab teaching focus' },
@@ -74,12 +74,12 @@ export const chemistryBlogData: CourseBlogData = {
     intro:
       'To enrol in B.Ed Chemistry at JKKN (or any TNTEU-affiliated college), candidates must meet the following criteria:',
     criteria: [
-      { criteria: 'Education', requirement: 'B.Sc. Chemistry / B.Sc. PCM / B.Sc. PCB / Bachelor\'s with Chemistry as main subject from a recognized university' },
-      { criteria: 'Minimum Marks', requirement: '50% aggregate (45% for SC/ST/OBC/Differently Abled per Tamil Nadu Govt. rules)' },
-      { criteria: 'Allied UG Combinations', requirement: 'B.Sc. Microbiology, B.Sc. Biotechnology, B.Sc. Biochemistry with Chemistry component also eligible per TNTEU norms' },
-      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech (Chemical Engineering / Pharma) may be eligible — confirm with college' },
+      { criteria: 'Education', requirement: 'B.Sc. Chemistry / B.Sc. Applied Chemistry, or a double / triple major U.G. (B.Sc. PCM / PCB) with Chemistry as one major, from a recognized university' },
+      { criteria: 'Minimum Marks', requirement: '50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in Part-III of the U.G. degree; a pass for differently abled candidates (Government of Tamil Nadu, G.O.(D) No.144, 2026-27)' },
+      { criteria: 'Allied UG Combinations', requirement: 'Applied Chemistry is the only listed equivalent; B.Sc. Microbiology, Biotechnology or Biochemistry does not qualify for Chemistry' },
+      { criteria: 'Engineering Graduates', requirement: 'B.E./B.Tech graduates of any branch with 55% marks are eligible; only 5% of the Physical Science seats are for them' },
       { criteria: 'Entrance Exam', requirement: 'No entrance exam — admission via merit in qualifying degree marks' },
-      { criteria: 'Age', requirement: 'No upper age limit for B.Ed admission in Tamil Nadu' },
+      { criteria: 'Age', requirement: 'The 2026-27 Tamil Nadu guidelines set no age limit (no minimum, no maximum)' },
       { criteria: 'Domicile', requirement: 'Tamil Nadu domicile preferred for state quota seats' },
     ],
     note:
@@ -177,7 +177,7 @@ export const chemistryBlogData: CourseBlogData = {
   faqs: [
     {
       q: 'What is the eligibility for B.Ed Chemistry at JKKN?',
-      a: 'You need B.Sc. Chemistry, B.Sc. PCM, B.Sc. PCB, or equivalent UG with Chemistry as the main subject, with 50% marks (45% for SC/ST/OBC/DA). Microbiology, Biotechnology, and Biochemistry graduates with strong chemistry component may qualify — confirm via +91 9345855001.',
+      a: 'You need B.Sc. Chemistry, B.Sc. Applied Chemistry, or a B.Sc. PCM / PCB with Chemistry as a major, with 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass for differently abled candidates. Microbiology, Biotechnology and Biochemistry degrees do not qualify for Chemistry; B.E./B.Tech of any branch qualifies with 55% — confirm via +91 9345855001.',
     },
     {
       q: 'Is B.Ed Chemistry good for NEET coaching career?',

@@ -471,7 +471,7 @@ export default function SocialScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Bachelor's degree in Arts (BA) or equivalent from a recognized university
+                    No separate Social Science subject exists in the Tamil Nadu guidelines; eligibility follows your own degree subject
                   </p>
                 </div>
 
@@ -484,7 +484,7 @@ export default function SocialScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
+                    History or Geography as the U.G. Part-III major: at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); a pass is enough for differently abled candidates
                   </p>
                 </div>
 
@@ -497,7 +497,7 @@ export default function SocialScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Social Science subjects (History, Geography, Political Science, Economics, Sociology, Civics) at degree level
+                    Economics or Political Science: a P.G. degree in that subject with at least 50% marks and the same U.G. major; confirm your subject with the admission office
                   </p>
                 </div>
 
@@ -523,7 +523,7 @@ export default function SocialScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Age limit as per Tamil Nadu government norms for teacher education
+                    The 2026-27 Tamil Nadu guidelines set no age limit
                   </p>
                 </div>
 
@@ -536,7 +536,7 @@ export default function SocialScienceDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Valid TNTEU B.Ed entrance examination score (if applicable)
+                    No entrance test: selection is purely on merit from degree marks plus weightage
                   </p>
                 </div>
               </div>
@@ -1114,7 +1114,7 @@ export default function SocialScienceDepartment() {
               </div>
             </div>
 
-            {/* Step 3 - Entrance Exam / Counseling */}
+            {/* Step 3 - Merit-Based Selection */}
             <div className="relative flex flex-row md:flex-row items-start mb-12 gap-4">
               <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10"
                    style={{ backgroundColor: '#7cb983' }}>
@@ -1123,10 +1123,10 @@ export default function SocialScienceDepartment() {
               <div className="flex-1 md:w-1/2 md:pr-12 md:text-right md:order-1">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
-                    Entrance Exam / Counseling
+                    Merit-Based Selection
                   </h3>
                   <p style={{ color: '#006837' }}>
-                    Appear for TNTEU B.Ed entrance examination (if applicable) or participate in counseling process based on merit and reservation criteria.
+                    There is no entrance test. Selection is purely on merit from your degree marks plus weightage, following the community reservation criteria.
                   </p>
                 </div>
               </div>
@@ -1229,7 +1229,7 @@ export default function SocialScienceDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Candidates must hold a Bachelor's degree in Arts (BA) or equivalent with Social Science subjects (History, Geography, Political Science, Economics, Sociology, Civics) with at least 50% marks (45% for SC/ST/OBC/PWD candidates). Candidates appearing for final year examinations may also apply provisionally.
+                  The 2026-27 Tamil Nadu B.Ed guidelines have no separate Social Science subject, so eligibility follows your own degree subject. A U.G. degree with History or Geography as the Part-III major needs at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Economics or Political Science needs a P.G. degree in that subject with at least 50% marks and the same U.G. major (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Please confirm your subject with the admission office. Candidates appearing for final year examinations may also apply provisionally.
                 </p>
               </div>
             </details>
@@ -1348,7 +1348,7 @@ export default function SocialScienceDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Yes, candidates with BA degree from UGC-recognized distance education universities are eligible for B.Ed Social Science admission, provided they meet the minimum percentage criteria and have studied Social Science subjects at the graduation level.
+                  Yes, candidates with BA degree from UGC-recognized distance education universities are eligible for B.Ed Social Science admission, provided their degree subject and marks meet the rules above (History or Geography as the U.G. major, or a P.G. in Economics or Political Science) and they studied in the 10+2+3 pattern; an Open University degree without the 10+2 school pattern is not eligible.
                 </p>
               </div>
             </details>

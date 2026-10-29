@@ -394,7 +394,7 @@ export default function BotanyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    B.Sc with Botany as a major/optional subject with adequate credits
+                    B.Sc with Botany as a major subject (in a double / triple major, you pick one major)
                   </p>
                 </div>
 
@@ -407,7 +407,7 @@ export default function BotanyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" >
-                    Minimum 50% aggregate marks in the qualifying degree (General category)
+                    At least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) in the U.G. degree
                   </p>
                 </div>
 
@@ -420,7 +420,7 @@ export default function BotanyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" >
-                    45% aggregate marks for reserved categories (SC/ST/OBC/PWD)
+                    A pass is enough for differently abled candidates; B.E./B.Tech (Bio-Technology branch) needs 55%
                   </p>
                 </div>
 
@@ -446,7 +446,7 @@ export default function BotanyDepartment() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
-                    Degrees from UGC-recognized distance education universities accepted
+                    Degrees from UGC-recognized distance education universities accepted if studied in the 10+2+3 pattern
                   </p>
                 </div>
               </div>
@@ -1007,13 +1007,13 @@ export default function BotanyDepartment() {
               </div>
             </div>
 
-            {/* Step 3 - Entrance Test / Interview */}
+            {/* Step 3 - Merit Selection */}
             <div className="relative flex flex-col-reverse md:flex-row items-center mb-16">
               <div className="w-full md:w-1/2 md:pr-12 mb-8 md:mb-0">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Entrance Test / Interview</h3>
+                  <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Merit Selection</h3>
                   <p style={{ color: '#006837' }}>
-                    Appear for the entrance examination or counseling as per TNTEU guidelines. Selection is based on merit and entrance test performance.
+                    There is no entrance test. Selection is purely on merit, from your U.G. degree marks plus weightage, as per the Tamil Nadu Government guidelines.
                   </p>
                 </div>
               </div>
@@ -1102,7 +1102,7 @@ export default function BotanyDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Candidates must hold a Bachelor's degree in Botany (B.Sc Botany) or equivalent degree with Botany as a major subject with at least 50% marks (45% for reserved categories SC/ST/OBC/PWD). Candidates appearing for final year degree examinations may also apply provisionally.
+                  Candidates must hold a Bachelor's degree with Botany as a major subject (B.Sc Botany) or a Government-listed equivalent such as Plant Biology and Plant Bio-Technology, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST) marks; a pass is enough for differently abled candidates. Candidates appearing for final year degree examinations may also apply provisionally.
                 </p>
               </div>
             </details>
@@ -1204,7 +1204,7 @@ export default function BotanyDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Yes, candidates with B.Sc Botany degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Botany admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a recognized university listed in UGC/AIU approved list.
+                  Yes, candidates with B.Sc Botany degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Botany admission, provided the degree followed the 10+2+3 pattern and they meet the minimum marks for their community (50% OC, 45% BC/BC(M), 43% MBC/DNC, 40% SC/SC(A)/ST). The distance education degree must be from a recognized university listed in UGC/AIU approved list; an Open University degree without 10+2 is not eligible.
                 </p>
               </div>
             </details>
