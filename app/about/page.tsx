@@ -18,6 +18,7 @@ const aboutLinks = [
   { name: 'Our Institutions', href: '/about/institutions', description: 'The JKKN group of institutions under one umbrella.' },
   { name: "Principal's Message", href: '/about/principal-message', description: 'A message from our Principal on excellence in teacher education.' },
   { name: 'NCTE Approval', href: '/about/ncte-approval', description: 'Official NCTE recognition and affiliation details.' },
+  { name: 'Approvals & Official Data', href: '/about/approvals', description: 'NCTE, TNTEU and AISHE records, each with its official source link.' },
 ];
 
 export default function AboutPage() {

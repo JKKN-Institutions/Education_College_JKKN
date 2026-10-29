@@ -35,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/about/management`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/about/institutions`, lastModified: new Date('2026-01-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/about/ncte-approval`, lastModified: new Date('2026-01-01'), changeFrequency: 'yearly', priority: 0.7 },
+    { url: `${baseUrl}/about/approvals`, lastModified: new Date('2026-10-29'), changeFrequency: 'monthly', priority: 0.7 },
 
     // Admissions (course-wise)
     { url: `${baseUrl}/admissions`, lastModified: ADMISSION_CYCLE_DATE, changeFrequency: 'weekly', priority: 0.95 },
