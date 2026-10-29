@@ -9,8 +9,8 @@ export default function AdmissionProcess() {
       description: 'Submit original documents for verification and pay the application processing fee. Documents can be submitted online or at the campus admission office.',
     },
     {
-      title: 'Entrance Examination',
-      description: 'Appear for the entrance examination if applicable as per TNTEU guidelines. The exam assesses general knowledge, teaching aptitude, and subject proficiency.',
+      title: 'Merit Ranking',
+      description: 'Applicants are ranked on their degree marks, with weightage for a higher degree and for NSS / NCC / sports at U.G. level, as the 2026-27 Tamil Nadu B.Ed guidelines (G.O.(D) No.144) require. There is no entrance test.',
     },
     {
       title: 'Counselling & Seat Allotment',

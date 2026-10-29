@@ -14,7 +14,7 @@ export default function AdmissionTimeline() {
   const milestones = [
     { month: '1', title: 'Applications Open', description: 'JKKN self-financing seats are open now. The state route opens on the Tamil Nadu B.Ed admission notification', status: 'upcoming' },
     { month: '2', title: 'Document Verification', description: 'Submit documents and complete application review', status: 'upcoming' },
-    { month: '3', title: 'Entrance Exam', description: 'State-level entrance examination (if applicable)', status: 'upcoming' },
+    { month: '3', title: 'Merit List', description: 'Ranked on degree marks - there is no entrance test', status: 'upcoming' },
     { month: '4', title: 'Counselling', description: 'Merit-based counselling and specialization selection', status: 'upcoming' },
     { month: '5', title: 'Seat Allotment', description: 'Final seat allotment and admission confirmation', status: 'upcoming' },
     { month: '6', title: 'Classes Begin', description: 'Orientation programme and academic session starts', status: 'upcoming' },

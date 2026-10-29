@@ -90,7 +90,7 @@ const faqSchema = {
       name: 'Is there an entrance exam for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For JKKN self-financing seats you apply to the college directly - there is no state merit list to wait for. Government-quota seats are filled through the state counselling process in the Tamil Nadu B.Ed admission notification; follow that notification for its selection rules.',
+        text: 'No. The 2026-27 Tamil Nadu B.Ed guidelines (G.O.(D) No.144) select students purely on merit from degree marks, with weightage for higher degrees - there is no entrance test. For JKKN self-financing seats you apply to the college directly, and the college announces its admission dates on this website.',
       },
     },
     {

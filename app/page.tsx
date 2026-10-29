@@ -1211,7 +1211,7 @@ export default async function Home() {
                 {[
                   'Fill online application form with correct details',
                   'Pay application fee and submit documents',
-                  'Appear for entrance examination (if applicable)',
+                  'Selection on merit from degree marks (no entrance test)',
                   'Attend counselling session based on merit',
                   'Complete admission formalities and fee payment'
                 ].map((step, idx) => (
@@ -1784,7 +1784,7 @@ export default async function Home() {
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
                   <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
-                  <span className="text-gray-700 text-sm sm:text-base">Entrance Examination</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Merit List (no entrance test)</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
                   <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
