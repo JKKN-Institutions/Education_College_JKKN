@@ -5,7 +5,7 @@ import { seoMetadata } from '@/lib/seo-metadata';
 
 export const metadata = seoMetadata(
   'Fee Structure',
-  'Fee structure for B.Ed programmes at JKKN College of Education, Namakkal — Management Quota and Government Quota details.',
+  'B.Ed fee at JKKN College of Education, Namakkal: Rs 35,000 a year tuition (management quota) and what is charged separately, 2026-27.',
   '/fee-structure',
   { keywords: ['B.Ed fee structure', 'JKKN fee structure', 'B.Ed course fees Namakkal'] }
 );
@@ -55,8 +55,7 @@ export default function FeeStructurePage() {
                 <tr className="bg-[#006837] text-white">
                   <th className="text-left px-5 py-4 font-semibold w-8">#</th>
                   <th className="text-left px-5 py-4 font-semibold">Programme</th>
-                  <th className="text-center px-5 py-4 font-semibold">GQ (Govt. Quota)</th>
-                  <th className="text-center px-5 py-4 font-semibold">MQ (Mgmt. Quota)</th>
+                  <th className="text-center px-5 py-4 font-semibold">Tuition per year (Mgmt. Quota)</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,9 +68,6 @@ export default function FeeStructurePage() {
                     <td className="px-5 py-3.5 font-medium text-gray-800">
                       B.Ed — {subject}
                     </td>
-                    <td className="px-5 py-3.5 text-center text-[#006837] font-medium">
-                      As Per Govt Norms
-                    </td>
                     <td className="px-5 py-3.5 text-center font-semibold text-[#006837]">
                       &#8377;35,000
                     </td>
@@ -83,7 +79,7 @@ export default function FeeStructurePage() {
 
           {/* Footer Note */}
           <p className="mt-5 text-xs text-gray-500 text-center">
-            * Fees are per annum. Government Quota fees are fixed as per Tamil Nadu Government norms and are subject to change.
+            * Tuition is per year, management quota, as published in the JKKN course fee structure. Admission dates for self-financing colleges of education are announced on the college&apos;s own website (Government of Tamil Nadu, G.O.(D) No.144, para VII.1, dated 18 June 2026).
           </p>
 
           {/* B-06, added 2026-08-27. This page was 287 words and an orphan - measured that day,

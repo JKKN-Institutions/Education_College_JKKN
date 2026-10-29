@@ -48,7 +48,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'What is the B.Ed fee for a student from Erode?',
-    a: 'The same as for every applicant: Rs 35,000 a year tuition under the Management Quota. Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are optional and charged separately.',
+    a: 'The same as for every applicant: Rs 35,000 a year tuition under the Management Quota. Hostel and transport are optional and charged separately.',
   },
   {
     q: 'How do I apply for B.Ed at JKKN from Erode?',

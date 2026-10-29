@@ -98,7 +98,7 @@ const faqSchema = {
       name: 'What is the counselling process for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Counselling applies to government-quota seats: candidates apply under the Tamil Nadu B.Ed admission notification, and seats are allotted on merit, category and availability. JKKN self-financing seats have no counselling: you apply to the college, choose your B.Ed subject from 10 teaching subjects, and confirm admission by paying the fee.',
+        text: 'State counselling covers Government and Government-Aided colleges of education only (G.O.(D) No.144). JKKN College of Education is self-financing, so its seats have no state counselling: you apply to the college, choose your B.Ed subject from 10 teaching subjects, and confirm admission by paying the fee. The college announces its admission dates on this website.',
       },
     },
     {

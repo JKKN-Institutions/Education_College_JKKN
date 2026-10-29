@@ -124,13 +124,13 @@ export async function GET() {
           // no state-wide fee-range table (both had no source).
           h2('Two B.Ed Admission Routes in Tamil Nadu 2026'),
           p('Tamil Nadu has two separate B.Ed admission routes and they do not share an application form. Applying to both is normal.'),
-          p('Route 1 \u2014 Government counselling: for government-quota seats. The process opens on the Tamil Nadu B.Ed admission notification, and seats are allotted on merit and category-wise reservation. Follow the official notification for dates.'),
+          p('Route 1 \u2014 Government counselling: for seats in Government and Government-Aided colleges of education (G.O.(D) No.144). The process opens on the state notification, and seats are allotted on merit and category-wise reservation. JKKN is self-financing, so this route does not lead to a JKKN seat.'),
           p('Route 2 \u2014 Apply to the college directly: for self-financing seats at JKKN College of Education. You apply to the college, online or at the admission office. There is no state merit list to wait for.'),
           p(''),
 
           // ── Section 5 ──
           h2('B.Ed Fees at JKKN College of Education'),
-          p('B.Ed fees differ from college to college and between government and self-financing seats, so check the fee with each college you apply to. At JKKN College of Education the tuition fee is \u20b935,000 a year under the Management Quota. Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are optional and charged separately.'),
+          p('B.Ed fees differ from college to college and between government and self-financing seats, so check the fee with each college you apply to. At JKKN College of Education the tuition fee is \u20b935,000 a year under the Management Quota. Hostel and transport are optional and charged separately.'),
           p(''),
 
           // ── Section 6 ──
@@ -173,7 +173,7 @@ export async function GET() {
           p('2. Apply to the college \u2014 online through the admission portal or at the admission office. Choose your B.Ed subject from the 10 teaching subjects.'),
           p('3. Submit your documents \u2014 including qualifying degree mark sheets, transfer certificate, community certificate (if applicable), and passport-size photographs.'),
           p('4. Confirm your admission \u2014 by paying the fee (\u20b935,000 a year tuition, Management Quota) and choosing hostel or transport if you need them.'),
-          p('5. Begin your B.Ed programme \u2014 when the academic year starts under the TNTEU calendar. For a government-quota seat, follow the state counselling notification instead.'),
+          p('5. Begin your B.Ed programme \u2014 when the academic year starts under the TNTEU calendar. For a Government or Government-Aided college seat, follow the state counselling notification instead.'),
           p(''),
 
           // ── Section 9 - FAQs ──

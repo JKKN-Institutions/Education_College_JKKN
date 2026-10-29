@@ -571,7 +571,7 @@ export default async function Home() {
           <ul className="space-y-2 text-sm sm:text-base text-gray-700 leading-relaxed">
             <li><span className="font-semibold text-[#006837]">NCTE:</span> JKK Nattraja College of Education, Institute ID NCTE4593081, B.Ed intake 100; orders dated 2 May 2016 (session 2016-2017) and 15 April 2021 (session 2021-2022).</li>
             <li><span className="font-semibold text-[#006837]">TNTEU:</span> Namakkal district, college code 36108, intake 100.</li>
-            <li><span className="font-semibold text-[#006837]">Fee:</span> ₹35,000 a year tuition under the management quota; government-quota fees follow Tamil Nadu government norms.</li>
+            <li><span className="font-semibold text-[#006837]">Fee:</span> ₹35,000 a year tuition under the management quota.</li>
             <li><span className="font-semibold text-[#006837]">Teaching subjects (10):</span> Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, and Computer Science.</li>
             <li><span className="font-semibold text-[#006837]">Staff:</span> 16 teaching and other staff, including the principal, on the college&apos;s TNTEU faculty return.</li>
             <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district, about 18 km from Erode.</li>
@@ -1230,7 +1230,7 @@ export default async function Home() {
           <div className="bg-gradient-to-r from-[#002309] to-[#006837] rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
             <div className="text-white text-center md:text-left">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
-              <p className="text-white/90 text-sm sm:text-base">Talk to our admission team about the B.Ed programme. Tamil Nadu B.Ed dates are announced by the state, so we publish a date only once the official notification is out.</p>
+              <p className="text-white/90 text-sm sm:text-base">Talk to our admission team about the B.Ed programme. As a self-financing college we announce our admission dates on this website, and we publish a date only once it is fixed.</p>
             </div>
             <EnquiryButton
               sourcePage="home-cta"
@@ -1773,21 +1773,21 @@ export default async function Home() {
                 Begin Your Journey as a Future Educator
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8">
-                Take the first step towards a fulfilling career in education. Our admission process is simple, transparent, and supportive. Tamil Nadu B.Ed dates are announced by the state, not by individual colleges - we publish a date only once the official notification is out. JKKN self-financing seats are open now.
+                Take the first step towards a fulfilling career in education. Our admission process is simple, transparent, and supportive. Under the 2026-27 Tamil Nadu guidelines a self-financing college announces its own admission dates on its website - we publish a date here only once it is fixed. JKKN self-financing seats are open now.
               </p>
 
               {/* Timeline */}
               <div className="space-y-3 sm:space-y-4 lg:space-y-6 mb-6 sm:mb-8">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced on this website</span>
                   <span className="text-gray-700 text-sm sm:text-base">Application Window Open</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced on this website</span>
                   <span className="text-gray-700 text-sm sm:text-base">Merit List (no entrance test)</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced by the state</span>
+                  <span className="text-[#7cb983] font-bold text-sm sm:text-base sm:min-w-[140px]">Announced on this website</span>
                   <span className="text-gray-700 text-sm sm:text-base">Counselling & Admission</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">

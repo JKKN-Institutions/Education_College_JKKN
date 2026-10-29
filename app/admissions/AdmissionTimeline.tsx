@@ -31,8 +31,8 @@ export default function AdmissionTimeline() {
             B.Ed Admission 2026-27 &mdash; How It Works
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            Tamil Nadu B.Ed dates are announced by the state, not by individual colleges. We publish
-            a date only once the official notification is out &mdash; an approximate date on a college
+            Under the 2026-27 Tamil Nadu guidelines, a self-financing college such as JKKN announces its own admission dates on its website; Government and Government-Aided college dates come from the state notification. We publish
+            a date here only once it is fixed &mdash; an approximate date on a college
             website is how an applicant misses a deadline.
           </p>
         </div>

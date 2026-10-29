@@ -80,7 +80,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'What is the B.Ed fee at JKKN College of Education?',
-    a: 'Rs 35,000 a year tuition under the Management Quota. Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are optional and charged separately.',
+    a: 'Rs 35,000 a year tuition under the Management Quota. Hostel and transport are optional and charged separately.',
   },
   {
     q: 'Is JKKN College of Education the best B.Ed college for Salem students?',

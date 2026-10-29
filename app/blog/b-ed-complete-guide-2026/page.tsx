@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: 'What is the B.Ed fee structure at JKKN College of Education?',
-    a: 'Tuition at JKKN College of Education is Rs 35,000 a year under the Management Quota. Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are optional and charged separately. Admission office: +91 9345855001.',
+    a: 'Tuition at JKKN College of Education is Rs 35,000 a year under the Management Quota. Hostel and transport are optional and charged separately. Admission office: +91 9345855001.',
   },
   {
     q: 'Is JKKN College of Education NCTE approved?',
@@ -498,9 +498,9 @@ export default function BlogDetailPage() {
                   <p className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-1">Route 1</p>
                   <h3 className="font-bold text-gray-900 mb-2">Government counselling</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    For government-quota seats. The process opens on the Tamil Nadu B.Ed admission
-                    notification, and seats are allotted on merit and category-wise reservation. Follow
-                    the official notification for dates.
+                    For seats in Government and Government-Aided colleges of education (G.O.(D) No.144).
+                    The process opens on the state notification, and seats are allotted on merit and
+                    category-wise reservation. JKKN is self-financing, so this route does not lead to a JKKN seat.
                   </p>
                 </div>
                 <div className="rounded-xl border border-[#006837]/40 bg-[#006837]/5 p-5">
@@ -533,8 +533,7 @@ export default function BlogDetailPage() {
                 B.Ed fees differ from college to college and between government and self-financing
                 seats, so check the fee with each college you apply to. At JKKN College of Education
                 the tuition fee is <strong>&#8377;35,000 a year</strong> under the Management Quota.
-                Government Quota fees follow Tamil Nadu Government norms. Hostel and transport are
-                optional and charged separately.
+                Hostel and transport are optional and charged separately.
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-4">
                 <p className="text-sm text-gray-700">
@@ -711,7 +710,7 @@ export default function BlogDetailPage() {
                   ],
                   [
                     'Begin your B.Ed programme',
-                    'when the academic year starts under the TNTEU calendar. For a government-quota seat, follow the state counselling notification instead.',
+                    'when the academic year starts under the TNTEU calendar. For a Government or Government-Aided college seat, follow the state counselling notification instead.',
                   ],
                 ].map(([bold, rest], i) => (
                   <div key={i} className="flex gap-4">

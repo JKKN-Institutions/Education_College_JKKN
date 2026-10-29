@@ -125,7 +125,7 @@ const FAQS = [
   },
   {
     q: 'When is the TNTEU B.Ed admission last date for 2026?',
-    a: 'We are not printing a date. Admission dates are announced by the state and the university, not by a college, and an approximate date on a college website is how an applicant misses a real one. The TNTEU notifications page linked above is where it appears.',
+    a: 'We are not printing a date. Under the 2026-27 Tamil Nadu guidelines (G.O.(D) No.144, para VII.1), Government and Government-Aided college dates come from the state, and a self-financing college announces its own dates on its website. We publish ours only once they are fixed, because an approximate date is how an applicant misses a real one. The TNTEU notifications page linked above is where it appears.',
   },
   {
     q: 'Where do I find the TNTEU exam time table or result?',

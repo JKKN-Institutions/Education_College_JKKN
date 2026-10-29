@@ -346,7 +346,7 @@ export default async function CourseAdmissionPage({
                   including a June 30 2026 deadline still shown as upcoming in late August. The
                   state sets these dates, so each step now names WHO announces it. */}
               <p className="mx-auto max-w-3xl text-sm sm:text-base text-gray-600">
-                Tamil Nadu B.Ed dates are announced by the state, not by individual colleges. Each
+                Under the 2026-27 Tamil Nadu guidelines, a self-financing college such as JKKN announces its own admission dates on its website; Government and Government-Aided college dates come from the state notification. Each
                 step below names who announces it. JKKN self-financing seats are open now.
               </p>
             </div>
@@ -492,7 +492,7 @@ export default async function CourseAdmissionPage({
                   How Are Candidates Selected?
                 </h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
-                  There are two routes to {data.fullName}. Government-quota seats are allotted through the state counselling process in the Tamil Nadu B.Ed admission notification. For JKKN self-financing seats you apply to the college directly, and there is no state merit list to wait for.
+                  JKKN College of Education is a self-financing college, so you apply to the college directly for {data.fullName} and there is no state merit list to wait for. State counselling covers Government and Government-Aided colleges only (G.O.(D) No.144).
                 </p>
                 <ul className="space-y-3">
                   {SELECTION_CRITERIA.map((c) => (
