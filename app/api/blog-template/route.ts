@@ -184,7 +184,7 @@ export async function GET() {
           p('Q: Is hostel facility available at JKKN College of Education?'),
           p('A: Yes, JKKN provides separate hostel facilities for boys and girls within the campus at Natarajapuram, Komarapalayam. The campus is residential with mess, library, and recreational facilities.'),
           p('Q: What is the B.Ed fee structure at JKKN College of Education?'),
-          p('A: Fee structure is regulated by the Tamil Nadu government fee committee and varies by admission category (state quota/management). Contact admissions for current fees: +91 9345855001.'),
+          p('A: Tuition is \u20b935,000 a year under the management quota, as published in the JKKN course fee structure. Contact admissions for current fees: +91 9345855001.'),
           p('Q: Is JKKN College of Education NCTE approved?'),
           p('A: Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai \u2014 ensuring your B.Ed degree is recognized for government and private school teaching positions across India.'),
           p('Q: What are the career opportunities after B.Ed from JKKN?'),

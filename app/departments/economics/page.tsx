@@ -913,7 +913,7 @@ export default function EconomicsDepartment() {
                 </h3>
               </div>
               <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
-                Strong placement record with graduates securing positions in government schools, CBSE/ICSE schools, coaching institutes, and prestigious educational institutions.
+                A B.Ed lets graduates apply for teaching posts in government, aided and private schools; each school or recruitment board runs its own selection.
               </p>
             </div>
 
@@ -1328,7 +1328,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for eligible community candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.
+                Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Various scholarships including government scholarships for eligible community candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.
               </p>
             </details>
 

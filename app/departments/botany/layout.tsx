@@ -87,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the fee structure for B.Ed Botany?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.',
+                text: 'Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.',
               },
             },
             {

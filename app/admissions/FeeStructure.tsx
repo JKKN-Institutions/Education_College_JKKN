@@ -136,8 +136,8 @@ export default function FeeStructure() {
               <div className="flex items-start gap-3">
                 <div className="bg-[#7cb983] text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">2</div>
                 <div>
-                  <p className="font-semibold">Education Loan Assistance</p>
-                  <p className="text-xs text-gray-500">Tie-ups with banks for hassle-free education loans</p>
+                  <p className="font-semibold">Education Loan</p>
+                  <p className="text-xs text-gray-500">You can apply to any bank for an education loan; ask the admission office for the fee details the bank needs</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

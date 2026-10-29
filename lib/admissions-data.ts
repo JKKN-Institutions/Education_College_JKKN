@@ -813,7 +813,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     faqs: [
       { question: 'Can I apply with BBA / BBM?', answer: 'Not on their own. B.Ed Commerce needs an M.Com with at least 50%, and the U.G. major must also be Commerce. BBA, BBM and BBS are different subjects, so they count only with a Government order of equivalence.' },
       { question: 'Will I learn Tally and GST?', answer: 'Yes, Tally Prime training and GST basics are included as practical modules.' },
-      { question: 'Are CA Foundation teaching opportunities good?', answer: 'Excellent — coaching institutes pay ₹50,000-1,50,000 per month for experienced Commerce B.Ed teachers.' },
+      { question: 'Are CA Foundation teaching opportunities good?', answer: 'Coaching institutes recruit Commerce teachers through their own selection process, and the pay depends on the institute and your experience.' },
       { question: 'Can I teach all three: Accounts, Business Studies, Economics?', answer: 'Yes, B.Ed Commerce qualifies you to teach all three commerce-stream subjects at higher secondary level.' },
     ],
   },

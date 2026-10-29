@@ -875,7 +875,7 @@ export default function SocialScienceDepartment() {
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Strong placement record with graduates securing positions in government schools, CBSE/ICSE schools, and prestigious educational institutions.
+                A B.Ed lets graduates apply for teaching posts in government, aided and private schools; each school or recruitment board runs its own selection.
               </p>
             </div>
 
