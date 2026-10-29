@@ -115,7 +115,7 @@ export const computerScienceBlogData: CourseBlogData = {
       },
       {
         title: 'Know your admission route',
-        desc: 'Government-quota seats are allotted through the state counselling process in the Tamil Nadu B.Ed admission notification. Self-financing seats are applied for at the college directly.',
+        desc: 'State counselling covers Government and Government-Aided colleges of education only (G.O.(D) No.144). JKKN is self-financing, so you apply to the college directly.',
       },
       {
         title: 'B.Ed Computer Science at JKKN',

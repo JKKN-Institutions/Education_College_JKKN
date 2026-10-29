@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 const SLUG = 'b-ed-complete-guide-2026';
 const TITLE = 'B.Ed Complete Guide 2026 — Eligibility, Curriculum, Fees & Careers';
 const DESCRIPTION =
-  'Comprehensive B.Ed 2026 guide from JKKN College of Education — eligibility, curriculum, TNTEU counselling, fee structure, career scope, and admission process.';
+  'Comprehensive B.Ed 2026 guide from JKKN College of Education — eligibility, curriculum, admission routes, fee structure, career scope, and admission process.';
 const URL = `https://edu.jkkn.ac.in/blog/${SLUG}`;
 
 export const metadata: Metadata = {
