@@ -154,6 +154,12 @@ export default async function CourseAdmissionPage({
                 <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-8 max-w-2xl">
                   {data.heroDescription}
                 </p>
+                {course === 'political-science' && (
+                  // Not on the enquiry form or the TNTEU faculty return (2026-10-30)
+                  <p className="text-sm sm:text-base text-white leading-relaxed mb-8 max-w-2xl p-3 sm:p-4 rounded-lg bg-black/30 border-l-4 border-[#7cb983]">
+                    Please note: Political Science is not one of the 10 B.Ed teaching subjects on the JKKN enquiry form and TNTEU faculty return. Under G.O.(D) No.144 it needs a P.G. degree in Political Science with at least 50%. Please confirm with the admission office before applying.
+                  </p>
+                )}
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
                   <div className="p-3 sm:p-4 rounded-lg bg-black/30 text-center">

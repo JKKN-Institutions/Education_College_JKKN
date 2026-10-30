@@ -89,6 +89,11 @@ export default function PoliticalScienceDepartment() {
                 Transform your political science expertise into a rewarding teaching career. Our comprehensive 2-year program equips you with modern pedagogical techniques, practical teaching skills, and deep subject knowledge in Indian Polity, Civics, International Relations, and Political Theory.
               </p>
 
+              {/* Political Science is not on the enquiry form or the TNTEU faculty return (2026-10-30) */}
+              <p className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 p-3 sm:p-4 rounded-lg border-l-4" style={{ color: '#ffffff', backgroundColor: 'rgba(0, 0, 0, 0.3)', borderColor: '#7cb983' }}>
+                Please note: Political Science is not one of the 10 B.Ed teaching subjects on the JKKN enquiry form and TNTEU faculty return. Under G.O.(D) No.144 it needs a P.G. degree in Political Science with at least 50%. Please confirm with the admission office before applying.
+              </p>
+
               {/* Stats Grid */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6 sm:mb-8 lg:mb-12">
                 {/* Years */}
