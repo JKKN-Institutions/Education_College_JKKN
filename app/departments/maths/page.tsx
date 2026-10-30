@@ -58,8 +58,8 @@ export default function MathematicsPage() {
                   <div className="text-sm text-white">YEARS</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#7cb983] mb-1">50</div>
-                  <div className="text-sm text-white">SEATS</div>
+                  <div className="text-4xl font-bold text-[#7cb983] mb-1">100</div>
+                  <div className="text-sm text-white">TOTAL SEATS</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
                   <div className="text-4xl font-bold text-[#7cb983] mb-1">4</div>
@@ -144,7 +144,7 @@ export default function MathematicsPage() {
 
               <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#7cb983]">
                 <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">TOTAL INTAKE</div>
-                <div className="text-2xl font-bold text-[#006837]">50 Seats <span className="text-lg font-normal text-gray-600">per Academic Year</span></div>
+                <div className="text-2xl font-bold text-[#006837]">100 Seats <span className="text-lg font-normal text-gray-600">a year, all 10 teaching subjects</span></div>
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#7cb983]">

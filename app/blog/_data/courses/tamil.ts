@@ -35,7 +35,7 @@ export const tamilBlogData: CourseBlogData = {
     highlights: [
       { label: 'Duration:', value: '2 years (4 semesters)' },
       { label: 'Eligibility:', value: 'B.A. Tamil / B.Lit. Tamil (Tamil as the Part-III major): 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC), 40% (SC/SC(A)/ST)' },
-      { label: 'Total Seats at JKKN:', value: '50 seats per academic year' },
+      { label: 'Total Seats at JKKN:', value: '100 a year in total (NCTE), shared across the 10 teaching subjects' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
       { label: 'School Internship:', value: '16 weeks of supervised Tamil-medium classroom practice' },

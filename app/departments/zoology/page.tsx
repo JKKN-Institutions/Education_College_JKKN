@@ -52,8 +52,8 @@ export default function ZoologyDepartment() {
 
                 {/* Seats */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>50</div>
-                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
+                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>100</div>
+                  <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>TOTAL SEATS</div>
                 </div>
 
 
@@ -189,8 +189,9 @@ export default function ZoologyDepartment() {
                   INTAKE CAPACITY
                 </div>
                 <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
-                  50 Learners
+                  100 Seats
                 </div>
+                <div className="text-sm" style={{ color: '#006837' }}>a year, all 10 teaching subjects</div>
               </div>
 
               {/* Affiliation */}

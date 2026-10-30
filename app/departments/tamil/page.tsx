@@ -55,8 +55,8 @@ export default function TamilDepartment() {
 
                 {/* Seats */}
                 <div className="p-3 sm:p-4 lg:p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2" style={{ color: '#7cb983' }}>50</div>
-                  <div className="text-xs sm:text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2" style={{ color: '#7cb983' }}>100</div>
+                  <div className="text-xs sm:text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>TOTAL SEATS</div>
                 </div>
 
 
@@ -180,10 +180,10 @@ export default function TamilDepartment() {
                   TOTAL INTAKE
                 </div>
                 <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
-                  50 Seats
+                  100 Seats
                 </div>
                 <div className="text-sm" style={{ color: '#006837' }}>
-                  per Academic Year
+                  a year, all 10 teaching subjects
                 </div>
               </div>
 
