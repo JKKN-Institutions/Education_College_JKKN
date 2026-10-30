@@ -978,7 +978,7 @@ export default function MathematicsPage() {
             />
             <FAQItem
               question="What scholarships are available for B.Ed Mathematics?"
-              answer="Various scholarships are available including government scholarships for SC/ST/OBC/MBC candidates, BC Muslim scholarships, and merit-based institutional scholarships. The fee structure follows Tamil Nadu government norms. Contact the admission office for detailed scholarship information and eligibility criteria."
+              answer="Yes. The college Scholarships page lists them by community and quota: PMSS and maintenance scholarships for SC/SCA/ST/BC-CC candidates, a JKKN Trust merit scholarship for BC/MBC/DNC/BCM candidates, and monthly support for students from government or government-aided schools. Amounts change each year; see edu.jkkn.ac.in/scholarships."
               isOpen={openFaq === 5}
               onClick={() => toggleFaq(5)}
             />

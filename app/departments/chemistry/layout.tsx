@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Are scholarships available for B.Ed Chemistry students?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, various scholarships are available including: State government scholarships for SC/ST/OBC/BC/MBC candidates, central government scholarships, minority scholarships, merit-based scholarships for top performers, and fee concessions for economically disadvantaged students. Contact the admission office for detailed eligibility information.',
+                text: 'Yes. The college Scholarships page lists them by community and quota: PMSS and maintenance scholarships for SC/SCA/ST/BC-CC candidates, a JKKN Trust merit scholarship for BC/MBC/DNC/BCM candidates, and monthly support for students from government or government-aided schools. Amounts change each year; see edu.jkkn.ac.in/scholarships.',
               },
             },
             {

@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the fee structure for B.Ed Computer Science?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The fee structure is as per Tamil Nadu government norms. Various scholarships are available for eligible candidates including government scholarships for SC/ST/OBC and minority communities. Contact the admission office for detailed fee information.',
+                text: 'Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Government and JKKN Trust scholarships are listed by community (SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM) on the college Scholarships page. Contact the admission office for detailed fee information.',
               },
             },
             {

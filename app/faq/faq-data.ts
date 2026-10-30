@@ -58,7 +58,7 @@ export const allFaqs: FaqItem[] = [
   {
     category: 'fees',
     question: 'Are scholarships available for B.Ed students?',
-    answer: 'Yes, various scholarships are available including Tamil Nadu government scholarships for BC/MBC/SC/ST students, merit-based scholarships, economically weaker section (EWS) concessions, and special scholarships for differently-abled candidates. Our admission office assists students in applying for all eligible scholarships.',
+    answer: 'Yes. The college Scholarships page lists them by community and quota: PMSS and maintenance scholarships for SC/SCA/ST/BC-CC candidates, a JKKN Trust merit scholarship for BC/MBC/DNC/BCM candidates, and monthly support for students from government or government-aided schools. Amounts change each year; see edu.jkkn.ac.in/scholarships.',
   },
   {
     category: 'campus',

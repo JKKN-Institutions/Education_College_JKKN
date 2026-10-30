@@ -1170,7 +1170,7 @@ export default function BotanyDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.
+                  Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Government and JKKN Trust scholarships are listed by community (SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM) on the college Scholarships page. Please contact our admission office for current fee details and scholarship information.
                 </p>
               </div>
             </details>

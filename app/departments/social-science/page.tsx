@@ -1331,7 +1331,7 @@ export default function SocialScienceDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Yes, various scholarships are available including government scholarships for SC/ST/OBC/MBC candidates, merit-based scholarships for toppers, and institutional scholarships for economically weaker sections. Contact the admission office for detailed scholarship information.
+                  Yes. The college Scholarships page lists them by community and quota: PMSS and maintenance scholarships for SC/SCA/ST/BC-CC candidates, a JKKN Trust merit scholarship for BC/MBC/DNC/BCM candidates, and monthly support for students from government or government-aided schools. Amounts change each year; see edu.jkkn.ac.in/scholarships.
                 </p>
               </div>
             </details>

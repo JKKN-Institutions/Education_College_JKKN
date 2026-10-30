@@ -103,7 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Are scholarships available for B.Ed Political Science?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, various scholarships are available including Tamil Nadu Government scholarships for eligible community candidates, merit-based scholarships, and scholarships for economically weaker sections. Eligible candidates can also avail central government schemes like Post-Matric Scholarship. Contact the admission office for detailed information on available scholarships and application procedures.',
+                text: 'Yes. The college Scholarships page lists them by community and quota: PMSS and maintenance scholarships for SC/SCA/ST/BC-CC candidates, a JKKN Trust merit scholarship for BC/MBC/DNC/BCM candidates, and monthly support for students from government or government-aided schools. Amounts change each year; see edu.jkkn.ac.in/scholarships.',
               },
             },
             {

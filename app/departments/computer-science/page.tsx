@@ -1493,7 +1493,7 @@ export default function ComputerScienceDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-gray-700 leading-relaxed">
-                  The fee structure is as per Tamil Nadu government norms. Various scholarships are available for eligible candidates including government scholarships for SC/ST/OBC and minority communities. Contact the admission office for detailed fee information.
+                  Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Government and JKKN Trust scholarships are listed by community (SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM) on the college Scholarships page. Contact the admission office for detailed fee information.
                 </p>
               </div>
             </details>

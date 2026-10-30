@@ -318,7 +318,7 @@ export default function ChemistryDepartment() {
                 Scholarship Support
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Various government and institutional scholarships available for eligible candidates including SC/ST/OBC and merit-based financial assistance.
+                Government and JKKN Trust scholarships are listed by community (SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM) on the college Scholarships page.
               </p>
             </div>
           </div>
@@ -1773,7 +1773,7 @@ export default function ChemistryDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  Yes, various scholarships are available including: State government scholarships for SC/ST/OBC/BC/MBC candidates, central government scholarships, minority scholarships, merit-based scholarships for top performers, and fee concessions for economically disadvantaged students. Contact the admission office for detailed eligibility information.
+                  Yes. The college Scholarships page lists them by community and quota: PMSS and maintenance scholarships for SC/SCA/ST/BC-CC candidates, a JKKN Trust merit scholarship for BC/MBC/DNC/BCM candidates, and monthly support for students from government or government-aided schools. Amounts change each year; see edu.jkkn.ac.in/scholarships.
                 </p>
               </div>
             </details>

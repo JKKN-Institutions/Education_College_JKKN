@@ -87,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the fee structure for B.Ed History?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.',
+                text: 'Tuition is ₹35,000 a year under the management quota, as published in the JKKN course fee structure. Government and JKKN Trust scholarships are listed by community (SC/SCA/ST/BC-CC, BC/MBC/DNC/BCM) on the college Scholarships page. Please contact our admission office for current fee details and scholarship information.',
               },
             },
             {
