@@ -189,7 +189,7 @@ export default async function Home() {
               name: 'Can B.Com/BBA graduates pursue B.Ed?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, graduates from any stream including B.Com, BBA, BCA can pursue B.Ed. Commerce graduates can opt for Commerce and Economics as their teaching subjects. The key requirement is completing graduation with the minimum percentage as per eligibility norms. After B.Ed, they can teach commerce subjects at the secondary and senior secondary levels.',
+                text: 'Not with a B.Com or BBA alone. Under the Tamil Nadu B.Ed rules for 2026-27 (G.O.(D) No.144), B.Ed Commerce needs an M.Com with at least 50% marks and Commerce also as the U.G. major; BBA does not qualify. BCA graduates can take Computer Science.',
               },
             },
             {
@@ -1664,7 +1664,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                Yes, graduates from any stream including B.Com, BBA, BCA can pursue B.Ed. Commerce graduates can opt for Commerce and Economics as their teaching subjects. The key requirement is completing graduation with the minimum percentage as per eligibility norms. After B.Ed, they can teach commerce subjects at the secondary and senior secondary levels.
+                Not with a B.Com or BBA alone. Under the Tamil Nadu B.Ed rules for 2026-27 (G.O.(D) No.144), B.Ed Commerce needs an M.Com with at least 50% marks and Commerce also as the U.G. major; BBA does not qualify. BCA graduates can take Computer Science.
               </div>
             </details>
 
