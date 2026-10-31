@@ -39,8 +39,8 @@ export type EducationEnquiryState = {
 function validate(name: string, phone: string, programme: string) {
   const fieldErrors: EducationEnquiryState["fieldErrors"] = {}
   if (name.trim().length < 2) fieldErrors.name = "Please enter your full name."
-  if (!/^\d{10}$/.test(phone.trim()))
-    fieldErrors.phone = "Please enter a 10-digit mobile number, digits only."
+  if (!/^[6-9]\d{9}$/.test(phone.trim()))
+    fieldErrors.phone = "Please enter a valid 10-digit mobile number (it starts with 6, 7, 8 or 9)."
   if (!VALID_EDUCATION_PROGRAMME_IDS.has(programme))
     fieldErrors.programme = "Please choose a programme."
   return fieldErrors
