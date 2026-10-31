@@ -22,6 +22,7 @@ import {
   EDUCATION_INSTITUTION_ID,
   VALID_EDUCATION_PROGRAMME_IDS,
 } from "@/lib/education-programmes"
+import { crmCampaign } from "@/lib/campaign-tags"
 
 const CRM_SLUG = "jkkn-admission-2026"
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -76,9 +77,12 @@ export async function submitEducationEnquiry(
     honeypot,
     sessionId: crypto.randomUUID(),
     // Tag the source so these leads are separable from jkkn.ai's own traffic inside the CRM.
-    utmSource: "edu.jkkn.ac.in",
-    utmMedium: "site-form",
-    utmCampaign: sourcePage ? `education-${sourcePage}` : "education-site",
+    // The visitor's own campaign tags win when they brought some (lib/campaign-tags.ts, 2026-10-31).
+    ...crmCampaign(formData, {
+      utmSource: "edu.jkkn.ac.in",
+      utmMedium: "site-form",
+      utmCampaign: sourcePage ? `education-${sourcePage}` : "education-site",
+    }),
     campaignLinkId: null,
     referrerUrl: question ? `question: ${question.slice(0, 300)}` : "",
   }

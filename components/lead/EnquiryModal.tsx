@@ -20,8 +20,10 @@ import Image from "next/image"
 import { X } from "lucide-react"
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
+import { campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
 
 const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic"
+const SITE_HOST = "edu.jkkn.ac.in"
 
 type OpenOptions = { withPoster?: boolean }
 type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
@@ -75,6 +77,29 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
     document.addEventListener("click", onClick, true)
     return () => document.removeEventListener("click", onClick, true)
   }, [openEnquiry])
+
+  // Campaign tags (lib/campaign-tags.ts, 2026-10-31). Store the ones this visit arrived with, and put
+  // them on a jkkn.ai/apply link just before it is followed - new-tab click, long-press, right-click,
+  // keyboard - so the CRM sees the ad / QR / WhatsApp source instead of the site's own name. The
+  // dialog's full-application link is included. A visit with no tags changes nothing but "organic".
+  useEffect(() => {
+    campaignTagsSnapshot()
+    const tag = (e: Event) => {
+      const link = (e.target as Element | null)?.closest?.('a[href*="jkkn.ai/apply"]') as HTMLAnchorElement | null
+      if (!link) return
+      const path = window.location.pathname.replace(/\/+$/, "").replace(/\//g, "-") || "-home"
+      const next = tagApplyHref(link.href, parseCampaignTags(campaignTagsSnapshot()), {
+        utmSource: SITE_HOST,
+        utmCampaign: `education-apply-link${path}`,
+      })
+      if (next !== link.href) link.href = next
+    }
+    const events = ["pointerdown", "contextmenu", "focusin"] as const
+    for (const type of events) document.addEventListener(type, tag, true)
+    return () => {
+      for (const type of events) document.removeEventListener(type, tag, true)
+    }
+  }, [])
 
   return (
     <EnquiryModalContext.Provider value={api}>

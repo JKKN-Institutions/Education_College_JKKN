@@ -27,6 +27,7 @@ import {
   submitEducationEnquiry,
   type EducationEnquiryState,
 } from "@/app/actions/education-enquiry"
+import CampaignFields from "@/components/lead/CampaignFields"
 import { EDUCATION_PROGRAMMES } from "@/lib/education-programmes"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 
@@ -148,6 +149,7 @@ export default function EducationEnquiryForm({
   return (
     <form onSubmit={onSubmit} className={`${surface} space-y-4 text-left`}>
       <input type="hidden" name="source_page" value={sourcePage} />
+      <CampaignFields />
 
       {/* Honeypot. Off-screen rather than display:none - a real browser autofill will not reach
           it and a bot will. Never remove: the CRM scores this field. */}
