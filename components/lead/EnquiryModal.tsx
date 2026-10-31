@@ -22,7 +22,7 @@ import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
 import { campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
 
-const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic"
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in"
 const SITE_HOST = "edu.jkkn.ac.in"
 
 type OpenOptions = { withPoster?: boolean }

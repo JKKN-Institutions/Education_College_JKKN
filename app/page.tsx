@@ -379,7 +379,7 @@ export default async function Home() {
                 <p className="text-sm text-white/90 mb-3">Fill 3 details. Our admission team will call you within 24 hours.</p>
                 <EnquiryButton
                   sourcePage="home-hero-btn"
-                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+                  fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_campaign=home"
                   fallbackLabel="Apply Now for 2026-27"
                   className="w-full bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 text-center text-base min-h-[44px]"
                 >
@@ -1239,7 +1239,7 @@ export default async function Home() {
             </div>
             <EnquiryButton
               sourcePage="home-cta"
-              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_campaign=home"
               fallbackLabel="Start Application"
               className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0"
             >
@@ -1804,7 +1804,7 @@ export default async function Home() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
                 <Link
-                  href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+                  href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_campaign=home"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 text-center text-sm sm:text-base"

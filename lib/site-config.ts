@@ -68,7 +68,7 @@ export const siteConfig = {
       process.env.NEXT_PUBLIC_ADMISSION_FORM_URL ??
       'https://www.jkkn.ai/apply/jkkn-admission-2026'
     if (base.includes('utm_')) return base
-    const utm = 'utm_source=edu.jkkn.ac.in&utm_medium=organic&utm_campaign=site'
+    const utm = 'utm_source=edu.jkkn.ac.in&utm_campaign=site'
     return base + (base.includes('?') ? '&' : '?') + utm
   })(),
 
