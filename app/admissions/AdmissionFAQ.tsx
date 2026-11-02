@@ -5,7 +5,9 @@ import { useState } from 'react'
 export default function AdmissionFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
-  const faqs = [
+  // `voice` = the spoken Tanglish form of the question, printed under it ("Also asked"); it is
+  // NOT part of the FAQPage JSON-LD in page.tsx. Added 2026-11-02 for the Step 2 questions.
+  const faqs: { question: string; answer: string; voice?: string }[] = [
     {
       question: 'What is the eligibility criteria for B.Ed admission at JKKN?',
       answer: 'You need a degree in the subject you want to teach. Tamil, English, Mathematics, Physical Science, Biological Science, History and Computer Science need a U.G. degree in that subject with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST). Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. Differently abled candidates need a pass (Government of Tamil Nadu, G.O.(D) No.144, 2026-27). Candidates appearing for final year exams may also apply provisionally.'
@@ -27,12 +29,23 @@ export default function AdmissionFAQ() {
       answer: 'State counselling covers Government and Government-Aided colleges of education only (G.O.(D) No.144). JKKN College of Education is self-financing, so its seats have no state counselling: you apply to the college, choose your B.Ed subject from 10 teaching subjects, and confirm admission by paying the fee. The college announces its admission dates on this website.'
     },
     {
+      question: 'When does B.Ed admission 2027 start in Tamil Nadu?',
+      answer: "No 2027-28 date is announced yet (as of 2 November 2026). For 2026-27, the state issued its B.Ed admission guidelines, G.O.(D) No.144, on 18 June 2026, and the last date came by press release. JKKN self-financing seats follow the college's own dates - call +91 9345855001.",
+      voice: 'B.Ed admission 2027 eppo start aagum?'
+    },
+    {
+      question: 'What is the application fee for B.Ed counselling in Tamil Nadu?',
+      answer: 'For Government and Government-aided colleges, one online application costs Rs.500, or Rs.250 for SC/SCA/ST candidates (G.O.(D) No.144, 2026-27). JKKN College of Education is self-financing and is not part of that counselling - you apply to the college directly.',
+      voice: 'B.Ed counselling ku application fee evlo?'
+    },
+    {
       question: 'Is hostel facility available for B.Ed students?',
       answer: 'Yes, separate hostel facilities are available for both male and female students within the JKKN campus. The hostels provide comfortable accommodation, nutritious food, Wi-Fi connectivity, 24/7 security, laundry service, and a conducive environment for academic pursuits.'
     },
     {
       question: 'What documents are required for B.Ed admission?',
-      answer: 'Required documents include: 10th & 12th mark sheets and certificates, graduation degree certificate and all semester mark sheets, transfer certificate (TC), migration certificate (if applicable), community certificate (for reserved categories), income certificate, Aadhaar card, and 4 passport-size photographs.'
+      answer: 'Under the 2026-27 state rules you upload your U.G. consolidated mark statement, community certificate and any special reservation certificate; P.G., M.Phil. or Ph.D. certificates are optional and add weightage. Bring all originals to admission, plus a physical fitness certificate from a Government Civil Surgeon or Civil Assistant Surgeon once selected. For JKKN seats the admission office confirms the list.',
+      voice: 'B.Ed admission ku enna documents venum?'
     },
     {
       question: 'What career opportunities are available after B.Ed?',
@@ -77,6 +90,11 @@ export default function AdmissionFAQ() {
               >
                 <span className="text-base sm:text-lg font-semibold pr-8" style={{ color: '#006837' }}>
                   {faq.question}
+                  {faq.voice && (
+                    <span className="block mt-1 text-xs sm:text-sm font-normal text-gray-500">
+                      Also asked: {faq.voice}
+                    </span>
+                  )}
                 </span>
                 <svg
                   className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}

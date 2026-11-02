@@ -1,23 +1,31 @@
+// DOCUMENTS - only what an official 2026-27 document asks for (Step 2, 2026-11-02).
+// Until this date the list (10th / 12th, TC, income certificate, photographs, work experience
+// ...) had no source. Every line below is read from:
+//   - "Procedure for applying ... B.Ed. Admissions - 2026 (TNGASAEDU - 2026)",
+//     static.tneaonline.org: uploads (U.G. consolidated mark statement mandatory; P.G.,
+//     M.Phil. / Ph.D. optional; community + special reservation certificates), the Aadhaar,
+//     UMIS and EMIS fields, the special reservation list;
+//   - G.O.(D) No.144, 18.06.2026: originals (VII.5), downloaded application (VII.3),
+//     permanent Tamil Nadu community certificate / card (VII.6), physical fitness certificate
+//     (VII.8), NSS / NCC / sports weightage (V.2(ii)), ex-servicemen seat (III.3).
+// JKKN's own checklist for its self-financing seats is NOT published anywhere we could read -
+// the admission office confirms it, and the intro line says so.
 export default function DocumentsRequired() {
   const requiredDocs = [
-    '10th Mark Sheet and Certificate',
-    '12th / HSC Mark Sheet and Certificate',
-    'Graduation Degree Certificate',
-    'All Semester / Year Mark Sheets',
-    'Transfer Certificate (TC) from last attended institution',
-    'Community Certificate (for reserved categories)',
-    'Income Certificate',
-    'Aadhaar Card (front and back)',
-    '4 Passport-Size Photographs (white background)',
+    'U.G. consolidated mark statement (mandatory upload)',
+    'Permanent Tamil Nadu Community Certificate / Card (for BC, BCM, MBC/DNC, SC, SC(A) or ST seats)',
+    'Aadhaar, UMIS and EMIS numbers (asked in the application form)',
+    'Downloaded application form (state counselling)',
+    'All original certificates, for verification at counselling and admission',
+    'Physical fitness certificate from a Government Civil Surgeon / Civil Assistant Surgeon (after selection)',
   ]
 
   const optionalDocs = [
-    'Migration Certificate (if from other state/university)',
-    'Physically Handicapped Certificate (if applicable)',
-    'Ex-Serviceman Certificate (if applicable)',
-    'Sports Achievement Certificates',
-    'Extra-curricular Activity Certificates',
-    'Work Experience Certificate (if applicable)',
+    'P.G. consolidated mark statement, M.Phil. or Ph.D. certificate (adds weightage)',
+    'NSS (7-day special camp), NCC (B or C certificate) or sports certificate at U.G. level (adds 3 marks)',
+    'Differently abled certificate / UDID number',
+    'Ex-servicemen certificate (Army, Navy or Air Force)',
+    'Eminent sportsperson quota certificate',
   ]
 
   return (
@@ -31,7 +39,9 @@ export default function DocumentsRequired() {
             Documents Required
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-            Keep these documents ready before starting your application
+            What the 2026-27 Tamil Nadu B.Ed rules ask for (G.O.(D) No.144 and the TNGASAEDU-2026
+            procedure). For JKKN self-financing seats, our admission office confirms the list when
+            you apply.
           </p>
         </div>
 
@@ -75,7 +85,7 @@ export default function DocumentsRequired() {
               ))}
             </ul>
             <p className="mt-4 sm:mt-6 text-xs text-gray-500 italic">
-              * These documents are not mandatory but may support your application
+              * Only if they apply to you - they add weightage or count for a reserved seat
             </p>
           </div>
         </div>

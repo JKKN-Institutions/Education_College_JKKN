@@ -102,6 +102,25 @@ const faqSchema = {
         text: 'State counselling covers Government and Government-Aided colleges of education only (G.O.(D) No.144). JKKN College of Education is self-financing, so its seats have no state counselling: you apply to the college, choose your B.Ed subject from 10 teaching subjects, and confirm admission by paying the fee. The college announces its admission dates on this website.',
       },
     },
+    // Step 2 (2026-11-02): the next two answers repeat AdmissionFAQ.tsx word for word -
+    // FAQPage markup must match what a visitor can read. Sources: G.O.(D) No.144 items VI and
+    // VII.1 (page image checked); "not announced" = no 2027-28 notice found on 2026-11-02.
+    {
+      '@type': 'Question',
+      name: 'When does B.Ed admission 2027 start in Tamil Nadu?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "No 2027-28 date is announced yet (as of 2 November 2026). For 2026-27, the state issued its B.Ed admission guidelines, G.O.(D) No.144, on 18 June 2026, and the last date came by press release. JKKN self-financing seats follow the college's own dates - call +91 9345855001.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the application fee for B.Ed counselling in Tamil Nadu?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For Government and Government-aided colleges, one online application costs Rs.500, or Rs.250 for SC/SCA/ST candidates (G.O.(D) No.144, 2026-27). JKKN College of Education is self-financing and is not part of that counselling - you apply to the college directly.',
+      },
+    },
     {
       '@type': 'Question',
       name: 'Is hostel facility available for B.Ed students?',
@@ -115,7 +134,7 @@ const faqSchema = {
       name: 'What documents are required for B.Ed admission?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Required documents include: 10th & 12th mark sheets and certificates, graduation degree certificate and all semester mark sheets, transfer certificate (TC), migration certificate (if applicable), community certificate (for reserved categories), income certificate, Aadhaar card, and 4 passport-size photographs.',
+        text: 'Under the 2026-27 state rules you upload your U.G. consolidated mark statement, community certificate and any special reservation certificate; P.G., M.Phil. or Ph.D. certificates are optional and add weightage. Bring all originals to admission, plus a physical fitness certificate from a Government Civil Surgeon or Civil Assistant Surgeon once selected. For JKKN seats the admission office confirms the list.',
       },
     },
     {
