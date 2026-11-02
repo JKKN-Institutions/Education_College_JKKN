@@ -8,6 +8,7 @@ import AdmissionHero from './AdmissionHero'
 import EligibilitySection from './EligibilitySection'
 import AdmissionProcess from './AdmissionProcess'
 import AdmissionRoutes from './AdmissionRoutes'
+import StateCounsellingSteps from './StateCounsellingSteps'
 import AdmissionGuides from './AdmissionGuides'
 import CampusLifeGuides from './CampusLifeGuides'
 import DocumentsRequired from './DocumentsRequired'
@@ -163,6 +164,8 @@ export default function AdmissionPage() {
         {/* Sits right after the process, because the first thing a Tamil Nadu applicant needs
             to know is WHICH of the two routes they are on - added 2026-08-25 */}
         <AdmissionRoutes />
+        {/* Step 2 (2026-11-02): HOW the state route runs, right after WHICH route applies */}
+        <StateCounsellingSteps />
         <DocumentsRequired />
         <FeeStructure />
         <SpecializationGrid />
