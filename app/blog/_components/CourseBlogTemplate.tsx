@@ -15,6 +15,17 @@ import {
   GraduationCap,
 } from 'lucide-react';
 import type { CourseBlogData } from '@/app/blog/_data/course-blog-types';
+import EducationEnquiryForm from '@/components/lead/EducationEnquiryForm';
+import { DEFAULT_PROGRAMME_BY_DEPARTMENT } from '@/lib/education-programmes';
+
+// Step 3 of the 10,300-lead plan (2026-11-02). Blog slug -> department key, so the form opens on
+// that subject's programme ONLY where lib/education-programmes.ts has a measured mapping
+// (b-ed-mathematics-2026 -> maths). Anything else (zoology, physics, one-year ...) returns
+// undefined and the form opens on "Select a Programme" - the same no-guess rule as there.
+function blogProgrammeId(slug: string): string | undefined {
+  const key = slug.replace(/^b-ed-/, '').replace(/-2026$/, '');
+  return DEFAULT_PROGRAMME_BY_DEPARTMENT[key === 'mathematics' ? 'maths' : key];
+}
 
 const FIXED_TOP = 104;
 
@@ -287,6 +298,23 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                 ))}
               </ul>
             </section>
+
+            {/* Step 3 (2026-11-02): compact enquiry form right after the first section. GA4
+                2026-08-03..11-01: these course blogs had 982 page views and no inline form; on a
+                375 px phone the first Apply link sat 12.9-13.8 screens down (live measure). */}
+            <div id="enquire" className="mb-12 scroll-mt-20 rounded-2xl border border-[#7cb983]/40 bg-[#FBFBEE] p-4 sm:p-6">
+              <h2 className="text-lg sm:text-xl font-bold text-[#006837] mb-1">
+                Questions about B.Ed admission at JKKN?
+              </h2>
+              <p className="text-sm text-gray-600 mb-4">
+                Leave your name and mobile number. The JKKN admission office will call you back.
+              </p>
+              <EducationEnquiryForm
+                sourcePage={`blog-${data.slug}`}
+                defaultProgrammeId={blogProgrammeId(data.slug)}
+                compact
+              />
+            </div>
 
             {/* Section 2: Why Choose */}
             <section id="why-choose" className="mb-12 scroll-mt-20">
