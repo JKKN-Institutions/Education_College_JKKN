@@ -32,6 +32,16 @@ export default function AdmissionHero() {
               Bachelor of Education — {siteConfig.name}
             </h2>
 
+            {/* Step 2 of the 10,300-lead plan (2026-11-02): a 51-word direct answer for the
+                "b.ed admission 2027 tamil nadu" / "b.ed counselling" searches this page receives
+                since the CAS 308. Every clause is sourced: no 2027-28 notice found on 2026-11-02;
+                self-financing dates on the college website and Government quota only in
+                Government / aided colleges = G.O.(D) No.144 (18.06.2026); www.tngasa.in = the
+                portal that G.O. names for 2026-27. Change the "as of" date when you re-check. */}
+            <p className="text-sm sm:text-base leading-relaxed mb-6 rounded-lg border-l-4 border-[#7cb983] bg-black/20 p-4" style={{ color: '#ffffff' }}>
+              B.Ed admission 2027-28 in Tamil Nadu has no dates yet (as of 2 November 2026). JKKN College of Education is self-financing, so you apply to the college directly, with no entrance test and no state counselling. Government and aided colleges admit through the state&apos;s online counselling, held on www.tngasa.in in 2026-27.
+            </p>
+
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 lg:mb-12" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
               Begin your journey to become a skilled educator. Our NCTE-approved, TNTEU-affiliated B.Ed program offers 10 teaching subjects with modern teaching methodologies, practical training, and placement support.
             </p>
