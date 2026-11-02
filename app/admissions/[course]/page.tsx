@@ -20,6 +20,8 @@ import {
   TRUST_SIGNALS,
   getCourseAdmission,
 } from '@/lib/admissions-data';
+import EducationEnquiryForm from '@/components/lead/EducationEnquiryForm';
+import { DEFAULT_PROGRAMME_BY_DEPARTMENT } from '@/lib/education-programmes';
 
 export const dynamicParams = false;
 
@@ -211,6 +213,27 @@ export default async function CourseAdmissionPage({
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Step 3 of the 10,300-lead plan (2026-11-02): compact enquiry form right after the hero.
+            These 14 pages had ~193 page views (GA4 2026-08-03..11-01) and no inline form; on a
+            375 px phone the second Apply link sat 17.5 screens down (live measure). The course
+            slugs are the DEFAULT_PROGRAMME_BY_DEPARTMENT keys, so the form pre-selects only where
+            that map has a measured mapping; the rest open on "Select a Programme". */}
+        <section id="enquire" className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-[#FBFBEE] scroll-mt-20">
+          <div className="mx-auto max-w-xl">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#006837] text-center mb-1">
+              Questions about B.Ed admission at JKKN?
+            </h2>
+            <p className="text-sm text-gray-600 text-center mb-5">
+              Leave your name and mobile number. The JKKN admission office will call you back.
+            </p>
+            <EducationEnquiryForm
+              sourcePage={`admissions-${data.slug}`}
+              defaultProgrammeId={DEFAULT_PROGRAMME_BY_DEPARTMENT[data.slug]}
+              compact
+            />
           </div>
         </section>
 
