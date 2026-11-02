@@ -28,7 +28,7 @@ export default function AdmissionTimeline() {
             ADMISSION STEPS
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-3 sm:mb-4 px-2">
-            B.Ed Admission 2026-27 &mdash; How It Works
+            B.Ed Admission 2027-28 &mdash; How It Works
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
             Under the 2026-27 Tamil Nadu guidelines, a self-financing college such as JKKN announces its own admission dates on its website; Government and Government-Aided college dates come from the state notification. We publish
@@ -96,11 +96,12 @@ export default function AdmissionTimeline() {
             better answer for "when does B.Ed admission start in Tamil Nadu". */}
         <div className="mt-10 sm:mt-14 rounded-2xl border border-[#7cb983]/30 bg-white p-5 sm:p-7">
           <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2">
-            B.Ed Admission 2026-27 Dates &mdash; Where They Are Officially Published
+            B.Ed Admission 2027-28 Dates &mdash; Where They Will Be Published
           </h3>
           <p className="text-sm text-gray-600 mb-5">
-            Government and government-aided colleges of education admit through the Government of
-            Tamil Nadu B.Ed admission portal. The degree is awarded by Tamil Nadu Teachers Education
+            No 2027-28 date is out yet (as of 2 November 2026). Government and government-aided
+            colleges of education admit through the Government of Tamil Nadu B.Ed admission
+            portal - in 2026-27 that was www.tngasa.in, under G.O.(D) No.144. The degree is awarded by Tamil Nadu Teachers Education
             University (TNTEU), which publishes the academic calendar. JKKN self-financing seats run
             on our own cycle and are open now.
           </p>
