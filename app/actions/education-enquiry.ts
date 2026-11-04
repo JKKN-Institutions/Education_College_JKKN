@@ -87,6 +87,17 @@ export async function submitEducationEnquiry(
     referrerUrl: question ? `question: ${question.slice(0, 300)}` : "",
   }
 
+  // Local test switch (2026-11-04, Call / WhatsApp gate). A test submit must never write a fake lead
+  // into the CRM, so `ENQUIRY_DRY_RUN=1 npx next start` answers "accepted" without posting. It can
+  // never be on in production: Vercel sets VERCEL=1 on every build and function, and that turns it off.
+  if (process.env.ENQUIRY_DRY_RUN === "1" && process.env.VERCEL !== "1") {
+    return {
+      success: true,
+      message: "Test mode: details checked, nothing was sent to the CRM.",
+      tracking: { source_page: sourcePage, programme_id: programme },
+    }
+  }
+
   try {
     const res = await fetch(CRM_SUBMIT, {
       method: "POST",

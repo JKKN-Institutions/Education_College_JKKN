@@ -6,6 +6,11 @@ import { LayoutWrapper } from "@/components/LayoutWrapper";
 import { ConversionTracking } from "@/components/analytics/ConversionTracking";
 import { siteConfig } from "@/lib/site-config";
 
+// ANALYTICS_OFF=1 at build time is for a LOCAL test build only (the 2026-11-04 test of the Call /
+// WhatsApp gate runs `next start` on this laptop). Vercel never sets it.
+const IS_PRODUCTION_BUILD =
+  process.env.NODE_ENV === 'production' && process.env.ANALYTICS_OFF !== '1';
+
 const poppins = Poppins({
   subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
@@ -22,6 +27,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://edu.jkkn.ac.in'),
+  // iPhone Safari turns any phone number in plain text into a dial link of its own, which skipped
+  // the Call / WhatsApp form gate (2026-11-04, same as the Dental site: those taps must also go
+  // form -> dialer). Off here; EnquiryModal's plain-number tap listener takes those taps instead.
+  formatDetection: { telephone: false },
   title: {
     default: 'JKKN College of Education — B.Ed College in Namakkal',
     template: '%s | JKKN College of Education',
@@ -98,7 +107,10 @@ export default function RootLayout({
         <ConversionTracking />
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
-      {gaId && <GoogleAnalytics gaId={gaId} />}
+      {/* GA4 loads only in a real production build (2026-11-04): a local test - the Call /
+          WhatsApp gate test included - must not write test taps into the live GA4 property.
+          Vercel production and preview builds are unaffected. */}
+      {IS_PRODUCTION_BUILD && gaId && <GoogleAnalytics gaId={gaId} />}
     </html>
   );
 }
