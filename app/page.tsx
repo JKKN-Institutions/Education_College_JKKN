@@ -374,16 +374,19 @@ export default async function Home() {
                 <span className="text-[#7cb983]">Transform Your Teaching Career</span>
               </h1>
 
-              {/* Phones: the call-back button right under the heading, inside the first screen (2026-10-16) */}
+              {/* Phones: the call button right under the heading, inside the first screen (2026-10-16).
+                  Renamed "Get a Call Back" -> "Call Counsellor" 2026-11-04: it is now a call gate,
+                  form then dialer in the same tap (lib/call-gate.ts), as on the Dental site. */}
               <div className="lg:hidden mb-6">
-                <p className="text-sm text-white/90 mb-3">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                <p className="text-sm text-white/90 mb-3">Fill 3 details, then talk to our admission counsellor right away.</p>
                 <EnquiryButton
-                  sourcePage="home-hero-btn"
+                  sourcePage="call-gate-home-hero"
+                  intent="call"
                   fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_campaign=home"
                   fallbackLabel="Apply Now for 2026-27"
                   className="w-full bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 text-center text-base min-h-[44px]"
                 >
-                  Get a Call Back
+                  Call Counsellor
                 </EnquiryButton>
               </div>
 
@@ -1237,13 +1240,15 @@ export default async function Home() {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
               <p className="text-white/90 text-sm sm:text-base">Talk to our admission team about the B.Ed programme. As a self-financing college we announce our admission dates on this website, and we publish a date only once it is fixed.</p>
             </div>
+            {/* "Get a Call Back" -> "Call Counsellor" call gate, 2026-11-04 (same as the hero button). */}
             <EnquiryButton
-              sourcePage="home-cta"
+              sourcePage="call-gate-home-cta"
+              intent="call"
               fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in&utm_campaign=home"
               fallbackLabel="Start Application"
               className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0"
             >
-              Get a Call Back
+              Call Counsellor
             </EnquiryButton>
           </div>
         </div>
