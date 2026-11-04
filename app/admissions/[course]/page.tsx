@@ -227,7 +227,7 @@ export default async function CourseAdmissionPage({
               Questions about B.Ed admission at JKKN?
             </h2>
             <p className="text-sm text-gray-600 text-center mb-5">
-              Leave your name and mobile number. The JKKN admission office will call you back.
+              Leave your name and mobile number, then call or WhatsApp the JKKN admission office right away.
             </p>
             <EducationEnquiryForm
               sourcePage={`admissions-${data.slug}`}

@@ -307,7 +307,7 @@ export default function CourseBlogTemplate({ data }: { data: CourseBlogData }) {
                 Questions about B.Ed admission at JKKN?
               </h2>
               <p className="text-sm text-gray-600 mb-4">
-                Leave your name and mobile number. The JKKN admission office will call you back.
+                Leave your name and mobile number, then call or WhatsApp the JKKN admission office right away.
               </p>
               <EducationEnquiryForm
                 sourcePage={`blog-${data.slug}`}
