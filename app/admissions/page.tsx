@@ -20,6 +20,7 @@ import CampusFacilities from './CampusFacilities'
 import AdmissionFAQ from './AdmissionFAQ'
 import AdmissionCTA from './AdmissionCTA'
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm";
+import BlogEnquiryBox from "@/components/lead/BlogEnquiryBox";
 
 // GL1-08. This page is the redirect target of
 // cas.jkkn.ac.in/blog/bed-admission-2026-tamil-nadu, which 308s here - so this title is what
@@ -178,6 +179,11 @@ export default function AdmissionPage() {
 
       <main className="min-h-screen bg-[#FBFBEE]">
         <AdmissionHero />
+        {/* Lead option 1 (2026-11-05): the enquiry form near the top. Before this the only form on the
+            page sat at the bottom, 25.8 phone screens down (live 375 px scan, 2026-11-05). */}
+        <div className="px-4">
+          <BlogEnquiryBox sourcePage="admissions-top" />
+        </div>
         <EligibilitySection />
         <AdmissionProcess />
         {/* Sits right after the process, because the first thing a Tamil Nadu applicant needs

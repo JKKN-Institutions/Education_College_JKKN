@@ -7,6 +7,7 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
 import { JsonLd } from '@/components/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { inlineCtaFor } from '@/lib/blog-inline-cta';
 
 export const revalidate = 300;
 
@@ -179,6 +180,8 @@ export default async function CampusBlogPost({
     : processContent(rawHtml);
 
   const { words, readTime } = calcReadMeta(rawHtml);
+  // Enquiry box inside every post (lead option 2, 2026-11-05) - place from lib/blog-inline-cta.ts.
+  const inlineCta = inlineCtaFor(slug, processedHtml);
 
   return (
     <div className="min-h-screen bg-white">
@@ -231,6 +234,7 @@ export default async function CampusBlogPost({
         popularPosts={popularPosts ?? []}
         relatedPosts={relatedPosts ?? []}
         initialComments={initialComments ?? []}
+        inlineCta={inlineCta}
       />
       <Footer />
       <ScrollToTop />

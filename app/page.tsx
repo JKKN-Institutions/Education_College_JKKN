@@ -1816,12 +1816,18 @@ export default async function Home() {
                 >
                   Apply Online Now
                 </Link>
-                <button
-                  
+                {/* Lead option 3 (2026-11-05): this was a dead "Download Prospectus" button - no link, no handler,
+                    and the site has no prospectus PDF. It is now a WhatsApp link to the admission number, so the
+                    call gate (lib/call-gate.ts) handles it like every other one: the 3-box form, then WhatsApp in the
+                    same tap; a visitor who already enquired goes straight to WhatsApp. */}
+                <a
+                  href="https://wa.me/919345855001"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-transparent border-2 border-[#006837] hover:bg-[#006837] hover:text-white text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-200 text-center text-sm sm:text-base"
                 >
-                  Download Prospectus
-                </button>
+                  Get Course &amp; Fee Details on WhatsApp
+                </a>
               </div>
 
           
