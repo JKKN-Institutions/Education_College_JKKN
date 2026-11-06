@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Header from '@/components/Header';
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox';
 import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import {
@@ -298,6 +299,10 @@ export default function BlogDetailPage() {
                 ))}
               </ul>
             </section>
+
+            {/* Enquiry box before the second section (lead options round 2, 2026-11-06), the same place the CMS posts
+                carry it (lib/blog-inline-cta.ts). Before this the page had no form at all. */}
+            <BlogEnquiryBox sourcePage="blog-top-10-career-options-after-bed-2026" />
 
             {/* ── Section 2: Government Teacher ── */}
             <section id="government-teacher" className="mb-12 scroll-mt-20">

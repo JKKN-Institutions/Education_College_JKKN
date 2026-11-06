@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Header from '@/components/Header'
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox'
 import Footer from '@/components/Footer'
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd'
 import { JsonLd } from '@/components/JsonLd'
@@ -196,6 +197,12 @@ export default function OneYearBEdPage() {
             </div>
           </div>
         </section>
+
+        {/* Enquiry box before the second section (lead options round 2, 2026-11-06), the same place the CMS posts
+            carry it (lib/blog-inline-cta.ts). Before this the page had no form at all. */}
+        <div className="px-4 sm:px-6 lg:px-8">
+          <BlogEnquiryBox sourcePage="blog-b-ed-one-year-2026" />
+        </div>
 
         {/* The subject pages - the practical answer to "so what CAN I apply for" */}
         <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
