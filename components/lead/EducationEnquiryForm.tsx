@@ -39,6 +39,17 @@ import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 import { sendGaEvent } from "@/lib/ga-event"
 import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent } from "@/lib/call-gate"
 
+// Browser autofill fills a saved number as "07000000001" (Chrome 156, tel-national, India trunk 0 -
+// measured 2026-11-12 on this live form) or "+91 ...". The box and the server both accept exactly 10
+// digits from 6-9, so keep digits only and drop a leading 91 / 0 - otherwise a one-tap fill fails the
+// pattern check and the visitor has to retype it. Same helper as Dental / Pharmacy / Nursing / Arts.
+export function toTenDigitMobile(raw: string): string {
+  const digits = raw.replace(/\D/g, "")
+  if (digits.length === 12 && digits.startsWith("91")) return digits.slice(2)
+  if (digits.length === 11 && digits.startsWith("0")) return digits.slice(1)
+  return digits
+}
+
 // Trust line under the button. Each item is proven by a document this site itself publishes
 // (checked 2026-10-22); do not add one back without a document that states it.
 //  - "NCTE Approved": NCTE SRC continuation-of-recognition order, public/pdf/NCTE-Approval.pdf
@@ -258,6 +269,7 @@ export default function EducationEnquiryForm({
             id={fid("name")}
             type="text"
             name="name"
+            autoComplete="name"
             required
             minLength={2}
             placeholder="Enter your full name"
@@ -272,6 +284,12 @@ export default function EducationEnquiryForm({
             id={fid("phone")}
             type="tel"
             name="phone"
+            autoComplete="tel-national"
+            onInput={(e) => {
+              const box = e.currentTarget
+              const tenDigits = toTenDigitMobile(box.value)
+              if (tenDigits !== box.value) box.value = tenDigits
+            }}
             required
             inputMode="numeric"
             pattern="[6-9][0-9]{9}"
