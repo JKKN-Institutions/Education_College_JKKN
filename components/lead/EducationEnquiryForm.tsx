@@ -145,7 +145,9 @@ export default function EducationEnquiryForm({
         if (!result.success) throw new Error("not accepted")
         writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
         // Same event, same params as the ordinary form, so lead_form_submit stays one series.
-        sendGaEvent("lead_form_submit", {
+        // DEP-100 (2026-11-13), same rule as Arts since 2026-11-02: a 409 (phone already applied) is not a
+        // new CRM lead, so it is lead_form_duplicate; lead_form_submit counts new leads only.
+        sendGaEvent(result.duplicate ? "lead_form_duplicate" : "lead_form_submit", {
           form_name: "education_enquiry",
           source_page: sourcePage,
           programme: result.tracking?.programme_id ?? "not_selected",

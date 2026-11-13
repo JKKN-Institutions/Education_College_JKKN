@@ -18,11 +18,14 @@
 
 "use server"
 
+import { cookies } from "next/headers"
+import { after } from "next/server"
 import {
   EDUCATION_INSTITUTION_ID,
   VALID_EDUCATION_PROGRAMME_IDS,
 } from "@/lib/education-programmes"
 import { crmCampaign } from "@/lib/campaign-tags"
+import { sendServerLeadEvent, type ServerLeadEvent } from "@/lib/ga4-server-event"
 
 const CRM_SLUG = "jkkn-admission-2026"
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -32,6 +35,9 @@ export type EducationEnquiryState = {
   message?: string
   error?: string
   tracking?: { source_page: string; programme_id: string }
+  // true only for the 409 branch (DEP-100, 2026-11-13): this phone was already in the CRM. The parent
+  // still sees a success screen; the page sends lead_form_duplicate instead of lead_form_submit.
+  duplicate?: boolean
   fieldErrors?: Partial<Record<"name" | "phone" | "programme", string>>
 }
 
@@ -45,6 +51,24 @@ function validate(name: string, phone: string, programme: string) {
   if (!VALID_EDUCATION_PROGRAMME_IDS.has(programme))
     fieldErrors.programme = "Please choose a programme."
   return fieldErrors
+}
+
+// DEP-100 (2026-11-13). Tells GA4, from this server, what the CRM did with the lead - see
+// lib/ga4-server-event.ts. after() runs it once the parent already has the answer, so it can never slow
+// or break a submit, and it does nothing until GA4_MP_API_SECRET is set. No name, no phone.
+async function scheduleServerLeadEvent(name: ServerLeadEvent, sourcePage: string, programme: string) {
+  try {
+    const gaCookie = (await cookies()).get("_ga")?.value ?? null
+    after(() =>
+      sendServerLeadEvent({
+        name,
+        gaCookie,
+        params: { form_name: "education_enquiry", source_page: sourcePage, programme },
+      })
+    )
+  } catch {
+    // Outside a request (a unit test, a script): tracking must never touch the lead.
+  }
 }
 
 export async function submitEducationEnquiry(
@@ -110,8 +134,10 @@ export async function submitEducationEnquiry(
 
     if (res.status === 409) {
       // 409 means this phone has already applied. Not a failure for the parent.
+      if (!honeypot) await scheduleServerLeadEvent("lead_crm_duplicate", sourcePage, programme)
       return {
         success: true,
+        duplicate: true,
         message:
           "You have already enquired with this number. Our admission team will call you — no need to submit again.",
         tracking: { source_page: sourcePage, programme_id: programme },
@@ -128,6 +154,8 @@ export async function submitEducationEnquiry(
       }
     }
 
+    // A filled honeypot means the CRM scores this as a bot - it is not a lead, so GA4 is not told one.
+    if (!honeypot) await scheduleServerLeadEvent("lead_crm_accepted", sourcePage, programme)
     return {
       success: true,
       message:
