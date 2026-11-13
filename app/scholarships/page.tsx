@@ -51,7 +51,7 @@ export default function Scholarships() {
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-4 py-3">PMSS (Community Scholarship)</td>
                     <td className="border border-gray-300 px-4 py-3">GQ</td>
-                    <td className="border border-gray-300 px-4 py-3 font-medium">₹30,000 / Year</td>
+                    <td className="border border-gray-300 px-4 py-3 font-medium">As Per Government Norm</td>
                   </tr>
                   <tr style={{ backgroundColor: '#f9f5ef' }}>
                     <td className="border border-gray-300 px-4 py-3">Maintenance Scholarship</td>
