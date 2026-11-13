@@ -33,7 +33,7 @@ export default function StateCounsellingSteps() {
     },
     {
       title: 'Pay the application fee online',
-      body: 'Rs.500, or Rs.250 for SC/SCA/ST candidates - one application covers all Government and Government-aided colleges (G.O.(D) No.144).',
+      body: 'As Per Government Norm - one application covers all Government and Government-aided colleges (G.O.(D) No.144).',
     },
     {
       title: 'Download your application',

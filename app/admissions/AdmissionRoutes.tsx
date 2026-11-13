@@ -35,7 +35,7 @@ export default function AdmissionRoutes() {
       body:
         'The Government of Tamil Nadu runs this route as one online counselling. In 2026-27 it ran on www.tngasa.in for 21 colleges (7 Government, 14 Government-aided). You apply to the state, not to an individual college, and seat allotment happens centrally.',
       points: [
-        'One state application: Rs.500, or Rs.250 for SC/SCA/ST candidates (G.O.(D) No.144)',
+        'One state application fee: As Per Government Norm (G.O.(D) No.144)',
         'Merit on degree marks. Extra marks for U.G.-level subjects: P.G. 4, M.Phil. 5, Ph.D. 6; NSS, NCC or sports at U.G. level 3',
         'Dates come from the state notification, not from any college',
       ],

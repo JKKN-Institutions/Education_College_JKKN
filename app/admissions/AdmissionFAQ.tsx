@@ -35,7 +35,7 @@ export default function AdmissionFAQ() {
     },
     {
       question: 'What is the application fee for B.Ed counselling in Tamil Nadu?',
-      answer: 'For Government and Government-aided colleges, one online application costs Rs.500, or Rs.250 for SC/SCA/ST candidates (G.O.(D) No.144, 2026-27). JKKN College of Education is self-financing and is not part of that counselling - you apply to the college directly.',
+      answer: 'For Government and Government-aided colleges, the online application fee is As Per Government Norm (G.O.(D) No.144, 2026-27). JKKN College of Education is self-financing and is not part of that counselling - you apply to the college directly.',
       voice: 'B.Ed counselling ku application fee evlo?'
     },
     {
