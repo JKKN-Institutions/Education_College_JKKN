@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BlogEnquiryBox from "@/components/lead/BlogEnquiryBox";
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import { JsonLd } from '@/components/JsonLd';
 
@@ -62,6 +63,9 @@ export default function DepartmentsPage() {
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 sm:mb-12 max-w-3xl">
             JKKN College of Education runs 10 B.Ed teaching subjects under NCTE approval and TNTEU affiliation. The departments below are by degree subject. Under the Tamil Nadu B.Ed guidelines for 2026-27, Physics and Chemistry graduates take Physical Science, and Botany, Zoology and Microbiology graduates take Biological Science.
           </p>
+
+          {/* Enquiry form (DEP-114, 2026-11-14): the same card as the top of /admissions */}
+          <BlogEnquiryBox sourcePage="departments-top" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {departments.map((dept) => (

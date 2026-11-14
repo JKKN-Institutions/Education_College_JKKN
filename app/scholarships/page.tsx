@@ -1,6 +1,7 @@
 import { seoMetadata } from '@/lib/seo-metadata';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BlogEnquiryBox from "@/components/lead/BlogEnquiryBox";
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 
 export const metadata = seoMetadata(
@@ -28,6 +29,9 @@ export default function Scholarships() {
           <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify mb-8 sm:mb-10" style={{ color: '#4a5568' }}>
             JKKN College of Education offers various government and trust-funded scholarships for B.Ed students. The following scholarships are available based on community category and eligibility criteria.
           </p>
+
+          {/* Enquiry form (DEP-114, 2026-11-14): the same card as the top of /admissions */}
+          <BlogEnquiryBox sourcePage="scholarships-top" />
 
           {/* SC / SCA / ST / BC-CC Scholarships */}
           <div className="mb-10">

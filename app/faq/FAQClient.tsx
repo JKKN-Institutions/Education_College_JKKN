@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { allFaqs } from './faq-data'
+import BlogEnquiryBox from '@/components/lead/BlogEnquiryBox'
 
 const categories = [
   {
@@ -117,6 +118,11 @@ export default function FAQClient({ phone, email }: { phone: string; email: stri
           </div>
         </div>
       </section>
+
+      {/* Enquiry form (DEP-114, 2026-11-14): the same card as the top of /admissions */}
+      <div className="px-4">
+        <BlogEnquiryBox sourcePage="faq" />
+      </div>
 
       {/* Contact CTA */}
       <section className="pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8">

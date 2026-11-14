@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BlogEnquiryBox from "@/components/lead/BlogEnquiryBox";
 import { JsonLd } from '@/components/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import { seoMetadata } from '@/lib/seo-metadata';
@@ -119,6 +120,9 @@ export default function BedCollegeNearErodePage() {
               </div>
             ))}
           </div>
+
+          {/* Enquiry form (DEP-114, 2026-11-14): the same card as the top of /admissions */}
+          <BlogEnquiryBox sourcePage="city-erode" />
 
           {/* Getting here */}
           <section className="mt-12">
