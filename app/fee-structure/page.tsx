@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BlogEnquiryBox from "@/components/lead/BlogEnquiryBox";
 import { seoMetadata } from '@/lib/seo-metadata';
 
 export const metadata = seoMetadata(
@@ -81,6 +82,9 @@ export default function FeeStructurePage() {
           <p className="mt-5 text-xs text-gray-500 text-center">
             * Tuition is per year, management quota, as published in the JKKN course fee structure. Admission dates for self-financing colleges of education are announced on the college&apos;s own website (Government of Tamil Nadu, G.O.(D) No.144, para VII.1, dated 18 June 2026).
           </p>
+
+          {/* Enquiry form (DEP-114, 2026-11-14): the same card as the top of /admissions */}
+          <BlogEnquiryBox sourcePage="fee-structure-top" feeLink={false} />
 
           {/* B-06, added 2026-08-27. This page was 287 words and an orphan - measured that day,
               neither the homepage nor /admissions nor /blog linked it even once, while it still

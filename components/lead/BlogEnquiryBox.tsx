@@ -3,11 +3,15 @@
 // B.Ed fee table on /fee-structure is the one place that number lives, so the box links to it.
 // No course is pre-selected (see lib/blog-inline-cta.ts): the reader picks the pedagogy.
 // The title is not a heading, so the article's own H2 outline (and its table of contents) stays as written.
+//
+// DEP-114 (2026-11-14): the same card on 9 more pages that had no form (fee-structure, scholarships, faq,
+// departments, the Erode / Salem / Namakkal pages, the NCTE guide, regular-vs-distance). feeLink={false}
+// on /fee-structure only, where the fee table is the page itself. Every other caller is unchanged.
 
 import Link from "next/link"
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm"
 
-export default function BlogEnquiryBox({ sourcePage }: { sourcePage: string }) {
+export default function BlogEnquiryBox({ sourcePage, feeLink = true }: { sourcePage: string; feeLink?: boolean }) {
   return (
     <aside
       aria-label="B.Ed admission enquiry"
@@ -16,11 +20,16 @@ export default function BlogEnquiryBox({ sourcePage }: { sourcePage: string }) {
       <div className="mb-4">
         <div className="text-xl lg:text-2xl font-bold text-[#032816] leading-snug">Get B.Ed Fee &amp; Admission Details</div>
         <div className="mt-2 text-base text-[#374151] leading-relaxed">
-          Fill your details, then call or WhatsApp our admission team right away.{" "}
-          <Link href="/fee-structure" className="font-semibold text-[#0b6d41] underline">
-            See the B.Ed fee table
-          </Link>
-          .
+          Fill your details, then call or WhatsApp our admission team right away.
+          {feeLink && (
+            <>
+              {" "}
+              <Link href="/fee-structure" className="font-semibold text-[#0b6d41] underline">
+                See the B.Ed fee table
+              </Link>
+              .
+            </>
+          )}
         </div>
       </div>
       <EducationEnquiryForm sourcePage={sourcePage} compact bare />
