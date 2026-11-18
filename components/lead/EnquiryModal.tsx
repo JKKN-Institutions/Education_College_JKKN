@@ -20,7 +20,7 @@ import Image from "next/image"
 import { X } from "lucide-react"
 import EducationEnquiryForm from "@/components/lead/EducationEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
-import { campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
+import { CAMPAIGN_KEYS, campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
 import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store"
 import {
   gateIntentForHref,
@@ -59,6 +59,31 @@ const NOT_PAGE_TEXT =
 
 const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=edu.jkkn.ac.in"
 const SITE_HOST = "edu.jkkn.ac.in"
+
+// Apply-first (user's choice 2026-11-18: "ella submit um firstu en form valiyathaan jkkn.ai ku
+// poganum, direct ah jkkn.ai form ku poga koodathu"). An Apply link is any jkkn.ai/apply link, or
+// one whose jkkn.ai address is parked in data-apply-href while a right-click / long-press menu is open.
+const APPLY_LINKS = 'a[href*="jkkn.ai/apply"], a[data-apply-href]'
+/** The query word that opens this form when a page loads (a new tab opened from an Apply link). */
+const ENQUIRE_PARAM = "enquire"
+
+/** "-admissions-bds" for /admissions/bds/, "-home" for / - the page part of a source tag. */
+function pathTag(): string {
+  return window.location.pathname.replace(/\/+$/, "").replace(/\//g, "-") || "-home"
+}
+
+/** THIS page + ?enquire=1 + the visit's own campaign tags (campaign words only, never a name or a
+ *  phone): what a new tab, a middle click or "Copy link" on an Apply link opens instead of jkkn.ai. */
+function enquireHereUrl(): string {
+  const url = new URL(window.location.pathname, window.location.origin)
+  const tags = parseCampaignTags(campaignTagsSnapshot())
+  for (const key of CAMPAIGN_KEYS) {
+    const value = tags[key]
+    if (value) url.searchParams.set(key, value)
+  }
+  url.searchParams.set(ENQUIRE_PARAM, "1")
+  return url.toString()
+}
 
 type OpenOptions = { withPoster?: boolean; programmeId?: string; intent?: GateIntent }
 type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
@@ -104,24 +129,60 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   }, [open, close])
 
   // Every jkkn.ai/apply link on the site opens this form instead (user's choice 2026-10-22: the
-  // in-page "Apply Now" buttons open the 3-box form; the full application stays one tap away inside
-  // the dialog). One listener here rather than dozens of edited links: the links stay real
-  // <a href>s, so without JavaScript, or on a Ctrl / Shift / middle click, they still open jkkn.ai
-  // as before. A link marked data-full-application (the small one in the dialog) is never caught.
-  // The link's own onClick still runs, so the old apply_click GA event now counts dialog opens
-  // (here apply_click is derived by a GA4 rule from the jkkn.ai/apply link click - see
-  // components/analytics/ConversionTracking.tsx).
+  // in-page "Apply Now" buttons open the 3-box form). One listener here rather than dozens of edited
+  // links. Apply-first (2026-11-18): a Ctrl / Shift / Cmd click or a middle click no longer opens
+  // jkkn.ai either - it opens THIS page in a new tab with ?enquire=1, and the form opens there (the
+  // effect below). The links stay real jkkn.ai <a href>s: the GA4 apply_click rule reads that address
+  // from the enhanced-measurement click (see ConversionTracking.tsx), and without JavaScript they
+  // still open jkkn.ai. A link marked data-full-application (the small one in the dialog, shown only
+  // after an accepted enquiry) is never caught. The link's own onClick still runs, so apply_click
+  // keeps counting dialog opens.
   useEffect(() => {
+    const applyLink = (e: MouseEvent) => {
+      const link = (e.target as Element | null)?.closest?.(APPLY_LINKS)
+      return link && !link.hasAttribute("data-full-application") ? link : null
+    }
     const onClick = (e: MouseEvent) => {
-      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
-      const link = (e.target as Element | null)?.closest?.('a[href*="jkkn.ai/apply"]')
-      if (!link || link.hasAttribute("data-full-application")) return
+      if (e.defaultPrevented || e.button !== 0 || !applyLink(e)) return
       e.preventDefault()
-      const path = window.location.pathname.replace(/\/+$/, "").replace(/\//g, "-") || "-home"
-      openEnquiry(`apply-link${path}`.slice(0, 60))
+      if (e.metaKey || e.ctrlKey || e.shiftKey) {
+        window.open(enquireHereUrl(), "_blank", "noopener")
+        return
+      }
+      openEnquiry(`apply-link${pathTag()}`.slice(0, 60))
+    }
+    // A middle click fires auxclick, not click; cancelling it stops the browser's own new tab.
+    const onAuxClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 1 || !applyLink(e)) return
+      e.preventDefault()
+      window.open(enquireHereUrl(), "_blank", "noopener")
     }
     document.addEventListener("click", onClick, true)
-    return () => document.removeEventListener("click", onClick, true)
+    document.addEventListener("auxclick", onAuxClick, true)
+    return () => {
+      document.removeEventListener("click", onClick, true)
+      document.removeEventListener("auxclick", onAuxClick, true)
+    }
+  }, [openEnquiry])
+
+  // Apply-first: a page opened with ?enquire=1 (an Apply link opened in a new tab, middle-clicked or
+  // copied) opens this form once. The word leaves the address bar as the form opens, so a reload or a
+  // link copied from the bar does not open it again; the campaign tags next to it stay. Opened from a
+  // timer (like the homepage popup), not the effect body: the effect only subscribes.
+  useEffect(() => {
+    if (!new URLSearchParams(window.location.search).has(ENQUIRE_PARAM)) return
+    const timer = window.setTimeout(() => {
+      const params = new URLSearchParams(window.location.search)
+      params.delete(ENQUIRE_PARAM)
+      const rest = params.toString()
+      window.history.replaceState(
+        window.history.state,
+        "",
+        `${window.location.pathname}${rest ? `?${rest}` : ""}${window.location.hash}`
+      )
+      openEnquiry(`apply-newtab${pathTag()}`.slice(0, 60))
+    }, 0)
+    return () => window.clearTimeout(timer)
   }, [openEnquiry])
 
   // Call / WhatsApp gate (lib/call-gate.ts; Dental 2026-11-03, this site 2026-11-04). A tap on any
@@ -197,18 +258,30 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   }, [openEnquiry])
 
   // Campaign tags (lib/campaign-tags.ts, 2026-10-31). Store the ones this visit arrived with, and put
-  // them on a jkkn.ai/apply link just before it is followed - new-tab click, long-press, right-click,
-  // keyboard - so the CRM sees the ad / QR / WhatsApp source instead of the site's own name. The
-  // dialog's full-application link is included. A visit with no tags changes nothing but "organic".
+  // them on a jkkn.ai/apply link just before it is followed, so the CRM sees the ad / QR / WhatsApp
+  // source instead of the site's own name. A visit with no tags changes nothing but "organic".
+  // Apply-first (2026-11-18): a right-click or an Android long-press (contextmenu - "Open in new tab",
+  // "Copy link") points an Apply link at THIS page + ?enquire=1 instead. Its jkkn.ai address waits in
+  // data-apply-href and comes back on the next pointerdown / focus, so an ordinary click still shows
+  // jkkn.ai to the GA4 apply_click rule. The dialog's full-application link keeps going to jkkn.ai.
   useEffect(() => {
     campaignTagsSnapshot()
     const tag = (e: Event) => {
-      const link = (e.target as Element | null)?.closest?.('a[href*="jkkn.ai/apply"]') as HTMLAnchorElement | null
+      const link = (e.target as Element | null)?.closest?.(APPLY_LINKS) as HTMLAnchorElement | null
       if (!link) return
-      const path = window.location.pathname.replace(/\/+$/, "").replace(/\//g, "-") || "-home"
+      if (e.type === "contextmenu" && !link.hasAttribute("data-full-application")) {
+        if (!link.dataset.applyHref) link.dataset.applyHref = link.href
+        link.href = enquireHereUrl()
+        return
+      }
+      const parked = link.dataset.applyHref
+      if (parked) {
+        link.href = parked
+        delete link.dataset.applyHref
+      }
       const next = tagApplyHref(link.href, parseCampaignTags(campaignTagsSnapshot()), {
         utmSource: SITE_HOST,
-        utmCampaign: `education-apply-link${path}`,
+        utmCampaign: `education-apply-link${pathTag()}`,
       })
       if (next !== link.href) link.href = next
     }
@@ -267,6 +340,19 @@ function EnquiryDialog({
     box?.focus()
   }
 
+  // Apply-first (2026-11-18): has this browser sent an enquiry the CRM accepted? The form writes
+  // ENQUIRY_DONE_KEY on that answer. The dialog only ever renders in the browser (it opens after a
+  // click or the ?enquire effect), so reading storage for the first value is safe; localStorage has
+  // no same-tab change event, so it is re-read every second while the dialog is open, until it is set.
+  const [enquired, setEnquired] = useState(() => !!readStore(ENQUIRY_DONE_KEY))
+  useEffect(() => {
+    if (enquired) return
+    const timer = window.setInterval(() => {
+      if (readStore(ENQUIRY_DONE_KEY)) setEnquired(true)
+    }, 1000)
+    return () => window.clearInterval(timer)
+  }, [enquired])
+
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-4">
       <div
@@ -321,13 +407,13 @@ function EnquiryDialog({
 
           <div className={withPoster ? "col-span-2 md:col-span-1 md:col-start-2 md:row-start-2 md:self-start" : ""}>
             <EducationEnquiryForm sourcePage={sourcePage} defaultProgrammeId={programmeId} compact bare gate={intent} />
-            {/* The full jkkn.ai application stays one tap away for people ready to apply now
-                (user's choice 2026-10-22: apply links open this form, jkkn.ai becomes a small link).
-                data-full-application keeps the apply-link listener above from catching it.
-                Not in a Call / WhatsApp gate: there the visitor came to talk, not to apply. */}
-            {!intent && (
+            {/* The full jkkn.ai application, as a small link. Since
+                2026-11-18 (apply-first) it shows only AFTER this browser has an enquiry the CRM
+                accepted, so every lead comes through this form first. Not in a Call / WhatsApp gate:
+                there the visitor came to talk, not to apply. */}
+            {!intent && enquired && (
             <p className="mt-3 text-center text-xs text-[#4b5563]">
-              Ready to apply now?{" "}
+              Want to send the full application too?{" "}
               <a
                 href={`${APPLY_HREF}&utm_campaign=education-${sourcePage}`}
                 target="_blank"
