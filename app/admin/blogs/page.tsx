@@ -3,6 +3,8 @@ import { getAdminCollegeId } from '@/lib/get-admin-college';
 import Link from 'next/link';
 import { Plus, FileText } from 'lucide-react';
 import BlogsTableClient from './BlogsTableClient';
+import { blogFromMyJkkn } from '@/lib/blog/myjkkn';
+import { MYJKKN_URL } from '@/lib/blog/config';
 
 export default async function AdminBlogsPage() {
   const supabase = await createClient();
@@ -37,6 +39,19 @@ export default async function AdminBlogsPage() {
 
   return (
     <div className="p-4 sm:p-6 lg:p-8">
+      {/* BLOG_SOURCE=myjkkn: the website reads posts from MyJKKN, so anything saved here no longer shows. */}
+      {blogFromMyJkkn() && (
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 sm:p-5 mb-6">
+          <p className="text-sm font-semibold text-amber-900">Blog posts are now written in MyJKKN</p>
+          <p className="text-sm text-amber-800 mt-1">
+            The website shows the posts published in MyJKKN (Website Blog). A post added or changed on
+            this page will not appear on the website.{' '}
+            <a href={`${MYJKKN_URL}/website/blog`} className="underline font-semibold" target="_blank" rel="noreferrer">
+              Open Website Blog in MyJKKN
+            </a>
+          </p>
+        </div>
+      )}
       {/* Page Header */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-6 mb-6">
         <div className="flex items-start gap-4 mb-5">

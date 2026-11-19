@@ -8,6 +8,8 @@ import CampusBlogContent from './CampusBlogContent';
 import { JsonLd } from '@/components/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import { inlineCtaFor } from '@/lib/blog-inline-cta';
+import { blogFromMyJkkn, blogSiteKey, getPost, listPosts } from '@/lib/blog/myjkkn';
+import { MYJKKN_URL } from '@/lib/blog/config';
 
 export const revalidate = 300;
 
@@ -28,12 +30,45 @@ export const revalidate = 300;
  * was after, and a newly published CMS post stays reachable without a redeploy.
  */
 
-export async function generateMetadata({
-  params,
-}: {
+type PageProps = {
   params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+  /** ?preview=<token>: the Preview link in MyJKKN opens a draft (BLOG_SOURCE=myjkkn only). */
+  searchParams: Promise<{ preview?: string }>;
+};
+
+export async function generateMetadata({ params, searchParams }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+
+  if (blogFromMyJkkn()) {
+    const { preview } = await searchParams;
+    const detail = await getPost(slug, preview);
+    if (!detail) return {};
+    const { post } = detail;
+    // The SEO fields are filled in MyJKKN; where the writer left one empty, MyJKKN has
+    // already fallen back to the title, excerpt, featured image and the post's own address.
+    const description =
+      post.seo.description ?? `${post.title} — JKKN College of Education blog.`;
+    return {
+      // absolute: a written SEO title is the whole title, so the layout's suffix is not added to it.
+      title: post.seo.title === post.title ? post.title : { absolute: post.seo.title },
+      description,
+      ...(post.seo.keywords.length > 0 && { keywords: post.seo.keywords }),
+      alternates: { canonical: post.seo.canonical_url },
+      openGraph: {
+        title: post.seo.title,
+        description,
+        type: 'article',
+        url: `https://edu.jkkn.ac.in/blog/campus/${slug}`,
+        ...(post.seo.og_image && {
+          images: [{ url: post.seo.og_image, alt: post.title }],
+        }),
+      },
+      ...((detail.preview || post.seo.noindex) && {
+        robots: { index: false, follow: !detail.preview },
+      }),
+    };
+  }
+
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
 
@@ -110,12 +145,97 @@ function calcReadMeta(content: string): { words: number; readTime: number } {
   return { words, readTime: Math.max(1, Math.ceil(words / 200)) };
 }
 
-export default async function CampusBlogPost({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+/** The post page when posts come from MyJKKN (BLOG_SOURCE=myjkkn). Same markup as below. */
+async function MyJkknBlogPost({ slug, previewToken }: { slug: string; previewToken?: string }) {
+  const detail = await getPost(slug, previewToken);
+  if (!detail) notFound();
+  const { post, related, comments, preview } = detail;
+
+  const popularPosts = (await listPosts(4)).posts.filter((p) => p.slug !== slug).slice(0, 3);
+  const { processedHtml, tocItems } = processContent(post.content);
+  const { words, readTime } = calcReadMeta(post.content);
+
+  return (
+    <div className="min-h-screen bg-white">
+      {preview ? (
+        <div className="bg-amber-50 border-b border-amber-200">
+          <p className="max-w-5xl mx-auto px-4 sm:px-6 py-2.5 text-sm font-semibold text-amber-900">
+            Draft Preview — this post is not published yet and is hidden from search engines.
+          </p>
+        </div>
+      ) : (
+        <>
+          <JsonLd
+            data={{
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: post.title,
+              ...((post.seo.description ?? post.excerpt) && {
+                description: post.seo.description ?? post.excerpt,
+              }),
+              ...(post.cover_image_url && {
+                image: {
+                  '@type': 'ImageObject',
+                  url: post.cover_image_url,
+                  width: 1200,
+                  height: 630,
+                },
+              }),
+              datePublished: post.published_at ?? post.created_at,
+              dateModified: post.updated_at,
+              author: {
+                '@type': 'Person',
+                name: post.author_name ?? 'JKKN College of Education',
+              },
+              publisher: {
+                '@type': 'Organization',
+                '@id': 'https://edu.jkkn.ac.in/#organization',
+                name: 'JKKN College of Education',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://edu.jkkn.ac.in/images/logo.png',
+                  width: 250,
+                  height: 60,
+                },
+              },
+              mainEntityOfPage: `https://edu.jkkn.ac.in/blog/campus/${slug}`,
+            }}
+          />
+          <BreadcrumbJsonLd items={[
+            { name: 'Home', href: '/' },
+            { name: 'Blog', href: '/blog' },
+            { name: post.title, href: `/blog/campus/${slug}` },
+          ]} />
+        </>
+      )}
+      <Header />
+      <CampusBlogContent
+        post={post}
+        processedContent={processedHtml}
+        tocItems={tocItems}
+        readTime={readTime}
+        wordCount={words}
+        popularPosts={popularPosts}
+        relatedPosts={related}
+        initialComments={comments}
+        commentsVia={{ api: `${MYJKKN_URL}/api/public/blog/comments`, site: blogSiteKey() }}
+        commentFormOpen={post.allow_comments && !preview}
+        inlineCta={preview ? null : inlineCtaFor(slug, processedHtml)}
+      />
+      <Footer />
+      <ScrollToTop />
+    </div>
+  );
+}
+
+export default async function CampusBlogPost({ params, searchParams }: PageProps) {
   const { slug } = await params;
+
+  if (blogFromMyJkkn()) {
+    const { preview } = await searchParams;
+    return <MyJkknBlogPost slug={slug} previewToken={preview} />;
+  }
+
   const supabase = await createClient();
 
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
