@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { createClient } from '@/lib/supabase/server';
+import { blogFromMyJkkn, listAllPosts } from '@/lib/blog/myjkkn';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://edu.jkkn.ac.in';
@@ -143,12 +144,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // ── Dynamic pages (graceful degradation) ──
   const supabase = await createClient();
 
+  // BLOG_SOURCE=myjkkn: the published posts come from MyJKKN (never throws; empty on an outage).
+  const blogRows = blogFromMyJkkn()
+    ? listAllPosts().then((posts) => ({
+        data: posts
+          .filter((p) => !p.seo.noindex)
+          .map((p) => ({ slug: p.slug, updated_at: p.updated_at, created_at: p.created_at })),
+      }))
+    : supabase
+        .from('blogs')
+        .select('slug, updated_at, created_at')
+        .eq('college_id', collegeId)
+        .eq('is_published', true);
+
   const [blogsRes, eventsRes, albumsRes, facultyRes] = await Promise.all([
-    supabase
-      .from('blogs')
-      .select('slug, updated_at, created_at')
-      .eq('college_id', collegeId)
-      .eq('is_published', true),
+    blogRows,
     supabase
       .from('events')
       .select('slug, updated_at, created_at')
