@@ -861,7 +861,7 @@ export default function PoliticalScienceDepartment() {
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Tie-ups with 50+ schools for internship providing diverse teaching experiences in urban, rural, government, and private settings across Tamil Nadu.
+                School internship in partner schools - ask the admission office for the current list of schools.
               </p>
             </div>
 

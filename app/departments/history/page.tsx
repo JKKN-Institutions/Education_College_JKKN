@@ -853,7 +853,7 @@ export default function HistoryDepartment() {
                     Extensive Partner School Network
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Tie-ups with 50+ schools for internship providing diverse teaching experiences in urban, rural, government, and private school settings.
+                    School internship in partner schools - ask the admission office for the current list of schools.
                   </p>
                 </div>
               </div>

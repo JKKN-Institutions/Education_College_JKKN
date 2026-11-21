@@ -922,7 +922,7 @@ export default function MicrobiologyDepartment() {
                     Extensive Partner School Network
                   </h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
-                    Tie-ups with 50+ schools including CBSE, ICSE, and State Board schools for internship providing diverse teaching experiences.
+                    School internship in partner schools - ask the admission office for the current list of schools.
                   </p>
                 </div>
               </div>
