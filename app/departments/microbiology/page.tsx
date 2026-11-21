@@ -57,7 +57,7 @@ export default function MicrobiologyDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -222,7 +222,7 @@ export default function MicrobiologyDepartment() {
                   APPROVAL
                 </div>
                 <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
-                  NCTE Approved
+                  NCTE Recognised
                 </div>
               </div>
 
@@ -266,7 +266,7 @@ export default function MicrobiologyDepartment() {
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                NCTE Approved Program
+                NCTE Recognised Program
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Nationally recognized 2-year B.Ed program meeting all regulatory standards set by the National Council for Teacher Education for quality teacher preparation.
@@ -1260,7 +1260,7 @@ export default function MicrobiologyDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Microbiology program meets all regulatory standards for teacher education in India, ensuring your degree is recognized nationally for teaching positions in schools.
+                Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Microbiology program meets all regulatory standards for teacher education in India, ensuring your degree is recognized nationally for teaching positions in schools.
               </p>
             </details>
 

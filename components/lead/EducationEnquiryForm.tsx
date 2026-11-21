@@ -59,7 +59,7 @@ export function toTenDigitMobile(raw: string): string {
 //  - "Since 2016": the same NCTE order recognises the B.Ed from academic session 2016-17, as
 //    TRUST_SIGNALS in lib/admissions-data.ts records. 1969 is the trust's year, not this college's.
 // No NAAC item: this repo and the live site carry no NAAC certificate for this college.
-const TRUST = ["NCTE Approved", "TNTEU Affiliated", "Since 2016"]
+const TRUST = ["NCTE Recognised", "TNTEU Affiliated", "Since 2016"]
 
 type Props = {
   /** Which page this instance sits on, e.g. "admissions". Tags the lead in the CRM. */

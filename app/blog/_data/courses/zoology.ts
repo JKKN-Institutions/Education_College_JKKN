@@ -16,7 +16,7 @@ export const zoologyBlogData: CourseBlogData = {
     'b.ed zoology colleges in tamil nadu', 'tntet biology',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 26, 2026',
   publishedDateIso: '2026-03-26',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const zoologyBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Zoology with modern biology labs, digital dissection capabilities, and placement networks spanning government schools, CBSE chains, and NEET coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Zoology degree is recognized for all government and private school Biology teacher recruitment across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Zoology degree is recognized for all government and private school Biology teacher recruitment across India.' },
       { title: 'Zoology Lab with Digital Dissection Tools', desc: 'Modern biology lab with microscopes, preserved specimens, digital dissection software, and human anatomy models — preparing teachers for effective biology teaching aligned with current ethical lab practice (digital over physical dissection).' },
       { title: 'Faculty with Zoology + Teaching Experience', desc: 'M.Sc./M.Phil/Ph.D Zoology faculty with school teaching and NEET coaching backgrounds. Guest sessions by retired government PG Biology teachers and NEET coaching veterans.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode.' },

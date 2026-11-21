@@ -172,7 +172,7 @@ export default function EconomicsDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -274,7 +274,7 @@ export default function EconomicsDepartment() {
                 </div>
                 <div>
                   <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
-                    he Bachelor of Education (B.Ed) in Economics at JKKN College of Education is a professionally designed 2-year undergraduate program that prepares passionate Economics graduates to become competent, skilled, and effective educators. This NCTE-approved program combines theoretical knowledge with practical teaching skills, enabling graduates to teach Economics, Indian Economic Development, Statistics for Economics, and related subjects at secondary and higher secondary levels.
+                    he Bachelor of Education (B.Ed) in Economics at JKKN College of Education is a professionally designed 2-year undergraduate program that prepares passionate Economics graduates to become competent, skilled, and effective educators. This NCTE-recognised program combines theoretical knowledge with practical teaching skills, enabling graduates to teach Economics, Indian Economic Development, Statistics for Economics, and related subjects at secondary and higher secondary levels.
                   </p>
                 </div>
               </div>
@@ -377,7 +377,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                NCTE Approved Program
+                NCTE Recognised Program
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Fully recognized by National Council for Teacher Education with curriculum meeting all regulatory standards for quality teacher preparation in India.
@@ -1314,7 +1314,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Economics program meets all regulatory standards for teacher education in India, ensuring your degree is recognized nationally for teaching positions.
+                Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Economics program meets all regulatory standards for teacher education in India, ensuring your degree is recognized nationally for teaching positions.
               </p>
             </details>
 

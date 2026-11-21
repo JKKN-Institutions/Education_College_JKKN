@@ -16,7 +16,7 @@ export const mathematicsBlogData: CourseBlogData = {
     'b.ed maths colleges in tamil nadu', 'jkkn b.ed mathematics',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 16, 2026',
   publishedDateIso: '2026-03-16',
   readTime: '14 min read',
@@ -165,7 +165,7 @@ export const mathematicsBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education has established a strong reputation for B.Ed Mathematics graduates — with NCTE approval, TNTEU affiliation, faculty with deep mathematics backgrounds, and placement networks spanning government, CBSE, and coaching institute segments.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Maths degree is recognized for all government school recruitment (TRB, KVS, NVS, Sainik) and private school hiring across India — no degree validity concerns.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Maths degree is recognized for all government school recruitment (TRB, KVS, NVS, Sainik) and private school hiring across India — no degree validity concerns.' },
       { title: 'Faculty with Mathematics Depth + School Experience', desc: 'M.Sc./M.Phil/Ph.D mathematics faculty with combined school teaching experience exceeding 80+ years. Faculty include former government maths PG teachers and IIT-JEE coaching veterans.' },
       { title: 'Modern Maths Lab with GeoGebra/Desmos Training', desc: 'Mathematics resource lab equipped with manipulatives (3D solids, geoboards), digital tools (GeoGebra, Desmos), and graphing calculators — essential for producing modern maths teachers comfortable with tech-enabled teaching.' },
       { title: 'School Internship in CBSE/Government Schools', desc: 'Practice teaching at partner CBSE, matriculation, and government schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse student maths proficiency levels and pedagogy challenges.' },

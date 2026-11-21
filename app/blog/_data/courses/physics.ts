@@ -16,7 +16,7 @@ export const physicsBlogData: CourseBlogData = {
     'b.ed physics colleges in tamil nadu', 'tntet physics',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 18, 2026',
   publishedDateIso: '2026-03-18',
   readTime: '13 min read',
@@ -165,7 +165,7 @@ export const physicsBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Physics with a strong combination of theoretical depth, modern lab facilities, and placement networks that span government schools, premium CBSE chains, and JEE/NEET coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Physics degree is recognized for all government school recruitment and private school hiring across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Physics degree is recognized for all government school recruitment and private school hiring across India.' },
       { title: 'Well-Equipped Physics Laboratory', desc: 'Modern physics lab with NCERT/State Board prescribed equipment, simulation tools (PhET, Algodoo), and digital measurement instruments — essential for producing teachers who can run effective school physics labs.' },
       { title: 'Faculty with Physics Mastery + Teaching Backgrounds', desc: 'M.Sc./M.Phil/Ph.D Physics faculty with school and coaching teaching backgrounds. Guest sessions by retired government PG Physics teachers and JEE/NEET coaching faculty.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse physics lab settings and student proficiency levels.' },

@@ -36,7 +36,7 @@ export default function AboutPage() {
             ABOUT US
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 sm:mb-12 max-w-3xl">
-            JKKN College of Education is an NCTE-approved, TNTEU-affiliated B.Ed institution committed to producing quality teachers in Namakkal, Tamil Nadu.
+            JKKN College of Education is an NCTE-recognised, TNTEU-affiliated B.Ed institution committed to producing quality teachers in Namakkal, Tamil Nadu.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

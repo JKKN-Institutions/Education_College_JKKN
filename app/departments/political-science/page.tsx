@@ -71,7 +71,7 @@ export default function PoliticalScienceDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -178,7 +178,7 @@ export default function PoliticalScienceDepartment() {
                 </div>
                 <div>
                   <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
-                    he Bachelor of Education (B.Ed) in Political Science at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and effective Learning Facilitators for secondary and higher secondary schools. This NCTE-approved program combines strong theoretical foundations with extensive practical training in teaching Indian Polity, Civics, International Relations, Political Theory, and related social science subjects.
+                    he Bachelor of Education (B.Ed) in Political Science at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and effective Learning Facilitators for secondary and higher secondary schools. This NCTE-recognised program combines strong theoretical foundations with extensive practical training in teaching Indian Polity, Civics, International Relations, Political Theory, and related social science subjects.
                   </p>
                 </div>
               </div>
@@ -279,7 +279,7 @@ export default function PoliticalScienceDepartment() {
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                NCTE Approved
+                NCTE Recognised
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Recognized by the National Council for Teacher Education, ensuring quality standards and national acceptance of your degree for teaching positions across India.
@@ -1224,7 +1224,7 @@ export default function PoliticalScienceDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Political Science program meets all regulatory standards for teacher education in India, ensuring national recognition and acceptance of your degree.
+                Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Political Science program meets all regulatory standards for teacher education in India, ensuring national recognition and acceptance of your degree.
               </p>
             </details>
 

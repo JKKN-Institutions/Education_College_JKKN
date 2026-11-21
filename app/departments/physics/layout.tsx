@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Is JKKN College of Education NCTE approved for B.Ed Physics?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Physics program meets all regulatory standards for teacher education in India and is recognized for government teaching positions.',
+                text: 'Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Physics program meets all regulatory standards for teacher education in India and is recognized for government teaching positions.',
               },
             },
             {

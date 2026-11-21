@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     q: 'Is JKKN College of Education NCTE approved?',
-    a: 'Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai — ensuring your B.Ed degree is recognized for government and private school teaching positions across India.',
+    a: 'Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai — ensuring your B.Ed degree is recognized for government and private school teaching positions across India.',
   },
   {
     q: 'What are the career opportunities after B.Ed from JKKN?',
@@ -622,7 +622,7 @@ export default function BlogDetailPage() {
                   Ready to Start Your Teaching Career?
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  Apply for B.Ed 2026 at JKKN College of Education — 100 seats, NCTE approved,
+                  Apply for B.Ed 2026 at JKKN College of Education — 100 seats, NCTE recognised,
                   TNTEU affiliated.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
@@ -650,7 +650,7 @@ export default function BlogDetailPage() {
                 {[
                   {
                     num: 1,
-                    title: 'NCTE Approved & TNTEU Affiliated',
+                    title: 'NCTE Recognised & TNTEU Affiliated',
                     desc: 'JKKN College of Education holds valid NCTE recognition, ensuring your B.Ed degree is legally recognized for teaching in government and private schools across India. Affiliation to TNTEU guarantees a standardized, quality curriculum.',
                   },
                   {

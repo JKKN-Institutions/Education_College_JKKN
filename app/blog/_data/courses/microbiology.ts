@@ -16,7 +16,7 @@ export const microbiologyBlogData: CourseBlogData = {
     'b.ed microbiology colleges in tamil nadu', 'tntet biology',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 28, 2026',
   publishedDateIso: '2026-03-28',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const microbiologyBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Microbiology with modern microbiology labs, microscopy facilities, and placement networks spanning government schools, CBSE chains, NEET coaching, and biotech industry outreach.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Microbiology degree is recognized for all government and private school Biology teacher recruitment across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Microbiology degree is recognized for all government and private school Biology teacher recruitment across India.' },
       { title: 'Microbiology + Biotechnology Lab', desc: 'Well-equipped lab with microscopes, incubators, autoclave, basic microbial culture facilities, and biotechnology demonstration equipment — preparing teachers for effective microbiology and biotech unit teaching.' },
       { title: 'Faculty with Microbiology Research + Teaching Backgrounds', desc: 'M.Sc./M.Phil/Ph.D Microbiology faculty with school teaching, NEET coaching, and biotech industry exposure. Guest sessions by biotech professionals and research institute scientists.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to senior secondary biology classes where biotechnology and microbiology dominate.' },

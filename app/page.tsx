@@ -89,7 +89,7 @@ export default async function Home() {
           logo: 'https://edu.jkkn.ac.in/images/logo.png',
           image: 'https://edu.jkkn.ac.in/images/og-default.png',
           description:
-            'JKKN College of Education is an NCTE-approved B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 10 teaching subjects in Komarapalayam, Namakkal District, Tamil Nadu.',
+            'JKKN College of Education is an NCTE-recognised B.Ed college affiliated to Tamil Nadu Teachers Education University (TNTEU), offering a 2-year Bachelor of Education programme with 10 teaching subjects in Komarapalayam, Namakkal District, Tamil Nadu.',
           telephone: '+919345855001',
           email: 'education@jkkn.ac.in',
           address: {
@@ -181,7 +181,7 @@ export default async function Home() {
               name: 'Is B.Ed valid for government teaching jobs?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, B.Ed from an NCTE-approved and university-affiliated college is essential for government teaching positions. After completing B.Ed, candidates can appear for CTET (Central Teacher Eligibility Test), State TETs, and various recruitment examinations for KVS, NVS, and state government schools. B.Ed is mandatory for TGT and PGT positions in most schools.',
+                text: 'Yes, B.Ed from an NCTE-recognised and university-affiliated college is essential for government teaching positions. After completing B.Ed, candidates can appear for CTET (Central Teacher Eligibility Test), State TETs, and various recruitment examinations for KVS, NVS, and state government schools. B.Ed is mandatory for TGT and PGT positions in most schools.',
               },
             },
             {
@@ -366,7 +366,7 @@ export default async function Home() {
             {/* Left Content */}
             <div className="text-white text-center lg:text-left">
               <div className="inline-block bg-white/20 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-4 sm:mb-6 lg:mb-8">
-                <span className="text-white font-semibold text-xs sm:text-sm">NCTE Approved | TNTEU Affiliated</span>
+                <span className="text-white font-semibold text-xs sm:text-sm">NCTE Recognised | TNTEU Affiliated</span>
               </div>
 
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
@@ -464,7 +464,7 @@ export default async function Home() {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Approved</div>
+                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Recognised</div>
                       <div className="text-gray-600 text-[8px] sm:text-[10px]">TNTEU Affiliated</div>
                     </div>
                   </div>
@@ -485,7 +485,7 @@ export default async function Home() {
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                     <div>
-                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Approved</div>
+                      <div className="font-bold text-[#006837] text-[10px] sm:text-xs">NCTE Recognised</div>
                       <div className="text-gray-600 text-[8px] sm:text-[10px]">TNTEU Affiliated</div>
                     </div>
                   </div>
@@ -614,7 +614,7 @@ export default async function Home() {
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-3 sm:mb-4">What is B.Ed?</h3>
               <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                Bachelor of Education (B.Ed) is a two-year professional degree programme approved by the National Council for Teacher Education (NCTE). This programme prepares graduates to become certified school teachers capable of teaching at the secondary (Classes 6-10) and senior secondary (Classes 11-12) levels in both government and private schools across India.
+                Bachelor of Education (B.Ed) is a two-year professional degree programme recognised by the National Council for Teacher Education (NCTE). This programme prepares graduates to become certified school teachers capable of teaching at the secondary (Classes 6-10) and senior secondary (Classes 11-12) levels in both government and private schools across India.
               </p>
 
               <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-3 sm:mb-4">Programme Objectives</h3>
@@ -642,7 +642,7 @@ export default async function Home() {
               <h3 className="text-xl sm:text-2xl font-bold text-[#006837] mb-4 sm:mb-6">Programme Highlights</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
                 {[
-                  'NCTE Approved Curriculum',
+                  'NCTE Recognised Curriculum',
                   'State-of-the-Art Learning Studios',
                   'Extensive School Internship',
                   'ICT-Enabled Teaching Labs',
@@ -1658,7 +1658,7 @@ export default async function Home() {
                 <span className="text-[#7cb983] text-xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="mt-4 text-gray-600 text-sm leading-relaxed">
-                Yes, B.Ed from an NCTE-approved and university-affiliated college is essential for government teaching positions. After completing B.Ed, candidates can appear for CTET (Central Teacher Eligibility Test), State TETs, and various recruitment examinations for KVS, NVS, and state government schools. B.Ed is mandatory for TGT and PGT positions in most schools.
+                Yes, B.Ed from an NCTE-recognised and university-affiliated college is essential for government teaching positions. After completing B.Ed, candidates can appear for CTET (Central Teacher Eligibility Test), State TETs, and various recruitment examinations for KVS, NVS, and state government schools. B.Ed is mandatory for TGT and PGT positions in most schools.
               </div>
             </details>
 

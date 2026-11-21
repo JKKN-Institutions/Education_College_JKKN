@@ -16,7 +16,7 @@ export const historyBlogData: CourseBlogData = {
     'b.ed history colleges in tamil nadu', 'tntet history',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Apr 04, 2026',
   publishedDateIso: '2026-04-04',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const historyBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed History with comprehensive curriculum, faculty with both teaching and UPSC coaching backgrounds, and proximity to Tamil Nadu\'s rich historical sites for field-based learning.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed History degree is recognized for all government recruitment (TRB, KVS, NVS), CBSE/ICSE schools, and UPSC/competitive exam coaching institutes.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed History degree is recognized for all government recruitment (TRB, KVS, NVS), CBSE/ICSE schools, and UPSC/competitive exam coaching institutes.' },
       { title: 'Faculty with History + UPSC Coaching Backgrounds', desc: 'M.A./M.Phil/Ph.D History faculty including former UPSC coaching faculty and CBSE PG History teachers. Guest sessions by retired IAS officers and historians.' },
       { title: 'Heritage Field Trip Opportunities', desc: 'Komarapalayam offers proximity to Tamil Nadu historical sites — Salem (Yercaud, Mettur), Erode (Bhavani), Namakkal (Anjaneya temple), Tiruchengode (ancient temples) — enabling rich field-based history learning beyond classroom theory.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to social science teaching at multiple class levels.' },

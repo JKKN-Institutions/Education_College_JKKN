@@ -23,7 +23,7 @@ export const computerScienceBlogData: CourseBlogData = {
     'b.ed computer science colleges', 'b ed computer science colleges in tamilnadu', 'b.ed cs colleges in tamil nadu',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 22, 2026',
   publishedDateIso: '2026-03-22',
   readTime: '11 min read',

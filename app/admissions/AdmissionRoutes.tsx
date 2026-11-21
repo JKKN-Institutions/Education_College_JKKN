@@ -48,7 +48,7 @@ export default function AdmissionRoutes() {
       points: [
         'Apply any time - our seats are open now',
         'No waiting on a central allotment',
-        'JKKN College of Education is NCTE-approved and affiliated to TNTEU',
+        'JKKN College of Education is NCTE-recognised and affiliated to TNTEU',
       ],
     },
   ]

@@ -90,7 +90,7 @@ const ROUTES = [
 const FAQS = [
   {
     q: 'Does JKKN College of Education offer a 1-year B.Ed?',
-    a: 'No. JKKN College of Education offers the two-year B.Ed, across 10 teaching subjects, NCTE-approved and affiliated to Tamil Nadu Teachers Education University. That is the programme you can apply to today.',
+    a: 'No. JKKN College of Education offers the two-year B.Ed, across 10 teaching subjects, NCTE-recognised and affiliated to Tamil Nadu Teachers Education University. That is the programme you can apply to today.',
   },
   {
     q: 'Will the B.Ed become a 1-year course from 2026?',
@@ -177,7 +177,7 @@ export default function OneYearBEdPage() {
             <ul className="space-y-3">
               {[
                 'The two-year B.Ed, in 10 teaching subjects',
-                'NCTE-approved',
+                'NCTE-recognised',
                 'Affiliated to Tamil Nadu Teachers Education University (TNTEU), which awards the degree',
                 'Self-financing seats are open now - you apply to the college directly, with no state merit list to wait for',
               ].map((t) => (

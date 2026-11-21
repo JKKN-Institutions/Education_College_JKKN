@@ -35,7 +35,7 @@ export default function MathematicsPage() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[#7cb983] mb-6">
                 <CheckCircle className="w-5 h-5 text-[#7cb983]" />
-                <span className="text-[#7cb983] font-medium">NCTE Approved | TNTEU Affiliated</span>
+                <span className="text-[#7cb983] font-medium">NCTE Recognised | TNTEU Affiliated</span>
               </div>
 
               {/* Main Heading */}
@@ -118,7 +118,7 @@ export default function MathematicsPage() {
             <div className="lg:col-span-2 space-y-6 text-gray-700 leading-relaxed">
               <p className="text-lg">
                 <span className="text-6xl font-bold text-[#7cb983] float-left mr-4 leading-none">T</span>
-                he Bachelor of Education (B.Ed) in Mathematics at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and inspiring Learning Facilitators for secondary and higher secondary schools. This NCTE-approved program combines rigorous theoretical foundations with extensive practical training, ensuring our Learners are well-equipped to meet the evolving demands of Mathematics education in the 21st century.
+                he Bachelor of Education (B.Ed) in Mathematics at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and inspiring Learning Facilitators for secondary and higher secondary schools. This NCTE-recognised program combines rigorous theoretical foundations with extensive practical training, ensuring our Learners are well-equipped to meet the evolving demands of Mathematics education in the 21st century.
               </p>
 
               <p className="text-lg">
@@ -175,7 +175,7 @@ export default function MathematicsPage() {
               <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
                 <GraduationCap className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">NCTE Approved</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">NCTE Recognised</h3>
               <p className="text-gray-600 leading-relaxed">
                 Recognized by the National Council for Teacher Education, ensuring quality standards and national acceptance of your degree for teaching positions across India.
               </p>
@@ -972,7 +972,7 @@ export default function MathematicsPage() {
             />
             <FAQItem
               question="Is JKKN College of Education recognized for B.Ed Mathematics?"
-              answer="Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed degree is recognized across India for teaching positions and higher studies."
+              answer="Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed degree is recognized across India for teaching positions and higher studies."
               isOpen={openFaq === 4}
               onClick={() => toggleFaq(4)}
             />

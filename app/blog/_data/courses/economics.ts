@@ -16,7 +16,7 @@ export const economicsBlogData: CourseBlogData = {
     'b.ed economics colleges in tamil nadu', 'tntet economics',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Apr 02, 2026',
   publishedDateIso: '2026-04-02',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const economicsBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Economics with industry-aligned curriculum, faculty with both teaching and UPSC coaching backgrounds, and placement networks spanning CBSE schools, government higher secondary, and UPSC/banking coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Economics degree is recognized for all CBSE/ICSE recruitment, government PG Economics posts, and UPSC/competitive exam coaching institutes.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Economics degree is recognized for all CBSE/ICSE recruitment, government PG Economics posts, and UPSC/competitive exam coaching institutes.' },
       { title: 'Faculty with Economics + UPSC Coaching Backgrounds', desc: 'M.A./M.Phil/Ph.D Economics faculty including former UPSC coaching faculty and CBSE PG Economics teachers. Guest sessions by retired IAS officers and economic policy professionals.' },
       { title: 'Real-World Economic Data Integration in Curriculum', desc: 'B.Ed Economics curriculum at JKKN explicitly integrates RBI, MoSPI, EPW, and World Bank economic data — preparing teachers ready to make economics relevant and engaging for both school students and UPSC aspirants.' },
       { title: 'School Internship in CBSE & Higher Secondary Schools', desc: 'Practice teaching at partner CBSE, matriculation, and higher secondary schools with humanities/commerce streams across Komarapalayam, Salem, Namakkal, and Erode.' },

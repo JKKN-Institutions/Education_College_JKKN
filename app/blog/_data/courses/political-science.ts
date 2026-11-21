@@ -16,7 +16,7 @@ export const politicalScienceBlogData: CourseBlogData = {
     'upsc polity coaching', 'b.ed political science colleges in tamil nadu',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Apr 09, 2026',
   publishedDateIso: '2026-04-09',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const politicalScienceBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Political Science with comprehensive curriculum, faculty with both teaching and UPSC coaching backgrounds, and integrated current affairs and constitutional studies approach.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Political Science degree is recognized for all government recruitment (TRB, KVS, NVS), CBSE/ICSE schools, and UPSC/competitive exam coaching institutes across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Political Science degree is recognized for all government recruitment (TRB, KVS, NVS), CBSE/ICSE schools, and UPSC/competitive exam coaching institutes across India.' },
       { title: 'Faculty with Political Science + UPSC Coaching Expertise', desc: 'M.A./M.Phil/Ph.D Political Science faculty including former UPSC coaching faculty and CBSE PG Political Science teachers. Guest sessions by retired IAS officers and constitutional law professionals.' },
       { title: 'Constitutional Studies & Current Affairs Integration', desc: 'B.Ed Political Science curriculum at JKKN explicitly integrates Indian Constitution deep-dive and daily current affairs analysis — preparing teachers ready to teach civics meaningfully and shine in UPSC coaching career applications.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner CBSE, matriculation, and government schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to civics and political science teaching at multiple class levels.' },

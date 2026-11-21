@@ -24,7 +24,7 @@ export default function ZoologyDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -126,7 +126,7 @@ export default function ZoologyDepartment() {
                 </div>
                 <div>
                   <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
-                    he Bachelor of Education (B.Ed) in Zoology at JKKN College of Education is a professionally designed 2-year program that prepares passionate science enthusiasts to become exceptional Zoology and Biology educators. This NCTE-approved program combines theoretical foundations with extensive practical training, equipping Learners with the knowledge and skills necessary to inspire the next generation of scientists.
+                    he Bachelor of Education (B.Ed) in Zoology at JKKN College of Education is a professionally designed 2-year program that prepares passionate science enthusiasts to become exceptional Zoology and Biology educators. This NCTE-recognised program combines theoretical foundations with extensive practical training, equipping Learners with the knowledge and skills necessary to inspire the next generation of scientists.
                   </p>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function ZoologyDepartment() {
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                NCTE Approved
+                NCTE Recognised
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Recognized by the National Council for Teacher Education, ensuring quality standards and national acceptance of your degree.
@@ -790,7 +790,7 @@ export default function ZoologyDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#002309' }}>
-                Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. Our programs meet all regulatory standards and are recognized across India.
+                Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. Our programs meet all regulatory standards and are recognized across India.
               </p>
             </details>
 
@@ -895,7 +895,7 @@ export default function ZoologyDepartment() {
                 </div>
               </div>
               <p className="text-xs sm:text-sm font-semibold leading-tight" style={{ color: '#006837' }}>
-                NCTE Approved
+                NCTE Recognised
               </p>
             </div>
 

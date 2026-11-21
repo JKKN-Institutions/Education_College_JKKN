@@ -17,7 +17,7 @@ export const tamilBlogData: CourseBlogData = {
     'b.ed tamil colleges in tamil nadu', 'jkkn b.ed tamil',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 12, 2026',
   publishedDateIso: '2026-03-12',
   readTime: '14 min read',
@@ -166,7 +166,7 @@ export const tamilBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education has emerged as one of Tamil Nadu\'s preferred B.Ed Tamil colleges in the Kongu region, with NCTE approval, TNTEU affiliation, and a track record of producing TNTET-qualified Tamil teachers placed across government and CBSE schools.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Tamil degree is legally recognized for all government and private school Tamil teacher positions across India — no concerns about degree validity for TNTET, TRB, KVS, or NVS examinations.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Tamil degree is legally recognized for all government and private school Tamil teacher positions across India — no concerns about degree validity for TNTET, TRB, KVS, or NVS examinations.' },
       { title: 'Experienced Tamil Pandits as Faculty', desc: 'Our Tamil pedagogy faculty includes M.A./M.Phil/Ph.D Tamil specialists with combined classroom teaching experience exceeding 100+ years. Guest lectures by university Tamil professors and award-winning Tamil writers enrich the program.' },
       { title: 'School Internship in Tamil-Medium Schools', desc: 'Practice teaching in real Tamil-medium government schools and matriculation schools across Komarapalayam, Salem, Namakkal, and Erode districts — building confidence with diverse student backgrounds and rural classroom realities.' },
       { title: 'Integrated TNTET Tamil Coaching', desc: 'TNTET Tamil Paper-I and Paper-II coaching is integrated into the B.Ed Tamil program at no extra cost. Past papers, mock tests, and Tamil grammar drills (சந்தி, பெயர், வினை, தொடர்) ensure graduates clear TNTET in their first attempt.' },

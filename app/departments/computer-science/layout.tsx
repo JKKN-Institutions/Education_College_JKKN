@@ -95,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Is JKKN College of Education NCTE approved?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), ensuring your degree is recognized nationwide.',
+                text: 'Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), ensuring your degree is recognized nationwide.',
               },
             },
             {

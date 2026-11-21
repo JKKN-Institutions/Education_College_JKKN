@@ -54,7 +54,7 @@ export default async function FacultyPage() {
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Faculty</h1>
             <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
-              The teacher educators who deliver our NCTE-approved, TNTEU-affiliated B.Ed programme.
+              The teacher educators who deliver our NCTE-recognised, TNTEU-affiliated B.Ed programme.
             </p>
           </div>
         </section>

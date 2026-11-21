@@ -16,7 +16,7 @@ export const englishBlogData: CourseBlogData = {
     'cbse english teacher jobs', 'b.ed english colleges in tamil nadu',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 14, 2026',
   publishedDateIso: '2026-03-14',
   readTime: '14 min read',
@@ -165,7 +165,7 @@ export const englishBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education has built strong credentials as a B.Ed English destination in the Kongu region, with NCTE approval, TNTEU affiliation, modern English language labs, and consistent placement in CBSE schools and English coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed English degree is fully recognized for all government school positions (TRB, KVS, NVS, Sainik) and private school recruitment across India — no degree validity concerns for any English teacher role.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed English degree is fully recognized for all government school positions (TRB, KVS, NVS, Sainik) and private school recruitment across India — no degree validity concerns for any English teacher role.' },
       { title: 'Modern English Language Lab', desc: 'Dedicated English language laboratory with audio-visual equipment for phonetics training, listening comprehension drills, accent neutralization, and IELTS-style speaking practice — essential for producing modern ELT-ready teachers.' },
       { title: 'Experienced English Pedagogy Faculty', desc: 'Faculty include M.A./M.Phil/Ph.D English specialists with school teaching backgrounds and IELTS examiner certifications. Regular guest sessions by CBSE English HoDs and IELTS senior trainers from British Council and IDP.' },
       { title: 'School Internship in CBSE & Matric Schools', desc: 'Practice teaching in real CBSE, ICSE, and English-medium matriculation schools across Komarapalayam, Salem, Namakkal, and Erode — building confidence with diverse student English proficiency levels and modern classroom techniques.' },

@@ -255,7 +255,7 @@ export default function BlogDetailPage() {
                 TNTET &amp; TRB), <strong>private/CBSE school teacher</strong>,{' '}
                 <strong>Ed-Tech educator</strong>, <strong>M.Ed &amp; academic career</strong>,
                 and <strong>school administration</strong>. With India&apos;s education sector
-                growing at over 16% annually, B.Ed graduates from NCTE-approved institutions like{' '}
+                growing at over 16% annually, B.Ed graduates from NCTE-recognised institutions like{' '}
                 <strong>JKKN College of Education</strong> are in higher demand than ever in 2026.
               </p>
             </div>
@@ -456,7 +456,7 @@ export default function BlogDetailPage() {
                   {
                     num: 2,
                     title: 'M.Ed + NET/SET → Assistant Professor',
-                    desc: 'Teach in NCTE-approved B.Ed or D.El.Ed colleges. Salary range: ₹57,700–₹1,82,400 (7th Pay Commission Academic Pay Level 10–14).',
+                    desc: 'Teach in NCTE-recognised B.Ed or D.El.Ed colleges. Salary range: ₹57,700–₹1,82,400 (7th Pay Commission Academic Pay Level 10–14).',
                   },
                   {
                     num: 3,
@@ -580,7 +580,7 @@ export default function BlogDetailPage() {
                   Ready to Build Your Teaching Career?
                 </h3>
                 <p className="text-white/80 text-sm mb-6 relative z-10">
-                  Start with a B.Ed from JKKN College of Education — NCTE approved, TNTEU
+                  Start with a B.Ed from JKKN College of Education — NCTE recognised, TNTEU
                   affiliated, with integrated TNTET coaching.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">

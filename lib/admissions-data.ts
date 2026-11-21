@@ -314,7 +314,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     fullName: 'B.Ed Tamil',
     longName: 'Bachelor of Education in Tamil',
     tagline: 'Preserve Tamil heritage — shape the next generation of language educators',
-    heroDescription: 'Become a passionate Tamil language teacher with deep classical literature knowledge and modern pedagogical skills. Our 2-year NCTE-approved programme combines Sangam-era classics, contemporary Tamil literature, and innovative teaching methodologies.',
+    heroDescription: 'Become a passionate Tamil language teacher with deep classical literature knowledge and modern pedagogical skills. Our 2-year NCTE-recognised programme combines Sangam-era classics, contemporary Tamil literature, and innovative teaching methodologies.',
     iconLetter: 'த',
     duration: '2 Years',
     durationDetail: '4 semesters of integrated theory, practicum & internship',
@@ -322,7 +322,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'Tamil & English',
     eligibilityHeadline: 'U.G. degree with Tamil as the main (Part-III) subject',
     eligibilityCriteria: [
@@ -353,7 +353,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     ],
     faqs: [
       { question: 'Can I apply for B.Ed Tamil if I have BA English with Tamil as second language?', answer: 'No. The 2026-27 Tamil Nadu guidelines count only the main (Part-III) subjects of your U.G. degree, so Tamil studied as the Part-I language does not qualify. A B.A. English graduate can apply for B.Ed English instead.' },
-      { question: 'Is the Tamil B.Ed recognized for TET / TRB exams?', answer: 'Absolutely. Our B.Ed Tamil is NCTE-approved and TNTEU-affiliated, fully eligible for TET, TRB-PG, and TRB-TGT examinations.' },
+      { question: 'Is the Tamil B.Ed recognized for TET / TRB exams?', answer: 'Absolutely. Our B.Ed Tamil is NCTE-recognised and TNTEU-affiliated, fully eligible for TET, TRB-PG, and TRB-TGT examinations.' },
       { question: 'Do I need to know Sangam Tamil to apply?', answer: 'No prior expertise required. The curriculum builds up from Sangam classics to modern Tamil systematically with expert guidance.' },
       { question: 'Are there opportunities to teach Tamil abroad after B.Ed?', answer: 'Yes — Singapore, Malaysia, Sri Lanka, and Gulf countries actively recruit Tamil-medium teachers.' },
     ],
@@ -373,7 +373,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English',
     eligibilityHeadline: 'U.G. degree with English as the main (Part-III) subject',
     eligibilityCriteria: [
@@ -424,7 +424,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'U.G. degree in Mathematics or Applied Mathematics, or a B.E./B.Tech',
     eligibilityCriteria: [
@@ -475,7 +475,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'U.G. degree in Physics or an equivalent subject, or a B.E./B.Tech',
     eligibilityCriteria: [
@@ -526,7 +526,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'U.G. degree in Chemistry or Applied Chemistry, or a B.E./B.Tech',
     eligibilityCriteria: [
@@ -577,7 +577,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'U.G. degree in Botany or an equivalent biological science',
     eligibilityCriteria: [
@@ -628,7 +628,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'U.G. degree in Zoology or an equivalent biological science',
     eligibilityCriteria: [
@@ -679,7 +679,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'U.G. degree with History as the main (Part-III) subject',
     eligibilityCriteria: [
@@ -730,7 +730,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English',
     eligibilityHeadline: 'P.G. degree in Economics with at least 50%, with Economics also as the U.G. major',
     eligibilityCriteria: [
@@ -781,7 +781,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English',
     eligibilityHeadline: 'P.G. degree in Commerce (M.Com) with at least 50%, after a B.Com',
     eligibilityCriteria: [
@@ -832,7 +832,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English',
     eligibilityHeadline: 'U.G. degree in Computer Science, IT or Computer Application, or a B.E./B.Tech in a CS branch',
     eligibilityCriteria: [
@@ -889,7 +889,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'P.G. degree in Political Science with at least 50%, with Political Science also as the U.G. major',
     eligibilityCriteria: [
@@ -940,7 +940,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English & Tamil',
     eligibilityHeadline: 'Eligibility follows the subject of your degree (History, Geography, Economics or Political Science)',
     eligibilityCriteria: [
@@ -991,7 +991,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
     semesters: 4,
     mode: 'Full-Time, On-Campus',
     affiliation: 'TNTEU, Chennai',
-    approval: 'NCTE Approved',
+    approval: 'NCTE Recognised',
     medium: 'English',
     eligibilityHeadline: 'U.G. degree in Micro-Biology or Environmental Science (Biological Science)',
     eligibilityCriteria: [
@@ -1021,7 +1021,7 @@ export const ADMISSIONS_DATA: Record<string, CourseAdmission> = {
       { title: 'Research Pathway', description: 'Optional research mini-projects with diagnostic labs and biotech firms.' },
     ],
     faqs: [
-      { question: 'Is B.Ed Microbiology a recognized qualification?', answer: 'Yes — NCTE-approved and TNTEU-affiliated, fully eligible for TET / TRB and school teaching jobs.' },
+      { question: 'Is B.Ed Microbiology a recognized qualification?', answer: 'Yes — NCTE-recognised and TNTEU-affiliated, fully eligible for TET / TRB and school teaching jobs.' },
       { question: 'Can I teach Biology in general after B.Ed Microbiology?', answer: 'Yes — for Class 9-12 Biology and specialized Microbiology streams at higher secondary level.' },
       { question: 'Are research opportunities available?', answer: 'Yes — internships with partner diagnostic labs and biotech firms during the second year.' },
       { question: 'Is there demand for Microbiology teachers?', answer: 'Rapidly growing demand post-pandemic; CBSE schools increasingly offering Microbiology as Class 11-12 elective.' },

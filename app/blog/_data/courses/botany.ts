@@ -16,7 +16,7 @@ export const botanyBlogData: CourseBlogData = {
     'b.ed botany colleges in tamil nadu', 'tntet biology',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 24, 2026',
   publishedDateIso: '2026-03-24',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const botanyBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Botany with comprehensive biology labs, herbarium facilities, and placement networks spanning government schools, premium CBSE chains, and NEET coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Botany degree is recognized for all government and private school Biology teacher recruitment across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Botany degree is recognized for all government and private school Biology teacher recruitment across India.' },
       { title: 'Botany Lab + Herbarium Facilities', desc: 'Dedicated botany lab with microscopes, dissection equipment, herbarium collection, and ecological field study tools — preparing teachers for effective school biology lab instruction.' },
       { title: 'Faculty with Botany + Teaching Backgrounds', desc: 'M.Sc./M.Phil/Ph.D Botany faculty with school teaching and NEET coaching backgrounds. Guest sessions by retired government PG Biology teachers and NEET coaching veterans.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse biology lab settings.' },

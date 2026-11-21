@@ -16,7 +16,7 @@ export const chemistryBlogData: CourseBlogData = {
     'b.ed chemistry colleges in tamil nadu', 'tntet chemistry',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 20, 2026',
   publishedDateIso: '2026-03-20',
   readTime: '13 min read',
@@ -165,7 +165,7 @@ export const chemistryBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Chemistry with modern lab facilities, experienced faculty, and placement networks spanning government schools, premium CBSE chains, and NEET/JEE coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Chemistry degree is recognized for all government school recruitment and private school hiring across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Chemistry degree is recognized for all government school recruitment and private school hiring across India.' },
       { title: 'Modern Chemistry Laboratory', desc: 'Fully equipped chemistry lab with NCERT/State Board prescribed apparatus, simulation software (ChemSketch, PhET Chemistry), and safety equipment — preparing teachers who can run effective school chemistry labs.' },
       { title: 'Faculty with Chemistry Mastery + Teaching Experience', desc: 'M.Sc./M.Phil/Ph.D Chemistry faculty with school and coaching backgrounds. Guest sessions by retired government PG Chemistry teachers and NEET coaching veterans.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to diverse chemistry lab settings and student levels.' },

@@ -151,7 +151,7 @@ export async function GET() {
           // ── Mid-CTA Banner ──
           h2('MID-CONTENT CTA BANNER'),
           p('Heading: Ready to Start Your Teaching Career?'),
-          p('Description: Apply for B.Ed 2026 at JKKN College of Education \u2014 100 sanctioned seats, NCTE approved and TNTEU affiliated.'),
+          p('Description: Apply for B.Ed 2026 at JKKN College of Education \u2014 100 sanctioned seats, NCTE recognised and TNTEU affiliated.'),
           p('Button 1 Text: Apply Now \u2192'),
           p('Button 2 Text: Contact Admissions'),
           p(''),
@@ -159,7 +159,7 @@ export async function GET() {
           // ── Section 7 ──
           h2('Why Choose JKKN College of Education?'),
           p("Choosing the right B.Ed college shapes your classroom readiness and career prospects. Here are five reasons why JKKN College of Education stands apart for B.Ed aspirants in Tamil Nadu:"),
-          p('1. NCTE Approved & TNTEU Affiliated \u2014 JKKN College of Education holds valid NCTE recognition, ensuring your B.Ed degree is legally recognized for teaching in government and private schools across India. Affiliation to TNTEU guarantees a standardized, quality curriculum.'),
+          p('1. NCTE Recognised & TNTEU Affiliated \u2014 JKKN College of Education holds valid NCTE recognition, ensuring your B.Ed degree is legally recognized for teaching in government and private schools across India. Affiliation to TNTEU guarantees a standardized, quality curriculum.'),
           p('2. Extensive School Internship \u2014 Students complete practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.'),
           p('3. Experienced Faculty \u2014 Our faculty includes experienced teacher-educators with postgraduate and doctoral qualifications in Education, Psychology, and their respective subject specializations. Regular workshops, seminars, and guest lectures enrich student learning.'),
           p('4. Placement Support \u2014 graduates are placed in CBSE, ICSE and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.'),
@@ -186,7 +186,7 @@ export async function GET() {
           p('Q: What is the B.Ed fee structure at JKKN College of Education?'),
           p('A: Tuition is \u20b935,000 a year under the management quota, as published in the JKKN course fee structure. Contact admissions for current fees: +91 9345855001.'),
           p('Q: Is JKKN College of Education NCTE approved?'),
-          p('A: Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai \u2014 ensuring your B.Ed degree is recognized for government and private school teaching positions across India.'),
+          p('A: Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai \u2014 ensuring your B.Ed degree is recognized for government and private school teaching positions across India.'),
           p('Q: What are the career opportunities after B.Ed from JKKN?'),
           p("A: Graduates of JKKN College of Education secure teaching positions in government and private schools, qualify for TNTET/TRB examinations, and advance to M.Ed or Ph.D programs. Many alumni teach in CBSE, ICSE, and Tamil Nadu State Board schools across the region."),
           p(''),

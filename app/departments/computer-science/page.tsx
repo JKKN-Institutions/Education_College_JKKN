@@ -28,7 +28,7 @@ export default function ComputerScienceDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -130,7 +130,7 @@ export default function ComputerScienceDepartment() {
             <div className="lg:col-span-2 space-y-6">
               <p className="text-lg leading-relaxed text-gray-700">
                 <span className="text-5xl float-left mr-4 font-bold" style={{ color: '#7cb983', lineHeight: '0.8' }}>T</span>
-                he Bachelor of Education (B.Ed) in Computer Science at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and innovative Learning Facilitators for secondary and higher secondary schools. This NCTE-approved program combines theoretical foundations in computer science pedagogy with extensive practical training, ensuring our Learners are well-equipped to meet the evolving demands of technology education in the digital age.
+                he Bachelor of Education (B.Ed) in Computer Science at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and innovative Learning Facilitators for secondary and higher secondary schools. This NCTE-recognised program combines theoretical foundations in computer science pedagogy with extensive practical training, ensuring our Learners are well-equipped to meet the evolving demands of technology education in the digital age.
               </p>
 
               <p className="text-lg leading-relaxed text-gray-700">
@@ -199,7 +199,7 @@ export default function ComputerScienceDepartment() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#002309' }}>
-                NCTE Approved
+                NCTE Recognised
               </h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 Recognized by the National Council for Teacher Education, ensuring quality standards and national acceptance of your degree for teaching positions.
@@ -1476,7 +1476,7 @@ export default function ComputerScienceDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-gray-700 leading-relaxed">
-                  Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), ensuring your degree is recognized nationwide.
+                  Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), ensuring your degree is recognized nationwide.
                 </p>
               </div>
             </details>

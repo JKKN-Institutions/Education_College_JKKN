@@ -27,7 +27,7 @@ export default function PhysicsDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -1731,7 +1731,7 @@ export default function PhysicsDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Physics program meets all regulatory standards for teacher education in India and is recognized for government teaching positions.
+                  Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Physics program meets all regulatory standards for teacher education in India and is recognized for government teaching positions.
                 </p>
               </div>
             </details>

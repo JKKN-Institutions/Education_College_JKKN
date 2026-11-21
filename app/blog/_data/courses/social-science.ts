@@ -16,7 +16,7 @@ export const socialScienceBlogData: CourseBlogData = {
     'b.ed social science colleges in tamil nadu', 'tntet social science',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Apr 06, 2026',
   publishedDateIso: '2026-04-06',
   readTime: '12 min read',
@@ -164,7 +164,7 @@ export const socialScienceBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Social Science with integrated curriculum, faculty with diverse Social Science expertise, and strong placement networks spanning government BT recruitment, CBSE chains, and UPSC coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Social Science degree is recognized for all government BT recruitment (TRB highest vacancy subject), CBSE/ICSE schools, and UPSC/competitive exam coaching institutes.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Social Science degree is recognized for all government BT recruitment (TRB highest vacancy subject), CBSE/ICSE schools, and UPSC/competitive exam coaching institutes.' },
       { title: 'Faculty with Multi-Disciplinary Social Science Expertise', desc: 'M.A./M.Phil/Ph.D faculty covering History, Geography, Political Science, and Economics — enabling truly integrated social science teaching. Guest sessions by retired IAS officers and competitive exam coaching faculty.' },
       { title: 'TNTET Social Science Coaching Integrated', desc: 'TNTET Social Science Paper I and Paper II coaching is integrated into the B.Ed curriculum — ensuring graduates clear TNTET in first attempt for government BT recruitment.' },
       { title: 'School Internship in CBSE & Government Schools', desc: 'Practice teaching at partner CBSE, matriculation, and government schools across Komarapalayam, Salem, Namakkal, and Erode — exposure to integrated Social Science teaching across Classes 6–10.' },

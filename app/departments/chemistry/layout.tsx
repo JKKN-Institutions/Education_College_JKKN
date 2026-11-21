@@ -71,7 +71,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Can B.Ed Chemistry graduates teach in CBSE and ICSE schools?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, B.Ed Chemistry graduates from NCTE-approved institutions like JKKN College can teach in all types of schools including State Board, CBSE, ICSE, and International schools across India. The degree is nationally recognized for teaching positions at secondary (Classes 9-10) and higher secondary (Classes 11-12) levels.',
+                text: 'Yes, B.Ed Chemistry graduates from NCTE-recognised institutions like JKKN College can teach in all types of schools including State Board, CBSE, ICSE, and International schools across India. The degree is nationally recognized for teaching positions at secondary (Classes 9-10) and higher secondary (Classes 11-12) levels.',
               },
             },
             {

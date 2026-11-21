@@ -16,7 +16,7 @@ export const commerceBlogData: CourseBlogData = {
     'b.ed commerce colleges in tamil nadu', 'tntet commerce',
   ],
 
-  heroBadgeText: 'NCTE Approved | TNTEU Affiliated',
+  heroBadgeText: 'NCTE Recognised | TNTEU Affiliated',
   publishedDate: 'Mar 30, 2026',
   publishedDateIso: '2026-03-30',
   readTime: '13 min read',
@@ -165,7 +165,7 @@ export const commerceBlogData: CourseBlogData = {
     intro:
       'JKKN College of Education delivers B.Ed Commerce with industry-aligned curriculum, faculty with both teaching and CA coaching backgrounds, and placement networks spanning CBSE schools, government higher secondary schools, and CA/CMA coaching institutes.',
     points: [
-      { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Commerce degree is recognized for all CBSE/ICSE school recruitment, government PG Commerce posts (TRB, KVS, NVS), and private coaching institutes across India.' },
+      { title: 'NCTE Recognised & TNTEU Affiliated', desc: 'Your B.Ed Commerce degree is recognized for all CBSE/ICSE school recruitment, government PG Commerce posts (TRB, KVS, NVS), and private coaching institutes across India.' },
       { title: 'Modern Commerce Lab with Tally, Excel, QuickBooks', desc: 'Dedicated commerce lab with Tally ERP, Excel advanced, QuickBooks, and basic financial software — preparing teachers comfortable with modern commerce tools that schools and CA coaching demand.' },
       { title: 'Faculty with Commerce + CA Coaching Backgrounds', desc: 'M.Com/M.Phil/Ph.D Commerce faculty including former CA Foundation coaching faculty and CBSE PG Commerce teachers. Guest sessions by practicing CAs and corporate L&D professionals.' },
       { title: 'School Internship in CBSE & Higher Secondary Schools', desc: 'Practice teaching at partner CBSE, matriculation, and higher secondary schools with commerce streams across Komarapalayam, Salem, Namakkal, and Erode.' },

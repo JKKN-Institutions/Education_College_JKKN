@@ -27,7 +27,7 @@ export default function EnglishDepartment() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                  NCTE Approved | TNTEU Affiliated
+                  NCTE Recognised | TNTEU Affiliated
                 </span>
               </div>
 
@@ -129,7 +129,7 @@ export default function EnglishDepartment() {
                 </div>
                 <div>
                   <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
-                    he Bachelor of Education (B.Ed) in English at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and confident Learning Facilitators for secondary and higher secondary schools. This NCTE-approved program combines theoretical foundations with extensive practical training in English Language Teaching (ELT), ensuring our Learners are well-equipped to meet the evolving demands of global English education.
+                    he Bachelor of Education (B.Ed) in English at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and confident Learning Facilitators for secondary and higher secondary schools. This NCTE-recognised program combines theoretical foundations with extensive practical training in English Language Teaching (ELT), ensuring our Learners are well-equipped to meet the evolving demands of global English education.
                   </p>
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default function EnglishDepartment() {
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                NCTE Approved
+                NCTE Recognised
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Recognized by the National Council for Teacher Education, ensuring quality standards and national acceptance of your degree across all school boards.

@@ -87,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Is JKKN College of Education recognized for B.Ed Mathematics?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed degree is recognized across India for teaching positions and higher studies.',
+                text: 'Yes, JKKN College of Education is recognised by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed degree is recognized across India for teaching positions and higher studies.',
               },
             },
             {
