@@ -33,7 +33,7 @@ export const allFaqs: FaqItem[] = [
   {
     category: 'program',
     question: 'What is the duration of the B.Ed program?',
-    answer: 'The B.Ed program is a 2-year full-time professional degree course spread across 4 semesters, as per NCTE norms. The program includes theoretical coursework, practical training, micro-teaching sessions, and a comprehensive 16-week school internship.',
+    answer: 'The B.Ed program is a 2-year full-time professional degree course spread across 4 semesters, as per NCTE norms. The program includes theoretical coursework, practical training, micro-teaching sessions, and a comprehensive school internship.',
   },
   {
     category: 'program',

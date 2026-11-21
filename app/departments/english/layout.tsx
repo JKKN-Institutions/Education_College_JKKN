@@ -63,7 +63,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the duration of B.Ed English program?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The B.Ed English program is a 2-year full-time professional degree course spread across 4 semesters, as per NCTE norms. The program includes theoretical coursework, practical training, and a 16-week school internship distributed across three phases.',
+                text: 'The B.Ed English program is a 2-year full-time professional degree course spread across 4 semesters, as per NCTE norms. The program includes theoretical coursework, practical training, and a school internship distributed across three phases.',
               },
             },
             {
@@ -95,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Does B.Ed English include practical training?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, the program includes extensive practical training through micro-teaching sessions, peer teaching, simulated teaching, demonstration lessons, and a comprehensive 16-week school internship program in partner institutions across three phases.',
+                text: 'Yes, the program includes extensive practical training through micro-teaching sessions, peer teaching, simulated teaching, demonstration lessons, and a comprehensive school internship program in partner institutions across three phases.',
               },
             },
             {

@@ -1174,7 +1174,7 @@ export default function CommerceDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  Yes, the B.Ed Commerce program includes extensive practical training through micro-teaching sessions, simulated teaching practices, peer teaching, and a mandatory 16-week school internship program spread across two phases. Learners teach Commerce subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
+                  Yes, the B.Ed Commerce program includes extensive practical training through micro-teaching sessions, simulated teaching practices, peer teaching, and a mandatory school internship program spread across two phases. Learners teach Commerce subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
                 </p>
               </div>
             </details>

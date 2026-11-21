@@ -188,7 +188,7 @@ export default function MathematicsPage() {
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">Extensive Practical Training</h3>
               <p className="text-gray-600 leading-relaxed">
-                16-week school internship program with partner institutions providing real-world Mathematics teaching experience, classroom management skills, and mentorship.
+                School internship program with partner institutions providing real-world Mathematics teaching experience, classroom management skills, and mentorship.
               </p>
             </div>
 
@@ -966,7 +966,7 @@ export default function MathematicsPage() {
             />
             <FAQItem
               question="What is the scope of practical training in this program?"
-              answer="The program includes extensive practical training: micro-teaching sessions, simulated teaching, and a 16-week school internship program spread across three phases. Learners gain hands-on experience teaching Mathematics at partner secondary and higher secondary schools under expert mentorship."
+              answer="The program includes extensive practical training: micro-teaching sessions, simulated teaching, and a school internship program spread across three phases. Learners gain hands-on experience teaching Mathematics at partner secondary and higher secondary schools under expert mentorship."
               isOpen={openFaq === 3}
               onClick={() => toggleFaq(3)}
             />

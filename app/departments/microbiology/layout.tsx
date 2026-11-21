@@ -95,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'Does the program include laboratory and practical teaching experience?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes, the B.Ed Microbiology program includes extensive practical training through laboratory teaching sessions, micro-teaching demonstrations, microscopy training, simulated teaching practices, peer teaching, and a mandatory 16-week school internship program spread across two phases. Learners teach Biology and Microbiology subjects in actual classroom and laboratory settings under mentor Learning Facilitator guidance.',
+                text: 'Yes, the B.Ed Microbiology program includes extensive practical training through laboratory teaching sessions, micro-teaching demonstrations, microscopy training, simulated teaching practices, peer teaching, and a mandatory school internship program spread across two phases. Learners teach Biology and Microbiology subjects in actual classroom and laboratory settings under mentor Learning Facilitator guidance.',
               },
             },
             {

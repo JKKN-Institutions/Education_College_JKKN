@@ -95,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What practical training does the program include?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The B.Ed Political Science program includes extensive practical training through micro-teaching sessions, simulated teaching, and 16-week school internship spread across two semesters. Learners also participate in Mock Parliament sessions, Model United Nations, voter awareness campaigns, Constitutional Day celebrations, and community civic education initiatives under mentor guidance.',
+                text: 'The B.Ed Political Science program includes extensive practical training through micro-teaching sessions, simulated teaching, and school internship spread across two semesters. Learners also participate in Mock Parliament sessions, Model United Nations, voter awareness campaigns, Constitutional Day celebrations, and community civic education initiatives under mentor guidance.',
               },
             },
             {

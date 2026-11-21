@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What is the scope of practical training in this program?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The program includes extensive practical training: micro-teaching sessions, simulated teaching, and a 16-week school internship program spread across three phases. Learners gain hands-on experience teaching Mathematics at partner secondary and higher secondary schools under expert mentorship.',
+                text: 'The program includes extensive practical training: micro-teaching sessions, simulated teaching, and a school internship program spread across three phases. Learners gain hands-on experience teaching Mathematics at partner secondary and higher secondary schools under expert mentorship.',
               },
             },
             {

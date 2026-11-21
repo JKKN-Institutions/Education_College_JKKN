@@ -81,7 +81,7 @@ export async function GET() {
           p('\u2022 Regulatory body: NCTE (National Council for Teacher Education)'),
           p('\u2022 Affiliation (Tamil Nadu): TNTEU \u2014 Tamil Nadu Teachers Education University'),
           p('\u2022 Specializations: Mathematics, Science, Tamil, English, Commerce, Social Science, and more'),
-          p('\u2022 School Internship: 16 weeks of practice teaching in partner schools'),
+          p('\u2022 School Internship: practice teaching in partner schools'),
           p(''),
 
           // ── Section 2 ──
@@ -112,7 +112,7 @@ export async function GET() {
               ['1st Year', 'Sem 2', 'Learning & Teaching, Assessment for Learning, Creating an Inclusive School, Pedagogy of School Subject I'],
               ['2nd Year', 'Sem 3', 'Knowledge & Curriculum, Gender, School & Society, Pedagogy of School Subject II, School Internship (Practice Teaching)'],
               ['2nd Year', 'Sem 4', 'Optional Courses, Reading & Reflecting on Texts, School Internship (continued), Dissertation / Project Work'],
-              ['Internship', '16 Weeks', 'Practice teaching in government and private schools under faculty supervision'],
+              ['Internship', 'School-based', 'Practice teaching in government and private schools under faculty supervision'],
             ]
           ),
           p(''),
@@ -160,7 +160,7 @@ export async function GET() {
           h2('Why Choose JKKN College of Education?'),
           p("Choosing the right B.Ed college shapes your classroom readiness and career prospects. Here are five reasons why JKKN College of Education stands apart for B.Ed aspirants in Tamil Nadu:"),
           p('1. NCTE Approved & TNTEU Affiliated \u2014 JKKN College of Education holds valid NCTE recognition, ensuring your B.Ed degree is legally recognized for teaching in government and private schools across India. Affiliation to TNTEU guarantees a standardized, quality curriculum.'),
-          p('2. Extensive School Internship \u2014 Students complete 16 weeks of practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.'),
+          p('2. Extensive School Internship \u2014 Students complete practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.'),
           p('3. Experienced Faculty \u2014 Our faculty includes experienced teacher-educators with postgraduate and doctoral qualifications in Education, Psychology, and their respective subject specializations. Regular workshops, seminars, and guest lectures enrich student learning.'),
           p('4. Placement Support \u2014 graduates are placed in CBSE, ICSE and Tamil Nadu State Board schools. TNTET coaching and TRB guidance are integrated into the program, ensuring graduates are exam-ready alongside classroom-ready.'),
           p('5. Strategic Location & Residential Campus \u2014 Situated on NH-544 (Salem-Coimbatore Highway) at Natarajapuram, Komarapalayam, about 18 km from Erode and also reached from Salem, Namakkal and Tiruchengode. The residential campus includes hostel, library, and sports facilities.'),

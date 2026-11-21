@@ -38,7 +38,7 @@ export const tamilBlogData: CourseBlogData = {
       { label: 'Total Seats at JKKN:', value: '100 a year in total (NCTE), shared across the 10 teaching subjects' },
       { label: 'Affiliation:', value: 'TNTEU — Tamil Nadu Teachers Education University, Chennai' },
       { label: 'Recognition:', value: 'NCTE — National Council for Teacher Education' },
-      { label: 'School Internship:', value: '16 weeks of supervised Tamil-medium classroom practice' },
+      { label: 'School Internship:', value: 'Supervised Tamil-medium classroom practice' },
       { label: 'Medium of Instruction:', value: 'Tamil (primary) with English support for pedagogy theory' },
       { label: 'Target Career:', value: 'Tamil Pandit, BT Assistant (Tamil), PG Assistant (Tamil), CBSE Tamil teacher' },
     ],
@@ -95,7 +95,7 @@ export const tamilBlogData: CourseBlogData = {
       { year: '1st Year', semester: 'Sem 2', subjects: 'Learning & Teaching, Assessment for Learning, Inclusive School, Pedagogy of Tamil — Part I (Phonetics, Grammar Teaching, Prose & Poetry Methods)' },
       { year: '2nd Year', semester: 'Sem 3', subjects: 'Knowledge & Curriculum, Gender-School-Society, Pedagogy of Tamil — Part II (Modern Literature, Creative Writing, ICT in Tamil Teaching), School Internship Begins' },
       { year: '2nd Year', semester: 'Sem 4', subjects: 'Optional Course (e.g., Classical Tamil / Folk Literature), Reading & Reflecting on Texts, Continued School Internship, Dissertation / Action Research Project in Tamil Pedagogy' },
-      { year: 'Internship', semester: '16 Weeks', subjects: 'Supervised Tamil-medium practice teaching in partner schools — micro-teaching, lesson planning (பாடத்திட்டம்), unit tests, parent-teacher interaction, school activities' },
+      { year: 'Internship', semester: 'School-based', subjects: 'Supervised Tamil-medium practice teaching in partner schools — micro-teaching, lesson planning (பாடத்திட்டம்), unit tests, parent-teacher interaction, school activities' },
     ],
     practicalNote:
       'At <strong>JKKN College of Education</strong>, B.Ed Tamil students complete school internships at partner Tamil-medium government and matriculation schools across Komarapalayam, Salem, Namakkal, Erode, and Tiruchengode — gaining authentic Tamil classroom exposure with mentoring from senior Tamil Pandits and college faculty with M.A./Ph.D in Tamil.',
@@ -168,7 +168,7 @@ export const tamilBlogData: CourseBlogData = {
     points: [
       { title: 'NCTE Approved & TNTEU Affiliated', desc: 'Your B.Ed Tamil degree is legally recognized for all government and private school Tamil teacher positions across India — no concerns about degree validity for TNTET, TRB, KVS, or NVS examinations.' },
       { title: 'Experienced Tamil Pandits as Faculty', desc: 'Our Tamil pedagogy faculty includes M.A./M.Phil/Ph.D Tamil specialists with combined classroom teaching experience exceeding 100+ years. Guest lectures by university Tamil professors and award-winning Tamil writers enrich the program.' },
-      { title: '16-Week School Internship in Tamil-Medium Schools', desc: 'Practice teaching in real Tamil-medium government schools and matriculation schools across Komarapalayam, Salem, Namakkal, and Erode districts — building confidence with diverse student backgrounds and rural classroom realities.' },
+      { title: 'School Internship in Tamil-Medium Schools', desc: 'Practice teaching in real Tamil-medium government schools and matriculation schools across Komarapalayam, Salem, Namakkal, and Erode districts — building confidence with diverse student backgrounds and rural classroom realities.' },
       { title: 'Integrated TNTET Tamil Coaching', desc: 'TNTET Tamil Paper-I and Paper-II coaching is integrated into the B.Ed Tamil program at no extra cost. Past papers, mock tests, and Tamil grammar drills (சந்தி, பெயர், வினை, தொடர்) ensure graduates clear TNTET in their first attempt.' },
       { title: 'Strong Government & CBSE Placement Network', desc: 'JKKN\'s placement cell maintains direct hiring relationships with 80+ CBSE/matriculation schools across the Kongu belt and Chennai. Government recruitment notification alerts ensure no eligible Tamil teacher post is missed by JKKN alumni.' },
       { title: 'Strategic Location for Tamil Heritage Study', desc: 'Komarapalayam is centrally located in the Kongu Tamil region, offering students proximity to historic Tamil sites (Tiruvannamalai, Madurai, Thanjavur, Salem) for cultural immersion field trips integral to a quality Tamil teacher education.' },
@@ -206,7 +206,7 @@ export const tamilBlogData: CourseBlogData = {
     },
     {
       q: 'How is B.Ed Tamil different from B.A. Tamil at the curriculum level?',
-      a: 'B.A. Tamil focuses on Tamil literature, grammar, and language theory at an academic level. B.Ed Tamil adds the pedagogy layer — how to teach Tamil to school students, lesson planning, classroom management, assessment design, and 16 weeks of practical school teaching internship. B.Ed is the mandatory professional qualification for teaching, while B.A. alone does not qualify you for school teaching jobs.',
+      a: 'B.A. Tamil focuses on Tamil literature, grammar, and language theory at an academic level. B.Ed Tamil adds the pedagogy layer — how to teach Tamil to school students, lesson planning, classroom management, assessment design, and practical school teaching internship. B.Ed is the mandatory professional qualification for teaching, while B.A. alone does not qualify you for school teaching jobs.',
     },
   ],
 

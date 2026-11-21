@@ -87,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: 'What practical training is included in the B.Ed Physics program?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'The B.Ed Physics program includes extensive practical training through micro-teaching sessions, physics laboratory demonstrations, simulated teaching, and a mandatory 16-week school internship program. During internship, Learners teach Physics in actual Learning Studios, conduct experiments, and develop assessment materials under expert mentor guidance.',
+                text: 'The B.Ed Physics program includes extensive practical training through micro-teaching sessions, physics laboratory demonstrations, simulated teaching, and a mandatory school internship program. During internship, Learners teach Physics in actual Learning Studios, conduct experiments, and develop assessment materials under expert mentor guidance.',
               },
             },
             {

@@ -352,7 +352,7 @@ export default function BlogDetailPage() {
                   ['Regulatory body:', 'NCTE (National Council for Teacher Education)'],
                   ['Affiliation (Tamil Nadu):', 'TNTEU — Tamil Nadu Teachers Education University'],
                   ['Specializations:', 'Mathematics, Science, Tamil, English, Commerce, Social Science, and more'],
-                  ['School Internship:', '16 weeks of practice teaching in partner schools'],
+                  ['School Internship:', 'Practice teaching in partner schools'],
                 ].map(([key, val]) => (
                   <li key={key as string} className="flex items-start gap-2.5 text-gray-600 text-sm">
                     <span className="w-2 h-2 rounded-full bg-[#006837] mt-1.5 flex-shrink-0" />
@@ -463,7 +463,7 @@ export default function BlogDetailPage() {
                         'Sem 4',
                         'Optional Courses, Reading & Reflecting on Texts, School Internship (continued), Dissertation / Project Work',
                       ],
-                      ['Internship', '16 Weeks', 'Practice teaching in government and private schools under faculty supervision'],
+                      ['Internship', 'School-based', 'Practice teaching in government and private schools under faculty supervision'],
                     ].map(([year, sem, subjects], i) => (
                       <tr key={i} className="border-b border-gray-100 last:border-0">
                         <td className="px-4 py-3 text-gray-700 font-medium">{year}</td>
@@ -656,7 +656,7 @@ export default function BlogDetailPage() {
                   {
                     num: 2,
                     title: 'Extensive School Internship',
-                    desc: 'Students complete 16 weeks of practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.',
+                    desc: 'Students complete practice teaching at partner government and private schools across Komarapalayam, Namakkal, and Erode districts. Real classroom exposure under expert mentorship prepares graduates for confident teaching from day one.',
                   },
                   {
                     num: 3,

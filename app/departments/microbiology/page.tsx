@@ -323,7 +323,7 @@ export default function MicrobiologyDepartment() {
                 Extensive School Internship
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                16-week intensive internship across two phases in partner schools, providing real classroom and laboratory teaching experience under mentor guidance.
+                Intensive internship across two phases in partner schools, providing real classroom and laboratory teaching experience under mentor guidance.
               </p>
             </div>
 
@@ -1290,7 +1290,7 @@ export default function MicrobiologyDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, the B.Ed Microbiology program includes extensive practical training through laboratory teaching sessions, micro-teaching demonstrations, microscopy training, simulated teaching practices, peer teaching, and a mandatory 16-week school internship program spread across two phases. Learners teach Biology and Microbiology subjects in actual classroom and laboratory settings under mentor Learning Facilitator guidance.
+                Yes, the B.Ed Microbiology program includes extensive practical training through laboratory teaching sessions, micro-teaching demonstrations, microscopy training, simulated teaching practices, peer teaching, and a mandatory school internship program spread across two phases. Learners teach Biology and Microbiology subjects in actual classroom and laboratory settings under mentor Learning Facilitator guidance.
               </p>
             </details>
 

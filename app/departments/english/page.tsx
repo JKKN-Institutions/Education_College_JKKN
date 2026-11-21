@@ -250,7 +250,7 @@ export default function EnglishDepartment() {
                 Practical Training
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Extensive 16-week school internship program with partner institutions providing real-world teaching experience, mentorship, and classroom management skills.
+                Extensive school internship program with partner institutions providing real-world teaching experience, mentorship, and classroom management skills.
               </p>
             </div>
 

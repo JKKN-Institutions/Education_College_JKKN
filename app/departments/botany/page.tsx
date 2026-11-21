@@ -1187,7 +1187,7 @@ export default function BotanyDepartment() {
               </summary>
               <div className="px-6 pb-6">
                 <p style={{ color: '#006837' }}>
-                  Yes, the B.Ed Botany program includes extensive practical training through micro-teaching sessions, simulated teaching practices, botanical laboratory work, herbarium preparation, field studies, peer teaching, and a mandatory 16-week school internship program spread across two phases. Learners teach Botany subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
+                  Yes, the B.Ed Botany program includes extensive practical training through micro-teaching sessions, simulated teaching practices, botanical laboratory work, herbarium preparation, field studies, peer teaching, and a mandatory school internship program spread across two phases. Learners teach Botany subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
                 </p>
               </div>
             </details>

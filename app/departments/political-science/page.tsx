@@ -1254,7 +1254,7 @@ export default function PoliticalScienceDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                The B.Ed Political Science program includes extensive practical training through micro-teaching sessions, simulated teaching, and 16-week school internship spread across two semesters. Learners also participate in Mock Parliament sessions, Model United Nations, voter awareness campaigns, Constitutional Day celebrations, and community civic education initiatives under mentor guidance.
+                The B.Ed Political Science program includes extensive practical training through micro-teaching sessions, simulated teaching, and school internship spread across two semesters. Learners also participate in Mock Parliament sessions, Model United Nations, voter awareness campaigns, Constitutional Day celebrations, and community civic education initiatives under mentor guidance.
               </p>
             </details>
 

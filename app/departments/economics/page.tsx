@@ -431,7 +431,7 @@ export default function EconomicsDepartment() {
                 Extensive School Internship
               </h3>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                16-week supervised teaching practice in partner schools providing real-world classroom experience with diverse learner groups and teaching environments.
+                Supervised teaching practice in partner schools providing real-world classroom experience with diverse learner groups and teaching environments.
               </p>
             </div>
 
@@ -1344,7 +1344,7 @@ export default function EconomicsDepartment() {
                 </svg>
               </summary>
               <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
-                Yes, the B.Ed Economics program includes extensive practical training through micro-teaching sessions, simulated teaching practices, peer teaching, and a mandatory 16-week school internship program spread across two phases. Learners teach Economics subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
+                Yes, the B.Ed Economics program includes extensive practical training through micro-teaching sessions, simulated teaching practices, peer teaching, and a mandatory school internship program spread across two phases. Learners teach Economics subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
               </p>
             </details>
 

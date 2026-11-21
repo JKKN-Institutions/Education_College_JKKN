@@ -1748,7 +1748,7 @@ export default function PhysicsDepartment() {
               </summary>
               <div className="mt-4 pt-4 border-t" style={{ borderColor: '#e5e7eb' }}>
                 <p className="leading-relaxed" style={{ color: '#006837' }}>
-                  The B.Ed Physics program includes extensive practical training through micro-teaching sessions, physics laboratory demonstrations, simulated teaching, and a mandatory 16-week school internship program. During internship, Learners teach Physics in actual Learning Studios, conduct experiments, and develop assessment materials under expert mentor guidance.
+                  The B.Ed Physics program includes extensive practical training through micro-teaching sessions, physics laboratory demonstrations, simulated teaching, and a mandatory school internship program. During internship, Learners teach Physics in actual Learning Studios, conduct experiments, and develop assessment materials under expert mentor guidance.
                 </p>
               </div>
             </details>
