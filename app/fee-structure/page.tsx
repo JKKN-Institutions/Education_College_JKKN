@@ -11,21 +11,26 @@ export const metadata = seoMetadata(
   { keywords: ['B.Ed fee structure', 'JKKN fee structure', 'B.Ed course fees Namakkal'] }
 );
 
-const bedCourses = [
-  'Tamil',
-  'English',
-  'Mathematics',
-  'Physics',
-  'Chemistry',
-  'Botany',
-  'Zoology',
-  'Commerce',
-  'Economics',
-  'History',
-  'Political Science',
-  'Social Science',
-  'Microbiology',
-  'Computer Science',
+// 14 degree-subject rows (the user's choice 2026-11-21: keep 14 rows, add the teaching-subject
+// column). Teaching subject per G.O.(D) No.144 (2026-27), as already stated in lib/admissions-data.ts:
+// Physics / Chemistry -> Physical Science; Botany / Zoology / Microbiology -> Biological Science;
+// Commerce and Economics need a P.G. degree with 50%; Political Science is not one of JKKN's
+// 10 teaching subjects (enquiry form + TNTEU faculty return, see /departments/political-science).
+const bedCourses: { subject: string; teaching: string }[] = [
+  { subject: 'Tamil', teaching: 'Tamil' },
+  { subject: 'English', teaching: 'English' },
+  { subject: 'Mathematics', teaching: 'Mathematics' },
+  { subject: 'Physics', teaching: 'Physical Science' },
+  { subject: 'Chemistry', teaching: 'Physical Science' },
+  { subject: 'Botany', teaching: 'Biological Science' },
+  { subject: 'Zoology', teaching: 'Biological Science' },
+  { subject: 'Commerce', teaching: 'Commerce and Accountancy (needs M.Com, 50%)' },
+  { subject: 'Economics', teaching: 'Economics (needs M.A. Economics, 50%)' },
+  { subject: 'History', teaching: 'History' },
+  { subject: 'Political Science', teaching: 'Not one of our 10 teaching subjects - ask the admission office' },
+  { subject: 'Social Science', teaching: 'Social Science' },
+  { subject: 'Microbiology', teaching: 'Biological Science' },
+  { subject: 'Computer Science', teaching: 'Computer Science' },
 ];
 
 export default function FeeStructurePage() {
@@ -56,11 +61,12 @@ export default function FeeStructurePage() {
                 <tr className="bg-[#006837] text-white">
                   <th className="text-left px-5 py-4 font-semibold w-8">#</th>
                   <th className="text-left px-5 py-4 font-semibold">Programme</th>
+                  <th className="text-left px-5 py-4 font-semibold">Teaching subject</th>
                   <th className="text-center px-5 py-4 font-semibold">Tuition per year (Mgmt. Quota)</th>
                 </tr>
               </thead>
               <tbody>
-                {bedCourses.map((subject, index) => (
+                {bedCourses.map(({ subject, teaching }, index) => (
                   <tr
                     key={subject}
                     className={index % 2 === 0 ? 'bg-white' : 'bg-[#006837]/5'}
@@ -68,6 +74,9 @@ export default function FeeStructurePage() {
                     <td className="px-5 py-3.5 text-gray-500 font-medium">{index + 1}</td>
                     <td className="px-5 py-3.5 font-medium text-gray-800">
                       B.Ed — {subject}
+                    </td>
+                    <td className="px-5 py-3.5 text-gray-700">
+                      {teaching}
                     </td>
                     <td className="px-5 py-3.5 text-center font-semibold text-[#006837]">
                       &#8377;35,000
@@ -77,6 +86,11 @@ export default function FeeStructurePage() {
               </tbody>
             </table>
           </div>
+
+          {/* Teaching-subject note (2026-11-21): 14 degree rows, 10 teaching subjects */}
+          <p className="mt-4 text-sm text-gray-600 text-center max-w-3xl mx-auto">
+            Your degree subject decides your B.Ed teaching subject. The 14 rows above are degree subjects; they lead to 10 teaching subjects under the 2026-27 Tamil Nadu B.Ed guidelines (G.O.(D) No.144).
+          </p>
 
           {/* Footer Note */}
           <p className="mt-5 text-xs text-gray-500 text-center">
