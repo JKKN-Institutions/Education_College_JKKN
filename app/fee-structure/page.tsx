@@ -59,10 +59,10 @@ export default function FeeStructurePage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-[#006837] text-white">
-                  <th className="text-left px-5 py-4 font-semibold w-8">#</th>
-                  <th className="text-left px-5 py-4 font-semibold">Programme</th>
-                  <th className="text-left px-5 py-4 font-semibold">Teaching subject</th>
-                  <th className="text-center px-5 py-4 font-semibold">Tuition per year (Mgmt. Quota)</th>
+                  <th className="text-left px-3 sm:px-5 py-4 font-semibold w-8">#</th>
+                  <th className="text-left px-3 sm:px-5 py-4 font-semibold">Programme</th>
+                  <th className="hidden sm:table-cell text-left px-5 py-4 font-semibold">Teaching subject</th>
+                  <th className="text-center px-3 sm:px-5 py-4 font-semibold">Tuition per year (Mgmt. Quota)</th>
                 </tr>
               </thead>
               <tbody>
@@ -71,14 +71,18 @@ export default function FeeStructurePage() {
                     key={subject}
                     className={index % 2 === 0 ? 'bg-white' : 'bg-[#006837]/5'}
                   >
-                    <td className="px-5 py-3.5 text-gray-500 font-medium">{index + 1}</td>
-                    <td className="px-5 py-3.5 font-medium text-gray-800">
+                    <td className="px-3 sm:px-5 py-3.5 text-gray-500 font-medium">{index + 1}</td>
+                    <td className="px-3 sm:px-5 py-3.5 font-medium text-gray-800">
                       B.Ed — {subject}
+                      {/* phones: the teaching subject sits under the name so the fee column stays on screen */}
+                      <span className="block sm:hidden mt-1 text-xs font-normal text-gray-600">
+                        Teaching subject: {teaching}
+                      </span>
                     </td>
-                    <td className="px-5 py-3.5 text-gray-700">
+                    <td className="hidden sm:table-cell px-5 py-3.5 text-gray-700">
                       {teaching}
                     </td>
-                    <td className="px-5 py-3.5 text-center font-semibold text-[#006837]">
+                    <td className="px-3 sm:px-5 py-3.5 text-center font-semibold text-[#006837]">
                       &#8377;35,000
                     </td>
                   </tr>
