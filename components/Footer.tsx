@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
 
             <p className="text-base font-semibold">
-              Best Innovation Focused<br />
+              NCTE Recognised · TNTEU Affiliated<br />
               Multi-Disciplinary Campus
             </p>
           </div>
