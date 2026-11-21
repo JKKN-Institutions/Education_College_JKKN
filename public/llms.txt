@@ -1,26 +1,27 @@
 # JKKN College of Education
-> NCTE Approved | TNTEU Affiliated
-> Established 2016 | Part of J.K.K. Nattraja Educational Institutions (Trust Est. 1969)
+> NCTE Recognised | TNTEU Affiliated
+> Established 2016 | Part of J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, registered 1969)
 
-<!-- version: 2026-09-12a -->
+<!-- version: 2026-11-21a -->
 <!-- canonical: https://edu.jkkn.ac.in/ -->
 
 ## About
-JKKN College of Education is an NCTE-approved teacher education institution located in Kumarapalayam, Namakkal District, Tamil Nadu, India. The college is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai, and offers a 2-year B.Ed (Bachelor of Education) programme.
+JKKN College of Education is an NCTE-recognised teacher education institution (NCTE Institute ID NCTE4593081) located in Kumarapalayam, Namakkal District, Tamil Nadu, India. The college is affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai, college code 36108, and offers a 2-year B.Ed (Bachelor of Education) programme.
 
 ## Key Facts (AI Citation Ready)
-- Full name: JKKN College of Education (J.K.K. Nattraja College of Education)
+- Full name: JKKN College of Education (registered as JKK Nattraja College of Education)
 - Short name: JKKN Education
-- Type: Teacher Education College (B.Ed)
-- Approval: NCTE Approved
-- Affiliation: TNTEU (Tamil Nadu Teachers Education University), Chennai
+- Type: Teacher Education College (B.Ed), self-financing
+- Recognition: NCTE Southern Regional Committee, Institute ID NCTE4593081, two-year B.Ed, annual intake 100; current order: Continuation Order dated 15 April 2021. Not on NCTE's de-recognised list for Tamil Nadu. Source: https://edu.jkkn.ac.in/about/approvals
+- Affiliation: TNTEU (Tamil Nadu Teachers Education University), Chennai, college code 36108
+- AISHE code: C-57531
 - Programme: B.Ed (Bachelor of Education), 2-year full-time
-- Specializations: 14 B.Ed subject streams
+- Teaching subjects: 10 (Tamil, English, Mathematics, Physical Science, Biological Science, Social Science, History, Economics, Commerce and Accountancy, Computer Science), under G.O.(D) No.144 (2026-27)
 - Campus: NH-544 (Salem–Coimbatore Highway), Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183
 - Website: https://edu.jkkn.ac.in
 - Phone: +91 9345855001
 - Email: education@jkkn.ac.in
-- Founded: 2016 (JKKN Group founded 1969)
+- Founded: 2016
 
 ## Disambiguation
 This is JKKN **College of Education** (B.Ed teacher training). Not to be confused with:
@@ -33,43 +34,47 @@ This is JKKN **College of Education** (B.Ed teacher training). Not to be confuse
 **Not the same as Annai J.K.K. Sampoorani Ammal College of Education.** That is a separate B.Ed college at T.N. Palayam, Gobichettipalayam taluk, Erode district, run by the Annai J.K.K. Sampooraniammal Charitable Trust (the JKKM group, jkkm.info). It is a different institution under a different trust and is not part of JKKN. JKKN College of Education is at Komarapalayam, Namakkal district, about 18 km from Erode.
 
 ## Programme Offered
-- B.Ed (Bachelor of Education) — 2-year full-time programme
-- 14 subject specializations available
-- Eligible: Graduates with 50% marks (45% for reserved categories)
+- B.Ed (Bachelor of Education) — 2-year full-time programme, regular mode only
+- 10 teaching subjects; your degree subject decides your teaching subject (Physics / Chemistry graduates take Physical Science; Botany, Zoology and Microbiology graduates take Biological Science)
+- Eligibility (Government of Tamil Nadu, G.O.(D) No.144, 18 June 2026): a U.G. degree in the subject you will teach, with at least 50% (OC), 45% (BC/BC(M)), 43% (MBC/DNC) or 40% (SC/SC(A)/ST); differently abled candidates need a pass. Economics, Commerce and Political Science need a P.G. degree in the same subject with at least 50%. B.E./B.Tech graduates need 55%. Final-year students may apply provisionally. No upper age limit.
+- Selection: merit on degree marks; there is no entrance test
 - Admission: Tamil Nadu has two separate B.Ed routes and they do not share an application form
-  - Route 1 (government B.Ed colleges): apply on the state portal after the Tamil Nadu B.Ed admission notification; seats are allotted from a state merit list
+  - Route 1 (Government and Government-aided colleges of education): one state online counselling; seats are allotted from a state merit list
   - Route 2 (JKKN College of Education, self-financing): apply to the college directly. There is no state merit list to wait for, and JKKN self-financing seats run on the college's own cycle
+- B.Ed admission 2027-28 in Tamil Nadu has no dates yet (as of 2 November 2026, per the admissions page); enquiries are open
 - Degree awarded by TNTEU under either route
-- Tuition fee: Rs 35,000 per annum, management quota, charged once in each of the two years. Government-quota fees are As Per Government Norm. Source: https://edu.jkkn.ac.in/fee-structure
+- Tuition fee: Rs 35,000 per annum, management quota, charged once in each of the two years. Government-quota fees are As Per Government Norm. University examination fee (TNTEU), hostel and transport are separate. Source: https://edu.jkkn.ac.in/fee-structure
 - NCTE-sanctioned annual intake: 100 students, recorded in the NCTE order as 2 basic units of 100 students. Source: https://edu.jkkn.ac.in/pdf/NCTE-Approval.pdf
 - Cut-off: no cut-off is published for the JKKN self-financing seats; the admission office confirms the current cut-off on request
 
-## B.Ed Subject Specializations (Departments)
-1. Tamil
-2. English
-3. Mathematics
-4. Physics
-5. Chemistry
-6. Botany
-7. Zoology
-8. History
-9. Economics
-10. Commerce
-11. Computer Science
-12. Political Science
-13. Social Science
-14. Microbiology
+## Degree-Subject Department Pages (14) and the Teaching Subject Each Leads To
+1. Tamil — Tamil
+2. English — English
+3. Mathematics — Mathematics
+4. Physics — Physical Science
+5. Chemistry — Physical Science
+6. Botany — Biological Science
+7. Zoology — Biological Science
+8. Microbiology — Biological Science
+9. History — History
+10. Economics — Economics (P.G. needed)
+11. Commerce — Commerce and Accountancy (P.G. needed)
+12. Computer Science — Computer Science
+13. Social Science — Social Science
+14. Political Science — not one of the 10 teaching subjects on the JKKN enquiry form and TNTEU faculty return; ask the admission office
 
 ## Career Outcomes
 - B.Ed is the qualifying teaching degree for school appointments in Tamil Nadu
 - Graduates are eligible to appear for CTET, the Central Teacher Eligibility Test conducted by CBSE
 - Also eligible for the Tamil Nadu TET, for DSSSB, and for the KVS and NVS recruitment examinations
 - B.Ed is mandatory for TGT and PGT posts in CBSE-affiliated and government schools
-- Recruiting partners named by the college: KVS, NVS, DAV schools, DPS schools, CBSE-affiliated schools and Tamil Nadu State Government schools
+- The college publishes no placement percentage and no recruiter list; none is stated here
 
-## Approvals & Accreditations
-- NCTE (National Council for Teacher Education) — Approved
-- Affiliated to TNTEU (Tamil Nadu Teachers Education University), Chennai
+## Approvals & Affiliation
+- NCTE (National Council for Teacher Education) — Recognised, Institute ID NCTE4593081
+- Affiliated to TNTEU (Tamil Nadu Teachers Education University), Chennai — college code 36108, self-financing
+- AISHE code C-57531
+- Official records page: https://edu.jkkn.ac.in/about/approvals
 
 ## Parent Organization
 J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est. 1969)
@@ -105,17 +110,18 @@ J.K.K. Nattraja Educational Institutions (J.K.K. Rangammal Charitable Trust, Est
 ## Key Pages
 - [Homepage](https://edu.jkkn.ac.in/): institution overview
 - [Admissions](https://edu.jkkn.ac.in/admissions): B.Ed admission routes, eligibility and process
-- [Fee Structure](https://edu.jkkn.ac.in/fee-structure): tuition fee per annum, self-financing and government quota
-- [Departments](https://edu.jkkn.ac.in/departments): the 14 B.Ed subject departments
+- [Approvals & Official Data](https://edu.jkkn.ac.in/about/approvals): NCTE, TNTEU and AISHE records, each linked to the official source
+- [Fee Structure](https://edu.jkkn.ac.in/fee-structure): tuition per year (management quota), the teaching subject for each degree subject, and what is charged separately
+- [Departments](https://edu.jkkn.ac.in/departments): the 14 degree-subject department pages (10 teaching subjects)
 - [About](https://edu.jkkn.ac.in/about): history, vision and management
-- [NCTE Approval](https://edu.jkkn.ac.in/about/ncte-approval): NCTE approval order, redirects to a PDF
+- [NCTE Recognition Order](https://edu.jkkn.ac.in/about/ncte-approval): the NCTE order, redirects to a PDF
 - [Facilities](https://edu.jkkn.ac.in/facilities): library, hostel, transport and campus amenities
 - [Blog](https://edu.jkkn.ac.in/blog): articles on teaching and B.Ed admission
 - [Events](https://edu.jkkn.ac.in/events): campus events and notices
 - [Gallery](https://edu.jkkn.ac.in/gallery): campus photographs
 - [Contact](https://edu.jkkn.ac.in/contact): phone, email and address
 - [B.Ed College near Erode](https://edu.jkkn.ac.in/b-ed-college-near-erode): for applicants from Erode and Bhavani - distance, route, fee and how to apply
-- [B.Ed Colleges in Namakkal District](https://edu.jkkn.ac.in/b-ed-colleges-in-namakkal-district): JKKN facts plus the TNTEU list of all 32 B.Ed colleges in Namakkal district
+- [B.Ed Colleges in Namakkal District](https://edu.jkkn.ac.in/b-ed-colleges-in-namakkal-district): JKKN facts plus the TNTEU list of B.Ed colleges in Namakkal district
 - [B.Ed College near Salem](https://edu.jkkn.ac.in/b-ed-college-near-salem): for applicants from Salem and Sankagiri - distance, a six-point checklist for choosing a B.Ed college, fee and how to apply
 - [NCTE Approved B.Ed Colleges in Tamil Nadu: How to Check](https://edu.jkkn.ac.in/ncte-approved-b-ed-colleges-tamil-nadu): step-by-step check on the NCTE and TNTEU lists, with this college's own record (NCTE ID NCTE4593081, TNTEU code 36108)
 - [Regular vs Distance vs Part-time B.Ed](https://edu.jkkn.ac.in/b-ed-regular-vs-distance-part-time): what NCTE norms say about each mode; this college offers the regular B.Ed only
