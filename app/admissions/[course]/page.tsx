@@ -143,7 +143,7 @@ export default async function CourseAdmissionPage({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="text-xs sm:text-sm font-semibold text-[#7cb983]">
-                    Admission Open 2026-27 | NCTE Approved
+                    B.Ed 2027-28 Enquiry Open | NCTE Recognised
                   </span>
                 </div>
 

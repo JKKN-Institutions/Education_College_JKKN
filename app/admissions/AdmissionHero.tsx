@@ -18,7 +18,7 @@ export default function AdmissionHero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
-                ADMISSIONS OPEN 2026-27
+                B.ED 2027-28 – ENQUIRY OPEN
               </span>
             </div>
 
