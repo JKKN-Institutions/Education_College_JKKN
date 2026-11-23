@@ -372,7 +372,7 @@ function EnquiryDialog({
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-2 right-2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-[#f1f7f3] shadow-lg hover:bg-[#e3ece6] transition-colors"
+          className="sticky top-2 z-10 ml-auto -mr-3 -mt-3 -mb-8 sm:-mr-4 sm:-mt-4 sm:-mb-7 flex h-11 w-11 items-center justify-center rounded-full bg-[#f1f7f3] shadow-lg hover:bg-[#e3ece6] transition-colors"
           aria-label="Close"
         >
           <X className="w-5 h-5 text-gray-700" />
