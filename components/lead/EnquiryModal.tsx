@@ -16,6 +16,7 @@
 "use client"
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react"
+import PhoneContactBar from "@/components/lead/PhoneContactBar"
 import { useDialogFocus } from "@/lib/use-dialog-focus"
 import { useDialogScrollLock } from "@/lib/use-dialog-scroll-lock"
 import Image from "next/image"
@@ -297,6 +298,7 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   return (
     <EnquiryModalContext.Provider value={api}>
       {children}
+      <PhoneContactBar />
       {open && (
         <EnquiryDialog
           sourcePage={open.sourcePage}
