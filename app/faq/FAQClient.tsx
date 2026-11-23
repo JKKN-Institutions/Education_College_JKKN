@@ -50,7 +50,7 @@ export default function FAQClient({ phone, email }: { phone: string; email: stri
   return (
     <>
       {/* Tabs */}
-      <div className="bg-white border-b border-gray-200 sticky top-20 z-10">
+      <div className="bg-white border-b border-gray-200 md:sticky md:top-20 z-10">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 py-4">
             {categories.map((cat) => (
