@@ -32,6 +32,7 @@
 
 import { useId, useRef, useState, type FormEvent } from "react"
 import { CheckCircle2, ChevronDown } from "lucide-react"
+import { useCutSelectLabel } from "@/lib/use-cut-select-label"
 import type { EducationEnquiryState } from "@/app/actions/education-enquiry"
 import CampaignFields from "@/components/lead/CampaignFields"
 import { EDUCATION_PROGRAMMES } from "@/lib/education-programmes"
@@ -91,6 +92,8 @@ export default function EducationEnquiryForm({
   // Unique per instance: the homepage can show this form twice (hero card + popup).
   const uid = useId()
   const fid = (name: string) => `${uid}-${name}`
+  // The chosen course's full name, printed under the box only while the box cuts it (320 px phones).
+  const [programmeFull, programmeBox, measureProgramme] = useCutSelectLabel()
 
   const [gatePhase, setGatePhase] = useState<GatePhase>({ step: "form" })
   // Which of the two buttons was pressed. Read from SubmitEvent.submitter where the browser has it;
@@ -323,6 +326,8 @@ export default function EducationEnquiryForm({
               name="programme"
               required
               defaultValue={defaultProgrammeId ?? ""}
+              ref={programmeBox}
+              onChange={measureProgramme}
               className={`${inputCls} appearance-none pr-10`}
             >
               <option value="" disabled>
@@ -339,6 +344,11 @@ export default function EducationEnquiryForm({
               className="pointer-events-none absolute right-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#4b5563]"
             />
           </div>
+          {programmeFull && (
+            <p aria-hidden="true" className="mt-1 text-sm leading-snug text-[#4b5563]">
+              {programmeFull}
+            </p>
+          )}
         </div>
         {!compact && (
         <div>
